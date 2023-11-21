@@ -39,9 +39,6 @@
     dbeaver
     vscode
     python3
-    php82
-    php82Packages.composer
-    nodejs_20
 
     discord
     steam

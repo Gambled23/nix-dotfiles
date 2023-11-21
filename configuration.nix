@@ -100,11 +100,9 @@
     isNormalUser = true;
     description = "César Girón";
     extraGroups = [ "networkmanager" "wheel" ];
-    packages = with pkgs; [
-      home-manager
-
-    ];
+    packages = with pkgs; [ ];
   };
+
   services.xserver.displayManager.autoLogin.enable = false; # Enable automatic login for the user.
   services.xserver.displayManager.autoLogin.user = "gambled";
   services.xserver.displayManager.defaultSession = "plasmawayland";
