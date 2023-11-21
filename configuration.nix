@@ -102,33 +102,7 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
       home-manager
-      zerotierone
-  
-      partition-manager
-      plasma-browser-integration
-      firefox
-      chromium
-      polychromatic
-      libreoffice
-      waydroid
-      wl-clipboard
-      inkscape-with-extensions
-      gimp-with-plugins
-      davinci-resolve
 
-      dbeaver
-      git
-      vscode
-      python3
-      php82
-      php82Packages.composer
-      nodejs_20
-
-      discord
-      steam
-      steam-run
-      lutris
-      wineWowPackages.waylandFull
     ];
   };
   services.xserver.displayManager.autoLogin.enable = false; # Enable automatic login for the user.

@@ -16,8 +16,6 @@
     homeDirectory = "/home/gambled";
   };
 
-  # Add stuff for your user as you see fit:
-  # programs.neovim.enable = true;
   home.packages = with pkgs; [ 
     kate
 
@@ -35,10 +33,10 @@
     wl-clipboard
     inkscape-with-extensions
     gimp-with-plugins
-    davinci-resolve
+    libsForQt5.kdenlive
+    kdenlive
 
     dbeaver
-    git
     vscode
     python3
     php82
@@ -51,12 +49,12 @@
     lutris
     wineWowPackages.waylandFull
   ];
-
-  # Enable git
-  programs.git = {
+  programs = {
+    git = {
     enable = true;
     userName = "Gambled23";
     userEmail = "ipog71@gmail.com";
+    };
   };
 
   # Nicely reload system units when changing configs
