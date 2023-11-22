@@ -34,6 +34,9 @@
     inkscape-with-extensions
     gimp-with-plugins
     libsForQt5.kdenlive
+    libsForQt5.kaccounts-integration
+    libsForQt5.kaccounts-providers
+    libsForQt5.kio-gdrive
     kdenlive
 
     dbeaver
