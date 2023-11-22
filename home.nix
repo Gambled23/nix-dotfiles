@@ -17,9 +17,6 @@
   };
 
   home.packages = with pkgs; [ 
-    kate
-
-
     zerotierone
 
     plasma-browser-integration
@@ -37,8 +34,11 @@
     libsForQt5.kaccounts-integration
     libsForQt5.kaccounts-providers
     libsForQt5.kio-gdrive
+    libsForQt5.ktorrent
+    libsForQt5.libktorrent
     kdenlive
-    kdenlive
+    kate
+    kup
 
     dbeaver
     vscode
