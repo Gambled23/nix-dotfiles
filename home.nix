@@ -10,7 +10,7 @@
   # You can import other home-manager modules here
   imports = [
   ];
-
+  
   home = {
     username = "gambled";
     homeDirectory = "/home/gambled";
@@ -53,7 +53,7 @@
     userEmail = "ipog71@gmail.com";
     };
   };
-
+  
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
 
