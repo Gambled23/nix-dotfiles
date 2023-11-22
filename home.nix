@@ -38,6 +38,7 @@
     libsForQt5.kaccounts-providers
     libsForQt5.kio-gdrive
     kdenlive
+    kdenlive
 
     dbeaver
     vscode

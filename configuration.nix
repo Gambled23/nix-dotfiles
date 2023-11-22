@@ -27,6 +27,7 @@
     10.243.0.2 raspberrypi
     10.243.0.4 pc-gambled
     10.243.0.4 laptop-gambled
+    159.54.130.222 nisha
 
   '';
 
@@ -90,8 +91,12 @@
     vim 
     wget
     home-manager
+    (import ./scripts/auto-update-nixos.nix { inherit pkgs; })
   ];
-
+  
+  # mysql
+  services.mysql.package = pkgs.mariadb;
+  services.mysql.enable = true;
   # Autoupgrade packages
   system.autoUpgrade.enable = true;
   system.autoUpgrade.allowReboot = true;
