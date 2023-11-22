@@ -91,7 +91,9 @@
     vim 
     wget
     home-manager
+    # nixos-scripts
     (import ./scripts/auto-update-nixos.nix { inherit pkgs; })
+    (import ./scripts/auto-gc.nix { inherit pkgs; })
   ];
   
   # mysql
