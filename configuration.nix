@@ -36,13 +36,17 @@
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
+  #Enable gnome desktop manager.
+  # services.xserver.displayManager.gdm.enable = true;
+  #  services.xserver.desktopManager.gnome.enable = true;
+  #services.xserver.displayManager.defaultSession = "gnome";
 
-  # Enable the X11 windowing system.
+  # Enable KDE Plasma Desktop Environment.
   services.xserver.enable = true;
-
-  # Enable the KDE Plasma Desktop Environment.
   services.xserver.displayManager.sddm.enable = true;
   services.xserver.desktopManager.plasma5.enable = true;
+  services.xserver.displayManager.defaultSession = "plasmawayland";
+  
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
@@ -114,7 +118,7 @@
 
   services.xserver.displayManager.autoLogin.enable = false; # Enable automatic login for the user.
   services.xserver.displayManager.autoLogin.user = "gambled";
-  services.xserver.displayManager.defaultSession = "plasmawayland";
+  
 
   # Waydroid
   virtualisation.waydroid.enable = true;
