@@ -36,6 +36,9 @@
     libsForQt5.kio-gdrive
     libsForQt5.ktorrent
     libsForQt5.libktorrent
+    libsForQt5.discover
+    libsForQt5.packagekit-qt
+    libportal-qt5
     kdenlive
     kate
     kup

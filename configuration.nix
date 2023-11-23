@@ -15,7 +15,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "nixos"; # Define your hostname.
+  networking.hostName = "pc-gambled"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Enable networking
@@ -152,6 +152,8 @@
   programs.kdeconnect.enable = true;
   networking.interfaces.enp6s0.wakeOnLan.enable = true;
   services.flatpak.enable = true; 
+  services.packagekit.enable = true;
+  services.fwupd.enable = true;
   hardware.openrazer.enable = true;
   hardware.openrazer.users = ["gambled"];
   systemd.services.zerotierone.enable = true;

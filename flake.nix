@@ -13,7 +13,7 @@
 
   outputs = inputs@{ self, nixpkgs, home-manager, ... }: {
     nixosConfigurations = {
-      "nixos" = nixpkgs.lib.nixosSystem {
+      "pc-gambled" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
           ./configuration.nix
