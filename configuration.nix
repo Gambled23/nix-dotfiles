@@ -95,6 +95,7 @@
     vim 
     wget
     home-manager
+    android-tools
     # nixos-scripts
     (import ./scripts/auto-pull.nix { inherit pkgs; })
     (import ./scripts/auto-push.nix { inherit pkgs; })
