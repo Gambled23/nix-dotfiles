@@ -27,6 +27,7 @@
     spotify
     vlc
     waydroid
+    scrcpy
     wl-clipboard
     inkscape-with-extensions
     gimp-with-plugins

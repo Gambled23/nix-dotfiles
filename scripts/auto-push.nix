@@ -2,6 +2,7 @@
 
 pkgs.writeShellScriptBin "auto-push" ''
   #!${pkgs.bash}/bin/bash
+  set -e
   sudo nixos-rebuild switch 
   
   sudo cp -r /etc/nixos/* /home/gambled/Documents/nix-dotfiles/
