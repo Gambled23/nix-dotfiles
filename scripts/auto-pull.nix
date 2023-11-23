@@ -5,7 +5,7 @@ pkgs.writeShellScriptBin "auto-pull" ''
  
   cd /home/gambled/Documents/nix-dotfiles/
   git pull
-  sudo cp -r * /etc/nixos/
+  cp -r * /etc/nixos/
   sudo nixos-rebuild switch
   echo "Sistema restaurado UwU" | ${pkgs.lolcat}/bin/lolcat
 ''
