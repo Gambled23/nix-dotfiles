@@ -51,6 +51,7 @@
     discord
     steam
     steam-run
+    prismlauncher
     lutris
     wineWowPackages.waylandFull
   ];
