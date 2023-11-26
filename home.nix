@@ -19,6 +19,9 @@
   home.packages = with pkgs; [ 
     zerotierone
 
+    appimage-run
+    gparted
+
     plasma-browser-integration
     firefox
     chromium
@@ -48,10 +51,12 @@
     vscode
     python3
 
+    stremio
     discord
     steam
     steam-run
     prismlauncher
+    r2modman
     lutris
     wineWowPackages.waylandFull
   ];
