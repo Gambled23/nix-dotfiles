@@ -52,7 +52,10 @@
     python3
 
     stremio
-    discord
+    (discord.override {
+    withOpenASAR = true;
+    withVencord = true;
+    })
     steam
     steam-run
     prismlauncher
