@@ -21,13 +21,17 @@
 
     appimage-run
     gparted
+    rpi-imager
 
+    syncthing
+    syncthingtray
     plasma-browser-integration
     firefox
     chromium
     polychromatic
     libreoffice
     spotify
+    spicetify-cli
     vlc
     waydroid
     scrcpy
@@ -56,6 +60,7 @@
     withOpenASAR = true;
     withVencord = true;
     })
+    bottles
     steam
     steam-run
     prismlauncher
