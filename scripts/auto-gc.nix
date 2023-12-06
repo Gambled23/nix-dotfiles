@@ -4,6 +4,9 @@ pkgs.writeShellScriptBin "auto-gc" ''
   #!${pkgs.bash}/bin/bash
 
   sudo nix-collect-garbage  --delete-old
+  nix-env --delete-generations old
+  sudo nix-collect-garbage -d
+  nix store optimise
   sudo /run/current-system/bin/switch-to-configuration boot
 
   echo "Sistema borrado" | ${pkgs.lolcat}/bin/lolcat

@@ -24,12 +24,17 @@
   networking.extraHosts =
   ''
     192.168.1.1 router
-    10.243.0.2 raspberrypi
+    192.168.1.12 home-gambled
     10.243.0.4 pc-gambled
     10.243.0.4 laptop-gambled
     159.54.130.222 nisha
 
   '';
+
+  # bluetooth
+  hardware.bluetooth.enable = true; # enables support for Bluetooth
+  hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
+  hardware.bluetooth.settings.General.Experimental = true; # enables experimental features
 
   # Set your time zone.
   time.timeZone = "America/Mexico_City";
@@ -43,7 +48,7 @@
 
   # Enable KDE Plasma Desktop Environment.
   services.xserver.enable = true;
-  services.xserver.displayManager.sddm.enable = true;
+  services.xserver.displayManager.sddm.enable = false;
   services.xserver.desktopManager.plasma5.enable = true;
   services.xserver.displayManager.defaultSession = "plasmawayland";
   
@@ -68,6 +73,8 @@
       options = "--delete-older-than 7d";
     };
   };
+  # optimise store
+  nix.settings.auto-optimise-store = true;
 
   # Enable sound with pipewire.
   sound.enable = true;
@@ -116,13 +123,22 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [ ];
   };
-
+  # This is needed so home assistant doesn't need password when using sudo to run systemctl (suspend, reboot, etc)
+  security.sudo.extraRules= [
+  {  users = [ "gambled" ];
+    commands = [
+      { command = "/nix/store/r9xlplaw6w448krwr9jri3cpmbs55f7r-system-path/bin/systemctl" ;
+        options= [ "NOPASSWD" ]; # "SETENV" # Adding the following could be a good idea
+      }
+    ];
+  }
+];
   services.xserver.displayManager.autoLogin.enable = false; # Enable automatic login for the user.
   services.xserver.displayManager.autoLogin.user = "gambled";
   
 
   # Waydroid
-  virtualisation.waydroid.enable = true;
+  # virtualisation.waydroid.enable = true;
   
   # Steam
   programs.steam = {
@@ -134,8 +150,23 @@
   hardware.opengl.driSupport = true;
   hardware.opengl.driSupport32Bit = true; # Enables support for 32bit libs that steam uses
 
+  # ssh server
+  services.openssh = {
+    enable = true;
+    openFirewall = true;
+    settings= {
+      PasswordAuthentication = true;
+      AllowUsers = [ "gambled" ];
+    };
+  };
 
-
+  # firewall
+  #networking.firewall = {
+  #  enable = true;
+  #  allowedTCPPorts = [ 80 443 22];
+  #  allowedUDPPorts = [ 80 443 22];
+  #};
+  
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
@@ -144,9 +175,6 @@
   #   enableSSHSupport = true;
   # };
 
-  # Open ports in the firewall.
-  # networking.firewall.allowedTCPPorts = [ ... ];
-  # networking.firewall.allowedUDPPorts = [ ... ];
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
 

@@ -23,6 +23,33 @@
       fsType = "vfat";
     };
 
+  fileSystems."/HDD" =
+    { device = "/dev/disk/by-uuid/E397-4225";
+      fsType = "vfat";
+    };
+
+  #fileSystems."/var/lib/waydroid/rootfs" =
+  #  { device = "/var/lib/waydroid/images/system.img";
+  #    fsType = "ext4";
+  #    options = [ "loop" ];
+  #  };
+
+  #fileSystems."/var/lib/waydroid/rootfs" =
+  #  { device = "overlay";
+  #    fsType = "overlay";
+  #  };
+
+  #fileSystems."/var/lib/waydroid/rootfs/vendor" =
+  #  { device = "/var/lib/waydroid/images/vendor.img";
+  #    fsType = "ext4";
+  #    options = [ "loop" ];
+  #  };
+
+  #fileSystems."/var/lib/waydroid/rootfs/vendor" =
+  #  { device = "overlay";
+  #    fsType = "overlay";
+  #  };
+
   swapDevices =
     [ { device = "/dev/disk/by-uuid/8cd1dfb0-e1de-4bcf-9dfa-429f3b811b2b"; }
     ];
@@ -33,6 +60,8 @@
   # with explicit per-interface declarations with `networking.interfaces.<interface>.useDHCP`.
   networking.useDHCP = lib.mkDefault true;
   # networking.interfaces.enp6s0.useDHCP = lib.mkDefault true;
+  # networking.interfaces.vethTRYZRI.useDHCP = lib.mkDefault true;
+  # networking.interfaces.waydroid0.useDHCP = lib.mkDefault true;
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;

@@ -33,11 +33,10 @@
     spotify
     spicetify-cli
     vlc
-    waydroid
     scrcpy
-    wl-clipboard
     inkscape-with-extensions
     gimp-with-plugins
+    qt6.qtwebsockets
     libsForQt5.kdenlive
     libsForQt5.kaccounts-integration
     libsForQt5.kaccounts-providers
@@ -47,13 +46,16 @@
     libsForQt5.discover
     libsForQt5.packagekit-qt
     libportal-qt5
+    obs-studio
     kdenlive
+    ffmpeg_6-full
     kate
     kup
 
     dbeaver
     vscode
     python3
+    python311Packages.pip
 
     stremio
     (discord.override {
