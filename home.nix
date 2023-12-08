@@ -21,7 +21,6 @@
 
     appimage-run
     gparted
-    rpi-imager
 
     syncthing
     syncthingtray
@@ -45,10 +44,12 @@
     libsForQt5.libktorrent
     libsForQt5.discover
     libsForQt5.packagekit-qt
+    libsForQt5.qtstyleplugin-kvantum
     libportal-qt5
     obs-studio
     kdenlive
-    ffmpeg_6-full
+    #ffmpeg_6-full
+    jellyfin-ffmpeg
     kate
     kup
 
@@ -65,9 +66,9 @@
     bottles
     steam
     steam-run
+    osu-lazer-bin
     prismlauncher
     r2modman
-    lutris
     wineWowPackages.waylandFull
   ];
   programs = {
