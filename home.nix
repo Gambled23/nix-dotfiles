@@ -37,9 +37,9 @@
     gimp-with-plugins
     qt6.qtwebsockets
     libsForQt5.kdenlive
-    libsForQt5.kaccounts-integration
-    libsForQt5.kaccounts-providers
-    libsForQt5.kio-gdrive
+    # Google drive online account
+
+
     libsForQt5.ktorrent
     libsForQt5.libktorrent
     libsForQt5.discover

@@ -8,7 +8,8 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-
+      # Select DE
+      ./core/services/xserver/kde/kde.nix
     ];
 
   # Bootloader.
@@ -45,22 +46,11 @@
   # services.xserver.displayManager.gdm.enable = true;
   #  services.xserver.desktopManager.gnome.enable = true;
   #services.xserver.displayManager.defaultSession = "gnome";
-
-  # Enable KDE Plasma Desktop Environment.
-  services.xserver.enable = true;
-  services.xserver.displayManager.sddm.enable = false;
-  services.xserver.desktopManager.plasma5.enable = true;
-  services.xserver.displayManager.defaultSession = "plasmawayland";
   
 
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
   
-  # Configure keymap in X11
-  services.xserver = {
-    layout = "us";
-    xkbVariant = "altgr-intl";
-  };
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
@@ -99,10 +89,6 @@
 
   # List packages installed in system profile. To search, run:
   environment.systemPackages = with pkgs; [
-    vim 
-    wget
-    home-manager
-    android-tools
     # nixos-scripts
     (import ./scripts/auto-pull.nix { inherit pkgs; })
     (import ./scripts/auto-push.nix { inherit pkgs; })
