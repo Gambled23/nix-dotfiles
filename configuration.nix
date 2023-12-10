@@ -8,8 +8,15 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      # mysql
+      ./core/services/mysql/mysql.nix
       # Select DE
       ./core/services/xserver/kde/kde.nix
+      # ./core/services/xserver/cinnamon/cinnamon.nix
+      # ./core/services/xserver/gnome/gnome.nix
+      # ./core/services/xserver/hyperland/hyperland.nix
+      # ./core/services/xserver/i3/i3.nix
+      # ./core/services/xserver/sway/sway.nix 
     ];
 
   # Bootloader.
@@ -95,9 +102,6 @@
     (import ./scripts/auto-gc.nix { inherit pkgs; })
   ];
   
-  # mysql
-  services.mysql.package = pkgs.mariadb;
-  services.mysql.enable = true;
   # Autoupgrade packages
   system.autoUpgrade.enable = true;
   system.autoUpgrade.allowReboot = true;
