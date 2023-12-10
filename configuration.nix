@@ -115,9 +115,10 @@
   };
   # This is needed so home assistant doesn't need password when using sudo to run systemctl (suspend, reboot, etc)
   security.sudo.extraRules= [
-  {  users = [ "gambled" ];
+  {  
+    users = [ "gambled" ];
     commands = [
-      { command = "/nix/store/r9xlplaw6w448krwr9jri3cpmbs55f7r-system-path/bin/systemctl" ;
+      { command = "ALL";
         options= [ "NOPASSWD" ]; # "SETENV" # Adding the following could be a good idea
       }
     ];
