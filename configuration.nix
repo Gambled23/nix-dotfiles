@@ -171,11 +171,10 @@
 
   # Básicamente no cambies esto
   # Leer https://nixos.org/nixos/options.html).
-  system.stateVersion = "23.05"; # De verdad, lee eso antes de cambiarlo
+  system.stateVersion = "23.11"; # De verdad, lee eso antes de cambiarlo
 
   # Servicios extras
   programs.dconf.enable = true; # bugs de wayland y gtk
-  programs.kdeconnect.enable = true;
   networking.interfaces.enp6s0.wakeOnLan.enable = true;
   services.flatpak.enable = true; 
   services.packagekit.enable = true;

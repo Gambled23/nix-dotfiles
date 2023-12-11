@@ -70,7 +70,16 @@ with lib;
     libsForQt5.signond
     libsForQt5.qoauth
     libsForQt5.kio-gdrive
+    libsForQt5.ktorrent
+    libsForQt5.libktorrent
+    libsForQt5.discover
+    libsForQt5.packagekit-qt
+    libsForQt5.qtstyleplugin-kvantum
     libportal-qt5
+    plasma-browser-integration
+    gparted
+    kate
+    kup
     vim 
     wget
     home-manager

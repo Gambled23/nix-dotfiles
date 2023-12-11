@@ -14,44 +14,17 @@
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/4d59933e-1500-45f5-a902-c5740224a7d4";
+    { device = "/dev/disk/by-uuid/09e9305b-e857-4f1d-a57d-df698669364a";
       fsType = "ext4";
     };
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/206D-9F0D";
+    { device = "/dev/disk/by-uuid/FE4A-E5D7";
       fsType = "vfat";
     };
-
-  fileSystems."/HDD" =
-    { device = "/dev/disk/by-uuid/E397-4225";
-      fsType = "vfat";
-    };
-
-  #fileSystems."/var/lib/waydroid/rootfs" =
-  #  { device = "/var/lib/waydroid/images/system.img";
-  #    fsType = "ext4";
-  #    options = [ "loop" ];
-  #  };
-
-  #fileSystems."/var/lib/waydroid/rootfs" =
-  #  { device = "overlay";
-  #    fsType = "overlay";
-  #  };
-
-  #fileSystems."/var/lib/waydroid/rootfs/vendor" =
-  #  { device = "/var/lib/waydroid/images/vendor.img";
-  #    fsType = "ext4";
-  #    options = [ "loop" ];
-  #  };
-
-  #fileSystems."/var/lib/waydroid/rootfs/vendor" =
-  #  { device = "overlay";
-  #    fsType = "overlay";
-  #  };
 
   swapDevices =
-    [ { device = "/dev/disk/by-uuid/8cd1dfb0-e1de-4bcf-9dfa-429f3b811b2b"; }
+    [ { device = "/dev/disk/by-uuid/360aa2dd-84ce-42a0-b8f4-2e59dfba5448"; }
     ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
@@ -60,8 +33,6 @@
   # with explicit per-interface declarations with `networking.interfaces.<interface>.useDHCP`.
   networking.useDHCP = lib.mkDefault true;
   # networking.interfaces.enp6s0.useDHCP = lib.mkDefault true;
-  # networking.interfaces.vethTRYZRI.useDHCP = lib.mkDefault true;
-  # networking.interfaces.waydroid0.useDHCP = lib.mkDefault true;
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;

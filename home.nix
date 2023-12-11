@@ -20,11 +20,9 @@
     zerotierone
 
     appimage-run
-    gparted
 
     syncthing
     syncthingtray
-    plasma-browser-integration
     firefox
     chromium
     polychromatic
@@ -37,21 +35,11 @@
     gimp-with-plugins
     qt6.qtwebsockets
     libsForQt5.kdenlive
-    # Google drive online account
-
-
-    libsForQt5.ktorrent
-    libsForQt5.libktorrent
-    libsForQt5.discover
-    libsForQt5.packagekit-qt
-    libsForQt5.qtstyleplugin-kvantum
     libportal-qt5
     obs-studio
     kdenlive
     #ffmpeg_6-full
     jellyfin-ffmpeg
-    kate
-    kup
 
     dbeaver
     vscode
@@ -83,6 +71,6 @@
   systemd.user.startServices = "sd-switch";
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
-  home.stateVersion = "23.05";
+  home.stateVersion = "23.11";
   programs.home-manager.enable = true;
 }
