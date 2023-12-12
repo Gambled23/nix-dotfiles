@@ -31,18 +31,10 @@ with lib;
     # Desktop Manager login screen settings
     #---------------------------------------------------------------------
     displayManager = {
-      sddm = {
-        enable = true;
-        autoNumlock = true;
-
-        settings = {
-          Theme = {
-            CursorTheme = "layan-border_cursors";
-
-          };
-        };
-        # theme = "breeze";
-      };
+      #sddm = {
+      #  enable = false;
+      #  autoNumlock = true;
+      #};
       defaultSession = "plasmawayland";
     };
 

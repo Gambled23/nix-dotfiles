@@ -42,6 +42,7 @@
     jellyfin-ffmpeg
 
     dbeaver
+    android-studio
     vscode
     python3
     python311Packages.pip
@@ -67,6 +68,8 @@
     };
   };
   
+
+
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
 

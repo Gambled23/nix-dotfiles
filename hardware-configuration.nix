@@ -23,6 +23,17 @@
       fsType = "vfat";
     };
 
+  fileSystems."/run/media/gambled/Games" =
+    { device = "/dev/disk/by-uuid/2cc6da97-c613-489f-b839-ec045bebc133";
+      fsType = "ext4";
+    };
+
+  fileSystems."/run/media/gambled/E397-4225" =
+    { device = "/dev/disk/by-uuid/E397-4225";
+      fsType = "vfat";
+    };
+
+
   swapDevices =
     [ { device = "/dev/disk/by-uuid/360aa2dd-84ce-42a0-b8f4-2e59dfba5448"; }
     ];

@@ -10,6 +10,11 @@
       ./hardware-configuration.nix
       # mysql
       ./core/services/mysql/mysql.nix
+      # openssh
+      ./core/services/openssh/default.nix
+      # zerotier
+      ./core/services/zerotier/zerotier.nix
+      
       # Select DE
       ./core/services/xserver/kde/kde.nix
       # ./core/services/xserver/cinnamon/cinnamon.nix
@@ -20,8 +25,27 @@
     ];
 
   # Bootloader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.systemd-boot.enable = false;
+
+  # boot.loader.grub.forceInstall = false; # RISKY!
+
+  boot.loader.grub.enable                = true;
+  boot.loader.grub.copyKernels           = true;
+  boot.loader.grub.efiInstallAsRemovable = true;
+  boot.loader.grub.efiSupport            = true;
+  # boot.loader.grub.fsIdentifier          = "label";
+  # boot.loader.grub.splashImage           = ./backgrounds/grub-nixos-3.png;
+  boot.loader.grub.splashMode            = "stretch";
+
+  boot.loader.grub.devices               = [ "nodev" ];
+  boot.loader.grub.extraEntries = ''
+    menuentry "Reboot" {
+      reboot
+    }
+    menuentry "Poweroff" {
+      halt
+    }
+  '';
 
   networking.hostName = "pc-gambled"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -113,6 +137,8 @@
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [ ];
   };
+  # symlinks for store packages
+  environment.etc."spotify".source = "${pkgs.spotify}";
   # This is needed so home assistant doesn't need password when using sudo to run systemctl (suspend, reboot, etc)
   security.sudo.extraRules= [
   {  
@@ -141,16 +167,6 @@
   hardware.opengl.driSupport = true;
   hardware.opengl.driSupport32Bit = true; # Enables support for 32bit libs that steam uses
 
-  # ssh server
-  services.openssh = {
-    enable = true;
-    openFirewall = true;
-    settings= {
-      PasswordAuthentication = true;
-      AllowUsers = [ "gambled" ];
-    };
-  };
-
   # firewall
   #networking.firewall = {
   #  enable = true;
@@ -158,13 +174,6 @@
   #  allowedUDPPorts = [ 80 443 22];
   #};
   
-  # Some programs need SUID wrappers, can be configured further or are
-  # started in user sessions.
-  # programs.mtr.enable = true;
-  # programs.gnupg.agent = {
-  #   enable = true;
-  #   enableSSHSupport = true;
-  # };
 
   # Or disable the firewall altogether.
   # networking.firewall.enable = false;
