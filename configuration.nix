@@ -25,27 +25,27 @@
     ];
 
   # Bootloader.
-  boot.loader.systemd-boot.enable = false;
+  boot.loader.systemd-boot.enable = true;
 
   # boot.loader.grub.forceInstall = false; # RISKY!
 
-  boot.loader.grub.enable                = true;
-  boot.loader.grub.copyKernels           = true;
-  boot.loader.grub.efiInstallAsRemovable = true;
-  boot.loader.grub.efiSupport            = true;
+  #boot.loader.grub.enable                = true;
+  #boot.loader.grub.copyKernels           = true;
+  #boot.loader.grub.efiInstallAsRemovable = true;
+  #boot.loader.grub.efiSupport            = true;
   # boot.loader.grub.fsIdentifier          = "label";
   # boot.loader.grub.splashImage           = ./backgrounds/grub-nixos-3.png;
-  boot.loader.grub.splashMode            = "stretch";
+  #boot.loader.grub.splashMode            = "stretch";
 
-  boot.loader.grub.devices               = [ "nodev" ];
-  boot.loader.grub.extraEntries = ''
-    menuentry "Reboot" {
-      reboot
-    }
-    menuentry "Poweroff" {
-      halt
-    }
-  '';
+  #boot.loader.grub.devices               = [ "nodev" ];
+  #boot.loader.grub.extraEntries = ''
+  #  menuentry "Reboot" {
+  #    reboot
+  #  }
+  #  menuentry "Poweroff" {
+  #    halt
+  #  }
+  #'';
 
   networking.hostName = "pc-gambled"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.

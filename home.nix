@@ -21,14 +21,11 @@
 
     appimage-run
 
-    syncthing
-    syncthingtray
     firefox
     chromium
     polychromatic
     libreoffice
     spotify
-    spicetify-cli
     vlc
     scrcpy
     inkscape-with-extensions
