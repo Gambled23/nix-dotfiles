@@ -17,6 +17,7 @@
   };
 
   home.packages = with pkgs; [ 
+    android-tools
     zerotierone
 
     appimage-run
@@ -56,6 +57,9 @@
     prismlauncher
     r2modman
     wineWowPackages.waylandFull
+
+    whatsapp-for-linux
+    telegram-desktop
   ];
   programs = {
     git = {

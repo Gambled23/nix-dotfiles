@@ -134,11 +134,13 @@
   users.users.gambled = {
     isNormalUser = true;
     description = "César Girón";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "adbusers" ];
     packages = with pkgs; [ ];
   };
   # symlinks for store packages
   environment.etc."spotify".source = "${pkgs.spotify}";
+  # adb
+  programs.adb.enable = true;
   # This is needed so home assistant doesn't need password when using sudo to run systemctl (suspend, reboot, etc)
   security.sudo.extraRules= [
   {  
