@@ -17,49 +17,35 @@
   };
 
   home.packages = with pkgs; [ 
-    android-tools
+    # networking
     zerotierone
 
-    appimage-run
-
+    # apps
     firefox
     chromium
-    polychromatic
     libreoffice
+    gimp-with-plugins
+
+    # media
     spotify
     vlc
-    scrcpy
-    inkscape-with-extensions
-    gimp-with-plugins
-    qt6.qtwebsockets
-    libsForQt5.kdenlive
-    libportal-qt5
-    obs-studio
-    kdenlive
+    #qt6.qtwebsockets
+    #libportal-qt5
     #ffmpeg_6-full
-    jellyfin-ffmpeg
+    #jellyfin-ffmpeg
 
+    # dev
     dbeaver
-    android-studio
     vscode
-    python3
-    python311Packages.pip
+    php
+    nodejs_21
 
-    stremio
+    # chat 
     (discord.override {
     withOpenASAR = true;
     withVencord = true;
     })
-    bottles
-    steam
-    steam-run
-    osu-lazer-bin
-    prismlauncher
-    r2modman
-    wineWowPackages.waylandFull
-
     whatsapp-for-linux
-    telegram-desktop
   ];
   programs = {
     git = {

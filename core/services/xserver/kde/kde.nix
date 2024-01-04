@@ -31,10 +31,10 @@ with lib;
     # Desktop Manager login screen settings
     #---------------------------------------------------------------------
     displayManager = {
-      #sddm = {
-      #  enable = false;
-      #  autoNumlock = true;
-      #};
+      sddm = {
+        enable = false;
+        autoNumlock = true;
+      };
       defaultSession = "plasmawayland";
     };
 

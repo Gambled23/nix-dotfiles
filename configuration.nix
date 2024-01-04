@@ -27,60 +27,25 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
 
-  # boot.loader.grub.forceInstall = false; # RISKY!
-
-  #boot.loader.grub.enable                = true;
-  #boot.loader.grub.copyKernels           = true;
-  #boot.loader.grub.efiInstallAsRemovable = true;
-  #boot.loader.grub.efiSupport            = true;
-  # boot.loader.grub.fsIdentifier          = "label";
-  # boot.loader.grub.splashImage           = ./backgrounds/grub-nixos-3.png;
-  #boot.loader.grub.splashMode            = "stretch";
-
-  #boot.loader.grub.devices               = [ "nodev" ];
-  #boot.loader.grub.extraEntries = ''
-  #  menuentry "Reboot" {
-  #    reboot
-  #  }
-  #  menuentry "Poweroff" {
-  #    halt
-  #  }
-  #'';
-
-  networking.hostName = "pc-gambled"; # Define your hostname.
+  networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Enable networking
   networking.networkmanager.enable = true;
 
   networking.extraHosts =
-  ''
-    192.168.1.1 router
-    192.168.1.12 home-gambled
-    10.243.0.4 pc-gambled
-    10.243.0.4 laptop-gambled
-    159.54.130.222 nisha
-
-  '';
-
-  # bluetooth
-  hardware.bluetooth.enable = true; # enables support for Bluetooth
-  hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
-  hardware.bluetooth.settings.General.Experimental = true; # enables experimental features
+  #''
+  #  192.168.1.1 router
+  #'';
 
   # Set your time zone.
   time.timeZone = "America/Mexico_City";
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
-  #Enable gnome desktop manager.
-  # services.xserver.displayManager.gdm.enable = true;
-  #  services.xserver.desktopManager.gnome.enable = true;
-  #services.xserver.displayManager.defaultSession = "gnome";
   
-
   # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
+  services.xserver.libinput.enable = true;
   
 
   # Enable CUPS to print documents.
@@ -134,40 +99,12 @@
   users.users.gambled = {
     isNormalUser = true;
     description = "César Girón";
-    extraGroups = [ "networkmanager" "wheel" "adbusers" ];
+    extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [ ];
   };
-  # symlinks for store packages
-  environment.etc."spotify".source = "${pkgs.spotify}";
-  # adb
-  programs.adb.enable = true;
-  # This is needed so home assistant doesn't need password when using sudo to run systemctl (suspend, reboot, etc)
-  security.sudo.extraRules= [
-  {  
-    users = [ "gambled" ];
-    commands = [
-      { command = "ALL";
-        options= [ "NOPASSWD" ]; # "SETENV" # Adding the following could be a good idea
-      }
-    ];
-  }
-];
+
   services.xserver.displayManager.autoLogin.enable = false; # Enable automatic login for the user.
   services.xserver.displayManager.autoLogin.user = "gambled";
-  
-
-  # Waydroid
-  # virtualisation.waydroid.enable = true;
-  
-  # Steam
-  programs.steam = {
-  enable = true;
-  remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
-  dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
-  package = with pkgs; steam.override { extraPkgs = pkgs: [ attr ]; };
-  };
-  hardware.opengl.driSupport = true;
-  hardware.opengl.driSupport32Bit = true; # Enables support for 32bit libs that steam uses
 
   # firewall
   #networking.firewall = {
@@ -190,21 +127,7 @@
   services.flatpak.enable = true; 
   services.packagekit.enable = true;
   services.fwupd.enable = true;
-  hardware.openrazer.enable = true;
-  hardware.openrazer.users = ["gambled"];
   systemd.services.zerotierone.enable = true;
-
-  #Wake on lan
-  systemd.services.wakeonlan = {
-    description = "Reenable wake on lan every boot";
-    after = [ "network.target" ];
-    serviceConfig = {
-      Type = "simple";
-      RemainAfterExit = "true";
-      ExecStart = "${pkgs.ethtool}/sbin/ethtool -s enp6s0 wol g";
-    };
-    wantedBy = [ "default.target" ];
-  };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
