@@ -41,6 +41,8 @@
     nodejs_21
     lazygit
 
+    poppler_utils
+
     # chat 
     (discord.override {
     withOpenASAR = true;
