@@ -39,6 +39,7 @@
     vscode
     php
     nodejs_21
+    lazygit
 
     # chat 
     (discord.override {
