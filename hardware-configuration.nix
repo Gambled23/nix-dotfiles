@@ -33,6 +33,10 @@
       fsType = "vfat";
     };
 
+#  fileSystems."/run/media/gambled/windows" =
+#    { device = "/dev/disk/by-uuid/8AC2BD6EC2BD5F5F";
+#      fsType = "vfat";
+#    };
 
   swapDevices =
     [ { device = "/dev/disk/by-uuid/360aa2dd-84ce-42a0-b8f4-2e59dfba5448"; }

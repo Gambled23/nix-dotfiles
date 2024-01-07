@@ -5,7 +5,7 @@ in {
   system.stateVersion = "23.11";
   
   services.avahi.enable = true;
-  services.avahi.interfaces = privateZeroTierInterfaces; # ONLY BROADCAST ON VPN
+  services.avahi.allowInterfaces = privateZeroTierInterfaces; # ONLY BROADCAST ON VPN
   services.avahi.ipv6 = true;
   services.avahi.publish.enable = true;
   services.avahi.publish.userServices = true;
@@ -15,5 +15,8 @@ in {
   services.avahi.publish.workstation = true; # ADDED TO DESKTOP MACHINES
 
   services.zerotierone.enable = true;
-  services.zerotierone.joinNetworks = [ "159924d6307a98fe" ]; # ZT NETWORK ID
+  services.zerotierone.joinNetworks = [ 
+    "159924d6307a98fe" #Angry patatas
+    "abfd31bd4708f79c" #Rafael Vaca
+    ]; # ZT NETWORK ID
 }

@@ -45,6 +45,7 @@
     python3
     python311Packages.pip
 
+
     stremio
     (discord.override {
     withOpenASAR = true;
@@ -60,12 +61,22 @@
 
     whatsapp-for-linux
     telegram-desktop
+
+    #kindle
+    hakuneko
+    kcc
+    calibre
+    mangal
   ];
   programs = {
     git = {
     enable = true;
     userName = "Gambled23";
     userEmail = "ipog71@gmail.com";
+    };
+    direnv = {
+      enable = true;
+      nix-direnv.enable = true;
     };
   };
   
