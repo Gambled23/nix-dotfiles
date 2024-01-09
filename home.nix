@@ -21,6 +21,17 @@
     tmux
     lazygit
 
+    # media
+    spotify
+    vlc
+    scrcpy
+    
+    # messaging
+    (discord.override {
+    withOpenASAR = true;
+    withVencord = true;
+    })
+
     # networking
     zerotierone
 
@@ -32,17 +43,6 @@
     # web browsers
     firefox
     chromium
-
-    # media
-    spotify
-    vlc
-    scrcpy
-    
-    # messaging
-    (discord.override {
-    withOpenASAR = true;
-    withVencord = true;
-    })
   ];
 
   programs = {
