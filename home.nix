@@ -1,5 +1,3 @@
-# This is your home-manager configuration file
-# Use this to configure your home environment (it replaces ~/.config/nixpkgs/home.nix)
 {
   inputs,
   lib,
@@ -17,57 +15,36 @@
   };
 
   home.packages = with pkgs; [ 
-    android-tools
+    # dev
+    dbeaver
+    vscode
+    tmux
+    lazygit
+
+    # networking
     zerotierone
 
+    # utils
+    android-tools
     appimage-run
+    libreoffice
 
+    # web browsers
     firefox
     chromium
-    polychromatic
-    libreoffice
+
+    # media
     spotify
     vlc
     scrcpy
-    inkscape-with-extensions
-    gimp-with-plugins
-    qt6.qtwebsockets
-    libsForQt5.kdenlive
-    libportal-qt5
-    obs-studio
-    kdenlive
-    #ffmpeg_6-full
-    jellyfin-ffmpeg
-
-    dbeaver
-    android-studio
-    vscode
-    python3
-    python311Packages.pip
-
-
-    stremio
+    
+    # messaging
     (discord.override {
     withOpenASAR = true;
     withVencord = true;
     })
-    bottles
-    steam
-    steam-run
-    osu-lazer-bin
-    prismlauncher
-    r2modman
-    wineWowPackages.waylandFull
-
-    whatsapp-for-linux
-    telegram-desktop
-
-    #kindle
-    hakuneko
-    kcc
-    calibre
-    mangal
   ];
+
   programs = {
     git = {
     enable = true;
@@ -79,8 +56,6 @@
       nix-direnv.enable = true;
     };
   };
-  
-
 
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";

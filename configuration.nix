@@ -2,9 +2,11 @@
 # your system.  Help is available in the configuration.nix(5) man page
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 
-{ config, pkgs, inputs, outputs, ... }:
+{ config, pkgs, lib, inputs, outputs, ... }:
 
 {
+  networking.hostName = "pc-gambled"; # Define your hostname
+
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
@@ -14,7 +16,7 @@
       ./core/services/openssh/default.nix
       # zerotier
       ./core/services/zerotier/zerotier.nix
-      
+ 
       # Select DE
       ./core/services/xserver/kde/kde.nix
       # ./core/services/xserver/cinnamon/cinnamon.nix
@@ -25,8 +27,8 @@
     ];
 
   # Bootloader.
-  #boot.loader.systemd-boot.enable = true;
-  boot.loader = {
+  #boot.loader.systemd-boot.enable = true; #systemd
+  boot.loader = { #grub2
     grub = {
       enable = true;
       device = "nodev";
@@ -39,7 +41,6 @@
     };
   };
 
-  networking.hostName = "pc-gambled"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Enable networking
@@ -65,14 +66,9 @@
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
-  #Enable gnome desktop manager.
-  # services.xserver.displayManager.gdm.enable = true;
-  #  services.xserver.desktopManager.gnome.enable = true;
-  #services.xserver.displayManager.defaultSession = "gnome";
-  
 
   # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
+  services.xserver.libinput.enable = true;
   
 
   # Enable CUPS to print documents.
@@ -116,7 +112,6 @@
     (import ./scripts/auto-pull.nix { inherit pkgs; })
     (import ./scripts/auto-push.nix { inherit pkgs; })
     (import ./scripts/auto-gc.nix { inherit pkgs; })
-    lazygit
   ];
   
   # Autoupgrade packages
@@ -130,21 +125,18 @@
     extraGroups = [ "networkmanager" "wheel" "adbusers" ];
     packages = with pkgs; [ ];
   };
-  # symlinks for store packages
-  environment.etc."spotify".source = "${pkgs.spotify}";
+
   # adb
   programs.adb.enable = true;
   # This is needed so home assistant doesn't need password when using sudo to run systemctl (suspend, reboot, etc)
-  security.sudo.extraRules= [
-  {  
+  security.sudo.extraRules= [{  
     users = [ "gambled" ];
-    commands = [
-      { command = "ALL";
+    commands = [{ command = "ALL";
         options= [ "NOPASSWD" ]; # "SETENV" # Adding the following could be a good idea
-      }
-    ];
-  }
-];
+        }
+      ];
+    }
+  ];
   services.xserver.displayManager.autoLogin.enable = false; # Enable automatic login for the user.
   services.xserver.displayManager.autoLogin.user = "gambled";
   
@@ -152,13 +144,7 @@
   # Waydroid
   # virtualisation.waydroid.enable = true;
   
-  # Steam
-  programs.steam = {
-  enable = true;
-  remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
-  dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
-  package = with pkgs; steam.override { extraPkgs = pkgs: [ attr ]; };
-  };
+
   hardware.opengl.driSupport = true;
   hardware.opengl.driSupport32Bit = true; # Enables support for 32bit libs that steam uses
 
@@ -178,26 +164,10 @@
   system.stateVersion = "23.11"; # De verdad, lee eso antes de cambiarlo
 
   # Servicios extras
-  programs.dconf.enable = true; # bugs de wayland y gtk
-  networking.interfaces.enp6s0.wakeOnLan.enable = true;
   services.flatpak.enable = true; 
   services.packagekit.enable = true;
   services.fwupd.enable = true;
-  hardware.openrazer.enable = true;
-  hardware.openrazer.users = ["gambled"];
   systemd.services.zerotierone.enable = true;
-
-  #Wake on lan
-  systemd.services.wakeonlan = {
-    description = "Reenable wake on lan every boot";
-    after = [ "network.target" ];
-    serviceConfig = {
-      Type = "simple";
-      RemainAfterExit = "true";
-      ExecStart = "${pkgs.ethtool}/sbin/ethtool -s enp6s0 wol g";
-    };
-    wantedBy = [ "default.target" ];
-  };
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
