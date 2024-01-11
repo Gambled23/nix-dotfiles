@@ -36,6 +36,7 @@
     zerotierone
 
     # utils
+    jellyfin-ffmpeg
     android-tools
     appimage-run
     libreoffice
