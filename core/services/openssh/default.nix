@@ -9,6 +9,7 @@ with lib;
     settings= {
       PasswordAuthentication = true;
       AllowUsers = [ "gambled" ];
+      X11Forwarding = true;
     };
   };
 }

@@ -46,7 +46,12 @@
   networking.extraHosts =
   ''
     192.168.1.1 router
-    192.168.1.12 home-gambled
+
+    10.243.0.1 home-gambled
+    10.243.0.2 pc-gambled
+    10.243.0.3 laptop-gambled
+    10.243.0.69 dev-gambled
+    
     159.54.130.222 nisha
 
   '';
