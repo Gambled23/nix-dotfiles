@@ -7,7 +7,7 @@
 }: {
 
   imports = [
-    ../home.nix
+    ../../home.nix
   ];
   
   home.packages = with pkgs; [ 
@@ -21,6 +21,9 @@
     android-studio
     python3
     python311Packages.pip
+    php83Packages.composer
+    php83
+    nodejs_21
 
     # games
     bottles

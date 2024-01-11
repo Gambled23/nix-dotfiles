@@ -17,11 +17,12 @@
         system = "x86_64-linux";
         modules = [
           ./configuration.nix
+          ./devices/dev/configuration.nix
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.gambled = import ./home/dev.nix;
+            home-manager.users.gambled = import ./devices/dev/home.nix;
           }
         ];
       };
@@ -29,11 +30,12 @@
         system = "x86_64-linux";
         modules = [
           ./configuration.nix
+          ./devices/pc/configuration.nix
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.gambled = import ./home/pc.nix;
+            home-manager.users.gambled = import ./devices/pc/home.nix;
           }
         ];
       };
@@ -41,11 +43,12 @@
         system = "x86_64-linux";
         modules = [
           ./configuration.nix
+          ./devices/laptop/configuration.nix
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.gambled = import ./home/laptop.nix;
+            home-manager.users.gambled = import ./devices/laptop/home.nix;
           }
         ];
       };
