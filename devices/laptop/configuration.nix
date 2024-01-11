@@ -1,6 +1,8 @@
 { config, pkgs, lib, inputs, outputs, ... }:
 
 {
+  networking.hostName = "laptop-gambled";
+
   imports =
     [ 
       ./hardware-configuration.nix

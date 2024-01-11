@@ -5,8 +5,6 @@
 { config, pkgs, lib, inputs, outputs, ... }:
 
 {
-  networking.hostName = "pc-gambled"; # Define your hostname
-
   imports =
     [ 
       # mysql
@@ -49,8 +47,6 @@
   ''
     192.168.1.1 router
     192.168.1.12 home-gambled
-    10.243.0.4 pc-gambled
-    10.243.0.4 laptop-gambled
     159.54.130.222 nisha
 
   '';
@@ -104,8 +100,6 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
 
-
-  # List packages installed in system profile. To search, run:
   environment.systemPackages = with pkgs; [
     # nixos-scripts
     (import ./scripts/auto-pull.nix { inherit pkgs; })
@@ -139,11 +133,6 @@
   ];
   services.xserver.displayManager.autoLogin.enable = false; # Enable automatic login for the user.
   services.xserver.displayManager.autoLogin.user = "gambled";
-  
-
-  # Waydroid
-  # virtualisation.waydroid.enable = true;
-  
 
   hardware.opengl.driSupport = true;
   hardware.opengl.driSupport32Bit = true; # Enables support for 32bit libs that steam uses
@@ -168,9 +157,6 @@
   services.packagekit.enable = true;
   services.fwupd.enable = true;
   systemd.services.zerotierone.enable = true;
-  # open razer
-  hardware.openrazer.enable = true;
-  hardware.openrazer.users = ["gambled"];
 
   programs.dconf.enable = true; # bugs de wayland y gtk
   

@@ -1,6 +1,7 @@
 { config, pkgs, lib, inputs, outputs, ... }:
 
 {
+  networking.hostName = "pc-gambled";
   imports =
     [ 
       ./hardware-configuration.nix
@@ -26,4 +27,11 @@
     dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
     package = with pkgs; steam.override { extraPkgs = pkgs: [ attr ]; };
   };
+
+  # open razer
+  hardware.openrazer.enable = true;
+  hardware.openrazer.users = ["gambled"];
+
+  # Waydroid
+  # virtualisation.waydroid.enable = true;
 }
