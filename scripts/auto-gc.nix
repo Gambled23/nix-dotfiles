@@ -7,7 +7,6 @@ pkgs.writeShellScriptBin "auto-gc" ''
   nix-env --delete-generations old
   sudo nix-collect-garbage -d
   nix store optimise
-  sudo /run/current-system/bin/switch-to-configuration boot
 
   echo "Sistema borrado" | ${pkgs.lolcat}/bin/lolcat
 

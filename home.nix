@@ -4,11 +4,11 @@
   config,
   pkgs,
   ...
-}: {
-  # You can import other home-manager modules here
+}: 
+{
   imports = [
   ];
-  
+
   home = {
     username = "gambled";
     homeDirectory = "/home/gambled";
@@ -20,6 +20,10 @@
     vscode
     tmux
     lazygit
+
+    # neovim
+    python311Packages.pynvim
+    xclip # allows using the clipboard inside a terminal 
 
     # media
     spotify
@@ -55,6 +59,25 @@
     direnv = {
       enable = true;
       nix-direnv.enable = true;
+    };
+    neovim = {
+      enable = true;
+      defaultEditor = true;
+      viAlias = true;
+      vimAlias = true;
+      vimdiffAlias = true;
+
+      extraConfig = ''
+        let g:python3_host_prog = "${pkgs.python3}/bin/python";
+      '';
+
+      plugins = with pkgs.vimPlugins; [
+        nvim-lspconfig
+        nvim-treesitter.withAllGrammars
+        plenary-nvim
+        gruvbox-material
+        mini-nvim
+      ];
     };
   };
   # Nicely reload system units when changing configs

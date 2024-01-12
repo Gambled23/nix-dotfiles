@@ -22,7 +22,11 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.gambled = import ./devices/dev/home.nix;
+            home-manager.users.gambled.imports = [
+              ./devices/dev/home.nix
+              inputs.plasma-manager.homeManagerModules.plasma-manager
+              ./kdeplasma.nix
+            ];
           }
         ];
       };
@@ -35,7 +39,11 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.gambled = import ./devices/pc/home.nix;
+            home-manager.users.gambled.imports = [
+              ./devices/pc/home.nix
+              inputs.plasma-manager.homeManagerModules.plasma-manager
+              ./kdeplasma.nix
+            ];
           }
         ];
       };
@@ -48,10 +56,19 @@
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
-            home-manager.users.gambled = import ./devices/laptop/home.nix;
+            home-manager.users.gambled.imports = [
+              ./devices/laptop/home.nix
+              inputs.plasma-manager.homeManagerModules.plasma-manager
+              ./kdeplasma.nix
+            ];
           }
         ];
       };
     };
+    home-manager.users.gambled.imports = [
+      inputs.plasma-manager.homeManagerModules.plasma-manager
+      ./kdeplasma.nix
+      { home.stateVersion = "22.11"; }
+    ];
   };
 }
