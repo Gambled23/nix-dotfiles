@@ -87,6 +87,7 @@
     (import ./scripts/auto-push.nix { inherit pkgs; })
     (import ./scripts/auto-gc.nix { inherit pkgs; })
     (import ./scripts/ssh-github.nix { inherit pkgs; })
+    (import ./scripts/instalarProyectoLaravel.nix { inherit pkgs; })
   ];
   
   # Autoupgrade packages
