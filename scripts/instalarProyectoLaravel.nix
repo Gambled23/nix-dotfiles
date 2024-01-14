@@ -16,6 +16,7 @@ pkgs.writeShellScriptBin "instalarProyectoLaravel" ''
 
   cp .env.example .env
   php artisan key:generate
+  code .
 
   echo "Proyecto instalado, recuerde restaurar manualmente la BD" | ${pkgs.lolcat}/bin/lolcat
 ''
