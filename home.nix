@@ -44,6 +44,7 @@
     android-tools
     appimage-run
     libreoffice
+    xwaylandvideobridge
 
     # web browsers
     firefox

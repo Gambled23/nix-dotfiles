@@ -26,7 +26,9 @@
       enable = true;
       device = "nodev";
       efiSupport = true;
-      useOSProber = true;
+      #useOSProber = true;
+      default = "saved";
+      #timeoutStyle = "hidden";
     };
     efi = {
       canTouchEfiVariables = true;
@@ -83,11 +85,14 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   environment.systemPackages = with pkgs; [
+    grub2
     (import ./scripts/auto-pull.nix { inherit pkgs; })
     (import ./scripts/auto-push.nix { inherit pkgs; })
     (import ./scripts/auto-gc.nix { inherit pkgs; })
     (import ./scripts/ssh-github.nix { inherit pkgs; })
     (import ./scripts/instalarProyectoLaravel.nix { inherit pkgs; })
+    (import ./scripts/rebootToWindows.nix { inherit pkgs; })
+    (import ./scripts/rebuild.nix { inherit pkgs; })
   ];
   
   # Autoupgrade packages

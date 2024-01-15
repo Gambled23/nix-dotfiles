@@ -28,12 +28,13 @@
       fsType = "ext4";
     };
 
-  fileSystems."/run/media/gambled/E397-4225" =
-    { device = "/dev/disk/by-uuid/E397-4225";
-      fsType = "vfat";
-    };
+  # HDD
+  #fileSystems."/run/media/gambled/E397-4225" =
+  #  { device = "/dev/disk/by-uuid/E397-4225";
+  #    fsType = "vfat";
+  #  };
 
-#  fileSystems."/run/media/gambled/windows" =
+#  fileSystems."/run/media/gambled/8AC2BD6EC2BD5F5F" =
 #    { device = "/dev/disk/by-uuid/8AC2BD6EC2BD5F5F";
 #      fsType = "vfat";
 #    };
