@@ -49,6 +49,10 @@
     # web browsers
     firefox
     chromium
+
+    # theming
+    lsd # ls replacement
+    bat # cat replacement
   ];
 
   programs = {

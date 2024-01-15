@@ -17,6 +17,7 @@
       # ./core/services/xserver/hyperland/hyperland.nix
       # ./core/services/xserver/i3/i3.nix
       # ./core/services/xserver/sway/sway.nix 
+      # ./core/services/xserver/awesome/awesomewm.nix
     ];
   
   # Bootloader.
@@ -26,9 +27,9 @@
       enable = true;
       device = "nodev";
       efiSupport = true;
-      #useOSProber = true;
+      useOSProber = true;
       default = "saved";
-      #timeoutStyle = "hidden";
+      timeoutStyle = "hidden";
     };
     efi = {
       canTouchEfiVariables = true;
@@ -135,4 +136,10 @@
   programs.dconf.enable = true; # Wayland-gtk bugs
   
   nixpkgs.config.allowUnfree = true; # Allow unfree packages
+
+  programs.bash.shellAliases = {
+    cat = "bat";
+    ll = "lsd -l";
+    ls = "lsd";
+};
 }
