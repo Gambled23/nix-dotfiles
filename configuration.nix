@@ -3,6 +3,9 @@
 {
   imports =
     [ 
+      # shell aliases
+      ./shellAliases.nix
+
       # mysql
       ./core/services/mysql/mysql.nix
       # openssh
@@ -48,6 +51,8 @@
     10.243.0.2 pc-gambled
     10.243.0.3 laptop-gambled
     10.243.0.4 android-gambled
+    10.243.0.5 windows-gambled
+    10.243.0.6 VR
     10.243.0.69 dev-gambled
     
     159.54.130.222 nisha
@@ -136,10 +141,4 @@
   programs.dconf.enable = true; # Wayland-gtk bugs
   
   nixpkgs.config.allowUnfree = true; # Allow unfree packages
-
-  programs.bash.shellAliases = {
-    cat = "bat";
-    ll = "lsd -l";
-    ls = "lsd";
-};
 }

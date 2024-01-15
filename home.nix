@@ -53,6 +53,7 @@
     # theming
     lsd # ls replacement
     bat # cat replacement
+    glances # htop replacement
   ];
 
   programs = {

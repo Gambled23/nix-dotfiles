@@ -8,7 +8,7 @@
   
     displayManager = {
         sddm.enable = true;
-        defaultSession = "none+awesome";
+        #defaultSession = "none+awesome";
     };
 
     windowManager.awesome = {
@@ -20,5 +20,7 @@
 
     };
   };
-  services.picom.enable = true; #compositor
+  services = {
+    picom = import ../../compositors/picom.nix { };
+  };
 }
