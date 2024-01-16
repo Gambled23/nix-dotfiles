@@ -7,7 +7,6 @@
 }: 
 {
   imports = [
-    core/programs/alacritty.nix
     core/programs/kitty.nix
   ];
 
@@ -105,7 +104,7 @@
         mkdir = "mkdir -vp";
         mv = "mv -iv";
         rm = "rm -riv";
-        rebuild = "sudo nixos-rebuild switch";
+        rebuild = "nixos-rebuild switch";
       };
       oh-my-zsh = {
         enable = true;
