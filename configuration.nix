@@ -3,9 +3,6 @@
 {
   imports =
     [ 
-      # shell aliases
-      ./shellAliases.nix
-
       # mysql
       ./core/services/mysql/mysql.nix
       # openssh
@@ -40,6 +37,9 @@
     };
   };
 
+  # set shell
+  users.defaultUserShell = pkgs.zsh;
+  programs.zsh.enable = true;
   # Enable networking
   networking.networkmanager.enable = true;
 
@@ -98,7 +98,6 @@
     (import ./scripts/ssh-github.nix { inherit pkgs; })
     (import ./scripts/instalarProyectoLaravel.nix { inherit pkgs; })
     (import ./scripts/rebootToWindows.nix { inherit pkgs; })
-    (import ./scripts/rebuild.nix { inherit pkgs; })
   ];
   
   # Autoupgrade packages

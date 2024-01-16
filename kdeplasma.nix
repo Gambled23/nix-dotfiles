@@ -187,9 +187,6 @@
       "mediacontrol"."previousmedia" = "Media Previous";
       "mediacontrol"."stopmedia" = "Media Stop";
       "org.kde.dolphin.desktop"."_launch" = "Meta+E";
-      "org.kde.konsole.desktop"."NewTab" = [ ];
-      "org.kde.konsole.desktop"."NewWindow" = [ ];
-      "org.kde.konsole.desktop"."_launch" = ["Ctrl+Alt+T" "F4"];
       "org.kde.krunner.desktop"."RunClipboard" = "Alt+Shift+F2";
       "org.kde.krunner.desktop"."_launch" = ["Alt+Space" "Alt+F2" "Search"];
       "org.kde.plasma.emojier.desktop"."_launch" = ["Meta+." "Meta+Ctrl+Alt+Shift+Space"];
@@ -298,7 +295,6 @@
       "kglobalshortcutsrc"."kwin"."_k_friendly_name" = "KWin";
       "kglobalshortcutsrc"."mediacontrol"."_k_friendly_name" = "Media Controller";
       "kglobalshortcutsrc"."org.kde.dolphin.desktop"."_k_friendly_name" = "Dolphin";
-      "kglobalshortcutsrc"."org.kde.konsole.desktop"."_k_friendly_name" = "Konsole";
       "kglobalshortcutsrc"."org.kde.krunner.desktop"."_k_friendly_name" = "KRunner";
       "kglobalshortcutsrc"."org.kde.plasma.emojier.desktop"."_k_friendly_name" = "Emoji Selector";
       "kglobalshortcutsrc"."org.kde.spectacle.desktop"."_k_friendly_name" = "Spectacle";
@@ -376,12 +372,9 @@
       "khotkeysrc"."Data_2_2Triggers0"."Key" = "Ctrl+Alt+H";
       "khotkeysrc"."Data_2_2Triggers0"."Type" = "SHORTCUT";
       "khotkeysrc"."Data_2_2Triggers0"."Uuid" = "{7525e197-7e27-4218-86dc-5cb926747342}";
-      "khotkeysrc"."Data_2_3"."Comment" = "This action runs Konsole, after pressing Ctrl+Alt+T.";
       "khotkeysrc"."Data_2_3"."Enabled" = false;
-      "khotkeysrc"."Data_2_3"."Name" = "Run Konsole";
       "khotkeysrc"."Data_2_3"."Type" = "SIMPLE_ACTION_DATA";
       "khotkeysrc"."Data_2_3Actions"."ActionsCount" = 1;
-      "khotkeysrc"."Data_2_3Actions0"."CommandURL" = "konsole";
       "khotkeysrc"."Data_2_3Actions0"."Type" = "COMMAND_URL";
       "khotkeysrc"."Data_2_3Conditions"."Comment" = "";
       "khotkeysrc"."Data_2_3Conditions"."ConditionsCount" = 0;

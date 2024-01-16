@@ -7,6 +7,8 @@
 }: 
 {
   imports = [
+    core/programs/alacritty.nix
+    core/programs/kitty.nix
   ];
 
   home = {
@@ -18,6 +20,7 @@
     # dev
     dbeaver
     vscode
+    kitty
     tmux
     lazygit
 
@@ -50,10 +53,14 @@
     firefox
     chromium
 
-    # theming
+    # extras
     lsd # ls replacement
     bat # cat replacement
     glances # htop replacement
+
+    # oh-my-zsh plugins
+    thefuck # Magnificent app which corrects your previous console command
+    zsh
   ];
 
   programs = {
@@ -85,7 +92,32 @@
         mini-nvim
       ];
     };
+    zsh = {
+      enable = true;
+      enableAutosuggestions = true;
+      syntaxHighlighting.enable = true;
+      shellAliases = {
+        ls = "lsd";
+        la = "lsd -a";
+        ll = "lsd -l";
+        cat = "bat";
+        cp = "cp -riv";
+        mkdir = "mkdir -vp";
+        mv = "mv -iv";
+        rm = "rm -riv";
+        rebuild = "sudo nixos-rebuild switch";
+      };
+      oh-my-zsh = {
+        enable = true;
+        plugins = [ 
+          "git" 
+          "thefuck"
+        ];
+        theme = "robbyrussell";
+      };
+    };
   };
+
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
 
