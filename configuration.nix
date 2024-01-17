@@ -16,7 +16,7 @@
       # ./core/services/xserver/gnome/gnome.nix
       # ./core/services/xserver/hyperland/hyperland.nix
       # ./core/services/xserver/i3/i3.nix
-      # ./core/services/xserver/sway/sway.nix 
+      ./core/services/xserver/sway/sway.nix 
       # ./core/services/xserver/awesome/awesomewm.nix
     ];
   

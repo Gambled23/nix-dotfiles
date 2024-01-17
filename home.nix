@@ -7,6 +7,7 @@
 }: 
 {
   imports = [
+    core/programs/alacritty.nix
     core/programs/kitty.nix
   ];
 

@@ -28,9 +28,8 @@ set $menu dmenu_path | dmenu | xargs swaymsg exec --
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 
-output eDP-1 scale 1.20
-output HDMI-A-1 resolution 1920x1080@75Hz scale 1.10
-output DP-1 scale 1.20
+output DP-1 resolution 1920x1080@165Hz scale 1.10 position 0 300
+output HDMI-A-2 scale 1.10 resolution 1920x1080@64Hz position 1920 0
 
 output * bg ~/.config/sway/wallpaper.png fill
 
@@ -63,13 +62,13 @@ bindsym $mod+escape exec 'systemctl suspend'
 # Basics:
 #
     # Start a terminal
-    bindsym $mod+Return exec $term
+    bindsym $mod+Return exec kitty
 
     # Kill focused window
-    bindsym $mod+Shift+q kill
+    bindsym $mod+q kill
 
     # Start your launcher
-    bindsym $mod+d exec $menu
+    bindsym $mod exec $menu
 
     bindsym Alt+Space exec fuzzel
 
@@ -239,8 +238,9 @@ input type:pointer {
 }
 
 smart_borders on
-smart_gaps on
+smart_gaps off
 gaps inner 10
+gaps outer 10
 
 
 # Apps for workspaces
