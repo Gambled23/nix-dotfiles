@@ -52,12 +52,13 @@
     # web browsers
     firefox
     chromium
+    floorp
 
     # extras
     lsd # ls replacement
     bat # cat replacement
     glances # htop replacement
-
+    lxde.lxsession
     # oh-my-zsh plugins
     thefuck # Magnificent app which corrects your previous console command
     zsh

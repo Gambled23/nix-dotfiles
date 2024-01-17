@@ -1,10 +1,18 @@
-{ pkgs, ... }: {
+{ config, lib, pkgs, ... }: 
+let 
+  mod = "Mod4";
+in
+{
   imports = [
     #./xserver.nix
     #./flameshot.nix
   ];
-  services.xserver.windowManager.i3.enable = true;
-  services.xserver.displayManager.defaultSession = "none+i3";
+  
+  services.xserver.windowManager.i3 = {
+    enable = true;
+  };
+
+  #services.xserver.displayManager.defaultSession = "none+i3";
 
   services.dbus.packages = [ pkgs.flameshot ];
   environment.systemPackages = with pkgs; [
@@ -39,6 +47,8 @@
     gnome.file-roller
     gnome.nautilus
   ];
+
+  security.polkit.enable = true;
 
   services.gvfs.enable = true;
 

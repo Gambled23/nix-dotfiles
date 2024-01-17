@@ -15,14 +15,14 @@
       # ./core/services/xserver/cinnamon/cinnamon.nix
       # ./core/services/xserver/gnome/gnome.nix
       # ./core/services/xserver/hyperland/hyperland.nix
-      # ./core/services/xserver/i3/i3.nix
-      ./core/services/xserver/sway/sway.nix 
+      ./core/services/xserver/i3/i3.nix
+      # ./core/services/xserver/sway/sway.nix 
       # ./core/services/xserver/awesome/awesomewm.nix
     ];
   
   # Bootloader.
-  #boot.loader.systemd-boot.enable = true; #systemd
-  boot.loader = { #grub2
+  boot.loader.systemd-boot.enable = true; #systemd
+  /*boot.loader = { #grub2
     grub = {
       enable = true;
       device = "nodev";
@@ -35,7 +35,7 @@
       canTouchEfiVariables = true;
       efiSysMountPoint = "/boot/efi";
     };
-  };
+  };*/
 
   # set shell
   users.defaultUserShell = pkgs.zsh;
