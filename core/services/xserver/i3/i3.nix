@@ -4,7 +4,8 @@ let
 in
 {
   imports = [
-    ../extras/picom.nix
+    #./xserver.nix
+    #./flameshot.nix
   ];
   
   services.xserver.windowManager.i3 = {

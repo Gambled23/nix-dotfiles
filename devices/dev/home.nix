@@ -7,8 +7,6 @@
 }: {
   imports = [
     ../../home.nix
-
-    ../../core/services/xserver/i3/i3.nix
   ];
   
   home.packages = with pkgs; [ 
