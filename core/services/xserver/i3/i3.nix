@@ -6,12 +6,13 @@ in
   imports = [
     #./xserver.nix
     #./flameshot.nix
+    ../../compositors/picom.nix
   ];
   
   services.xserver.windowManager.i3 = {
     enable = true;
   };
-
+ 
   #services.xserver.displayManager.defaultSession = "none+i3";
 
   services.dbus.packages = [ pkgs.flameshot ];
