@@ -9,6 +9,9 @@
   imports = [
     core/programs/alacritty.nix
     core/programs/kitty.nix
+
+    # i3
+    core/services/xserver/i3/config.nix
   ];
 
   home = {

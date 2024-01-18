@@ -1,24 +1,23 @@
 { config, pkgs, lib, inputs, outputs, ... }:
 
 {
-  imports =
-    [ 
-      # mysql
-      ./core/services/mysql/mysql.nix
-      # openssh
-      ./core/services/openssh/default.nix
-      # zerotier
-      ./core/services/zerotier/zerotier.nix
- 
-      # Select DE
-      ./core/services/xserver/kde/kde.nix
-      # ./core/services/xserver/cinnamon/cinnamon.nix
-      # ./core/services/xserver/gnome/gnome.nix
-      # ./core/services/xserver/hyperland/hyperland.nix
-      ./core/services/xserver/i3/i3.nix
-      # ./core/services/xserver/sway/sway.nix 
-      # ./core/services/xserver/awesome/awesomewm.nix
-    ];
+  imports = [ 
+    # mysql
+    ./core/services/mysql/default.nix
+    # openssh
+    ./core/services/openssh/default.nix
+    # zerotier
+    ./core/services/zerotier/default.nix
+
+    # Select DE
+    ./core/services/xserver/kde/default.nix
+    #./core/services/xserver/cinnamon/cinnamon.nix
+    #./core/services/xserver/gnome/gnome.nix
+    #./core/services/xserver/hyperland/hyperland.nix
+    ./core/services/xserver/i3/default.nix
+    #./core/services/xserver/sway/sway.nix 
+    #./core/services/xserver/awesome/awesomewm.nix
+  ];
   
   # Bootloader.
   boot.loader.systemd-boot.enable = true; #systemd
@@ -97,7 +96,6 @@
     (import ./scripts/auto-gc.nix { inherit pkgs; })
     (import ./scripts/ssh-github.nix { inherit pkgs; })
     (import ./scripts/instalarProyectoLaravel.nix { inherit pkgs; })
-    (import ./scripts/rebootToWindows.nix { inherit pkgs; })
   ];
   
   # Autoupgrade packages
@@ -139,5 +137,5 @@
   programs.adb.enable = true;
   programs.dconf.enable = true; # Wayland-gtk bugs
   
-  nixpkgs.config.allowUnfree = true; # Allow unfree packages
+  nixpkgs.config.allowUnfree = true; # Allow unfree packages 
 }

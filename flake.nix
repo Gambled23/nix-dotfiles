@@ -25,7 +25,7 @@
             home-manager.users.gambled.imports = [
               ./devices/dev/home.nix
               inputs.plasma-manager.homeManagerModules.plasma-manager
-              ./kdeplasma.nix
+              ./core/services/xserver/kde/config.nix
             ];
           }
         ];
@@ -42,7 +42,7 @@
             home-manager.users.gambled.imports = [
               ./devices/pc/home.nix
               inputs.plasma-manager.homeManagerModules.plasma-manager
-              ./kdeplasma.nix
+              ./core/services/xserver/kde/config.nix
             ];
           }
         ];
@@ -59,16 +59,11 @@
             home-manager.users.gambled.imports = [
               ./devices/laptop/home.nix
               inputs.plasma-manager.homeManagerModules.plasma-manager
-              ./kdeplasma.nix
+              ./core/services/xserver/kde/config.nix
             ];
           }
         ];
       };
     };
-    home-manager.users.gambled.imports = [
-      inputs.plasma-manager.homeManagerModules.plasma-manager
-      ./kdeplasma.nix
-      { home.stateVersion = "22.11"; }
-    ];
   };
 }
