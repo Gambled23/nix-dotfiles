@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  home.file.".config/i3/i3.conf".text = ''
-
+  home.file.".config/i3/config".text = ''
+  exec_always nitrogen --restore
   '';
 }
