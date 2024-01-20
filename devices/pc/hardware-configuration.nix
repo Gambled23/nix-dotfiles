@@ -13,31 +13,32 @@
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
 
-  fileSystems."/" =
-    { device = "/dev/disk/by-uuid/09e9305b-e857-4f1d-a57d-df698669364a";
-      fsType = "ext4";
-    };
-
   fileSystems."/boot" =
     { device = "/dev/disk/by-uuid/FE4A-E5D7";
       fsType = "vfat";
     };
 
-  fileSystems."/run/media/gambled/Games" =
-    { device = "/dev/disk/by-uuid/2cc6da97-c613-489f-b839-ec045bebc133";
+  fileSystems."/" =
+    { device = "/dev/disk/by-uuid/09e9305b-e857-4f1d-a57d-df698669364a";
       fsType = "ext4";
     };
 
-  # HDD
-  #fileSystems."/run/media/gambled/E397-4225" =
-  #  { device = "/dev/disk/by-uuid/E397-4225";
-  #    fsType = "vfat";
-  #  };
+  fileSystems."/windows" =
+    { device = "/dev/disk/by-uuid/8AC2BD6EC2BD5F5F";
+      fsType = "ntfs";
+    };
 
-#  fileSystems."/run/media/gambled/8AC2BD6EC2BD5F5F" =
-#    { device = "/dev/disk/by-uuid/8AC2BD6EC2BD5F5F";
-#      fsType = "vfat";
-#    };
+  fileSystems."/games" =
+    { device = "/dev/disk/by-uuid/46F24542F2453807";
+      #device = "/dev/disk/by-label/Games";
+      fsType = "ntfs";
+    };
+
+  fileSystems."/hdd" =
+    { device = "/dev/disk/by-uuid/868E593D8E5926C9";
+      #device = "/dev/disk/by-label/HDD";
+      fsType = "ntfs";
+    };
 
   swapDevices =
     [ { device = "/dev/disk/by-uuid/360aa2dd-84ce-42a0-b8f4-2e59dfba5448"; }
