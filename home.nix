@@ -11,7 +11,7 @@
     core/programs/kitty.nix
 
     # i3
-    core/services/xserver/i3/config.nix
+    #core/services/xserver/i3/config.nix
   ];
 
   home = {

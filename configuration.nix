@@ -14,7 +14,7 @@
     #./core/services/xserver/cinnamon/cinnamon.nix
     #./core/services/xserver/gnome/gnome.nix
     #./core/services/xserver/hyperland/hyperland.nix
-    ./core/services/xserver/i3/default.nix
+    #./core/services/xserver/i3/default.nix
     #./core/services/xserver/sway/sway.nix 
     #./core/services/xserver/awesome/awesomewm.nix
   ];
