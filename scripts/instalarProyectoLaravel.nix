@@ -4,7 +4,6 @@ pkgs.writeShellScriptBin "instalarProyectoLaravel" ''
   #!${pkgs.bash}/bin/bash
   # clonar repositorio de github
   read -p "Ingresa el link del repositorio: " repo_link
-  cd /run/media/gambled/Documentos/
   git clone $repo_link
   cd  "$(\ls -1dt ./*/ | head -n 1)"
 
@@ -16,9 +15,10 @@ pkgs.writeShellScriptBin "instalarProyectoLaravel" ''
 
   cp .env.example .env
   php artisan key:generate
-  code .
+  code
 
   echo "Proyecto instalado, recuerde restaurar manualmente la BD" | ${pkgs.lolcat}/bin/lolcat
+  exit
 ''
 
 

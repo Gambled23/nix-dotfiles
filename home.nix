@@ -110,6 +110,7 @@
         mv = "mv -iv";
         rm = "rm -riv";
         rebuild = "nixos-rebuild switch";
+        code = "code .";
       };
       oh-my-zsh = {
         enable = true;

@@ -5,6 +5,8 @@
     mysql = {
       enable = true;
       package = pkgs.mariadb;
+      user = "mysql";
+
     };
   };
 }

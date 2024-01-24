@@ -96,6 +96,9 @@
     (import ./scripts/auto-gc.nix { inherit pkgs; })
     (import ./scripts/ssh-github.nix { inherit pkgs; })
     (import ./scripts/instalarProyectoLaravel.nix { inherit pkgs; })
+    (import ./scripts/migrateDB.nix { inherit pkgs; })
+    (import ./scripts/samisecuestro.nix { inherit pkgs; })
+    (import ./scripts/mysqlSetupRoot.nix { inherit pkgs; })
   ];
   
   # Autoupgrade packages
