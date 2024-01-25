@@ -5,10 +5,11 @@ pkgs.writeShellScriptBin "auto-push" ''
   set -e
   sudo nixos-rebuild switch 
   
-  cp -r /etc/nixos/* /home/gambled/Documents/nix-dotfiles/
   cd /home/gambled/Documents/nix-dotfiles/
-  sudo git add .
-  sudo git commit -m "auto update $(date)"
+  sudo rm -r *
+  cp -r /etc/nixos/* /home/gambled/Documents/nix-dotfiles/
+  git add .
+  git commit -m "auto update $(date)"
   git push
   echo "Sistema respaldado! n.n" | ${pkgs.lolcat}/bin/lolcat
 ''

@@ -5,6 +5,7 @@ pkgs.writeShellScriptBin "auto-pull" ''
  
   cd /home/gambled/Documents/nix-dotfiles/
   git pull
+  sudo rm -r /etc/nixos/*
   sudo cp -r * /etc/nixos/
   
   sudo nixos-rebuild switch
