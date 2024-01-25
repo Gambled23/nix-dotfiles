@@ -55,7 +55,6 @@
     # web browsers
     firefox
     chromium
-    floorp
 
     # extras
     lsd # ls replacement
