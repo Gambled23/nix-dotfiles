@@ -1,6 +1,6 @@
 { pkgs }:
 
-pkgs.writeShellScriptBin "dev_owerlevel10kmigrateDB" ''
+pkgs.writeShellScriptBin "dev_migrateDB" ''
   #!${pkgs.bash}/bin/bash
 
   read -p "Ingresa el nombre de la DB: " db_name
