@@ -1,6 +1,6 @@
 { pkgs }:
 
-pkgs.writeShellScriptBin "ssh-github" ''
+pkgs.writeShellScriptBin "dev_ssh-github" ''
   #!${pkgs.bash}/bin/bash
   ssh-keygen -t ed25519 -C "ipog71@gmail.com"
   eval "$(ssh-agent -s)"

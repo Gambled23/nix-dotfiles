@@ -117,7 +117,7 @@
           "git" 
           "thefuck"
         ];
-        theme = "robbyrussell";
+        theme = "eastwood";
       };
     };
   };

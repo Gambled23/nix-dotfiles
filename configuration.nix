@@ -94,11 +94,11 @@
     (import ./scripts/auto-pull.nix { inherit pkgs; })
     (import ./scripts/auto-push.nix { inherit pkgs; })
     (import ./scripts/auto-gc.nix { inherit pkgs; })
-    (import ./scripts/ssh-github.nix { inherit pkgs; })
-    (import ./scripts/instalarProyectoLaravel.nix { inherit pkgs; })
-    (import ./scripts/migrateDB.nix { inherit pkgs; })
-    (import ./scripts/samisecuestro.nix { inherit pkgs; })
-    (import ./scripts/mysqlSetupRoot.nix { inherit pkgs; })
+    (import ./scripts/dev/ssh-github.nix { inherit pkgs; })
+    (import ./scripts/dev/instalarProyectoLaravel.nix { inherit pkgs; })
+    (import ./scripts/dev/migrateDB.nix { inherit pkgs; })
+    (import ./scripts/dev/samisecuestro.nix { inherit pkgs; })
+    (import ./scripts/dev/mysqlSetupRoot.nix { inherit pkgs; })
   ];
   
   # Autoupgrade packages

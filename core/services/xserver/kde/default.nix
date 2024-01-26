@@ -67,6 +67,7 @@ with lib;
     libsForQt5.discover
     libsForQt5.packagekit-qt
     libsForQt5.qtstyleplugin-kvantum
+    libsForQt5.bismuth
     libportal-qt5
     plasma-browser-integration
     gparted

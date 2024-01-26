@@ -1,6 +1,6 @@
 { pkgs }:
 
-pkgs.writeShellScriptBin "instalarProyectoLaravel" ''
+pkgs.writeShellScriptBin "dev_instalarProyectoLaravel" ''
   #!${pkgs.bash}/bin/bash
   # clonar repositorio de github
   read -p "Ingresa el link del repositorio: " repo_link

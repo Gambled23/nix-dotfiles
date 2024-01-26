@@ -27,16 +27,16 @@
 
     # games
     bottles
+    ryujinx
     steam
     steam-run
     osu-lazer-bin
-    prismlauncher
+    #prismlauncher #minecra
     r2modman
     wineWowPackages.waylandFull
 
     # media
     stremio
-    kodi-wayland
 
     # media creation
     inkscape-with-extensions

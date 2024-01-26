@@ -1,6 +1,6 @@
 { pkgs }:
 
-pkgs.writeShellScriptBin "mysqlSetupRoot" ''
+pkgs.writeShellScriptBin "dev_mysqlSetupRoot" ''
   #!${pkgs.bash}/bin/bash
   sudo mysql -e 'CREATE USER "root"@"localhost" IDENTIFIED BY ""'
   sudo mysql -e 'GRANT ALL PRIVILEGES ON * . * TO "root"@"localhost" IDENTIFIED BY ""'
