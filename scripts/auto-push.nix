@@ -3,6 +3,9 @@
 pkgs.writeShellScriptBin "auto-push" ''
   #!${pkgs.bash}/bin/bash
   set -e
+  cd /home/gambled/Documents/
+  nix run github:pjones/plasma-manager > config.nix
+  sudo mv config.nix /etc/nixos/core/services/xserver/kde/config.nix
   sudo nixos-rebuild switch 
   
   cd /home/gambled/Documents/nix-dotfiles/

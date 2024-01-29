@@ -26,6 +26,7 @@
     kitty
     tmux
     lazygit
+    nodejs_21
 
     # neovim
     python311Packages.pynvim
@@ -60,6 +61,7 @@
     lsd # ls replacement
     bat # cat replacement
     glances # htop replacement
+    neofetch
     lxde.lxsession
     # oh-my-zsh plugins
     thefuck # Magnificent app which corrects your previous console command
@@ -110,6 +112,7 @@
         rm = "rm -riv";
         rebuild = "nixos-rebuild switch";
         code = "code .";
+        ryujinx= "ryujinx -r /hdd/switchgames/data/";
       };
       oh-my-zsh = {
         enable = true;

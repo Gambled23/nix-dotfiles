@@ -26,18 +26,21 @@
   fileSystems."/windows" =
     { device = "/dev/disk/by-uuid/8AC2BD6EC2BD5F5F";
       fsType = "ntfs";
+      options = [ "rw" "uid=1000"];
     };
 
   fileSystems."/games" =
     { device = "/dev/disk/by-uuid/46F24542F2453807";
       #device = "/dev/disk/by-label/Games";
       fsType = "ntfs";
+      options = [ "rw" "uid=1000"];
     };
 
   fileSystems."/hdd" =
     { device = "/dev/disk/by-uuid/868E593D8E5926C9";
       #device = "/dev/disk/by-label/HDD";
-      fsType = "ntfs";
+      fsType = "ntfs"; 
+      options = [ "rw" "uid=1000"];
     };
 
   swapDevices =

@@ -20,21 +20,24 @@
   ];
   
   # Bootloader.
-  boot.loader.systemd-boot.enable = true; #systemd
-  /*boot.loader = { #grub2
-    grub = {
-      enable = true;
-      device = "nodev";
-      efiSupport = true;
-      useOSProber = true;
-      default = "saved";
-      timeoutStyle = "hidden";
+  boot = {
+    supportedFilesystems = [ "ntfs" ];
+    loader = { 
+      #systemd-boot.enable = true; #systemd
+      grub = {
+        enable = true;
+        device = "nodev";
+        efiSupport = true;
+        useOSProber = true;
+        default = "saved";
+        #timeoutStyle = "hidden";
+      };
+      efi = {
+        canTouchEfiVariables = true;
+        efiSysMountPoint = "/boot/efi";
+      };
     };
-    efi = {
-      canTouchEfiVariables = true;
-      efiSysMountPoint = "/boot/efi";
-    };
-  };*/
+  };
 
   # set shell
   users.defaultUserShell = pkgs.zsh;
