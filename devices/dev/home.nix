@@ -11,9 +11,6 @@
   
   home.packages = with pkgs; [ 
     # dev
-    php83Packages.composer
-    php83
-    nodejs_21
   ];
 }
 

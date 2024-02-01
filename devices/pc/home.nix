@@ -17,13 +17,8 @@
     #calibre
     #mangal
 
-    # dev
+    # dev tools
     android-studio
-    python3
-    python311Packages.pip
-    php83Packages.composer
-    php83
-    nodejs_21
 
     # games
     bottles
@@ -36,11 +31,9 @@
     wineWowPackages.waylandFull
 
     # media
-    stremio
 
     # media creation
     inkscape-with-extensions
-    gimp-with-plugins
     qt6.qtwebsockets
     libsForQt5.kdenlive
     libportal-qt5
@@ -49,8 +42,6 @@
     jellyfin-ffmpeg
 
     # messaging 
-    whatsapp-for-linux
-    telegram-desktop
 
     # utils
     polychromatic

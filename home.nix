@@ -21,12 +21,19 @@
   };
 
   home.packages = with pkgs; [ 
-    # dev
+    # dev tools
     dbeaver
     vscode
     kitty
     tmux
     lazygit
+    cmake
+
+    # dev languages
+    python3
+    python311Packages.pip
+    php83Packages.composer
+    php83
     nodejs_21
 
     # neovim
@@ -37,12 +44,19 @@
     spotify
     vlc
     scrcpy
-    
+    stremio
+    # media creation
+    gimp-with-plugins
+
     # messaging
+    vesktop # discord wayland screenshare
     (discord.override {
     withOpenASAR = true;
     withVencord = true;
+    withTTS = true;
     })
+    whatsapp-for-linux
+    telegram-desktop
 
     # networking
     zerotierone
