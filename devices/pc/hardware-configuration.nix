@@ -14,31 +14,35 @@
   boot.extraModulePackages = [ ];
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/FE4A-E5D7";
+    { #device = "/dev/disk/by-uuid/2ba98801-a0e3-2740-b850-1ea0a4315070";
+      device = "/dev/disk/by-uuid/FE4A-E5D7";
+      
       fsType = "vfat";
     };
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/09e9305b-e857-4f1d-a57d-df698669364a";
+    { device = "/dev/disk/by-uuid/6c21ad58-5ba1-4270-86a6-8fa1d7cec7d5";
+      #device = "/dev/disk/by-label/root";
       fsType = "ext4";
     };
 
   fileSystems."/windows" =
     { device = "/dev/disk/by-uuid/8AC2BD6EC2BD5F5F";
+      #device = "/deb/disk/by-label/Windows";
       fsType = "ntfs";
       options = [ "rw" "uid=1000"];
     };
 
   fileSystems."/games" =
-    { device = "/dev/disk/by-uuid/46F24542F2453807";
-      #device = "/dev/disk/by-label/Games";
+    { #device = "/dev/disk/by-uuid/46F24542F2453807";
+      device = "/dev/disk/by-label/Games";
       fsType = "ntfs";
       options = [ "rw" "uid=1000"];
     };
 
   fileSystems."/hdd" =
-    { device = "/dev/disk/by-uuid/868E593D8E5926C9";
-      #device = "/dev/disk/by-label/HDD";
+    { #device = "/dev/disk/by-uuid/868E593D8E5926C9";
+      device = "/dev/disk/by-label/HDD";
       fsType = "ntfs"; 
       options = [ "rw" "uid=1000"];
     };

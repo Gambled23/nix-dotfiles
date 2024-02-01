@@ -11,7 +11,7 @@ in {
   services.avahi.publish.userServices = true;
   services.avahi.publish.addresses = true;
   services.avahi.publish.domain = true;
-  services.avahi.nssmdns = true;
+  services.avahi.nssmdns4 = true;
   services.avahi.publish.workstation = true; # ADDED TO DESKTOP MACHINES
 
   services.zerotierone.enable = true;

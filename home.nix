@@ -52,6 +52,7 @@
     appimage-run
     libreoffice
     xwaylandvideobridge
+    libsForQt5.polonium
 
     # web browsers
     firefox
