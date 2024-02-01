@@ -9,7 +9,8 @@
   imports = [
     core/programs/alacritty.nix
     core/programs/kitty.nix
-
+    core/programs/neovim.nix
+    core/programs/zsh.nix
     # i3
     #core/services/xserver/i3/config.nix
   ];
@@ -78,51 +79,6 @@
     direnv = {
       enable = true;
       nix-direnv.enable = true;
-    };
-    neovim = {
-      enable = true;
-      defaultEditor = true;
-      viAlias = true;
-      vimAlias = true;
-      vimdiffAlias = true;
-
-      extraConfig = ''
-        let g:python3_host_prog = "${pkgs.python3}/bin/python";
-      '';
-
-      plugins = with pkgs.vimPlugins; [
-        nvim-lspconfig
-        nvim-treesitter.withAllGrammars
-        plenary-nvim
-        gruvbox-material
-        mini-nvim
-      ];
-    };
-    zsh = {
-      enable = true;
-      enableAutosuggestions = true;
-      syntaxHighlighting.enable = true;
-      shellAliases = {
-        ls = "lsd";
-        la = "lsd -a";
-        ll = "lsd -l";
-        cat = "bat";
-        cp = "cp -riv";
-        mkdir = "mkdir -vp";
-        mv = "mv -iv";
-        rm = "rm -riv";
-        rebuild = "nixos-rebuild switch";
-        code = "code .";
-        ryujinx= "ryujinx -r /hdd/switchgames/data/";
-      };
-      oh-my-zsh = {
-        enable = true;
-        plugins = [ 
-          "git" 
-          "thefuck"
-        ];
-        theme = "eastwood";
-      };
     };
   };
 
