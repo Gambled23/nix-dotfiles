@@ -918,7 +918,7 @@
       "kwinrc"."Desktops"."Number" = 5;
       "kwinrc"."Desktops"."Rows" = 1;
       "kwinrc"."ElectricBorders"."TopRight" = "ShowDesktop";
-      "kwinrc"."ModifierOnlyShortcuts"."Meta" = "org.kde.krunner,/App,,display";
+      "kwinrc"."ModifierOnlyShortcuts"."Meta" = "org.kde.plasmashell,/PlasmaShell,org.kde.PlasmaShell,activateLauncherMenu";
       "kwinrc"."NightColor"."Active" = true;
       "kwinrc"."NightColor"."EveningBeginFixed" = 1600;
       "kwinrc"."NightColor"."Mode" = "Times";
