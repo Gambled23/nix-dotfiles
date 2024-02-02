@@ -344,7 +344,7 @@
       "kdeglobals"."WM"."inactiveBackground" = "40,40,40";
       "kdeglobals"."WM"."inactiveBlend" = "60,56,54";
       "kdeglobals"."WM"."inactiveForeground" = "204,190,155";
-      "kglobalshortcutsrc"."ActivityManager"."_k_friendly_name" = "System Settings";
+      "kglobalshortcutsrc"."ActivityManager"."_k_friendly_name" = "Activity Manager";
       "kglobalshortcutsrc"."KDE Keyboard Layout Switcher"."_k_friendly_name" = "Keyboard Layout Switcher";
       "kglobalshortcutsrc"."bismuth"."_k_friendly_name" = "Window Tiling";
       "kglobalshortcutsrc"."code.desktop"."_k_friendly_name" = "Visual Studio Code";
@@ -953,6 +953,7 @@
       "kwinrc"."Tiling.3c373409-48e0-57e9-a1a9-eb32e49f8772"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
       "kwinrc"."Tiling.41982af9-8f97-5bdc-9e06-b4cf78339e0d"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
       "kwinrc"."Tiling.8e2629cb-cf9e-563c-91b0-aebe912663de"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
+      "kwinrc"."Tiling.c73684f0-83c4-5586-b5c5-86ac66d58d6c"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
       "kwinrc"."Tiling.d0ad3947-c949-5031-a42d-57b2e286bd4e"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
       "kwinrc"."Tiling.f2aad53a-7a3a-5215-9869-da3f1be40df7"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
       "kwinrc"."Tiling.f3432405-3bc5-5ccf-8182-8a5e655caf81"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
