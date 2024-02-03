@@ -4,7 +4,7 @@ pkgs.writeShellScriptBin "auto-push" ''
   #!${pkgs.bash}/bin/bash
   set -e
   cd /home/gambled/Documents/
-  nix run github:pjones/plasma-manager > config.nix
+  nix run github:mcdonc/plasma-manager/enable-look-and-feel-settings > config.nix
   sudo mv config.nix /etc/nixos/core/services/xserver/kde/config.nix
   sudo nixos-rebuild switch 
   
