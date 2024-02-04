@@ -31,18 +31,10 @@ with lib;
     # Desktop Manager login screen settings
     #---------------------------------------------------------------------
     displayManager = {
-      sddm = {
-        enable = true;
-        autoNumlock = true;
-
-        settings = {
-          Theme = {
-            CursorTheme = "layan-border_cursors";
-
-          };
-        };
-        # theme = "breeze";
-      };
+      #sddm = {
+      #  enable = false;
+      #  autoNumlock = true;
+      #};
       defaultSession = "plasmawayland";
     };
 
@@ -70,11 +62,31 @@ with lib;
     libsForQt5.signond
     libsForQt5.qoauth
     libsForQt5.kio-gdrive
+    libsForQt5.ktorrent
+    libsForQt5.libktorrent
+    libsForQt5.discover
+    libsForQt5.packagekit-qt
+    libsForQt5.qtstyleplugin-kvantum
+    libsForQt5.bismuth
     libportal-qt5
+    plasma-browser-integration
+    gparted
+    kate
+    kup
     vim 
     wget
     home-manager
     android-tools
   ];
 
+  programs.kdeconnect.enable = true;
+  networking.firewall = { 
+    enable = true;
+    allowedTCPPortRanges = [ 
+      { from = 1714; to = 1764; } # KDE Connect
+    ];  
+    allowedUDPPortRanges = [ 
+      { from = 1714; to = 1764; } # KDE Connect
+    ];  
+  };  
 }

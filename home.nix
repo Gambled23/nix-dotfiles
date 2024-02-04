@@ -1,88 +1,98 @@
-# This is your home-manager configuration file
-# Use this to configure your home environment (it replaces ~/.config/nixpkgs/home.nix)
 {
   inputs,
   lib,
   config,
   pkgs,
   ...
-}: {
-  # You can import other home-manager modules here
+}: 
+{
   imports = [
+    core/programs/alacritty.nix
+    core/programs/kitty.nix
+    core/programs/neovim.nix
+    core/programs/zsh.nix
+    # i3
+    #core/services/xserver/i3/config.nix
   ];
-  
+
   home = {
     username = "gambled";
     homeDirectory = "/home/gambled";
   };
 
   home.packages = with pkgs; [ 
-    zerotierone
-
-    appimage-run
-    gparted
-
-    syncthing
-    syncthingtray
-    plasma-browser-integration
-    firefox
-    chromium
-    polychromatic
-    libreoffice
-    spotify
-    spicetify-cli
-    vlc
-    scrcpy
-    inkscape-with-extensions
-    gimp-with-plugins
-    qt6.qtwebsockets
-    libsForQt5.kdenlive
-    # Google drive online account
-
-
-    libsForQt5.ktorrent
-    libsForQt5.libktorrent
-    libsForQt5.discover
-    libsForQt5.packagekit-qt
-    libsForQt5.qtstyleplugin-kvantum
-    libportal-qt5
-    obs-studio
-    kdenlive
-    #ffmpeg_6-full
-    jellyfin-ffmpeg
-    kate
-    kup
-
+    # dev tools
     dbeaver
     vscode
+    kitty
+    tmux
+    lazygit
+    cmake
+
+    # dev languages
     python3
     python311Packages.pip
+    php83Packages.composer
+    php83
+    nodejs_21
 
+    # neovim
+    python311Packages.pynvim
+    xclip # allows using the clipboard inside a terminal 
+
+    # media
+    spotify
+    vlc
+    scrcpy
     stremio
-    (discord.override {
-    withOpenASAR = true;
-    withVencord = true;
-    })
-    bottles
-    steam
-    steam-run
-    osu-lazer-bin
-    prismlauncher
-    r2modman
-    wineWowPackages.waylandFull
+    # media creation
+    gimp-with-plugins
+
+    # messaging
+    vesktop # discord wayland screenshare
+    whatsapp-for-linux
+    telegram-desktop
+
+    # networking
+    zerotierone
+
+    # utils
+    jellyfin-ffmpeg
+    android-tools
+    appimage-run
+    libreoffice
+    xwaylandvideobridge
+    libsForQt5.polonium
+
+    # web browsers
+    firefox
+    chromium
+
+    # extras
+    lsd # ls replacement
+    bat # cat replacement
+    glances # htop replacement
+    neofetch
+    lxde.lxsession
+    # oh-my-zsh plugins
+    thefuck # Magnificent app which corrects your previous console command
+    zsh
   ];
+
   programs = {
     git = {
     enable = true;
     userName = "Gambled23";
     userEmail = "ipog71@gmail.com";
     };
+    direnv = {
+      enable = true;
+      nix-direnv.enable = true;
+    };
   };
-  
+
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
 
-  # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
-  home.stateVersion = "23.05";
   programs.home-manager.enable = true;
 }

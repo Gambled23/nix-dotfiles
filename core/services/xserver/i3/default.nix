@@ -1,17 +1,20 @@
-{ pkgs, ... }: {
+{ config, lib, pkgs, ... }: 
+let 
+  mod = "Mod4";
+in
+{
   imports = [
-    #./xserver.nix
-    #./flameshot.nix
+    ./picom.nix
   ];
-  services.xserver.windowManager.i3.enable = true;
-  services.xserver.displayManager.defaultSession = "none+i3";
+  
+  services.xserver.windowManager.i3 = {
+    enable = true;
+  };
+ 
+  #services.xserver.displayManager.defaultSession = "none+i3";
 
-  services.dbus.packages = [ pkgs.flameshot ];
   environment.systemPackages = with pkgs; [
-    flameshot
     xorg.xmodmap
-    firefox
-    chromium
     # autostart stuff
     dex
     brightnessctl
@@ -31,7 +34,6 @@
     xclip
     xorg.xev
     xorg.xprop
-    alacritty
     (i3pystatus.override {
       extraLibs = with python3.pkgs; [ keyrings-alt paho-mqtt ];
     })
@@ -40,8 +42,8 @@
     gnome.nautilus
   ];
 
-  services.gvfs.enable = true;
-
+  security.polkit.enable = true; # polkit security service
+  services.gvfs.enable = true; #gnome virtual file system
   services.autorandr.enable = true;
   programs.nm-applet.enable = true;
 }
