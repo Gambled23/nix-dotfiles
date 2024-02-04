@@ -26,6 +26,12 @@
       fsType = "ext4";
     };
 
+  fileSystems."/home/gambled" =
+    { device = "/dev/disk/by-label/home";
+      fsType = "ext4";
+    };
+
+
   fileSystems."/windows" =
     { device = "/dev/disk/by-uuid/8AC2BD6EC2BD5F5F";
       #device = "/deb/disk/by-label/Windows";
