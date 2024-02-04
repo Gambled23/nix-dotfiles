@@ -1065,6 +1065,13 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27"."location" = 3;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27"."plugin" = "org.kde.panel";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27"."wallpaperplugin" = "org.kde.image";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.117"."immutability" = 1;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.117"."plugin" = "org.kde.plasma.marginsseparator";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.118"."immutability" = 1;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.118"."plugin" = "org.kde.plasma.notifications";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.118.Configuration"."PreloadWeight" = 60;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.118.Configuration"."popupHeight" = 432;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.118.Configuration"."popupWidth" = 367;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.29"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.29"."plugin" = "org.kde.windowtitle";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.29.Configuration.ConfigDialog"."DialogHeight" = 480;
@@ -1102,7 +1109,7 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.98.Configuration.ConfigDialog"."DialogWidth" = 720;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.ConfigDialog"."DialogHeight" = 84;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.ConfigDialog"."DialogWidth" = 1920;
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.General"."AppletOrder" = "29;30;31;84;92;81;33;98";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.General"."AppletOrder" = "29;30;31;84;92;98;118;81;117;33";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36"."activityId" = "";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36"."formfactor" = 2;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36"."immutability" = 1;
