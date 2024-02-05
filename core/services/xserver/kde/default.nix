@@ -12,9 +12,11 @@ with lib;
     enable = true;
     exportConfiguration = true;
 
-    # keymap
-    layout = "us";
-    xkbVariant = "altgr-intl";
+    # keyboard layout
+    xkb = {
+      layout = "us";
+      variant = "altgr-intl";
+    };
 
     # Enable libinput driver for improved touchpad support (enabled by default in most desktop environments).
     libinput.enable = true;
