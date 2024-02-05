@@ -1100,7 +1100,7 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.92"."plugin" = "org.kde.plasma.marginsseparator";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.98"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.98"."plugin" = "org.kde.plasma.mediacontroller_plus";
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.98.Configuration"."PreloadWeight" = 85;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.98.Configuration"."PreloadWeight" = 90;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.98.Configuration.CompactView"."maximumWidthUnits" = 101;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.98.Configuration.CompactView"."minimumWidthUnits" = 10;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.98.Configuration.CompactView"."showPlaybackControls" = false;
@@ -1183,7 +1183,7 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47"."wallpaperplugin" = "org.kde.image";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.Applets.48"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.Applets.48"."plugin" = "org.kde.plasma.icontasks";
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.Applets.48.Configuration.General"."launchers" = "applications:org.kde.dolphin.desktop,applications:discord.desktop,applications:spotify.desktop,applications:firefox.desktop,[1a14c463-8315-4099-a025-c3272507cfc2]\nfile:///etc/profiles/per-user/gambled/bin/stremio,[1a14c463-8315-4099-a025-c3272507cfc2]\napplications:steam.desktop,applications:code.desktop";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.Applets.48.Configuration.General"."launchers" = "applications:org.kde.dolphin.desktop,applications:vesktop.desktop,applications:spotify.desktop,applications:firefox.desktop,[1a14c463-8315-4099-a025-c3272507cfc2]\nfile:///etc/profiles/per-user/gambled/bin/stremio,[1a14c463-8315-4099-a025-c3272507cfc2]\napplications:steam.desktop,applications:code.desktop";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.Applets.72"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.Applets.72"."plugin" = "P-Connor.PlasmaDrawer";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.Applets.72.Configuration"."PreloadWeight" = 100;
