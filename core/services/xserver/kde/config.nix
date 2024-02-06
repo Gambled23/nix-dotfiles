@@ -964,7 +964,6 @@
       "kwinrc"."org.kde.kdecoration2"."ButtonsOnLeft" = "BF";
       "kwinrc"."org.kde.kdecoration2"."ButtonsOnRight" = "IAX";
       "kwinrulesrc"."1"."Description" = "Application settings for spotify";
-      "kwinrulesrc"."1"."below" = true;
       "kwinrulesrc"."1"."belowrule" = 4;
       "kwinrulesrc"."1"."clientmachine" = "localhost";
       "kwinrulesrc"."1"."desktopfile" = "com.stremio.stremio";
@@ -1122,7 +1121,7 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30"."wallpaperplugin" = "org.kde.image";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30.Applets.125"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30.Applets.125"."plugin" = "org.kde.plasma.mediacontroller_plus";
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30.Applets.125.Configuration"."PreloadWeight" = 34;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30.Applets.125.Configuration"."PreloadWeight" = 26;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30.Applets.31"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30.Applets.31"."plugin" = "org.kde.plasma.devicenotifier";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30.Applets.31.Configuration"."PreloadWeight" = 42;
@@ -1228,7 +1227,7 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.52.Configuration"."PreloadWeight" = 42;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.71"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.71"."plugin" = "org.kde.plasma.mediacontroller_plus";
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.71.Configuration"."PreloadWeight" = 18;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.71.Configuration"."PreloadWeight" = 10;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.ConfigDialog"."DialogHeight" = 540;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.ConfigDialog"."DialogWidth" = 720;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.General"."extraItems" = "org.kde.plasma.notifications,org.kde.plasma.devicenotifier,org.kde.plasma.battery,org.kde.plasma.manage-inputmethod,org.kde.plasma.clipboard,org.kde.plasma.volume,org.kde.plasma.bluetooth,org.kde.plasma.keyboardindicator,org.kde.kupapplet,org.kde.kdeconnect,org.kde.plasma.printmanager,org.kde.plasma.keyboardlayout,org.kde.kscreen,org.kde.plasma.mediacontroller_plus";
@@ -1272,7 +1271,7 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.49"."wallpaperplugin" = "org.kde.image";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.49.Applets.125"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.49.Applets.125"."plugin" = "org.kde.plasma.mediacontroller_plus";
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.49.Applets.125.Configuration"."PreloadWeight" = 42;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.49.Applets.125.Configuration"."PreloadWeight" = 34;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.49.Applets.50"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.49.Applets.50"."plugin" = "org.kde.plasma.devicenotifier";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.49.Applets.50.Configuration"."PreloadWeight" = 77;
