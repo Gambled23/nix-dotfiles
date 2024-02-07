@@ -3,11 +3,11 @@
 {
   imports = [ 
     # mysql
-    ./core/services/mysql/default.nix
+    ./core/services/mysql.nix
     # openssh
-    ./core/services/openssh/default.nix
+    ./core/services/openssh.nix
     # zerotier
-    ./core/services/zerotier/default.nix
+    ./core/services/zerotier.nix
 
     # Select DE
     ./core/services/xserver/kde/default.nix
