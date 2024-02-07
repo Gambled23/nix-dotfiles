@@ -10,6 +10,31 @@ in
 
   programs.spicetify = {
     enable = true;
+    
     theme = spicePkgs.themes.Onepunch;
+
+    enabledCustomApps = with spicePkgs.apps; [
+      marketplace
+      lyrics-plus
+    ];
+
+    enabledExtensions = with spicePkgs.extensions; [
+      fullAppDisplayMod
+      autoSkipVideo
+      shuffle
+      groupSession
+      powerBar
+      seekSong
+      playlistIcons
+      fullAlbumDate
+      goToSong
+      skipStats
+      showQueueDuration
+      history
+      lastfm
+      adblock
+      playNext
+      volumePercentage
+    ];
   };
 }
