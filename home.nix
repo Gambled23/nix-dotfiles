@@ -11,6 +11,8 @@
     core/programs/kitty.nix
     core/programs/neovim.nix
     core/programs/zsh.nix
+    core/programs/git.nix
+    core/programs/direnv.nix
     # i3
     #core/services/xserver/i3/config.nix
   ];
@@ -78,18 +80,6 @@
     thefuck # Magnificent app which corrects your previous console command
     zsh
   ];
-
-  programs = {
-    git = {
-    enable = true;
-    userName = "Gambled23";
-    userEmail = "ipog71@gmail.com";
-    };
-    direnv = {
-      enable = true;
-      nix-direnv.enable = true;
-    };
-  };
 
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
