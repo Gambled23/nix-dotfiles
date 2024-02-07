@@ -13,6 +13,7 @@
     core/programs/zsh.nix
     core/programs/git.nix
     core/programs/direnv.nix
+    core/programs/starship.nix
     # i3
     #core/services/xserver/i3/config.nix
   ];
