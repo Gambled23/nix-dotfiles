@@ -43,7 +43,6 @@
     xclip # allows using the clipboard inside a terminal 
 
     # media
-    spotify
     vlc
     scrcpy
     stremio

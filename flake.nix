@@ -12,13 +12,21 @@
     plasma-manager.inputs.nixpkgs.follows = "nixpkgs";
     plasma-manager.inputs.home-manager.follows = "home-manager";
 
+    spicetify-nix.url = "github:the-argus/spicetify-nix";
+
     firefox-addons = { 
       url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons"; 
       inputs.nixpkgs.follows = "nixpkgs";
-      };
+    };
   };
 
-  outputs = { self, nixpkgs, home-manager, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, plasma-manager, spicetify-nix, ... }@inputs:
+    let
+    specialArgs = {
+      inherit spicetify-nix;
+      inherit inputs;
+    };
+    in{
     nixosConfigurations = {
       "dev-gambled" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -33,10 +41,12 @@
               ./devices/dev/home.nix
               inputs.plasma-manager.homeManagerModules.plasma-manager
               ./core/services/xserver/kde/config.nix
+              spicetify-nix.homeManagerModule 
+              ./core/programs/spicetify.nix
             ];
+            home-manager.extraSpecialArgs = specialArgs;
           }
         ];
-        specialArgs = { inherit inputs; };
       };
       "pc-gambled" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -51,7 +61,10 @@
               ./devices/pc/home.nix
               inputs.plasma-manager.homeManagerModules.plasma-manager
               ./core/services/xserver/kde/config.nix
+              spicetify-nix.homeManagerModule 
+              ./core/programs/spicetify.nix
             ];
+            home-manager.extraSpecialArgs = specialArgs;
           }
         ];
       };
@@ -68,7 +81,10 @@
               ./devices/laptop/home.nix
               inputs.plasma-manager.homeManagerModules.plasma-manager
               ./core/services/xserver/kde/config.nix
+              spicetify-nix.homeManagerModule 
+              ./core/programs/spicetify.nix
             ];
+            home-manager.extraSpecialArgs = specialArgs;
           }
         ];
         specialArgs = { inherit inputs; };
