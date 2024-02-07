@@ -19,7 +19,7 @@ in
     ];
 
     enabledExtensions = with spicePkgs.extensions; [
-      fullAppDisplayMod
+      fullAppDisplay
       autoSkipVideo
       shuffle
       groupSession
