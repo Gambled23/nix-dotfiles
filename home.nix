@@ -8,12 +8,13 @@
 {
   imports = [
     core/programs/alacritty.nix
-    core/programs/kitty.nix
-    core/programs/neovim.nix
-    core/programs/zsh.nix
-    core/programs/git.nix
     core/programs/direnv.nix
+    core/programs/git.nix
+    core/programs/kitty.nix
+    core/programs/lsd.nix
+    core/programs/neovim.nix
     core/programs/starship.nix
+    core/programs/zsh.nix
     # i3
     #core/services/xserver/i3/config.nix
   ];
@@ -71,7 +72,6 @@
     chromium
 
     # extras
-    lsd # ls replacement
     bat # cat replacement
     glances # htop replacement
     neofetch
