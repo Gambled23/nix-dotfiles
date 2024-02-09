@@ -35,6 +35,7 @@ with lib;
   # System Packages Configuration
   #---------------------------------------------------------------------
   environment.systemPackages = with pkgs; [
+    libsForQt5.plasma-browser-integration
     libsForQt5.kaccounts-integration
     libsForQt5.kaccounts-providers
     libsForQt5.packagekit-qt
@@ -50,7 +51,7 @@ with lib;
     libsForQt5.qtstyleplugin-kvantum
     libsForQt5.bismuth
     libportal-qt5
-    plasma-browser-integration
+
     gparted
     kate
     kup

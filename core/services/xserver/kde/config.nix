@@ -919,6 +919,8 @@
       "kwinrc"."Desktops"."Name_5" = 5;
       "kwinrc"."Desktops"."Number" = 5;
       "kwinrc"."Desktops"."Rows" = 1;
+      "kwinrc"."Effect-windowview"."BorderActivateAll" = 1;
+      "kwinrc"."ElectricBorders"."BottomRight" = "ShowDesktop";
       "kwinrc"."ElectricBorders"."TopRight" = "ShowDesktop";
       "kwinrc"."ModifierOnlyShortcuts"."Meta" = "org.kde.plasmashell,/PlasmaShell,org.kde.PlasmaShell,activateLauncherMenu";
       "kwinrc"."NightColor"."Active" = true;
@@ -927,6 +929,7 @@
       "kwinrc"."NightColor"."MorningBeginFixed" = 930;
       "kwinrc"."NightColor"."NightTemperature" = 2800;
       "kwinrc"."NightColor"."TransitionTime" = 120;
+      "kwinrc"."Plugins"."blurEnabled" = true;
       "kwinrc"."Plugins"."desktopchangeosdEnabled" = true;
       "kwinrc"."Plugins"."kwin4_effect_fadedesktopEnabled" = true;
       "kwinrc"."Plugins"."kwin4_effect_fadingpopups_kineticEnabled" = true;
@@ -1072,7 +1075,7 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.117"."plugin" = "org.kde.plasma.marginsseparator";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.118"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.118"."plugin" = "org.kde.plasma.notifications";
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.118.Configuration"."PreloadWeight" = 70;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.118.Configuration"."PreloadWeight" = 75;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.118.Configuration"."popupHeight" = 432;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.118.Configuration"."popupWidth" = 367;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.121"."immutability" = 1;
@@ -1083,6 +1086,9 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.121.Configuration.CompactView"."showPlaybackControls" = false;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.121.Configuration.ConfigDialog"."DialogHeight" = 600;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.121.Configuration.ConfigDialog"."DialogWidth" = 800;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.126"."immutability" = 1;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.126"."plugin" = "org.kde.plasma.volume";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.126.Configuration.General"."migrated" = true;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.29"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.29"."plugin" = "org.kde.windowtitle";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.29.Configuration.ConfigDialog"."DialogHeight" = 480;
@@ -1111,7 +1117,7 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.92"."plugin" = "org.kde.plasma.marginsseparator";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.ConfigDialog"."DialogHeight" = 91;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.ConfigDialog"."DialogWidth" = 1366;
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.General"."AppletOrder" = "30;31;84;92;121;118;117;33";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.General"."AppletOrder" = "30;31;84;92;121;118;117;33;126";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30"."activityId" = "";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30"."formfactor" = 2;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30"."immutability" = 1;
@@ -1197,7 +1203,7 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.121"."plugin" = "org.kde.plasma.nightcolorcontrol";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.37"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.37"."plugin" = "org.kde.plasma.notifications";
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.37.Configuration"."PreloadWeight" = 52;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.37.Configuration"."PreloadWeight" = 57;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.38"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.38"."plugin" = "org.kde.plasma.devicenotifier";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.39"."immutability" = 1;
