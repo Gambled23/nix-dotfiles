@@ -1249,7 +1249,7 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.Applets.72.Configuration.General"."useCustomButtonImage" = true;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.ConfigDialog"."DialogHeight" = 84;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.ConfigDialog"."DialogWidth" = 1920;
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.General"."AppletOrder" = "136;72;48;135;35";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.General"."AppletOrder" = "72;136;48;135;35";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.49"."activityId" = "";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.49"."formfactor" = 2;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.49"."immutability" = 1;
