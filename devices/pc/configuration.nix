@@ -6,7 +6,7 @@
   imports =
     [ 
       ./hardware-configuration.nix
-      ./core/services/wakeonlan.nix
+      ../../core/services/wakeonlan.nix
     ];
 
   # Steam
