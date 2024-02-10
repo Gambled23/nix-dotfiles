@@ -7,27 +7,18 @@
   programs.zsh = {
     enable = true;
     enableAutosuggestions = true;
+    autocd = true;
     syntaxHighlighting.enable = true;
-    oh-my-zsh = {
-      enable = true;
-      plugins = [ 
-        "git" 
-        "thefuck"
-      ];
-      theme = "eastwood";
-    };
 
-    shellAliases = {
-      ls = "lsd";
-      la = "lsd -a";
-      ll = "lsd -l";
+    shellGlobalAliases = {
+      c = "clear";
       cat = "bat";
       cp = "cp -riv";
+      lg = "lazygit";
       mkdir = "mkdir -vp";
       mv = "mv -iv";
       rm = "rm -riv";
       rebuild = "nixos-rebuild switch";
-      code = "code";
       ryujinx= "ryujinx -r /hdd/switchgames/data/";
     };
   };
