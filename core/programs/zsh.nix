@@ -27,7 +27,7 @@
       mv = "mv -iv";
       rm = "rm -riv";
       rebuild = "nixos-rebuild switch";
-      code = "code .";
+      code = "code";
       ryujinx= "ryujinx -r /hdd/switchgames/data/";
     };
   };
