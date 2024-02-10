@@ -23,10 +23,10 @@ with lib;
     };
 
     displayManager = {
-      sddm = {
-        enable = false;
-        autoNumlock = true;
-      };
+      #sddm = {
+      #  enable = false;
+      #  autoNumlock = true;
+      #};
       defaultSession = "plasmawayland";
     };
   };
