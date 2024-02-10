@@ -47,6 +47,7 @@
     # utils
     polychromatic
     autorandr # for multi monitor setups
+    remmina
   ];
 }
 

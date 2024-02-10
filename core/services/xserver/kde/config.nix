@@ -958,6 +958,7 @@
       "kwinrc"."Tiling.2992be2c-a3fc-57ae-92d6-94fa22e15695"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
       "kwinrc"."Tiling.3c373409-48e0-57e9-a1a9-eb32e49f8772"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
       "kwinrc"."Tiling.41982af9-8f97-5bdc-9e06-b4cf78339e0d"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
+      "kwinrc"."Tiling.7672d168-2ff3-5755-8864-62ce0326032c"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
       "kwinrc"."Tiling.8e2629cb-cf9e-563c-91b0-aebe912663de"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
       "kwinrc"."Tiling.c73684f0-83c4-5586-b5c5-86ac66d58d6c"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
       "kwinrc"."Tiling.d0ad3947-c949-5031-a42d-57b2e286bd4e"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
@@ -1001,6 +1002,7 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."ActionPlugins.1"."RightButton;NoModifier" = "org.kde.contextmenu";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115"."ItemGeometries-1366x768" = "";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115"."ItemGeometries-1920x1080" = "";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115"."ItemGeometries-3464x2165" = "";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115"."ItemGeometriesHorizontal" = "";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115"."activityId" = "1a14c463-8315-4099-a025-c3272507cfc2";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115"."formfactor" = 0;
@@ -1189,6 +1191,7 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.39"."plugin" = "org.kde.plasma.manage-inputmethod";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.40"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.40"."plugin" = "org.kde.plasma.clipboard";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.40.Configuration"."PreloadWeight" = 55;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.41"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.41"."plugin" = "org.kde.plasma.volume";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.41.Configuration"."PreloadWeight" = 60;
