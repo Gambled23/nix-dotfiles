@@ -1070,12 +1070,12 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.117"."plugin" = "org.kde.plasma.marginsseparator";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.118"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.118"."plugin" = "org.kde.plasma.notifications";
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.118.Configuration"."PreloadWeight" = 90;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.118.Configuration"."PreloadWeight" = 100;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.118.Configuration"."popupHeight" = 432;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.118.Configuration"."popupWidth" = 367;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.121"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.121"."plugin" = "org.kde.plasma.mediacontroller_plus";
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.121.Configuration"."PreloadWeight" = 55;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.121.Configuration"."PreloadWeight" = 70;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.121.Configuration.CompactView"."maximumWidthUnits" = 101;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.121.Configuration.CompactView"."minimumWidthUnits" = 9;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.121.Configuration.CompactView"."showPlaybackControls" = false;
