@@ -1237,6 +1237,8 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.Applets.35.Configuration"."SystrayContainmentId" = 36;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.Applets.48"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.Applets.48"."plugin" = "org.kde.plasma.icontasks";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.Applets.48.Configuration.General"."groupingAppIdBlacklist" = "spotify.desktop";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.Applets.48.Configuration.General"."groupingLauncherUrlBlacklist" = "applications:spotify.desktop";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.Applets.48.Configuration.General"."launchers" = "applications:org.kde.dolphin.desktop,applications:vesktop.desktop,applications:spotify.desktop,applications:firefox.desktop,[1a14c463-8315-4099-a025-c3272507cfc2]\nfile:///etc/profiles/per-user/gambled/bin/stremio,[1a14c463-8315-4099-a025-c3272507cfc2]\napplications:steam.desktop,applications:code.desktop";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.Applets.72"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.Applets.72"."plugin" = "P-Connor.PlasmaDrawer";

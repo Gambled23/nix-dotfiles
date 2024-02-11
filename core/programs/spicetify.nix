@@ -11,7 +11,7 @@ in
   programs.spicetify = {
     enable = true;
     
-    theme = spicePkgs.themes.Onepunch;
+    theme = spicePkgs.themes.text;
 
     enabledCustomApps = with spicePkgs.apps; [
       marketplace
@@ -23,17 +23,11 @@ in
       autoSkipVideo
       shuffle
       groupSession
-      powerBar
       seekSong
       playlistIcons
       fullAlbumDate
       goToSong
-      skipStats
-      showQueueDuration
-      history
-      lastfm
       adblock
-      playNext
       volumePercentage
     ];
   };

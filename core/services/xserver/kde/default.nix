@@ -51,12 +51,13 @@ with lib;
     libsForQt5.qtstyleplugin-kvantum
     libsForQt5.bismuth
     libportal-qt5
-
     gparted
     kate
     kup
   ];
-
+  environment.plasma5.excludePackages = with pkgs.libsForQt5; [
+    konsole
+  ];
   programs.kdeconnect.enable = true;
   networking.firewall = { 
     enable = true;
