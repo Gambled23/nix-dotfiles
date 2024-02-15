@@ -112,7 +112,7 @@
     extraGroups = [ "networkmanager" "wheel" "adbusers" ];
     packages = with pkgs; [ ];
   };
-  services.xserver.displayManager.autoLogin.enable = false; # Enable automatic login for the user.
+  services.xserver.displayManager.autoLogin.enable = true; # Enable automatic login for the user.
   services.xserver.displayManager.autoLogin.user = "gambled";
 
   # All sudo comands will be passwordless (I use this for home assistant)

@@ -28,7 +28,7 @@
     # messaging 
 
     # utils
-    
+    remmina
   ];
 }
 
