@@ -10,7 +10,7 @@
     core/programs/alacritty.nix
     core/programs/direnv.nix
     core/programs/git.nix
-    core/programs/kitty.nix
+    core/programs/kitty/kitty.nix
     core/programs/lsd.nix
     core/programs/neovim.nix
     core/programs/starship.nix
@@ -32,30 +32,22 @@
     kitty
     tmux
     lazygit
-    cmake
 
     # dev languages
-    python3
-    python311Packages.pip
     php83Packages.composer
     php83
     nodejs_21
 
     # neovim
-    python311Packages.pynvim
+    #python311Packages.pynvim
     xclip # allows using the clipboard inside a terminal 
 
     # media
-    vlc
-    scrcpy
-    stremio
+
     # media creation
-    gimp-with-plugins
 
     # messaging
-    vesktop # discord wayland screenshare
-    whatsapp-for-linux
-    telegram-desktop
+    vesktop 
 
     # networking
     zerotierone
@@ -63,13 +55,7 @@
     # utils
     jellyfin-ffmpeg
     android-tools
-    appimage-run
     libreoffice
-    xwaylandvideobridge
-    libsForQt5.polonium
-
-    # web browsers
-    chromium
 
     # extras
     bat # cat replacement

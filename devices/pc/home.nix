@@ -20,6 +20,11 @@
 
     # dev tools
     android-studio
+    cmake
+    
+    #dev languages
+    python3
+    python311Packages.pip
 
     # games
     bottles
@@ -32,9 +37,12 @@
     wineWowPackages.waylandFull
 
     # media
-
+    vlc
+    scrcpy
+    stremio
     # media creation
     inkscape-with-extensions
+    gimp-with-plugins
     qt6.qtwebsockets
     libsForQt5.kdenlive
     libportal-qt5
@@ -43,11 +51,17 @@
     jellyfin-ffmpeg
 
     # messaging 
+    whatsapp-for-linux
+    telegram-desktop
 
     # utils
     polychromatic
     autorandr # for multi monitor setups
     remmina
+    xwaylandvideobridge
+
+    #web browsers
+    #chromium
   ];
 }
 
