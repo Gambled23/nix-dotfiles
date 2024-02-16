@@ -5,6 +5,7 @@
   networking.hostName = "pc-gambled";
   imports =
     [ 
+      ../../configuration.nix
       ./hardware-configuration.nix
       ../../core/services/wakeonlan.nix
     ];

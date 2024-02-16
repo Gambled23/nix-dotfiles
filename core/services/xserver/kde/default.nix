@@ -23,11 +23,25 @@ with lib;
     };
 
     displayManager = {
-      #sddm = {
-      #  enable = false;
-      #  autoNumlock = true;
-      #};
-      defaultSession = "plasmawayland";
+      sddm = {
+        enable = true;
+        autoNumlock = true;
+
+        wayland = {
+          enable = true;
+        };
+
+        settings = {
+          Autologin = {
+            Session = "plasmawayland";
+            User = "gambled";
+          };
+        };
+        
+        autoLogin = {
+          relogin = true;
+        };
+      };
     };
   };
 

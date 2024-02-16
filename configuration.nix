@@ -21,18 +21,18 @@
     supportedFilesystems = [ "ntfs" ];
     loader = { 
       systemd-boot.enable = true; #systemd
-      #grub = {
-      #  enable = true;
-      #  device = "nodev";
-      #  efiSupport = true;
-      #  useOSProber = true;
-      #  default = "saved";
-      # timeoutStyle = "hidden";
-      #};
-      #efi = {
-      #  canTouchEfiVariables = true;
-      #  efiSysMountPoint = "/boot/efi";
-      #};
+    /*  grub = {
+        enable = true;
+        device = "nodev";
+        efiSupport = true;
+        useOSProber = true;
+        default = "saved";
+       timeoutStyle = "hidden";
+      };
+      efi = {
+        canTouchEfiVariables = true;
+        efiSysMountPoint = "/boot/efi";
+      };*/
     };
   };
 
@@ -53,8 +53,6 @@
     10.243.0.5 windows-gambled
     10.243.0.6 VR
     10.243.0.69 dev-gambled
-    
-    159.54.130.222 nisha
   '';
 
   # bluetooth
@@ -112,8 +110,8 @@
     extraGroups = [ "networkmanager" "wheel" "adbusers" ];
     packages = with pkgs; [ ];
   };
-  services.xserver.displayManager.autoLogin.enable = true; # Enable automatic login for the user.
-  services.xserver.displayManager.autoLogin.user = "gambled";
+  #services.xserver.displayManager.autoLogin.enable = true; # Enable automatic login for the user.
+  #services.xserver.displayManager.autoLogin.user = "gambled";
 
   # All sudo comands will be passwordless (I use this for home assistant)
   security.sudo.extraRules= [{  

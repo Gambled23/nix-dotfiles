@@ -31,7 +31,6 @@
       "dev-gambled" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./configuration.nix
           ./devices/dev/configuration.nix
           home-manager.nixosModules.home-manager
           {
@@ -48,10 +47,10 @@
           }
         ];
       };
+
       "pc-gambled" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./configuration.nix
           ./devices/pc/configuration.nix
           home-manager.nixosModules.home-manager
           {
@@ -68,10 +67,10 @@
           }
         ];
       };
+
       "laptop-gambled" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
-          ./configuration.nix
           ./devices/laptop/configuration.nix
           home-manager.nixosModules.home-manager
           {
@@ -87,7 +86,6 @@
             home-manager.extraSpecialArgs = specialArgs;
           }
         ];
-        specialArgs = { inherit inputs; };
       };
     };
   };

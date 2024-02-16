@@ -60,5 +60,7 @@
     # white (fg4/fg3)
     color7                  #a89984
     color15                 #bdae93
+    
+    map f1 new_tab_with_cwd
   '';
 }

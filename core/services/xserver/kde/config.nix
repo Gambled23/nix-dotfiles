@@ -1134,7 +1134,6 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.141.Configuration.General"."containmentType" = "Plasma";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.30"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.30"."plugin" = "org.kde.plasma.appmenu";
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.30.Configuration.Appearance"."compactView" = true;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.30.Configuration.ConfigDialog"."DialogHeight" = 480;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.30.Configuration.ConfigDialog"."DialogWidth" = 640;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.31"."immutability" = 1;
@@ -1266,6 +1265,7 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.41"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.41"."plugin" = "org.kde.plasma.volume";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.41.Configuration"."PreloadWeight" = 70;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.41.Configuration.General"."currentTab" = "streams";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.41.Configuration.General"."migrated" = true;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.42"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.42"."plugin" = "org.kde.plasma.keyboardindicator";
@@ -1286,7 +1286,7 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.50.Configuration"."PreloadWeight" = 42;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.51"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.51"."plugin" = "org.kde.plasma.battery";
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.51.Configuration"."PreloadWeight" = 42;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.51.Configuration"."PreloadWeight" = 52;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.52.Configuration"."PreloadWeight" = 42;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.71"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.71"."plugin" = "org.kde.plasma.mediacontroller_plus";
