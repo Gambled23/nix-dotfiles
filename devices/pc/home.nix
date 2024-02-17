@@ -57,7 +57,6 @@
     # utils
     polychromatic
     autorandr # for multi monitor setups
-    remmina
     xwaylandvideobridge
 
     #web browsers

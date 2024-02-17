@@ -30,7 +30,7 @@ with lib;
         wayland = {
           enable = true;
         };
-
+        /*
         settings = {
           Autologin = {
             Session = "plasmawayland";
@@ -40,7 +40,7 @@ with lib;
         
         autoLogin = {
           relogin = true;
-        };
+        };*/
       };
     };
   };
