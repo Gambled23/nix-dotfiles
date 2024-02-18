@@ -4,12 +4,11 @@ pkgs.writeShellScriptBin "auto-push" ''
   #!${pkgs.bash}/bin/bash
   set -e
   cd /home/gambled/Documents
-  if [ -d Documents/nix-dotfiles ]; then
-    git clone git@github.com:Gambled23/nix-dotfiles.git
+  if [ -d nix-dotfiles ]; then
     cd nix-dotfiles
   else
+    git clone git@github.com:Gambled23/nix-dotfiles.git
     cd nix-dotfiles
-    git pull
   fi
 
   nix run github:mcdonc/plasma-manager/enable-look-and-feel-settings > config.nix
