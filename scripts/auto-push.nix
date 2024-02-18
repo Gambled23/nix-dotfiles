@@ -3,12 +3,19 @@
 pkgs.writeShellScriptBin "auto-push" ''
   #!${pkgs.bash}/bin/bash
   set -e
-  cd /home/gambled/Documents/
+  cd /home/gambled/Documents
+  if [ -d Documents/nix-dotfiles ]; then
+    git clone git@github.com:Gambled23/nix-dotfiles.git
+    cd nix-dotfiles
+  else
+    cd nix-dotfiles
+    git pull
+  fi
+
   nix run github:mcdonc/plasma-manager/enable-look-and-feel-settings > config.nix
   sudo mv config.nix /etc/nixos/core/services/xserver/kde/config.nix
   sudo nixos-rebuild switch 
   
-  cd /home/gambled/Documents/nix-dotfiles/
   sudo rm -r *
   cp -r /etc/nixos/* /home/gambled/Documents/nix-dotfiles/
   git add .
