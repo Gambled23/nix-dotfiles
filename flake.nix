@@ -12,6 +12,8 @@
     plasma-manager.inputs.nixpkgs.follows = "nixpkgs";
     plasma-manager.inputs.home-manager.follows = "home-manager";
 
+    kde2nix.url = "github:nix-community/kde2nix";
+
     spicetify-nix.url = "github:the-argus/spicetify-nix";
 
     firefox-addons = { 
@@ -20,7 +22,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, plasma-manager, spicetify-nix, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, plasma-manager, spicetify-nix, kde2nix, ... }@inputs:
     let
     specialArgs = {
       inherit spicetify-nix;
@@ -67,7 +69,29 @@
           }
         ];
       };
-
+/*
+      "pc-gambled" = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        modules = [
+          kde2nix.nixosModules.plasma6
+        ({ services.xserver.desktopManager.plasma6.enable = true; })
+          ./devices/pc/configuration.nix
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.gambled.imports = [
+              ./devices/pc/home.nix
+              inputs.plasma-manager.homeManagerModules.plasma-manager
+              ./core/services/xserver/kde/config.nix
+              spicetify-nix.homeManagerModule 
+              ./core/programs/spicetify.nix
+            ];
+            home-manager.extraSpecialArgs = specialArgs;
+          }
+        ];
+      };
+*/
       "laptop-gambled" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
