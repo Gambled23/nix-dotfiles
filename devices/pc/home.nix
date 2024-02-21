@@ -25,6 +25,9 @@
     #dev languages
     python3
     python311Packages.pip
+    rustc
+    rustup
+    gcc
 
     # games
     bottles
