@@ -2,6 +2,9 @@
 
 {
   imports = [ 
+    # bootloader
+    ./core/bootloader/systemd.nix
+    #./core/bootloader/grub.nix
     # mysql
     ./core/services/mysql.nix
     # openssh
@@ -16,32 +19,11 @@
     #./core/services/xserver/awesome/awesomewm.nix
   ];
   
-  # Bootloader.
-  boot = {
-    supportedFilesystems = [ "ntfs" ];
-    loader = { 
-      systemd-boot.enable = true; #systemd
-    /*  grub = {
-        enable = true;
-        device = "nodev";
-        efiSupport = true;
-        useOSProber = true;
-        default = "saved";
-       timeoutStyle = "hidden";
-      };
-      efi = {
-        canTouchEfiVariables = true;
-        efiSysMountPoint = "/boot/efi";
-      };*/
-    };
-  };
-
-  # set shell
+  # set zsh shell
   users.defaultUserShell = pkgs.zsh;
   programs.zsh.enable = true;
-  # Enable networking
-  networking.networkmanager.enable = true;
 
+  networking.networkmanager.enable = true;
   networking.extraHosts =
   ''
     192.168.1.1 router
@@ -55,13 +37,14 @@
     10.243.0.69 dev-gambled
   '';
 
-  # bluetooth
-  hardware.bluetooth.enable = true; # enables support for Bluetooth
-  hardware.bluetooth.powerOnBoot = true; # powers up the default Bluetooth controller on boot
-  hardware.bluetooth.settings.General.Experimental = true; # enables experimental features
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = true;
+    settings.General.Experimental = true;
+  };
 
-  time.timeZone = "America/Mexico_City";   # Set your time zone.
-  i18n.defaultLocale = "en_US.UTF-8"; # Select internationalisation properties.
+  time.timeZone = "America/Mexico_City";
+  i18n.defaultLocale = "en_US.UTF-8";
   services.xserver.libinput.enable = true; # Enable touchpad support
   services.printing.enable = true; # Enable CUPS to print documents.
 
@@ -86,7 +69,7 @@
     pulse.enable = true;
   };
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
   environment.systemPackages = with pkgs; [
     grub2
     (import ./scripts/auto-pull.nix { inherit pkgs; })
@@ -100,29 +83,24 @@
     (import ./scripts/dev/sigi.nix { inherit pkgs; })
   ];
   
-  # Autoupgrade packages
   system.autoUpgrade.enable = true;
   system.autoUpgrade.allowReboot = true;
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.gambled = {
     isNormalUser = true;
     description = "César Girón";
     extraGroups = [ "networkmanager" "wheel" "adbusers" ];
     packages = with pkgs; [ ];
   };
-  #services.xserver.displayManager.autoLogin.enable = true; # Enable automatic login for the user.
-  #services.xserver.displayManager.autoLogin.user = "gambled";
 
   # All sudo comands will be passwordless (I use this for home assistant)
   security.sudo.extraRules= [{  
     users = [ "gambled" ];
-    commands = [{ command = "ALL";
-        options= [ "NOPASSWD" ];
-        }
-      ];
-    }
-  ];
+    commands = [{ 
+      command = "ALL";
+      options= [ "NOPASSWD" ];
+    }];
+  }];
 
   hardware.opengl.driSupport = true;
   hardware.opengl.driSupport32Bit = true; # Enables support for 32bit libs that steam uses
@@ -135,7 +113,6 @@
   programs.adb.enable = true;
   programs.dconf.enable = true; # Wayland-gtk bugs
 
-  # fonts
   fonts.packages = with pkgs; [
     times-newer-roman
     noto-fonts
@@ -149,5 +126,6 @@
     proggyfonts
   ];
   
-  nixpkgs.config.allowUnfree = true; # Allow unfree packages 
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nixpkgs.config.allowUnfree = true;
 }
