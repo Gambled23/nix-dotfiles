@@ -1187,10 +1187,10 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30.Applets.119"."plugin" = "org.kde.kdeconnect";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30.Applets.124"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30.Applets.124"."plugin" = "org.kde.plasma.mediacontroller";
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30.Applets.124.Configuration"."PreloadWeight" = 26;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30.Applets.124.Configuration"."PreloadWeight" = 18;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30.Applets.125"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30.Applets.125"."plugin" = "org.kde.plasma.mediacontroller_plus";
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30.Applets.125.Configuration"."PreloadWeight" = 2;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30.Applets.125.Configuration"."PreloadWeight" = 0;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30.Applets.144"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30.Applets.144"."plugin" = "org.kde.plasma.cameraindicator";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30.Applets.151"."immutability" = 1;
@@ -1362,7 +1362,7 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.49"."wallpaperplugin" = "org.kde.image";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.49.Applets.125"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.49.Applets.125"."plugin" = "org.kde.plasma.mediacontroller_plus";
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.49.Applets.125.Configuration"."PreloadWeight" = 10;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.49.Applets.125.Configuration"."PreloadWeight" = 2;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.49.Applets.146"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.49.Applets.146"."plugin" = "org.kde.plasma.cameraindicator";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.49.Applets.149"."immutability" = 1;
@@ -1503,7 +1503,7 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.8.Applets.12.Configuration"."PreloadWeight" = 42;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.8.Applets.125"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.8.Applets.125"."plugin" = "org.kde.plasma.mediacontroller_plus";
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.8.Applets.125.Configuration"."PreloadWeight" = 26;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.8.Applets.125.Configuration"."PreloadWeight" = 18;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.8.Applets.13"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.8.Applets.13"."plugin" = "org.kde.plasma.keyboardlayout";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.8.Applets.13.Configuration"."PreloadWeight" = 42;
