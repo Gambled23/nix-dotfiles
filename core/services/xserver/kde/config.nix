@@ -1099,9 +1099,9 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.24"."wallpaperplugin" = "org.kde.image";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.24.Wallpaper.org.kde.image.General"."Image" = "/etc/nixos/wallpaper.png";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26"."ItemGeometries-0x0" = "Applet-143:0,0,304,272,0;Applet-59:304,80,336,368,0;Applet-138:688,608,384,432,0;Applet-139:0,416,304,624,0;Applet-140:1312,688,400,352,0;";
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26"."ItemGeometries-1920x1080" = "Applet-59:16,0,336,368,0;Applet-139:0,416,448,624,0;Applet-138:688,608,384,432,0;Applet-140:1312,688,400,352,0;";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26"."ItemGeometries-1920x1080" = "Applet-139:0,416,448,624,0;Applet-59:16,0,336,368,0;Applet-138:688,608,384,432,0;Applet-140:1312,688,400,352,0;";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26"."ItemGeometries-3840x2160" = "Applet-139:0,448,464,624,0;Applet-138:688,640,384,432,0;Applet-140:1312,720,400,352,0;";
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26"."ItemGeometriesHorizontal" = "Applet-59:16,0,336,368,0;Applet-139:0,416,448,624,0;Applet-138:688,608,384,432,0;Applet-140:1312,688,400,352,0;";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26"."ItemGeometriesHorizontal" = "Applet-139:0,416,448,624,0;Applet-59:16,0,336,368,0;Applet-138:688,608,384,432,0;Applet-140:1312,688,400,352,0;";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26"."activityId" = "1a14c463-8315-4099-a025-c3272507cfc2";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26"."formfactor" = 0;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26"."immutability" = 1;
@@ -1127,9 +1127,6 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.Applets.140.Configuration.ConfigDialog"."DialogWidth" = 720;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.Applets.140.Configuration.General"."url" = "http://home-gambled:8123/lovelace/lights";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.Applets.140.Configuration.General"."useMinViewWidth" = false;
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.Applets.143"."immutability" = 1;
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.Applets.143"."plugin" = "org.kde.plasma.notifications";
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.Applets.143"."transient" = true;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.Applets.59"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.Applets.59"."plugin" = "Clock.Asitoki.Color";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.Applets.59.Configuration.ConfigDialog"."DialogHeight" = 540;
