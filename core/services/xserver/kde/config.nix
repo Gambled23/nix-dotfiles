@@ -56,19 +56,19 @@
       "kcm_touchpad"."Enable Touchpad" = "Touchpad On";
       "kcm_touchpad"."Toggle Touchpad" = "Touchpad Toggle";
       "kded5"."Show System Activity" = "Ctrl+Esc";
-      "kded5"."display" = ["Display" "Meta+P"];
+      "kded5"."display" = ["" "Display" "Meta+P"];
       "khotkeys"."{d03619b6-9b3c-48cc-9d9c-a2aadb485550}" = [ ];
       "kitty.desktop"."_launch" = "Meta+Return";
       "kmix"."decrease_microphone_volume" = "Microphone Volume Down";
-      "kmix"."decrease_volume" = ["Alt+-" "Volume Down"];
+      "kmix"."decrease_volume" = ["" "Alt+-" "Volume Down"];
       "kmix"."decrease_volume_small" = [ ];
       "kmix"."increase_microphone_volume" = "Microphone Volume Up";
-      "kmix"."increase_volume" = ["Volume Up" "Alt+="];
+      "kmix"."increase_volume" = ["" "Volume Up" "Alt+="];
       "kmix"."increase_volume_small" = [ ];
-      "kmix"."mic_mute" = ["Microphone Mute" "Meta+Volume Mute"];
+      "kmix"."mic_mute" = ["" "Microphone Mute" "Meta+Volume Mute"];
       "kmix"."mute" = "Volume Mute";
       "ksmserver"."Halt Without Confirmation" = [ ];
-      "ksmserver"."Lock Session" = ["Meta+L" "Screensaver"];
+      "ksmserver"."Lock Session" = ["" "Meta+L" "Screensaver"];
       "ksmserver"."Log Out" = "Ctrl+Alt+Del";
       "ksmserver"."Log Out Without Confirmation" = [ ];
       "ksmserver"."Reboot" = [ ];
@@ -80,7 +80,7 @@
       "kwin"."Decrease Opacity" = [ ];
       "kwin"."Edit Tiles" = "Meta+T";
       "kwin"."Expose" = "Ctrl+F9";
-      "kwin"."ExposeAll" = ["Ctrl+F10" "Launch (C)"];
+      "kwin"."ExposeAll" = ["" "Ctrl+F10" "Launch (C)"];
       "kwin"."ExposeClass" = "Ctrl+F7";
       "kwin"."ExposeClassCurrentDesktop" = [ ];
       "kwin"."Grid View" = "Meta+G";
@@ -159,7 +159,7 @@
       "kwin"."Walk Through Windows of Current Application Alternative (Reverse)" = [ ];
       "kwin"."Window Above Other Windows" = [ ];
       "kwin"."Window Below Other Windows" = [ ];
-      "kwin"."Window Close" = ["Alt+F4" "Meta+Q"];
+      "kwin"."Window Close" = ["" "Alt+F4" "Meta+Q"];
       "kwin"."Window Fullscreen" = [ ];
       "kwin"."Window Grow Horizontal" = [ ];
       "kwin"."Window Grow Vertical" = [ ];
@@ -231,11 +231,11 @@
       "kwin"."Window to Screen 6" = [ ];
       "kwin"."Window to Screen 7" = [ ];
       "kwin"."view_actual_size" = [ ];
-      "kwin"."view_zoom_in" = ["Meta++" "Meta+="];
+      "kwin"."view_zoom_in" = ["" "Meta++" "Meta+="];
       "kwin"."view_zoom_out" = "Meta+-";
       "mediacontrol"."mediavolumedown" = [ ];
       "mediacontrol"."mediavolumeup" = [ ];
-      "mediacontrol"."nextmedia" = [ ];
+      "mediacontrol"."nextmedia" = "Alt+3";
       "mediacontrol"."pausemedia" = [ ];
       "mediacontrol"."playmedia" = [ ];
       "mediacontrol"."playpausemedia" = "Alt+2";
@@ -246,8 +246,8 @@
       "org.kde.konsole.desktop"."NewWindow" = [ ];
       "org.kde.konsole.desktop"."_launch" = [ ];
       "org.kde.krunner.desktop"."RunClipboard" = "Alt+Shift+F2";
-      "org.kde.krunner.desktop"."_launch" = ["Alt+Space" "Alt+F2" "Search"];
-      "org.kde.plasma.emojier.desktop"."_launch" = ["Meta+." "Meta+Ctrl+Alt+Shift+Space"];
+      "org.kde.krunner.desktop"."_launch" = ["" "Alt+Space" "Alt+F2" "Search"];
+      "org.kde.plasma.emojier.desktop"."_launch" = ["" "Meta+." "Meta+Ctrl+Alt+Shift+Space"];
       "org.kde.spectacle.desktop"."ActiveWindowScreenShot" = "Meta+Print";
       "org.kde.spectacle.desktop"."CurrentMonitorScreenShot" = [ ];
       "org.kde.spectacle.desktop"."FullScreenScreenShot" = "Shift+Print";
@@ -267,7 +267,7 @@
       "org_kde_powerdevil"."Sleep" = "Sleep";
       "org_kde_powerdevil"."Toggle Keyboard Backlight" = "Keyboard Light On/Off";
       "org_kde_powerdevil"."Turn Off Screen" = [ ];
-      "org_kde_powerdevil"."powerProfile" = ["Battery" "Meta+B"];
+      "org_kde_powerdevil"."powerProfile" = ["" "Battery" "Meta+B"];
       "plasmashell"."activate task manager entry 1" = [ ];
       "plasmashell"."activate task manager entry 10" = [ ];
       "plasmashell"."activate task manager entry 2" = [ ];
@@ -316,7 +316,7 @@
       "kactivitymanagerdrc"."activities-descriptions"."7bfbad66-1f5c-4ec2-b7c9-d24fc59e6a00" = "pa la chamba";
       "kactivitymanagerdrc"."activities-icons"."1a14c463-8315-4099-a025-c3272507cfc2" = "com.valvesoftware.SteamLink";
       "kactivitymanagerdrc"."activities-icons"."7bfbad66-1f5c-4ec2-b7c9-d24fc59e6a00" = "code";
-      "kactivitymanagerdrc"."main"."currentActivity" = "7bfbad66-1f5c-4ec2-b7c9-d24fc59e6a00";
+      "kactivitymanagerdrc"."main"."currentActivity" = "1a14c463-8315-4099-a025-c3272507cfc2";
       "kactivitymanagerdrc"."main"."runningActivities" = "1a14c463-8315-4099-a025-c3272507cfc2,7bfbad66-1f5c-4ec2-b7c9-d24fc59e6a00";
       "kactivitymanagerdrc"."main"."stoppedActivities" = "";
       "kcminputrc"."Libinput.1267.12541.ELAN071A:00 04F3:30FD Touchpad"."ClickMethod" = 2;
@@ -1050,6 +1050,7 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.1.General"."ToolBoxButtonY" = 30;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.1.Wallpaper.org.kde.image.General"."Image" = "/etc/nixos/wallpaper.png";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115"."ItemGeometries-0x0" = "Applet-142:0,0,304,304,0;";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115"."ItemGeometries-1024x768" = "Applet-142:0,0,304,304,0;";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115"."ItemGeometries-1366x768" = "Applet-142:0,0,304,304,0;";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115"."ItemGeometries-1920x1080" = "Applet-142:0,0,304,304,0;";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115"."ItemGeometries-3464x2165" = "";
@@ -1069,7 +1070,7 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115.ConfigDialog"."DialogWidth" = 720;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115.General"."ToolBoxButtonX" = 444;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115.General"."ToolBoxButtonY" = 29;
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115.Wallpaper.org.kde.image.General"."Image" = "/etc/nixos/wallpaper.png";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115.Wallpaper.org.kde.image.General"."Image" = "/home/gambled/Pictures/wallpapers/irl/cactus.png";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115.Wallpaper.org.kde.image.General"."SlidePaths" = "/home/gambled/.local/share/wallpapers/,/nix/store/lh4bfv4pfga4azjwj5lzkry8ilyq8g65-breeze-qt5-5.27.10-bin/share/wallpapers/,/etc/profiles/per-user/gambled/share/wallpapers/,/run/current-system/sw/share/wallpapers/";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.144"."activityId" = "";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.144"."formfactor" = 2;
@@ -1133,7 +1134,7 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.ConfigDialog"."DialogHeight" = 540;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.ConfigDialog"."DialogWidth" = 720;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.General"."ToolBoxButtonX" = 444;
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.Wallpaper.org.kde.image.General"."Image" = "/etc/nixos/wallpaper.png";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.Wallpaper.org.kde.image.General"."Image" = "/home/gambled/Pictures/wallpapers/minimalistic/ALLqk82.png";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.Wallpaper.org.kde.image.General"."SlidePaths" = "/home/gambled/.local/share/wallpapers/,/nix/store/lh4bfv4pfga4azjwj5lzkry8ilyq8g65-breeze-qt5-5.27.10-bin/share/wallpapers/,/etc/profiles/per-user/gambled/share/wallpapers/,/run/current-system/sw/share/wallpapers/";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27"."activityId" = "";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27"."formfactor" = 2;
@@ -1202,7 +1203,7 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30.Applets.119"."plugin" = "org.kde.kdeconnect";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30.Applets.124"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30.Applets.124"."plugin" = "org.kde.plasma.mediacontroller";
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30.Applets.124.Configuration"."PreloadWeight" = 2;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30.Applets.124.Configuration"."PreloadWeight" = 10;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30.Applets.125"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30.Applets.125"."plugin" = "org.kde.plasma.mediacontroller_plus";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30.Applets.125.Configuration"."PreloadWeight" = 0;
@@ -1315,6 +1316,7 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.41"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.41"."plugin" = "org.kde.plasma.volume";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.41.Configuration"."PreloadWeight" = 75;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.41.Configuration.General"."currentTab" = "streams";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.41.Configuration.General"."migrated" = true;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.42"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.36.Applets.42"."plugin" = "org.kde.plasma.keyboardindicator";
@@ -1517,7 +1519,7 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.8.Applets.12.Configuration"."PreloadWeight" = 42;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.8.Applets.125"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.8.Applets.125"."plugin" = "org.kde.plasma.mediacontroller_plus";
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.8.Applets.125.Configuration"."PreloadWeight" = 2;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.8.Applets.125.Configuration"."PreloadWeight" = 10;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.8.Applets.13"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.8.Applets.13"."plugin" = "org.kde.plasma.keyboardlayout";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.8.Applets.13.Configuration"."PreloadWeight" = 42;
