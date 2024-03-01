@@ -23,6 +23,8 @@
     cmake
     
     #dev languages
+    kotlin
+    zulu #java
     python3
     python311Packages.pip
     rustc
