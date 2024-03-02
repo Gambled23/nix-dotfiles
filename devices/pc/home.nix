@@ -20,19 +20,18 @@
 
     # dev tools
     android-studio
-    cmake
+    #cmake
     
     #dev languages
     kotlin
     zulu #java
     python3
     python311Packages.pip
-    rustc
-    rustup
+    #rustc
+    #rustup
     gcc
 
     # games
-    bottles
     ryujinx
     steam
     steam-run
