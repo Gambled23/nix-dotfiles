@@ -1,6 +1,6 @@
 { pkgs }:
 
-pkgs.writeShellScriptBin "auto-push" ''
+pkgs.writeShellScriptBin "aps" ''
   #!${pkgs.bash}/bin/bash
   set -e
   cd /home/gambled/Documents

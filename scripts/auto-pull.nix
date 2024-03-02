@@ -1,6 +1,6 @@
 { pkgs }:
 
-pkgs.writeShellScriptBin "auto-pull" ''
+pkgs.writeShellScriptBin "apll" ''
   #!${pkgs.bash}/bin/bash
  
   cd /home/gambled/Documents/nix-dotfiles/

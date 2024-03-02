@@ -49,12 +49,5 @@
   services.xrdp.enable = true;
   services.xrdp.defaultWindowManager = "startplasma-x11";
   services.xrdp.openFirewall = true;
-
-  systemd.user.services.foo = {
-  script = ''
-    /home/gambled/Documents/trakt/discrakt
-  '';
-  wantedBy = [ "graphical-session.target" ];
-  partOf = [ "graphical-session.target" ];
-};
+  
 }

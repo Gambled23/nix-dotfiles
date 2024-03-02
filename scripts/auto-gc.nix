@@ -1,6 +1,6 @@
 { pkgs }:
 
-pkgs.writeShellScriptBin "auto-gc" ''
+pkgs.writeShellScriptBin "agc" ''
   #!${pkgs.bash}/bin/bash
 
   sudo nix-collect-garbage  --delete-old
