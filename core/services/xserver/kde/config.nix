@@ -233,8 +233,8 @@
       "kwin"."view_actual_size" = [ ];
       "kwin"."view_zoom_in" = ["Meta++" "Meta+="];
       "kwin"."view_zoom_out" = "Meta+-";
-      "mediacontrol"."mediavolumedown" = [ ];
-      "mediacontrol"."mediavolumeup" = [ ];
+      "mediacontrol"."mediavolumedown" = "Alt+_";
+      "mediacontrol"."mediavolumeup" = "Alt++";
       "mediacontrol"."nextmedia" = "Alt+3";
       "mediacontrol"."pausemedia" = [ ];
       "mediacontrol"."playmedia" = [ ];
@@ -990,7 +990,7 @@
       "kwinrc"."Tiling"."padding" = 4;
       "kwinrc"."Tiling.09b7e5bf-dcd1-5cce-80f5-55cdb5661edc"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
       "kwinrc"."Tiling.0a4754f9-2a02-5e1d-a0b0-45101a1c9564"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
-      "kwinrc"."Tiling.213a9620-187e-58a6-b80b-85d8fb95dfce"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
+      "kwinrc"."Tiling.213a9620-187e-58a6-b80b-85d8fb95dfce"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"layoutDirection\":\"vertical\",\"tiles\":[{\"height\":0.5},{\"height\":0.5}],\"width\":0.4},{\"width\":0.3},{\"width\":0.30000000000000004}]}";
       "kwinrc"."Tiling.2992be2c-a3fc-57ae-92d6-94fa22e15695"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
       "kwinrc"."Tiling.3c373409-48e0-57e9-a1a9-eb32e49f8772"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
       "kwinrc"."Tiling.41982af9-8f97-5bdc-9e06-b4cf78339e0d"."tiles" = "{\"layoutDirection\":\"horizontal\",\"tiles\":[{\"width\":0.25},{\"width\":0.5},{\"width\":0.25}]}";
@@ -1195,6 +1195,13 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.141.Configuration.ConfigDialog"."DialogWidth" = 800;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.141.Configuration.General"."containmentType" = "Plasma";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.141.Configuration.General"."style" = "NoText";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.152"."immutability" = 1;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.152"."plugin" = "org.kde.plasma.betterinlineclock";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.152.Configuration.Appearance"."showDate" = false;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.152.Configuration.ConfigDialog"."DialogHeight" = 600;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.152.Configuration.ConfigDialog"."DialogWidth" = 800;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.154"."immutability" = 1;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.154"."plugin" = "org.kde.plasma.marginsseparator";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.30"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.30"."plugin" = "org.kde.plasma.appmenu";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.30.Configuration.ConfigDialog"."DialogHeight" = 480;
@@ -1216,8 +1223,8 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.92"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.92"."plugin" = "org.kde.plasma.marginsseparator";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.ConfigDialog"."DialogHeight" = 91;
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.ConfigDialog"."DialogWidth" = 1920;
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.General"."AppletOrder" = "141;30;31;81;92;121;117;118;33;35";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.ConfigDialog"."DialogWidth" = 1366;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.General"."AppletOrder" = "141;30;31;81;92;121;117;118;33;35;154;152";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30"."activityId" = "";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30"."formfactor" = 2;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30"."immutability" = 1;
