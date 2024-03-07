@@ -41,9 +41,7 @@
     wineWowPackages.waylandFull
 
     # media
-    vlc
     scrcpy
-    stremio
     # media creation
     inkscape-with-extensions
     gimp-with-plugins

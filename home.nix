@@ -43,7 +43,8 @@
     xclip # allows using the clipboard inside a terminal 
 
     # media
-
+    stremio
+    vlc
     # media creation
 
     # messaging
