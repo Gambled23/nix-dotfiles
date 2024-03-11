@@ -387,7 +387,7 @@
       "kglobalshortcutsrc"."org.kde.plasma.emojier.desktop"."_k_friendly_name" = "Emoji Selector";
       "kglobalshortcutsrc"."org.kde.spectacle.desktop"."_k_friendly_name" = "Spectacle";
       "kglobalshortcutsrc"."org_kde_powerdevil"."_k_friendly_name" = "Power Management";
-      "kglobalshortcutsrc"."plasmashell"."_k_friendly_name" = "Activity switching";
+      "kglobalshortcutsrc"."plasmashell"."_k_friendly_name" = "Plasma";
       "kglobalshortcutsrc"."smartcode-stremio.desktop"."_k_friendly_name" = "Stremio";
       "kglobalshortcutsrc"."systemsettings.desktop"."_k_friendly_name" = "System Settings";
       "kglobalshortcutsrc"."vesktop.desktop"."_k_friendly_name" = "Vesktop";
@@ -1162,6 +1162,7 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.141.Configuration.General"."style" = "NoText";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.152"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.152"."plugin" = "org.kde.plasma.betterinlineclock";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.152.Configuration"."PreloadWeight" = 55;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.152.Configuration.Appearance"."showDate" = false;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.152.Configuration.ConfigDialog"."DialogHeight" = 600;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.152.Configuration.ConfigDialog"."DialogWidth" = 800;
@@ -1248,6 +1249,7 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30.Applets.41.Configuration"."PreloadWeight" = 60;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30.Applets.42"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30.Applets.42"."plugin" = "org.kde.plasma.networkmanagement";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30.Applets.42.Configuration"."PreloadWeight" = 42;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30.Applets.43"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30.Applets.43"."plugin" = "org.kde.plasma.nightcolorcontrol";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.30.Applets.43.Configuration"."PreloadWeight" = 34;
