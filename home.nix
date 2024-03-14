@@ -57,6 +57,7 @@
     jellyfin-ffmpeg
     android-tools
     libreoffice
+    gnome.simple-scan
 
     # extras
     bat # cat replacement

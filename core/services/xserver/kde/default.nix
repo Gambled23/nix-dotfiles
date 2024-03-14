@@ -95,28 +95,6 @@ with lib;
         password-border-width = 0
       '';
     };
-    /*
-    displayManager = {
-      sddm = {
-        enable = true;
-        autoNumlock = true;
-
-        wayland = {
-          enable = true;
-        };
-        
-        settings = {
-          Autologin = {
-            Session = "plasmawayland";
-            User = "gambled";
-          };
-        };
-        
-        autoLogin = {
-          relogin = true;
-        };
-      };
-    };*/
   };
 
   #---------------------------------------------------------------------
@@ -144,8 +122,9 @@ with lib;
     kup
   ];
   environment.plasma5.excludePackages = with pkgs.libsForQt5; [
-    konsole
+    
   ];
+  programs.partition-manager.enable = true;
   programs.kdeconnect.enable = true;
   networking.firewall = { 
     enable = true;
