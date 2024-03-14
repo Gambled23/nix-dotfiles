@@ -59,6 +59,7 @@
     android-tools
     libreoffice
     gnome.simple-scan
+    galaxy-buds-client
 
     # extras
     bat # cat replacement
