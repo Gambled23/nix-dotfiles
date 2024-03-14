@@ -44,7 +44,6 @@
     scrcpy
     # media creation
     inkscape-with-extensions
-    gimp-with-plugins
     qt6.qtwebsockets
     libsForQt5.kdenlive
     libportal-qt5

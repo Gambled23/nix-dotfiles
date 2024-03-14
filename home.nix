@@ -46,6 +46,7 @@
     stremio
     vlc
     # media creation
+    gimp
 
     # messaging
     vesktop 

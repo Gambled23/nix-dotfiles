@@ -117,7 +117,6 @@ with lib;
     libsForQt5.qtstyleplugin-kvantum
     libsForQt5.bismuth
     libportal-qt5
-    gparted
     kate
     kup
   ];
