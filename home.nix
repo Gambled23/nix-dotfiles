@@ -28,7 +28,6 @@
   home.packages = with pkgs; [ 
     # dev tools
     dbeaver
-    #vscode
     vscodium
     kitty
     tmux
