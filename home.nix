@@ -28,7 +28,8 @@
   home.packages = with pkgs; [ 
     # dev tools
     dbeaver
-    vscode
+    #vscode
+    vscodium
     kitty
     tmux
     lazygit
@@ -37,6 +38,13 @@
     php83Packages.composer
     php83
     nodejs_21
+    kotlin
+    zulu #java
+    python3
+    python311Packages.pip
+    gcc
+    #rustc
+    #rustup
 
     # neovim
     #python311Packages.pynvim
@@ -45,6 +53,7 @@
     # media
     stremio
     vlc
+
     # media creation
     gimp
 

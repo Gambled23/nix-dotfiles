@@ -4,10 +4,8 @@
   system.stateVersion = "23.11";
   networking.hostName = "dev-gambled";
 
-  imports =
-    [ 
-      ../../configuration.nix
-      ./hardware-configuration.nix
-    ];
-
+  imports = [ 
+    ../../configuration.nix
+    ./hardware-configuration.nix
+  ];
 }

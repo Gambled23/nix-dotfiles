@@ -19,9 +19,6 @@
     steam-run
     osu-lazer-bin
 
-    # media
-    stremio
-
     # media creation
     inkscape-with-extensions
 

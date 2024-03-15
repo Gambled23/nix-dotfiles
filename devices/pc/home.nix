@@ -23,13 +23,6 @@
     #cmake
     
     #dev languages
-    kotlin
-    zulu #java
-    python3
-    python311Packages.pip
-    #rustc
-    #rustup
-    gcc
 
     # games
     ryujinx
@@ -58,7 +51,6 @@
     # utils
     polychromatic
     autorandr # for multi monitor setups
-    xwaylandvideobridge
 
     #web browsers
     #chromium
