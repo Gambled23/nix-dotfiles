@@ -28,7 +28,7 @@
   home.packages = with pkgs; [ 
     # dev tools
     dbeaver
-    vscodium
+    vscode
     kitty
     tmux
     lazygit
