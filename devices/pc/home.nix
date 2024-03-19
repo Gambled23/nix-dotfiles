@@ -32,7 +32,10 @@
     #prismlauncher #minecra
     r2modman
     wineWowPackages.waylandFull
-
+    #vr
+    monado
+    opencomposite
+    
     # media
     scrcpy
     # media creation

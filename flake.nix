@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs = { url = "github:nixos/nixpkgs/nixos-unstable"; };
+    nixpkgs-xr.url = "github:nix-community/nixpkgs-xr";
 
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
@@ -21,7 +22,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, home-manager, plasma-manager, spicetify-nix, kde2nix, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, plasma-manager, spicetify-nix, kde2nix, nixpkgs-xr, ... }@inputs:
     let
     specialArgs = {
       inherit spicetify-nix;
@@ -54,6 +55,7 @@
         modules = [
           ./devices/pc/configuration.nix
           home-manager.nixosModules.home-manager
+          nixpkgs-xr.nixosModules.nixpkgs-xr
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;

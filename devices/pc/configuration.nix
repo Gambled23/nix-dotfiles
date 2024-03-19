@@ -9,6 +9,7 @@
 
     ../../core/services/wakeonlan.nix
     ../../core/services/xrdp.nix
+    ../../core/services/vr.nix
     ../../core/programs/steam.nix
   ];
 
