@@ -36,4 +36,19 @@
   # virtualisation
   virtualisation.vmware.host.enable = true; # vmware
   # virtualisation.waydroid.enable = true; # Waydroid
+
+  # disctrack
+  systemd.services.powerprofile = {
+  wantedBy = [ "multi-user.target" ];
+  path = [ pkgs.coreutils ];
+  enable = true;
+  serviceConfig = {
+    User = "root";
+    Group = "root";
+    };
+  script = ''
+  cd /hdd/home/gambled/Documents/trakt/
+  /hdd/home/gambled/Documents/trakt/discrakt'';
+  };
+
 }
