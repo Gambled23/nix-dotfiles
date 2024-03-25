@@ -68,7 +68,6 @@
     libreoffice
     gnome.simple-scan
     galaxy-buds-client
-    floorp
 
     # extras
     bat # cat replacement

@@ -54,6 +54,7 @@
     # utils
     polychromatic
     autorandr # for multi monitor setups
+    nextcloud-client
 
     #web browsers
     #chromium
