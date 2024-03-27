@@ -929,7 +929,7 @@
       "kscreenlockerrc"."Daemon"."Autolock" = false;
       "kscreenlockerrc"."Daemon"."LockGrace" = 300;
       "kscreenlockerrc"."Daemon"."LockOnResume" = false;
-      "kscreenlockerrc"."Greeter.Wallpaper.org.kde.image.General"."Image" = "/home/gambled/Pictures/Wallpapers/anime/anime-girl-fantasy-samurai-katana-pistol-4k-wallpaper-uhdpaper.com-408@0@h.jpg";
+      "kscreenlockerrc"."Greeter.Wallpaper.org.kde.image.General"."Image" = "/home/gambled/Pictures/Wallpapers/PC/anime/88544744_p0.jpg";
       "kscreenlockerrc"."Greeter.Wallpaper.org.kde.image.General"."PreviewImage" = "/home/gambled/.local/share/wallpapers/nordic-wallpaper.jpg";
       "ksmserverrc"."SubSession: 1a14c463-8315-4099-a025-c3272507cfc2"."count" = 0;
       "ksmserverrc"."SubSession: 32ceefdc-1409-4131-874a-fa35030e1102"."count" = 0;
@@ -1254,7 +1254,7 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.1"."wallpaperplugin" = "org.kde.image";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.1.General"."ToolBoxButtonX" = 408;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.1.General"."ToolBoxButtonY" = 30;
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.1.Wallpaper.org.kde.image.General"."Image" = "/home/gambled/Pictures/Wallpapers/anime/anime-girl-fantasy-samurai-katana-pistol-4k-wallpaper-uhdpaper.com-408@0@h.jpg";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.1.Wallpaper.org.kde.image.General"."Image" = "/home/gambled/Pictures/Wallpapers/PC/anime/88544744_p0.jpg";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115"."ItemGeometries-0x0" = "Applet-142:0,0,304,304,0;Applet-48:512,400,1008,80,0;Applet-152:1856,976,64,64,0;";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115"."ItemGeometries-1024x768" = "Applet-142:0,0,304,304,0;";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115"."ItemGeometries-1280x720" = "Applet-142:0,0,304,304,0;";
@@ -1364,7 +1364,7 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115.General"."ToolBoxButtonY" = 29;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115.Wallpaper.org.kde.image.General"."Blur" = true;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115.Wallpaper.org.kde.image.General"."FillMode" = 6;
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115.Wallpaper.org.kde.image.General"."Image" = "/home/gambled/Pictures/Wallpapers/anime/anime-girl-fantasy-samurai-katana-pistol-4k-wallpaper-uhdpaper.com-408@0@h.jpg";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115.Wallpaper.org.kde.image.General"."Image" = "/home/gambled/Pictures/Wallpapers/PC/anime/88544744_p0.jpg";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115.Wallpaper.org.kde.image.General"."SlidePaths" = "/home/gambled/.local/share/wallpapers/,/nix/store/lh4bfv4pfga4azjwj5lzkry8ilyq8g65-breeze-qt5-5.27.10-bin/share/wallpapers/,/etc/profiles/per-user/gambled/share/wallpapers/,/run/current-system/sw/share/wallpapers/";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115.Wallpaper.org.kde.slideshow.General"."Blur" = true;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115.Wallpaper.org.kde.slideshow.General"."FillMode" = 0;
@@ -1432,12 +1432,12 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.24"."location" = 0;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.24"."plugin" = "org.kde.plasma.folder";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.24"."wallpaperplugin" = "org.kde.image";
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.24.Wallpaper.org.kde.image.General"."Image" = "/home/gambled/Pictures/Wallpapers/anime/anime-girl-fantasy-samurai-katana-pistol-4k-wallpaper-uhdpaper.com-408@0@h.jpg";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.24.Wallpaper.org.kde.image.General"."Image" = "/home/gambled/Pictures/Wallpapers/PC/anime/88544744_p0.jpg";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26"."ItemGeometries-0x0" = "Applet-149:0,0,304,304,0;Applet-150:0,304,304,112,0;Applet-139:0,416,304,624,0;Applet-155:304,0,240,192,0;Applet-151:304,400,304,112,0;Applet-138:688,608,384,432,0;Applet-59:304,32,336,368,0;Applet-140:1312,688,400,352,0;";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26"."ItemGeometries-1280x720" = "Applet-149:0,0,304,304,0;Applet-150:0,304,304,112,0;Applet-139:0,416,304,272,0;Applet-155:304,0,240,192,0;Applet-151:304,400,304,112,0;Applet-138:688,256,384,432,0;Applet-140:880,336,400,352,0;";
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26"."ItemGeometries-1920x1080" = "Applet-190:0,0,352,560,0;Applet-194:704,128,448,96,0;Applet-195:784,224,320,112,0;Applet-138:1536,80,384,432,0;Applet-139:0,672,448,400,0;Applet-140:1536,496,384,544,0;";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26"."ItemGeometries-1920x1080" = "Applet-190:32,32,352,560,0;Applet-139:32,640,448,400,0;Applet-194:656,32,608,96,0;Applet-195:800,128,320,112,0;Applet-138:1504,32,384,432,0;Applet-140:1520,512,384,544,0;";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26"."ItemGeometries-3840x2160" = "Applet-139:0,448,464,624,0;Applet-138:688,640,384,432,0;Applet-140:1312,720,400,352,0;";
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26"."ItemGeometriesHorizontal" = "Applet-190:0,0,352,560,0;Applet-194:704,128,448,96,0;Applet-195:784,224,320,112,0;Applet-138:1536,80,384,432,0;Applet-139:0,672,448,400,0;Applet-140:1536,496,384,544,0;";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26"."ItemGeometriesHorizontal" = "Applet-190:32,32,352,560,0;Applet-139:32,640,448,400,0;Applet-194:656,32,608,96,0;Applet-195:800,128,320,112,0;Applet-138:1504,32,384,432,0;Applet-140:1520,512,384,544,0;";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26"."activityId" = "1a14c463-8315-4099-a025-c3272507cfc2";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26"."formfactor" = 0;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26"."immutability" = 1;
@@ -1467,6 +1467,10 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.Applets.190"."plugin" = "plasmusic-toolbar";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.Applets.194"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.Applets.194"."plugin" = "com.Petik.clock";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.Applets.194.Configuration"."UserBackgroundHints" = "ShadowBackground";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.Applets.194.Configuration.ConfigDialog"."DialogHeight" = 600;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.Applets.194.Configuration.ConfigDialog"."DialogWidth" = 800;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.Applets.194.Configuration.General"."fontSize" = 45;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.Applets.195"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.Applets.195"."plugin" = "org.kde.fancyclock";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.Applets.195.Configuration.ConfigDialog"."DialogHeight" = 600;
@@ -1477,7 +1481,7 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.ConfigDialog"."DialogHeight" = 540;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.ConfigDialog"."DialogWidth" = 720;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.General"."ToolBoxButtonX" = 444;
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.Wallpaper.org.kde.image.General"."Image" = "/home/gambled/Pictures/Wallpapers/anime/anime-girl-fantasy-samurai-katana-pistol-4k-wallpaper-uhdpaper.com-408@0@h.jpg";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.Wallpaper.org.kde.image.General"."Image" = "/home/gambled/Pictures/Wallpapers/PC/anime/88544744_p0.jpg";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.Wallpaper.org.kde.image.General"."SlidePaths" = "/home/gambled/.local/share/wallpapers/,/nix/store/lh4bfv4pfga4azjwj5lzkry8ilyq8g65-breeze-qt5-5.27.10-bin/share/wallpapers/,/etc/profiles/per-user/gambled/share/wallpapers/,/run/current-system/sw/share/wallpapers/";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.Wallpaper.org.kde.slideshow.General"."SlideInterval" = 87300;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.Wallpaper.org.kde.slideshow.General"."SlidePaths" = "/home/gambled/Pictures/Wallpapers/minimalistic/";
@@ -1711,6 +1715,14 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47"."location" = 4;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47"."plugin" = "org.kde.panel";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47"."wallpaperplugin" = "org.kde.image";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.Applets.204"."immutability" = 1;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.Applets.204"."plugin" = "com.github.SnoutBug.mmckLauncher";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.Applets.204.Configuration.ConfigDialog"."DialogHeight" = 600;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.Applets.204.Configuration.ConfigDialog"."DialogWidth" = 800;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.Applets.204.Configuration.General"."customButtonImage" = "ring-kde";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.Applets.204.Configuration.General"."floating" = true;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.Applets.204.Configuration.General"."launcherPosition" = 1;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.Applets.204.Configuration.General"."useCustomButtonImage" = true;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.Applets.48"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.Applets.48"."plugin" = "org.kde.plasma.icontasks";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.Applets.48.Configuration.ConfigDialog"."DialogHeight" = 600;
@@ -1719,8 +1731,8 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.Applets.48.Configuration.General"."groupingLauncherUrlBlacklist" = "applications:spotify.desktop";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.Applets.48.Configuration.General"."launchers" = "[7bfbad66-1f5c-4ec2-b7c9-d24fc59e6a00]\napplications:kitty.desktop,applications:firefox.desktop,applications:code.desktop,applications:org.kde.dolphin.desktop,[7bfbad66-1f5c-4ec2-b7c9-d24fc59e6a00]\napplications:dbeaver.desktop,[1a14c463-8315-4099-a025-c3272507cfc2]\napplications:steam.desktop,[1a14c463-8315-4099-a025-c3272507cfc2]\napplications:smartcode-stremio.desktop,applications:spotify.desktop";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.ConfigDialog"."DialogHeight" = 91;
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.ConfigDialog"."DialogWidth" = 1366;
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.General"."AppletOrder" = 48;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.ConfigDialog"."DialogWidth" = 1920;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.47.General"."AppletOrder" = "204;48";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.49"."activityId" = "";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.49"."formfactor" = 2;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.49"."immutability" = 1;
@@ -1806,7 +1818,7 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.70.Applets.100.Configuration.Appearance"."fontWeight" = 400;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.70.General"."ToolBoxButtonX" = 255;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.70.General"."ToolBoxButtonY" = 22;
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.70.Wallpaper.org.kde.image.General"."Image" = "/home/gambled/Pictures/Wallpapers/anime/anime-girl-fantasy-samurai-katana-pistol-4k-wallpaper-uhdpaper.com-408@0@h.jpg";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.70.Wallpaper.org.kde.image.General"."Image" = "/home/gambled/Pictures/Wallpapers/PC/anime/88544744_p0.jpg";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.76"."ItemGeometries-0x0" = "Applet-156:0,0,368,480,0;Applet-124:560,32,240,144,0;Applet-157:0,480,240,192,0;";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.76"."ItemGeometries-1366x768" = "Applet-156:0,0,368,480,0;Applet-124:560,32,240,144,0;Applet-157:0,480,240,192,0;";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.76"."ItemGeometries-1920x1080" = "Applet-156:0,0,368,480,0;";
@@ -1833,7 +1845,7 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.76.General"."extraItems" = "org.kde.plasma.devicenotifier,org.kde.plasma.notifications,org.kde.plasma.clipboard,org.kde.plasma.manage-inputmethod,org.kde.plasma.battery,org.kde.plasma.printmanager,org.kde.kupapplet,org.kde.plasma.keyboardindicator,org.kde.kdeconnect,org.kde.plasma.keyboardlayout,org.kde.plasma.bluetooth,org.kde.plasma.volume,org.kde.plasma.nightcolorcontrol,org.kde.kscreen,org.kde.plasma.networkmanagement";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.76.General"."hiddenItems" = "spotify-client";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.76.General"."knownItems" = "org.kde.plasma.devicenotifier,org.kde.plasma.notifications,org.kde.plasma.mediacontroller,org.kde.plasma.clipboard,org.kde.plasma.manage-inputmethod,org.kde.plasma.battery,org.kde.plasma.printmanager,org.kde.kupapplet,org.kde.plasma.keyboardindicator,org.kde.kdeconnect,org.kde.plasma.keyboardlayout,org.kde.plasma.bluetooth,org.kde.plasma.volume,org.kde.plasma.nightcolorcontrol,org.kde.kscreen,org.kde.plasma.networkmanagement";
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.76.Wallpaper.org.kde.image.General"."Image" = "/home/gambled/Pictures/Wallpapers/anime/anime-girl-fantasy-samurai-katana-pistol-4k-wallpaper-uhdpaper.com-408@0@h.jpg";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.76.Wallpaper.org.kde.image.General"."Image" = "/home/gambled/Pictures/Wallpapers/PC/anime/88544744_p0.jpg";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.77"."ItemGeometries-0x0" = "Applet-85:0,0,256,96,0;Applet-87:528,16,880,96,0;Applet-86:1184,624,400,416,0;";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.77"."ItemGeometries-1920x1080" = "Applet-85:0,0,256,96,0;Applet-87:528,16,880,96,0;Applet-86:1184,624,400,416,0;";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.77"."ItemGeometriesHorizontal" = "Applet-85:0,0,256,96,0;Applet-87:528,16,880,96,0;Applet-86:1184,624,400,416,0;";
@@ -1858,7 +1870,7 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.77.Applets.87.Configuration.ConfigDialog"."DialogHeight" = 540;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.77.Applets.87.Configuration.ConfigDialog"."DialogWidth" = 720;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.77.Applets.87.Configuration.General"."fontSize" = 66;
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.77.Wallpaper.org.kde.image.General"."Image" = "/home/gambled/Pictures/Wallpapers/anime/anime-girl-fantasy-samurai-katana-pistol-4k-wallpaper-uhdpaper.com-408@0@h.jpg";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.77.Wallpaper.org.kde.image.General"."Image" = "/home/gambled/Pictures/Wallpapers/PC/anime/88544744_p0.jpg";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.8"."activityId" = "";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.8"."formfactor" = 2;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.8"."immutability" = 1;
@@ -1932,7 +1944,7 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.88"."location" = 0;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.88"."plugin" = "org.kde.plasma.folder";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.88"."wallpaperplugin" = "org.kde.image";
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.88.Wallpaper.org.kde.image.General"."Image" = "/home/gambled/Pictures/Wallpapers/anime/anime-girl-fantasy-samurai-katana-pistol-4k-wallpaper-uhdpaper.com-408@0@h.jpg";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.88.Wallpaper.org.kde.image.General"."Image" = "/home/gambled/Pictures/Wallpapers/PC/anime/88544744_p0.jpg";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments115Appletsts.48.Configuration.General"."launchers" = "applications:org.kde.dolphin.desktop,applications:firefox.desktop,applications:spotify.desktop,[1a14c463-8315-4099-a025-c3272507cfc2]\napplications:steam.desktop,applications:code.desktop,[1a14c463-8315-4099-a025-c3272507cfc2]\napplications:smartcode-stremio.desktop,[7bfbad66-1f5c-4ec2-b7c9-d24fc59e6a00]\napplications:dbeaver.desktop,[7bfbad66-1f5c-4ec2-b7c9-d24fc59e6a00]\napplications:kitty.desktop";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments47Appletsts.114.Configuration.Appearance"."customSpacing" = 0.581039755351682;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments47Appletsts.114.Configuration.Appearance"."fixedFont" = true;
