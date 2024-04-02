@@ -19,7 +19,7 @@ with lib;
     libinput.enable = true;
 
     desktopManager = {
-      plasma5.enable = true;
+      plasma6.enable = true;
     };
 
     displayManager.lightdm.greeters.mini = {
@@ -105,24 +105,19 @@ with lib;
     libsForQt5.kaccounts-integration
     libsForQt5.kaccounts-providers
     libsForQt5.packagekit-qt
-    libsForQt5.kaccounts-integration
-    libsForQt5.kaccounts-providers
     libsForQt5.signond
     libsForQt5.qoauth
     libsForQt5.kio-gdrive
     libsForQt5.ktorrent
     libsForQt5.libktorrent
-    libsForQt5.discover
-    libsForQt5.packagekit-qt
     libsForQt5.qtstyleplugin-kvantum
     libsForQt5.bismuth
     libportal-qt5
+    qt6.qtwebengine
     kate
     kup
   ];
-  environment.plasma5.excludePackages = with pkgs.libsForQt5; [
-    
-  ];
+
   programs.partition-manager.enable = true;
   programs.kdeconnect.enable = true;
   networking.firewall = { 

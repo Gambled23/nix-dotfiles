@@ -39,11 +39,9 @@
     nodejs_21
     kotlin
     zulu #java
-    python3
-    python311Packages.pip
     gcc
-    #rustc
-    #rustup
+    rustc
+    rustup
 
     # neovim
     #python311Packages.pynvim
