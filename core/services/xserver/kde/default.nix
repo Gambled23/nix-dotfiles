@@ -111,6 +111,7 @@ with lib;
     libsForQt5.ktorrent
     libsForQt5.libktorrent
     qt6Packages.qtstyleplugin-kvantum
+    libsForQt5.qtstyleplugin-kvantum
     libsForQt5.bismuth
     libportal-qt5
     qt6.qtwebengine
