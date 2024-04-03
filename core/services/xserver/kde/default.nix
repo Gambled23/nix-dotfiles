@@ -110,7 +110,7 @@ with lib;
     libsForQt5.kio-gdrive
     libsForQt5.ktorrent
     libsForQt5.libktorrent
-    libsForQt5.qtstyleplugin-kvantum
+    qt6Packages.qtstyleplugin-kvantum
     libsForQt5.bismuth
     libportal-qt5
     qt6.qtwebengine
