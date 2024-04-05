@@ -25,6 +25,7 @@
     #dev languages
 
     # games
+    gamemode
     ryujinx
     steam
     steam-run
