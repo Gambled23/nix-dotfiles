@@ -23,7 +23,9 @@
     #cmake
     
     #dev languages
-
+    python3
+    virtualenv
+    python311Packages.mysqlclient
     # games
     gamemode
     ryujinx
