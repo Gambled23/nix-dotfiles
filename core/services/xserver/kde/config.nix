@@ -50,15 +50,15 @@
       "kcm_touchpad"."Toggle Touchpad" = "Touchpad Toggle";
       "khotkeys"."{d03619b6-9b3c-48cc-9d9c-a2aadb485550}" = [ ];
       "kmix"."decrease_microphone_volume" = "Microphone Volume Down";
-      "kmix"."decrease_volume" = ["" "" "Alt+-" "Volume Down"];
+      "kmix"."decrease_volume" = ["Alt+-" "Volume Down"];
       "kmix"."decrease_volume_small" = [ ];
       "kmix"."increase_microphone_volume" = "Microphone Volume Up";
-      "kmix"."increase_volume" = ["" "" "Volume Up" "Alt+="];
+      "kmix"."increase_volume" = ["Volume Up" "Alt+="];
       "kmix"."increase_volume_small" = [ ];
-      "kmix"."mic_mute" = ["" "" "Microphone Mute" "Meta+Volume Mute"];
+      "kmix"."mic_mute" = ["Microphone Mute" "Meta+Volume Mute"];
       "kmix"."mute" = "Volume Mute";
       "ksmserver"."Halt Without Confirmation" = [ ];
-      "ksmserver"."Lock Session" = ["" "" "Meta+L" "Screensaver"];
+      "ksmserver"."Lock Session" = ["Meta+L" "Screensaver"];
       "ksmserver"."Log Out" = "Ctrl+Alt+Del";
       "ksmserver"."Log Out Without Confirmation" = [ ];
       "ksmserver"."Reboot" = [ ];
@@ -70,7 +70,7 @@
       "kwin"."Decrease Opacity" = [ ];
       "kwin"."Edit Tiles" = "Meta+T";
       "kwin"."Expose" = "Ctrl+F9";
-      "kwin"."ExposeAll" = ["" "" "Ctrl+F10" "Launch (C)"];
+      "kwin"."ExposeAll" = ["Ctrl+F10" "Launch (C)"];
       "kwin"."ExposeClass" = "Ctrl+F7";
       "kwin"."ExposeClassCurrentDesktop" = [ ];
       "kwin"."Grid View" = "Meta+G";
@@ -92,10 +92,10 @@
       "kwin"."Switch One Desktop Up" = "Meta+Ctrl+Up";
       "kwin"."Switch One Desktop to the Left" = "Meta+Ctrl+Left";
       "kwin"."Switch One Desktop to the Right" = "Meta+Ctrl+Right";
-      "kwin"."Switch Window Down" = ["" "" "Meta+Down" "Meta+Alt+Down"];
-      "kwin"."Switch Window Left" = ["" "" "Meta+Left" "Meta+Alt+Left"];
-      "kwin"."Switch Window Right" = ["" "" "Meta+Right" "Meta+Alt+Right"];
-      "kwin"."Switch Window Up" = ["" "" "Meta+Up" "Meta+Alt+Up"];
+      "kwin"."Switch Window Down" = ["Meta+Down" "Meta+Alt+Down"];
+      "kwin"."Switch Window Left" = ["Meta+Left" "Meta+Alt+Left"];
+      "kwin"."Switch Window Right" = ["Meta+Right" "Meta+Alt+Right"];
+      "kwin"."Switch Window Up" = ["Meta+Up" "Meta+Alt+Up"];
       "kwin"."Switch to Desktop 1" = "Meta+1";
       "kwin"."Switch to Desktop 10" = [ ];
       "kwin"."Switch to Desktop 11" = [ ];
@@ -149,7 +149,7 @@
       "kwin"."Walk Through Windows of Current Application Alternative (Reverse)" = [ ];
       "kwin"."Window Above Other Windows" = [ ];
       "kwin"."Window Below Other Windows" = [ ];
-      "kwin"."Window Close" = ["" "" "Alt+F4" "Meta+Q"];
+      "kwin"."Window Close" = ["Alt+F4" "Meta+Q"];
       "kwin"."Window Fullscreen" = "F11";
       "kwin"."Window Grow Horizontal" = [ ];
       "kwin"."Window Grow Vertical" = [ ];
@@ -243,7 +243,7 @@
       "org_kde_powerdevil"."Sleep" = "Sleep";
       "org_kde_powerdevil"."Toggle Keyboard Backlight" = "Keyboard Light On/Off";
       "org_kde_powerdevil"."Turn Off Screen" = [ ];
-      "org_kde_powerdevil"."powerProfile" = ["" "" "Battery" "Meta+B"];
+      "org_kde_powerdevil"."powerProfile" = ["Battery" "Meta+B"];
       "plasmashell"."activate task manager entry 1" = [ ];
       "plasmashell"."activate task manager entry 10" = [ ];
       "plasmashell"."activate task manager entry 2" = [ ];
@@ -321,6 +321,16 @@
       "services.services.services.services.services.org.kde.spectacle.desktop"."RecordWindow" = [ ];
       "services.services.services.services.services.org.kde.spectacle.desktop"."RectangularRegionScreenShot" = "Print";
       "services.services.services.services.services.org.kde.spectacle.desktop"."_launch" = [ ];
+      "services.services.services.services.services.services.code.desktop"."_launch" = "Meta+C";
+      "services.services.services.services.services.services.code.desktop"."new-empty-window" = "Meta+Shift+C";
+      "services.services.services.services.services.services.firefox.desktop"."_launch" = "Meta+F";
+      "services.services.services.services.services.services.kitty.desktop"."_launch" = "Meta+Return";
+      "services.services.services.services.services.services.org.kde.konsole.desktop"."_launch" = [ ];
+      "services.services.services.services.services.services.org.kde.plasma-systemmonitor.desktop"."_launch" = "Ctrl+Esc";
+      "services.services.services.services.services.services.org.kde.spectacle.desktop"."RecordRegion" = "Meta+Shift+R";
+      "services.services.services.services.services.services.org.kde.spectacle.desktop"."RecordWindow" = [ ];
+      "services.services.services.services.services.services.org.kde.spectacle.desktop"."RectangularRegionScreenShot" = "Print";
+      "services.services.services.services.services.services.org.kde.spectacle.desktop"."_launch" = [ ];
     };
     configFile = {
       "baloofilerc"."General"."dbVersion" = 2;
