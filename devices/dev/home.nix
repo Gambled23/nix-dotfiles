@@ -12,9 +12,8 @@
   ];
   
   home.packages = with pkgs; [ 
-    # dev
-    rustc
-    rustup
+    # dev languages
+
   ];
 }
 

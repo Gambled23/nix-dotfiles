@@ -34,6 +34,8 @@
     lazygit
 
     # dev languages
+    python3
+    virtualenv
     php83Packages.composer
     php83
     nodejs_21
