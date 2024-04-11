@@ -13,7 +13,7 @@
   
   home.packages = with pkgs; [ 
     # dev languages
-
+    chromium
   ];
 }
 

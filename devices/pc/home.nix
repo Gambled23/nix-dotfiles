@@ -19,23 +19,20 @@
     #mangal
 
     # dev tools
-    android-studio
+    #android-studio
     #cmake
     
     #dev languages
 
     # games
-    gamemode
+    #gamemode
     ryujinx
     steam
     steam-run
     osu-lazer-bin
-    prismlauncher #minecra
+    #prismlauncher #minecra
     r2modman
     wineWowPackages.waylandFull
-    #vr
-    monado
-    opencomposite
     
     # media
     scrcpy
@@ -54,8 +51,6 @@
 
     # utils
     polychromatic
-    autorandr # for multi monitor setups
-    nextcloud-client
 
     #web browsers
     #chromium

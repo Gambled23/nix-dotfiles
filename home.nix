@@ -35,7 +35,10 @@
 
     # dev languages
     python3
+    python311Packages.mysqlclient
     virtualenv
+    pkg-config
+    libmysqlclient
     php83Packages.composer
     php83
     nodejs_21
@@ -68,6 +71,8 @@
     libreoffice
     gnome.simple-scan
     galaxy-buds-client
+    autorandr # for multi monitor setups
+    nextcloud-client
 
     # extras
     bat # cat replacement
