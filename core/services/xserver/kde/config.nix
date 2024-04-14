@@ -360,6 +360,16 @@
       "services.services.services.services.services.services.services.services.services.org.kde.spectacle.desktop"."RecordWindow" = [ ];
       "services.services.services.services.services.services.services.services.services.org.kde.spectacle.desktop"."RectangularRegionScreenShot" = "Print";
       "services.services.services.services.services.services.services.services.services.org.kde.spectacle.desktop"."_launch" = [ ];
+      "services.services.services.services.services.services.services.services.services.services.code.desktop"."_launch" = "Meta+C";
+      "services.services.services.services.services.services.services.services.services.services.code.desktop"."new-empty-window" = "Meta+Shift+C";
+      "services.services.services.services.services.services.services.services.services.services.firefox.desktop"."_launch" = "Meta+F";
+      "services.services.services.services.services.services.services.services.services.services.kitty.desktop"."_launch" = "Meta+Return";
+      "services.services.services.services.services.services.services.services.services.services.org.kde.konsole.desktop"."_launch" = [ ];
+      "services.services.services.services.services.services.services.services.services.services.org.kde.plasma-systemmonitor.desktop"."_launch" = "Ctrl+Esc";
+      "services.services.services.services.services.services.services.services.services.services.org.kde.spectacle.desktop"."RecordRegion" = "Meta+Shift+R";
+      "services.services.services.services.services.services.services.services.services.services.org.kde.spectacle.desktop"."RecordWindow" = [ ];
+      "services.services.services.services.services.services.services.services.services.services.org.kde.spectacle.desktop"."RectangularRegionScreenShot" = "Print";
+      "services.services.services.services.services.services.services.services.services.services.org.kde.spectacle.desktop"."_launch" = [ ];
     };
     configFile = {
       "baloofilerc"."General"."dbVersion" = 2;
@@ -1343,12 +1353,6 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115"."location" = 0;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115"."plugin" = "org.kde.desktopcontainment";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115"."wallpaperplugin" = "org.kde.image";
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115.Applets.142"."immutability" = 1;
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115.Applets.142"."plugin" = "org.kde.plasma.analogclock";
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115.Applets.142"."transient" = true;
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115.Applets.142.Configuration"."PreloadWeight" = 60;
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115.Applets.142.Configuration"."popupHeight" = 440;
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115.Applets.142.Configuration"."popupWidth" = 440;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115.Applets.264"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115.Applets.264"."plugin" = "com.github.prayag2.modernclock";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115.ConfigDialog"."DialogHeight" = 540;
@@ -1357,7 +1361,7 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115.General"."ToolBoxButtonY" = 29;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115.Wallpaper.org.kde.image.General"."Blur" = true;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115.Wallpaper.org.kde.image.General"."FillMode" = 6;
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115.Wallpaper.org.kde.image.General"."Image" = "/home/gambled/Pictures/Wallpapers/PC/anime/89382665_p0.png";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115.Wallpaper.org.kde.image.General"."Image" = "/home/gambled/Pictures/Wallpapers/PC/anime/39050642_p0.jpg";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115.Wallpaper.org.kde.image.General"."SlidePaths" = "/home/gambled/.local/share/wallpapers/,/nix/store/lh4bfv4pfga4azjwj5lzkry8ilyq8g65-breeze-qt5-5.27.10-bin/share/wallpapers/,/etc/profiles/per-user/gambled/share/wallpapers/,/run/current-system/sw/share/wallpapers/";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115.Wallpaper.org.kde.slideshow.General"."Blur" = true;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.115.Wallpaper.org.kde.slideshow.General"."FillMode" = 0;
@@ -1462,7 +1466,7 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.ConfigDialog"."DialogWidth" = 720;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.Configuration"."PreloadWeight" = 42;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.General"."ToolBoxButtonX" = 444;
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.Wallpaper.org.kde.image.General"."Image" = "/home/gambled/Pictures/Wallpapers/PC/anime/89382665_p0.png";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.Wallpaper.org.kde.image.General"."Image" = "/home/gambled/Pictures/Wallpapers/PC/anime/39050642_p0.jpg";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.Wallpaper.org.kde.image.General"."SlidePaths" = "/home/gambled/.local/share/wallpapers/,/nix/store/lh4bfv4pfga4azjwj5lzkry8ilyq8g65-breeze-qt5-5.27.10-bin/share/wallpapers/,/etc/profiles/per-user/gambled/share/wallpapers/,/run/current-system/sw/share/wallpapers/";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.Wallpaper.org.kde.slideshow.General"."Blur" = true;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.26.Wallpaper.org.kde.slideshow.General"."SlideInterval" = 86400;
@@ -1505,7 +1509,7 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.233.Configuration.General"."sensors" = "[{\"name\":\"Average CPU Temperature\",\"sensorId\":\"cpu/all/averageTemperature\"}]";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.238"."immutability" = 1;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.238"."plugin" = "org.kde.plasma.notifications";
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.238.Configuration"."PreloadWeight" = 90;
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.238.Configuration"."PreloadWeight" = 95;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.238.Configuration"."popupHeight" = 432;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.238.Configuration"."popupWidth" = 324;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.27.Applets.239"."immutability" = 1;
@@ -1822,7 +1826,7 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.70.Applets.100.Configuration.Appearance"."fontWeight" = 400;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.70.General"."ToolBoxButtonX" = 255;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.70.General"."ToolBoxButtonY" = 22;
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.70.Wallpaper.org.kde.image.General"."Image" = "/home/gambled/Pictures/Wallpapers/PC/anime/89382665_p0.png";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.70.Wallpaper.org.kde.image.General"."Image" = "/home/gambled/Pictures/Wallpapers/PC/anime/39050642_p0.jpg";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.8"."activityId" = "";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.8"."formfactor" = 2;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.8"."immutability" = 1;
@@ -1896,7 +1900,7 @@
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.88"."location" = 0;
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.88"."plugin" = "org.kde.plasma.folder";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments.88"."wallpaperplugin" = "org.kde.image";
-      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.88.Wallpaper.org.kde.image.General"."Image" = "/home/gambled/Pictures/Wallpapers/PC/anime/89382665_p0.png";
+      "plasma-org.kde.plasma.desktop-appletsrc"."Containments.88.Wallpaper.org.kde.image.General"."Image" = "/home/gambled/Pictures/Wallpapers/PC/anime/39050642_p0.jpg";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments115Appletsts.48.Configuration.General"."launchers" = "applications:org.kde.dolphin.desktop,applications:firefox.desktop,applications:spotify.desktop,[1a14c463-8315-4099-a025-c3272507cfc2]\napplications:steam.desktop,applications:code.desktop,[1a14c463-8315-4099-a025-c3272507cfc2]\napplications:smartcode-stremio.desktop,[7bfbad66-1f5c-4ec2-b7c9-d24fc59e6a00]\napplications:dbeaver.desktop,[7bfbad66-1f5c-4ec2-b7c9-d24fc59e6a00]\napplications:kitty.desktop";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments26Appletsts.217.Configuration.General"."fontFamily" = "0xProto Nerd Font";
       "plasma-org.kde.plasma.desktop-appletsrc"."Containments27Appletss.269.Configuration.General"."heightEnabled" = true;
