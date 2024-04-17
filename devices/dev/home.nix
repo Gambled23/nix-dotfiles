@@ -13,7 +13,6 @@
   
   home.packages = with pkgs; [ 
     # dev languages
-    obs-studio
     chromium
   ];
 }
