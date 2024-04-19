@@ -32,6 +32,7 @@
     kitty
     tmux
     lazygit
+    deepin.deepin-picker
 
     # dev languages
     python3

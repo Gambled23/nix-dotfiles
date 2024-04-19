@@ -282,6 +282,7 @@
       "services.org.kde.spectacle.desktop"."_launch" = [ ];
       "services.services.code.desktop"."_launch" = "Meta+C";
       "services.services.code.desktop"."new-empty-window" = "Meta+Shift+C";
+      "services.services.firefox-2.desktop"."_launch" = "Meta+F";
       "services.services.firefox.desktop"."_launch" = "Meta+F";
       "services.services.kitty.desktop"."_launch" = "Meta+Return";
       "services.services.org.kde.konsole.desktop"."_launch" = [ ];
@@ -380,6 +381,16 @@
       "services.services.services.services.services.services.services.services.services.services.services.org.kde.spectacle.desktop"."RecordWindow" = [ ];
       "services.services.services.services.services.services.services.services.services.services.services.org.kde.spectacle.desktop"."RectangularRegionScreenShot" = "Print";
       "services.services.services.services.services.services.services.services.services.services.services.org.kde.spectacle.desktop"."_launch" = [ ];
+      "services.services.services.services.services.services.services.services.services.services.services.services.code.desktop"."_launch" = "Meta+C";
+      "services.services.services.services.services.services.services.services.services.services.services.services.code.desktop"."new-empty-window" = "Meta+Shift+C";
+      "services.services.services.services.services.services.services.services.services.services.services.services.firefox.desktop"."_launch" = "Meta+F";
+      "services.services.services.services.services.services.services.services.services.services.services.services.kitty.desktop"."_launch" = "Meta+Return";
+      "services.services.services.services.services.services.services.services.services.services.services.services.org.kde.konsole.desktop"."_launch" = [ ];
+      "services.services.services.services.services.services.services.services.services.services.services.services.org.kde.plasma-systemmonitor.desktop"."_launch" = "Ctrl+Esc";
+      "services.services.services.services.services.services.services.services.services.services.services.services.org.kde.spectacle.desktop"."RecordRegion" = "Meta+Shift+R";
+      "services.services.services.services.services.services.services.services.services.services.services.services.org.kde.spectacle.desktop"."RecordWindow" = [ ];
+      "services.services.services.services.services.services.services.services.services.services.services.services.org.kde.spectacle.desktop"."RectangularRegionScreenShot" = "Print";
+      "services.services.services.services.services.services.services.services.services.services.services.services.org.kde.spectacle.desktop"."_launch" = [ ];
     };
     configFile = {
       "baloofilerc"."General"."dbVersion" = 2;
