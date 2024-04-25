@@ -3,6 +3,7 @@
 with lib;
 
 {
+  services.desktopManager.plasma6.enable = true;
   services.xserver = {
     # Scaling factor for fonts and graphical elements on the screen
     dpi = 98;
@@ -17,10 +18,6 @@ with lib;
 
     # Enable libinput driver for improved touchpad support (enabled by default in most desktop environments).
     libinput.enable = true;
-
-    desktopManager = {
-      plasma6.enable = true;
-    };
 
     displayManager.lightdm.greeters.mini = {
       enable = true;

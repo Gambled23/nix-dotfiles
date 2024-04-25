@@ -70,29 +70,6 @@
           }
         ];
       };
-/*
-      "pc-gambled" = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        modules = [
-          kde2nix.nixosModules.plasma6
-        ({ services.xserver.desktopManager.plasma6.enable = true; })
-          ./devices/pc/configuration.nix
-          home-manager.nixosModules.home-manager
-          {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.gambled.imports = [
-              ./devices/pc/home.nix
-              inputs.plasma-manager.homeManagerModules.plasma-manager
-              ./core/services/xserver/kde/config.nix
-              spicetify-nix.homeManagerModule 
-              ./core/programs/spicetify.nix
-            ];
-            home-manager.extraSpecialArgs = specialArgs;
-          }
-        ];
-      };
-*/
       "laptop-gambled" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
