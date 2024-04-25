@@ -3,9 +3,14 @@
 with lib;
 
 {
-  programs.alvr.enable = true;
+  programs.alvr = {
+    enable = true;
+    openFirewall = true;
+  };
+  /*
   services.monado = {
     enable = true;
     defaultRuntime = true;
   };
+  */
 }

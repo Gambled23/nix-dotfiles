@@ -6,7 +6,7 @@ pkgs.writeShellScriptBin "dev_ssh-github" ''
   eval "$(ssh-agent -s)"
   
   ssh-add ~/.ssh/id_ed25519
-  echo "Copie la siguiente clave para agregarla a github" | ${pkgs.lolcat}/bin/lolcat
+  echo "Copie la siguiente clave para agregarla a github" | ${pkgs.clolcat}/bin/clolcat
   cat ~/.ssh/id_ed25519.pub 
 ''
 

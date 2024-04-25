@@ -9,5 +9,5 @@ pkgs.writeShellScriptBin "apll" ''
   sudo cp -r * /etc/nixos/
   
   sudo nixos-rebuild switch
-  echo "Sistema restaurado UwU" | ${pkgs.lolcat}/bin/lolcat
+  echo "Sistema restaurado UwU" | ${pkgs.clolcat}/bin/clolcat
 ''

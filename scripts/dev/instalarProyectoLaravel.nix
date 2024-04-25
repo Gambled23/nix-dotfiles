@@ -17,7 +17,7 @@ pkgs.writeShellScriptBin "dev_instalarProyectoLaravel" ''
   php artisan key:generate
   code
 
-  echo "Proyecto instalado, recuerde restaurar manualmente la BD" | ${pkgs.lolcat}/bin/lolcat
+  echo "Proyecto instalado, recuerde restaurar manualmente la BD" | ${pkgs.clolcat}/bin/clolcat
   exit
 ''
 

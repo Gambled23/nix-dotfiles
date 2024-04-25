@@ -20,5 +20,5 @@ pkgs.writeShellScriptBin "aps-full" ''
   git add .
   git commit -m "auto update $(date)"
   git push
-  echo "Sistema respaldado! n.n" | ${pkgs.lolcat}/bin/lolcat
+  echo "Sistema respaldado! n.n" | ${pkgs.clolcat}/bin/clolcat
 ''

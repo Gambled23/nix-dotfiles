@@ -8,9 +8,9 @@ pkgs.writeShellScriptBin "agc" ''
   sudo nix-collect-garbage -d
   nix store optimise
 
-  echo "Sistema borrado" | ${pkgs.lolcat}/bin/lolcat
+  echo "Sistema borrado" | ${pkgs.clolcat}/bin/clolcat
 
   cd /home/$(whoami)/Pictures
   rm Screenshots/*
-  echo "Screenshots borradas" | ${pkgs.lolcat}/bin/lolcat
+  echo "Screenshots borradas" | ${pkgs.clolcat}/bin/clolcat
 ''
