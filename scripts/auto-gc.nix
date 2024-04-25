@@ -11,6 +11,6 @@ pkgs.writeShellScriptBin "agc" ''
   echo "Sistema borrado" | ${pkgs.lolcat}/bin/lolcat
 
   cd /home/$(whoami)/Pictures
-  rm Screenshot*
+  rm Screenshots/*
   echo "Screenshots borradas" | ${pkgs.lolcat}/bin/lolcat
 ''
