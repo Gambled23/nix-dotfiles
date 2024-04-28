@@ -130,4 +130,10 @@
   
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs.config.allowUnfree = true;
+
+  system.userActivationScripts.linktosharedfolder.text = ''
+    if [[ ! -h "$HOME/trash" ]]; then
+      ln -s "$HOME/trash" "/hdd/$RECYCLE.BIN/"
+    fi
+  '';
 }
