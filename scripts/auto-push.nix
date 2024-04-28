@@ -2,7 +2,13 @@
 
 pkgs.writeShellScriptBin "aps" ''
   #!${pkgs.bash}/bin/bash
-  rebuild_mode=$1
+  if [ $1 ]; then
+    rebuild_mode=$1
+  else
+    rebuild_mode=switch
+  fi
+
+  
   set -e
   cd /home/gambled/Documents
   if [ -d nix-dotfiles ]; then
