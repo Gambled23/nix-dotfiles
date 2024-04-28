@@ -5,7 +5,7 @@
   system.userActivationScripts.linktosharedfolder.text = ''
     # Documentos personales
     if [[ ! -h "$HOME/Documents/Documentos personales" ]]; then
-      ln -s "$HOME/Nextcloud/Documentos personales" "$HOME/Documents/Documentos personales"
+      ln -s "/hdd/home/gambled/Nextcloud/Documentos personales" "$HOME/Documents/Documentos personales"
     fi
 
 
@@ -17,7 +17,7 @@
 
     # Wallpapers
     if [[ ! -h "$HOME/Pictures/Wallpapers" ]]; then
-      ln -s "$HOME/Nextcloud/Wallpapers" "$HOME/Pictures/Wallpapers"
+      ln -s "/hdd/home/gambled/Nextcloud/Wallpapers" "$HOME/Pictures/Wallpapers"
     fi
   '';
 }

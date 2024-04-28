@@ -13,4 +13,5 @@ pkgs.writeShellScriptBin "agc" ''
   cd /home/$(whoami)/Pictures
   rm Screenshots/*
   echo "Screenshots borradas" | ${pkgs.clolcat}/bin/clolcat
+  sudo rm -rf /home/gambled/.cache/
 ''
