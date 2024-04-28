@@ -37,18 +37,41 @@
   virtualisation.vmware.host.enable = true; # vmware
   # virtualisation.waydroid.enable = true; # Waydroid
 
-  # disctrack
-  systemd.services.powerprofile = {
-  wantedBy = [ "multi-user.target" ];
-  path = [ pkgs.coreutils ];
-  enable = true;
-  serviceConfig = {
-    User = "root";
-    Group = "root";
-    };
-  script = ''
-  cd /hdd/home/gambled/Documents/trakt/
-  /hdd/home/gambled/Documents/trakt/discrakt'';
-  };
+  system.userActivationScripts.linktosharedfolder.text = ''
 
+    # Codes
+    if [[ ! -h "$HOME/Codes" ]]; then
+      ln -s "/hdd/home/gambled/Codes/" "$HOME/Codes"
+    fi
+
+    # Documents
+    if [[ ! -h "$HOME/Documents" ]]; then
+      ln -s "/hdd/home/gambled/Documents/" "$HOME/Documents"
+    fi
+
+    # Downloads
+    if [[ ! -h "$HOME/Downloads" ]]; then
+      ln -s "/hdd/home/gambled/Downloads/" "$HOME/Downloads"
+    fi
+
+    # Music
+    if [[ ! -h "$HOME/Music" ]]; then
+      ln -s "/hdd/home/gambled/Music/" "$HOME/Music"
+    fi
+
+    # Nextcloud
+    if [[ ! -h "$HOME/Nextcloud" ]]; then
+      ln -s "/hdd/home/gambled/Nextcloud/" "$HOME/Nextcloud"
+    fi
+
+    # Pictures
+    if [[ ! -h "$HOME/Pictures" ]]; then
+      ln -s "/hdd/home/gambled/Pictures/" "$HOME/Pictures"
+    fi
+
+    # Videos
+    if [[ ! -h "$HOME/Videos" ]]; then
+      ln -s "/hdd/home/gambled/Videos/" "$HOME/Videos"
+    fi
+  '';
 }
