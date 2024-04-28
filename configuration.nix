@@ -133,7 +133,7 @@
 
   system.userActivationScripts.linktosharedfolder.text = ''
     if [[ ! -h "$HOME/trash" ]]; then
-      ln -s "$HOME/trash" "/hdd/$RECYCLE.BIN/"
+      ln -s "$HOME/trash" "/hdd/trash/"
     fi
   '';
 }
