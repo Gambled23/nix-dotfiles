@@ -11,6 +11,8 @@
     ./core/services/openssh.nix
     # zerotier
     ./core/services/zerotier.nix
+    # nextcloud symlinks
+    ./core/symlinks/nextcloud.nix
 
     # Select DE
     ./core/services/xserver/kde/default.nix
@@ -130,10 +132,4 @@
   
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs.config.allowUnfree = true;
-
-  system.userActivationScripts.linktosharedfolder.text = ''
-    if [[ ! -h "$HOME/trash" ]]; then
-      ln -s "$HOME/trash" "/hdd/trash/"
-    fi
-  '';
 }
