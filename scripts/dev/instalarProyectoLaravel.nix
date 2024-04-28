@@ -15,7 +15,7 @@ pkgs.writeShellScriptBin "dev_instalarProyectoLaravel" ''
 
   cp .env.example .env
   php artisan key:generate
-  code
+  code .
 
   echo "Proyecto instalado, recuerde restaurar manualmente la BD" | ${pkgs.clolcat}/bin/clolcat
   exit

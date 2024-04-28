@@ -2,6 +2,7 @@
 
 pkgs.writeShellScriptBin "aps" ''
   #!${pkgs.bash}/bin/bash
+  rebuild_mode=$1
   set -e
   cd /home/gambled/Documents
   if [ -d nix-dotfiles ]; then
@@ -11,12 +12,12 @@ pkgs.writeShellScriptBin "aps" ''
     cd nix-dotfiles
   fi
   
-  sudo nixos-rebuild switch 
+  sudo nixos-rebuild $rebuild_mode 
   
   sudo rm -r *
   cp -r /etc/nixos/* /home/gambled/Documents/nix-dotfiles/
   git add .
   git commit -m "auto update $(date)"
   git push
-  echo "Sistema respaldado! n.n" | ${pkgs.clolcat}/bin/clolcat
+  echo "Rebuild {rebuild_mode} complete"
 ''
