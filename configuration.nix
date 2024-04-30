@@ -79,6 +79,7 @@
     (import ./scripts/auto-push.nix { inherit pkgs; })
     (import ./scripts/auto-gc.nix { inherit pkgs; })
     (import ./scripts/git-clone.nix { inherit pkgs; })
+    (import ./scripts/dev/enviroment.nix { inherit pkgs; })
     (import ./scripts/dev/ssh-github.nix { inherit pkgs; })
     (import ./scripts/dev/instalarProyectoLaravel.nix { inherit pkgs; })
     (import ./scripts/dev/migrateDB.nix { inherit pkgs; })
