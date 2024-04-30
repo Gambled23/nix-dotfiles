@@ -28,9 +28,7 @@
       inherit spicetify-nix;
       inherit inputs;
     };
-    in{
-    
-    templates = rec {
+        templates = rec {
       cpp = {
         path = ./dev-templates/cpp;
         description = "C++ development environment";
@@ -46,6 +44,7 @@
         description = "python development environment";
       };
     };
+    in{
     nixosConfigurations = {
       "dev-gambled" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -108,4 +107,5 @@
       };
     };
   };
+
 }
