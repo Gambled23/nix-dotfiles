@@ -10,13 +10,11 @@ pkgs.writeShellScriptBin "dev_enviroment" ''
   fi
 
   if [ $2 ]; then
-    project_path = $2
+    project_path=$2
   else
-    project_path = '.'
+    project_path='.'
   fi
 
   cp -r /etc/nixos/dev-templates/{$1}/. {$project_path}
   direnv allow
 ''
-
-
