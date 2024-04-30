@@ -35,14 +35,6 @@
     deepin.deepin-picker
 
     # dev languages
-    python3
-    python311Packages.mysqlclient
-    virtualenv
-    pkg-config
-    libmysqlclient
-    php83Packages.composer
-    php83
-    nodejs_21
     kotlin
     zulu #java
     gcc
