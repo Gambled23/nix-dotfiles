@@ -2,7 +2,8 @@
 
 pkgs.writeShellScriptBin "dev_enviroment" ''
   #!${pkgs.bash}/bin/bash
-  nix flake init --template github:gambled23/nix-dotfiles#python
+  cp -r /etc/nixos/dev-templates/{$1}/. .
+  direnv allow
 ''
 
 
