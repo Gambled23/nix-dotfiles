@@ -11,8 +11,6 @@
     ./core/services/openssh.nix
     # zerotier
     ./core/services/zerotier.nix
-    # nextcloud symlinks
-    ./core/symlinks/nextcloud.nix
 
     # Select DE
     ./core/services/xserver/kde/default.nix
