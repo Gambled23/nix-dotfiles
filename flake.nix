@@ -90,5 +90,21 @@
         ];
       };
     };
+    templates = rec {
+      cpp = {
+        path = ./dev-templates/cpp;
+        description = "C++ development environment";
+      };
+
+      laravel = {
+        path = ./dev-templates/laravel;
+        description = "laravel and node development environment";
+      };
+
+      python = {
+        path = ./dev-templates/python;
+        description = "python development environment";
+      };
+    };
   };
 }
