@@ -15,6 +15,6 @@ pkgs.writeShellScriptBin "dev_enviroment" ''
     project_path='.'
   fi
 
-  cp -r /etc/nixos/dev-templates/{$1}/. {$project_path}
+  cp -r /etc/nixos/dev-templates/$1/. $project_path
   direnv allow
 ''
