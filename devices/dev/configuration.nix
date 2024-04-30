@@ -55,6 +55,16 @@
       ln -s "/Documentos/Pictures/" "$HOME/Pictures"
     fi
 
+    # Public
+    if [[ ! -h "$HOME/Public" ]]; then
+      ln -s "/Documentos/Public/" "$HOME/Public"
+    fi
+
+    # Templates
+    if [[ ! -h "$HOME/Templates" ]]; then
+      ln -s "/Documentos/Templates/" "$HOME/Templates"
+    fi
+
     # Videos
     if [[ ! -h "$HOME/Videos" ]]; then
       ln -s "/Documentos/Videos/" "$HOME/Videos"
