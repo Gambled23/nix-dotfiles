@@ -25,5 +25,5 @@ pkgs.writeShellScriptBin "aps" ''
   git add .
   git commit -m "auto update $(date)"
   git push
-  echo "Rebuild {$rebuild_mode} complete"
+  echo "Rebuild $rebuild_mode complete"
 ''
