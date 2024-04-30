@@ -29,6 +29,23 @@
       inherit inputs;
     };
     in{
+    
+    templates = rec {
+      cpp = {
+        path = ./dev-templates/cpp;
+        description = "C++ development environment";
+      };
+
+      laravel = {
+        path = ./dev-templates/laravel;
+        description = "laravel and node development environment";
+      };
+
+      python = {
+        path = ./dev-templates/python;
+        description = "python development environment";
+      };
+    };
     nixosConfigurations = {
       "dev-gambled" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -88,22 +105,6 @@
             home-manager.extraSpecialArgs = specialArgs;
           }
         ];
-      };
-    };
-    templates = rec {
-      cpp = {
-        path = ./dev-templates/cpp;
-        description = "C++ development environment";
-      };
-
-      laravel = {
-        path = ./dev-templates/laravel;
-        description = "laravel and node development environment";
-      };
-
-      python = {
-        path = ./dev-templates/python;
-        description = "python development environment";
       };
     };
   };
