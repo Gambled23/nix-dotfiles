@@ -32,14 +32,10 @@
     kitty
     tmux
     lazygit
-    deepin.deepin-picker
 
     # dev languages
     kotlin
     zulu #java
-    gcc
-    rustc
-    rustup
 
     # neovim
     #python311Packages.pynvim
