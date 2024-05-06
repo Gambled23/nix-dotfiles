@@ -89,18 +89,19 @@
   system.autoUpgrade.enable = true;
   system.autoUpgrade.allowReboot = true;
 
-  users.users.gambled = {
-    isNormalUser = true;
-    description = "César Girón";
-    extraGroups = [ "networkmanager" "wheel" "adbusers" ];
-    packages = with pkgs; [ ];
-  };
-
-  users.users.dev = {
-    isNormalUser = true;
-    description = "dev user";
-    extraGroups = [ "networkmanager" "wheel" "adbusers" ];
-    packages = with pkgs; [ ];
+  users.users = {
+    gambled = {
+      isNormalUser = true;
+      description = "César Girón";
+      extraGroups = [ "networkmanager" "wheel" "adbusers" ];
+      packages = with pkgs; [ ];
+    };
+    dev = {
+      isNormalUser = true;
+      description = "dev user";
+      extraGroups = [ "networkmanager" "wheel" "adbusers" ];
+      packages = with pkgs; [ ];
+    };
   };
 
   # All sudo comands will be passwordless (I use this for home assistant)

@@ -7,24 +7,10 @@
 }: 
 {
   imports = [
-    core/programs/alacritty.nix
-    core/programs/direnv.nix
-    core/programs/git.nix
-    core/programs/kitty/kitty.nix
-    core/programs/lsd.nix
-    core/programs/neovim.nix
-    core/programs/starship.nix
-    core/programs/zsh.nix
-    core/programs/firefox.nix
+
     # i3
     #core/services/xserver/i3/config.nix
   ];
-
-  home = {
-    username = "gambled";
-    homeDirectory = "/home/gambled";
-  };
-
   home.packages = with pkgs; [ 
     # dev tools
     dbeaver
