@@ -96,6 +96,13 @@
     packages = with pkgs; [ ];
   };
 
+  users.users.dev = {
+    isNormalUser = true;
+    description = "dev user";
+    extraGroups = [ "networkmanager" "wheel" "adbusers" ];
+    packages = with pkgs; [ ];
+  };
+
   # All sudo comands will be passwordless (I use this for home assistant)
   security.sudo.extraRules= [{  
     users = [ "gambled" ];

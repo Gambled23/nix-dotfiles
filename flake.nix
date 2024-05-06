@@ -40,6 +40,7 @@
             home-manager.useUserPackages = true;
             home-manager.users.gambled.imports = [
               ./devices/dev/home.nix
+              ./home.nix
               inputs.plasma-manager.homeManagerModules.plasma-manager
               ./core/services/xserver/kde/config.nix
               spicetify-nix.homeManagerModule 
