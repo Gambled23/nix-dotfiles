@@ -27,6 +27,9 @@
     dbeaver
     vscode
     kitty
+    docker
+    git
+
 
     # messaging
     vesktop 
@@ -41,11 +44,18 @@
     # oh-my-zsh plugins
     thefuck # Magnificent app which corrects your previous console command
     zsh
+
+    #php dev
+    php83 
+    php83Packages.composer
+    nodejs_21
   ];
 
   programs.git = {
-    enable = true;
-  };
+      enable = true;
+      userName  = "Deneb";
+      userEmail = "deneb.rivera0272@alumnos.udg.mx";
+    };
 }
 
 

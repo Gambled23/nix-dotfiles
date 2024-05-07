@@ -16,23 +16,23 @@
     dbeaver
     vscode
     kitty
-    tmux
+    #tmux
     lazygit
 
     # dev languages
-    kotlin
-    zulu #java
+    #kotlin
+    #zulu #java
 
     # neovim
     #python311Packages.pynvim
-    xclip # allows using the clipboard inside a terminal 
+    #xclip # allows using the clipboard inside a terminal 
 
     # media
-    stremio
-    vlc
+    #stremio
+    #vlc
 
     # media creation
-    gimp
+    #gimp
 
     # messaging
     vesktop 
@@ -41,21 +41,21 @@
     zerotierone
 
     # utils
-    jellyfin-ffmpeg
-    android-tools
+    #jellyfin-ffmpeg
+    #android-tools
     libreoffice
-    gnome.simple-scan
+    #gnome.simple-scan
     galaxy-buds-client
-    autorandr # for multi monitor setups
-    nextcloud-client
+    #autorandr # for multi monitor setups
+    #nextcloud-client
 
     # extras
     bat # cat replacement
-    glances # htop replacement
-    neofetch
+    #glances # htop replacement
+    #neofetch
     lxde.lxsession
     # oh-my-zsh plugins
-    thefuck # Magnificent app which corrects your previous console command
+    #thefuck # Magnificent app which corrects your previous console command
     zsh
   ];
 
