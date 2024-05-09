@@ -94,7 +94,6 @@
       isNormalUser = true;
       description = "César Girón";
       extraGroups = [ "networkmanager" "wheel" "adbusers" ];
-      packages = with pkgs; [ ];
     };
   };
 
@@ -107,16 +106,13 @@
     }];
   }];
 
-  hardware.opengl.driSupport = true;
-  hardware.opengl.driSupport32Bit = true; # Enables support for 32bit libs that steam uses
+
 
   # Extra services
-  services.flatpak.enable = true; 
-  services.packagekit.enable = true;
-  services.fwupd.enable = true;
-  systemd.services.zerotierone.enable = true;
+  services.flatpak.enable = true; # Enable flatpak
+  services.packagekit.enable = true; # Enable packagekit for gnome software
+  services.fwupd.enable = true; # Enable firmware updates
   programs.adb.enable = true;
-  programs.dconf.enable = true; # Wayland-gtk bugs
 
   fonts.packages = with pkgs; [
     times-newer-roman

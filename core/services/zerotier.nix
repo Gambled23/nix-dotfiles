@@ -2,6 +2,7 @@
 let
   privateZeroTierInterfaces = [ "ztbso1b6n3" ]; # ZT NET INTERFACE 
 in {
+  systemd.services.zerotierone.enable = true;
   services.avahi.enable = true;
   services.avahi.allowInterfaces = privateZeroTierInterfaces; # ONLY BROADCAST ON VPN
   services.avahi.ipv6 = true;
