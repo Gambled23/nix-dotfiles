@@ -16,7 +16,7 @@
     dbeaver
     vscode
     kitty
-    #tmux
+    tmux
     lazygit
 
     # dev languages
@@ -28,11 +28,11 @@
     #xclip # allows using the clipboard inside a terminal 
 
     # media
-    #stremio
-    #vlc
+    stremio
+    vlc
 
     # media creation
-    #gimp
+    gimp
 
     # messaging
     vesktop 
@@ -42,12 +42,12 @@
 
     # utils
     #jellyfin-ffmpeg
-    #android-tools
+    android-tools
     libreoffice
     #gnome.simple-scan
     galaxy-buds-client
-    #autorandr # for multi monitor setups
-    #nextcloud-client
+    autorandr # for multi monitor setups
+    nextcloud-client
 
     # extras
     bat # cat replacement
