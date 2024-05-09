@@ -10,7 +10,7 @@
         efiSupport = true;
         useOSProber = true;
         default = "saved";
-       timeoutStyle = "hidden";
+       timeoutStyle = "menu";
       };
       efi = {
         canTouchEfiVariables = true;

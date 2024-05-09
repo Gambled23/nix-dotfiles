@@ -3,8 +3,8 @@
 {
   imports = [ 
     # bootloader
-    ./core/bootloader/systemd.nix
-    #./core/bootloader/grub.nix
+    #./core/bootloader/systemd.nix
+    ./core/bootloader/grub.nix
     # mysql
     ./core/services/mysql.nix
     # openssh
@@ -93,12 +93,6 @@
     gambled = {
       isNormalUser = true;
       description = "César Girón";
-      extraGroups = [ "networkmanager" "wheel" "adbusers" ];
-      packages = with pkgs; [ ];
-    };
-    dev = {
-      isNormalUser = true;
-      description = "dev user";
       extraGroups = [ "networkmanager" "wheel" "adbusers" ];
       packages = with pkgs; [ ];
     };

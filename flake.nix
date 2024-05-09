@@ -41,14 +41,7 @@
             home-manager.users.gambled.imports = [
               ./devices/dev/home.nix
               inputs.plasma-manager.homeManagerModules.plasma-manager
-              ./core/services/xserver/kde/config.nix
-              spicetify-nix.homeManagerModule 
-              ./core/programs/spicetify.nix
-            ];
-            home-manager.users.dev.imports = [
-              ./devices/dev/homeDev.nix
-              inputs.plasma-manager.homeManagerModules.plasma-manager
-              ./core/services/xserver/kde/config.nix
+              # ./core/services/xserver/kde/config.nix
               spicetify-nix.homeManagerModule 
               ./core/programs/spicetify.nix
             ];
