@@ -8,5 +8,8 @@
     ../../configuration.nix
     ./hardware-configuration.nix
     ./symlinks.nix
+    # bootloader
+    #../../core/bootloader/systemd.nix
+    ../../core/bootloader/grub.nix
   ];
 }

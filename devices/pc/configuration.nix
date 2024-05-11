@@ -12,6 +12,10 @@
     #../../core/services/xrdp.nix
     #../../core/programs/alvr.nix
     ../../core/programs/steam.nix
+
+    # bootloader
+    ../../core/bootloader/systemd.nix
+    #../../core/bootloader/grub.nix
   ];
 
   # amdgpu
@@ -35,6 +39,6 @@
   hardware.openrazer.users = ["gambled"];
 
   # virtualisation
-  virtualisation.vmware.host.enable = true; # vmware
+  # virtualisation.vmware.host.enable = true; # vmware
   # virtualisation.waydroid.enable = true; # Waydroid
 }

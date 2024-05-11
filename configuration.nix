@@ -2,9 +2,6 @@
 
 {
   imports = [ 
-    # bootloader
-    #./core/bootloader/systemd.nix
-    ./core/bootloader/grub.nix
     # mysql
     ./core/services/mysql.nix
     # openssh
