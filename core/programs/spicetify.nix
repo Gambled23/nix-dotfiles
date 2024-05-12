@@ -11,24 +11,24 @@ in
   programs.spicetify = {
     enable = true;
     
-    theme = spicePkgs.themes.text;
+    #theme = spicePkgs.themes.text;
 
     enabledCustomApps = with spicePkgs.apps; [
       marketplace
       lyrics-plus
     ];
 
-    enabledExtensions = with spicePkgs.extensions; [
-      fullAppDisplay
-      autoSkipVideo
-      shuffle
-      groupSession
-      seekSong
-      playlistIcons
-      fullAlbumDate
-      goToSong
-      adblock
-      volumePercentage
-    ];
+    # enabledExtensions = with spicePkgs.extensions; [
+    #   fullAppDisplay
+    #   autoSkipVideo
+    #   shuffle
+    #   groupSession
+    #   seekSong
+    #   playlistIcons
+    #   fullAlbumDate
+    #   goToSong
+    #   adblock
+    #   volumePercentage
+    # ];
   };
 }
