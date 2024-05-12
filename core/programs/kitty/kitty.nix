@@ -8,58 +8,44 @@
     #zshell
     shell zsh
 
-    cursor                  #928374
-    cursor_text_color       background
+foreground            #D8DEE9
+background            #2E3440
+selection_foreground  #000000
+selection_background  #FFFACD
+url_color             #0087BD
+cursor                #81A1C1
 
-    url_color               #83a598
+# black
+color0   #3B4252
+color8   #4C566A
 
-    visual_bell_color       #8ec07c
-    bell_border_color       #8ec07c
+# red
+color1   #BF616A
+color9   #BF616A
 
-    active_border_color     #d3869b
-    inactive_border_color   #665c54
+# green
+color2   #A3BE8C
+color10  #A3BE8C
 
-    foreground              #ebdbb2
-    background              #282828
-    selection_foreground    #928374
-    selection_background    #ebdbb2
+# yellow
+color3   #EBCB8B
+color11  #EBCB8B
 
-    active_tab_foreground   #fbf1c7
-    active_tab_background   #665c54
-    inactive_tab_foreground #a89984
-    inactive_tab_background #3c3836
+# blue
+color4  #81A1C1
+color12 #81A1C1
 
-    # black  (bg3/bg4)
-    color0                  #665c54
-    color8                  #7c6f64
+# magenta
+color5   #B48EAD
+color13  #B48EAD
 
-    # red
-    color1                  #cc241d
-    color9                  #fb4934
+# cyan
+color6   #88C0D0
+color14  #8FBCBB
 
-    #: green
-    color2                  #98971a
-    color10                 #b8bb26
-
-    # yellow
-    color3                  #d79921
-    color11                 #fabd2f
-
-    # blue
-    color4                  #458588
-    color12                 #83a598
-
-    # purple
-    color5                  #b16286
-    color13                 #d3869b
-
-    # aqua
-    color6                  #689d6a
-    color14                 #8ec07c
-
-    # white (fg4/fg3)
-    color7                  #a89984
-    color15                 #bdae93
+# white
+color7   #E5E9F0
+color15  #ECEFF4
     
     map f1 new_tab_with_cwd
   '';
