@@ -42,7 +42,7 @@
 
   time.timeZone = "America/Mexico_City";
   i18n.defaultLocale = "es_ES.UTF-8";
-  services.xserver.libinput.enable = true; # Enable touchpad support
+  services.libinput.enable = true; # Enable touchpad support
   services.printing.enable = true; # Enable CUPS to print documents.
 
   # nix auto gc delete old generations

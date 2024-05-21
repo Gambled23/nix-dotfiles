@@ -24,7 +24,7 @@ with lib;
     };
 
     # Enable libinput driver for improved touchpad support (enabled by default in most desktop environments).
-    libinput.enable = true;
+    
     displayManager = {
       lightdm.greeters.mini = {
       enable = false;
