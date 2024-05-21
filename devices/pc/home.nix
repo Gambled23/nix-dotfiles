@@ -48,10 +48,8 @@
     # media creation
     inkscape-with-extensions
     qt6.qtwebsockets
-    libsForQt5.kdenlive
     libportal-qt5
     obs-studio
-    kdenlive
     jellyfin-ffmpeg
 
     # messaging 
