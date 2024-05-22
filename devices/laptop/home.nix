@@ -29,12 +29,12 @@
     osu-lazer-bin
 
     # media creation
-    inkscape-with-extensions
+    #inkscape-with-extensions
 
     # messaging 
 
     # utils
-    remmina
+    #remmina
   ];
 }
 

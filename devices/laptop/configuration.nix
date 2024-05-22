@@ -7,7 +7,7 @@
   imports = [ 
     ../../configuration.nix
     ./hardware-configuration.nix
-    ./symlinks.nix
+    #./symlinks.nix
 
     ../../core/programs/steam.nix
     # bootloader
