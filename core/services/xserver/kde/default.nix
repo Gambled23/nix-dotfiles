@@ -112,6 +112,7 @@ with lib;
     kdePackages.signond
     libsForQt5.qoauth
     kdePackages.kio-gdrive
+    kdePackages.kio-admin
     kdePackages.ktorrent
     kdePackages.libktorrent
     kdePackages.kdenlive
