@@ -41,7 +41,7 @@
     zerotierone
 
     # utils
-    #jellyfin-ffmpeg
+    jellyfin-ffmpeg
     android-tools
     libreoffice
     #gnome.simple-scan
