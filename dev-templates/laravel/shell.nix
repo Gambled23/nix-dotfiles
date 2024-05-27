@@ -10,4 +10,14 @@ in pkgs.mkShell rec {
     php83Packages.composer
     nodejs_21
   ];
+
+  postVenvCreation = ''
+    composer update
+    composer install
+    npm install
+    npm run build
+
+    cp .env.example .env
+    php artisan key:generate
+  '';
 }
