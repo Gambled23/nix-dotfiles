@@ -39,7 +39,7 @@
     steam
     steam-run
     osu-lazer-bin
-    #prismlauncher #minecra
+    prismlauncher #minecra
     r2modman
     wineWowPackages.waylandFull
     
