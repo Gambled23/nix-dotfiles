@@ -8,7 +8,7 @@ in pkgs.mkShell rec {
   buildInputs = [
     php83
     php83Packages.composer
-    nodejs_21
+    nodejs_22
   ];
 
   postVenvCreation = ''

@@ -8,14 +8,7 @@ pkgs.writeShellScriptBin "dev_instalarProyectoLaravel" ''
   cd  "$(\ls -1dt ./*/ | head -n 1)"
 
   # instalar dependencias
-  composer update
-  composer install
-  npm install
-  npm run build
-
-  cp .env.example .env
-  php artisan key:generate
-  code .
+  dev_enviroment laravel
 
   echo "Proyecto instalado, recuerde restaurar manualmente la BD" | ${pkgs.clolcat}/bin/clolcat
   exit

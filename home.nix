@@ -13,7 +13,7 @@
   ];
   home.packages = with pkgs; [ 
     # dev tools
-    dbeaver
+    dbeaver-bin
     vscode
     kitty
     tmux
