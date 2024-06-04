@@ -13,6 +13,7 @@
   ];
   home.packages = with pkgs; [ 
     # dev tools
+    chromium
     dbeaver-bin
     vscode
     kitty
