@@ -30,6 +30,8 @@
     # dev tools
     #android-studio
     #cmake
+    droidcam
+    obs-studio-plugins.droidcam-obs
     
     #dev languages
 
