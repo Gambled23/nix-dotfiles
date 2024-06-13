@@ -23,7 +23,8 @@
   home.packages = with pkgs; [ 
     # books
     #hakuneko
-    kcc
+    #kcc
+    miru
     #calibre
     #mangal
 
