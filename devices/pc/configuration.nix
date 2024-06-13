@@ -38,6 +38,8 @@
   hardware.openrazer.enable = true;
   hardware.openrazer.users = ["gambled"];
 
+  programs.droidcam.enable = true;
+
   # virtualisation
   # virtualisation.vmware.host.enable = true; # vmware
   # virtualisation.waydroid.enable = true; # Waydroid

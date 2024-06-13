@@ -23,14 +23,13 @@
   home.packages = with pkgs; [ 
     # books
     #hakuneko
-    #kcc
+    kcc
     #calibre
     #mangal
 
     # dev tools
     #android-studio
     #cmake
-    droidcam
     obs-studio-plugins.droidcam-obs
     
     #dev languages
@@ -63,6 +62,8 @@
 
     #web browsers
     #chromium
+
+    floorp
   ];
 }
 
