@@ -117,6 +117,7 @@ with lib;
     kdePackages.libktorrent
     kdePackages.kdenlive
     kdePackages.merkuro
+    kdePackages.yakuake
     qt6Packages.qtstyleplugin-kvantum
     libportal-qt5
     qt6.qtwebengine
