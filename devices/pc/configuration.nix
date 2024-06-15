@@ -10,7 +10,7 @@
 
     ../../core/services/wakeonlan.nix
     #../../core/services/xrdp.nix
-    ../../core/programs/alvr.nix
+    #../../core/programs/alvr.nix
     ../../core/programs/steam.nix
 
     # bootloader
