@@ -29,6 +29,7 @@
     #xclip # allows using the clipboard inside a terminal 
 
     # media
+    miru
     stremio
     vlc
 

@@ -24,7 +24,6 @@
     # books
     #hakuneko
     #kcc
-    miru
     #calibre
     #mangal
 
