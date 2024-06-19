@@ -13,7 +13,6 @@
   ];
   home.packages = with pkgs; [ 
     # dev tools
-    chromium
     dbeaver-bin
     vscode
     kitty
@@ -24,10 +23,6 @@
     #kotlin
     #zulu #java
 
-    # neovim
-    #python311Packages.pynvim
-    #xclip # allows using the clipboard inside a terminal 
-
     # media
     miru
     stremio
@@ -35,9 +30,16 @@
 
     # media creation
     gimp
+    inkscape-with-extensions
+    qt6.qtwebsockets
+    libportal-qt5
+    obs-studio
+    jellyfin-ffmpeg
 
     # messaging
     vesktop 
+    whatsapp-for-linux
+    #telegram-desktop
 
     # networking
     zerotierone
@@ -46,18 +48,21 @@
     jellyfin-ffmpeg
     android-tools
     libreoffice
+    scrcpy
     #gnome.simple-scan
     galaxy-buds-client
     autorandr # for multi monitor setups
     nextcloud-client
 
+    # webbrowsers
+    floorp
+    chromium
+
     # extras
-    bat # cat replacement
-    #glances # htop replacement
-    #neofetch
+    bat
     lxde.lxsession
+
     # oh-my-zsh plugins
-    #thefuck # Magnificent app which corrects your previous console command
     zsh
   ];
 

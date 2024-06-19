@@ -14,27 +14,17 @@
     ../../core/programs/git.nix
     ../../core/programs/kitty/kitty.nix
     ../../core/programs/lsd.nix
-    ../../core/programs/neovim.nix
+    #../../core/programs/neovim.nix
     ../../core/programs/starship.nix
     ../../core/programs/zsh.nix
-    ../../core/programs/firefox.nix
+    #../../core/programs/firefox.nix
   ];
   
   home.packages = with pkgs; [ 
-    # dev
-
     # games
     steam
     steam-run
     osu-lazer-bin
-
-    # media creation
-    #inkscape-with-extensions
-
-    # messaging 
-
-    # utils
-    #remmina
   ];
 }
 
