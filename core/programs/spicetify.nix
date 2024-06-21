@@ -11,7 +11,7 @@ in
   programs.spicetify = {
     enable = true;
     
-    theme = spicePkgs.themes.Sleek;
+    #theme = spicePkgs.themes.Sleek;
 
     enabledCustomApps = with spicePkgs.apps; [
       marketplace
