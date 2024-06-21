@@ -16,6 +16,7 @@
     dbeaver-bin
     vscode
     kitty
+    warp-terminal
     tmux
     lazygit
 
