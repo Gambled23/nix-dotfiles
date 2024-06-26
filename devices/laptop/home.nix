@@ -25,6 +25,7 @@
     steam
     steam-run
     osu-lazer-bin
+    xorg.libxcb
   ];
 }
 
