@@ -47,6 +47,7 @@
 
     # utils
     jellyfin-ffmpeg
+    unrar
     android-tools
     libreoffice
     scrcpy
