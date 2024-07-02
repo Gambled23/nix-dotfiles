@@ -1,0 +1,16 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "NixOS Rebuild auto-push",
+            "type": "shell",
+            "command": "aps",
+            "problemMatcher": [],
+            "options": {
+                "env": {
+                    // Add any environment variables if needed
+                }
+            }
+        }
+    ]
+}
