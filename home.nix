@@ -58,6 +58,7 @@
 
     # webbrowsers
     floorp
+    kdePackages.plasma-browser-integration
     chromium
 
     # extras
