@@ -1,9 +1,6 @@
 { config, pkgs, lib, ... }:
 
 {
-  hardware.opengl.driSupport = true;
-  hardware.opengl.driSupport32Bit = true; # Enables support for 32bit libs that steam uses
-
   programs.steam = {
     enable = true;
     remotePlay.openFirewall = true;

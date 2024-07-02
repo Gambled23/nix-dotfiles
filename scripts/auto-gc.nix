@@ -10,8 +10,9 @@ pkgs.writeShellScriptBin "agc" ''
 
   echo "Sistema borrado" | ${pkgs.clolcat}/bin/clolcat
 
-  cd /home/$(whoami)/Pictures
-  rm Screenshots/*
+  cd /home/gambled/Pictures/Screenshots/
+  rm *
   echo "Screenshots borradas" | ${pkgs.clolcat}/bin/clolcat
   sudo rm -rf /home/gambled/.cache/
+  echo "Cache borrada" | ${pkgs.clolcat}/bin/clolcat
 ''

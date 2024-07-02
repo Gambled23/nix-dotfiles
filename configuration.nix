@@ -70,6 +70,7 @@
 
   environment.systemPackages = with pkgs; [
     grub2
+    (import ./scripts/update-flake.nix { inherit pkgs; })
     (import ./scripts/auto-pull.nix { inherit pkgs; })
     (import ./scripts/auto-push.nix { inherit pkgs; })
     (import ./scripts/auto-gc.nix { inherit pkgs; })
