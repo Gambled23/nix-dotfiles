@@ -12,7 +12,7 @@
     ../../core/programs/alacritty.nix
     ../../core/programs/direnv.nix
     ../../core/programs/git.nix
-    ../../core/programs/kitty/kitty.nix
+    #../../core/programs/kitty/kitty.nix
     ../../core/programs/lsd.nix
     #../../core/programs/neovim.nix
     ../../core/programs/starship.nix
@@ -25,6 +25,7 @@
     steam
     steam-run
     osu-lazer-bin
+    tetrio-desktop
     xorg.libxcb
   ];
 }

@@ -37,6 +37,7 @@
     steam
     steam-run
     osu-lazer-bin
+    tetrio-desktop
     prismlauncher #minecra
     r2modman
     wineWowPackages.waylandFull
