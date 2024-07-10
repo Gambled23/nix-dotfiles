@@ -21,12 +21,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nix-software-center = { 
-      url = "github:snowfallorg/nix-software-center";
-    };
+    nix-software-center.url = "github:snowfallorg/nix-software-center";
+    nixos-conf-editor.url = "github:snowfallorg/nixos-conf-editor";
   };
 
-  outputs = { self, nixpkgs, home-manager, plasma-manager, spicetify-nix, kde2nix, nixpkgs-xr, nix-software-center, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, plasma-manager, spicetify-nix, kde2nix, nixpkgs-xr, nix-software-center, nixos-conf-editor, ... }@inputs:
     let
     specialArgs = {
       inherit spicetify-nix;
