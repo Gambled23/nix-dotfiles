@@ -12,6 +12,7 @@
     #core/services/xserver/i3/config.nix
   ];
   home.packages = with pkgs; [ 
+    inputs.nix-software-center.packages.${system}.nix-software-center
     # dev tools
     dbeaver-bin
     vscode

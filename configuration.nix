@@ -1,9 +1,8 @@
 { config, pkgs, lib, inputs, outputs, ... }:
-
 {
   imports = [ 
     # mysql
-    ./core/services/mysql.nix
+    ./core/services/mysql.nix 
     # openssh
     ./core/services/openssh.nix
     # zerotier

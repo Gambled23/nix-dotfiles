@@ -20,9 +20,13 @@
       url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons"; 
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nix-software-center = { 
+      url = "github:snowfallorg/nix-software-center";
+    };
   };
 
-  outputs = { self, nixpkgs, home-manager, plasma-manager, spicetify-nix, kde2nix, nixpkgs-xr, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, plasma-manager, spicetify-nix, kde2nix, nixpkgs-xr, nix-software-center, ... }@inputs:
     let
     specialArgs = {
       inherit spicetify-nix;
