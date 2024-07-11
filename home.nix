@@ -56,7 +56,7 @@
     galaxy-buds-client
     autorandr # for multi monitor setups
     nextcloud-client
-
+    rquickshare
     # webbrowsers
     floorp
     kdePackages.plasma-browser-integration
