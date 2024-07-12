@@ -58,7 +58,7 @@
     nextcloud-client
     rquickshare
     # webbrowsers
-    floorp
+    #floorp
     kdePackages.plasma-browser-integration
     chromium
 
