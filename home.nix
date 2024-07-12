@@ -59,6 +59,7 @@
     rquickshare
     # webbrowsers
     #floorp
+    google-chrome
     kdePackages.plasma-browser-integration
     chromium
 
