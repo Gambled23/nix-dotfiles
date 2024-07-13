@@ -11,6 +11,7 @@
     #../../core/services/xrdp.nix
     #../../core/programs/alvr.nix
     ../../core/programs/steam.nix
+    ../../core/services/suwayomi.nix
 
     # bootloader
     ../../core/bootloader/systemd.nix
