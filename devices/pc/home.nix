@@ -44,7 +44,6 @@
 
     # utils
     polychromatic
-    xdg-utils
   ];
 }
 
