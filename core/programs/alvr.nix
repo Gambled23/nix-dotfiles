@@ -7,6 +7,10 @@ with lib;
     enable = true;
     openFirewall = true;
   };
+  xdg.portal = {
+    enable = true;
+    xdgOpenUsePortal = true;
+  };
   /*
   services.monado = {
     enable = true;
