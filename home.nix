@@ -40,7 +40,8 @@
 
     # messaging
     vesktop 
-    whatsapp-for-linux
+    #whatsapp-for-linux
+    zapzap
     #telegram-desktop
 
     # networking
