@@ -26,6 +26,7 @@
     #kcc
     #calibre
     #mangal
+    komikku
 
     # dev tools
     #android-studio
