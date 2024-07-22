@@ -17,9 +17,10 @@
     # dev tools
     dbeaver-bin
     vscode
-    warp-terminal
+    #warp-terminal
     tmux
     lazygit
+    fzf
 
     # dev languages
     #kotlin
