@@ -85,8 +85,8 @@
               ./devices/laptop/home.nix
               inputs.plasma-manager.homeManagerModules.plasma-manager
               ./core/services/xserver/kde/config.nix
-              spicetify-nix.homeManagerModule 
-              ./core/programs/spicetify.nix
+              #spicetify-nix.homeManagerModule 
+              #./core/programs/spicetify.nix
             ];
             home-manager.extraSpecialArgs = specialArgs;
           }
