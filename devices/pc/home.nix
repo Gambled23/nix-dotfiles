@@ -34,6 +34,7 @@
 
     # games
     #gamemode
+    heroic
     ryujinx
     steam
     steam-run
