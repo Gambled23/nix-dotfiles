@@ -30,6 +30,7 @@
     miru
     stremio
     vlc
+    spotify
 
     # media creation
     gimp

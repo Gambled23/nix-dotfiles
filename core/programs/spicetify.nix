@@ -8,30 +8,30 @@ in
     "spotify"
   ];
 
-  programs.spicetify = {
-    enable = true;
+  # programs.spicetify = {
+  #   enable = true;
     
-    #theme = spicePkgs.themes.Sleek;
+  #   theme = spicePkgs.themes.Sleek;
 
-    enabledCustomApps = with spicePkgs.apps; [
-      marketplace
-      lyrics-plus
-    ];
+  #   enabledCustomApps = with spicePkgs.apps; [
+  #     marketplace
+  #     lyrics-plus
+  #   ];
 
-    enabledExtensions = with spicePkgs.extensions; [
-      powerBar
-      lastfm
-      fullAppDisplay
-      autoSkipVideo
-      shuffle
-      groupSession
-      seekSong
-      playlistIcons
-      fullAlbumDate
-      goToSong
-      adblock
-      playNext
-      volumePercentage
-    ];
-  };
+  #   enabledExtensions = with spicePkgs.extensions; [
+  #     powerBar
+  #     lastfm
+  #     fullAppDisplay
+  #     autoSkipVideo
+  #     shuffle
+  #     groupSession
+  #     seekSong
+  #     playlistIcons
+  #     fullAlbumDate
+  #     goToSong
+  #     adblock
+  #     playNext
+  #     volumePercentage
+  #   ];
+  # };
 }
