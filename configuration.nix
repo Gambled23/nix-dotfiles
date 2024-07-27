@@ -35,8 +35,17 @@
 
   hardware.bluetooth = {
     enable = true;
-    powerOnBoot = true;
-    settings.General.Experimental = true;
+    settings = {
+      General = {
+        Name = "Hello";
+        ControllerMode = "dual";
+        FastConnectable = "true";
+        Experimental = "true";
+      };
+      Policy = {
+        AutoEnable = "true";
+      };
+    };
   };
 
   time.timeZone = "America/Mexico_City";
