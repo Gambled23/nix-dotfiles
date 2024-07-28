@@ -90,7 +90,6 @@
     (import ./scripts/dev/samisecuestro.nix { inherit pkgs; })
     (import ./scripts/dev/mysqlSetupRoot.nix { inherit pkgs; })
     (import ./scripts/dev/sigi.nix { inherit pkgs; })
-    (callPackage ./nixpkgs/pkgs/rquickshare.nix {})
   ];
   
   system.autoUpgrade.enable = true;

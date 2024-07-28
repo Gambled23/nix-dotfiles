@@ -22,8 +22,6 @@
   
   home.packages = with pkgs; [ 
     # games
-    steam
-    steam-run
     osu-lazer-bin
     tetrio-desktop
     xorg.libxcb

@@ -36,8 +36,6 @@
     #gamemode
     heroic
     ryujinx
-    steam
-    steam-run
     osu-lazer-bin
     tetrio-desktop
     prismlauncher #minecra
