@@ -19,7 +19,6 @@
       mkdir = "mkdir -vp";
       mv = "mv -iv";
       rm = "rm -riv";
-      ryujinx= "ryujinx -r /hdd/switchgames/data/";
       
     };
   };
