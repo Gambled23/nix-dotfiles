@@ -25,10 +25,10 @@
     fsType = "ext4";
   };
 
-  fileSystems."/home/gambled" = { 
-    device = "/dev/disk/by-label/home";
-    fsType = "ext4";
-  };
+  # fileSystems."/home/gambled" = { 
+  #   device = "/dev/disk/by-label/home";
+  #   fsType = "ext4";
+  # };  
 
 
   fileSystems."/windows" = { 
