@@ -29,18 +29,17 @@
     komikku
 
     # dev tools
-    #android-studio
+    android-studio
     #cmake
 
     # games
     #gamemode
-    heroic
+    #heroic
     ryujinx
     osu-lazer-bin
-    tetrio-desktop
-    prismlauncher #minecra
+    #tetrio-desktop
+    #prismlauncher #minecra
     r2modman
-    wineWowPackages.waylandFull
 
     # utils
     polychromatic

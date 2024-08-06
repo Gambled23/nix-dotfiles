@@ -8,11 +8,9 @@ pkgs.writeShellScriptBin "agc" ''
   sudo nix-collect-garbage -d
   nix store optimise
 
-  echo "Sistema borrado" | ${pkgs.clolcat}/bin/clolcat
-
   cd /home/gambled/Pictures/Screenshots/
-  rm *
-  echo "Screenshots borradas" | ${pkgs.clolcat}/bin/clolcat
+  sudo rm *
   sudo rm -rf /home/gambled/.cache/
-  echo "Cache borrada" | ${pkgs.clolcat}/bin/clolcat
+
+  echo "Sistema limpiado" | ${pkgs.clolcat}/bin/clolcat
 ''
