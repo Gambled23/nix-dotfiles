@@ -7,9 +7,15 @@
 }: 
 {
   imports = [
-
-    # i3
-    #core/services/xserver/i3/config.nix
+    core/programs/alacritty.nix
+    core/programs/direnv.nix
+    core/programs/git.nix
+    #core/programs/kitty/kitty.nix
+    core/programs/lsd.nix
+    #core/programs/neovim.nix
+    core/programs/starship.nix
+    core/programs/zsh.nix
+    #core/programs/firefox.nix
   ];
   home.packages = with pkgs; [ 
     inputs.nix-software-center.packages.${system}.nix-software-center
