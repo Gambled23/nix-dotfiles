@@ -47,7 +47,6 @@
     # messaging
     vesktop 
     zapzap
-    paper-plane
 
     # networking
     zerotierone
