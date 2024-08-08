@@ -46,9 +46,8 @@
 
     # messaging
     vesktop 
-    #whatsapp-for-linux
     zapzap
-    #telegram-desktop
+    paper-plane
 
     # networking
     zerotierone
