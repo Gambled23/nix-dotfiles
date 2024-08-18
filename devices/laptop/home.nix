@@ -14,6 +14,7 @@
   home.packages = with pkgs; [ 
     # games
     xorg.libxcb
+    osu-lazer-bin
   ];
 }
 
