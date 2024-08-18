@@ -49,7 +49,7 @@
     zapzap
 
     # networking
-    zerotierone
+    #zerotierone
 
     # utils
     jellyfin-ffmpeg

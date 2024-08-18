@@ -111,7 +111,7 @@ with lib;
     kdePackages.packagekit-qt
     kdePackages.signond
     libsForQt5.qoauth
-    libsForQt5.polonium
+    polonium
     kdePackages.kio-gdrive
     kdePackages.kio-admin
     kdePackages.ktorrent

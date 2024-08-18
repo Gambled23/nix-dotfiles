@@ -6,7 +6,7 @@
     # openssh
     ./core/services/openssh.nix
     # zerotier
-    ./core/services/zerotier.nix
+    #./core/services/zerotier.nix
 
     # Select DE
     ./core/services/xserver/kde/default.nix
