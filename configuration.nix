@@ -24,7 +24,7 @@
   ''
     192.168.1.1 router
 
-    192.168.1.15 home-gambled
+    10.243.0.1 home-gambled
     10.243.0.2 pc-gambled
     10.243.0.3 laptop-gambled
     10.243.0.4 android-gambled
