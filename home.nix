@@ -73,7 +73,7 @@
     zsh
 
     #wine
-    wineWowPackages.stable
+    wine64
   ];
 
   # Nicely reload system units when changing configs
