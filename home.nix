@@ -71,6 +71,9 @@
 
     # oh-my-zsh plugins
     zsh
+
+    #wine
+    wineWowPackages.stable
   ];
 
   # Nicely reload system units when changing configs
