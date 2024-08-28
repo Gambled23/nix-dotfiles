@@ -26,7 +26,8 @@
     vscode
     warp-terminal
     tmux
-    lazygit
+    lazygit   
+    fzf
 
     # dev languages
     #kotlin
