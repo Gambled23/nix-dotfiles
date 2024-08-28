@@ -21,6 +21,6 @@
       rm = "rm -riv";
       
     };
-    initExtra = "source <(fzf --zsh)\nwarp-terminal &\n";
+    initExtra = "source <(fzf --zsh)\n";
   };
 }
