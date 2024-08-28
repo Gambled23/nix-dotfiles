@@ -24,7 +24,6 @@
     firefox-unwrapped
     dbeaver-bin
     vscode
-    warp-terminal
     tmux
     lazygit   
     fzf
