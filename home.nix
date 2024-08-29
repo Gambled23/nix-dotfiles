@@ -53,6 +53,7 @@
     zerotierone
 
     # utils
+    p3x-onenote
     jellyfin-ffmpeg
     android-tools
     libreoffice
