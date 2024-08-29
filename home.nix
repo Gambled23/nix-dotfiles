@@ -61,7 +61,7 @@
     #gnome.simple-scan
     nextcloud-client
     #rquickshare
-    # webbrowsers
+    # webbrowsers     
     #floorp
     google-chrome
     #chromium
