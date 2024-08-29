@@ -53,6 +53,7 @@
     zerotierone
 
     # utils
+    appflowy
     jellyfin-ffmpeg
     android-tools
     libreoffice
