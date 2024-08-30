@@ -73,9 +73,6 @@
                 "applications:code"
                 "applications:smartcode-stremio"
                 "applications:miru"
-
-              
-
               ];
             };
           }
@@ -187,12 +184,12 @@
       };
     };
 
-    # kwin = {
-    #   edgeBarrier = 0; # Disables the edge-barriers introduced in plasma 6.1
-    #   cornerBarrier = false;
-
-    #   scripts.polonium.enable = true;
-    # };
+    kwin = {
+      virtualDesktops = {
+        number = 5;
+        names = [ "1" "2" "3" "4" "5"];
+      };
+    };
 
     kscreenlocker = {
       lockOnResume = true;
