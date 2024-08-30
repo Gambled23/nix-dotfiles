@@ -180,9 +180,11 @@
       lockOnResume = true;
       timeout = 10;
     };
+
     spectacle.shortcuts = {
       captureRectangularRegion = "Print";
     };
+
     shortcuts = {
       ksmserver = {
         "Lock Session" = [ "Screensaver" "Meta+Ctrl+Alt+L" ];
@@ -220,33 +222,12 @@
         "decrease_volume_small" = "Alt+-";
         "increase_volume_small" = "Alt+=";
       };
-    };
-
-    # Add custom hotkeys commands
-    hotkeys.commands."launch-konsole" = {
-      name = "Launch Konsole";
-      key = "Meta+Return";
-      command = "konsole";
-    };
-    hotkeys.commands."launch-dolphin" = {
-      name = "Launch Dolphin";
-      key = "Meta+E";
-      command = "dolphin";
-    };    
-    hotkeys.commands."launch-chrome" = {
-      name = "Launch Chrome";
-      key = "Meta+F";
-      command = "google-chrome-stable";
-    };
-    hotkeys.commands."launch-vscode" = {
-      name = "Launch VSCode";
-      key = "Meta+C";
-      command = "code";
-    };  
-    hotkeys.commands."krunner" = {
-      name = "KRunner";
-      key = "Meta";
-      command = "krunner";
+      
+      "services.org.kde.krunner.desktop"."_launch" = "Meta";
+      "services.konsole.desktop"."_launch" = "Meta+Return";
+      "services.services.code.desktop"."_launch" = "Meta+C";
+      "services.services.google-chrome.desktop"."_launch" = "Meta+F";
+      "services.services.org.kde.dolphin.desktop"."_launch" = "Meta+E";
     };
 
     # low level settings
