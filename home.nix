@@ -69,7 +69,7 @@
     # extras
     bat
     lxde.lxsession
-
+    neofetch
     # oh-my-zsh plugins
     zsh
 

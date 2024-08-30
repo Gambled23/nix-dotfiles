@@ -7,12 +7,11 @@
     # Some high-level settings:
     #
     workspace = {
-      lookAndFeel = "nothing";
-      cursor = {
-        theme = "Future-dark-cursors";
+      lookAndFeel = "kde-gruvbox";
+      cursor = {  
+        theme = "whitesur-cursors";
         size = 24;
       };
-      iconTheme = "Nordic-darker";
       wallpaper = "${pkgs.kdePackages.plasma-workspace-wallpapers}/share/wallpapers/Patak/contents/images/1080x1920.png";
     };
 

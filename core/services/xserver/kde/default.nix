@@ -125,6 +125,13 @@ with lib;
     qt6.qtwebengine
     kate
     kup
+
+    # Themes
+    kde-gruvbox
+    whitesur-cursors
+
+    # widgets
+    plasmusic-toolbar
   ];
 
   programs.partition-manager.enable = true;
