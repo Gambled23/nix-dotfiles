@@ -127,7 +127,8 @@ with lib;
     kup
 
     # Themes
-    kde-gruvbox
+    catppuccin-kde
+    catppuccin-kvantum
     whitesur-cursors
 
     # widgets

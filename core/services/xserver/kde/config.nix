@@ -1,41 +1,21 @@
 { pkgs, ... }:
 {
+
   programs.plasma = {
     enable = true;
+    input.keyboard.numlockOnStartup = "on";
 
     #
     # Some high-level settings:
     #
     workspace = {
-      lookAndFeel = "kde-gruvbox";
+      lookAndFeel = "catppuccin-kde";
       cursor = {  
-        theme = "whitesur-cursors";
+        theme = "Future-dark-cursors";
         size = 24;
       };
-      wallpaper = "${pkgs.kdePackages.plasma-workspace-wallpapers}/share/wallpapers/Patak/contents/images/1080x1920.png";
+      wallpaper = "/home/gambled/Pictures/Wallpapers/PC/anime/GIYXrataoAAeJfj.jpg";
     };
-
-    # Add custom hotkeys commands
-    hotkeys.commands."launch-konsole" = {
-      name = "Launch Konsole";
-      key = "Meta+Return";
-      command = "konsole";
-    };
-    hotkeys.commands."launch-dolphin" = {
-      name = "Launch Dolphin";
-      key = "Meta+E";
-      command = "dolphin";
-    };    
-    hotkeys.commands."launch-chrome" = {
-      name = "Launch Chrome";
-      key = "Meta+F";
-      command = "google-chrome-stable";
-    };
-    hotkeys.commands."launch-vscode" = {
-      name = "Launch VSCode";
-      key = "Meta+C";
-      command = "code";
-    };  
 
     fonts = {
       general = {
@@ -65,13 +45,18 @@
           {
             iconTasks = {
               launchers = [
+                #dolphin
                 "applications:org.kde.dolphin.desktop"
-                "applications:steam"
-                "applications:google-chrome"
-                "applications:spotify"
-                "applications:code"
-                "applications:smartcode-stremio"
-                "applications:miru"
+                #steam
+                "applications:steam.desktop"
+                #google chrome
+                "applications:google-chrome.desktop"
+                #miru
+                "applications:miru.desktop"
+                #vscode
+                "applications:code.desktop"
+                #dbeaver
+                "applications:dbeaver.desktop"
               ];
             };
           }
@@ -185,8 +170,9 @@
 
     kwin = {
       virtualDesktops = {
-        number = 5;
-        names = [ "1" "2" "3" "4" "5"];
+        rows = 2;
+        number = 6;
+        names = [ "1" "2" "3" "4" "5" "6"];
       };
     };
 
@@ -194,10 +180,9 @@
       lockOnResume = true;
       timeout = 10;
     };
-
-    #
-    # Some mid-level settings:
-    #
+    spectacle.shortcuts = {
+      captureRectangularRegion = "Print";
+    };
     shortcuts = {
       ksmserver = {
         "Lock Session" = [ "Screensaver" "Meta+Ctrl+Alt+L" ];
@@ -207,39 +192,79 @@
         "Expose" = "Meta+,";
         "Overview" = "Meta+W";
         "Grid View" = "Meta+G";
-        "Switch to Desktop 1" = "Meta+1";
-        "Switch to Desktop 2" = "Meta+2";
-        "Switch to Desktop 3" = "Meta+3";
-        "Switch to Desktop 4" = "Meta+4";
-        "Switch to Desktop 5" = "Meta+5";
-        "Window to Desktop 1" = "Meta+!";
-        "Window to Desktop 2" = "Meta+@";
-        "Window to Desktop 3" = "Meta+#";
-        "Window to Desktop 4" = "Meta+$";
-        "Window to Desktop 5" = "Meta+%";    
+        "Switch to Desktop 1" = "Meta+U";
+        "Switch to Desktop 2" = "Meta+I";
+        "Switch to Desktop 3" = "Meta+O";
+        "Switch to Desktop 4" = "Meta+J";
+        "Switch to Desktop 5" = "Meta+K";
+        "Switch to Desktop 6" = "Meta+L";
+        "Window to Desktop 1" = "Meta+Shift+U";
+        "Window to Desktop 2" = "Meta+Shift+I";
+        "Window to Desktop 3" = "Meta+Shift+O";
+        "Window to Desktop 4" = "Meta+Shift+J";
+        "Window to Desktop 5" = "Meta+Shift+K";
+        "Window to Desktop 6" = "Meta+Shift+L";
         "Window One Screen to the Left" = "Meta+Shift+A";
         "Window Maximize" = "Meta+Shift+W";
         "Window Minimize" = "Meta+Shift+S";
         "Window Move Center" = "Meta+X"; 
         "Window Close" = "Meta+Q";
         "Kill Window" = "Meta+Ctrl+Q";
-        "decrease_volume_small" ="Alt+-";
-        "increase_volume_small" = "Alt+=";
+      };
+      mediacontrol = {
         "previousmedia" = "Alt+1";
-        "playpausemedia" = "Alt+2";
-        "nextmedia" = "Alt+3";
+        "playpausemedia" = "Alt+2"; 
+        "nextmedia" = "Alt+3";  
+      };
+      kmix = {
+        "decrease_volume_small" = "Alt+-";
+        "increase_volume_small" = "Alt+=";
       };
     };
 
+    # Add custom hotkeys commands
+    hotkeys.commands."launch-konsole" = {
+      name = "Launch Konsole";
+      key = "Meta+Return";
+      command = "konsole";
+    };
+    hotkeys.commands."launch-dolphin" = {
+      name = "Launch Dolphin";
+      key = "Meta+E";
+      command = "dolphin";
+    };    
+    hotkeys.commands."launch-chrome" = {
+      name = "Launch Chrome";
+      key = "Meta+F";
+      command = "google-chrome-stable";
+    };
+    hotkeys.commands."launch-vscode" = {
+      name = "Launch VSCode";
+      key = "Meta+C";
+      command = "code";
+    };  
+    hotkeys.commands."krunner" = {
+      name = "KRunner";
+      key = "Meta";
+      command = "krunner";
+    };
 
-    #
-    # Some low-level settings:
-    #
+    # low level settings
     configFile = {
       baloofilerc."Basic Settings"."Indexing-Enabled" = false;
-      kwinrc."org.kde.kdecoration2".ButtonsOnLeft = "SF";
+      # Focus follows mouse
+      kwinrc."Windows".CenterSnapZone = 10;
+      kwinrc."Windows".DelayFocusInterval = 0;
+      kwinrc."Windows".FocusPolicy = "FocusFollowsMouse";
+      kwinrc."Windows".NextFocusPrefersMouse = true;
+      # Windows decorations
+      kwinrc."org.kde.kdecoration2".BorderSize = "None";
+      kwinrc."org.kde.kdecoration2".BorderSizeAuto = false;
+      kwinrc."org.kde.kdecoration2".ButtonsOnLeft = "BF";
+      kwinrc."org.kde.kdecoration2".ButtonsOnRight = "IAX";
+
       kwinrc.Desktops.Number = {
-        value = 5;
+        value = 6;
         # Forces kde to not change this value (even through the settings app).
         immutable = true;
       };
@@ -251,4 +276,108 @@
       };
     };
   };
+
+  # Konsole theme
+  programs.konsole = {
+    profiles.konsole.defaultProfile = "catpucchin";
+    profiles.catppuccin.colorscheme = "catppuccin-frappe";
+  };
+  home.file.".local/share/konsole/catppuccin-frappe.colorscheme".text = ''
+    [Background]
+    Color=48,52,70
+
+    [BackgroundFaint]
+    Color=48,52,70
+
+    [BackgroundIntense]
+    Color=48,52,70
+
+    [Color0]
+    Color=115,121,148
+
+    [Color0Faint]
+    Color=115,121,148
+
+    [Color0Intense]
+    Color=115,121,148
+
+    [Color1]
+    Color=231,130,132
+
+    [Color1Faint]
+    Color=231,130,132
+
+    [Color1Intense]
+    Color=231,130,132
+
+    [Color2]
+    Color=166,209,137
+
+    [Color2Faint]
+    Color=166,209,137
+
+    [Color2Intense]
+    Color=166,209,137
+
+    [Color3]
+    Color=229,200,144
+
+    [Color3Faint]
+    Color=229,200,144
+
+    [Color3Intense]
+    Color=229,200,144
+
+    [Color4]
+    Color=140,170,238
+
+    [Color4Faint]
+    Color=140,170,238
+
+    [Color4Intense]
+    Color=140,170,238
+
+    [Color5]
+    Color=202,158,230
+
+    [Color5Faint]
+    Color=202,158,230
+
+    [Color5Intense]
+    Color=202,158,230
+
+    [Color6]
+    Color=153,209,219
+
+    [Color6Faint]
+    Color=153,209,219
+
+    [Color6Intense]
+    Color=153,209,219
+
+    [Color7]
+    Color=198,208,245
+
+    [Color7Faint]
+    Color=198,208,245
+
+    [Color7Intense]
+    Color=198,208,245
+
+    [Foreground]
+    Color=198,208,245
+
+    [ForegroundFaint]
+    Color=198,208,245
+
+    [ForegroundIntense]
+    Color=198,208,245
+
+    [General]
+    Blur=false
+    ColorRandomization=false
+    Description=Catppuccin Frappé
+    Opacity=1
+    Wallpaper=
+  '';
 }
