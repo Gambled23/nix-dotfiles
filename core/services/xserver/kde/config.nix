@@ -7,13 +7,12 @@
     # Some high-level settings:
     #
     workspace = {
-      clickItemTo = "open"; # If you liked the click-to-open default from plasma 5
-      lookAndFeel = "org.kde.breezedark.desktop";
+      lookAndFeel = "nothing";
       cursor = {
-        theme = "Bibata-Modern-Ice";
-        size = 32;
+        theme = "Future-dark-cursors";
+        size = 24;
       };
-      iconTheme = "Papirus-Dark";
+      iconTheme = "Nordic-darker";
       wallpaper = "${pkgs.kdePackages.plasma-workspace-wallpapers}/share/wallpapers/Patak/contents/images/1080x1920.png";
     };
 
@@ -49,31 +48,18 @@
     panels = [
       #BEGIN: Windows-like panel at the bottom
       {
+        screen= 0;
         location = "bottom";
+        alignment = "center";
+        height = 44;
+        floating = true;
+        lengthMode = "fit";
+        hiding = "autohide";
         widgets = [
-          # We can configure the widgets by adding the name and config
-          # attributes. For example to add the the kickoff widget and set the
-          # icon to "nix-snowflake-white" use the below configuration. This will
-          # add the "icon" key to the "General" group for the widget in
-          # ~/.config/plasma-org.kde.plasma.desktop-appletsrc.
-          {
-            name = "org.kde.plasma.kickoff";
-            config = {
-              General = {
-                icon = "nix-snowflake-white";
-                alphaSort = true;
-              };
-            };
-          }
           # Or you can configure the widgets by adding the widget-specific options for it.
           # See modules/widgets for supported widgets and options for these widgets.
           # For example:
-          {
-            kickoff = {
-              sortAlphabetically = true;
-              icon = "nix-snowflake-white";
-            };
-          }
+          
           # Adding configuration to the widgets can also for example be used to
           # pin apps to the task-manager, which this example illustrates by
           # pinning dolphin and konsole to the task-manager by default with widget-specific options.
@@ -81,125 +67,76 @@
             iconTasks = {
               launchers = [
                 "applications:org.kde.dolphin.desktop"
-                "applications:org.kde.konsole.desktop"
-              ];
-            };
-          }
-          # Or you can do it manually, for example:
-          {
-            name = "org.kde.plasma.icontasks";
-            config = {
-              General = {
-                launchers = [
-                  "applications:org.kde.dolphin.desktop"
-                  "applications:org.kde.konsole.desktop"
-                ];
-              };
-            };
-          }
-          # If no configuration is needed, specifying only the name of the
-          # widget will add them with the default configuration.
-          "org.kde.plasma.marginsseparator"
-          # If you need configuration for your widget, instead of specifying the
-          # the keys and values directly using the config attribute as shown
-          # above, plasma-manager also provides some higher-level interfaces for
-          # configuring the widgets. See modules/widgets for supported widgets
-          # and options for these widgets. The widgets below shows two examples
-          # of usage, one where we add a digital clock, setting 12h time and
-          # first day of the week to Sunday and another adding a systray with
-          # some modifications in which entries to show.
-          {
-            digitalClock = {
-              calendar.firstDayOfWeek = "sunday";
-              time.format = "12h";
-            };
-          }
-          {
-            systemTray.items = {
-              # We explicitly show bluetooth and battery
-              shown = [
-                "org.kde.plasma.battery"
-                "org.kde.plasma.bluetooth"
-              ];
-              # And explicitly hide networkmanagement and volume
-              hidden = [
-                "org.kde.plasma.networkmanagement"
-                "org.kde.plasma.volume"
+                "applications:steam"
+                "applications:google-chrome"
+                "applications:spotify"
+                "applications:code"
+                "applications:smartcode-stremio"
+                "applications:miru"
+
+              
+
               ];
             };
           }
         ];
-        hiding = "autohide";
       }
       # END: Windows-like panel at the bottom
       
       #BEGIN: Application name, Global menu and Song information and playback controls at the top
       {
+        screen= 0;
         location = "top";
-        height = 26;
+        alignment = "center";
+        height = 28;
+        floating = true;
+        lengthMode = "fill";
+        hiding = "normalpanel";
         widgets = [
-          {
-            applicationTitleBar = {
-              behavior = {
-                activeTaskSource = "activeTask";
-              };
-              layout = {
-                elements = [ "windowTitle" ];
-                horizontalAlignment = "left";
-                showDisabledElements = "deactivated";
-                verticalAlignment = "center";
-              };
-              overrideForMaximized.enable = false;
-              titleReplacements = [
-                {
-                  type = "regexp";
-                  originalTitle = "^Brave Web Browser$";
-                  newTitle = "Brave";
-                }
-                {
-                  type = "regexp";
-                  originalTitle = ''\\bDolphin\\b'';
-                  newTitle = "File manager";
-                }
-              ];
-              windowTitle = {
-                font = {
-                  bold = false;
-                  fit = "fixedSize";
-                  size = 12;
-                };
-                hideEmptyTitle = true;
-                margins = {
-                  bottom = 0;
-                  left = 10;
-                  right = 5;
-                  top = 0;
-                };
-                source = "appName";
-              };
-            };
-          }
           "org.kde.plasma.appmenu"
           "org.kde.plasma.panelspacer"
           {
             plasmusicToolbar = {
               panelIcon = {
                 albumCover = {
-                  useAsIcon = false;
+                  useAsIcon = true; 
                   radius = 8;
+                  fallbackToIcon = true;
                 };
                 icon = "view-media-track";
               };
               preferredSource = "spotify";
-              musicControls.showPlaybackControls = true;
+              musicControls.showPlaybackControls = false;
               songText = {
-                displayInSeparateLines = true;
+                displayInSeparateLines = false;
                 maximumWidth = 640;
                 scrolling = {
                   behavior = "alwaysScroll";
                   speed = 3;
                 };
               };
+            };
+          }
+          "org.kde.plasma.panelspacer"
+          {
+            systemTray.items = {
+              # We explicitly show bluetooth and battery
+              shown = [
+                "org.kde.plasma.battery"
+                "org.kde.plasma.bluetooth"
+                "org.kde.plasma.notifications"
+              ];
+              # And explicitly hide networkmanagement and volume
+              hidden = [
+                "org.kde.plasma.networkmanagement"
+              ];
+            };
+          }
+          {
+            digitalClock = {
+              calendar.firstDayOfWeek = "sunday";
+              time.format = "24h";
+              date.enable = false;
             };
           }
         ];
@@ -213,7 +150,7 @@
         match = {
           window-class = {
             value = "spotify";
-            type = "exact";
+            type = "exact"; 
           };
           window-types = [ "normal" ];
         };    
@@ -250,12 +187,12 @@
       };
     };
 
-    kwin = {
-      edgeBarrier = 0; # Disables the edge-barriers introduced in plasma 6.1
-      cornerBarrier = false;
+    # kwin = {
+    #   edgeBarrier = 0; # Disables the edge-barriers introduced in plasma 6.1
+    #   cornerBarrier = false;
 
-      scripts.polonium.enable = true;
-    };
+    #   scripts.polonium.enable = true;
+    # };
 
     kscreenlocker = {
       lockOnResume = true;
@@ -290,6 +227,11 @@
         "Window Move Center" = "Meta+X"; 
         "Window Close" = "Meta+Q";
         "Kill Window" = "Meta+Ctrl+Q";
+        "decrease_volume_small" ="Alt+-";
+        "increase_volume_small" = "Alt+=";
+        "previousmedia" = "Alt+1";
+        "playpausemedia" = "Alt+2";
+        "nextmedia" = "Alt+3";
       };
     };
 
