@@ -5,9 +5,7 @@
     enable = true;
     input.keyboard.numlockOnStartup = "on";
 
-    #
-    # Some high-level settings:
-    #
+    #BEGIN: Theme settings
     workspace = {
       lookAndFeel = "catppuccin-kde";
       cursor = {  
@@ -23,7 +21,10 @@
         pointSize = 12;
       };
     };
+    #END: Theme settings
 
+
+    #BEGIN: Panels
     panels = [
       #BEGIN: Windows-like panel at the bottom
       {
@@ -124,7 +125,10 @@
       }
       # END: Application name, Global menu and Song information and playback controls at the top
     ];
+    #END: Panels
 
+
+    #BEGIN: Window rules
     window-rules = [
       {
         description = "Spotify";
@@ -146,7 +150,10 @@
         };
       }
     ];
+    #END: Window rules
 
+
+    #BEGIN: Power management
     powerdevil = {
       AC = {
         powerButtonAction = "lockScreen";
@@ -167,7 +174,10 @@
         whenLaptopLidClosed = "hibernate";
       };
     };
+    #END: Power management
 
+
+    # Virtual desktops
     kwin = {
       virtualDesktops = {
         rows = 2;
@@ -175,21 +185,24 @@
         names = [ "1" "2" "3" "4" "5" "6"];
       };
     };
-
+    
+    # Screen locker
     kscreenlocker = {
       lockOnResume = true;
       timeout = 10;
     };
 
+    # Spectacle
     spectacle.shortcuts = {
       captureRectangularRegion = "Print";
     };
 
+
+    #BEGIN: Shortcuts
     shortcuts = {
       ksmserver = {
         "Lock Session" = [ "Screensaver" "Meta+Ctrl+Alt+L" ];
       };
-
       kwin = {
         "Expose" = "Meta+,";
         "Overview" = "Meta+W";
@@ -222,15 +235,15 @@
         "decrease_volume_small" = "Alt+-";
         "increase_volume_small" = "Alt+=";
       };
-      
       "services.org.kde.krunner.desktop"."_launch" = "Meta";
       "services.konsole.desktop"."_launch" = "Meta+Return";
       "services.services.code.desktop"."_launch" = "Meta+C";
       "services.services.google-chrome.desktop"."_launch" = "Meta+F";
       "services.services.org.kde.dolphin.desktop"."_launch" = "Meta+E";
     };
+    #END: Shortcuts
 
-    # low level settings
+    #BEGIN low level settings
     configFile = {
       baloofilerc."Basic Settings"."Indexing-Enabled" = false;
       # Focus follows mouse
@@ -244,11 +257,6 @@
       kwinrc."org.kde.kdecoration2".ButtonsOnLeft = "BF";
       kwinrc."org.kde.kdecoration2".ButtonsOnRight = "IAX";
 
-      kwinrc.Desktops.Number = {
-        value = 6;
-        # Forces kde to not change this value (even through the settings app).
-        immutable = true;
-      };
       kscreenlockerrc = {
         Greeter.WallpaperPlugin = "org.kde.potd";
         # To use nested groups use / as a separator. In the below example,
@@ -256,9 +264,92 @@
         "Greeter/Wallpaper/org.kde.potd/General".Provider = "bing";
       };
     };
+    #END low level settings
   };
 
-  # Konsole theme
+  # BEGIN: Autostart apps
+  home.file.".config/autostart/spotify.desktop".text = ''
+    [Desktop Entry]
+    Categories=Audio;Music;Player;AudioVideo;
+    Exec=spotify %U
+    GenericName=Music Player
+    Icon=spotify-client
+    MimeType=x-scheme-handler/spotify;
+    Name=Spotify
+    StartupWMClass=spotify
+    Terminal=false
+    TryExec=spotify
+    Type=Application
+  '';
+
+  home.file.".config/autostart/steam.desktop".text = ''
+    [Desktop Action BigPicture]
+    Exec=steam steam://open/bigpicture
+    Name=Big Picture
+
+    [Desktop Action Community]
+    Exec=steam steam://url/SteamIDControlPage
+    Name=Community
+
+    [Desktop Action Friends]
+    Exec=steam steam://open/friends
+    Name=Friends
+
+    [Desktop Action Library]
+    Exec=steam steam://open/games
+    Name=Library
+
+    [Desktop Action News]
+    Exec=steam steam://open/news
+    Name=News
+
+    [Desktop Action Screenshots]
+    Exec=steam steam://open/screenshots
+    Name=Screenshots
+
+    [Desktop Action Servers]
+    Exec=steam steam://open/servers
+    Name=Servers
+
+    [Desktop Action Settings]
+    Exec=steam steam://open/settings
+    Name=Settings
+
+    [Desktop Action Store]
+    Exec=steam steam://store
+    Name=Store
+
+    [Desktop Entry]
+    Actions=Store;Community;Library;Servers;Screenshots;News;Settings;BigPicture;Friends;
+    Categories=Network;FileTransfer;Game;
+    Comment=Application for managing and playing games on Steam
+    Exec=steam %U
+    Icon=steam
+    MimeType=x-scheme-handler/steam;x-scheme-handler/steamlink;
+    Name=Steam
+    PrefersNonDefaultGPU=true
+    Terminal=false
+    Type=Application
+    X-KDE-RunOnDiscreteGpu=true
+  '';
+
+  home.file.".config/autostart/vesktop.desktop".text = ''
+    [Desktop Entry]
+    Categories=Network;InstantMessaging;Chat
+    Exec=vesktop %U
+    GenericName=Internet Messenger
+    Icon=vesktop
+    Keywords=discord;vencord;electron;chat
+    Name=Vesktop
+    StartupWMClass=Vesktop
+    Type=Application
+    Version=1.4
+  '';
+  # END: Autostart apps
+
+
+
+  #BEGIN: Konsole theme
   programs.konsole = {
     profiles.konsole.defaultProfile = "catpucchin";
     profiles.catppuccin.colorscheme = "catppuccin-frappe";
@@ -361,4 +452,5 @@
     Opacity=1
     Wallpaper=
   '';
+  #END: Konsole theme
 }
