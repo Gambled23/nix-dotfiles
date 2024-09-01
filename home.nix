@@ -61,6 +61,8 @@
     #gnome.simple-scan
     nextcloud-client
     #rquickshare
+    ticktick
+
     # webbrowsers     
     #floorp
     google-chrome
@@ -70,6 +72,7 @@
     bat
     lxde.lxsession
     neofetch
+    
     # oh-my-zsh plugins
     zsh
 
