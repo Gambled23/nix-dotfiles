@@ -46,17 +46,11 @@
           {
             iconTasks = {
               launchers = [
-                #dolphin
-                "applications:org.kde.dolphin.desktop"
-                #steam
+                #"applications:org.kde.dolphin.desktop"
                 "applications:steam.desktop"
-                #google chrome
-                "applications:google-chrome.desktop"
-                #miru
+                #"applications:google-chrome.desktop"
                 "applications:miru.desktop"
-                #vscode
                 "applications:code.desktop"
-                #dbeaver
                 "applications:dbeaver.desktop"
               ];
             };
@@ -134,21 +128,111 @@
         description = "Spotify";
         match = {
           window-class = {
-            value = "spotify";
+            value = "Spotify";
             type = "exact"; 
+            match-whole = false;
           };
           window-types = [ "normal" ];
         };    
         apply = {
-          noborder = {
+          closeable = {
+            value = false;
+            apply = "force";
+          };
+          desktops = {
+            value = "c563d948-dbdd-4892-8c28-c46fe1984617"; # Desktop 6
+          };
+          noborder = {      
             value = true;
             apply = "force";
           };
-          # `apply` defaults to "apply-initially"
-          maximizehoriz = true;
-          maximizevert = true;
+          screen = {
+            value = "0";
+            apply = "force";
+          };
+          size = {
+            value = "1920,1052";
+            apply = "force";
+          };
         };
       }
+
+      {
+        description = "Vesktop";
+        match = {
+          window-class = {
+            value = "vesktop";
+            type = "exact"; 
+            match-whole = false;
+          };
+          window-types = [ "normal" ];
+        };    
+        apply = { 
+          closeable = {
+            value = false;
+            apply = "force";
+          };
+          desktops = {
+            value = "fd3ca781-65eb-4a38-90ab-21f420dc4236"; # desktop 2
+          };
+          noborder = {      
+            value = true;
+            apply = "force";
+          };
+          screen = {
+            value = "0";
+          };
+          size = {
+            value = "1920,1052";
+            apply = "force";
+          };
+        };
+      }
+
+      {
+        description = "ZapZap";
+        match = {
+          window-class = {
+            value = "com.rtosta.zapzap";    
+            type = "exact"; 
+            match-whole = false;
+          };
+          window-types = [ "normal" ];
+        };
+        apply = {
+          desktops = {
+            value = "fd3ca781-65eb-4a38-90ab-21f420dc4236"; # desktop 2
+          };
+          screen = {
+            value = "0";
+          };
+        };
+      }
+
+      {
+        description = "Steam";
+        match = {
+          window-class = {
+            value = "steam";
+            type = "exact";
+            match-whole = false;
+          };
+          window-types = [ "normal" ];
+        };    
+        apply = { 
+          desktops = {
+            value = "01625988-f599-4fd8-abbe-3edc85738e10"; # desktop 4
+          };
+          screen = {
+            value = "1";
+          };
+          size = {
+            value = "1920,1080";
+            apply = "force";
+          };
+        };
+      }
+      
     ];
     #END: Window rules
 
@@ -223,6 +307,7 @@
         "Window Maximize" = "Meta+Shift+W";
         "Window Minimize" = "Meta+Shift+S";
         "Window Move Center" = "Meta+X"; 
+        "Window Resize" = "Meta+R";
         "Window Close" = "Meta+Q";
         "Kill Window" = "Meta+Ctrl+Q";
       };
@@ -235,13 +320,20 @@
         "decrease_volume_small" = "Alt+-";
         "increase_volume_small" = "Alt+=";
       };
-      "services.org.kde.krunner.desktop"."_launch" = "Meta";
-      "services.konsole.desktop"."_launch" = "Meta+Return";
-      "services.services.code.desktop"."_launch" = "Meta+C";
-      "services.services.google-chrome.desktop"."_launch" = "Meta+F";
-      "services.services.org.kde.dolphin.desktop"."_launch" = "Meta+E";
+      "services.org.kde.krunner.desktop" = {
+        "_launch" = "Meta";
+      };
+      "services.code.desktop" = {
+        "_launch" = "Meta+C";
+      };
+      "services.org.kde.konsole.desktop" = {
+        "_launch" = "Meta+Return";
+      };
+      "services.google-chrome.desktop" = {
+        "_launch" = "Meta+F";
+      };
     };
-    #END: Shortcuts
+    #END: Shortcuts 
 
     #BEGIN low level settings
     configFile = {
