@@ -226,10 +226,6 @@
           screen = {
             value = "1";
           };
-          size = {
-            value = "1920,1080";
-            apply = "force";
-          };
         };
       }
       
