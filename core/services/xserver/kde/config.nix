@@ -344,7 +344,7 @@
             apply = "force";
           };
           screen = {
-            value = "0";
+            value = "0";    
           };
         };
       }
