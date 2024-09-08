@@ -1,4 +1,12 @@
 { pkgs, ... }:
+let 
+  virtualDesktop_1 = "df60f20e-bb9a-43e0-a56c-317ba9bf6fa8";
+  virtualDesktop_2 = "29c922e3-7bed-4943-81d6-3ee1ec879b9c, fd3ca781-65eb-4a38-90ab-21f420dc4236";
+  virtualDesktop_3 = "df69378b-2ad3-4964-912c-532d2538bf48";
+  virtualDesktop_4 = "15f626d5-877e-4454-9e51-c45611af073d, 01625988-f599-4fd8-abbe-3edc85738e10";
+  virtualDesktop_5 = "48483641-a43c-4df3-9e39-e80dd8e170df";
+  virtualDesktop_6 = "f33936f3-8bd7-4f6d-af4e-a1e690806bf9, c563d948-dbdd-4892-8c28-c46fe1984617";
+in    
 {
 
   programs.plasma = {
@@ -125,12 +133,8 @@
     #BEGIN: Window rules
     window-rules = [
       {
-        description = "Spotify pc-gambled";
+        description = "Spotify";
         match = {
-          machine = {
-            value = "pc-gambled";
-            type = "exact";     
-          };
           window-class = {
             value = "Spotify";
             type = "exact"; 
@@ -144,7 +148,8 @@
             apply = "force";
           };
           desktops = {
-            value = "c563d948-dbdd-4892-8c28-c46fe1984617"; # Desktop 6
+            value = virtualDesktop_6;
+
             apply = "force";
           };
           noborder = {      
@@ -163,12 +168,8 @@
       }
 
       {
-        description = "Vesktop pc-gambled";
+        description = "Vesktop";
         match = {
-          machine = {
-            value = "pc-gambled";
-            type = "exact";     
-          };
           window-class = {
             value = "vesktop";
             type = "exact"; 
@@ -182,7 +183,7 @@
             apply = "force";
           };
           desktops = {
-            value = "fd3ca781-65eb-4a38-90ab-21f420dc4236"; # desktop 2
+            value = virtualDesktop_2;
             apply = "force";
           };
           noborder = {      
@@ -200,12 +201,8 @@
       }
 
       {
-        description = "ZapZap pc-gambled";
+        description = "ZapZap";
         match = {
-          machine = {
-            value = "pc-gambled";
-            type = "exact";     
-          };
           window-class = {
             value = "com.rtosta.zapzap";    
             type = "exact"; 
@@ -215,7 +212,7 @@
         };
         apply = {
           desktops = {
-            value = "fd3ca781-65eb-4a38-90ab-21f420dc4236"; # desktop 2
+            value = virtualDesktop_2;
             apply = "force";
           };
           screen = {
@@ -225,12 +222,8 @@
       }
 
       {
-        description = "Steam pc-gambled";
+        description = "Steam";
         match = {
-          machine = {
-            value = "pc-gambled";
-            type = "exact";     
-          };
           window-class = {
             value = "steam";
             type = "exact";
@@ -240,140 +233,14 @@
         };    
         apply = { 
           desktops = {
-            value = "01625988-f599-4fd8-abbe-3edc85738e10"; # desktop 4
+            value = virtualDesktop_4;
             apply = "force";
           };
           screen = {
             value = "1";
           };
-        };
+        };  
       }
-
-      {
-        description = "Spotify laptop-gambled";
-        match = {
-          machine = {
-            value = "laptop-gambled";
-            type = "exact";     
-          };
-          window-class = {
-            value = "Spotify";
-            type = "exact"; 
-            match-whole = false;
-          };
-          window-types = [ "normal" ];
-        };    
-        apply = {
-          closeable = {
-            value = false;
-            apply = "force";
-          };
-          desktops = {
-            value = "f33936f3-8bd7-4f6d-af4e-a1e690806bf9"; # Desktop 6
-            apply = "force";
-          };
-          noborder = {      
-            value = true;
-            apply = "force";
-          };
-          screen = {
-            value = "0";
-            apply = "force";
-          };
-          size = {
-            value = "1920,1052";
-            apply = "force";
-          };
-        };
-      }
-
-      {
-        description = "Vesktop laptop-gambled";
-        match = {
-          machine = {
-            value = "laptop-gambled";
-            type = "exact";     
-          };
-          window-class = {
-            value = "vesktop";
-            type = "exact"; 
-            match-whole = false;
-          };
-          window-types = [ "normal" ];
-        };    
-        apply = { 
-          closeable = {
-            value = false;
-            apply = "force";
-          };
-          desktops = {
-            value = "29c922e3-7bed-4943-81d6-3ee1ec879b9c"; # desktop 2
-            apply = "force";
-          };
-          noborder = {      
-            value = true;
-            apply = "force";
-          };
-          screen = {
-            value = "0";
-          };
-          size = {
-            value = "1920,1052";
-            apply = "force";
-          };
-        };
-      }
-
-      {
-        description = "ZapZap laptop-gambled";
-        match = {
-          machine = {
-            value = "laptop-gambled";
-            type = "exact";     
-          };
-          window-class = {
-            value = "com.rtosta.zapzap";    
-            type = "exact"; 
-            match-whole = false;
-          };
-          window-types = [ "normal" ];
-        };
-        apply = {
-          desktops = {
-            value = "29c922e3-7bed-4943-81d6-3ee1ec879b9c"; # desktop 2
-            apply = "force";
-          };
-          screen = {
-            value = "0";    
-          };
-        };
-      }
-
-      {
-        description = "Steam laptop-gambled";
-        match = {
-          machine = {
-            value = "laptop-gambled";
-            type = "exact";     
-          };
-          window-class = {
-            value = "steam";
-            type = "exact";
-            match-whole = false;
-          };
-          window-types = [ "normal" ];
-        };    
-        apply = { 
-          desktops = {
-            value = "15f626d5-877e-4454-9e51-c45611af073d"; # desktop 4
-            apply = "force";
-          };
-          screen = {
-            value = "1";
-          };
-        };
-      }
-      
     ];
     #END: Window rules
 
