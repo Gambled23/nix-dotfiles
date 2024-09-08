@@ -125,13 +125,14 @@
     #BEGIN: Window rules
     window-rules = [
       {
-        description = "Spotify";
+        description = "Spotify pc-gambled";
         match = {
           window-class = {
             value = "Spotify";
             type = "exact"; 
             match-whole = false;
           };
+          machine = "pc-gambled";
           window-types = [ "normal" ];
         };    
         apply = {
@@ -158,8 +159,9 @@
       }
 
       {
-        description = "Vesktop";
+        description = "Vesktop pc-gambled";
         match = {
+          machine = "pc-gambled";
           window-class = {
             value = "vesktop";
             type = "exact"; 
@@ -190,8 +192,9 @@
       }
 
       {
-        description = "ZapZap";
+        description = "ZapZap pc-gambled";
         match = {
+          machine = "pc-gambled";
           window-class = {
             value = "com.rtosta.zapzap";    
             type = "exact"; 
@@ -210,8 +213,9 @@
       }
 
       {
-        description = "Steam";
+        description = "Steam pc-gambled";
         match = {
+          machine = "pc-gambled";
           window-class = {
             value = "steam";
             type = "exact";
@@ -222,6 +226,115 @@
         apply = { 
           desktops = {
             value = "01625988-f599-4fd8-abbe-3edc85738e10"; # desktop 4
+          };
+          screen = {
+            value = "1";
+          };
+        };
+      }
+
+      {
+        description = "Spotify laptop-gambled";
+        match = {
+          machine = "laptop-gambled";
+          window-class = {
+            value = "Spotify";
+            type = "exact"; 
+            match-whole = false;
+          };
+          window-types = [ "normal" ];
+        };    
+        apply = {
+          closeable = {
+            value = false;
+            apply = "force";
+          };
+          desktops = {
+            value = "f33936f3-8bd7-4f6d-af4e-a1e690806bf9"; # Desktop 6
+          };
+          noborder = {      
+            value = true;
+            apply = "force";
+          };
+          screen = {
+            value = "0";
+            apply = "force";
+          };
+          size = {
+            value = "1920,1052";
+            apply = "force";
+          };
+        };
+      }
+
+      {
+        description = "Vesktop laptop-gambled";
+        match = {
+          machine = "laptop-gambled";
+          window-class = {
+            value = "vesktop";
+            type = "exact"; 
+            match-whole = false;
+          };
+          window-types = [ "normal" ];
+        };    
+        apply = { 
+          closeable = {
+            value = false;
+            apply = "force";
+          };
+          desktops = {
+            value = "29c922e3-7bed-4943-81d6-3ee1ec879b9c"; # desktop 2
+          };
+          noborder = {      
+            value = true;
+            apply = "force";
+          };
+          screen = {
+            value = "0";
+          };
+          size = {
+            value = "1920,1052";
+            apply = "force";
+          };
+        };
+      }
+
+      {
+        description = "ZapZap laptop-gambled";
+        match = {
+          machine = "laptop-gambled";
+          window-class = {
+            value = "com.rtosta.zapzap";    
+            type = "exact"; 
+            match-whole = false;
+          };
+          window-types = [ "normal" ];
+        };
+        apply = {
+          desktops = {
+            value = "29c922e3-7bed-4943-81d6-3ee1ec879b9c"; # desktop 2
+          };
+          screen = {
+            value = "0";
+          };
+        };
+      }
+
+      {
+        description = "Steam laptop-gambled";
+        match = {
+          machine = "laptop-gambled";
+          window-class = {
+            value = "steam";
+            type = "exact";
+            match-whole = false;
+          };
+          window-types = [ "normal" ];
+        };    
+        apply = { 
+          desktops = {
+            value = "15f626d5-877e-4454-9e51-c45611af073d"; # desktop 4
           };
           screen = {
             value = "1";
