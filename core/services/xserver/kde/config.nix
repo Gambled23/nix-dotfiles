@@ -127,12 +127,15 @@
       {
         description = "Spotify pc-gambled";
         match = {
+          machine = {
+            value = "pc-gambled";
+            type = "exact";     
+          };
           window-class = {
             value = "Spotify";
             type = "exact"; 
             match-whole = false;
           };
-          machine = "pc-gambled";
           window-types = [ "normal" ];
         };    
         apply = {
@@ -161,7 +164,10 @@
       {
         description = "Vesktop pc-gambled";
         match = {
-          machine = "pc-gambled";
+          machine = {
+            value = "pc-gambled";
+            type = "exact";     
+          };
           window-class = {
             value = "vesktop";
             type = "exact"; 
@@ -194,7 +200,10 @@
       {
         description = "ZapZap pc-gambled";
         match = {
-          machine = "pc-gambled";
+          machine = {
+            value = "pc-gambled";
+            type = "exact";     
+          };
           window-class = {
             value = "com.rtosta.zapzap";    
             type = "exact"; 
@@ -215,7 +224,10 @@
       {
         description = "Steam pc-gambled";
         match = {
-          machine = "pc-gambled";
+          machine = {
+            value = "pc-gambled";
+            type = "exact";     
+          };
           window-class = {
             value = "steam";
             type = "exact";
@@ -236,7 +248,10 @@
       {
         description = "Spotify laptop-gambled";
         match = {
-          machine = "laptop-gambled";
+          machine = {
+            value = "laptop-gambled";
+            type = "exact";     
+          };
           window-class = {
             value = "Spotify";
             type = "exact"; 
@@ -270,7 +285,10 @@
       {
         description = "Vesktop laptop-gambled";
         match = {
-          machine = "laptop-gambled";
+          machine = {
+            value = "laptop-gambled";
+            type = "exact";     
+          };
           window-class = {
             value = "vesktop";
             type = "exact"; 
@@ -303,7 +321,10 @@
       {
         description = "ZapZap laptop-gambled";
         match = {
-          machine = "laptop-gambled";
+          machine = {
+            value = "laptop-gambled";
+            type = "exact";     
+          };
           window-class = {
             value = "com.rtosta.zapzap";    
             type = "exact"; 
@@ -324,7 +345,10 @@
       {
         description = "Steam laptop-gambled";
         match = {
-          machine = "laptop-gambled";
+          machine = {
+            value = "laptop-gambled";
+            type = "exact";     
+          };
           window-class = {
             value = "steam";
             type = "exact";
