@@ -145,6 +145,7 @@
           };
           desktops = {
             value = "c563d948-dbdd-4892-8c28-c46fe1984617"; # Desktop 6
+            apply = "force";
           };
           noborder = {      
             value = true;
@@ -182,6 +183,7 @@
           };
           desktops = {
             value = "fd3ca781-65eb-4a38-90ab-21f420dc4236"; # desktop 2
+            apply = "force";
           };
           noborder = {      
             value = true;
@@ -214,6 +216,7 @@
         apply = {
           desktops = {
             value = "fd3ca781-65eb-4a38-90ab-21f420dc4236"; # desktop 2
+            apply = "force";
           };
           screen = {
             value = "0";
@@ -238,6 +241,7 @@
         apply = { 
           desktops = {
             value = "01625988-f599-4fd8-abbe-3edc85738e10"; # desktop 4
+            apply = "force";
           };
           screen = {
             value = "1";
@@ -266,6 +270,7 @@
           };
           desktops = {
             value = "f33936f3-8bd7-4f6d-af4e-a1e690806bf9"; # Desktop 6
+            apply = "force";
           };
           noborder = {      
             value = true;
@@ -303,6 +308,7 @@
           };
           desktops = {
             value = "29c922e3-7bed-4943-81d6-3ee1ec879b9c"; # desktop 2
+            apply = "force";
           };
           noborder = {      
             value = true;
@@ -335,6 +341,7 @@
         apply = {
           desktops = {
             value = "29c922e3-7bed-4943-81d6-3ee1ec879b9c"; # desktop 2
+            apply = "force";
           };
           screen = {
             value = "0";
@@ -359,6 +366,7 @@
         apply = { 
           desktops = {
             value = "15f626d5-877e-4454-9e51-c45611af073d"; # desktop 4
+            apply = "force";
           };
           screen = {
             value = "1";
