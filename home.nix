@@ -43,7 +43,11 @@
     inkscape-with-extensions
     qt6.qtwebsockets
     libportal-qt5
-    obs-studio
+    (wrapOBS {
+      plugins = with obs-studio-plugins; [
+        droidcam-obs
+      ];
+    })
 
     # messaging
     vesktop 
