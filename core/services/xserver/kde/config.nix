@@ -1,11 +1,11 @@
 { pkgs, ... }:
 let 
   virtualDesktop_1 = "df60f20e-bb9a-43e0-a56c-317ba9bf6fa8";
-  virtualDesktop_2 = "29c922e3-7bed-4943-81d6-3ee1ec879b9c, fd3ca781-65eb-4a38-90ab-21f420dc4236";
+  virtualDesktop_2 = "fd3ca781-65eb-4a38-90ab-21f420dc4236, 29c922e3-7bed-4943-81d6-3ee1ec879b9c";
   virtualDesktop_3 = "df69378b-2ad3-4964-912c-532d2538bf48";
-  virtualDesktop_4 = "15f626d5-877e-4454-9e51-c45611af073d, 01625988-f599-4fd8-abbe-3edc85738e10";
+  virtualDesktop_4 = "01625988-f599-4fd8-abbe-3edc85738e10, 15f626d5-877e-4454-9e51-c45611af073d";
   virtualDesktop_5 = "48483641-a43c-4df3-9e39-e80dd8e170df";
-  virtualDesktop_6 = "f33936f3-8bd7-4f6d-af4e-a1e690806bf9, c563d948-dbdd-4892-8c28-c46fe1984617";
+  virtualDesktop_6 = "c563d948-dbdd-4892-8c28-c46fe1984617, f33936f3-8bd7-4f6d-af4e-a1e690806bf9";
 in    
 {
 
