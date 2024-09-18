@@ -21,6 +21,10 @@
 
   # amdgpu
   boot.initrd.kernelModules = [ "amdgpu" ];
+  hardware.graphics = {
+    enable = true;
+    enable32Bit = true;
+  };
   services.xserver.enable = true;
   services.xserver.videoDrivers = [ "amdgpu" ];
   hardware.graphics.extraPackages = with pkgs; [
