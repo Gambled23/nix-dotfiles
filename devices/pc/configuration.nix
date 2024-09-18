@@ -48,6 +48,8 @@
   # virtualisation
   # virtualisation.vmware.host.enable = true; # vmware
   # virtualisation.waydroid.enable = true; # Waydroid
-  environment.systemPackages = [
-  ];
+  # for gpu overclock
+  environment.systemPackages = with pkgs; [ lact ];
+  systemd.packages = with pkgs; [ lact ];
+  systemd.services.lactd.wantedBy = ["multi-user.target"];
 }
