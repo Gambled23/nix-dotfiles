@@ -58,6 +58,7 @@
 
     # utils
     p3x-onenote
+    logseq
     jellyfin-ffmpeg
     android-tools
     libreoffice

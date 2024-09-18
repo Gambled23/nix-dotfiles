@@ -24,6 +24,9 @@ in
     dedicatedServer.openFirewall = true;
     # package = with pkgs; steam.override { extraPkgs = pkgs: [ attr ]; };
     gamescopeSession.enable = true;
+    extraCompatPackages = with pkgs; [
+      proton-ge-bin
+    ];
   };
 
   programs.gamemode.enable = true;
