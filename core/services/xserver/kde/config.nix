@@ -20,7 +20,7 @@ in
         theme = "Future-dark-cursors";
         size = 24;
       };
-      wallpaper = "/home/gambled/Pictures/Wallpapers/PC/minimalistic/DarkMode_Mac.heic";
+      wallpaper = "/home/gambled/Pictures/Wallpapers/PC/anime/GYb7apLaEAA6xg1.jpeg";
     };
 
     fonts = {
