@@ -1,6 +1,6 @@
 { pkgs, lib, spicetify-nix, ... }:
 let
-  spicePkgs = spicetify-nix.packages.${pkgs.system}.default;
+  spicePkgs = spicetify-nix.legacyPackages.${pkgs.system};
 in
 {
   # install spicetify
@@ -11,9 +11,11 @@ in
   # programs.spicetify = {
   #   enable = true;
     
-  #   theme = spicePkgs.themes.Sleek;
+  #   theme = spicePkgs.themes.catppuccin;
+  #   colorScheme = "mocha";
 
   #   enabledCustomApps = with spicePkgs.apps; [
+  #     newReleases
   #     marketplace
   #     lyrics-plus
   #   ];
@@ -21,15 +23,7 @@ in
   #   enabledExtensions = with spicePkgs.extensions; [
   #     powerBar
   #     lastfm
-  #     fullAppDisplay
-  #     autoSkipVideo
   #     shuffle
-  #     groupSession
-  #     seekSong
-  #     playlistIcons
-  #     fullAlbumDate
-  #     goToSong
-  #     adblock
   #     playNext
   #     volumePercentage
   #   ];

@@ -3,7 +3,7 @@
 
   inputs = {
     nixpkgs = { url = "github:nixos/nixpkgs/nixos-unstable"; };
-    nixpkgs-xr.url = "github:nix-community/nixpkgs-xr";
+    #nixpkgs-xr.url = "github:nix-community/nixpkgs-xr";
 
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
@@ -14,18 +14,18 @@
 
     kde2nix.url = "github:nix-community/kde2nix";
 
-    spicetify-nix.url = "github:the-argus/spicetify-nix";
+    spicetify-nix.url = "github:Gerg-L/spicetify-nix";
 
-    firefox-addons = { 
-      url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons"; 
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # firefox-addons = { 
+    #   url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons"; 
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
     nix-software-center.url = "github:snowfallorg/nix-software-center";
     nixos-conf-editor.url = "github:snowfallorg/nixos-conf-editor";
   };
 
-  outputs = { self, nixpkgs, home-manager, plasma-manager, spicetify-nix, kde2nix, nixpkgs-xr, nix-software-center, nixos-conf-editor, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, plasma-manager, spicetify-nix, kde2nix, nix-software-center, nixos-conf-editor, ... }@inputs:
     let
     specialArgs = {
       inherit spicetify-nix;
@@ -45,7 +45,7 @@
               ./devices/dev/home.nix
               inputs.plasma-manager.homeManagerModules.plasma-manager
               # ./core/services/xserver/kde/config.nix
-              spicetify-nix.homeManagerModule 
+              spicetify-nix.homeManagerModules.default 
               ./core/programs/spicetify.nix
             ];
             home-manager.extraSpecialArgs = specialArgs;
@@ -58,7 +58,6 @@
         modules = [
           ./devices/pc/configuration.nix
           home-manager.nixosModules.home-manager
-          nixpkgs-xr.nixosModules.nixpkgs-xr
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
@@ -66,7 +65,7 @@
               ./devices/pc/home.nix
               inputs.plasma-manager.homeManagerModules.plasma-manager
               ./core/services/xserver/kde/config.nix
-              spicetify-nix.homeManagerModule 
+              spicetify-nix.homeManagerModules.default 
               ./core/programs/spicetify.nix
             ];
             home-manager.extraSpecialArgs = specialArgs;
@@ -85,7 +84,7 @@
               ./devices/laptop/home.nix
               inputs.plasma-manager.homeManagerModules.plasma-manager
               ./core/services/xserver/kde/config.nix
-              #spicetify-nix.homeManagerModule 
+              #spicetify-nix.homeManagerModules.default 
               #./core/programs/spicetify.nix
             ];
             home-manager.extraSpecialArgs = specialArgs;
