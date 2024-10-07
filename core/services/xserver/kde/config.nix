@@ -110,9 +110,10 @@ in
                 "org.kde.plasma.bluetooth"
                 "org.kde.plasma.notifications"
               ];
-              # And explicitly hide networkmanagement and volume
+              # And explicitly hide networkmanagement
               hidden = [
                 "org.kde.plasma.networkmanagement"
+                "org.kde.plasma.clipboard"
               ];
             };
           }
@@ -129,6 +130,54 @@ in
     ];
     #END: Panels
 
+    #BEGIN: Desktop widgets
+    desktop.widgets = [
+      {
+        config = {
+          Appearance = {
+            showDate = false;
+          };
+        };
+        name = "org.kde.plasma.digitalclock";
+        position = {
+          horizontal = 51;
+          vertical = 100;
+        };
+        size = {
+          height = 250;
+          width = 250;
+        };
+      }
+      {
+        plasmusicToolbar = {
+          background = "transparentShadow";
+          position = {
+            horizontal = 51;
+            vertical = 300;
+          };
+          size = {
+            height = 400;
+            width = 250;
+          };
+        };
+      }
+    ];
+    #END: Desktop widgets
+
+    #BEGIN: Screenlocker
+    kscreenlocker = {
+      appearance = {
+        alwaysShowClock = true;
+        showMediaControls = true;
+      };
+      autoLock = true;
+      lockOnResume = true;
+      lockOnStartup = true;
+      passwordRequired = true;
+      passwordRequiredDelay = 900; # Tiempo en segundos para que se requiera la contraseña
+      timeout = 10; # Tiempo en minutos para que se bloquee la pantalla
+    };
+    #END: Screenlocker
 
     #BEGIN: Window rules
     window-rules = [
@@ -276,12 +325,6 @@ in
         number = 6;
         names = [ "1" "2" "3" "4" "5" "6"];
       };
-    };
-    
-    # Screen locker
-    kscreenlocker = {
-      lockOnResume = true;
-      timeout = 10;
     };
 
     # Spectacle
