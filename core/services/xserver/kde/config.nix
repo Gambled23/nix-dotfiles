@@ -170,10 +170,10 @@ in
         alwaysShowClock = true;
         showMediaControls = true;
       };
-      autoLock = true;
-      lockOnResume = true;
-      lockOnStartup = true;
-      passwordRequired = true;
+      autoLock = false;
+      lockOnResume = false;
+      lockOnStartup = false;
+      passwordRequired = false;
       passwordRequiredDelay = 900; # Tiempo en segundos para que se requiera la contraseña
       timeout = 10; # Tiempo en minutos para que se bloquee la pantalla
     };
