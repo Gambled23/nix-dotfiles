@@ -59,6 +59,7 @@
     # utils
     unrar
     p3x-onenote
+    protontricks
     #logseq
     jellyfin-ffmpeg
     android-tools
