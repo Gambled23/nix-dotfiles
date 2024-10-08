@@ -57,6 +57,7 @@
     zerotierone
 
     # utils
+    unrar
     p3x-onenote
     #logseq
     jellyfin-ffmpeg
