@@ -34,6 +34,10 @@
 
     # utils
     polychromatic
+
+    # algoritmos
+    weka
+    python312Packages.orange3
   ];
 }
 
