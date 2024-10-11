@@ -90,6 +90,8 @@
   };
 
 
+
+  hardware.xone.enable = true;
   environment.systemPackages = with pkgs; [
     grub2
     xboxdrv # Xbox controller driver
