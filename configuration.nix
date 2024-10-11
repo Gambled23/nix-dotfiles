@@ -92,6 +92,7 @@
 
   environment.systemPackages = with pkgs; [
     grub2
+    xboxdrv # Xbox controller driver
     (import ./scripts/update-flake.nix { inherit pkgs; })
     (import ./scripts/auto-pull.nix { inherit pkgs; })
     (import ./scripts/auto-push.nix { inherit pkgs; })
