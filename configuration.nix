@@ -19,9 +19,7 @@
     v4l2loopback
   ];
 
-  boot.extraModprobeConfig = ''
-    options bluetooth disable_ertm=1
-  '';
+  boot.extraModprobeConfig = '' options bluetooth disable_ertm=1 '';
   
   security.polkit.enable = true;
   
@@ -43,20 +41,26 @@
     10.243.0.69 dev-gambled
   '';
 
+  # hardware.bluetooth = {
+  #   enable = true;
+  #   settings = {
+  #     General = {
+  #       Name = "Hello";
+  #       ControllerMode = "dual";
+  #       FastConnectable = "true";
+  #       Experimental = "true";
+  #     };
+  #     Policy = {
+  #       AutoEnable = "true";
+  #     };
+  #   };
+  # };
+
   hardware.bluetooth = {
     enable = true;
-    settings = {
-      General = {
-        Name = "Hello";
-        ControllerMode = "dual";
-        FastConnectable = "true";
-        Experimental = "true";
-      };
-      Policy = {
-        AutoEnable = "true";
-      };
-    };
-  };
+    powerOnBoot = true;
+  }; 
+  services.blueman.enable = true;
 
   time.timeZone = "America/Mexico_City";
   i18n.defaultLocale = "es_ES.UTF-8";
