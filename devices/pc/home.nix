@@ -25,6 +25,7 @@
 
     # games
     #gamemode
+    winetricks
     #heroic
     ryujinx
     osu-lazer-bin
