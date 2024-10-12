@@ -82,9 +82,6 @@
     
     # oh-my-zsh plugins
     zsh
-
-    #wine
-    wine64
   ];
 
   # Nicely reload system units when changing configs

@@ -25,6 +25,7 @@
 
     # games
     #gamemode
+    wineWowPackages.stable
     winetricks
     #heroic
     ryujinx
