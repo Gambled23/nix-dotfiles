@@ -40,6 +40,8 @@
     # algoritmos
     weka
     python312Packages.orange3
+
+    guitarix
   ];
 }
 
