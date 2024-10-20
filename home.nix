@@ -20,7 +20,8 @@
   home.packages = with pkgs; [ 
     inputs.nix-software-center.packages.${system}.nix-software-center
     #inputs.nixos-conf-editor.packages.${system}.nixos-conf-editor
-    # dev tools
+
+    #* dev tools
     firefox-unwrapped
     dbeaver-bin
     vscode
@@ -28,17 +29,17 @@
     lazygit   
     fzf
 
-    # dev languages
+    #* dev languages
     #kotlin
     #zulu #java
 
-    # media
+    #* media
     miru
     stremio
     vlc
     spotify
 
-    # media creation
+    #* media creation
     gimp
     inkscape-with-extensions
     qt6.qtwebsockets
@@ -49,38 +50,37 @@
       ];
     })
 
-    # messaging
+    #* messaging
     vesktop 
     zapzap
 
-    # networking
+    #* networking
     zerotierone
 
-    # utils
+    #* utils
     unrar
     p3x-onenote
     protontricks
-    #logseq
+    galaxy-buds-client
     jellyfin-ffmpeg
     android-tools
     libreoffice
     scrcpy
-    #gnome.simple-scan
     nextcloud-client
-    #rquickshare
     ticktick
+    #gnome.simple-scan
+    #logseq
+    #rquickshare
 
-    # webbrowsers     
+    #* webbrowsers   
+    google-chrome  
     #floorp
-    google-chrome
     #chromium
 
-    # extras
+    #* extras
     bat
     lxde.lxsession
     neofetch
-    
-    # oh-my-zsh plugins
     zsh
   ];
 
