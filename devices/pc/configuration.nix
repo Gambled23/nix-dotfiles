@@ -47,7 +47,7 @@
 
   # virtualisation
   # virtualisation.vmware.host.enable = true; # vmware
-  # virtualisation.waydroid.enable = true; # Waydroid
+  virtualisation.waydroid.enable = true; # Waydroid
   # for gpu overclock
   environment.systemPackages = with pkgs; [ lact ];
   systemd.packages = with pkgs; [ lact ];

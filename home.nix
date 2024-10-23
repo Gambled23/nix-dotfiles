@@ -51,7 +51,7 @@
     })
 
     #* messaging
-    vesktop 
+    #vesktop 
     zapzap
 
     #* networking
