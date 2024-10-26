@@ -77,6 +77,7 @@
               ./core/programs/nixcord.nix
             ];
             home-manager.extraSpecialArgs = specialArgs;
+            home-manager.backupFileExtension = "backup";
           }
         ];
       };
