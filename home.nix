@@ -82,6 +82,14 @@
     lxde.lxsession
     neofetch
     zsh
+
+    #* algoritmos
+    weka
+    python312Packages.orange3
+
+    #* guitarra
+    guitarix
+    carla
   ];
 
   # Nicely reload system units when changing configs
