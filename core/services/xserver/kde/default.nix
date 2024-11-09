@@ -126,6 +126,8 @@ with lib;
     kate
     kup
 
+    kdePackages.krohnkite
+
     # Themes
     catppuccin-kde
     catppuccin-kvantum
