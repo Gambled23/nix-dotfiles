@@ -6,6 +6,8 @@
 }: {
   programs.nixcord = {
     enable = true;
+    discord.enable = false;
+    vencord.enable = true;
     config = {
       themeLinks = [        # or use an online theme
         "https://raw.githubusercontent.com/catppuccin/discord/main/themes/frappe.theme.css"
