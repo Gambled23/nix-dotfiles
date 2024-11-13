@@ -20,7 +20,7 @@ in
         theme = "Future-dark-cursors";
         size = 24;
       };
-      wallpaper = "/home/gambled/Pictures/Wallpapers/PC/anime/GYb7apLaEAA6xg1.jpeg";
+      wallpaper = "/home/gambled/Pictures/Wallpapers/PC/anime/GcPU-M3asAAkid6.jpeg";
     };
 
     fonts = {
