@@ -34,6 +34,7 @@
   hardware.graphics.extraPackages32 = with pkgs; [
     driversi686Linux.amdvlk
   ];
+  hardware.amdgpu.amdvlk.enable = true;
   boot.kernelParams = [
     "video=DP-1:1920x1080@165"
     "video=HDMI-A-2:1920x1080@64"
