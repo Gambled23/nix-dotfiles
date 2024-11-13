@@ -36,6 +36,7 @@
 
     # utils
     polychromatic
+    vulkan-tools
   ];
 }
 

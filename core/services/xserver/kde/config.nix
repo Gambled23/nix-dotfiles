@@ -89,7 +89,7 @@ in
                 };
                 icon = "view-media-track";
               };
-              preferredSource = "spotify";
+              #preferredSource = "spotify";
               musicControls.showPlaybackControls = false;
               songText = {
                 displayInSeparateLines = false;
