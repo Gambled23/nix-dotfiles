@@ -10,8 +10,10 @@
         device = "nodev";
         efiSupport = true;
         useOSProber = true;
-        default = "saved";
-       timeoutStyle = "menu";
+        default = "hidden";
+        xd
+        efiInstallAsRemovable = true;
+        timeoutStyle = "menu";
       };
       efi = {
         canTouchEfiVariables = true;
