@@ -3,13 +3,26 @@
 { config, pkgs, ... }: 
 
 {
+  environment.systemPackages = [(
+    pkgs.catppuccin-sddm.override {
+      flavor = "frappe";
+      font  = "Noto Sans";
+      fontSize = "9";
+      loginBackground = false;
+      ClockEnabled = true;
+    }
+  )];
+
   services.xserver = {
     enable = true;
   
     displayManager = {
         sddm.enable = true;
+        theme = "catppuccin-frappe";
+        package = pkgs.kdePackages.sddm;
         #defaultSession = "none+awesome";
     };
+
 
     windowManager.awesome = {
       enable = true;
