@@ -2,6 +2,7 @@
 
 {
   boot = {
+    plymouth.enable = true;
     supportedFilesystems = [ "ntfs" ];
     loader = { 
       systemd-boot.enable = false;
@@ -10,7 +11,6 @@
         device = "nodev";
         efiSupport = true;
         useOSProber = true;
-        default = "hidden";
         efiInstallAsRemovable = true;
         timeoutStyle = "menu";
       };

@@ -50,6 +50,7 @@
   boot.kernelParams = [
     "video=DP-1:1920x1080@165"
     "video=HDMI-A-2:1920x1080@64"
+    "quiet"
   ];
 
   # open razer
