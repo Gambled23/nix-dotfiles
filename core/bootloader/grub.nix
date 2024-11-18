@@ -4,6 +4,7 @@
   boot = {
     supportedFilesystems = [ "ntfs" ];
     loader = { 
+      systemd-boot.enable = false;
       grub = {
         enable = true;
         device = "nodev";
