@@ -11,13 +11,8 @@
         efiSupport = true;
         useOSProber = true;
         default = "hidden";
-        xd
         efiInstallAsRemovable = true;
         timeoutStyle = "menu";
-      };
-      efi = {
-        canTouchEfiVariables = true;
-        efiSysMountPoint = "/boot/efi";
       };
     };
   };
