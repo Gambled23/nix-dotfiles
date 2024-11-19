@@ -10,6 +10,7 @@
       fontSize = "9";
       loginBackground = false;
       ClockEnabled = true;
+      PasswordShowLastLetter=1000;
     }
   )];
 
