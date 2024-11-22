@@ -11,7 +11,7 @@
 
     ../../core/programs/steam.nix
     # bootloader
-    ../../core/bootloader/systemd.nix
-    #../../core/bootloader/grub.nix
+    #../../core/bootloader/systemd.nix
+    ../../core/bootloader/grub.nix
   ];
 }

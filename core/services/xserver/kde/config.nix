@@ -184,6 +184,7 @@ in
       {
         description = "Spotify";
         match = {
+          machine.value = "gambled";
           window-class = {
             value = "Spotify";
             type = "exact"; 
@@ -215,6 +216,7 @@ in
           };
         };
       }
+
 
       {
         description = "Vesktop";
