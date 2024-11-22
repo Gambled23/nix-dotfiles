@@ -51,6 +51,11 @@
     "video=DP-1:1920x1080@165"
     "video=HDMI-A-2:1920x1080@64"
     "quiet"
+    "splash"
+    "rd.systemd.show_status=false"
+    "rd.udev.log_level=3"
+    "udev.log_priority=3"
+    "boot.shell_on_fail"
   ];
 
   # open razer

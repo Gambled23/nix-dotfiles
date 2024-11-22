@@ -217,10 +217,10 @@ in
       }
 
       {
-        description = "Discord";
+        description = "Vesktop";
         match = {
           window-class = {
-            value = "discord";
+            value = "vesktop";
             type = "exact"; 
             match-whole = false;
           };
@@ -476,15 +476,15 @@ in
     X-KDE-RunOnDiscreteGpu=true
   '';
 
-  home.file.".config/autostart/discord.desktop".text = ''
+  home.file.".config/autostart/vesktop.desktop".text = ''
     [Desktop Entry]
     Categories=Network;InstantMessaging;Chat
-    Exec=discord %U
+    Exec=vesktop %U
     GenericName=Internet Messenger
-    Icon=discord
-    Keywords=discord;vencord;electron;chat
-    Name=Discord
-    StartupWMClass=Discord
+    Icon=vesktop
+    Keywords=vesktop;vencord;electron;chat
+    Name=Vesktop
+    StartupWMClass=Vesktop
     Type=Application
     Version=1.4
   '';
