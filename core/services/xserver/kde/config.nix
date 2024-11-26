@@ -1,11 +1,13 @@
 { pkgs, ... }:
 let 
-  virtualDesktop_1 = "df60f20e-bb9a-43e0-a56c-317ba9bf6fa8";
-  virtualDesktop_2 = "fd3ca781-65eb-4a38-90ab-21f420dc4236, 29c922e3-7bed-4943-81d6-3ee1ec879b9c";
-  virtualDesktop_3 = "df69378b-2ad3-4964-912c-532d2538bf48";
-  virtualDesktop_4 = "01625988-f599-4fd8-abbe-3edc85738e10, 15f626d5-877e-4454-9e51-c45611af073d";
-  virtualDesktop_5 = "48483641-a43c-4df3-9e39-e80dd8e170df";
-  virtualDesktop_6 = "c563d948-dbdd-4892-8c28-c46fe1984617, f33936f3-8bd7-4f6d-af4e-a1e690806bf9";
+  desktops= [
+    "c3bd6f37-ff67-4f40-865a-4490c3c95c42"
+    "8ea799f8-1955-4c56-98f6-16523af9ed9f"
+    "959e7be5-faf8-47a9-80dc-b8fb047aaa4b"
+    "2020780a-1484-4962-a594-ca14cdc34d08"
+    "c8a4cbb5-575d-4ec7-a7c8-2deba73a6ccc"
+    "efc0eec9-edfa-40ff-a0f2-0fee413edbd4"
+  ];
 in    
 {
 
@@ -184,6 +186,7 @@ in
       {
         description = "Spotify";
         match = {
+          machine.type = "exact";
           machine.value = "gambled";
           window-class = {
             value = "Spotify";
@@ -198,7 +201,7 @@ in
             apply = "force";
           };
           desktops = {
-            value = virtualDesktop_6;
+            value = builtins.elemAt desktops 5;
 
             apply = "force";
           };
@@ -234,7 +237,7 @@ in
             apply = "force";
           };
           desktops = {
-            value = virtualDesktop_2;
+            value = builtins.elemAt desktops 1;
             apply = "force";
           };
           noborder = {      
@@ -263,7 +266,7 @@ in
         };
         apply = {
           desktops = {
-            value = virtualDesktop_2;
+            value = builtins.elemAt desktops 1;
             apply = "force";
           };
           screen = {
@@ -284,7 +287,7 @@ in
         };    
         apply = { 
           desktops = {
-            value = virtualDesktop_4;
+            value = builtins.elemAt desktops 3;
             apply = "force";
           };
           screen = {

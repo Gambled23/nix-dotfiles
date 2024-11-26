@@ -129,12 +129,20 @@ with lib;
     kdePackages.krohnkite
 
     # Themes
+    #kdePackages.kde-gtk-config
+    #kdePackages.breeze-gtk
+
+    #kde-gruvbox
+    #kdePackages.koi
+    #graphite-kde-theme
     catppuccin-kde
     catppuccin-kvantum
     whitesur-cursors
 
     # widgets
     plasmusic-toolbar
+
+    libsForQt5.plasma-bigscreen
   ];
 
   programs.partition-manager.enable = true;
