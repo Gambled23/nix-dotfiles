@@ -25,6 +25,7 @@
     firefox-unwrapped
     dbeaver-bin
     vscode
+    zed-editor
     tmux
     lazygit   
     fzf
