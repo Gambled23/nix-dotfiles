@@ -22,6 +22,7 @@
     #inputs.nixos-conf-editor.packages.${system}.nixos-conf-editor
 
     #* dev tools
+    ventoy-full
     firefox-unwrapped
     dbeaver-bin
     vscode
