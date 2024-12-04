@@ -13,11 +13,6 @@
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
 
-    # fileSystems."/home/gambled" = {
-    #   device = "/dev/disk/by-label/home";
-    #   fsType = "ext4";
-    # };
-
   fileSystems."/" =
     { device = "/dev/disk/by-uuid/c3f0add3-ac2b-4493-abd5-f7c5b3614d0f";
       fsType = "ext4";
@@ -28,27 +23,6 @@
       fsType = "vfat";
       options = [ "fmask=0077" "dmask=0077" ];
     };
-
-  fileSystems."/windows" = { 
-    device = "/dev/disk/by-uuid/8AC2BD6EC2BD5F5F";
-    #device = "/deb/disk/by-label/Windows";
-    fsType = "ntfs";
-    options = [ "rw" "uid=1000"];
-  };
-
-  fileSystems."/games" = { 
-    #device = "/dev/disk/by-uuid/46F24542F2453807";
-    device = "/dev/disk/by-label/Games";
-    fsType = "ntfs";
-    options = [ "rw" "uid=1000"];
-  };
-
-  fileSystems."/hdd" = { 
-    #device = "/dev/disk/by-uuid/868E593D8E5926C9";
-    device = "/dev/disk/by-label/HDD";
-    fsType = "ntfs"; 
-    options = [ "rw" "uid=1000"];
-  };
 
   swapDevices =
     [ { device = "/dev/disk/by-uuid/360aa2dd-84ce-42a0-b8f4-2e59dfba5448"; }

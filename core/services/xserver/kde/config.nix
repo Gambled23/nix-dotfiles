@@ -22,7 +22,7 @@ in
         theme = "Future-dark-cursors";
         size = 24;
       };
-      wallpaper = "/home/gambled/Pictures/Wallpapers/PC/anime/GcPU-M3asAAkid6.jpeg";
+      wallpaper = "/home/gambled/Nextcloud/Wallpapers/PC/irl/clouds.jpg";
     };
 
     fonts = {
@@ -200,11 +200,11 @@ in
             value = false;
             apply = "force";
           };
-          desktops = {
-            value = builtins.elemAt desktops 5;
+          # desktops = {
+          #   value = builtins.elemAt desktops 5;
 
-            apply = "force";
-          };
+          #   apply = "force";
+          # };
           noborder = {      
             value = true;
             apply = "force";
@@ -236,10 +236,10 @@ in
             value = false;
             apply = "force";
           };
-          desktops = {
-            value = builtins.elemAt desktops 1;
-            apply = "force";
-          };
+          # desktops = {
+          #   value = builtins.elemAt desktops 1;
+          #   apply = "force";
+          # };
           noborder = {      
             value = true;
             apply = "force";
@@ -265,10 +265,10 @@ in
           window-types = [ "normal" ];
         };
         apply = {
-          desktops = {
-            value = builtins.elemAt desktops 1;
-            apply = "force";
-          };
+          # desktops = {
+          #   value = builtins.elemAt desktops 1;
+          #   apply = "force";
+          # };
           screen = {
             value = "0";
           };
@@ -286,10 +286,10 @@ in
           window-types = [ "normal" ];
         };    
         apply = { 
-          desktops = {
-            value = builtins.elemAt desktops 3;
-            apply = "force";
-          };
+          # desktops = {
+          #   value = builtins.elemAt desktops 3;
+          #   apply = "force";
+          # };
           screen = {
             value = "1";
           };
