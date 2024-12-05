@@ -10,7 +10,8 @@
     vesktop.enable = true;
     config = {
       themeLinks = [        # or use an online theme
-        "https://raw.githubusercontent.com/catppuccin/discord/main/themes/frappe.theme.css"
+        "https://raw.githubusercontent.com/shvedes/discord-gruvbox/refs/heads/main/gruvbox.theme.css"
+        "https://markchan0225.github.io/RoundedDiscord/RoundedDiscord.theme.css"
         "https://raw.githubusercontent.com/DiscordStyles/RadialStatus/deploy/RadialStatus.theme.css"
         "https://raw.githubusercontent.com/DiscordStyles/HorizontalServerList/deploy/HorizontalServerList.theme.css"
         "https://raw.githubusercontent.com/mwittrien/BetterDiscordAddons/refs/heads/master/Themes/SettingsModal/SettingsModal.theme.css"

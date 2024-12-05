@@ -10,11 +10,9 @@
   imports = [
     ../../home.nix
   ];
-  
-  home.packages = with pkgs; [ 
+
+  home.packages = with pkgs; [
     # games
     xorg.libxcb
   ];
 }
-
-
