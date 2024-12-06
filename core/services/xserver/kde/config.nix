@@ -1,5 +1,5 @@
 { pkgs, ... }:
-let 
+let
   desktops= [
     "c3bd6f37-ff67-4f40-865a-4490c3c95c42"
     "8ea799f8-1955-4c56-98f6-16523af9ed9f"
@@ -8,7 +8,7 @@ let
     "c8a4cbb5-575d-4ec7-a7c8-2deba73a6ccc"
     "efc0eec9-edfa-40ff-a0f2-0fee413edbd4"
   ];
-in    
+in
 {
 
   programs.plasma = {
@@ -18,7 +18,7 @@ in
     #BEGIN: Theme settings
     workspace = {
       lookAndFeel = "catppuccin-kde";
-      cursor = {  
+      cursor = {
         theme = "Future-dark-cursors";
         size = 24;
       };
@@ -49,7 +49,7 @@ in
           # Or you can configure the widgets by adding the widget-specific options for it.
           # See modules/widgets for supported widgets and options for these widgets.
           # For example:
-          
+
           # Adding configuration to the widgets can also for example be used to
           # pin apps to the task-manager, which this example illustrates by
           # pinning dolphin and konsole to the task-manager by default with widget-specific options.
@@ -68,7 +68,7 @@ in
         ];
       }
       # END: Windows-like panel at the bottom
-      
+
       #BEGIN: Application name, Global menu and Song information and playback controls at the top
       {
         screen= 0;
@@ -85,7 +85,7 @@ in
             plasmusicToolbar = {
               panelIcon = {
                 albumCover = {
-                  useAsIcon = true; 
+                  useAsIcon = true;
                   radius = 8;
                   fallbackToIcon = true;
                 };
@@ -190,11 +190,11 @@ in
           machine.value = "gambled";
           window-class = {
             value = "Spotify";
-            type = "exact"; 
+            type = "exact";
             match-whole = false;
           };
           window-types = [ "normal" ];
-        };    
+        };
         apply = {
           closeable = {
             value = false;
@@ -205,7 +205,7 @@ in
 
           #   apply = "force";
           # };
-          noborder = {      
+          noborder = {
             value = true;
             apply = "force";
           };
@@ -226,12 +226,12 @@ in
         match = {
           window-class = {
             value = "vesktop";
-            type = "exact"; 
+            type = "exact";
             match-whole = false;
           };
           window-types = [ "normal" ];
-        };    
-        apply = { 
+        };
+        apply = {
           closeable = {
             value = false;
             apply = "force";
@@ -240,7 +240,7 @@ in
           #   value = builtins.elemAt desktops 1;
           #   apply = "force";
           # };
-          noborder = {      
+          noborder = {
             value = true;
             apply = "force";
           };
@@ -258,8 +258,8 @@ in
         description = "ZapZap";
         match = {
           window-class = {
-            value = "com.rtosta.zapzap";    
-            type = "exact"; 
+            value = "com.rtosta.zapzap";
+            type = "exact";
             match-whole = false;
           };
           window-types = [ "normal" ];
@@ -284,8 +284,8 @@ in
             match-whole = false;
           };
           window-types = [ "normal" ];
-        };    
-        apply = { 
+        };
+        apply = {
           # desktops = {
           #   value = builtins.elemAt desktops 3;
           #   apply = "force";
@@ -293,7 +293,7 @@ in
           screen = {
             value = "1";
           };
-        };  
+        };
       }
     ];
     #END: Window rules
@@ -302,22 +302,63 @@ in
     #BEGIN: Power management
     powerdevil = {
       AC = {
-        powerButtonAction = "lockScreen";
         autoSuspend = {
-          action = "shutDown";
-          idleTimeout = 1000;
+          action = "sleep";
+          idleTimeout = 900; # 15 minutes
+        };
+        dimDisplay = {
+          enable = true;
+          idleTimeout = 600;
         };
         turnOffDisplay = {
-          idleTimeout = 1000;
-          idleTimeoutWhenLocked = "immediately";
+          idleTimeout = 800;
         };
-      };
-      battery = {
-        powerButtonAction = "sleep";
+        powerButtonAction = "shutDown";
+        powerProfile = "performance";
+
+        inhibitLidActionWhenExternalMonitorConnected = true; # que nombresote qpd
+        whenLaptopLidClosed = "sleep";
         whenSleepingEnter = "standbyThenHibernate";
       };
+
+      battery = {
+        autoSuspend = {
+          action = "sleep";
+          idleTimeout = 600; # 15 minutes
+        };
+        dimDisplay = {
+          enable = true;
+          idleTimeout = 420;
+        };
+        turnOffDisplay = {
+          idleTimeout = 500;
+        };
+        powerButtonAction = "shutDown";
+        powerProfile = "balanced";
+
+        inhibitLidActionWhenExternalMonitorConnected = true;
+        whenLaptopLidClosed = "sleep";
+        whenSleepingEnter = "hybridSleep";
+      };
+
       lowBattery = {
+        autoSuspend = {
+          action = "sleep";
+          idleTimeout = 600; # 15 minutes
+        };
+        dimDisplay = {
+          enable = true;
+          idleTimeout = 300;
+        };
+        turnOffDisplay = {
+          idleTimeout = 500;
+        };
+        powerButtonAction = "shutDown";
+        powerProfile = "powerSaving";
+
+        inhibitLidActionWhenExternalMonitorConnected = false;
         whenLaptopLidClosed = "hibernate";
+        whenSleepingEnter = "hybridSleep";
       };
     };
     #END: Power management
@@ -362,15 +403,15 @@ in
         "Window One Screen to the Left" = "Meta+Shift+A";
         "Window Maximize" = "Meta+Shift+W";
         "Window Minimize" = "Meta+Shift+S";
-        "Window Move Center" = "Meta+X"; 
+        "Window Move Center" = "Meta+X";
         "Window Resize" = "Meta+R";
         "Window Close" = "Meta+Q";
         "Kill Window" = "Meta+Ctrl+Q";
       };
       mediacontrol = {
         "previousmedia" = "Alt+1";
-        "playpausemedia" = "Alt+2"; 
-        "nextmedia" = "Alt+3";  
+        "playpausemedia" = "Alt+2";
+        "nextmedia" = "Alt+3";
       };
       kmix = {
         "decrease_volume_small" = "Alt+-";
@@ -389,7 +430,7 @@ in
         "_launch" = "Meta+F";
       };
     };
-    #END: Shortcuts 
+    #END: Shortcuts
 
     #BEGIN low level settings
     configFile = {
