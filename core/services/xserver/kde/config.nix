@@ -166,23 +166,23 @@ in
       {
         name = "org.kde.kdeconnect";
         position = {
-          horizontal = 700;
-          vertical = 100;
+          horizontal = 1200;
+          vertical = 10;
         };
         size = {
           height = 500;
-          width = 500;
+          width = 1000;
         };
       }
       {
         name = "org.kde.plasma.bluetooth";
         position = {
-          horizontal = 50;
-          vertical = 50;
+          horizontal = 500;
+          vertical = 10;
         };
         size = {
           height = 500;
-          width = 500;
+          width = 1000;
         };
       }
     ];
