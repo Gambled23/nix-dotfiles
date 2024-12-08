@@ -4,13 +4,13 @@ with lib;
 
 {
   services.desktopManager.plasma6.enable = true;
-  # services.displayManager.sddm = {
-  #   enable = true;
-  #   autoNumlock = true;
-  #   # theme = "breeze";
-  #   wayland.enable = true;
-  #   wayland.compositor = "kwin";
-  # };
+  services.displayManager.sddm = {
+    enable = true;
+    autoNumlock = true;
+    # theme = "breeze";
+    wayland.enable = true;
+    wayland.compositor = "kwin";
+  };
   services.xserver = {
     # Scaling factor for fonts and graphical elements on the screen
     dpi = 98;
@@ -24,7 +24,7 @@ with lib;
     };
 
     # Enable libinput driver for improved touchpad support (enabled by default in most desktop environments).
-    
+
     # displayManager = {
     #   lightdm.greeters.mini = {
     #   enable = false;
@@ -147,13 +147,13 @@ with lib;
 
   programs.partition-manager.enable = true;
   programs.kdeconnect.enable = true;
-  networking.firewall = { 
+  networking.firewall = {
     enable = true;
-    allowedTCPPortRanges = [ 
+    allowedTCPPortRanges = [
       { from = 1714; to = 1764; } # KDE Connect
-    ];  
-    allowedUDPPortRanges = [ 
+    ];
+    allowedUDPPortRanges = [
       { from = 1714; to = 1764; } # KDE Connect
-    ];  
-  };  
+    ];
+  };
 }

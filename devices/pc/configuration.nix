@@ -2,7 +2,7 @@
 {
   system.stateVersion = "23.11";
   networking.hostName = "pc-gambled";
-  imports = [ 
+  imports = [
     ../../configuration.nix
     ./hardware-configuration.nix
     ./symlinks.nix
@@ -19,18 +19,6 @@
     ../../core/bootloader/grub.nix
   ];
 
-  boot.loader.grub.theme = pkgs.stdenv.mkDerivation {
-    pname = "distro-grub-themes";
-    version = "3.1";
-    src = pkgs.fetchFromGitHub {
-      owner = "AdisonCavani";
-      repo = "distro-grub-themes";
-      rev = "v3.1";
-      hash = "sha256-ZcoGbbOMDDwjLhsvs77C7G7vINQnprdfI37a9ccrmPs=";
-    };
-    installPhase = "cp -r customize/nixos $out";
-  };
-
   # amdgpu
   boot.initrd.kernelModules = [ "amdgpu" ];
   hardware.graphics = {
@@ -42,7 +30,7 @@
   # hardware.graphics.extraPackages = with pkgs; [
   #   amdvlk
   # ];
-  # # For 32 bit applications 
+  # # For 32 bit applications
   # hardware.graphics.extraPackages32 = with pkgs; [
   #   driversi686Linux.amdvlk
   # ];

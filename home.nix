@@ -4,7 +4,7 @@
   config,
   pkgs,
   ...
-}: 
+}:
 {
   imports = [
     core/programs/alacritty.nix
@@ -17,18 +17,16 @@
     core/programs/zsh.nix
     #core/programs/firefox.nix
   ];
-  home.packages = with pkgs; [ 
+  home.packages = with pkgs; [
     inputs.nix-software-center.packages.${system}.nix-software-center
     #inputs.nixos-conf-editor.packages.${system}.nixos-conf-editor
 
     #* dev tools
-    ventoy-full
-    firefox-unwrapped
     dbeaver-bin
     vscode
     zed-editor
     tmux
-    lazygit   
+    lazygit
     fzf
     warp-terminal
 
@@ -54,8 +52,8 @@
     })
 
     #* messaging
-    #vesktop 
-    zapzap
+    #vesktop
+    #zapzap
 
     #* networking
     zerotierone
@@ -71,12 +69,14 @@
     scrcpy
     nextcloud-client
     ticktick
+    #keyguard
     #gnome.simple-scan
     #logseq
     #rquickshare
+    #ventoy-full
 
-    #* webbrowsers   
-    google-chrome  
+    #* webbrowsers
+    google-chrome
     #floorp
     #chromium
 
@@ -87,8 +87,8 @@
     zsh
 
     #* algoritmos
-    weka
-    python312Packages.orange3
+    #weka
+    #python312Packages.orange3
 
     #* guitarra
     guitarix
