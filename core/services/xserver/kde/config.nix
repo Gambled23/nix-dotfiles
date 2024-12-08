@@ -154,13 +154,35 @@ in
         plasmusicToolbar = {
           background = "transparentShadow";
           position = {
-            horizontal = 51;
+            horizontal = 50;
             vertical = 300;
           };
           size = {
             height = 400;
             width = 250;
           };
+        };
+      }
+      {
+        name = "org.kde.kdeconnect";
+        position = {
+          horizontal = 700;
+          vertical = 100;
+        };
+        size = {
+          height = 500;
+          width = 500;
+        };
+      }
+      {
+        name = "org.kde.plasma.bluetooth";
+        position = {
+          horizontal = 50;
+          vertical = 50;
+        };
+        size = {
+          height = 500;
+          width = 500;
         };
       }
     ];
