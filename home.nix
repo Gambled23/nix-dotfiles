@@ -94,6 +94,7 @@
     guitarix
     carla
     gxplugins-lv2
+
   ];
 
   # Nicely reload system units when changing configs
