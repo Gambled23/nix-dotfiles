@@ -14,6 +14,6 @@
   home.packages = with pkgs; [
     # games
     xorg.libxcb
-    freerdp
+    moonlight-qt
   ];
 }
