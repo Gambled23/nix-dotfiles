@@ -9,5 +9,3 @@ pkgs.writeShellScriptBin "dev_migrateDB" ''
 
   mysql -u $db_user -p $db_name < $backup_route
 ''
-
-
