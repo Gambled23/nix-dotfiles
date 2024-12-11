@@ -95,7 +95,7 @@
     carla
     gxplugins-lv2
 
-    sunshine
+    #sunshine
   ];
 
   # Nicely reload system units when changing configs

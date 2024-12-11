@@ -1,12 +1,14 @@
 { config, pkgs, lib, inputs, outputs, ... }:
 {
-  imports = [ 
+  imports = [
     # mysql
-    ./core/services/mysql.nix 
+    ./core/services/mysql.nix
     # openssh
     ./core/services/openssh.nix
     # zerotier
     ./core/services/zerotier.nix
+    # sunshine
+    ./core/services/sunshine.nix
 
     # Select DE
     ./core/services/xserver/kde/default.nix
@@ -20,9 +22,9 @@
   ];
 
   boot.extraModprobeConfig = '' options bluetooth disable_ertm=1 '';
-  
+
   security.polkit.enable = true;
-  
+
   # set zsh shell
   users.defaultUserShell = pkgs.zsh;
   programs.zsh.enable = true;
@@ -59,7 +61,7 @@
   hardware.bluetooth = {
     enable = true;
     powerOnBoot = true;
-  }; 
+  };
 
   time.timeZone = "America/Mexico_City";
   i18n.defaultLocale = "es_ES.UTF-8";
@@ -69,8 +71,8 @@
   # nix auto gc delete old generations
   nix = {
     gc = {
-      automatic = true; 
-      dates = "weekly"; 
+      automatic = true;
+      dates = "weekly";
       options = "--delete-older-than 7d";
     };
   };
@@ -109,7 +111,7 @@
     (import ./scripts/dev/sigi.nix { inherit pkgs; })
     (import ./scripts/dev/modular-prod-backup.nix { inherit pkgs; })
   ];
-  
+
   system.autoUpgrade.enable = true;
   system.autoUpgrade.allowReboot = true;
 
@@ -122,9 +124,9 @@
   };
 
   # All sudo comands will be passwordless (I use this for home assistant)
-  security.sudo.extraRules= [{  
+  security.sudo.extraRules= [{
     users = [ "gambled" ];
-    commands = [{ 
+    commands = [{
       command = "ALL";
       options= [ "NOPASSWD" ];
     }];
@@ -150,7 +152,7 @@
   #   dina-font
   #   proggyfonts
   # ];
-  
+
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs.config.allowUnfree = true;
 }
