@@ -15,11 +15,19 @@
         {
           name = "Desktop";
           image-path = "desktop.png";
+          output = "/home/gambled/log.txt";
         }
         {
           name = "Steam Big Picture";
-          detached = [
-            "modo-tele"
+          prep-cmd = [
+            {
+              do = "${pkgs.killall}/bin/killall -q steam";
+              undo = "${pkgs.killall}/bin/killall -q steam";
+            }
+            {
+              do = "steam -start steam://open/bigpicture";
+              undo = "steam";
+            }
           ];
           image-path = "steam.png";
         }
