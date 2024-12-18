@@ -2,33 +2,24 @@
   description = "NixOS configuration";
 
   inputs = {
-    nixpkgs = { url = "github:nixos/nixpkgs/nixos-unstable"; };
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     #nixpkgs-xr.url = "github:nix-community/nixpkgs-xr";
-    
+
 
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
-    
+
     plasma-manager.url = "github:pjones/plasma-manager";
     plasma-manager.inputs.nixpkgs.follows = "nixpkgs";
     plasma-manager.inputs.home-manager.follows = "home-manager";
 
     kde2nix.url = "github:nix-community/kde2nix";
-
-    spicetify-nix.url = "github:Gerg-L/spicetify-nix";
-
     nixcord.url = "github:kaylorben/nixcord";
-
-    # firefox-addons = { 
-    #   url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons"; 
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
-
-    nix-software-center.url = "github:snowfallorg/nix-software-center";
-    nixos-conf-editor.url = "github:snowfallorg/nixos-conf-editor";
+    spicetify-nix.url = "github:Gerg-L/spicetify-nix";
+    stylix.url = "github:danth/stylix";
   };
 
-  outputs = { self, nixpkgs, home-manager, plasma-manager, spicetify-nix, kde2nix, nix-software-center, nixos-conf-editor, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, plasma-manager, spicetify-nix, kde2nix, stylix, ... }@inputs:
     let
     specialArgs = {
       inherit spicetify-nix;
@@ -48,7 +39,7 @@
               ./devices/dev/home.nix
               inputs.plasma-manager.homeManagerModules.plasma-manager
               ./core/services/xserver/kde/config.nix
-              spicetify-nix.homeManagerModules.default 
+              spicetify-nix.homeManagerModules.default
               ./core/programs/spicetify.nix
             ];
             home-manager.extraSpecialArgs = specialArgs;
@@ -61,16 +52,17 @@
         modules = [
           ./devices/pc/configuration.nix
           home-manager.nixosModules.home-manager
+          stylix.nixosModules.stylix
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.gambled.imports = [
-              ./devices/pc/home.nix 
+              ./devices/pc/home.nix
 
               inputs.plasma-manager.homeManagerModules.plasma-manager
               ./core/services/xserver/kde/config.nix
 
-              spicetify-nix.homeManagerModules.default 
+              spicetify-nix.homeManagerModules.default
               ./core/programs/spicetify.nix
 
               inputs.nixcord.homeManagerModules.nixcord
@@ -87,16 +79,17 @@
         modules = [
           ./devices/laptop/configuration.nix
           home-manager.nixosModules.home-manager
+          stylix.nixosModules.stylix
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.gambled.imports = [
               ./devices/laptop/home.nix
-              
+
               inputs.plasma-manager.homeManagerModules.plasma-manager
               ./core/services/xserver/kde/config.nix
 
-              spicetify-nix.homeManagerModules.default 
+              spicetify-nix.homeManagerModules.default
               ./core/programs/spicetify.nix
 
               inputs.nixcord.homeManagerModules.nixcord

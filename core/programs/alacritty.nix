@@ -13,13 +13,13 @@
         "${pkgs.vimPlugins.nightfox-nvim}/extra/carbonfox/nightfox_alacritty.yml"
       ];
 
-      font = {
-        normal = {
-          family = "Hack";
-          style = "Medium";
-        };
-        size = 12;
-      };
+      # font = {
+      #   normal = {
+      #     family = "Hack";
+      #     style = "Medium";
+      #   };
+      #   size = 12;
+      # };
 
       window = {
         padding = {

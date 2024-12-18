@@ -1,4 +1,7 @@
 { config, pkgs, lib, inputs, outputs, ... }:
+let
+theme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
+in
 {
   imports = [
     # mysql
@@ -155,4 +158,33 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs.config.allowUnfree = true;
+
+  # Stylix
+  stylix = {
+    enable = true;
+    image = /home/gambled/Nextcloud/Wallpapers/PC/irl/clouds.jpg;
+    base16Scheme = theme;
+
+    fonts = {
+      serif = {
+        package = pkgs.dejavu_fonts;
+        name = "DejaVu Serif";
+      };
+
+      sansSerif = {
+        package = pkgs.dejavu_fonts;
+        name = "DejaVu Sans";
+      };
+
+      monospace = {
+        package = pkgs.dejavu_fonts;
+        name = "DejaVu Sans Mono";
+      };
+
+      emoji = {
+        package = pkgs.noto-fonts-emoji;
+        name = "Noto Color Emoji";
+      };
+    };
+  };
 }
