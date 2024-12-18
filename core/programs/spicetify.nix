@@ -8,24 +8,20 @@ in
     "spotify"
   ];
 
-  # programs.spicetify = {
-  #   enable = true;
-    
-  #   theme = spicePkgs.themes.catppuccin;
-  #   colorScheme = "mocha";
+  programs.spicetify = {
+    enable = true;
 
-  #   enabledCustomApps = with spicePkgs.apps; [
-  #     newReleases
-  #     marketplace
-  #     lyrics-plus
-  #   ];
+    enabledCustomApps = with spicePkgs.apps; [
+      newReleases
+      marketplace
+    ];
 
-  #   enabledExtensions = with spicePkgs.extensions; [
-  #     powerBar
-  #     lastfm
-  #     shuffle
-  #     playNext
-  #     volumePercentage
-  #   ];
-  # };
+    enabledExtensions = with spicePkgs.extensions; [
+      powerBar
+      lastfm
+      shuffle
+      playNext
+      volumePercentage
+    ];
+  };
 }

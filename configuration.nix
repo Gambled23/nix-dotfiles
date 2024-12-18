@@ -165,6 +165,10 @@ in
     image = ./wallpaper.png;
     base16Scheme = theme;
 
+    targets = {
+      spicetify.enable = false;
+    };
+
     fonts = {
       serif = {
         package = pkgs.dejavu_fonts;
@@ -188,7 +192,7 @@ in
     };
     cursor = {
       package = pkgs.vimix-cursors;
-      name = "Vimix Cursors - White";
+      name = "Vimix Cursors";
       size = 24;
     };
   };
