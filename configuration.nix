@@ -162,7 +162,7 @@ in
   # Stylix
   stylix = {
     enable = true;
-    image = /home/gambled/Nextcloud/Wallpapers/PC/irl/clouds.jpg;
+    image = ./wallpaper.png;
     base16Scheme = theme;
 
     fonts = {
@@ -185,6 +185,11 @@ in
         package = pkgs.noto-fonts-emoji;
         name = "Noto Color Emoji";
       };
+    };
+    cursor = {
+      package = pkgs.vimix-cursors;
+      name = "Vimix Cursors";
+      size = 24;
     };
   };
 }
