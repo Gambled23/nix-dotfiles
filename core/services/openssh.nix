@@ -3,6 +3,7 @@
 with lib;
 
 {
+  # Personal ssh server
   services.openssh = {
     enable = true;
     openFirewall = true;

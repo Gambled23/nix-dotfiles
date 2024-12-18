@@ -13,6 +13,7 @@
     #../../core/programs/alvr.nix
     ../../core/programs/steam.nix
     #../../core/services/suwayomi.nix
+    ../../core/services/wivrn.nix
 
     # bootloader
     #../../core/bootloader/systemd.nix
