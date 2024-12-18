@@ -8,7 +8,7 @@
       package = pkgs.mariadb;
       initialDatabases =
         [
-            { name = "bardatabase"; }
+          { name = "bardatabase"; }
         ];
     };
   };
