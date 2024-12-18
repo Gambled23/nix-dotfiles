@@ -51,7 +51,8 @@
 
     #* messaging
     #vesktop
-    #zapzap
+    zapzap
+    materialgram
 
     #* networking
     zerotierone
