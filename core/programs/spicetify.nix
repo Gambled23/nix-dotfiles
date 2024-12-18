@@ -10,6 +10,7 @@ in
 
   programs.spicetify = {
     enable = true;
+    # theme = spicePkgs.themes.lucid;
 
     enabledCustomApps = with spicePkgs.apps; [
       newReleases
@@ -17,11 +18,26 @@ in
     ];
 
     enabledExtensions = with spicePkgs.extensions; [
+      autoSkipVideo
+      bookmark
+      fullAppDisplayMod
+      groupSession
+      loopyLoop
+      popupLyrics
       powerBar
       lastfm
       shuffle
-      playNext
       volumePercentage
+      skipOrPlayLikedSongs
+      goToSong
+      showQueueDuration
+      copyToClipboard
+      history
+      savePlaylists
+      playingSource
+      sectionMarker
+      beautifulLyrics
+      addToQueueTop
     ];
   };
 }
