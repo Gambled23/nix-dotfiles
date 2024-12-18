@@ -182,14 +182,15 @@ in
       };
 
       emoji = {
-        package = pkgs.noto-fonts-emoji;
-        name = "Noto Color Emoji";
+        package = pkgs.joypixels;
+        name = "Joypixels";
       };
     };
     cursor = {
       package = pkgs.vimix-cursors;
-      name = "Vimix Cursors";
+      name = "Vimix Cursors - White";
       size = 24;
     };
   };
+  nixpkgs.config.joypixels.acceptLicense = true;
 }
