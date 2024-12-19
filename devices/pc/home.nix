@@ -10,8 +10,8 @@
   imports = [
     ../../home.nix
   ];
-  
-  home.packages = with pkgs; [ 
+
+  home.packages = with pkgs; [
     # books
     #hakuneko
     #kcc
@@ -37,7 +37,8 @@
     # utils
     polychromatic
     vulkan-tools
+
+    # vr
+    wlx-overlay-s
   ];
 }
-
-
