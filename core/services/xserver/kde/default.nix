@@ -138,6 +138,7 @@ with lib;
     catppuccin-kde
     catppuccin-kvantum
     whitesur-cursors
+    vimix-cursors
 
     # widgets
     plasmusic-toolbar
