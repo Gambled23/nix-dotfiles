@@ -16,21 +16,21 @@ in
     input.keyboard.numlockOnStartup = "on";
 
     #BEGIN: Theme settings
-    workspace = {
-      lookAndFeel = "catppuccin-kde";
-      cursor = {
-        theme = "Future-dark-cursors";
-        size = 24;
-      };
-      wallpaper = "/home/gambled/Nextcloud/Wallpapers/PC/irl/clouds.jpg";
-    };
+    # workspace = {
+    #   lookAndFeel = "catppuccin-kde";
+    #   cursor = {
+    #     theme = "Future-dark-cursors";
+    #     size = 24;
+    #   };
+    #   wallpaper = "/home/gambled/Nextcloud/Wallpapers/PC/irl/clouds.jpg";
+    # };
 
-    fonts = {
-      general = {
-        family = "JetBrains Mono";
-        pointSize = 12;
-      };
-    };
+    # fonts = {
+    #   general = {
+    #     family = "JetBrains Mono";
+    #     pointSize = 12;
+    #   };
+    # };
     #END: Theme settings
 
 
