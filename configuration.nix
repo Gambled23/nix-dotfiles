@@ -192,7 +192,7 @@ in
     };
     cursor = {
       package = pkgs.vimix-cursors;
-      name = "Vimix-cursors-white";
+      name = "Vimix-cursors";
       size = 24;
     };
   };

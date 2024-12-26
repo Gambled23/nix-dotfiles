@@ -80,7 +80,6 @@ in
         hiding = "normalpanel";
         widgets = [
           "org.kde.plasma.appmenu"
-          "org.kde.plasma.panelspacer"
           {
             plasmusicToolbar = {
               panelIcon = {
@@ -105,6 +104,14 @@ in
           }
           "org.kde.plasma.panelspacer"
           {
+            digitalClock = {
+              calendar.firstDayOfWeek = "sunday";
+              time.format = "24h";
+              date.enable = false;
+            };
+          }
+          "org.kde.plasma.panelspacer"
+          {
             systemTray.items = {
               # We explicitly show bluetooth and battery
               shown = [
@@ -116,19 +123,14 @@ in
                 "org.kde.plasma.networkmanagement"
                 "org.kde.plasma.clipboard"
                 "org.kde.plasma.battery"
+                "org.kde.plasma.mediaplayer"
                 "Stremio"
-                "sunshine"
+                "sunshine-server"
                 "ZapZap"
                 "Nextcloud"
-                "Polychromatic"
+                "polychromatic-tray-applet"
+                "Vesktop"
               ];
-            };
-          }
-          {
-            digitalClock = {
-              calendar.firstDayOfWeek = "sunday";
-              time.format = "24h";
-              date.enable = false;
             };
           }
         ];
