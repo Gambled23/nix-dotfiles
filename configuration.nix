@@ -190,11 +190,11 @@ in
         name = "Joypixels";
       };
     };
-    # cursor = {
-    #   package = pkgs.vimix-cursors;
-    #   name = "Vimix Cursors";
-    #   size = 24;
-    # };
+    cursor = {
+      package = pkgs.vimix-cursors;
+      name = "Vimix-cursors-white";
+      size = 24;
+    };
   };
   nixpkgs.config.joypixels.acceptLicense = true;
 }

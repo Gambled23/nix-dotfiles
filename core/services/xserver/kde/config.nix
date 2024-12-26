@@ -108,7 +108,6 @@ in
             systemTray.items = {
               # We explicitly show bluetooth and battery
               shown = [
-                "org.kde.plasma.battery"
                 "org.kde.plasma.bluetooth"
                 "org.kde.plasma.notifications"
               ];
@@ -116,6 +115,12 @@ in
               hidden = [
                 "org.kde.plasma.networkmanagement"
                 "org.kde.plasma.clipboard"
+                "org.kde.plasma.battery"
+                "Stremio"
+                "sunshine"
+                "ZapZap"
+                "Nextcloud"
+                "Polychromatic"
               ];
             };
           }
@@ -474,6 +479,15 @@ in
         # Provider will be added to [Greeter][Wallpaper][org.kde.potd][General].
         "Greeter/Wallpaper/org.kde.potd/General".Provider = "bing";
       };
+      "kdeglobals"."General"."TerminalApplication" = "warp-terminal %U";
+      "kdeglobals"."General"."TerminalService" = "dev.warp.Warp.desktop";
+
+      # Night color
+      "kwinrc"."NightColor"."Active" = true;
+      "kwinrc"."NightColor"."LatitudeFixed" = 19.923664122137396;
+      "kwinrc"."NightColor"."LongitudeFixed" = "-101.50375939849624";
+      "kwinrc"."NightColor"."Mode" = "Location";
+      "kwinrc"."NightColor"."NightTemperature" = 3700;
     };
     #END low level settings
   };

@@ -135,9 +135,6 @@ with lib;
     #kde-gruvbox
     #kdePackages.koi
     #graphite-kde-theme
-    catppuccin-kde
-    catppuccin-kvantum
-    whitesur-cursors
     vimix-cursors
 
     # widgets
