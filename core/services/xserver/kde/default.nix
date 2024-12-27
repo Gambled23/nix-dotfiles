@@ -3,14 +3,14 @@
 with lib;
 
 {
-  # services.desktopManager.plasma6.enable = true;
-  # services.displayManager.sddm = {
-  #   enable = true;
-  #   autoNumlock = true;
-  #   # theme = "breeze";
-  #   wayland.enable = true;
-  #   wayland.compositor = "kwin";
-  # };
+  services.desktopManager.plasma6.enable = true;
+  services.displayManager.sddm = {
+    enable = true;
+    autoNumlock = true;
+    # theme = "breeze";
+    wayland.enable = true;
+    wayland.compositor = "kwin";
+  };
   services.xserver = {
     # Scaling factor for fonts and graphical elements on the screen
     dpi = 98;
