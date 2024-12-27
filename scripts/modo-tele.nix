@@ -6,7 +6,7 @@ pkgs.writeShellScriptBin "modo-tele" ''
   if [ $1 == 'enable' ]; then
     ${pkgs.killall}/bin/killall -q steam
     while pgrep steam > /dev/null; do sleep 1; done
-    steam -bigpicture
+    start-gamescope-session
   fi
 
   if [ $1 == 'disable' ]; then
