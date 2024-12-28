@@ -24,7 +24,7 @@
     #cmake
 
     # games
-    #gamemode
+    gamemode
     wineWowPackages.stable
     winetricks
     #heroic
@@ -33,6 +33,7 @@
     #tetrio-desktop
     #prismlauncher #minecra
     r2modman
+    mangohud
 
     # utils
     polychromatic
