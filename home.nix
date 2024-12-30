@@ -34,7 +34,7 @@
 
     #* media
     miru
-    stremio
+    #stremio
     vlc
 
     #* media creation

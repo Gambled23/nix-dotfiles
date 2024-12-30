@@ -320,7 +320,74 @@ in
           #   apply = "force";
           # };
           screen = {
-            value = "1";
+            value = "0";
+          };
+        };
+      }
+
+      {
+        description = "Stremio";
+        match = {
+          window-class = {
+            value = "com.stremio.stremio";
+            type = "exact";
+            match-whole = false;
+          };
+          window-types = [ "normal" ];
+        };
+        apply = {
+          # desktops = {
+          #   value = builtins.elemAt desktops 3;
+          #   apply = "force";
+          # };
+          screen = {
+            value = "0";
+          };
+        };
+      }
+
+      {
+        description = "Miru";
+        match = {
+          window-class = {
+            value = "Miru";
+            type = "exact";
+            match-whole = false;
+          };
+          window-types = [ "normal" ];
+        };
+        apply = {
+          # desktops = {
+          #   value = builtins.elemAt desktops 3;
+          #   apply = "force";
+          # };
+          screen = {
+            value = "0";
+          };
+        };
+      }
+
+      {
+        description = "Steam Big Picture";
+        match = {
+          window-class = {
+            value = "gamescope";
+            type = "exact";
+            match-whole = false;
+          };
+          window-types = [ "normal" ];
+        };
+        apply = {
+          # desktops = {
+          #   value = builtins.elemAt desktops 3;
+          #   apply = "force";
+          # };
+          screen = {
+            value = "0";
+          };
+          fullscreen = {
+            value = true;
+            apply = "force";
           };
         };
       }
