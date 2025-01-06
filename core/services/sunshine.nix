@@ -22,15 +22,12 @@
           name = "Steam Big Picture";
           prep-cmd = [
             {
-              do = "${pkgs.killall}/bin/killall -q steam";
-              undo = "${pkgs.killall}/bin/killall -q steam";
-            }
-            {
-              do = "steam -start steam://open/bigpicture";
-              undo = "steam";
+              do = "modo-tele enable";
+              undo = "modo-tele disable";
             }
           ];
           image-path = "steam.png";
+          output = "/home/gambled/logSteam.txt";
         }
       ];
     };
