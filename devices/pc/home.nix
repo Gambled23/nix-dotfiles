@@ -41,5 +41,7 @@
 
     # vr
     wlx-overlay-s
+
+    appimage-run
   ];
 }

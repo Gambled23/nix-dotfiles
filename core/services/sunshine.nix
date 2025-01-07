@@ -32,7 +32,7 @@
       ];
     };
     settings = {
-      output_name = "2";
+      output_name = "1";
     };
   };
 }
