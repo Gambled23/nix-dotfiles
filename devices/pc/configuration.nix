@@ -61,4 +61,15 @@
   environment.systemPackages = with pkgs; [ lact ];
   systemd.packages = with pkgs; [ lact ];
   systemd.services.lactd.wantedBy = ["multi-user.target"];
+
+  # Connect to bluetooth after resume
+  systemd.services.bluetooth-android-gambled = {
+    description = "Auto cconnect to phone bluetooth after resume";
+    wantedBy = [ "post-resume.target" ];
+    after = [ "post-resume.target" ];
+    script = ''
+      bluetoothctl connect 24:95:2F:60:BD:94
+    '';
+    serviceConfig.Type = "oneshot";
+  };
 }
