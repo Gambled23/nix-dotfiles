@@ -63,13 +63,7 @@
   systemd.services.lactd.wantedBy = ["multi-user.target"];
 
   # Connect to bluetooth after resume
-  systemd.services.bluetooth-android-gambled = {
-    description = "Auto cconnect to phone bluetooth after resume";
-    wantedBy = [ "post-resume.target" ];
-    after = [ "post-resume.target" ];
-    script = ''
-      bluetoothctl connect 24:95:2F:60:BD:94
-    '';
-    serviceConfig.Type = "oneshot";
-  };
+  powerManagement.resumeCommands = ''
+    bluetoothctl connect 24:95:2F:60:BD:94
+  '';
 }
