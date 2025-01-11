@@ -239,7 +239,7 @@ in
             apply = "force";
           };
           screen = {
-            value = "0";
+            value = "1";
             apply = "force";
           };
           size = {
@@ -274,7 +274,7 @@ in
             apply = "force";
           };
           screen = {
-            value = "0";
+            value = "1";
           };
           size = {
             value = "1920,1052";
@@ -299,7 +299,7 @@ in
           #   apply = "force";
           # };
           screen = {
-            value = "0";
+            value = "1";
           };
         };
       }
@@ -320,7 +320,7 @@ in
           #   apply = "force";
           # };
           screen = {
-            value = "0";
+            value = "1";
           };
         };
       }
@@ -341,7 +341,7 @@ in
           #   apply = "force";
           # };
           screen = {
-            value = "0";
+            value = "1";
           };
         };
       }
@@ -362,7 +362,7 @@ in
           #   apply = "force";
           # };
           screen = {
-            value = "0";
+            value = "1";
           };
         };
       }
@@ -383,7 +383,7 @@ in
           #   apply = "force";
           # };
           screen = {
-            value = "0";
+            value = "1";
           };
           fullscreen = {
             value = true;
