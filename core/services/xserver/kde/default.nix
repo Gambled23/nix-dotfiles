@@ -105,6 +105,7 @@ with lib;
   # System Packages Configuration
   #---------------------------------------------------------------------
   environment.systemPackages = with pkgs; [
+    kde-rounded-corners
     kdePackages.plasma-browser-integration
     kdePackages.kaccounts-integration
     kdePackages.kaccounts-providers
