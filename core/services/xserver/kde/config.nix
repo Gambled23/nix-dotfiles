@@ -238,10 +238,6 @@ in
             value = true;
             apply = "force";
           };
-          screen = {
-            value = "1";
-            apply = "force";
-          };
           size = {
             value = "1920,1052";
             apply = "force";
@@ -273,9 +269,6 @@ in
             value = true;
             apply = "force";
           };
-          screen = {
-            value = "1";
-          };
           size = {
             value = "1920,1052";
             apply = "force";
@@ -298,9 +291,6 @@ in
           #   value = builtins.elemAt desktops 1;
           #   apply = "force";
           # };
-          screen = {
-            value = "1";
-          };
         };
       }
 
@@ -319,9 +309,6 @@ in
           #   value = builtins.elemAt desktops 3;
           #   apply = "force";
           # };
-          screen = {
-            value = "1";
-          };
         };
       }
 
@@ -340,9 +327,6 @@ in
           #   value = builtins.elemAt desktops 3;
           #   apply = "force";
           # };
-          screen = {
-            value = "1";
-          };
         };
       }
 
@@ -361,9 +345,6 @@ in
           #   value = builtins.elemAt desktops 3;
           #   apply = "force";
           # };
-          screen = {
-            value = "1";
-          };
         };
       }
 
@@ -382,9 +363,6 @@ in
           #   value = builtins.elemAt desktops 3;
           #   apply = "force";
           # };
-          screen = {
-            value = "1";
-          };
           fullscreen = {
             value = true;
             apply = "force";
