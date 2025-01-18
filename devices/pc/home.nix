@@ -43,5 +43,7 @@
     wlx-overlay-s
 
     appimage-run
+
+    swi-prolog-gui
   ];
 }
