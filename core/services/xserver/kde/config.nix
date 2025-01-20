@@ -287,10 +287,10 @@ in
           window-types = [ "normal" ];
         };
         apply = {
-          # desktops = {
-          #   value = builtins.elemAt desktops 1;
-          #   apply = "force";
-          # };
+          desktops = {
+            value = "2";
+            apply = "force";
+          };
         };
       }
 
