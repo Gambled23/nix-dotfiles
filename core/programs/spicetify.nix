@@ -3,11 +3,6 @@ let
   spicePkgs = spicetify-nix.legacyPackages.${pkgs.system};
 in
 {
-  # install spicetify
-  nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
-    "spotify"
-  ];
-
   programs.spicetify = {
     enable = true;
     # theme = spicePkgs.themes.lucid;
