@@ -288,7 +288,7 @@ in
         };
         apply = {
           desktops = {
-            value = "2";
+            value = "Desktop_2";
             apply = "force";
           };
         };
@@ -443,7 +443,7 @@ in
       virtualDesktops = {
         rows = 2;
         number = 6;
-        names = [ "1" "2" "3" "4" "5" "6"];
+        names = [ "Desktop_1" "Desktop_2" "Desktop_3" "Desktop_4" "Desktop_5" "Desktop_6"];
       };
     };
 
