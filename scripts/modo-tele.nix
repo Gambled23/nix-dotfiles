@@ -4,12 +4,14 @@ pkgs.writeShellScriptBin "modo-tele" ''
   #!${pkgs.bash}/bin/bash
 
   if [ $1 == 'enable' ]; then
+    kscreen-doctor output.HDMI-A-2.enable
     ${pkgs.killall}/bin/killall -q steam
     while pgrep steam > /dev/null; do sleep 1; done
     start-gamescope-session
   fi
 
   if [ $1 == 'disable' ]; then
+    kscreen-doctor output.HDMI-A-2.disable
     ${pkgs.killall}/bin/killall -q steam
     while pgrep steam > /dev/null; do sleep 1; done
     steam
