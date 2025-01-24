@@ -1,16 +1,8 @@
 { pkgs, ... }:
 let
-  desktops= [
-    "c3bd6f37-ff67-4f40-865a-4490c3c95c42"
-    "8ea799f8-1955-4c56-98f6-16523af9ed9f"
-    "959e7be5-faf8-47a9-80dc-b8fb047aaa4b"
-    "2020780a-1484-4962-a594-ca14cdc34d08"
-    "c8a4cbb5-575d-4ec7-a7c8-2deba73a6ccc"
-    "efc0eec9-edfa-40ff-a0f2-0fee413edbd4"
-  ];
+  elias = "joto";
 in
 {
-
   programs.plasma = {
     enable = true;
     input.keyboard.numlockOnStartup = "on";
@@ -229,11 +221,10 @@ in
             value = false;
             apply = "force";
           };
-          # desktops = {
-          #   value = builtins.elemAt desktops 5;
-
-          #   apply = "force";
-          # };
+          desktops = {
+            value = "Desktop_6";
+            apply = "force";
+          };
           noborder = {
             value = true;
             apply = "force";
@@ -261,10 +252,10 @@ in
             value = false;
             apply = "force";
           };
-          # desktops = {
-          #   value = builtins.elemAt desktops 1;
-          #   apply = "force";
-          # };
+          desktops = {
+            value = "Desktop_2";
+            apply = "force";
+          };
           noborder = {
             value = true;
             apply = "force";
@@ -305,10 +296,10 @@ in
           window-types = [ "normal" ];
         };
         apply = {
-          # desktops = {
-          #   value = builtins.elemAt desktops 3;
-          #   apply = "force";
-          # };
+          desktops = {
+            value = "Desktop_4";
+            apply = "force";
+          };
         };
       }
 
@@ -323,10 +314,9 @@ in
           window-types = [ "normal" ];
         };
         apply = {
-          # desktops = {
-          #   value = builtins.elemAt desktops 3;
-          #   apply = "force";
-          # };
+          desktops = {
+            value = "Desktop_5";
+          };
         };
       }
 
@@ -341,10 +331,9 @@ in
           window-types = [ "normal" ];
         };
         apply = {
-          # desktops = {
-          #   value = builtins.elemAt desktops 3;
-          #   apply = "force";
-          # };
+          desktops = {
+            value = "Desktop_5";
+          };
         };
       }
 
@@ -359,10 +348,10 @@ in
           window-types = [ "normal" ];
         };
         apply = {
-          # desktops = {
-          #   value = builtins.elemAt desktops 3;
-          #   apply = "force";
-          # };
+          desktops = {
+            value = "Desktop_4";
+            apply = "force";
+          };
           fullscreen = {
             value = true;
             apply = "force";

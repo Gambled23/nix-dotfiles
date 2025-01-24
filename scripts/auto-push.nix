@@ -8,20 +8,15 @@ pkgs.writeShellScriptBin "aps" ''
     rebuild_mode=switch
   fi
 
-  
+  cd /etc/nixos/
+  git pull
+
   set -e
-  cd /home/gambled/Documents
-  if [ ! -d nix-dotfiles ]; then
-    git clone git@github.com:Gambled23/nix-dotfiles.git
-  fi
-  cd nix-dotfiles
-  
   sudo nixos-rebuild $rebuild_mode 
-  
-  sudo rm -r *
-  cp -r /etc/nixos/* /home/gambled/Documents/nix-dotfiles/
+
   git add .
   git commit -m "auto update $(date)"
   git push
+
   echo "Rebuild $rebuild_mode complete"
 ''
