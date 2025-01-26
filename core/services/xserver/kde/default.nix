@@ -112,9 +112,10 @@ with lib;
     kdePackages.packagekit-qt
     kdePackages.signond
     libsForQt5.qoauth
-    polonium
     kdePackages.kio-gdrive
     kdePackages.kio-admin
+    kdePackages.kio-fuse
+    kdePackages.kio-extras
     kdePackages.ktorrent
     kdePackages.libktorrent
     kdePackages.kdenlive
@@ -124,10 +125,9 @@ with lib;
     qt6Packages.qtstyleplugin-kvantum
     libportal-qt5
     qt6.qtwebengine
+    kdePackages.dolphin-plugins
     kate
     kup
-
-    kdePackages.krohnkite
 
     # Themes
     #kdePackages.kde-gtk-config
@@ -140,8 +140,6 @@ with lib;
 
     # widgets
     plasmusic-toolbar
-
-    libsForQt5.plasma-bigscreen
   ];
 
   programs.partition-manager.enable = true;
