@@ -515,8 +515,6 @@ in
         # Provider will be added to [Greeter][Wallpaper][org.kde.potd][General].
         "Greeter/Wallpaper/org.kde.potd/General".Provider = "bing";
       };
-      "kdeglobals"."General"."TerminalApplication" = "warp-terminal %U";
-      "kdeglobals"."General"."TerminalService" = "dev.warp.Warp.desktop";
 
       # Night color
       "kwinrc"."NightColor"."Active" = true;

@@ -26,7 +26,6 @@
     tmux
     lazygit
     fzf
-    warp-terminal
 
     #* dev languages
     #kotlin
