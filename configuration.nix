@@ -150,18 +150,26 @@ in
   services.fwupd.enable = true; # Enable firmware updates
   programs.adb.enable = true;
 
-  # fonts.packages = with pkgs; [
-  #   times-newer-roman
-  #   noto-fonts
-  #   noto-fonts-cjk-sans
-  #   noto-fonts-emoji
-  #   liberation_ttf
-  #   fira-code
-  #   fira-code-symbols
-  #   mplus-outline-fonts.githubRelease
-  #   dina-font
-  #   proggyfonts
-  # ];
+  fonts.packages = with pkgs; [
+    times-newer-roman
+    noto-fonts
+    noto-fonts-cjk-sans
+    noto-fonts-emoji
+    liberation_ttf
+    fira-code
+    fira-code-symbols
+    mplus-outline-fonts.githubRelease
+    dina-font
+    proggyfonts
+    nerd-fonts.noto
+    nerd-fonts.ubuntu
+    nerd-fonts.hack
+    nerd-fonts.tinos
+    nerd-fonts.mplus
+    nerd-fonts.arimo
+    nerd-fonts.agave
+    nerd-fonts.hasklug
+  ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs.config.allowUnfree = true;
