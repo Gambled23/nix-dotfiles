@@ -7,7 +7,7 @@
 }:
 {
   imports = [
-    core/programs/alacritty.nix
+    #core/programs/alacritty.nix
     core/programs/direnv.nix
     core/programs/git.nix
     #core/programs/kitty/kitty.nix
