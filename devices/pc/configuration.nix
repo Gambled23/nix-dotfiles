@@ -9,6 +9,7 @@
 
     ../../core/services/wakeonlan.nix
     ../../core/services/docker.nix
+    ../../core/services/syncthing.nix
     #../../core/services/xrdp.nix
     #../../core/programs/alvr.nix
     ../../core/programs/steam.nix
