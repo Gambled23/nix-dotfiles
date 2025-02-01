@@ -3,9 +3,9 @@ with import <nixpkgs> { };
 let
   pythonPackages = python3Packages;
 in pkgs.mkShell rec {
-  name = "cpp";
+  name = "nodejs";
 
   buildInputs = [
-    gcc
+    nodejs_23
   ];
 }
