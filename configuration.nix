@@ -180,10 +180,6 @@ in
     image = ./wallpaper.png;
     base16Scheme = theme;
 
-    targets = {
-      spicetify.enable = false;
-    };
-
     fonts = {
       serif = {
         package = pkgs.dejavu_fonts;

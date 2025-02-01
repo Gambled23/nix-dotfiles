@@ -9,14 +9,14 @@
     discord.enable = false;
     vesktop.enable = true;
     config = {
-      themeLinks = [        # or use an online theme
-        "https://raw.githubusercontent.com/shvedes/discord-gruvbox/refs/heads/main/gruvbox.theme.css"
+      themeLinks = [
         "https://markchan0225.github.io/RoundedDiscord/RoundedDiscord.theme.css"
         "https://raw.githubusercontent.com/DiscordStyles/RadialStatus/deploy/RadialStatus.theme.css"
-        "https://raw.githubusercontent.com/DiscordStyles/HorizontalServerList/deploy/HorizontalServerList.theme.css"
         "https://raw.githubusercontent.com/mwittrien/BetterDiscordAddons/refs/heads/master/Themes/SettingsModal/SettingsModal.theme.css"
       ];
+
       plugins = {
+        accountPanelServerProfile.enable = true;
         betterGifPicker.enable = true;
         betterNotesBox.enable = true;
         betterRoleContext.enable = true;
@@ -27,6 +27,11 @@
         biggerStreamPreview.enable = true;
         callTimer.enable = true;
         fakeNitro.enable = true;
+        fakeProfileThemes.enable = true;
+        forceOwnerCrown.enable = true;
+        friendsSince.enable = true;
+        fullSearchContext.enable = true;
+        fullUserInChatbox.enable = true;
         gameActivityToggle.enable = true;
         implicitRelationships.enable = true;
         lastFMRichPresence = {
@@ -48,6 +53,7 @@
         validReply.enable = true;
         validUser.enable = true;
         viewIcons.enable = true;
+        webRichPresence.enable = true;
         webScreenShareFixes.enable = true;
         whoReacted.enable = true;
       };

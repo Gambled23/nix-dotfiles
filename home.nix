@@ -56,7 +56,6 @@
     zerotierone
 
     #* utils
-    syncthingtray
     unrar
     p3x-onenote
     protontricks
