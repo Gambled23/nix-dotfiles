@@ -5,7 +5,7 @@
   imports = [
     ../../configuration.nix
     ./hardware-configuration.nix
-    ./symlinks.nix
+    #./symlinks.nix
 
     ../../core/services/wakeonlan.nix
     ../../core/services/docker.nix
