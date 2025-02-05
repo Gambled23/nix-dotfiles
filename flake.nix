@@ -82,6 +82,7 @@
           ./devices/laptop/configuration.nix
           home-manager.nixosModules.home-manager
           stylix.nixosModules.stylix
+          jovian-nixos.nixosModules.default
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;

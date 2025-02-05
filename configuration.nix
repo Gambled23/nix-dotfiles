@@ -12,6 +12,8 @@ in
     ./core/services/zerotier.nix
     # sunshine
     ./core/services/sunshine.nix
+    # Glances
+    ./core/services/glances.nix
 
     # Select DE
     ./core/services/xserver/kde/default.nix
