@@ -53,7 +53,6 @@
         validReply.enable = true;
         validUser.enable = true;
         viewIcons.enable = true;
-        webRichPresence.enable = true;
         webScreenShareFixes.enable = true;
         whoReacted.enable = true;
       };
