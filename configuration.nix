@@ -113,6 +113,7 @@ in
     (import ./scripts/dev/mysqlSetupRoot.nix { inherit pkgs; })
     (import ./scripts/dev/sigi.nix { inherit pkgs; })
     (import ./scripts/dev/modular-prod-backup.nix { inherit pkgs; })
+    (callPackage ./nixpkgs/pkgs/moondeckbuddy.nix {})
   ];
 
   system.autoUpgrade.enable = true;
