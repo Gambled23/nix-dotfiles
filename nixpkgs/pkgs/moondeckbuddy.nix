@@ -8,7 +8,7 @@ let
   version = "1.6.3";
   src = fetchurl {
     url = "https://github.com/FrogTheFrog/moondeck-buddy/releases/download/v${version}/MoonDeckBuddy-${version}-x86_64.AppImage";
-    hash = "sha256-VbHz9bSob3XSt7ut3jAiSl1/AV+Jw+SOP1mWBI5ggYQ=";
+    hash = "sha256-IXYImaXBRwZPfUOd0Guf5nNbOPqGEfpwwG7t2j+98wQ=";
   };
   appimageContents = appimageTools.extractType2 { inherit pname version src; };
 in
