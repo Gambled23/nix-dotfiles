@@ -112,6 +112,8 @@ with lib;
     kdePackages.packagekit-qt
     kdePackages.signond
     libsForQt5.qoauth
+    kdePackages.krfb
+    kdePackages.krdc
     kdePackages.kio-gdrive
     kdePackages.kio-admin
     kdePackages.kio-fuse
