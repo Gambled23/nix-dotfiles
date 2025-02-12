@@ -36,7 +36,7 @@ in
         height = 44;
         floating = true;
         lengthMode = "fit";
-        hiding = "autohide";
+        hiding = "dodgewindows";
         widgets = [
           # Or you can configure the widgets by adding the widget-specific options for it.
           # See modules/widgets for supported widgets and options for these widgets.
@@ -54,6 +54,7 @@ in
                 "applications:miru.desktop"
                 "applications:code.desktop"
                 "applications:dbeaver.desktop"
+                "applications:stremio.desktop"
               ];
             };
           }
@@ -72,6 +73,8 @@ in
         hiding = "normalpanel";
         widgets = [
           "org.kde.plasma.appmenu"
+          "org.kde.plasma.panelspacer"
+          "org.kde.plasma.pager"
           {
             plasmusicToolbar = {
               panelIcon = {
@@ -92,14 +95,6 @@ in
                   speed = 3;
                 };
               };
-            };
-          }
-          "org.kde.plasma.panelspacer"
-          {
-            digitalClock = {
-              calendar.firstDayOfWeek = "sunday";
-              time.format = "24h";
-              date.enable = false;
             };
           }
           "org.kde.plasma.panelspacer"
@@ -125,6 +120,16 @@ in
               ];
             };
           }
+          "org.kde.plasma.marginsseparator"
+          {
+            digitalClock = {
+              calendar.firstDayOfWeek = "sunday";
+              time.format = "24h";
+              date.enable = false;
+            };
+          }
+          "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.showdesktop"
         ];
       }
       # END: Application name, Global menu and Song information and playback controls at the top
@@ -366,8 +371,8 @@ in
     powerdevil = {
       AC = {
         autoSuspend = {
-          action = "sleep";
-          idleTimeout = 900; # 15 minutes
+          action = "nothing";
+          # idleTimeout = 900; # 15 minutes
         };
         dimDisplay = {
           enable = true;
@@ -441,6 +446,14 @@ in
       captureRectangularRegion = "Print";
     };
 
+    # Krunner
+    krunner = {
+      historyBehavior = "enableSuggestions";
+      position = "center";
+      shortcuts.launch = "Meta";
+
+    };
+
 
     #BEGIN: Shortcuts
     shortcuts = {
@@ -480,9 +493,6 @@ in
         "decrease_volume_small" = "Alt+-";
         "increase_volume_small" = "Alt+=";
       };
-      "services.org.kde.krunner.desktop" = {
-        "_launch" = "Meta";
-      };
       "services.code.desktop" = {
         "_launch" = "Meta+C";
       };
@@ -511,6 +521,8 @@ in
 
       kscreenlockerrc = {
         Greeter.WallpaperPlugin = "org.kde.potd";
+        appearance.alwaysShowClock = true;
+        appearance.showMediaControls = true;
         # To use nested groups use / as a separator. In the below example,
         # Provider will be added to [Greeter][Wallpaper][org.kde.potd][General].
         "Greeter/Wallpaper/org.kde.potd/General".Provider = "bing";
