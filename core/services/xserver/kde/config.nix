@@ -74,7 +74,6 @@ in
         widgets = [
           "org.kde.plasma.appmenu"
           "org.kde.plasma.panelspacer"
-          "org.kde.plasma.pager"
           {
             plasmusicToolbar = {
               panelIcon = {
@@ -128,11 +127,26 @@ in
               date.enable = false;
             };
           }
+        ];
+      }
+      # END: Application name, Global menu and Song information and playback controls at the top
+
+      # Begin: Desktop pager at the bottom right
+      {
+        screen= 0;
+        location = "bottom";
+        alignment = "right";
+        height = 44;
+        floating = true;
+        lengthMode = "fit";
+        hiding = "dodgewindows";
+        widgets = [
+          "org.kde.plasma.pager"
           "org.kde.plasma.marginsseparator"
           "org.kde.plasma.showdesktop"
         ];
       }
-      # END: Application name, Global menu and Song information and playback controls at the top
+      # End: Desktop pager at the bottom right
     ];
     #END: Panels
 
@@ -185,8 +199,8 @@ in
           vertical = 10;
         };
         size = {
-          height = 500;
-          width = 1000;
+          height = 350;
+          width = 400;
         };
       }
     ];
