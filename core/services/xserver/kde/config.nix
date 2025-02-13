@@ -8,21 +8,24 @@ in
     input.keyboard.numlockOnStartup = "on";
 
     #BEGIN: Theme settings
-    # workspace = {
-    #   lookAndFeel = "catppuccin-kde";
-    #   cursor = {
-    #     theme = "Future-dark-cursors";
-    #     size = 24;
-    #   };
-    #   wallpaper = "/home/gambled/Nextcloud/Wallpapers/PC/irl/clouds.jpg";
-    # };
+    workspace = {
+      enableMiddleClickPaste = true;
+      clickItemTo = "select";
+      iconTheme = "Gruvbox";
+      colorScheme = "Gruvboxdarkmedium";
+      splashScreen.theme = "GruvboxHexagon3";
+      windowDecorations = {
+        library = "org.kde.kwin.aurorae";
+        theme = "__aurorae__svg__Utterly-Round-Dark";
+      };
+    };
 
-    # fonts = {
-    #   general = {
-    #     family = "JetBrains Mono";
-    #     pointSize = 12;
-    #   };
-    # };
+    fonts = {
+      general = {
+        family = "JetBrains Mono";
+        pointSize = 12;
+      };
+    };
     #END: Theme settings
 
 
@@ -453,6 +456,13 @@ in
         number = 6;
         names = [ "Desktop_1" "Desktop_2" "Desktop_3" "Desktop_4" "Desktop_5" "Desktop_6"];
       };
+      effects = {
+        blur = {
+          enable = true;
+          noiseStrength = 14;
+          strength = 15;
+        };
+      };
     };
 
     # Spectacle
@@ -513,7 +523,7 @@ in
       "services.org.kde.konsole.desktop" = {
         "_launch" = "Meta+Return";
       };
-      "services.google-chrome.desktop" = {
+      "google-chrome.desktop" = {
         "_launch" = "Meta+F";
       };
     };
