@@ -239,10 +239,6 @@ in
           window-types = [ "normal" ];
         };
         apply = {
-          closeable = {
-            value = false;
-            apply = "force";
-          };
           desktops = {
             value = "Desktop_6";
             apply = "force";
@@ -251,13 +247,8 @@ in
             value = true;
             apply = "force";
           };
-          size = {
-            value = "1920,1052";
-            apply = "force";
-          };
         };
       }
-
 
       {
         description = "Vesktop";
@@ -270,20 +261,12 @@ in
           window-types = [ "normal" ];
         };
         apply = {
-          closeable = {
-            value = false;
-            apply = "force";
-          };
           desktops = {
             value = "Desktop_2";
             apply = "force";
           };
           noborder = {
             value = true;
-            apply = "force";
-          };
-          size = {
-            value = "1920,1052";
             apply = "force";
           };
         };
