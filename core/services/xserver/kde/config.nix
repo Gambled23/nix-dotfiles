@@ -465,7 +465,7 @@ in
           strength = 15;
         };
         dimAdminMode.enable = true;
-        dimInactive.enable = true;
+        dimInactive.enable = false;
       };
     };
 
