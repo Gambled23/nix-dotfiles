@@ -456,12 +456,16 @@ in
         number = 6;
         names = [ "Desktop_1" "Desktop_2" "Desktop_3" "Desktop_4" "Desktop_5" "Desktop_6"];
       };
+      cornerBarrier = false;
+      edgeBarrier = 0;
       effects = {
         blur = {
           enable = true;
           noiseStrength = 14;
           strength = 15;
         };
+        dimAdminMode.enable = true;
+        dimInactive.enable = true;
       };
     };
 
