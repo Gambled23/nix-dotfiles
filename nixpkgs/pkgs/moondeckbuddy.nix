@@ -1,34 +1,65 @@
 {
-  appimageTools,
   lib,
-  fetchurl,
+  stdenv,
+  fetchFromGitHub,
+  nix-update-script,
+  kdePackages,
+  cmake,
+  ninja,
+  qt6,
+  procps,
+  xorg,
+  steam,
+  useNixSteam ? true,
 }:
+
 let
-  pname = "moondeckbuddy";
-  version = "1.6.3";
-  src = fetchurl {
-    url = "https://github.com/FrogTheFrog/moondeck-buddy/releases/download/v${version}/MoonDeckBuddy-${version}-x86_64.AppImage";
-    hash = "sha256-IXYImaXBRwZPfUOd0Guf5nNbOPqGEfpwwG7t2j+98wQ=";
-  };
-  appimageContents = appimageTools.extractType2 { inherit pname version src; };
+  inherit (kdePackages) qtbase wrapQtAppsHook;
+  qtEnv =
+    with qt6;
+    env "qt-env-custom-${qtbase.version}" [
+      qthttpserver
+      qtwebsockets
+    ];
 in
-appimageTools.wrapType2 {
-  inherit pname version src;
-  extraInstallCommands = ''
-    install -Dm444 ${appimageContents}/MoonDeckBuddy.desktop -t $out/share/applications
-    substituteInPlace $out/share/applications/MoonDeckBuddy.desktop \
-      --replace-fail 'Exec=MoonDeckBuddy' 'Exec=MoonDeckBuddy %u'
-    cp -r ${appimageContents}/usr/share/icons $out/share
+stdenv.mkDerivation (finalAttrs: {
+  pname = "moondeck-buddy";
+  version = "1.6.3";
+
+  src = fetchFromGitHub {
+    owner = "FrogTheFrog";
+    repo = "moondeck-buddy";
+    tag = "v${finalAttrs.version}";
+    fetchSubmodules = true;
+    hash = "sha256-CcORcojz3jh1UZpq5qjDv+YktXC+F8t+r7E1SFyFkmw=";
+  };
+
+  buildInputs = [
+    procps
+    xorg.libXrandr
+    qtbase
+    qtEnv
+  ];
+  nativeBuildInputs = [
+    cmake
+    ninja
+    wrapQtAppsHook
+  ];
+
+  postPatch = lib.optionalString useNixSteam ''
+    substituteInPlace src/lib/os/linux/steamregistryobserver.cpp \
+      --replace-fail /usr/bin/steam ${lib.getExe steam};
   '';
 
+  passthru.updateScript = nix-update-script { };
+
   meta = {
-    description = "A server-side part of the MoonDeck plugin for the SteamDeck.";
-    homepage = "https://github.com/FrogTheFrog/moondeck-buddy";
-    changelog = "https://github.com/FrogTheFrog/moondeck-buddy/blob/v${version}/CHANGELOG.md";
-    license = lib.licenses.gpl3Plus;
-    maintainers = [ lib.maintainers.luftmensch-luftmensch ];
-    platforms = [ "x86_64-linux" ];
-    sourceProvenance = with lib.sourceTypes; [ binaryNativeCode ];
     mainProgram = "MoonDeckBuddy";
+    description = "Helper to work with moonlight on a steamdeck";
+    homepage = "https://github.com/FrogTheFrog/moondeck-buddy";
+    changelog = "https://github.com/FrogTheFrog/moondeck-buddy/releases/tag/v${finalAttrs.version}";
+    license = lib.licenses.lgpl3Only;
+    maintainers = with lib.maintainers; [ redxtech ];
+    platforms = lib.platforms.linux;
   };
-}
+})

@@ -205,4 +205,7 @@ in
     };
   };
   nixpkgs.config.joypixels.acceptLicense = true;
+
+  # commands after boot
+  powerManagement.powerUpCommands = "bluetoothctl connect '24:95:2F:60:BD:94'\n";
 }

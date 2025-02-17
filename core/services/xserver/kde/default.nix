@@ -29,6 +29,7 @@ with lib;
   #---------------------------------------------------------------------
   environment.systemPackages = with pkgs; [
     kde-rounded-corners
+    kdePackages.krohnkite
     kdePackages.plasma-browser-integration
     kdePackages.kaccounts-integration
     kdePackages.kaccounts-providers
@@ -47,7 +48,8 @@ with lib;
     kdePackages.merkuro
     kdePackages.kclock
     kdePackages.kalk
-    qt6Packages.qtstyleplugin-kvantum
+    kdePackages.qtstyleplugin-kvantum
+    gruvbox-kvantum
     libportal-qt5
     qt6.qtwebengine
     kdePackages.dolphin-plugins
@@ -66,6 +68,8 @@ with lib;
     # widgets
     plasmusic-toolbar
   ];
+
+  qt.style = "kvantum";
 
   programs.partition-manager.enable = true;
   programs.kdeconnect.enable = true;
