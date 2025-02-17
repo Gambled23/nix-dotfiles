@@ -14,6 +14,7 @@ in
     ./core/services/sunshine.nix
     # Glances
     ./core/services/glances.nix
+    ./core/services/syncthing.nix
 
     # Select DE
     ./core/services/xserver/kde/default.nix
