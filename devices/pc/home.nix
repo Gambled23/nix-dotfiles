@@ -31,7 +31,7 @@
     ryujinx
     osu-lazer-bin
     #tetrio-desktop
-    #prismlauncher #minecra
+    prismlauncher #minecra
     r2modman
     mangohud
 
