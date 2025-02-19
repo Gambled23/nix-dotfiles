@@ -102,10 +102,9 @@ in
   hardware.xone.enable = true;
   environment.systemPackages = with pkgs; [
     grub2
+    (import ./scripts/nix-rbd.nix { inherit pkgs; })
     (import ./scripts/modo-tele.nix { inherit pkgs; })
     (import ./scripts/update-flake.nix { inherit pkgs; })
-    (import ./scripts/auto-pull.nix { inherit pkgs; })
-    (import ./scripts/auto-push.nix { inherit pkgs; })
     (import ./scripts/auto-gc.nix { inherit pkgs; })
     (import ./scripts/git-clone.nix { inherit pkgs; })
     (import ./scripts/dev/enviroment.nix { inherit pkgs; })
@@ -172,6 +171,7 @@ in
 
   # Stylix
   stylix = {
+    autoEnable = true;
     enable = true;
     image = ./wallpaper.png;
     base16Scheme = theme;
@@ -201,6 +201,10 @@ in
       package = pkgs.vimix-cursors;
       name = "Vimix-cursors";
       size = 24;
+    };
+    targets.qt = {
+        enable = true;
+        platform = "qt6";
     };
   };
   nixpkgs.config.joypixels.acceptLicense = true;
