@@ -4,19 +4,15 @@ theme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
 in
 {
   imports = [
-    # mysql
+    # Global services
     ./core/services/mysql.nix
-    # openssh
     ./core/services/openssh.nix
-    # zerotier
     ./core/services/zerotier.nix
-    # sunshine
     ./core/services/sunshine.nix
-    # Glances
     ./core/services/glances.nix
     ./core/services/syncthing.nix
 
-    # Select DE
+    # Desktop enviroment
     ./core/services/xserver/kde/default.nix
     #./core/services/xserver/gnome/default.nix
     #./core/services/xserver/i3/default.nix
@@ -204,7 +200,7 @@ in
     };
     targets.qt = {
         enable = true;
-        platform = "qt6";
+        platform = "qtct";
     };
   };
   nixpkgs.config.joypixels.acceptLicense = true;

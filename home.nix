@@ -22,7 +22,7 @@
     #* dev tools
     dbeaver-bin
     vscode
-    zed-editor
+    #zed-editor
     tmux
     lazygit
     fzf
@@ -41,11 +41,7 @@
     inkscape-with-extensions
     qt6.qtwebsockets
     libportal-qt5
-    (wrapOBS {
-      plugins = with obs-studio-plugins; [
-        droidcam-obs
-      ];
-    })
+    obs-studio
 
     #* messaging
     #vesktop

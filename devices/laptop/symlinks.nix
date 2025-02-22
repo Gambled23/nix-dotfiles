@@ -5,9 +5,6 @@
 
 {
   system.userActivationScripts.linktosharedfolder.text = ''
-    # Wallpapers
-    if [[ ! -h "$HOME/Pictures/Wallpapers" ]]; then
-      ln -s "/home/gambled/Nextcloud/Wallpapers/" "$HOME/Pictures/Wallpapers"
-    fi
+
   '';
 }

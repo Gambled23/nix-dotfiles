@@ -21,8 +21,6 @@
         betterNotesBox.enable = true;
         betterRoleContext.enable = true;
         betterRoleDot.enable = true;
-        betterSessions.enable = true;
-        betterSettings.enable = true;
         betterUploadButton.enable = true;
         biggerStreamPreview.enable = true;
         callTimer.enable = true;

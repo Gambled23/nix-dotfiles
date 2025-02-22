@@ -35,7 +35,6 @@ with lib;
     kdePackages.kaccounts-providers
     kdePackages.packagekit-qt
     kdePackages.signond
-    libsForQt5.qoauth
     kdePackages.krfb
     kdePackages.krdc
     kdePackages.kio-gdrive
@@ -50,11 +49,10 @@ with lib;
     kdePackages.kalk
     kdePackages.qtstyleplugin-kvantum
     gruvbox-kvantum
-    libportal-qt5
+    libportal-qt6
     qt6.qtwebengine
     kdePackages.dolphin-plugins
-    kate
-    kup
+    kdePackages.kate
 
     # Themes
     #kdePackages.kde-gtk-config

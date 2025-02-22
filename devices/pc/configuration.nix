@@ -9,7 +9,6 @@
 
     ../../core/services/wakeonlan.nix
     ../../core/services/docker.nix
-    ../../core/services/syncthing.nix
     #../../core/services/xrdp.nix
     #../../core/programs/alvr.nix
     ../../core/programs/steam.nix
@@ -39,8 +38,6 @@
   #hardware.amdgpu.amdvlk.enable = true;
 
   boot.kernelParams = [
-    "video=DP-1:1920x1080@165"
-    "video=HDMI-A-2:1920x1080@64"
     "quiet"
     "splash"
     "rd.systemd.show_status=false"

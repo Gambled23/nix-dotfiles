@@ -31,8 +31,5 @@
         }
       ];
     };
-    settings = {
-      output_name = "1";
-    };
   };
 }

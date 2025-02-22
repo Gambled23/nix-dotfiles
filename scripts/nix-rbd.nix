@@ -21,20 +21,26 @@ pkgs.writeShellScriptBin "nix-rbd" ''
   git pull
   set -e
 
-  if [ "$update_config" = true ]; then
-    sudo nix flake update
-    sudo nixos-rebuild boot
-    agc
-    read -p "Press enter to reboot"
-    reboot
-  fi
-
-  # Get rebuild mode from first remaining argument
   if [ $1 ]; then
     rebuild_mode=$1
   fi
 
-  sudo nixos-rebuild $rebuild_mode
+  if [ "$update_config" = true ]; then
+    sudo nix flake update
+    rebuild_mode="boot"
+  fi
 
+  # Get rebuild mode from first remaining argument
+
+  sudo nixos-rebuild $rebuild_mode
+  git add .
+  git commit -m "Update configuration"
+  git push
   echo "Rebuild $rebuild_mode complete"
+
+  if [ "$update_config" = true ]; then
+    agc
+    read -p "Press enter to reboot"
+    reboot
+  fi
 ''
