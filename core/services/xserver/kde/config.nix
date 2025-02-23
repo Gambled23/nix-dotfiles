@@ -51,9 +51,7 @@ in
           {
             iconTasks = {
               launchers = [
-                #"applications:org.kde.dolphin.desktop"
                 "applications:steam.desktop"
-                #"applications:google-chrome.desktop"
                 "applications:miru.desktop"
                 "applications:code.desktop"
                 "applications:dbeaver.desktop"
@@ -504,13 +502,13 @@ in
         "decrease_volume_small" = "Alt+-";
         "increase_volume_small" = "Alt+=";
       };
-      "services.code.desktop" = {
+      "code.desktop" = {
         "_launch" = "Meta+C";
       };
       "services.org.kde.konsole.desktop" = {
         "_launch" = "Meta+Return";
       };
-      "google-chrome.desktop" = {
+      "floorp.desktop" = {
         "_launch" = "Meta+F";
       };
     };

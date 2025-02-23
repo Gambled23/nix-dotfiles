@@ -25,7 +25,7 @@
     #zed-editor
     tmux
     lazygit
-    fzf
+    #fzf
 
     #* dev languages
     #kotlin
@@ -69,7 +69,7 @@
     #ventoy-full
 
     #* webbrowsers
-    google-chrome
+    #google-chrome
     floorp
     #chromium
 

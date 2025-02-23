@@ -166,44 +166,44 @@ in
   nixpkgs.config.allowUnfree = true;
 
   # Stylix
-  stylix = {
-    autoEnable = true;
-    enable = true;
-    image = ./wallpaper.png;
-    base16Scheme = theme;
-
-    fonts = {
-      serif = {
-        package = pkgs.dejavu_fonts;
-        name = "DejaVu Serif";
-      };
-
-      sansSerif = {
-        package = pkgs.dejavu_fonts;
-        name = "DejaVu Sans";
-      };
-
-      monospace = {
-        package = pkgs.dejavu_fonts;
-        name = "DejaVu Sans Mono";
-      };
-
-      emoji = {
-        package = pkgs.joypixels;
-        name = "Joypixels";
-      };
-    };
-    cursor = {
-      package = pkgs.vimix-cursors;
-      name = "Vimix-cursors";
-      size = 24;
-    };
-    targets.qt = {
-        enable = true;
-        platform = "qtct";
-    };
-  };
-  nixpkgs.config.joypixels.acceptLicense = true;
+#  stylix = {
+#    autoEnable = true;
+#    enable = true;
+#    image = ./wallpaper.png;
+#    base16Scheme = theme;
+#
+#    fonts = {
+#      serif = {
+#        package = pkgs.dejavu_fonts;
+#        name = "DejaVu Serif";
+#      };
+#
+#     sansSerif = {
+#        package = pkgs.dejavu_fonts;
+#        name = "DejaVu Sans";
+#      };
+#
+#      monospace = {
+#        package = pkgs.dejavu_fonts;
+#        name = "DejaVu Sans Mono";
+#      };
+#
+#      emoji = {
+#        package = pkgs.joypixels;
+#        name = "Joypixels";
+#      };
+#    };
+#    cursor = {
+#      package = pkgs.vimix-cursors;
+#      name = "Vimix-cursors";
+#      size = 24;
+#    };
+#    targets.qt = {
+#        enable = true;
+#        platform = "qtct";
+#    };
+#   };
+#   nixpkgs.config.joypixels.acceptLicense = true;
 
   # commands after boot
   powerManagement.powerUpCommands = "bluetoothctl connect '24:95:2F:60:BD:94'\n";
