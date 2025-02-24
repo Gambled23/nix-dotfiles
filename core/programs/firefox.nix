@@ -70,7 +70,6 @@
         ublock-origin
         bitwarden
         darkreader
-        vimium
       ];
     };
   };
