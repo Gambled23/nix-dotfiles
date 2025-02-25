@@ -508,7 +508,7 @@ in
       "services.org.kde.konsole.desktop" = {
         "_launch" = "Meta+Return";
       };
-      "floorp.desktop" = {
+      "firefox.desktop" = {
         "_launch" = "Meta+F";
       };
     };

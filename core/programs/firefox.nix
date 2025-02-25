@@ -60,7 +60,18 @@
               ];
             }];
             icon = "''${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
-            definedAliases = [ "@np" ];
+            definedAliases = [ "@nixp" ];
+          };
+          "Nix Options" = {
+            urls = [{
+              template = "https://search.nixos.org/options";
+              params = [
+                { name = "type"; value = "packages"; }
+                { name = "query"; value = "{searchTerms}"; }
+              ];
+            }];
+            icon = "''${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
+            definedAliases = [ "@nixo" ];
           };
           "Bing".metaData.hidden = true;
           "Google".metaData.alias = "@g"; # builtin engines only support specifying one additional alias
@@ -70,6 +81,8 @@
         ublock-origin
         bitwarden
         darkreader
+        refined-github
+
       ];
     };
   };

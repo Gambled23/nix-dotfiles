@@ -70,7 +70,7 @@
 
     #* webbrowsers
     #google-chrome
-    floorp
+    #floorp
     #chromium
 
     #* extras
