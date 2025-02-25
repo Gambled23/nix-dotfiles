@@ -3,9 +3,12 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nur.url = "github:nix-community/NUR";
+    nur.inputs.nixpkgs.follows = "nixpkgs";
+    
     #jovian-nixos.url = "github:Jovian-Experiments/Jovian-NixOS";
-    #nixpkgs-xr.url = "github:nix-community/nixpkgs-xr";
 
+    #nixpkgs-xr.url = "github:nix-community/nixpkgs-xr";
 
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
@@ -20,7 +23,17 @@
     stylix.url = "github:danth/stylix";
   };
 
-  outputs = { self, nixpkgs, home-manager, plasma-manager, spicetify-nix, kde2nix, ... }@inputs:
+  outputs = { 
+      self, 
+      nixpkgs, 
+      home-manager,
+      plasma-manager, 
+      spicetify-nix, 
+      kde2nix, 
+      nur,
+      nixcord,
+      ... 
+     }@inputs:
     let
     specialArgs = {
       inherit spicetify-nix;
@@ -55,6 +68,7 @@
           home-manager.nixosModules.home-manager
           #stylix.nixosModules.stylix
           #jovian-nixos.nixosModules.default
+          nur.modules.nixos.default
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
@@ -83,6 +97,7 @@
           home-manager.nixosModules.home-manager
           #stylix.nixosModules.stylix
           #jovian-nixos.nixosModules.default
+          nur.modules.nixos.default
           {
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;

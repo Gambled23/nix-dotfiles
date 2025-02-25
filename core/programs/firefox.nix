@@ -66,7 +66,7 @@
           "Google".metaData.alias = "@g"; # builtin engines only support specifying one additional alias
         };
       };
-      extensions = with pkgs.nur.repos.rycee.firefox-addons; [
+      extensions.packages = with pkgs.nur.repos.rycee.firefox-addons; [
         ublock-origin
         bitwarden
         darkreader
