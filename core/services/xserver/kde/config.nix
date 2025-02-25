@@ -508,7 +508,7 @@ in
       "services.org.kde.konsole.desktop" = {
         "_launch" = "Meta+Return";
       };
-      "firefox.desktop" = {
+      "services.firefox.desktop" = {
         "_launch" = "Meta+F";
       };
     };

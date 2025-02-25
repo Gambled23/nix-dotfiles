@@ -45,6 +45,7 @@
         "extensions.pocket.oAuthConsumerKey" = "";
         "extensions.pocket.showHome" = false;
         "extensions.pocket.site" = "";
+        "extensions.autoDisableScopes" = 0;
       };
       search = {
         force = true;
@@ -80,9 +81,11 @@
       extensions.packages = with pkgs.nur.repos.rycee.firefox-addons; [
         ublock-origin
         bitwarden
-        darkreader
         refined-github
-
+        sponsorblock
+        return-youtube-dislikes
+        augmented-steam
+        gruvbox-dark-theme
       ];
     };
   };
