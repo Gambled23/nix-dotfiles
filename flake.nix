@@ -35,56 +35,42 @@
       ... 
      }@inputs:
     let
-    specialArgs = {
-      inherit spicetify-nix;
-      inherit inputs;
-    };
-    in {
-    nixosConfigurations = {
-      "dev-gambled" = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        modules = [
-          ./devices/dev/configuration.nix
-          home-manager.nixosModules.home-manager
-          {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.gambled.imports = [
-              ./devices/dev/home.nix
-              inputs.plasma-manager.homeManagerModules.plasma-manager
-              ./core/services/xserver/kde/config.nix
-              spicetify-nix.homeManagerModules.default
-              ./core/programs/spicetify.nix
-            ];
-            home-manager.extraSpecialArgs = specialArgs;
-          }
-        ];
+      specialArgs = {
+        inherit spicetify-nix;
+        inherit inputs;
       };
 
+      commonModules = {
+        home-manager.useGlobalPkgs = true;
+        home-manager.useUserPackages = true;
+        home-manager.users.gambled.imports = [
+          inputs.plasma-manager.homeManagerModules.plasma-manager
+          ./core/services/xserver/kde/config.nix
+
+          spicetify-nix.homeManagerModules.default
+          ./core/programs/spicetify.nix
+
+          inputs.nixcord.homeManagerModules.nixcord
+          ./core/programs/nixcord.nix
+        ];
+        home-manager.extraSpecialArgs = specialArgs;
+      };
+    in {
+
+    nixosConfigurations = {
       "pc-gambled" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = [
           ./devices/pc/configuration.nix
-          home-manager.nixosModules.home-manager
-          #stylix.nixosModules.stylix
           #jovian-nixos.nixosModules.default
+          #stylix.nixosModules.stylix
+          home-manager.nixosModules.home-manager
           nur.modules.nixos.default
+          commonModules
           {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
             home-manager.users.gambled.imports = [
               ./devices/pc/home.nix
-
-              inputs.plasma-manager.homeManagerModules.plasma-manager
-              ./core/services/xserver/kde/config.nix
-
-              spicetify-nix.homeManagerModules.default
-              ./core/programs/spicetify.nix
-
-              inputs.nixcord.homeManagerModules.nixcord
-              ./core/programs/nixcord.nix
             ];
-            home-manager.extraSpecialArgs = specialArgs;
             home-manager.backupFileExtension = "meme";
           }
         ];
@@ -94,26 +80,16 @@
         system = "x86_64-linux";
         modules = [
           ./devices/laptop/configuration.nix
-          home-manager.nixosModules.home-manager
-          #stylix.nixosModules.stylix
           #jovian-nixos.nixosModules.default
+          #stylix.nixosModules.stylix
+          home-manager.nixosModules.home-manager
           nur.modules.nixos.default
+          commonModules
           {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
             home-manager.users.gambled.imports = [
               ./devices/laptop/home.nix
-
-              inputs.plasma-manager.homeManagerModules.plasma-manager
-              ./core/services/xserver/kde/config.nix
-
-              spicetify-nix.homeManagerModules.default
-              ./core/programs/spicetify.nix
-
-              inputs.nixcord.homeManagerModules.nixcord
-              ./core/programs/nixcord.nix
             ];
-            home-manager.extraSpecialArgs = specialArgs;
+            home-manager.backupFileExtension = "meme";
           }
         ];
       };
