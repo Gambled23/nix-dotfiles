@@ -34,7 +34,7 @@ pkgs.writeShellScriptBin "nix-rbd" ''
 
   sudo nixos-rebuild $rebuild_mode
   git add .
-  git commit -m "Update configuration"
+  git commit -m "auto-update $(date)"
   git push
   echo "Rebuild $rebuild_mode complete"
 
