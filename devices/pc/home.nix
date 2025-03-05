@@ -6,7 +6,7 @@
   ...
 }: {
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
-  home.stateVersion = "23.11";
+  home.stateVersion = "25.05";
   imports = [
     ../../home.nix
   ];
@@ -38,11 +38,8 @@
     # utils
     polychromatic
     vulkan-tools
-    zoom-us
 
     # vr
     wlx-overlay-s
-
-    appimage-run
   ];
 }

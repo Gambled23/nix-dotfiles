@@ -40,59 +40,53 @@
         inherit inputs;
       };
 
-      commonModules = {
-        home-manager.useGlobalPkgs = true;
-        home-manager.useUserPackages = true;
-        home-manager.users.gambled.imports = [
-          inputs.plasma-manager.homeManagerModules.plasma-manager
-          ./core/services/xserver/kde/config.nix
+      commonModules = [
+        home-manager.nixosModules.home-manager
+        #stylix.nixosModules.stylix
+        #jovian-nixos.nixosModules.default
+        nur.modules.nixos.default
+        {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.users.gambled.imports = [
+            inputs.plasma-manager.homeManagerModules.plasma-manager
+            ./core/services/xserver/kde/config.nix
+            spicetify-nix.homeManagerModules.default
+            ./core/programs/spicetify.nix
+            inputs.nixcord.homeManagerModules.nixcord
+            ./core/programs/nixcord.nix
+          ];
+          home-manager.extraSpecialArgs = specialArgs;
+        }
+      ];
 
-          spicetify-nix.homeManagerModules.default
-          ./core/programs/spicetify.nix
-
-          inputs.nixcord.homeManagerModules.nixcord
-          ./core/programs/nixcord.nix
-        ];
-        home-manager.extraSpecialArgs = specialArgs;
-      };
     in {
+      nixosConfigurations = {
+        "pc-gambled" = nixpkgs.lib.nixosSystem {
+          system = "x86_64-linux";
+          modules = commonModules ++ [
+            ./devices/pc/configuration.nix
+            {
+              home-manager.users.gambled.imports = [
+                ./devices/pc/home.nix
+              ];
+              home-manager.backupFileExtension = "meme";
+            }
+          ];
+        };
 
-    nixosConfigurations = {
-      "pc-gambled" = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        modules = [
-          ./devices/pc/configuration.nix
-          #jovian-nixos.nixosModules.default
-          #stylix.nixosModules.stylix
-          home-manager.nixosModules.home-manager
-          nur.modules.nixos.default
-          commonModules
-          {
-            home-manager.users.gambled.imports = [
-              ./devices/pc/home.nix
-            ];
-            home-manager.backupFileExtension = "meme";
-          }
-        ];
-      };
-
-      "laptop-gambled" = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        modules = [
-          ./devices/laptop/configuration.nix
-          #jovian-nixos.nixosModules.default
-          #stylix.nixosModules.stylix
-          home-manager.nixosModules.home-manager
-          nur.modules.nixos.default
-          commonModules
-          {
-            home-manager.users.gambled.imports = [
-              ./devices/laptop/home.nix
-            ];
-            home-manager.backupFileExtension = "meme";
-          }
-        ];
+        "laptop-gambled" = nixpkgs.lib.nixosSystem {
+          system = "x86_64-linux";
+          modules = commonModules ++ [
+            ./devices/laptop/configuration.nix
+            {
+              home-manager.users.gambled.imports = [
+                ./devices/laptop/home.nix
+              ];
+              home-manager.backupFileExtension = "meme";
+            }
+          ];
+        };
       };
     };
-  };
 }

@@ -9,7 +9,6 @@
     ./hardware-configuration.nix
     #./symlinks.nix
 
-    ../../core/programs/steam.nix
     # bootloader
     #../../core/bootloader/systemd.nix
     ../../core/bootloader/grub.nix

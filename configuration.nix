@@ -5,12 +5,13 @@ in
 {
   imports = [
     # Global services
+    ./core/services/glances.nix
     ./core/services/mysql.nix
     ./core/services/openssh.nix
-    ./core/services/zerotier.nix
+    ./core/programs/steam.nix
     ./core/services/sunshine.nix
-    ./core/services/glances.nix
     ./core/services/syncthing.nix
+    ./core/services/zerotier.nix
 
     # Desktop enviroment
     ./core/services/xserver/kde/default.nix
