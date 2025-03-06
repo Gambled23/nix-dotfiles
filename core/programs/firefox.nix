@@ -92,7 +92,6 @@
       bookmarks = [
         {
           name = "Google";
-          toolbar = true;
           bookmarks = [
             {
               name = "Photos";
@@ -122,7 +121,6 @@
         }
         {
           name = "Stuff";
-          toolbar = true;
           bookmarks = [
             {
               name = "Resoomer";
@@ -144,7 +142,6 @@
         }
         {
           name = "Code";
-          toolbar = true;
           bookmarks = [
             {
               name = "Material Theme Builder";
@@ -174,7 +171,6 @@
         }
         {
           name = "Guitar";
-          toolbar = true;
           bookmarks = [
             {
               name = "Mi otra mitad";
@@ -209,16 +205,6 @@
               url = "https://www.youtube.com/watch?v=sX3dqStq0ag";
             }
           ];
-        }
-        {
-          name = "wikipedia";
-          tags = [ "wiki" ];
-          keyword = "wiki";
-          url = "https://en.wikipedia.org/wiki/Special:Search?search=%s&go=Go";
-        }
-        {
-          name = "kernel.org";
-          url = "https://www.kernel.org";
         }
       ];
     };
