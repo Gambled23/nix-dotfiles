@@ -62,6 +62,7 @@
     scrcpy
     nextcloud-client
     ticktick
+    zoom-us
     #keyguard
     #gnome.simple-scan
     #logseq

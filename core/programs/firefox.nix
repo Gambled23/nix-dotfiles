@@ -92,6 +92,7 @@
       bookmarks = [
         {
           name = "Google";
+          toolbar = true;
           bookmarks = [
             {
               name = "Photos";
@@ -121,6 +122,7 @@
         }
         {
           name = "Stuff";
+          toolbar = true;
           bookmarks = [
             {
               name = "Resoomer";
