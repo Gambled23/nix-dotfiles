@@ -25,7 +25,7 @@
     #zed-editor
     tmux
     lazygit
-    #fzf
+    fzf
 
     #* dev languages
     #kotlin
