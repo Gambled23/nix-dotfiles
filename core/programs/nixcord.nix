@@ -30,7 +30,7 @@
         friendsSince.enable = true;
         fullSearchContext.enable = true;
         fullUserInChatbox.enable = true;
-        gameActivityToggle.enable = true;
+        #gameActivityToggle.enable = true;
         implicitRelationships.enable = true;
         lastFMRichPresence = {
           enable = true;
@@ -51,6 +51,7 @@
         validReply.enable = true;
         validUser.enable = true;
         viewIcons.enable = true;
+        volumeBooster.enable = true;
         webScreenShareFixes.enable = true;
         whoReacted.enable = true;
       };
