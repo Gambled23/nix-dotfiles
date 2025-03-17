@@ -6,7 +6,7 @@
     nur.url = "github:nix-community/NUR";
     nur.inputs.nixpkgs.follows = "nixpkgs";
     
-    #jovian-nixos.url = "github:Jovian-Experiments/Jovian-NixOS";
+    jovian-nixos.url = "github:Jovian-Experiments/Jovian-NixOS";
 
     #nixpkgs-xr.url = "github:nix-community/nixpkgs-xr";
 
@@ -17,7 +17,7 @@
     plasma-manager.inputs.nixpkgs.follows = "nixpkgs";
     plasma-manager.inputs.home-manager.follows = "home-manager";
 
-    kde2nix.url = "github:nix-community/kde2nix";
+    #kde2nix.url = "github:nix-community/kde2nix";
     nixcord.url = "github:kaylorben/nixcord";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
     stylix.url = "github:danth/stylix";
@@ -29,9 +29,10 @@
       home-manager,
       plasma-manager, 
       spicetify-nix, 
-      kde2nix, 
+      #kde2nix, 
       nur,
       nixcord,
+      jovian-nixos,
       ... 
      }@inputs:
     let
@@ -43,7 +44,7 @@
       commonModules = [
         home-manager.nixosModules.home-manager
         #stylix.nixosModules.stylix
-        #jovian-nixos.nixosModules.default
+        jovian-nixos.nixosModules.default
         nur.modules.nixos.default
         {
           home-manager.useGlobalPkgs = true;
@@ -62,6 +63,7 @@
 
     in {
       nixosConfigurations = {
+
         "pc-gambled" = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           modules = commonModules ++ [
@@ -75,6 +77,7 @@
           ];
         };
 
+
         "laptop-gambled" = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
           modules = commonModules ++ [
@@ -87,6 +90,7 @@
             }
           ];
         };
+
       };
     };
 }

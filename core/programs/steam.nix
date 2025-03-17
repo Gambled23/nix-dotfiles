@@ -17,17 +17,17 @@ in
 
   #programs.gamemode.enable = true;
 
-  #jovian = {
-  #  steam = {
-  #    enable = true;
-  #    # autoStart = true;
-  #    desktopSession = "gamescope-wayland";
-  #    user = "gambled";
-  #  };
-  #  decky-loader = {
-  #    enable = true;
-  #    user = "gambled";
-  #  };
-  #  hardware.has.amd.gpu = true;
-  #};
+  jovian = {
+   steam = {
+     enable = true;
+     # autoStart = true;
+     desktopSession = "plasma";
+     user = "gambled";
+   };
+   decky-loader = {
+     enable = true;
+     user = "gambled";
+   };
+   #hardware.has.amd.gpu = true;
+  };
 }
