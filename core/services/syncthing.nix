@@ -40,5 +40,11 @@
       };
     };
 
+    settings.devices = {
+      "home-gambled" = {
+        id = "IJSFZTV-LJ2AHAT-4TZGE56-3CE5EHO-C5AGHH5-VVU5VQE-HQTKIDH-CIUYTAI";
+        name = "home-gambled";
+      };
+    };
   };
 }
