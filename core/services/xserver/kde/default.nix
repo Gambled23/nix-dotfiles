@@ -30,6 +30,7 @@ with lib;
   #---------------------------------------------------------------------
   environment.systemPackages = with pkgs; [
     kde-rounded-corners
+    kdePackages.wallpaper-engine-plugin
     kdePackages.krohnkite
     kdePackages.plasma-browser-integration
     kdePackages.kaccounts-integration
