@@ -10,9 +10,8 @@
     vesktop.enable = true;
     config = {
       themeLinks = [
-        "https://markchan0225.github.io/RoundedDiscord/RoundedDiscord.theme.css"
-        "https://raw.githubusercontent.com/DiscordStyles/RadialStatus/deploy/RadialStatus.theme.css"
         "https://raw.githubusercontent.com/mwittrien/BetterDiscordAddons/refs/heads/master/Themes/SettingsModal/SettingsModal.theme.css"
+        "https://raw.githubusercontent.com/refact0r/system24/refs/heads/main/theme/flavors/gruvbox-material.theme.css"
       ];
 
       plugins = {
