@@ -55,7 +55,7 @@ in
                 "applications:miru.desktop"
                 "applications:code.desktop"
                 "applications:dbeaver.desktop"
-                "applications:stremio.desktop"
+                # "applications:stremio.desktop"
               ];
             };
           }
