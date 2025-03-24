@@ -29,7 +29,7 @@
         friendsSince.enable = true;
         fullSearchContext.enable = true;
         fullUserInChatbox.enable = true;
-        #gameActivityToggle.enable = true;
+        gameActivityToggle.enable = true;
         implicitRelationships.enable = true;
         lastFMRichPresence = {
           enable = true;
