@@ -5,13 +5,21 @@ with lib;
 {
   services.desktopManager.plasma6.enable = true;
   services.displayManager.defaultSession = "plasma";
-  services.displayManager.sddm = {
-    enable = true;
-    autoNumlock = true;
-    # theme = "breeze";
-    wayland.enable = true;
-    wayland.compositor = "kwin";
-  };
+  # services.displayManager.sddm = {
+  #   enable = true;
+  #   autoNumlock = true;
+  #   # theme = "breeze";
+  #   wayland.enable = true;
+  #   wayland.compositor = "kwin";
+  # };
+  services.displayManager.autoLogin.enable = true;
+  services.displayManager.autoLogin.user = "gambled";
+  services.xserver.displayManager = { 
+  lightdm = { 
+    enable = true; 
+    greeter.enable = false;
+  }; 
+};
   services.xserver = {
     # Scaling factor for fonts and graphical elements on the screen
     dpi = 98;
@@ -45,7 +53,7 @@ with lib;
     kdePackages.kio-extras
     kdePackages.ktorrent
     kdePackages.libktorrent
-    kdePackages.kdenlive
+    #kdePackages.kdenlive
     kdePackages.merkuro
     kdePackages.kclock
     kdePackages.kalk

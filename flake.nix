@@ -31,7 +31,7 @@
       spicetify-nix, 
       #kde2nix, 
       nur,
-      nixcord,
+      #nixcord,
       jovian-nixos,
       ... 
      }@inputs:
@@ -54,8 +54,8 @@
             ./core/services/xserver/kde/config.nix
             spicetify-nix.homeManagerModules.default
             ./core/programs/spicetify.nix
-            inputs.nixcord.homeManagerModules.nixcord
-            ./core/programs/nixcord.nix
+            # inputs.nixcord.homeManagerModules.nixcord
+            # ./core/programs/nixcord.nix
           ];
           home-manager.extraSpecialArgs = specialArgs;
         }
