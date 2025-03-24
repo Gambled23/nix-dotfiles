@@ -5,7 +5,7 @@ in
 {
   programs.spicetify = {
     enable = true;
-    # theme = spicePkgs.themes.lucid;
+    theme = spicePkgs.themes.text;
 
     enabledCustomApps = with spicePkgs.apps; [
       newReleases
