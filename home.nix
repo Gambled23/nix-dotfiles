@@ -55,13 +55,13 @@
     unrar
     p3x-onenote
     protontricks
-    galaxy-buds-client
-    jellyfin-ffmpeg
+    #galaxy-buds-client
+    #jellyfin-ffmpeg
     android-tools
     libreoffice
     scrcpy
     nextcloud-client
-    ticktick
+    #ticktick
     zoom-us
     #keyguard
     #gnome.simple-scan

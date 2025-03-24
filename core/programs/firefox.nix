@@ -15,7 +15,7 @@
         "browser.toolbars.bookmarks.visibility" = "always";
         # Hardware acceleration
         "gfx.webrender.all" = true;
-        "media.ffmpeg.vaapi.enabled" = true;
+        #"media.ffmpeg.vaapi.enabled" = true;
         # Privacy settings
         "privacy.donottrackheader.enabled" = true;
         "privacy.trackingprotection.enabled" = true;

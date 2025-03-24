@@ -20,6 +20,7 @@ in
     #./core/services/xserver/awesome/awesomewm.nix
   ];
 
+  nix.settings.download-buffer-size = 524288000;
   boot.extraModulePackages = with config.boot.kernelPackages; [
     v4l2loopback
   ];
