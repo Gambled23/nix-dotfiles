@@ -51,8 +51,8 @@
       };
       search = {
         force = true;
-        default = "Google";
-        order = [ "Google" ];
+        default = "google";
+        order = [ "google" ];
         engines = {
           "Nix Packages" = {
             urls = [{
@@ -76,8 +76,7 @@
             icon = "''${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
             definedAliases = [ "@nixo" ];
           };
-          "Bing".metaData.hidden = true;
-          "Google".metaData.alias = "@g"; # builtin engines only support specifying one additional alias
+          "google".metaData.alias = "@g"; # builtin engines only support specifying one additional alias
         };
       };
       extensions.packages = with pkgs.nur.repos.rycee.firefox-addons; [
@@ -89,126 +88,129 @@
         augmented-steam
         gruvbox-dark-theme
       ];
-      bookmarks = [
-        {
-          name = "Google";
-          toolbar = true;
-          bookmarks = [
-            {
-              name = "Photos";
-              url = "https://photos.google.com/";
-            }
-            {
-              name = "Calendar";
-              url = "https://calendar.google.com/";
-            }
-            {
-              name = "Drive";
-              url = "https://drive.google.com/";
-            }
-            {
-              name = "Maps";
-              url = "https://www.google.com/maps";
-            }
-            {
-              name = "Keep";
-              url = "https://keep.google.com/";
-            }
-            {
-              name = "Gmail";
-              url = "https://mail.google.com/";
-            }
-          ];
-        }
-        {
-          name = "Stuff";
-          toolbar = true;
-          bookmarks = [
-            {
-              name = "Resoomer";
-              url = "https://resoomer.com/es/";
-            }
-            {
-              name = "Fake mail";
-              url = "https://www.guerrillamail.com/es/inbox?mail_id=528729674";
-            }
-            {
-              name = "Scribbr";
-              url = "https://www.scribbr.es/citar/generador/apa/";
-            }
-            {
-              name = "Skinport";
-              url = "https://skinport.com/";
-            }
-          ];
-        }
-        {
-          name = "Code";
-          bookmarks = [
-            {
-              name = "Material Theme Builder";
-              url = "https://www.figma.com/design/XOmxjkFAVpfUEF7FKmlo5P/Material-Theme-Builder-playground-(Copy)?node-id=0-1";
-            }
-            {
-              name = "Bootstrap components";
-              url = "https://fastbootstrap.com/components/pills/#";
-            }
-            {
-              name = "Material icons";
-              url = "https://fonts.google.com/icons?icon.platform=web";
-            }
-            {
-              name = "SVG free";
-              url = "https://undraw.co/search";
-            }
-            {
-              name = "UIverse";
-              url = "https://uiverse.io/";
-            }
-            {
-              name = "Neobrutalism";
-              url = "https://www.neobrutalism.dev/";
-            }
-          ];
-        }
-        {
-          name = "Guitar";
-          bookmarks = [
-            {
-              name = "Mi otra mitad";
-              url = "https://www.tiktok.com/@.tikrocker/video/7372672445217606945/";
-            }
-            {
-              name = "Podria estar peor";
-              url = "https://www.youtube.com/watch?v=dCncPADeUH0";
-            }
-            {
-              name = "Esquemas";
-              url = "https://www.youtube.com/watch?v=LMrzogSM-wA&list=PLH2OGc6yjJ8rFJI-BFPlcVroTIrNcx6SE&index=12";
-            }
-            {
-              name = "Haz lo que quieras conmigo";
-              url = "https://www.youtube.com/watch?v=wIaXlMtoqwA&t=107s";
-            }
-            {
-              name = "Los niños del parque";
-              url = "https://www.youtube.com/watch?v=T9NyVcYBrKs&t=13s";
-            }
-            {
-              name = "Mirame";
-              url = "https://www.youtube.com/watch?v=SqEcDruhnKg&t=115s";
-            }
-            {
-              name = "Chord progression";
-              url = "https://www.youtube.com/watch?v=bu88LIPzRbs";
-            }
-            {
-              name = "Improvisation";
-              url = "https://www.youtube.com/watch?v=sX3dqStq0ag";
-            }
-          ];
-        }
-      ];
+      bookmarks = {
+        force = true;
+        settings = [
+          {
+            name = "Google";
+            toolbar = true;
+            bookmarks = [
+              {
+                name = "Photos";
+                url = "https://photos.google.com/";
+              }
+              {
+                name = "Calendar";
+                url = "https://calendar.google.com/";
+              }
+              {
+                name = "Drive";
+                url = "https://drive.google.com/";
+              }
+              {
+                name = "Maps";
+                url = "https://www.google.com/maps";
+              }
+              {
+                name = "Keep";
+                url = "https://keep.google.com/";
+              }
+              {
+                name = "Gmail";
+                url = "https://mail.google.com/";
+              }
+            ];
+          }
+          {
+            name = "Stuff";
+            toolbar = true;
+            bookmarks = [
+              {
+                name = "Resoomer";
+                url = "https://resoomer.com/es/";
+              }
+              {
+                name = "Fake mail";
+                url = "https://www.guerrillamail.com/es/inbox?mail_id=528729674";
+              }
+              {
+                name = "Scribbr";
+                url = "https://www.scribbr.es/citar/generador/apa/";
+              }
+              {
+                name = "Skinport";
+                url = "https://skinport.com/";
+              }
+            ];
+          }
+          {
+            name = "Code";
+            bookmarks = [
+              {
+                name = "Material Theme Builder";
+                url = "https://www.figma.com/design/XOmxjkFAVpfUEF7FKmlo5P/Material-Theme-Builder-playground-(Copy)?node-id=0-1";
+              }
+              {
+                name = "Bootstrap components";
+                url = "https://fastbootstrap.com/components/pills/#";
+              }
+              {
+                name = "Material icons";
+                url = "https://fonts.google.com/icons?icon.platform=web";
+              }
+              {
+                name = "SVG free";
+                url = "https://undraw.co/search";
+              }
+              {
+                name = "UIverse";
+                url = "https://uiverse.io/";
+              }
+              {
+                name = "Neobrutalism";
+                url = "https://www.neobrutalism.dev/";
+              }
+            ];
+          }
+          {
+            name = "Guitar";
+            bookmarks = [
+              {
+                name = "Mi otra mitad";
+                url = "https://www.tiktok.com/@.tikrocker/video/7372672445217606945/";
+              }
+              {
+                name = "Podria estar peor";
+                url = "https://www.youtube.com/watch?v=dCncPADeUH0";
+              }
+              {
+                name = "Esquemas";
+                url = "https://www.youtube.com/watch?v=LMrzogSM-wA&list=PLH2OGc6yjJ8rFJI-BFPlcVroTIrNcx6SE&index=12";
+              }
+              {
+                name = "Haz lo que quieras conmigo";
+                url = "https://www.youtube.com/watch?v=wIaXlMtoqwA&t=107s";
+              }
+              {
+                name = "Los niños del parque";
+                url = "https://www.youtube.com/watch?v=T9NyVcYBrKs&t=13s";
+              }
+              {
+                name = "Mirame";
+                url = "https://www.youtube.com/watch?v=SqEcDruhnKg&t=115s";
+              }
+              {
+                name = "Chord progression";
+                url = "https://www.youtube.com/watch?v=bu88LIPzRbs";
+              }
+              {
+                name = "Improvisation";
+                url = "https://www.youtube.com/watch?v=sX3dqStq0ag";
+              }
+            ];
+          }
+        ];
+      };
     };
   };
 
