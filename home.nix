@@ -52,6 +52,7 @@
     zerotierone
 
     #* utils
+    keyguard
     unrar
     p3x-onenote
     protontricks
