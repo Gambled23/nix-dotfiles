@@ -3,7 +3,7 @@
 with lib;
 
 {
-  services.openrgb = {
+  services.hardware.openrgb = {
     enable = true;
     motherboard = "amd";
   };
