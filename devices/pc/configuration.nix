@@ -14,6 +14,7 @@
     #../../core/services/suwayomi.nix
     #../../core/services/xrdp.nix
     ../../core/services/wakeonlan.nix
+    ../../core/services/openrgb.nix
 
     # bootloader
     #../../core/bootloader/systemd.nix
