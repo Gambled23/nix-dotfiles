@@ -31,7 +31,13 @@
         }
         {
           name = "MoonDeckStream";
-          command = "MoonDeckStream";
+          prep-cmd = [
+            {
+              do = "MoonDeckStream";
+              undo = "modo-tele disable";
+            }
+          ];
+          commands = "MoonDeckStream";
         }
       ];
     };
