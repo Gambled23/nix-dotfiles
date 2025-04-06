@@ -113,7 +113,7 @@ in
     (import ./scripts/dev/mysqlSetupRoot.nix { inherit pkgs; })
     (import ./scripts/dev/sigi.nix { inherit pkgs; })
     (import ./scripts/dev/modular-prod-backup.nix { inherit pkgs; })
-    (callPackage ./nixpkgs/pkgs/moondeckbuddy.nix {})
+    # (callPackage ./nixpkgs/pkgs/moondeckbuddy.nix {})
   ];
 
   system.autoUpgrade.enable = true;
@@ -215,4 +215,5 @@ in
 
   # commands after boot
   powerManagement.powerUpCommands = "bluetoothctl connect '24:95:2F:60:BD:94'\n";
+  boot.tmp.useTmpfs = false;
 }

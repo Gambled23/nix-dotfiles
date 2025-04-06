@@ -37,7 +37,7 @@
 
     # utils
     polychromatic
-    vulkan-tools
+    #vulkan-tools
 
     # vr
     wlx-overlay-s

@@ -11,7 +11,8 @@
     config = {
       themeLinks = [
         "https://raw.githubusercontent.com/mwittrien/BetterDiscordAddons/refs/heads/master/Themes/SettingsModal/SettingsModal.theme.css"
-        "https://raw.githubusercontent.com/refact0r/system24/refs/heads/main/theme/flavors/gruvbox-material.theme.css"
+        #"https://raw.githubusercontent.com/refact0r/system24/refs/heads/main/theme/flavors/gruvbox-material.theme.css"
+        "https://raw.githubusercontent.com/shvedes/discord-gruvbox/refs/heads/main/gruvbox-dark.theme.css"
       ];
 
       plugins = {

@@ -4,22 +4,18 @@ with lib;
 
 {
   services.desktopManager.plasma6.enable = true;
-  services.displayManager.defaultSession = "plasma";
-  # services.displayManager.sddm = {
-  #   enable = true;
-  #   autoNumlock = true;
-  #   # theme = "breeze";
-  #   wayland.enable = true;
-  #   wayland.compositor = "kwin";
-  # };
-  services.displayManager.autoLogin.enable = true;
-  services.displayManager.autoLogin.user = "gambled";
-  services.xserver.displayManager = { 
-  lightdm = { 
-    enable = true; 
-    greeter.enable = false;
-  }; 
-};
+
+  services.displayManager = {
+    autoLogin.enable = true;
+    autoLogin.user = "gambled";
+    sddm = {
+      enable = true;
+      autoNumlock = true;
+      # theme = "breeze";
+      wayland.enable = true;
+    };
+  };
+
   services.xserver = {
     # Scaling factor for fonts and graphical elements on the screen
     dpi = 98;
@@ -31,6 +27,15 @@ with lib;
       layout = "us";
       variant = "altgr-intl";
     };
+
+    #DM
+    displayManager = { 
+      # lightdm = { 
+      #   enable = true; 
+      #   greeter.enable = false;
+      #   extraConfig = "logind-check-graphical=true";
+      # }; 
+    };
   };
 
   #---------------------------------------------------------------------
@@ -38,7 +43,6 @@ with lib;
   #---------------------------------------------------------------------
   environment.systemPackages = with pkgs; [
     kde-rounded-corners
-    kdePackages.wallpaper-engine-plugin
     kdePackages.krohnkite
     kdePackages.plasma-browser-integration
     kdePackages.kaccounts-integration
@@ -63,6 +67,7 @@ with lib;
     qt6.qtwebengine
     kdePackages.dolphin-plugins
     kdePackages.kate
+    kdePackages.qtwayland
 
     # Themes
     #kdePackages.kde-gtk-config
