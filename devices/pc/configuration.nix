@@ -62,7 +62,7 @@
   systemd.services.lactd.wantedBy = ["multi-user.target"];
 
   # Connect to bluetooth after resume
-  powerManagement.resumeCommands = ''
-    bluetoothctl connect 24:95:2F:60:BD:94
-  '';
+  # powerManagement.resumeCommands = ''
+  #   bluetoothctl connect 24:95:2F:60:BD:94
+  # '';
 }
