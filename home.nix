@@ -45,7 +45,7 @@
 
     #* messaging
     #vesktop
-    zapzap
+    whatsapp-for-linux
     materialgram
 
     #* networking
