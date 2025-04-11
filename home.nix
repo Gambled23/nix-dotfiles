@@ -54,6 +54,7 @@
     scrcpy
     nextcloud-client
     zoom-us
+    koreader
     #logseq
 
     #* webbrowsers
