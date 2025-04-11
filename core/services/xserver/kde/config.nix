@@ -625,6 +625,18 @@ in
     Type=Application
     Version=1.4
   '';
+
+  home.file.".config/autostart/bluetooth.desktop".text = ''
+    [Desktop Entry]
+    Categories=Audio;Devices
+    Exec=bluetoothctl connect 24:95:2F:60:BD:94
+    GenericName=Connect to bluethooth
+    Icon=vesktop
+    Keywords=bluethooth
+    Name=bluethooth-android
+    Type=Application
+    Version=1.0
+  '';
   # END: Autostart apps
 
 
