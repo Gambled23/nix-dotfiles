@@ -20,7 +20,7 @@
     komikku
 
     # dev tools
-    android-studio
+    #android-studio
     #cmake
 
     # games
@@ -39,7 +39,5 @@
     polychromatic
     #vulkan-tools
 
-    # vr
-    wlx-overlay-s
   ];
 }

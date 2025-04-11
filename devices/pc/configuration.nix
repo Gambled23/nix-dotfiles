@@ -21,6 +21,11 @@
     ../../core/bootloader/grub.nix
   ];
 
+  environment.systemPackages = with pkgs; [
+    lact
+    (import ../../scripts/reboot-to-windows.nix { inherit pkgs; })
+  ];
+  
   # amdgpu
   boot.initrd.kernelModules = [ "amdgpu" ];
   hardware.graphics = {
@@ -28,6 +33,7 @@
     enable32Bit = true;
   };
   services.xserver.enable = true;
+
   #services.xserver.videoDrivers = [ "amdgpu" ];
   # hardware.graphics.extraPackages = with pkgs; [
   #   amdvlk
@@ -57,7 +63,6 @@
   # virtualisation.vmware.host.enable = true; # vmware
   virtualisation.waydroid.enable = true; # Waydroid
   # for gpu overclock
-  environment.systemPackages = with pkgs; [ lact ];
   systemd.packages = with pkgs; [ lact ];
   systemd.services.lactd.wantedBy = ["multi-user.target"];
 

@@ -22,14 +22,8 @@
     #* dev tools
     dbeaver-bin
     vscode
-    #zed-editor
-    tmux
     lazygit
     fzf
-
-    #* dev languages
-    #kotlin
-    #zulu #java
 
     #* media
     miru
@@ -44,7 +38,6 @@
     obs-studio
 
     #* messaging
-    #vesktop
     whatsapp-for-linux
     materialgram
 
@@ -52,8 +45,6 @@
     zerotierone
 
     #* utils
-    keyguard
-    unrar
     p3x-onenote
     protontricks
     #galaxy-buds-client
@@ -62,13 +53,8 @@
     libreoffice
     scrcpy
     nextcloud-client
-    #ticktick
     zoom-us
-    #keyguard
-    #gnome.simple-scan
     #logseq
-    #rquickshare
-    #ventoy-full
 
     #* webbrowsers
     #google-chrome
@@ -80,10 +66,6 @@
     lxde.lxsession
     neofetch
     zsh
-
-    #* algoritmos
-    #weka
-    #python312Packages.orange3
 
     #* guitarra
     guitarix
