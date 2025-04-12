@@ -26,7 +26,7 @@
 
   fileSystems."/games" = { 
     device = "/dev/disk/by-label/games";
-    fsType = "ntfs"; 
+    fsType = "ext4"; 
     options = [ "rw" "uid=1000"];
   };
 
