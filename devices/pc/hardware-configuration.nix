@@ -24,6 +24,12 @@
       options = [ "fmask=0077" "dmask=0077" ];
     };
 
+  fileSystems."/games" = { 
+    device = "/dev/disk/by-label/games";
+    fsType = "ntfs"; 
+    options = [ "rw" "uid=1000"];
+  };
+
   fileSystems."/hdd" = { 
     #device = "/dev/disk/by-uuid/868E593D8E5926C9";
     device = "/dev/disk/by-label/HDD";
