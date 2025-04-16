@@ -76,6 +76,17 @@
             icon = "''${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
             definedAliases = [ "@nixo" ];
           };
+          "Nix home manager" = {
+            urls = [{
+              template = "https://home-manager-options.extranix.com/";
+              params = [
+                { name = "type"; value = "packages"; }
+                { name = "query"; value = "{searchTerms}"; }
+              ];
+            }];
+            icon = "''${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
+            definedAliases = [ "@nixh" ];
+          };
           "google".metaData.alias = "@g"; # builtin engines only support specifying one additional alias
         };
       };

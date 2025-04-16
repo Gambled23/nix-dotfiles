@@ -38,6 +38,7 @@
     # utils
     polychromatic
     #vulkan-tools
+    pdfarranger
 
   ];
 }

@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ config, pkgs, lib, inputs, outputs, ... }:
 let
   elias = "joto";
 in
