@@ -28,7 +28,7 @@ in
      enable = true;
      user = "gambled";
    };
-  # hardware.has.amd.gpu = true;
+  hardware.has.amd.gpu = true;
   };
   system.userActivationScripts.linktosharedfolder.text = ''
     if [[ ! -h "$HOME/.homebrew" ]]; then

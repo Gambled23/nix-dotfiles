@@ -119,11 +119,20 @@ in
   system.autoUpgrade.enable = true;
   system.autoUpgrade.allowReboot = true;
 
+  users.groups.nixosvmtest = {};
   users.users = {
     gambled = {
       isNormalUser = true;
       description = "César Girón";
-      extraGroups = [ "networkmanager" "wheel" "adbusers" "audio" "jackaudio"];
+      initialPassword = "test";
+      extraGroups = [ "networkmanager" "wheel" "adbusers" "audio" "jackaudio" "nixosvmtest"];
+    };
+    nixosvmtest = {
+      isSystemUser = true;
+      description = "Nixos VM Test";
+      initialPassword = "test";
+      group = "nixosvmtest";
+      extraGroups = [ "networkmanager" "wheel" "adbusers" "audio" "jackaudio" "nixosvmtest"];
     };
   };
 
@@ -214,6 +223,13 @@ in
 #   nixpkgs.config.joypixels.acceptLicense = true;
 
   # commands after boot
-  powerManagement.powerUpCommands = "bluetoothctl connect '24:95:2F:60:BD:94'\n";
+  # powerManagement.powerUpCommands = "bluetoothctl connect '24:95:2F:60:BD:94'\n";
   boot.tmp.useTmpfs = false;
+  virtualisation.vmVariant = {
+    # following configuration is added only when building VM with build-vm
+    virtualisation = {
+      memorySize =  2048; # Use 2048MiB memory.
+      cores = 3;         
+    };
+  };
 }

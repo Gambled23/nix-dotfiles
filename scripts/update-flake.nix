@@ -5,9 +5,6 @@ pkgs.writeShellScriptBin "update-flake" ''
   set -e
 
   cd /etc/nixos/
+  mv flake.lock flakeold.lock
   sudo nix flake update
-  aps boot
-  
-  agc
-  reboot
 ''
