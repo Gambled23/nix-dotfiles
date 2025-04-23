@@ -42,6 +42,7 @@ with lib;
   # System Packages Configuration
   #---------------------------------------------------------------------
   environment.systemPackages = with pkgs; [
+    plasma-panel-colorizer
     kde-rounded-corners
     kdePackages.krohnkite
     kdePackages.plasma-browser-integration
