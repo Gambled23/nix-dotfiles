@@ -23,19 +23,19 @@ with lib;
     exportConfiguration = true;
 
     # keyboard layout
-    xkb = {
-      layout = "us";
-      variant = "altgr-intl";
-    };
+    # xkb = {
+    #   layout = "us";
+    #   variant = "altgr-intl";
+    # };
 
     #DM
-    displayManager = { 
-      # lightdm = { 
-      #   enable = true; 
-      #   greeter.enable = false;
-      #   extraConfig = "logind-check-graphical=true";
-      # }; 
-    };
+    # displayManager = { 
+    #   # lightdm = { 
+    #   #   enable = true; 
+    #   #   greeter.enable = false;
+    #   #   extraConfig = "logind-check-graphical=true";
+    #   # }; 
+    # };
   };
 
   #---------------------------------------------------------------------
@@ -82,6 +82,7 @@ with lib;
 
     # widgets
     plasmusic-toolbar
+    kdePackages.plasma-workspace
   ];
 
   qt.style = "kvantum";

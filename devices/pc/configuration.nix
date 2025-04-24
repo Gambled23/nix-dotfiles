@@ -1,6 +1,6 @@
 { config, pkgs, lib, inputs, outputs, ... }:
 {
-  system.stateVersion = "23.11";
+  system.stateVersion = "25.05";
   networking.hostName = "pc-gambled";
   imports = [
     ../../configuration.nix
@@ -13,8 +13,8 @@
     #../../core/services/docker.nix
     #../../core/services/suwayomi.nix
     #../../core/services/xrdp.nix
-    ../../core/services/wakeonlan.nix
-    ../../core/services/openrgb.nix
+    # ../../core/services/wakeonlan.nix
+    # ../../core/services/openrgb.nix
 
     # bootloader
     #../../core/bootloader/systemd.nix
@@ -44,27 +44,27 @@
   # ];
   #hardware.amdgpu.amdvlk.enable = true;
 
-  boot.kernelParams = [
-    "quiet"
-    "splash"
-    "rd.systemd.show_status=false"
-    "rd.udev.log_level=3"
-    "udev.log_priority=3"
-    "boot.shell_on_fail"
-  ];
+  # boot.kernelParams = [
+  #   "quiet"
+  #   "splash"
+  #   "rd.systemd.show_status=false"
+  #   "rd.udev.log_level=3"
+  #   "udev.log_priority=3"
+  #   "boot.shell_on_fail"
+  # ];
 
   # open razer
-  hardware.openrazer.enable = true;
-  hardware.openrazer.users = ["gambled"];
+  # hardware.openrazer.enable = true;
+  # hardware.openrazer.users = ["gambled"];
 
   # programs.droidcam.enable = true;
 
   # virtualisation
   # virtualisation.vmware.host.enable = true; # vmware
-  virtualisation.waydroid.enable = true; # Waydroid
+  # virtualisation.waydroid.enable = true; # Waydroid
   # for gpu overclock
-  systemd.packages = with pkgs; [ lact ];
-  systemd.services.lactd.wantedBy = ["multi-user.target"];
+  # systemd.packages = with pkgs; [  ];
+  # systemd.services.lactd.wantedBy = ["multi-user.target"];
 
   # Connect to bluetooth after resume
   # powerManagement.resumeCommands = ''

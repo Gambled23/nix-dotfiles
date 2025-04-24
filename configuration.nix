@@ -3,50 +3,51 @@ let
 theme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
 in
 {
+  hardware.enableRedistributableFirmware = true;
   imports = [
     # Global services
-    ./core/services/glances.nix
-    ./core/services/mysql.nix
-    ./core/services/openssh.nix
-    ./core/programs/steam.nix
-    ./core/services/sunshine.nix
-    ./core/services/syncthing.nix
-    ./core/services/zerotier.nix
+    # ./core/services/glances.nix
+    # ./core/services/mysql.nix
+    # ./core/services/openssh.nix
+    # ./core/programs/steam.nix
+    # ./core/services/sunshine.nix
+    # ./core/services/syncthing.nix
+    # ./core/services/zerotier.nix
 
     # Desktop enviroment
     ./core/services/xserver/kde/default.nix
-    #./core/services/xserver/gnome/default.nix
+    # ./core/services/xserver/gnome/default.nix
     #./core/services/xserver/i3/default.nix
     #./core/services/xserver/awesome/awesomewm.nix
   ];
 
-  nix.settings.download-buffer-size = 524288000;
-  boot.extraModulePackages = with config.boot.kernelPackages; [
-    v4l2loopback
-  ];
+  # nix.settings.download-buffer-size = 524288000;
+  # boot.extraModulePackages = with config.boot.kernelPackages; [
+  #   v4l2loopback
+  # ];
 
-  boot.extraModprobeConfig = '' options bluetooth disable_ertm=1 '';
-  programs.appimage.enable = true;
-  programs.appimage.binfmt = true;
-  security.polkit.enable = true;
+  # boot.extraModprobeConfig = '' options bluetooth disable_ertm=1 '';
+  # programs.appimage.enable = true;
+  # programs.appimage.binfmt = true;
+  # security.polkit.enable = true;
 
-  # set zsh shell
-  users.defaultUserShell = pkgs.zsh;
-  programs.zsh.enable = true;
+  # # set zsh shell
+  # users.defaultUserShell = pkgs.zsh;
+  # programs.zsh.enable = true;
 
-  networking.networkmanager.enable = true;
-  networking.extraHosts =
-  ''
-    192.168.1.1 router
+  # networking.networkmanager.enable = true;
+  # networking.extraHosts =
+  # ''
+  #   192.168.1.1 router
 
-    10.243.0.1 home-gambled
-    10.243.0.2 pc-gambled
-    10.243.0.3 laptop-gambled
-    10.243.0.4 android-gambled
-    10.243.0.5 windows-gambled
-    10.243.0.6 steamdeck
-    10.243.0.69 dev-gambled
-  '';
+  #   10.243.0.1 home-gambled
+  #   10.243.0.2 pc-gambled
+  #   10.243.0.3 laptop-gambled
+  #   10.243.0.4 android-gambled
+  #   10.243.0.5 windows-gambled
+  #   10.243.0.6 steamdeck
+  #   10.243.0.69 dev-gambled
+  # '';
 
   # hardware.bluetooth = {
   #   enable = true;
@@ -86,14 +87,14 @@ in
   # Enable sound with pipewire.
   #sound.enable = true;
   #hardware.pulseaudio.enable = false;
-  security.rtkit.enable = true;
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-    jack.enable = true;
-  };
+  # security.rtkit.enable = true;
+  # services.pipewire = {
+  #   enable = true;
+  #   alsa.enable = true;
+  #   alsa.support32Bit = true;
+  #   pulse.enable = true;
+  #   jack.enable = true;
+  # };
 
 
 
@@ -148,39 +149,39 @@ in
 
 
   # Extra services
-  services.flatpak.enable = true; # Enable flatpak
-  services.packagekit.enable = true; # Enable packagekit for gnome software
-  services.fwupd.enable = true; # Enable firmware updates
-  programs.adb.enable = true;
+  # services.flatpak.enable = true; # Enable flatpak
+  # services.packagekit.enable = true; # Enable packagekit for gnome software
+  # services.fwupd.enable = true; # Enable firmware updates
+  # programs.adb.enable = true;
 
-  fonts.packages = with pkgs; [
-    times-newer-roman
-    noto-fonts
-    noto-fonts-cjk-sans
-    noto-fonts-emoji
-    liberation_ttf
-    fira-code
-    fira-code-symbols
-    mplus-outline-fonts.githubRelease
-    dina-font
-    proggyfonts
-    nerd-fonts.noto
-    nerd-fonts.ubuntu
-    nerd-fonts.hack
-    nerd-fonts.tinos
-    nerd-fonts.mplus
-    nerd-fonts.arimo
-    nerd-fonts.agave
-    nerd-fonts.hasklug
-  ];
+  # fonts.packages = with pkgs; [
+  #   times-newer-roman
+  #   noto-fonts
+  #   noto-fonts-cjk-sans
+  #   noto-fonts-emoji
+  #   liberation_ttf
+  #   fira-code
+  #   fira-code-symbols
+  #   mplus-outline-fonts.githubRelease
+  #   dina-font
+  #   proggyfonts
+  #   nerd-fonts.noto
+  #   nerd-fonts.ubuntu
+  #   nerd-fonts.hack
+  #   nerd-fonts.tinos
+  #   nerd-fonts.mplus
+  #   nerd-fonts.arimo
+  #   nerd-fonts.agave
+  #   nerd-fonts.hasklug
+  # ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs.config.allowUnfree = true;
-  nixpkgs.config.packageOverrides = pkgs: {
-    nur = import (builtins.fetchTarball "https://github.com/nix-community/NUR/archive/master.tar.gz") {
-      inherit pkgs;
-    };
-  };
+  # nixpkgs.config.packageOverrides = pkgs: {
+  #   nur = import (builtins.fetchTarball "https://github.com/nix-community/NUR/archive/master.tar.gz") {
+  #     inherit pkgs;
+  #   };
+  # };
 
   # Stylix
 #  stylix = {

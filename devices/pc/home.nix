@@ -17,29 +17,29 @@
     #kcc
     #calibre
     #mangal
-    komikku
+    # komikku
 
-    # dev tools
-    #android-studio
-    #cmake
+    # # dev tools
+    # #android-studio
+    # #cmake
 
-    # games
-    gamemode
-    wineWowPackages.stable
-    winetricks
-    #heroic
-    ryujinx
-    osu-lazer-bin
-    #tetrio-desktop
-    prismlauncher #minecra
-    r2modman
-    mangohud
+    # # games
+    # gamemode
+    # wineWowPackages.stable
+    # winetricks
+    # #heroic
+    # ryujinx
+    # osu-lazer-bin
+    # #tetrio-desktop
+    # prismlauncher #minecra
+    # r2modman
+    # mangohud
 
-    # utils
-    polychromatic
-    #vulkan-tools
-    pdfarranger
-    via
+    # # utils
+    # polychromatic
+    # #vulkan-tools
+    # pdfarranger
+    # via
 
   ];
 }
