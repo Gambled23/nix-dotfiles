@@ -21,9 +21,6 @@ in
   ];
 
   nix.settings.download-buffer-size = 524288000;
-  boot.extraModulePackages = with config.boot.kernelPackages; [
-    v4l2loopback
-  ];
 
   boot.extraModprobeConfig = '' options bluetooth disable_ertm=1 '';
   programs.appimage.enable = true;
@@ -47,21 +44,6 @@ in
     10.243.0.6 steamdeck
     10.243.0.69 dev-gambled
   '';
-
-  # hardware.bluetooth = {
-  #   enable = true;
-  #   settings = {
-  #     General = {
-  #       Name = "Hello";
-  #       ControllerMode = "dual";
-  #       FastConnectable = "true";
-  #       Experimental = "true";
-  #     };
-  #     Policy = {
-  #       AutoEnable = "true";
-  #     };
-  #   };
-  # };
 
   hardware.bluetooth = {
     enable = true;
@@ -173,47 +155,5 @@ in
     };
   };
 
-  # Stylix
-#  stylix = {
-#    autoEnable = true;
-#    enable = true;
-#    image = ./wallpaper.png;
-#    base16Scheme = theme;
-#
-#    fonts = {
-#      serif = {
-#        package = pkgs.dejavu_fonts;
-#        name = "DejaVu Serif";
-#      };
-#
-#     sansSerif = {
-#        package = pkgs.dejavu_fonts;
-#        name = "DejaVu Sans";
-#      };
-#
-#      monospace = {
-#        package = pkgs.dejavu_fonts;
-#        name = "DejaVu Sans Mono";
-#      };
-#
-#      emoji = {
-#        package = pkgs.joypixels;
-#        name = "Joypixels";
-#      };
-#    };
-#    cursor = {
-#      package = pkgs.vimix-cursors;
-#      name = "Vimix-cursors";
-#      size = 24;
-#    };
-#    targets.qt = {
-#        enable = true;
-#        platform = "qtct";
-#    };
-#   };
-#   nixpkgs.config.joypixels.acceptLicense = true;
-
-  # commands after boot
-  powerManagement.powerUpCommands = "bluetoothctl connect '24:95:2F:60:BD:94'\n";
   boot.tmp.useTmpfs = false;
 }

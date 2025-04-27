@@ -20,29 +20,22 @@
     #../../core/bootloader/systemd.nix
     ../../core/bootloader/grub.nix
   ];
-
   environment.systemPackages = with pkgs; [
     lact
     (import ../../scripts/reboot-to-windows.nix { inherit pkgs; })
   ];
   
   # amdgpu
-  boot.initrd.kernelModules = [ "amdgpu" ];
+  boot.initrd.kernelModules = [ "amdgpu" "modesetting"];
+  services.xserver.videoDrivers = [ "amdgpu" "modesetting"];
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
+    extraPackages = with pkgs; [
+      amdvlk
+    ];
   };
   services.xserver.enable = true;
-
-  #services.xserver.videoDrivers = [ "amdgpu" ];
-  # hardware.graphics.extraPackages = with pkgs; [
-  #   amdvlk
-  # ];
-  # # For 32 bit applications
-  # hardware.graphics.extraPackages32 = with pkgs; [
-  #   driversi686Linux.amdvlk
-  # ];
-  #hardware.amdgpu.amdvlk.enable = true;
 
   boot.kernelParams = [
     "quiet"
@@ -53,21 +46,11 @@
     "boot.shell_on_fail"
   ];
 
-  # open razer
-  hardware.openrazer.enable = true;
-  hardware.openrazer.users = ["gambled"];
-
-  # programs.droidcam.enable = true;
 
   # virtualisation
   # virtualisation.vmware.host.enable = true; # vmware
-  virtualisation.waydroid.enable = true; # Waydroid
+  # virtualisation.waydroid.enable = true; # Waydroid
   # for gpu overclock
   systemd.packages = with pkgs; [ lact ];
   systemd.services.lactd.wantedBy = ["multi-user.target"];
-
-  # Connect to bluetooth after resume
-  # powerManagement.resumeCommands = ''
-  #   bluetoothctl connect 24:95:2F:60:BD:94
-  # '';
 }

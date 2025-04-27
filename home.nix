@@ -33,8 +33,6 @@
     #* media creation
     gimp
     inkscape-with-extensions
-    qt6.qtwebsockets
-    libportal-qt5
     obs-studio
 
     #* messaging

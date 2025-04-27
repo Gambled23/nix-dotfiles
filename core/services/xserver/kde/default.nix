@@ -65,6 +65,7 @@ with lib;
     kdePackages.qtstyleplugin-kvantum
     gruvbox-kvantum
     libportal-qt6
+    qt6.qtwebsockets
     qt6.qtwebengine
     kdePackages.dolphin-plugins
     kdePackages.kate
