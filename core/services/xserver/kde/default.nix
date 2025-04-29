@@ -6,7 +6,7 @@ with lib;
   services.desktopManager.plasma6.enable = true;
 
   services.displayManager = {
-    autoLogin.enable = true;
+    # autoLogin.enable = true;
     autoLogin.user = "gambled";
     sddm = {
       enable = true;
