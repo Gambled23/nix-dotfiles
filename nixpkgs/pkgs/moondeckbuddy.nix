@@ -24,7 +24,7 @@ let
 in
 stdenv.mkDerivation (finalAttrs: {
   pname = "moondeck-buddy";
-  version = "1.6.3";
+  version = "1.8.2";
 
   src = fetchFromGitHub {
     owner = "FrogTheFrog";
