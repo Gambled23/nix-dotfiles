@@ -54,7 +54,7 @@
             ./core/services/xserver/kde/config.nix
             spicetify-nix.homeManagerModules.default
             ./core/programs/spicetify.nix
-            inputs.nixcord.homeManagerModules.nixcord
+            inputs.nixcord.homeModules.nixcord
             ./core/programs/nixcord.nix
           ];
           home-manager.extraSpecialArgs = specialArgs;
