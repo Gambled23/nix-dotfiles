@@ -1,6 +1,9 @@
 { config, pkgs, lib, ... }:
 
 {
+  nixpkgs.overlays = [ (final: prev: {
+  moondeck-buddy = prev.callPackage ../../nixpkgs/pkgs/moondeckbuddy.nix { };
+}) ];
   # A webservice to remote desktop based on moonlight
   services.sunshine = {
     enable = true;
@@ -19,25 +22,18 @@
           output = "/home/gambled/log.txt";
         }
         {
-          name = "Steam Big Picture";
-          prep-cmd = [
-            {
-              do = "modo-tele enable";
-              undo = "modo-tele disable";
-            }
-          ];
-          image-path = "steam.png";
-          output = "/home/gambled/logSteam.txt";
+          name = "MoonDeckStream";
+          cmd = "${pkgs.moondeck-buddy}/bin/MoonDeckStream";
+          exclude-global-prep-cmd = "false";
+          elevated = "false";
         }
         {
-          name = "MoonDeckStream";
-          prep-cmd = [
-            {
-              do = "MoonDeckStream";
-              undo = "modo-tele disable";
-            }
-          ];
-          commands = "MoonDeckStream";
+          name = "Steam Big Picture";
+          image-path = "steam.png";
+          detached = [ "steam steam://open/bigpicture" ];
+          auto-detach = "true";
+          wait-all = "true";
+          exit-timeout = "5";
         }
       ];
     };
