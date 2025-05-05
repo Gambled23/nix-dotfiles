@@ -21,6 +21,6 @@
       rm = "rm -riv";
       
     };
-    initExtra = "source <(fzf --zsh)\n";
+    initContent = "source <(fzf --zsh)\n";
   };
 }

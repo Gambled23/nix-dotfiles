@@ -18,6 +18,7 @@ in
         library = "org.kde.kwin.aurorae";
         theme = "__aurorae__svg__Utterly-Round-Dark";
       };
+      wallpaper = "/etc/nixos/wallpaper.png";
     };
 
     fonts = {

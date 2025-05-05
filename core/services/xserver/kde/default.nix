@@ -11,8 +11,7 @@ with lib;
     sddm = {
       enable = true;
       autoNumlock = true;
-      # theme = "breeze";
-      wayland.enable = true;
+      theme = "${pkgs.sddm-sugar-dark}";
     };
   };
 
