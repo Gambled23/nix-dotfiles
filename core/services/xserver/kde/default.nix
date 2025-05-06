@@ -11,7 +11,7 @@ with lib;
     sddm = {
       enable = true;
       autoNumlock = true;
-      theme = "${pkgs.sddm-sugar-dark}";
+      wayland.enable = false;
     };
   };
 
