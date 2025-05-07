@@ -2,14 +2,15 @@
 
 pkgs.writeShellScriptBin "agc" ''
   #!${pkgs.bash}/bin/bash
-
-  sudo nix-collect-garbage  --delete-old
-  nix-env --delete-generations old
   sudo nix-collect-garbage -d
-  nix store optimise
+  nix-collect-garbage -d
+  home-manager expire-generations -d
+  nix store gc && sudo nix store optimize
+  sudo nix profile wipe-history
+  home-manager remove-generations old
+  
 
-  cd /home/gambled/Pictures/Screenshots/
-  sudo rm *
+  sudo rm /home/gambled/Pictures/Screenshots/*
   sudo rm -rf /home/gambled/.cache/
 
   echo "Sistema limpiado" | ${pkgs.clolcat}/bin/clolcat
