@@ -5,7 +5,7 @@ pkgs.writeShellScriptBin "update-flake" ''
   set -e
 
   cd /etc/nixos/
-  mv flake.nix flakeold.nix
+  mv flake.lock flakeold.lock
   nix-rbd boot
   
   reboot
