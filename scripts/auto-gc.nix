@@ -2,8 +2,7 @@
 
 pkgs.writeShellScriptBin "agc" ''
   #!${pkgs.bash}/bin/bash
-  sudo nix-collect-garbage -d
-  nix-collect-garbage -d
+  sudo nix-collect-garbage --delete-older-than 2d --cores 16 && nix-collect-garbage --delete-older-than 2d --cores 16
   home-manager expire-generations -d
   nix store gc && sudo nix store optimize
   sudo nix profile wipe-history
