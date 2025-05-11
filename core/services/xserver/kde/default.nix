@@ -81,6 +81,9 @@ with lib;
 
     # widgets
     plasmusic-toolbar
+
+    #krunner plugins
+    vscode-runner
   ];
 
   qt.style = "kvantum";
