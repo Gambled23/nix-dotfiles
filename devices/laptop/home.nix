@@ -14,5 +14,6 @@
   home.packages = with pkgs; [
     # games
     moonlight-qt
+    komikku
   ];
 }
