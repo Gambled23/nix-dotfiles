@@ -57,8 +57,8 @@ with lib;
     kdePackages.kio-extras
     kdePackages.ktorrent
     kdePackages.libktorrent
-    #kdePackages.kdenlive
-    kdePackages.merkuro
+    # kdePackages.kdenlive
+    # kdePackages.merkuro
     kdePackages.kclock
     kdePackages.kalk
     kdePackages.qtstyleplugin-kvantum

@@ -156,6 +156,7 @@
           }
           {
             name = "Code";
+            toolbar = true;
             bookmarks = [
               {
                 name = "Material Theme Builder";
@@ -185,6 +186,7 @@
           }
           {
             name = "Guitar";
+            toolbar = true;
             bookmarks = [
               {
                 name = "Mi otra mitad";
