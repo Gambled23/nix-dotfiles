@@ -31,7 +31,7 @@ stdenv.mkDerivation (finalAttrs: {
     repo = "moondeck-buddy";
     tag = "v${finalAttrs.version}";
     fetchSubmodules = true;
-    hash = "sha256-OMgcxRpXhZNfvixq4PTeKfddCTzaqMGaaxaNFOWEnTw=";
+    hash = "sha256-FIb1e48SOlyJlDTIyh8HD6+veX2VfnhhQ60FMeGmOww=";
   };
 
   buildInputs = [

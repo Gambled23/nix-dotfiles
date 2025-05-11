@@ -95,7 +95,7 @@ in
     (import ./scripts/dev/mysqlSetupRoot.nix { inherit pkgs; })
     (import ./scripts/dev/sigi.nix { inherit pkgs; })
     (import ./scripts/dev/modular-prod-backup.nix { inherit pkgs; })
-    (callPackage ./nixpkgs/pkgs/moondeckbuddy.nix {})
+    # (callPackage ./nixpkgs/pkgs/moondeckbuddy.nix {})
   ];
 
   system.autoUpgrade.enable = true;
@@ -126,26 +126,25 @@ in
   services.fwupd.enable = true; # Enable firmware updates
   programs.adb.enable = true;
 
-  fonts.packages = with pkgs; [
-    times-newer-roman
-    noto-fonts
-    noto-fonts-cjk-sans
-    noto-fonts-emoji
-    liberation_ttf
-    fira-code
-    fira-code-symbols
-    mplus-outline-fonts.githubRelease
-    dina-font
-    proggyfonts
-    nerd-fonts.noto
-    nerd-fonts.ubuntu
-    nerd-fonts.hack
-    nerd-fonts.tinos
-    nerd-fonts.mplus
-    nerd-fonts.arimo
-    nerd-fonts.agave
-    nerd-fonts.hasklug
-  ];
+  # fonts.packages = with pkgs; [
+  #   times-newer-roman
+  #   noto-fonts
+  #   noto-fonts-cjk-sans
+  #   noto-fonts-emoji
+  #   liberation_ttf
+  #   fira-code
+  #   fira-code-symbols
+  #   mplus-outline-fonts.githubRelease
+  #   dina-font
+  #   proggyfonts
+  #   nerd-fonts.noto
+  #   nerd-fonts.ubuntu
+  #   nerd-fonts.hack
+  #   nerd-fonts.tinos
+  #   nerd-fonts.arimo
+  #   nerd-fonts.agave
+  #   nerd-fonts.hasklug
+  # ];
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nixpkgs.config.allowUnfree = true;

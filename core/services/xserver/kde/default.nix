@@ -63,7 +63,7 @@ with lib;
     kdePackages.kalk
     kdePackages.qtstyleplugin-kvantum
     gruvbox-kvantum
-    libportal-qt6
+    # libportal-qt6
     qt6.qtwebsockets
     qt6.qtwebengine
     kdePackages.dolphin-plugins
