@@ -43,6 +43,7 @@
     zerotierone
 
     #* utils
+    activitywatch
     p3x-onenote
     protontricks
     #galaxy-buds-client
