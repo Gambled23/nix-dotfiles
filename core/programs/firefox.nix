@@ -49,7 +49,7 @@
         "extensions.pocket.site" = "";
         "extensions.autoDisableScopes" = 0;
       };
-      search = {
+      search = { 
         force = true;
         default = "google";
         order = [ "google" ];
