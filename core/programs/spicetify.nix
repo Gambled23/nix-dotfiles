@@ -8,31 +8,32 @@ in
     theme = spicePkgs.themes.onepunch;
 
     enabledCustomApps = with spicePkgs.apps; [
-      newReleases
-      marketplace
+      # newReleases
+      
+      # marketplace
     ];
 
     enabledExtensions = with spicePkgs.extensions; [
-      autoSkipVideo
-      bookmark
+      # autoSkipVideo
+      # bookmark
       fullAppDisplayMod
-      groupSession
-      loopyLoop
-      popupLyrics
+      # groupSession
+      # loopyLoop
+      # popupLyrics
       powerBar
-      lastfm
-      shuffle
-      volumePercentage
-      skipOrPlayLikedSongs
-      goToSong
-      showQueueDuration
-      copyToClipboard
-      history
-      savePlaylists
+      # lastfm
+      # shuffle
+      # volumePercentage
+      # skipOrPlayLikedSongs
+      # goToSong
+      # showQueueDuration
+      # copyToClipboard
+      # history
+      # savePlaylists
       playingSource
-      sectionMarker
-      beautifulLyrics
-      addToQueueTop
+      # sectionMarker
+      # beautifulLyrics
+      # addToQueueTop
     ];
   };
 }
