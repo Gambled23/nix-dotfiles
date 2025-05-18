@@ -11,8 +11,7 @@
     config = {
       themeLinks = [
         "https://raw.githubusercontent.com/mwittrien/BetterDiscordAddons/refs/heads/master/Themes/SettingsModal/SettingsModal.theme.css"
-        #"https://raw.githubusercontent.com/refact0r/system24/refs/heads/main/theme/flavors/gruvbox-material.theme.css"
-        "https://raw.githubusercontent.com/shvedes/discord-gruvbox/refs/heads/main/gruvbox-dark.theme.css"
+        "https://raw.githubusercontent.com/refact0r/system24/refs/heads/main/theme/system24.theme.css"
       ];
 
       plugins = {
@@ -26,7 +25,7 @@
         callTimer.enable = true;
         fakeNitro.enable = true;
         fakeProfileThemes.enable = true;
-        forceOwnerCrown.enable = true;
+        # forceOwnerCrown.enable = true;
         friendsSince.enable = true;
         fullSearchContext.enable = true;
         fullUserInChatbox.enable = true;
@@ -42,9 +41,9 @@
           showLastFmLogo = false;
         };
         mentionAvatars.enable = true;
-        platformIndicators.enable = true;
-        serverListIndicators.enable = true;
-        spotifyControls.enable = true;
+        # platformIndicators.enable = true;
+        # serverListIndicators.enable = true;
+        # spotifyControls.enable = true;
         typingIndicator.enable = true;
         typingTweaks.enable = true;
         userVoiceShow.enable = true;
