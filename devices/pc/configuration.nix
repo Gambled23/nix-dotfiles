@@ -15,6 +15,7 @@
     #../../core/services/xrdp.nix
     ../../core/services/wakeonlan.nix
     ../../core/services/openrgb.nix
+    ../../core/services/sunshine.nix
 
     # bootloader
     #../../core/bootloader/systemd.nix
@@ -23,6 +24,7 @@
   environment.systemPackages = with pkgs; [
     lact
     (import ../../scripts/reboot-to-windows.nix { inherit pkgs; })
+    (callPackage ../../nixpkgs/pkgs/moondeckbuddy.nix {})
   ];
   
   # amdgpu

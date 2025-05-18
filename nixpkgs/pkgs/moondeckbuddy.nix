@@ -46,10 +46,10 @@ stdenv.mkDerivation (finalAttrs: {
     wrapQtAppsHook
   ];
 
-  postPatch = lib.optionalString useNixSteam ''
-    substituteInPlace src/lib/os/linux/steamregistryobserver.cpp \
-      --replace-fail /usr/bin/steam ${lib.getExe steam};
-  '';
+  # postPatch = lib.optionalString useNixSteam ''
+  #   substituteInPlace src/lib/os/linux/steamregistryobserver.cpp \
+  #     --replace-fail /usr/bin/steam ${lib.getExe steam};
+  # '';
 
   passthru.updateScript = nix-update-script { };
 
