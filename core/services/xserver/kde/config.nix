@@ -123,6 +123,16 @@ in
           }
           "org.kde.plasma.marginsseparator"
           {
+            name = "com.github.zren.commandoutput";
+            config = {
+              General = {
+                command = "sudo headsetcontrol -b | grep -oP 'Level: \\K\\d+%'";
+                interval = "3600000";
+              };
+            };
+          }
+          "org.kde.plasma.marginsseparator"
+          {
             digitalClock = {
               calendar.firstDayOfWeek = "sunday";
               time.format = "24h";
@@ -614,6 +624,17 @@ in
     X-KDE-RunOnDiscreteGpu=true
   '';
 
+  home.file.".config/autostart/activity.desktop".text = ''
+    [Desktop Entry]
+    Categories=Log, System;
+    Exec=aw-server
+    GenericName=Activity Watcher
+    Icon=activitywatch
+    Keywords=activitywatch;aw-server
+    Name=Activity Watcher
+    Type=Application
+  '';
+
   home.file.".config/autostart/vesktop.desktop".text = ''
     [Desktop Entry]
     Categories=Network;InstantMessaging;Chat
@@ -632,7 +653,7 @@ in
     Categories=Audio;Devices
     Exec=bluetoothctl connect 24:95:2F:60:BD:94
     GenericName=Connect to bluethooth
-    Icon=vesktop
+    Icon=bluetooth-48
     Keywords=bluethooth
     Name=bluethooth-android
     Type=Application
