@@ -100,6 +100,16 @@ in
           }
           "org.kde.plasma.panelspacer"
           {
+            name = "com.github.zren.commandoutput";
+            config = {
+              General = {
+                command = "headsetcontrol -b | grep -oP 'Level: \K\d+%'";
+                interval = "3600000";
+              };
+            };
+          }
+          "org.kde.plasma.marginsseparator"
+          {
             systemTray.items = {
               # We explicitly show bluetooth and battery
               shown = [
@@ -119,16 +129,6 @@ in
                 "polychromatic-tray-applet"
                 "Vesktop"
               ];
-            };
-          }
-          "org.kde.plasma.marginsseparator"
-          {
-            name = "com.github.zren.commandoutput";
-            config = {
-              General = {
-                command = "sudo headsetcontrol -b | grep -oP 'Level: \\K\\d+%'";
-                interval = "3600000";
-              };
             };
           }
           "org.kde.plasma.marginsseparator"
