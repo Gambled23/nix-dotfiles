@@ -36,7 +36,7 @@
     obs-studio
 
     #* messaging
-    whatsapp-for-linux
+    altus
     materialgram
 
     #* networking
