@@ -53,7 +53,7 @@ in
             iconTasks = {
               launchers = [
                 "applications:steam.desktop"
-                "applications:miru.desktop"
+                "applications:hayase.desktop"
                 "applications:code.desktop"
                 "applications:dbeaver.desktop"
                 # "applications:stremio.desktop"

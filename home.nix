@@ -26,7 +26,6 @@
     fzf
 
     #* media
-    miru
     stremio
     vlc
 
