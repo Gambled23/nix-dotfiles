@@ -2,7 +2,7 @@
 
 {
   nixpkgs.overlays = [ (final: prev: {
-  moondeck-buddy = prev.callPackage ../../nixpkgs/pkgs/moondeckbuddy.nix { };
+  moondeck-buddy = prev.callPackage ../../nixpkgs/pkgs/moondeckbuddy/package.nix { };
 }) ];
   # A webservice to remote desktop based on moonlight
   services.sunshine = {

@@ -24,7 +24,7 @@
   environment.systemPackages = with pkgs; [
     lact
     (import ../../scripts/reboot-to-windows.nix { inherit pkgs; })
-    (callPackage ../../nixpkgs/pkgs/moondeckbuddy.nix {})
+    (callPackage ../../nixpkgs/pkgs/moondeckbuddy/package.nix {})
   ];
   
   # amdgpu
