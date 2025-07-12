@@ -103,7 +103,7 @@ in
             name = "com.github.zren.commandoutput";
             config = {
               General = {
-                command = "headsetcontrol -b | grep -oP 'Level: \K\d+%'";
+                command = "headsetcontrol -b | grep -oP 'Level: \\K\\d+%'";
                 interval = "3600000";
               };
             };
