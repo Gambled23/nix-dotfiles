@@ -24,14 +24,19 @@
       options = [ "fmask=0077" "dmask=0077" ];
     };
 
-  fileSystems."/hdd" = { 
-    #device = "/dev/disk/by-uuid/868E593D8E5926C9";
-    device = "/dev/disk/by-label/HDD";
-    fsType = "ntfs"; 
-    options = [ "rw" "uid=1000"];
-  };
+  # fileSystems."/hdd" = { 
+  #   device = "/dev/disk/by-label/HDD";
+  #   fsType = "ntfs"; 
+  #   options = [ "rw" "uid=1000"];
+  # };
 
-  swapDevices = [ ];
+  # fileSystems."/games" = { 
+  #   device = "/dev/disk/by-label/games";
+  #   fsType = "ext4"; 
+  #   options = [ "rw" "uid=1000"];
+  # };
+
+  swapDevices = [ { device = "/dev/disk/by-label/swap"; } ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
   # (the default) this is the recommended approach. When using systemd-networkd it's
