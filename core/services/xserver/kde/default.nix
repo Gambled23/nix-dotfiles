@@ -81,7 +81,7 @@ with lib;
     # widgets
     plasmusic-toolbar
     plasma-panel-colorizer
-    headsetcontrol # for headset battery control
+    headsetcontrol
     plasma-applet-commandoutput
 
     #krunner plugins

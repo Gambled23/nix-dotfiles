@@ -42,7 +42,7 @@
     zerotierone
 
     #* utils
-    activitywatch
+    # activitywatch
     p3x-onenote
     protontricks
     #galaxy-buds-client
@@ -52,7 +52,7 @@
     scrcpy
     nextcloud-client
     zoom-us
-    koreader
+    # koreader
     #logseq
 
     #* webbrowsers

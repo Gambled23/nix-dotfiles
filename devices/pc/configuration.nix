@@ -14,7 +14,7 @@
     #../../core/services/suwayomi.nix
     #../../core/services/xrdp.nix
     ../../core/services/wakeonlan.nix
-    ../../core/services/openrgb.nix
+    # ../../core/services/openrgb.nix
     ../../core/services/sunshine.nix
 
     # bootloader

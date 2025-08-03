@@ -5,7 +5,7 @@ in
 {
   imports = [
     # Global services
-    ./core/services/glances.nix
+    # ./core/services/glances.nix
     ./core/services/mysql.nix
     ./core/services/openssh.nix
     ./core/programs/steam.nix
@@ -88,11 +88,8 @@ in
     (import ./scripts/git-clone.nix { inherit pkgs; })
     (import ./scripts/dev/enviroment.nix { inherit pkgs; })
     (import ./scripts/dev/ssh-github.nix { inherit pkgs; })
-    (import ./scripts/dev/instalarProyectoLaravel.nix { inherit pkgs; })
     (import ./scripts/dev/migrateDB.nix { inherit pkgs; })
-    (import ./scripts/dev/samisecuestro.nix { inherit pkgs; })
     (import ./scripts/dev/mysqlSetupRoot.nix { inherit pkgs; })
-    (import ./scripts/dev/sigi.nix { inherit pkgs; })
     (import ./scripts/dev/modular-prod-backup.nix { inherit pkgs; })
     (callPackage ./nixpkgs/pkgs/hayase/package.nix {})
   ];
