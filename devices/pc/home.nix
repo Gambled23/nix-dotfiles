@@ -33,6 +33,8 @@
     #tetrio-desktop
     prismlauncher #minecra
     r2modman
+    mangohud
+    mangojuice
 
     # utils
     polychromatic
