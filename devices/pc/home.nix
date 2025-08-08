@@ -28,7 +28,7 @@
     wineWowPackages.stable
     winetricks
     #heroic
-    ryujinx
+    ryubing
     osu-lazer-bin
     #tetrio-desktop
     prismlauncher #minecra
