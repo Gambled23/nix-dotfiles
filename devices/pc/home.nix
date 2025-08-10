@@ -33,15 +33,11 @@
     #tetrio-desktop
     prismlauncher #minecra
     r2modman
-    millennium
-    # mangohud
 
     # utils
     polychromatic
     #vulkan-tools
     pdfarranger
     via
-
-
   ];
 }
