@@ -24,6 +24,11 @@
       options = [ "fmask=0077" "dmask=0077" ];
     };
 
+  fileSystems."/games" =
+    { device = "/dev/disk/by-label/games";
+      fsType = "ext4";
+    };
+
   # fileSystems."/hdd" = { 
   #   device = "/dev/disk/by-label/HDD";
   #   fsType = "ntfs"; 
