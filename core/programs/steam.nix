@@ -9,6 +9,7 @@ in
     localNetworkGameTransfers.openFirewall = true;
     dedicatedServer.openFirewall = true;
     # package = with pkgs; steam.override { extraPkgs = pkgs: [ attr ]; };
+    package = pkgs.steam-millennium;
     extraCompatPackages = with pkgs; [
       proton-ge-bin
     ];
