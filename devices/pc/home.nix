@@ -33,6 +33,7 @@
     #tetrio-desktop
     prismlauncher #minecra
     r2modman
+    millennium
     # mangohud
 
     # utils
@@ -40,6 +41,7 @@
     #vulkan-tools
     pdfarranger
     via
+
 
   ];
 }
