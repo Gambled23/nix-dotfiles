@@ -21,6 +21,7 @@
     nixcord.url = "github:kaylorben/nixcord";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
     # stylix.url = "github:danth/stylix";
+    millennium.url = "git+https://github.com/SteamClientHomebrew/Millennium";
   };
 
   outputs = { 
@@ -73,6 +74,9 @@
                 ./devices/pc/home.nix
               ];
               home-manager.backupFileExtension = "meme";
+              nixpkgs.overlays = [
+                inputs.millennium.overlays.default
+              ];
             }
           ];
         };
