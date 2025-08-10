@@ -6,7 +6,7 @@
     nur.url = "github:nix-community/NUR";
     nur.inputs.nixpkgs.follows = "nixpkgs";
     
-    jovian-nixos.url = "github:Jovian-Experiments/Jovian-NixOS";
+    # jovian-nixos.url = "github:Jovian-Experiments/Jovian-NixOS";
 
     #nixpkgs-xr.url = "github:nix-community/nixpkgs-xr";
 
@@ -20,7 +20,7 @@
     #kde2nix.url = "github:nix-community/kde2nix";
     nixcord.url = "github:kaylorben/nixcord";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
-    stylix.url = "github:danth/stylix";
+    # stylix.url = "github:danth/stylix";
   };
 
   outputs = { 
@@ -32,7 +32,7 @@
       #kde2nix, 
       nur,
       nixcord,
-      jovian-nixos,
+      # jovian-nixos,
       ... 
      }@inputs:
     let
@@ -44,7 +44,7 @@
       commonModules = [
         home-manager.nixosModules.home-manager
         #stylix.nixosModules.stylix
-        jovian-nixos.nixosModules.default
+        # jovian-nixos.nixosModules.default
         nur.modules.nixos.default
         {
           home-manager.useGlobalPkgs = true;
