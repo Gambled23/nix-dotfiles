@@ -69,8 +69,6 @@
     #* guitarra
     guitarix
     tonelib-metal
-    yabridge
-    yabridgectl
     carla
     gxplugins-lv2
   ];
