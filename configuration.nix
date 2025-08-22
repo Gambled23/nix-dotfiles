@@ -86,6 +86,7 @@ in
     (import ./scripts/update-flake.nix { inherit pkgs; })
     (import ./scripts/auto-gc.nix { inherit pkgs; })
     (import ./scripts/git-clone.nix { inherit pkgs; })
+    (import ./scripts/flash-kernelsu.nix { inherit pkgs; })
     (import ./scripts/dev/enviroment.nix { inherit pkgs; })
     (import ./scripts/dev/ssh-github.nix { inherit pkgs; })
     (import ./scripts/dev/migrateDB.nix { inherit pkgs; })
