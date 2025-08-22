@@ -7,12 +7,12 @@ with lib;
   services.displayManager.defaultSession = "plasma";
 
   services.displayManager = {
-    autoLogin.enable = false;
+    autoLogin.enable = true;
     autoLogin.user = "gambled";
     sddm = {
       enable = true;
       autoNumlock = true;
-      wayland.enable = false;
+      wayland.enable = true;
     };
   };
 
