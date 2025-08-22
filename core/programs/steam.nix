@@ -8,7 +8,9 @@
     gamescopeSession.enable = true;
     # extest.enable = true;
     # protontricks.enable = true;
-    package = pkgs.steam-millennium;
+
+    # package = pkgs.steam-millennium;
+
     extraCompatPackages = with pkgs; [
       proton-ge-bin
     ];
@@ -29,10 +31,9 @@
   #   };
   #   hardware.has.amd.gpu = true;
   # };
-  
-  system.userActivationScripts.linktosharedfolder.text = ''
-    if [[ ! -h "$HOME/.homebrew" ]]; then
-      ln -s "/var/lib/decky-loader/" "$HOME/.homebrew"
-    fi
-  '';
+  # system.userActivationScripts.linktosharedfolder.text = ''
+  #   if [[ ! -h "$HOME/.homebrew" ]]; then
+  #     ln -s "/var/lib/decky-loader/" "$HOME/.homebrew"
+  #   fi
+  # '';
 }
