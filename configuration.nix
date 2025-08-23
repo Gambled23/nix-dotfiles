@@ -8,7 +8,7 @@ in
     # ./core/services/glances.nix
     ./core/services/mysql.nix
     ./core/services/openssh.nix
-    ./core/programs/steam.nix
+    # ./core/programs/steam.nix
     ./core/services/syncthing.nix
     ./core/services/zerotier.nix
 
