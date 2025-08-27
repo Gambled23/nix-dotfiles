@@ -62,15 +62,6 @@ with lib;
     kdePackages.kclock
     kdePackages.kalk
     kdePackages.qtstyleplugin-kvantum
-    # Themes
-    gruvbox-kvantum
-    plasma-overdose-kde-theme
-    nordic
-    graphite-kde-theme
-    qogir-kde
-    colloid-kde
-    colloid-icon-theme
-    colloid-gtk-theme
     # libportal-qt6
     qt6.qtwebsockets
     qt6.qtwebengine
@@ -84,8 +75,11 @@ with lib;
 
     #kde-gruvbox
     #kdePackages.koi
-    #graphite-kde-theme
+    graphite-kde-theme
     vimix-cursors
+    gruvbox-kvantum
+    nordic
+    # qogir-kde
 
     # widgets
     plasmusic-toolbar
