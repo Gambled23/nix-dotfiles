@@ -11,9 +11,9 @@ in
     workspace = {
       enableMiddleClickPaste = true;
       clickItemTo = "select";
-      iconTheme = "Gruvbox";
-      colorScheme = "Gruvboxdarkmedium";
-      splashScreen.theme = "GruvboxHexagon3";
+      iconTheme = "Nordic-darker";
+      colorScheme = "Nordic-Darker";
+      splashScreen.theme = "Kuro";
       windowDecorations = {
         library = "org.kde.kwin.aurorae";
         theme = "__aurorae__svg__Utterly-Round-Dark";
