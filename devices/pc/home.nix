@@ -33,6 +33,7 @@
     #tetrio-desktop
     prismlauncher #minecra
     r2modman
+    sm64coopdx
 
     # utils
     polychromatic
