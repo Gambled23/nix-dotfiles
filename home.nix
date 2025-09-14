@@ -26,7 +26,7 @@
     fzf
 
     #* media
-    stremio
+    # stremio
     vlc
 
     #* media creation
@@ -62,14 +62,14 @@
 
     #* extras
     bat
-    lxde.lxsession
+    lxsession
     neofetch
     zsh
 
     #* guitarra
     guitarix
     tonelib-metal
-    carla
+    # carla
     gxplugins-lv2
   ];
 
