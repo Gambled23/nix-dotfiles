@@ -93,6 +93,7 @@ in
     (import ./scripts/dev/mysqlSetupRoot.nix { inherit pkgs; })
     (import ./scripts/dev/modular-prod-backup.nix { inherit pkgs; })
     (callPackage ./nixpkgs/pkgs/hayase/package.nix {})
+    (callPackage ./nixpkgs/pkgs/stremio/package.nix {})
   ];
 
   system.autoUpgrade.enable = true;
