@@ -19,7 +19,7 @@ appimageTools.wrapType2 rec {
   src = fetchurl {
     url = "https://github.com/hayase-app/ui/releases/download/v${version}/linux-hayase-${version}-linux.AppImage";
     name = "${pname}-${version}.AppImage";
-    hash = "sha256-eVkUQswNRBndEyaF9c7mDCrdaf5K7SSgf8LLL4lir3Y=";
+    hash = "sha256-so6yVHIG1NONZ8AFEuGQqgJPOw266Pz8cBT+Afp+Tuo=";
   };
 
   extraInstallCommands =

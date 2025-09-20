@@ -5,7 +5,7 @@
 }:
 let
   pname = "hayase";
-  version = "6.4.13";
+  version = "6.4.32";
   meta = {
     description = "Stream anime torrents, real-time with no waiting for downloads";
     homepage = "https://hayase.watch/";
