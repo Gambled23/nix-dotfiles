@@ -14,26 +14,27 @@
     extraCompatPackages = with pkgs; [
       proton-ge-bin
     ];
-};
+  };
   programs.gamemode.enable = true;
 
 
-  # jovian = {
-  #   steam = {
-  #     enable = true;
-  #     # autoStart = true;
-  #     desktopSession = "plasma";
-  #     user = "gambled";
-  #   };
-  #   decky-loader = {
-  #     enable = true;
-  #     user = "gambled";
-  #   };
-  #   hardware.has.amd.gpu = true;
-  # };
-  # system.userActivationScripts.linktosharedfolder.text = ''
-  #   if [[ ! -h "$HOME/.homebrew" ]]; then
-  #     ln -s "/var/lib/decky-loader/" "$HOME/.homebrew"
-  #   fi
-  # '';
+  jovian = {
+    steam = {
+      enable = true;
+      # autoStart = true;
+      desktopSession = "plasma";
+      user = "gambled";
+      updater.splash = "jovian";
+    };
+    decky-loader = {
+      enable = true;
+      user = "gambled";
+    };
+    hardware.has.amd.gpu = true;
+  };
+  system.userActivationScripts.linktosharedfolder.text = ''
+    if [[ ! -h "$HOME/.homebrew" ]]; then
+      ln -s "/var/lib/decky-loader/" "$HOME/.homebrew"
+    fi
+  '';
 }

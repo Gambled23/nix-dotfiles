@@ -17,7 +17,6 @@
     plasma-manager.inputs.nixpkgs.follows = "nixpkgs";
     plasma-manager.inputs.home-manager.follows = "home-manager";
 
-    #kde2nix.url = "github:nix-community/kde2nix";
     nixcord.url = "github:kaylorben/nixcord";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
     # stylix.url = "github:danth/stylix";
@@ -30,7 +29,6 @@
       home-manager,
       plasma-manager, 
       spicetify-nix, 
-      #kde2nix, 
       nur,
       nixcord,
       jovian-nixos,
