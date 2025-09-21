@@ -56,7 +56,7 @@
     #logseq
 
     #* webbrowsers
-    #google-chrome
+    google-chrome
     #floorp
     #chromium
 
