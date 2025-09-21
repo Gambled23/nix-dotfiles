@@ -34,7 +34,7 @@
     prismlauncher #minecra
     r2modman
     sm64coopdx
-    mangohud
+    # mangohud
 
     # utils
     polychromatic
