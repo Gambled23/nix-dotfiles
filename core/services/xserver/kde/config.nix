@@ -11,8 +11,8 @@ in
     workspace = {
       enableMiddleClickPaste = true;
       clickItemTo = "select";
-      iconTheme = "Nordic-darker";
-      colorScheme = "Nordic-Darker";
+      iconTheme = "Gruvbox";
+      colorScheme = "Gruvboxdarkmedium";
       splashScreen.theme = "Kuro";
       windowDecorations = {
         library = "org.kde.kwin.aurorae";
@@ -553,7 +553,7 @@ in
       "kwinrc"."NightColor"."LatitudeFixed" = 19.923664122137396;
       "kwinrc"."NightColor"."LongitudeFixed" = "-101.50375939849624";
       "kwinrc"."NightColor"."Mode" = "Location";
-      "kwinrc"."NightColor"."NightTemperature" = 3700;
+      "kwinrc"."NightColor"."NightTemperature" = 2400;
     };
     #END low level settings
   };
