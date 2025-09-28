@@ -69,7 +69,7 @@
     #* guitarra
     guitarix
     tonelib-metal
-    # carla
+    carla
     gxplugins-lv2
   ];
 
