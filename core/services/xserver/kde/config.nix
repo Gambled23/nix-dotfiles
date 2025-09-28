@@ -519,7 +519,7 @@ in
       "services.org.kde.konsole.desktop" = {
         "_launch" = "Meta+Return";
       };
-      "services.chrome.desktop" = {
+      "chrome.desktop" = {
         "_launch" = "Meta+F";
       };
     };

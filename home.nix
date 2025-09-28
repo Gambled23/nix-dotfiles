@@ -15,7 +15,7 @@
     #core/programs/neovim.nix
     core/programs/starship.nix
     core/programs/zsh.nix
-    core/programs/firefox.nix
+    # core/programs/firefox.nix
   ];
   home.packages = with pkgs; [
 
