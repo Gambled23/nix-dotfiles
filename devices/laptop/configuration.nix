@@ -1,7 +1,7 @@
 { config, pkgs, lib, inputs, outputs, ... }:
 
 {
-  system.stateVersion = "23.11";
+  system.stateVersion = "25.05";
   networking.hostName = "laptop-gambled";
 
   imports = [

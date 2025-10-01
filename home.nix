@@ -18,12 +18,14 @@
     # core/programs/firefox.nix
   ];
   home.packages = with pkgs; [
+    #*books
+    komikku
 
     #* dev tools
     dbeaver-bin
     vscode
     lazygit
-    fzf
+    # fzf
 
     #* media
     # stremio
@@ -43,10 +45,10 @@
 
     #* utils
     # activitywatch
-    p3x-onenote
-    protontricks
-    #galaxy-buds-client
-    #jellyfin-ffmpeg
+    # p3x-onenote
+    # protontricks
+    # galaxy-buds-client
+    # jellyfin-ffmpeg
     android-tools
     libreoffice
     scrcpy
@@ -70,7 +72,7 @@
     guitarix
     tonelib-metal
     carla
-    gxplugins-lv2
+    # gxplugins-lv2
   ];
 
   # Nicely reload system units when changing configs
