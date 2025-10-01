@@ -3,12 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    nur.url = "github:nix-community/NUR";
-    nur.inputs.nixpkgs.follows = "nixpkgs";
-    
-    # jovian-nixos.url = "github:Jovian-Experiments/Jovian-NixOS";
 
-    #nixpkgs-xr.url = "github:nix-community/nixpkgs-xr";
 
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
@@ -19,8 +14,18 @@
 
     nixcord.url = "github:kaylorben/nixcord";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
+    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
+
+    # Nur repo for firefox extensions
+    # nur.url = "github:nix-community/NUR";
+    # nur.inputs.nixpkgs.follows = "nixpkgs";
+
     # stylix.url = "github:danth/stylix";
-    millennium.url = "git+https://github.com/SteamClientHomebrew/Millennium";
+    #nixpkgs-xr.url = "github:nix-community/nixpkgs-xr";
+
+    # millennium.url = "git+https://github.com/SteamClientHomebrew/Millennium";
+    # jovian-nixos.url = "github:Jovian-Experiments/Jovian-NixOS";
+
   };
 
   outputs = { 
@@ -29,7 +34,8 @@
       home-manager,
       plasma-manager, 
       spicetify-nix, 
-      nur,
+      nixos-hardware,
+      # nur,
       nixcord,
       # jovian-nixos,
       ... 
@@ -67,6 +73,7 @@
           system = "x86_64-linux";
           modules = commonModules ++ [
             ./devices/pc/configuration.nix
+            nixos-hardware.nixosModules.gigabyte-b650
             {
               home-manager.users.gambled.imports = [
                 ./devices/pc/home.nix
