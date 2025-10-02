@@ -50,7 +50,7 @@
         home-manager.nixosModules.home-manager
         #stylix.nixosModules.stylix
         # jovian-nixos.nixosModules.default
-        nur.modules.nixos.default
+        # nur.modules.nixos.default
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
@@ -80,7 +80,7 @@
               ];
               home-manager.backupFileExtension = "meme";
               nixpkgs.overlays = [
-                inputs.millennium.overlays.default
+                # inputs.millennium.overlays.default
               ];
             }
           ];
