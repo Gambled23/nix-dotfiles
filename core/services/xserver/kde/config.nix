@@ -649,16 +649,5 @@ in
     Version=1.0
   '';
 
-  home.file.".config/autostart/openrgb.desktop".text = ''
-    [Desktop Entry]
-    Categories=Hardware;Utility;
-    Exec=openrgb -p HOLA.orp
-    GenericName=OpenRGB
-    Icon=openrgb
-    Keywords=openrgb
-    Name=OpenRGB
-    Type=Application
-    Version=1.0
-  '';
   # END: Autostart apps
 }
