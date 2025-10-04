@@ -17,6 +17,7 @@
     #kcc
     #calibre
     #mangal
+    coolercontrol.coolercontrold
     
     # dev tools
     #android-studio
