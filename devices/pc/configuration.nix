@@ -16,6 +16,7 @@
     ../../core/services/wakeonlan.nix
     ../../core/services/openrgb.nix
     ../../core/services/sunshine.nix
+    ../../core/services/coolercontrol.nix
 
     # bootloader
     #../../core/bootloader/systemd.nix
