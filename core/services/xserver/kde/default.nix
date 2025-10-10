@@ -76,7 +76,7 @@ with lib;
     # graphite-kde-theme
     vimix-cursors
     gruvbox-kvantum
-    nordic
+    # nordic
     # qogir-kde
 
     # widgets

@@ -12,7 +12,7 @@ in
       enableMiddleClickPaste = true;
       clickItemTo = "select";
       iconTheme = "Gruvbox";
-      colorScheme = "Gruvboxdarkmedium";
+      colorScheme = "GruvboxColors";
       splashScreen.theme = "Kuro";
       windowDecorations = {
         library = "org.kde.kwin.aurorae";
@@ -165,15 +165,15 @@ in
     #BEGIN: Desktop widgets
     desktop.widgets = [
       {
+        name = "org.kde.plasma.digitalclock";
+        position = {
+          horizontal = 3440;
+          vertical = 0;
+        };
         config = {
           Appearance = {
             showDate = false;
           };
-        };
-        name = "org.kde.plasma.digitalclock";
-        position = {
-          horizontal = 51;
-          vertical = 100;
         };
         size = {
           height = 250;
@@ -184,8 +184,8 @@ in
         plasmusicToolbar = {
           background = "transparentShadow";
           position = {
-            horizontal = 50;
-            vertical = 300;
+            horizontal = 1650;
+            vertical = 0;
           };
           size = {
             height = 400;
@@ -196,8 +196,8 @@ in
       {
         name = "org.kde.kdeconnect";
         position = {
-          horizontal = 1200;
-          vertical = 10;
+          horizontal = 0;
+          vertical = 50;
         };
         size = {
           height = 500;
@@ -207,8 +207,8 @@ in
       {
         name = "org.kde.plasma.bluetooth";
         position = {
-          horizontal = 500;
-          vertical = 10;
+          horizontal = 0;
+          vertical = 1000;
         };
         size = {
           height = 350;
@@ -637,17 +637,17 @@ in
     Version=1.4
   '';
 
-  home.file.".config/autostart/bluetooth.desktop".text = ''
-    [Desktop Entry]
-    Categories=Audio;Devices
-    Exec=bluetoothctl connect 24:95:2F:60:BD:94
-    GenericName=Connect to bluethooth
-    Icon=bluetooth-48
-    Keywords=bluethooth
-    Name=bluethooth-android
-    Type=Application
-    Version=1.0
-  '';
+  # home.file.".config/autostart/bluetooth.desktop".text = ''
+  #   [Desktop Entry]
+  #   Categories=Audio;Devices
+  #   Exec=bluetoothctl connect 24:95:2F:60:BD:94
+  #   GenericName=Connect to bluethooth
+  #   Icon=bluetooth-48
+  #   Keywords=bluethooth
+  #   Name=bluethooth-android
+  #   Type=Application
+  #   Version=1.0
+  # '';
 
   # END: Autostart apps
 }

@@ -47,6 +47,13 @@
     "boot.shell_on_fail"
   ];
 
+  powerManagement = {
+    enable = true;
+    powerUpCommands = 
+      "openrgb -p HOLA.orp\n
+      bluetoothctl connect 24:95:2F:60:BD:94";
+  };
+
 
   # virtualisation
   # virtualisation.vmware.host.enable = true; # vmware
