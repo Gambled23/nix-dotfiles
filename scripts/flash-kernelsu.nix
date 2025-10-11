@@ -8,7 +8,7 @@ pkgs.writeShellScriptBin "flash-kernelsu" ''
   # wait for transfer to complete
   read -p "Press [Enter] key after patching image..."
   adb reboot fastboot
-  cd Downloads
+  cd ~/Downloads
   read -p "patched init_boot: " init_boot
   fastboot flash init_boot $init_boot
   fastboot reboot
