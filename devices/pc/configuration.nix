@@ -52,6 +52,9 @@
     powerUpCommands = 
       "openrgb -p HOLA.orp\n
       bluetoothctl connect 24:95:2F:60:BD:94";
+    resumeCommands = 
+      "openrgb -p HOLA.orp\n
+      bluetoothctl connect 24:95:2F:60:BD:94";
   };
 
 
