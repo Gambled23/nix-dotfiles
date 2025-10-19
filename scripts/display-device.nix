@@ -39,13 +39,14 @@ pkgs.writeShellScriptBin "display-device" ''
   case "$display_name" in
     pc-gambled)
       kscreen-doctor output.DP-3.mode.3440x1440@180
+      sudo systemctl stop openrgb
+      sudo openrgb --server --profile "white_low.orp"
       ;;
     steamdeck)
       # shutdown rgb
-      sudo systemctl stop openrgb
-      sudo openrgb
-      openrgb -p HOLA.orp 
       kscreen-doctor output.DP-3.mode.1280x800@60
+      sudo systemctl stop openrgb
+      sudo openrgb --server --profile "off.orp" 
       ;;
     *)
       echo "Invalid display name: $display_name" >&2

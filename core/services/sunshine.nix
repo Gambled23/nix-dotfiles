@@ -17,6 +17,12 @@
       };
       apps = [
         {
+          name = "steamdeck";
+          cmd = "display-device -d steamdeck";
+          exclude-global-prep-cmd = "false";
+          elevated = "false";
+        }
+        {
           name = "Desktop";
           image-path = "desktop.png";
           output = "/home/gambled/log.txt";
