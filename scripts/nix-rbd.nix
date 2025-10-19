@@ -3,8 +3,7 @@
 pkgs.writeShellScriptBin "nix-rbd" ''
   #!${pkgs.bash}/bin/bash
 
-  rebuild_mode="switch"
-  update_config=false
+  device="pc-gambled"
 
   # Parse options
   while getopts "u" opt; do
@@ -12,11 +11,19 @@ pkgs.writeShellScriptBin "nix-rbd" ''
       u)
         update_config=true
         ;;
+      h)
+        echo "Usage: nix-rbd [-u] [rebuild_mode]"
+        echo "  -u                Update configuration before rebuilding"
+        echo "  rebuild_mode     One of 'switch', 'boot', 'test', or 'build'"
+        exit 0
+        ;;
     esac
   done
 
   # Shift past the options
   shift $((OPTIND-1))
+
+  
   cd /etc/nixos/
   git pull
   set -e
