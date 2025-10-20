@@ -13,6 +13,7 @@ in
     ./core/services/zerotier.nix
 
     # Desktop enviroment
+    ./core/services/xserver/hyprland/hyprland.nix
     ./core/services/xserver/kde/default.nix
     #./core/services/xserver/gnome/default.nix
     #./core/services/xserver/i3/default.nix

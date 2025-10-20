@@ -15,7 +15,11 @@
     nixcord.url = "github:kaylorben/nixcord";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
-
+    hyprland.url = "github:hyprwm/Hyprland";
+    hyprland-plugins = {
+      url = "github:hyprwm/Hyprland-plugins";
+      inputs.hyprland.follows = "hyprland";
+    };
     # Nur repo for firefox extensions
     # nur.url = "github:nix-community/NUR";
     # nur.inputs.nixpkgs.follows = "nixpkgs";
@@ -42,8 +46,8 @@
      }@inputs:
     let
       specialArgs = {
-        inherit spicetify-nix;
         inherit inputs;
+        inherit spicetify-nix;
       };
 
       commonModules = [
@@ -71,6 +75,7 @@
 
         "pc-gambled" = nixpkgs.lib.nixosSystem {
           system = "x86_64-linux";
+          specialArgs = { inherit inputs; };
           modules = commonModules ++ [
             ./devices/pc/configuration.nix
             nixos-hardware.nixosModules.gigabyte-b650

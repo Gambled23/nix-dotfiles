@@ -7,8 +7,8 @@ with lib;
   services.displayManager.defaultSession = "plasma";
 
   services.displayManager = {
-    autoLogin.enable = true;
-    autoLogin.user = "gambled";
+    # autoLogin.enable = true;
+    # autoLogin.user = "gambled";
     sddm = {
       enable = true;
       autoNumlock = true;

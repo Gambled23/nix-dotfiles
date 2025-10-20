@@ -16,6 +16,7 @@
     core/programs/starship.nix
     core/programs/zsh.nix
     # core/programs/firefox.nix
+    core/services/xserver/hyprland/config.nix
   ];
   home.packages = with pkgs; [
     #*books
