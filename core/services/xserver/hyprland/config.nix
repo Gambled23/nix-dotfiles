@@ -73,11 +73,12 @@ in
       # Autostart necessary processes (like notifications daemons, status bars, etc.)
       # Or execute your favorite apps at launch like this:
 
-      # "exec-once" = [
-      #   "$terminal"
-      #   "nm-applet &"
-      #   "waybar & hyprpaper & firefox"
-      # ];
+      "exec-once" = [
+        "systemctl --user start hyprpolkitagent"
+        # "$terminal"
+        # "nm-applet &"
+        # "waybar & hyprpaper & firefox"
+      ];
 
 
       #############################
@@ -280,6 +281,18 @@ in
         "$mainMod, R, exec, $menu"
         "$mainMod, P, pseudo," # dwindle
         "$mainMod, J, togglesplit," # dwindle
+
+        # Media controller
+        "ALT, =, exec, wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 1%+"
+        "ALT, -, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%-"
+        "ALT, 0, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+        "ALT, 1, exec, playerctl previous"
+        "ALT, 2, exec, playerctl play-pause"
+        "ALT, 3, exec, playerctl next"
+
+        # Tools
+        ", Print, exec, grim"
+
 
         # Move focus with mainMod + arrow keys
         "$mainMod, left, movefocus, l"

@@ -87,6 +87,10 @@ with lib;
 
     #krunner plugins
     vscode-runner
+
+    # Screensharing
+    pipewire
+    wireplumber
   ];
 
   qt.style = "kvantum";
