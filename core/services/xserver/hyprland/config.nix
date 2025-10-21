@@ -10,9 +10,6 @@ let
     spotify %U
     vesktop %U
     steam %U
-    sleep 1
-    ${pkgs.kitty}/bin/kitty &
-    ${pkgs.firefox}/bin/firefox &
   '';
 in 
 {
@@ -24,11 +21,6 @@ in
     ];
 
     settings = {
-      exec-once = ''${startupScript}/bin/start'';
-      "plugin:borders-plus-plus" = {
-        add_borders = 1;
-        "col.border_1" = "rgb(2222ff)";
-      };
       # This is an example Hyprland config file for Nix.
       # Refer to the wiki for more information.
       # https://wiki.hypr.land/Configuring/
@@ -77,6 +69,10 @@ in
 
       "exec-once" = [
         "systemctl --user start hyprpolkitagent"
+        "firefox"
+        "spotify %U"
+        "vesktop %U"
+        "steam %U"
         # "$terminal"
         # "nm-applet &"
         # "waybar & hyprpaper & firefox"
