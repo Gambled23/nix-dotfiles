@@ -22,6 +22,7 @@
     # dev tools
     #android-studio
     #cmake
+    arduino
 
     # games
     gamemode

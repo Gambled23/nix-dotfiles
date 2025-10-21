@@ -42,7 +42,7 @@ in
       ################
 
       # See https://wiki.hypr.land/Configuring/Monitors/
-      monitor = ",preferred,auto,auto";
+      monitor = "DP-3,3440x1440@180,0x0,1";
 
 
       ###################
@@ -73,7 +73,8 @@ in
         "spotify %U"
         "vesktop %U"
         "steam %U"
-        # "$terminal"
+        "waybar"
+        "hyprpaper"
         # "nm-applet &"
         # "waybar & hyprpaper & firefox"
       ];
@@ -228,6 +229,7 @@ in
       };
 
 
+
       #############
       ### INPUT ###
       #############
@@ -374,6 +376,7 @@ in
         # Fix some dragging issues with XWayland
         "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
       ];
+      
     };
   };
 

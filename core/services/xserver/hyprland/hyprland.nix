@@ -23,6 +23,8 @@ with lib;
     pkgs.dunst # notification daemon
     pkgs.pipewire
     pkgs.wireplumber
+    pkgs.waybar
+    pkgs.hyprpaper
   ];
 
   # Optional, hint Electron apps to use Wayland:
