@@ -63,6 +63,8 @@ in
 
       "$terminal" = "kitty";
       "$fileManager" = "dolphin";
+      "$web_browser" = "google-chrome-stable";
+      "$code" = "code";
       "$menu" = "wofi --show drun";
 
 
@@ -243,7 +245,7 @@ in
 
         follow_mouse = 1;
 
-        sensitivity = 0; # -1.0 - 1.0, 0 means no modification.
+        sensitivity = -0.8; # -1.0 - 1.0, 0 means no modification.
 
         touchpad = {
             natural_scroll = false;
@@ -272,10 +274,12 @@ in
 
       bind = [
         # Example binds, see https://wiki.hypr.land/Configuring/Binds/ for more
-        "$mainMod, Q, exec, $terminal"
-        "$mainMod, C, killactive,"
+        "$mainMod, RETURN, exec, $terminal"
+        "$mainMod, Q, killactive,"
         "$mainMod, M, exit,"
         "$mainMod, E, exec, $fileManager"
+        "$mainMod, F, exec, $web_browser"
+        "$mainMod, C, exec, $code"
         "$mainMod, V, togglefloating,"
         "$mainMod, R, exec, $menu"
         "$mainMod, P, pseudo," # dwindle

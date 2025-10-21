@@ -5,7 +5,7 @@ in
 {
   imports = [
     # Global services
-    # ./core/services/glances.nix
+    ./core/services/glances.nix
     ./core/services/mysql.nix
     ./core/services/openssh.nix
     ./core/programs/steam.nix
