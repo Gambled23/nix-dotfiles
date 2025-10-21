@@ -14,6 +14,15 @@ with lib;
 
   environment.systemPackages = [
     pkgs.kitty # required for the default Hyprland config
+    pkgs.wofi # App launcher
+    pkgs.grim # Screenshot tool
+    pkgs.playerctl
+    pkgs.hyprpolkitagent # Polkit for gui applications
+    pkgs.kdePackages.qtwayland
+    pkgs.libsForQt5.qt5.qtwayland
+    pkgs.dunst # notification daemon
+    pkgs.pipewire
+    pkgs.wireplumber
   ];
 
   # Optional, hint Electron apps to use Wayland:

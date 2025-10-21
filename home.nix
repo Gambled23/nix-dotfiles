@@ -75,6 +75,11 @@
     carla
     # gxplugins-lv2
   ];
+  
+  home.sessionVariables = {
+    NIXOS_OZONE_WL = "1";
+    ELECTRON_OZONE_PLATFORM_HINT = "wayland";
+  };
 
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
