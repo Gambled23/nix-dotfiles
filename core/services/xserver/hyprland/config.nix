@@ -6,10 +6,10 @@
 let 
   startupScript = pkgs.writeShellScript "start" ''
     #!/bin/sh
-    firefox
-    spotify %U
-    vesktop %U
-    steam %U
+    uwsm app -- firefox
+    uwsm app -- spotify %U
+    uwsm app -- vesktop %U
+    uwsm app -- steam %U
   '';
 in 
 {
@@ -18,6 +18,7 @@ in
   ];
   wayland.windowManager.hyprland = {
     enable = true;
+    systemd.enable = false;
 
     plugins = [
       inputs.hyprland-plugins.packages."${pkgs.system}".borders-plus-plus
@@ -56,10 +57,10 @@ in
 
       # Set programs that you use
 
-      "$terminal" = "kitty";
-      "$fileManager" = "dolphin";
-      "$web_browser" = "google-chrome-stable";
-      "$code" = "code";
+      "$terminal" = "uwsm app -- kitty";
+      "$fileManager" = "uwsm app -- dolphin";
+      "$web_browser" = "uwsm app -- google-chrome-stable";
+      "$code" = "uwsm app -- code";
       "$menu" = "wofi --show drun";
 
 
@@ -71,13 +72,13 @@ in
       # Or execute your favorite apps at launch like this:
 
       "exec-once" = [
-        "systemctl --user start hyprpolkitagent"
+        "systemctl --user enable --now hyprpolkitagent.service"
         "waybar"
         "hyprpaper"
-        "firefox"
-        "spotify %U"
-        "vesktop %U"
-        "steam %U"
+        "uwsm app -- firefox"
+        "uwsm app -- spotify %U"
+        "uwsm app -- vesktop %U"
+        "uwsm app -- steam %U"
       ];
 
 
@@ -382,36 +383,6 @@ in
         "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
       ];
       
-    };
-  };
-
-  services.hyprpaper = {
-    enable = true;
-    settings = {
-      preload =
-        [ "/etc/nixos/wallpaper.png" ];
-      wallpaper = [
-        "/etc/nixos/wallpaper.png"
-      ];
-    };
-  };
-
-  services.hyprsunset = {
-    enable = true;
-    settings = {
-      max-gamma = 150;
-
-      profile = [
-        {
-          time = "7:30";
-          identity = true;
-        }
-        {
-          time = "21:00";
-          temperature = 5000;
-          gamma = 0.8;
-        }
-      ];
     };
   };
 
