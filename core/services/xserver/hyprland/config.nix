@@ -13,6 +13,9 @@ let
   '';
 in 
 {
+  imports = [
+    ./waybar/waybar.nix
+  ];
   wayland.windowManager.hyprland = {
     enable = true;
 
@@ -69,14 +72,12 @@ in
 
       "exec-once" = [
         "systemctl --user start hyprpolkitagent"
+        "waybar"
+        "hyprpaper"
         "firefox"
         "spotify %U"
         "vesktop %U"
         "steam %U"
-        "waybar"
-        "hyprpaper"
-        # "nm-applet &"
-        # "waybar & hyprpaper & firefox"
       ];
 
 
@@ -120,11 +121,10 @@ in
       # https://wiki.hypr.land/Configuring/Variables/#general
       general = {
         gaps_in = 5;
-        gaps_out = 20;
+        gaps_out = 10;
+        border_size = 1;
 
-        border_size = 2;
-
-        "col.active_border" = "rgba(33ccffee) rgba(00ff99ee) 45deg";
+        "col.active_border" = "rgba(99cc00ee) rgba(00ff99ee) 45deg";
         "col.inactive_border" = "rgba(595959aa)";
 
         # Set to true enable resizing windows by clicking and dragging on borders and gaps
@@ -285,8 +285,8 @@ in
         "$mainMod, J, togglesplit," # dwindle
 
         # Media controller
-        "ALT, =, exec, wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 1%+"
-        "ALT, -, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%-"
+        "ALT, =, exec, wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"
+        "ALT, -, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
         "ALT, 0, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
         "ALT, 1, exec, playerctl previous"
         "ALT, 2, exec, playerctl play-pause"
@@ -368,7 +368,12 @@ in
 
       windowrule = [
         # Example windowrule
-        # "float,class:^(kitty)$,title:^(kitty)$"
+        "workspace[5],class:^(spotify)$"
+        "workspace[2],class:^(vesktop)$"
+        "workspace[2],class:^(altus)$"
+        "workspace[4],class:^(steam)$"
+        "workspace[3],class:^(stremio)$"
+        "workspace[3],class:^(miru)$"
 
         # Ignore maximize requests from apps. You'll probably like this.
         "suppressevent maximize, class:.*"
@@ -378,6 +383,26 @@ in
       ];
       
     };
+  };
+
+  services.hyprpaper = {
+    enable = true;
+    settings = {
+      preload =
+        [ "/etc/nixos/wallpaper.png" ];
+      wallpaper = [
+        "/etc/nixos/wallpaper.png"
+      ];
+    };
+  };
+
+  services.hyprsunset = {
+    enable = true;
+    profile {
+        time = "21:00";
+        temperature = "5500";
+        gamma = "0.8";
+    }
   };
 
 }
