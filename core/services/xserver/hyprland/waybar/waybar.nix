@@ -12,17 +12,15 @@
       gtk-layer-shell = true;
       height = 0;
       modules-left = [
-        "hyprland/window"
-        "custom/divider"
         "hyprland/workspaces"
+        "custom/divider"
+        "hyprland/window"
         "custom/divider"
         "cpu"
         "custom/divider"
         "memory"
       ];
       modules-center = [ 
-        "clock"
-        "custom/divider"
         "mpris"
       ];
       modules-right = [
@@ -31,6 +29,7 @@
         "pulseaudio"
         "custom/divider"
         "backlight/slider"
+        "clock"
       ];
       "hyprland/window" = { format = "{}"; };
       "wlr/workspaces" = {
@@ -62,7 +61,7 @@
         max-length = 50;
       };
       tray = {
-        icon-size = 13;
+        icon-size = 18;
         tooltip = false;
         spacing = 10;
       };
