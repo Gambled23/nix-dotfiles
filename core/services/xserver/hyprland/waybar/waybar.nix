@@ -12,26 +12,25 @@
       gtk-layer-shell = true;
       height = 0;
       modules-left = [
-        "hyprland/workspaces"
+        "hyprland/window"
         "custom/divider"
-        "custom/weather"
+        "hyprland/workspaces"
         "custom/divider"
         "cpu"
         "custom/divider"
         "memory"
       ];
-      modules-center = [ "hyprland/window" ];
+      modules-center = [ 
+        "clock"
+        "custom/divider"
+        "mpris"
+      ];
       modules-right = [
         "tray"
-        "network"
-        "custom/divider"
-        "backlight"
         "custom/divider"
         "pulseaudio"
         "custom/divider"
-        "battery"
-        "custom/divider"
-        "clock"
+        "backlight/slider"
       ];
       "hyprland/window" = { format = "{}"; };
       "wlr/workspaces" = {
@@ -40,34 +39,35 @@
         all-outputs = true;
         on-click = "activate";
       };
-      battery = { format = "󰁹 {}%"; };
+      "backlight/slider"= {
+          min= 0;
+          max= 100;
+          orientation = "horizontal";
+          device = "intel_backlight";
+      };
       cpu = {
         interval = 10;
-        format = "󰻠 {}%";
+        format = "🖥️ {}%";
         max-length = 10;
         on-click = "";
       };
       memory = {
         interval = 30;
-        format = "  {}%";
-        format-alt = " {used:0.1f}G";
+        format = " 💾 {}%";
+        format-alt = "💾 {used:0.1f}G";
         max-length = 10;
       };
-      backlight = {
-        format = "󰖨 {}";
-        device = "acpi_video0";
+      mpris = {
+        format = "{artist} - {title}";
+        max-length = 50;
       };
       tray = {
         icon-size = 13;
         tooltip = false;
         spacing = 10;
       };
-      network = {
-        format = "󰖩 {essid}";
-        format-disconnected = "󰖪 disconnected";
-      };
       clock = {
-        format = " {:%I:%M %p   %m/%d} ";
+        format = "{:%I:%M %p | %m/%d} ";
         tooltip-format = ''
           <big>{:%Y %B}</big>
           <tt><small>{calendar}</small></tt>'';
@@ -75,25 +75,25 @@
       pulseaudio = {
         format = "{icon} {volume}%";
         tooltip = false;
-        format-muted = " Muted";
+        format-muted = "🔇 Muted";
         on-click = "pamixer -t";
         on-scroll-up = "pamixer -i 5";
         on-scroll-down = "pamixer -d 5";
         scroll-step = 5;
         format-icons = {
-          headphone = "";
-          hands-free = "";
-          headset = "";
-          phone = "";
+          headphone = "🎧";
+          hands-free = "🎧";
+          headset = "🎧";
+          phone = "📱";
           portable = "";
-          car = "";
+          car = "🚗";
           default = [ "" "" "" ];
         };
       };
       "pulseaudio#microphone" = {
         format = "{format_source}";
         tooltip = false;
-        format-source = " {volume}%";
+        format-source = "🎤 {volume}%";
         format-source-muted = " Muted";
         on-click = "pamixer --default-source -t";
         on-scroll-up = "pamixer --default-source -i 5";

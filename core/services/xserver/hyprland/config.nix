@@ -15,6 +15,8 @@ in
 {
   imports = [
     ./waybar/waybar.nix
+    ./hyprsunset.nix
+    ./hyprpaper.nix
   ];
   wayland.windowManager.hyprland = {
     enable = true;
@@ -72,9 +74,12 @@ in
       # Or execute your favorite apps at launch like this:
 
       "exec-once" = [
-        "systemctl --user enable --now hyprpolkitagent.service"
+        # "systemctl --user enable --now hyprpolkitagent.service"
         "waybar"
         "hyprpaper"
+        "dunst"
+        "bluetoothctl connect 24:95:2F:60:BD:94"
+        "openrgb --profile 'off.orp'"
         "uwsm app -- firefox"
         "uwsm app -- spotify %U"
         "uwsm app -- vesktop %U"
@@ -225,7 +230,6 @@ in
 
       # https://wiki.hypr.land/Configuring/Variables/#misc
       misc = {
-        force_default_wallpaper = -1; # Set to 0 or 1 to disable the anime mascot wallpapers
         disable_hyprland_logo = false; # If true disables the random hyprland logo / anime girl background. :(
       };
 
@@ -238,7 +242,7 @@ in
       # https://wiki.hypr.land/Configuring/Variables/#input
       input = {
         kb_layout = "us";
-        kb_variant = "";
+        kb_variant = "altgr-intl";
         kb_model = "";
         kb_options = "";
         kb_rules = "";
@@ -286,9 +290,9 @@ in
         "$mainMod, J, togglesplit," # dwindle
 
         # Media controller
-        "ALT, =, exec, wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+"
-        "ALT, -, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
-        "ALT, 0, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+        "ALT, 0, exec, pamixer -i 1"
+        "ALT, 9, exec, pamixer -d 1"
+        "ALT, 8, exec, pamixer -t"
         "ALT, 1, exec, playerctl previous"
         "ALT, 2, exec, playerctl play-pause"
         "ALT, 3, exec, playerctl next"

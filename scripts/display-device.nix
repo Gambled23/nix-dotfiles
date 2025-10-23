@@ -38,13 +38,15 @@ pkgs.writeShellScriptBin "display-device" ''
 
   case "$display_name" in
     pc-gambled)
-      kscreen-doctor output.DP-3.mode.3440x1440@180
+      # kscreen-doctor output.DP-3.mode.3440x1440@180
+      hyprctl keyword monitor "DP-3,3440x1440@180,0x0,1"
       sudo systemctl stop openrgb
       sudo openrgb --server --profile "white_low.orp"
       ;;
     steamdeck)
       # shutdown rgb
-      kscreen-doctor output.DP-3.mode.1280x800@60
+      # kscreen-doctor output.DP-3.mode.1280x800@60
+      hyprctl keyword monitor "DP-3,1280x800@60,0x0,1"
       sudo systemctl stop openrgb
       sudo openrgb --server --profile "off.orp" 
       ;;
