@@ -6,7 +6,6 @@
 let 
   startupScript = pkgs.writeShellScript "start" ''
     #!/bin/sh
-    uwsm app -- firefox
     uwsm app -- spotify %U
     uwsm app -- vesktop %U
     uwsm app -- steam %U
@@ -80,7 +79,6 @@ in
         "dunst"
         "bluetoothctl connect 24:95:2F:60:BD:94"
         "openrgb --profile 'off.orp'"
-        "uwsm app -- firefox"
         "uwsm app -- spotify %U"
         "uwsm app -- vesktop %U"
         "uwsm app -- steam %U"

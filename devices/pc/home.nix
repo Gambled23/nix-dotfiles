@@ -23,6 +23,7 @@
     #android-studio
     #cmake
     arduino
+    jdk8
 
     # games
     gamemode
