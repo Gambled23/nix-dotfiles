@@ -16,6 +16,7 @@ in
     ./waybar/waybar.nix
     ./hyprsunset.nix
     ./hyprpaper.nix
+    ./kitty.nix
   ];
   wayland.windowManager.hyprland = {
     enable = true;
@@ -76,7 +77,7 @@ in
         # "systemctl --user enable --now hyprpolkitagent.service"
         "waybar"
         "hyprpaper"
-        "dunst"
+        "mako"
         "bluetoothctl connect 24:95:2F:60:BD:94"
         "openrgb --profile 'off.orp'"
         "uwsm app -- spotify %U"
@@ -227,7 +228,7 @@ in
 
       # https://wiki.hypr.land/Configuring/Variables/#misc
       misc = {
-        # disable_hyprland_logo = false; # If true disables the random hyprland logo / anime girl background. :(
+        disable_hyprland_logo = true; # If true disables the random hyprland logo / anime girl background. :(
       };
 
 
@@ -317,16 +318,16 @@ in
         "$mainMod, 0, workspace, 10"
 
         # Move active window to a workspace with mainMod + SHIFT + [0-9]
-        "$mainMod SHIFT, 1, movetoworkspace, 1"
-        "$mainMod SHIFT, 2, movetoworkspace, 2"
-        "$mainMod SHIFT, 3, movetoworkspace, 3"
-        "$mainMod SHIFT, 4, movetoworkspace, 4"
-        "$mainMod SHIFT, 5, movetoworkspace, 5"
-        "$mainMod SHIFT, 6, movetoworkspace, 6"
-        "$mainMod SHIFT, 7, movetoworkspace, 7"
-        "$mainMod SHIFT, 8, movetoworkspace, 8"
-        "$mainMod SHIFT, 9, movetoworkspace, 9"
-        "$mainMod SHIFT, 0, movetoworkspace, 10"
+        "$mainMod SHIFT, 1, movetoworkspacesilent, 1"
+        "$mainMod SHIFT, 2, movetoworkspacesilent, 2"
+        "$mainMod SHIFT, 3, movetoworkspacesilent, 3"
+        "$mainMod SHIFT, 4, movetoworkspacesilent, 4"
+        "$mainMod SHIFT, 5, movetoworkspacesilent, 5"
+        "$mainMod SHIFT, 6, movetoworkspacesilent, 6"
+        "$mainMod SHIFT, 7, movetoworkspacesilent, 7"
+        "$mainMod SHIFT, 8, movetoworkspacesilent, 8"
+        "$mainMod SHIFT, 9, movetoworkspacesilent, 9"
+        "$mainMod SHIFT, 0, movetoworkspacesilent, 10"
 
         # Example special workspace (scratchpad)
         "$mainMod, S, togglespecialworkspace, magic"
