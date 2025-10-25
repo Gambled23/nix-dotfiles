@@ -3,6 +3,10 @@
 with lib;
 
 {
+  imports = [
+    ./stylix.nix
+  ];
+  
   nix.settings = {
     substituters = ["https://hyprland.cachix.org"];
     trusted-substituters = ["https://hyprland.cachix.org"];

@@ -24,7 +24,7 @@
     # nur.url = "github:nix-community/NUR";
     # nur.inputs.nixpkgs.follows = "nixpkgs";
 
-    # stylix.url = "github:danth/stylix";
+    stylix.url = "github:danth/stylix";
     #nixpkgs-xr.url = "github:nix-community/nixpkgs-xr";
 
     # millennium.url = "git+https://github.com/SteamClientHomebrew/Millennium";
@@ -42,6 +42,8 @@
       # nur,
       nixcord,
       # jovian-nixos,
+      stylix,
+      # millennium,
       ... 
      }@inputs:
     let
@@ -52,7 +54,7 @@
 
       commonModules = [
         home-manager.nixosModules.home-manager
-        #stylix.nixosModules.stylix
+        stylix.nixosModules.stylix
         # jovian-nixos.nixosModules.default
         # nur.modules.nixos.default
         {

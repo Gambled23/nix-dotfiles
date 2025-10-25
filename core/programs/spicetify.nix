@@ -5,7 +5,7 @@ in
 {
   programs.spicetify = {
     enable = true;
-    theme = spicePkgs.themes.onepunch;
+    # theme = spicePkgs.themes.onepunch;
 
     enabledCustomApps = with spicePkgs.apps; [
       # newReleases
@@ -23,17 +23,17 @@ in
       powerBar
       # lastfm
       # shuffle
-      # volumePercentage
-      # skipOrPlayLikedSongs
+      volumePercentage
+      skipOrPlayLikedSongs
       # goToSong
-      # showQueueDuration
+      showQueueDuration
       # copyToClipboard
-      # history
+      history
       # savePlaylists
       playingSource
       # sectionMarker
       # beautifulLyrics
-      # addToQueueTop
+      addToQueueTop
     ];
   };
 }

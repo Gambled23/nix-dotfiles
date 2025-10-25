@@ -8,7 +8,7 @@
 }
 
 window#waybar {
-  background: rgba(21, 18, 27, 0);
+  background: rgba(60, 60, 60, 0.585);
   color: #cdd6f4;
 }
 
@@ -17,11 +17,11 @@ tooltip {}
 #workspaces button {}
 
 #workspaces button.active {
-  color: #9ccfd8;
+  color: #98a900;
 }
 
 #workspaces button.focused {
-  color: #9ccfd8;
+  color: #636e00;
 }
 
 #workspaces button.urgent {}
