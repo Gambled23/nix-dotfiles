@@ -61,7 +61,7 @@ with lib;
     # kdePackages.merkuro
     kdePackages.kclock
     kdePackages.kalk
-    kdePackages.qtstyleplugin-kvantum
+    # kdePackages.qtstyleplugin-kvantum
     # libportal-qt6
     kdePackages.dolphin-plugins
     kdePackages.kate
@@ -75,7 +75,7 @@ with lib;
     #kdePackages.koi
     # graphite-kde-theme
     vimix-cursors
-    gruvbox-kvantum
+    # gruvbox-kvantum
     # nordic
     # qogir-kde
 
@@ -93,7 +93,7 @@ with lib;
     wireplumber
   ];
 
-  qt.style = "kvantum";
+  # qt.style = "kvantum";
 
   programs.partition-manager.enable = true;
   programs.kdeconnect.enable = true;
