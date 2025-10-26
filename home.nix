@@ -51,7 +51,7 @@
     # jellyfin-ffmpeg
     android-tools
     libreoffice
-    rquickshare
+    # rquickshare
     scrcpy
     nextcloud-client
     zoom-us

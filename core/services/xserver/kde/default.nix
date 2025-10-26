@@ -4,7 +4,7 @@ with lib;
 
 {
   services.desktopManager.plasma6.enable = true;
-  services.displayManager.defaultSession = "plasma";
+  services.displayManager.defaultSession = "hyprland-uwsm";
 
   services.displayManager = {
     autoLogin.enable = true;
