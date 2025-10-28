@@ -29,7 +29,6 @@ with lib;
     # pkgs.hyprpolkitagent # Polkit for gui applications
     pkgs.kdePackages.qtwayland
     pkgs.libsForQt5.qt5.qtwayland
-    pkgs.mako # notification daemon
     pkgs.pipewire
     pkgs.pulseaudio
     pkgs.wireplumber

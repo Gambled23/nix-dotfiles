@@ -17,6 +17,7 @@ in
     ./hyprsunset.nix
     ./hyprpaper.nix
     ./kitty.nix
+    ./notifications/mako.nix
   ];
   wayland.windowManager.hyprland = {
     enable = true;
