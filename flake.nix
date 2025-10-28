@@ -85,7 +85,7 @@
               home-manager.users.gambled.imports = [
                 ./devices/pc/home.nix
               ];
-              home-manager.backupFileExtension = "meme";
+              home-manager.backupFileExtension = "uiod";
               nixpkgs.overlays = [
                 # inputs.millennium.overlays.default
               ];
