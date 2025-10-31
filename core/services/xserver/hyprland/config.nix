@@ -64,7 +64,8 @@ in
       "$fileManager" = "uwsm app -- dolphin";
       "$web_browser" = "uwsm app -- google-chrome-stable";
       "$code" = "uwsm app -- code";
-      "$menu" = "wofi --show drun";
+      "$menu" = "raycast";
+      # "$menu" = "wofi --show drun";
 
 
       #################
