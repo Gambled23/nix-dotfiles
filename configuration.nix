@@ -154,4 +154,13 @@ in
   # };
   boot.tmp.useTmpfs = false;
   boot.kernelPackages = pkgs.linuxPackages_latest;
+
+  services.udev = {
+    enable = true;
+    # Dar permisos a dispositivos hidraw para headsetcontrol
+    extraRules = 
+      ''
+        KERNEL=="hidraw*", SUBSYSTEM=="hidraw", MODE="0666" 
+      '';
+  };
 }

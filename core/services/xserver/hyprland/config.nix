@@ -18,6 +18,7 @@ in
     ./hyprpaper.nix
     ./kitty.nix
     ./notifications/mako.nix
+    ./menu/walker.nix
   ];
   wayland.windowManager.hyprland = {
     enable = true;
@@ -64,7 +65,7 @@ in
       "$fileManager" = "uwsm app -- dolphin";
       "$web_browser" = "uwsm app -- google-chrome-stable";
       "$code" = "uwsm app -- code";
-      "$menu" = "wofi --show drun";
+      "$menu" = "walker";
 
 
       #################
@@ -80,6 +81,7 @@ in
         "hyprpaper"
         "mako"
         "bluetoothctl connect 24:95:2F:60:BD:94"
+        "sudo systemctl stop openrgb.service"
         "openrgb --profile 'off.orp'"
         "uwsm app -- spotify %U"
         "uwsm app -- vesktop %U"
@@ -372,12 +374,13 @@ in
 
       windowrule = [
         # Example windowrule
-        "workspace[5],class:^(spotify)$"
-        "workspace[2],class:^(vesktop)$"
-        "workspace[2],class:^(altus)$"
-        "workspace[4],class:^(steam)$"
-        "workspace[3],class:^(stremio)$"
-        "workspace[3],class:^(miru)$"
+        "workspace 5, class:^(spotify)$"
+        "workspace 2, class:^(vesktop)$"
+        "workspace 2, class:^(altus)$"
+        "workspace 4, class:^(steam)$"
+        "workspace 3, class:^(stremio)$"
+        "workspace 3, class:^(miru)$"
+
 
         # Ignore maximize requests from apps. You'll probably like this.
         "suppressevent maximize, class:.*"

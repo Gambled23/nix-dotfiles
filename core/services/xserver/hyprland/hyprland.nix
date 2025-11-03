@@ -23,7 +23,6 @@ with lib;
 
   environment.systemPackages = [
     pkgs.kitty # required for the default Hyprland config
-    pkgs.wofi # App launcher
     pkgs.grim # Screenshot tool
     pkgs.playerctl
     # pkgs.hyprpolkitagent # Polkit for gui applications

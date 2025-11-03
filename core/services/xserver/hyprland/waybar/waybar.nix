@@ -13,8 +13,7 @@
       height = 0;
       modules-left = [
         "hyprland/workspaces"
-        "custom/divider"
-        "hyprland/window"
+        # "hyprland/window"
         "custom/divider"
         "cpu"
         "custom/divider"
@@ -26,9 +25,11 @@
       modules-right = [
         "tray"
         "custom/divider"
-        "pulseaudio"
+        "bluetooth"
         "custom/divider"
-        "backlight/slider"
+        "pulseaudio"
+        "custom/headsetcontrol"
+        "custom/divider"
         "clock"
       ];
       "hyprland/window" = { format = "{}"; };
@@ -44,9 +45,22 @@
           orientation = "horizontal";
           device = "intel_backlight";
       };
+      bluetooth = {
+        format = "{status}";
+        format-connected = "ᛒ {device_alias}";
+        format-connected-battery = "ᛒ {device_alias} {device_battery_percentage}%";
+        format-disconnected = "ᛒ Off";
+        tooltip = true;
+        on-click = "bluetoothctl power on";
+        on-right-click = "bluetoothctl power off";
+        format-icons = {
+          connected = " {device_alias}";
+          disconnected = "ᛒ Off";
+        };
+      };
       cpu = {
         interval = 10;
-        format = "🖥️ {}%";
+        format = "🖥️ {usage}%";
         max-length = 10;
         on-click = "";
       };
@@ -86,7 +100,7 @@
           phone = "📱";
           portable = "";
           car = "🚗";
-          default = [ "" "" "" ];
+          default = [ "🚗" "🚗" "🚗" ];
         };
       };
       "pulseaudio#microphone" = {
@@ -102,6 +116,12 @@
       "custom/divider" = {
         format = " | ";
         interval = "once";
+        tooltip = false;
+      };
+      "custom/headsetcontrol" = {
+        exec = "headsetcontrol -b 2>&1 | awk -F'Level: ' '/Level:/ {print $2}'";
+        interval = 60;
+        format = "🔋 {}";
         tooltip = false;
       };
       "custom/endright" = {
