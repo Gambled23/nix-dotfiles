@@ -81,7 +81,6 @@ in
         "hyprpaper"
         "mako"
         "bluetoothctl connect 24:95:2F:60:BD:94"
-        "sudo systemctl stop openrgb.service"
         "openrgb --profile 'off.orp'"
         "uwsm app -- spotify %U"
         "uwsm app -- vesktop %U"
