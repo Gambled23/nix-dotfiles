@@ -84,6 +84,7 @@ in
         "openrgb --profile 'off.orp'"
         "uwsm app -- spotify %U"
         "uwsm app -- vesktop %U"
+        "uwsm app -- altus %U"
         "uwsm app -- steam %U"
       ];
 
