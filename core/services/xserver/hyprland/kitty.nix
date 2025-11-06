@@ -62,5 +62,6 @@
     color15                 #bdae93
     
     map f1 new_tab_with_cwd
+    map f2 nix-rbd
   '';
 }
