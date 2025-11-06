@@ -3,51 +3,34 @@
 pkgs.writeShellScriptBin "nix-rbd" ''
   #!${pkgs.bash}/bin/bash
 
-  device="pc-gambled"
-
-  # Parse options
-  while getopts "u" opt; do
-    case $opt in
-      u)
-        update_config=true
-        ;;
-      h)
-        echo "Usage: nix-rbd [-u] [rebuild_mode]"
-        echo "  -u                Update configuration before rebuilding"
-        echo "  rebuild_mode     One of 'switch', 'boot', 'test', or 'build'"
-        exit 0
-        ;;
-    esac
-  done
-
-  # Shift past the options
-  shift $((OPTIND-1))
-
-  
+  set -e
   cd /etc/nixos/
   git pull
-  set -e
 
   git add .
-  sudo nixos-rebuild $rebuild_mode
 
-  if [ $1 ]; then
-    rebuild_mode=$1
-  fi
+  rebuild_mode="switch"
 
-  if [ "$update_config" = true ]; then
+  if  [[ $1 = "-u" ]]; then
     sudo nix flake update
     rebuild_mode="boot"
+  elif [[ $1 ]]; then
+    rebuild_mode=$1
+  else 
+    rebuild_mode="switch"
   fi
+
+  sudo nixos-rebuild $rebuild_mode
 
   git commit -m "nix-rbd $rebuild_mode"
 
   git push
   echo "Rebuild $rebuild_mode complete"
 
-  if [ "$update_config" = true ]; then
+  if [[ $1 = "-u" ]]; then
     agc
     read -p "Press enter to reboot"
     reboot
   fi
+
 ''
