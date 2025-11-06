@@ -49,6 +49,7 @@ pkgs.writeShellScriptBin "display-device" ''
       hyprctl keyword monitor "DP-3,1280x800@60,0x0,1"
       sudo systemctl stop openrgb
       sudo openrgb --server --profile "off.orp" 
+      steam steam://open/bigpicture
       ;;
     *)
       echo "Invalid display name: $display_name" >&2
