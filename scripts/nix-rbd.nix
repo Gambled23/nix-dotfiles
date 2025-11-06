@@ -16,8 +16,6 @@ pkgs.writeShellScriptBin "nix-rbd" ''
     rebuild_mode="boot"
   elif [[ $1 ]]; then
     rebuild_mode=$1
-  else 
-    rebuild_mode="switch"
   fi
 
   sudo nixos-rebuild $rebuild_mode
