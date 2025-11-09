@@ -35,6 +35,7 @@ in
     10.243.0.4 android-gambled
     10.243.0.5 windows-gambled
     10.243.0.6 steamdeck
+    10.243.0.7 server-gambled
     10.243.0.69 dev-gambled
   '';
 
