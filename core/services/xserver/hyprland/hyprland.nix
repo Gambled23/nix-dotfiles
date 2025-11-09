@@ -33,6 +33,7 @@ with lib;
     pkgs.wireplumber
     pkgs.waybar
     pkgs.hyprpaper
+    pkgs.hypridle
     pkgs.pamixer
   ];
 

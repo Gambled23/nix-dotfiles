@@ -16,6 +16,7 @@ in
     ./waybar/waybar.nix
     ./hyprsunset.nix
     ./hyprpaper.nix
+    ./hypridle.nix
     ./kitty.nix
     ./notifications/mako.nix
     ./menu/walker.nix
@@ -77,8 +78,9 @@ in
 
       "exec-once" = [
         # "systemctl --user enable --now hyprpolkitagent.service"
-        "waybar"
-        "hyprpaper"
+        "systemctl --user enable --now waybar.service"
+        "systemctl --user enable --now hyprpaper.service"
+        "systemctl --user enable --now hypridle.service"
         "mako"
         "bluetoothctl connect 24:95:2F:60:BD:94"
         "openrgb --profile 'off.orp'"
