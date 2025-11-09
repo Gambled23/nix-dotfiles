@@ -8,16 +8,9 @@ in
     ./core/services/glances.nix
     ./core/services/mysql.nix
     ./core/services/openssh.nix
-    ./core/programs/steam.nix
     ./core/services/syncthing.nix
     ./core/services/zerotier.nix
 
-    # Desktop enviroment
-    ./core/services/xserver/hyprland/hyprland.nix
-    ./core/services/xserver/kde/default.nix
-    #./core/services/xserver/gnome/default.nix
-    #./core/services/xserver/i3/default.nix
-    #./core/services/xserver/awesome/awesomewm.nix
   ];
 
   nix.settings.download-buffer-size = 524288000;
@@ -83,18 +76,14 @@ in
   environment.systemPackages = with pkgs; [
     grub2
     (import ./scripts/nix-rbd.nix { inherit pkgs; })
-    (import ./scripts/modo-tele.nix { inherit pkgs; })
     (import ./scripts/update-flake.nix { inherit pkgs; })
     (import ./scripts/auto-gc.nix { inherit pkgs; })
     (import ./scripts/git-clone.nix { inherit pkgs; })
-    (import ./scripts/flash-kernelsu.nix { inherit pkgs; })
     (import ./scripts/dev/enviroment.nix { inherit pkgs; })
     (import ./scripts/dev/ssh-github.nix { inherit pkgs; })
     (import ./scripts/dev/migrateDB.nix { inherit pkgs; })
     (import ./scripts/dev/mysqlSetupRoot.nix { inherit pkgs; })
     (import ./scripts/dev/modular-prod-backup.nix { inherit pkgs; })
-    (callPackage ./nixpkgs/pkgs/hayase/package.nix {})
-    (callPackage ./nixpkgs/pkgs/stremio/package.nix {})
   ];
 
   system.autoUpgrade.enable = true;
@@ -120,7 +109,6 @@ in
 
 
   # Extra services
-  services.flatpak.enable = true; # Enable flatpak
   services.packagekit.enable = true; # Enable packagekit for gnome software
   services.fwupd.enable = true; # Enable firmware updates
   programs.adb.enable = true;

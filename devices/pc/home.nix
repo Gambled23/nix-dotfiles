@@ -9,23 +9,28 @@
   home.stateVersion = "25.05";
   imports = [
     ../../home.nix
+    # ../../core/programs/firefox.nix
+    ../../core/services/xserver/hyprland/config.nix
+
   ];
 
   home.packages = with pkgs; [
-    # books
+    #* books
     #hakuneko
     #kcc
     #calibre
     #mangal
+    komikku
     coolercontrol.coolercontrold
     
-    # dev tools
+    #* dev tools
     #android-studio
     #cmake
     arduino
-    jdk23
+    dbeaver-bin
+    vscode
 
-    # games
+    #* games
     gamemode
     wineWowPackages.stable
     winetricks
@@ -38,10 +43,51 @@
     sm64coopdx
     # mangohud
 
-    # utils
+    #* utils
     polychromatic
     #vulkan-tools
     pdfarranger
     via
+
+    #* media
+    vlc
+
+    #* media creation
+    gimp
+    inkscape-with-extensions
+    obs-studio
+
+    #* messaging
+    altus
+    materialgram
+
+    #* networking
+    zerotierone
+
+    #* guitarra
+    guitarix
+    tonelib-metal
+    carla
+    # gxplugins-lv2
+
+    #* utils
+    # activitywatch
+    # p3x-onenote
+    # protontricks
+    # galaxy-buds-client
+    # jellyfin-ffmpeg
+    android-tools
+    libreoffice
+    # rquickshare
+    scrcpy
+    nextcloud-client
+    zoom-us
+    # koreader
+    #logseq
+
+    #* webbrowsers
+    google-chrome
+    #floorp
+    #chromium
   ];
 }

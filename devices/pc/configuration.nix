@@ -15,18 +15,32 @@
     #../../core/services/xrdp.nix
     ../../core/services/wakeonlan.nix
     ../../core/services/openrgb.nix
+    ../../core/programs/steam.nix
     ../../core/services/sunshine.nix
-    ../../core/services/coolercontrol.nix
+    # ../../core/services/coolercontrol.nix
 
     # bootloader
     #../../core/bootloader/systemd.nix
     ../../core/bootloader/grub.nix
+
+    # Desktop enviroment
+    ../../core/services/xserver/hyprland/hyprland.nix
+    ../../core/services/xserver/kde/default.nix
+    #../../core/services/xserver/gnome/default.nix
+    #../../core/services/xserver/i3/default.nix
+    #../../core/services/xserver/awesome/awesomewm.nix
   ];
+
   environment.systemPackages = with pkgs; [
     lact
     (import ../../scripts/reboot-to-windows.nix { inherit pkgs; })
     (import ../../scripts/display-device.nix { inherit pkgs; })
-    (callPackage ../../nixpkgs/pkgs/moondeckbuddy/package.nix {})
+    (import ../../scripts/modo-tele.nix { inherit pkgs; })
+    (import ../../scripts/flash-kernelsu.nix { inherit pkgs; })
+    (callPackage ../../nixpkgs/pkgs/hayase/package.nix {})
+    (callPackage ../../nixpkgs/pkgs/stremio/package.nix {})
+    # (callPackage ../../nixpkgs/pkgs/moondeckbuddy/package.nix {})
+
   ];
 
   # amdgpu
@@ -48,17 +62,8 @@
     "boot.shell_on_fail"
   ];
 
-  powerManagement = {
-    enable = true;
-    powerUpCommands = 
-      "openrgb -p HOLA.orp\n
-      bluetoothctl connect 24:95:2F:60:BD:94";
-    resumeCommands = 
-      "openrgb -p HOLA.orp\n
-      bluetoothctl connect 24:95:2F:60:BD:94";
-  };
-
-
+  services.flatpak.enable = true; # Enable flatpak
+  
   # virtualisation
   # virtualisation.vmware.host.enable = true; # vmware
   # virtualisation.waydroid.enable = true; # Waydroid

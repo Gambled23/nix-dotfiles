@@ -54,20 +54,13 @@
 
       commonModules = [
         home-manager.nixosModules.home-manager
-        stylix.nixosModules.stylix
         # jovian-nixos.nixosModules.default
         # nur.modules.nixos.default
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.users.gambled.imports = [
-            inputs.plasma-manager.homeManagerModules.plasma-manager
-            ./core/services/xserver/kde/config.nix
-            spicetify-nix.homeManagerModules.default
-            ./core/programs/spicetify.nix
-            inputs.nixcord.homeModules.nixcord
-            ./core/programs/nixcord.nix
-          ];
+          # home-manager.users.gambled.imports = [
+          # ];
           home-manager.extraSpecialArgs = specialArgs;
         }
       ];
@@ -81,9 +74,16 @@
           modules = commonModules ++ [
             ./devices/pc/configuration.nix
             nixos-hardware.nixosModules.gigabyte-b650
+            stylix.nixosModules.stylix
             {
               home-manager.users.gambled.imports = [
                 ./devices/pc/home.nix
+                inputs.plasma-manager.homeManagerModules.plasma-manager
+                ./core/services/xserver/kde/config.nix
+                spicetify-nix.homeManagerModules.default
+                ./core/programs/spicetify.nix
+                inputs.nixcord.homeModules.nixcord
+                ./core/programs/nixcord.nix
               ];
               home-manager.backupFileExtension = "uiod";
               nixpkgs.overlays = [
@@ -107,6 +107,19 @@
           ];
         };
 
+
+        "server-gambled" = nixpkgs.lib.nixosSystem {
+          system = "x86_64-linux";
+          modules = commonModules ++ [
+            ./devices/server/configuration.nix
+            {
+              home-manager.users.gambled.imports = [
+                ./devices/server/home.nix
+              ];
+              home-manager.backupFileExtension = "meme";
+            }
+          ];
+        };
       };
     };
 }
