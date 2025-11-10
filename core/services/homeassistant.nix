@@ -2,8 +2,6 @@
   services.home-assistant = {
     enable = true;
     extraPackages = ps: with ps; [ psycopg2 ];
-      config.recorder.db_url = "postgresql://@/hass";
-    };
     extraComponents = [
       # Components required to complete the onboarding
       "analytics"
@@ -19,6 +17,7 @@
       # Includes dependencies for a basic setup
       # https://www.home-assistant.io/integrations/default_config/
       default_config = {};
+      recorder.db_url = "postgresql://@/hass";
       http = {
         server_host = "::1";
         trusted_proxies = [ "::1" ];
