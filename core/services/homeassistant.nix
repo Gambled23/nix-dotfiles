@@ -24,7 +24,7 @@
         trusted_proxies = [ "::1" ];
         use_x_forwarded_for = true;
       };
-    }
+    };
   };
 
   services.postgresql = {
