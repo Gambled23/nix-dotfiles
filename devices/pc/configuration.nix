@@ -10,7 +10,6 @@
     #../../core/programs/corectrl.nix
     #../../core/programs/alvr.nix
     #../../core/services/wivrn.nix
-    #../../core/services/docker.nix
     #../../core/services/suwayomi.nix
     #../../core/services/xrdp.nix
     ../../core/services/wakeonlan.nix
