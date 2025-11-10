@@ -7,6 +7,7 @@
   imports = [
     ../../configuration.nix
     ./hardware-configuration.nix
+    ../../core/services/homeassistant.nix
     #./symlinks.nix
 
     # bootloader
