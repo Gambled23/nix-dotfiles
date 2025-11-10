@@ -20,7 +20,7 @@ pkgs.writeShellScriptBin "nix-rbd" ''
 
   sudo nixos-rebuild $rebuild_mode
 
-  git commit -m "nix-rbd $rebuild_mode"
+  git commit -m "nix-rbd $rebuild_mode from $(hostname)" || echo "No changes to commit"
 
   git push
   echo "Rebuild $rebuild_mode complete"
