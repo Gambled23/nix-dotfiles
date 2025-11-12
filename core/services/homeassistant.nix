@@ -34,25 +34,27 @@
       mini-media-player
     ];
     # config = null;
-    config = {
-      # Includes dependencies for a basic setup
-      # https://www.home-assistant.io/integrations/default_config/
-      default_config = {
+    # config = {
+    #   # Includes dependencies for a basic setup
+    #   # https://www.home-assistant.io/integrations/default_config/
+    #   default_config = {
 
-      };
-      recorder.db_url = "postgresql://@/hass";
-    };
+    #   };
+    #   recorder.db_url = "postgresql://@/hass";
+    # };
+
     # configWritable = true;
+    config = null;
   };
 
-  services.postgresql = {
-    enable = true;
-    ensureDatabases = [ "hass" ];
-    ensureUsers = [{
-      name = "hass";
-      ensureDBOwnership = true;
-    }];
-  };
+  # services.postgresql = {
+  #   enable = true;
+  #   ensureDatabases = [ "hass" ];
+  #   ensureUsers = [{
+  #     name = "hass";
+  #     ensureDBOwnership = true;
+  #   }];
+  # };
 
   networking.firewall.allowedTCPPorts = [
     config.services.home-assistant.config.http.server_port
