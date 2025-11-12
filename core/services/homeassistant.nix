@@ -33,7 +33,6 @@
       mini-graph-card
       mini-media-player
     ];
-    # config = null;
     # config = {
     #   # Includes dependencies for a basic setup
     #   # https://www.home-assistant.io/integrations/default_config/
@@ -44,7 +43,7 @@
     # };
 
     # configWritable = true;
-    config = null;
+    config = {};
   };
 
   # services.postgresql = {
