@@ -16,14 +16,15 @@
       "isal"
     ];
     # config = null;
-    # config = {
-    #   # Includes dependencies for a basic setup
-    #   # https://www.home-assistant.io/integrations/default_config/
-    #   default_config = {
+    config = {
+      # Includes dependencies for a basic setup
+      # https://www.home-assistant.io/integrations/default_config/
+      default_config = {
 
-    #   };
-    #   recorder.db_url = "postgresql://@/hass";
-    # };
+      };
+      recorder.db_url = "postgresql://@/hass";
+    };
+    configWritable = true;
   };
 
   services.postgresql = {
