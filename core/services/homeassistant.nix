@@ -22,7 +22,7 @@
       "wake_on_lan"
     ];
     customComponents = with pkgs.home-assistant-custom-components; [
-      dreo
+      # dreo
     ];
     # config = null;
     config = {
