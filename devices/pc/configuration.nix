@@ -62,7 +62,6 @@
     "boot.shell_on_fail"
   ];
 
-  services.flatpak.enable = true; # Enable flatpak
   
   # virtualisation
   # virtualisation.vmware.host.enable = true; # vmware
@@ -70,4 +69,15 @@
   # for gpu overclock
   systemd.packages = with pkgs; [ lact ];
   systemd.services.lactd.wantedBy = ["multi-user.target"];
+
+  services.flatpak.enable = true; # Enable flatpak
+  services.libinput.enable = true; # Enable touchpad support
+  services.printing.enable = true; # Enable CUPS to print documents.
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+    jack.enable = true;
+  };
 }

@@ -14,6 +14,7 @@
       "met"
       "radio_browser"
       "roborock"
+      "shell_command"
       "shopping_list"
       "spotify"
       "tuya"
