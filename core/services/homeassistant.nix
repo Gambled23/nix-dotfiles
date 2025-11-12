@@ -21,6 +21,9 @@
       "isal"
       "wake_on_lan"
     ];
+    customComponents = with pkgs.home-assistant-custom-components; [
+      dreo
+    ];
     # config = null;
     config = {
       # Includes dependencies for a basic setup
