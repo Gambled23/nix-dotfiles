@@ -17,7 +17,9 @@
       "shopping_list"
       "spotify"
       "tuya"
+      "upnp"
       "isal"
+      "wake_on_lan"
     ];
     # config = null;
     config = {
