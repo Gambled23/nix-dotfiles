@@ -8,7 +8,7 @@
     extraComponents = [
       # Components required to complete the onboarding
       "analytics"
-      "cast"
+      # "cast"
       "glances"
       "google_translate"
       "met"
