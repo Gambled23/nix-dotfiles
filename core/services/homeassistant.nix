@@ -25,8 +25,13 @@
       # dreo
     ];
     customLovelaceModules = with pkgs.home-assistant-custom-lovelace-modules; [
+      bubble-card
+      button-card
       card-mod
+      light-entity-card
       mushroom
+      mini-graph-card
+      mini-media-player
     ];
     # config = null;
     config = {
