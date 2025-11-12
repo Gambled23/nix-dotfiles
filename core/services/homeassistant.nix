@@ -4,6 +4,7 @@
   services.home-assistant = {
     enable = true;
     extraPackages = ps: with ps; [ psycopg2 ];
+    openFirewall = true;
     extraComponents = [
       # Components required to complete the onboarding
       "analytics"
