@@ -5,10 +5,12 @@
   networking.hostName = "server-gambled";
 
   imports = [
-    ../../configuration.nix
-    ../../core/services/docker.nix
-    ../../core/services/homeassistant.nix
     ./hardware-configuration.nix
+
+    ../../configuration.nix
+    ../../core/services/code-server.nix
+    # ../../core/services/docker.nix
+    ../../core/services/homeassistant.nix
     #./symlinks.nix
 
     # bootloader

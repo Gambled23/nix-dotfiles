@@ -6,7 +6,6 @@ in
   imports = [
     # Global services
     ./core/services/glances.nix
-    ./core/services/mysql.nix
     ./core/services/openssh.nix
     ./core/services/syncthing.nix
     ./core/services/zerotier.nix

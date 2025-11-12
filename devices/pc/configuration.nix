@@ -7,16 +7,17 @@
     ./hardware-configuration.nix
     #./symlinks.nix
 
-    #../../core/programs/corectrl.nix
     #../../core/programs/alvr.nix
-    #../../core/services/wivrn.nix
-    #../../core/services/suwayomi.nix
-    #../../core/services/xrdp.nix
-    ../../core/services/wakeonlan.nix
+    # ../../core/services/coolercontrol.nix
+    #../../core/programs/corectrl.nix
+    ../../core/services/mysql.nix
     ../../core/services/openrgb.nix
     ../../core/programs/steam.nix
     ../../core/services/sunshine.nix
-    # ../../core/services/coolercontrol.nix
+    #../../core/services/suwayomi.nix
+    ../../core/services/wakeonlan.nix
+    #../../core/services/wivrn.nix
+    #../../core/services/xrdp.nix
 
     # bootloader
     #../../core/bootloader/systemd.nix
