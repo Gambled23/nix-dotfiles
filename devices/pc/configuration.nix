@@ -36,7 +36,7 @@
     (import ../../scripts/display-device.nix { inherit pkgs; })
     (import ../../scripts/modo-tele.nix { inherit pkgs; })
     (import ../../scripts/flash-kernelsu.nix { inherit pkgs; })
-    (callPackage ../../nixpkgs/pkgs/hayase/package.nix {})
+    # (callPackage ../../nixpkgs/pkgs/hayase/package.nix {})
     (callPackage ../../nixpkgs/pkgs/stremio/package.nix {})
     # (callPackage ../../nixpkgs/pkgs/moondeckbuddy/package.nix {})
 
