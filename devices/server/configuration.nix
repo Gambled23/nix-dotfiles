@@ -7,7 +7,7 @@
   imports = [
     ../../configuration.nix
     ../../core/services/docker.nix
-    ../../core/services/homeassistant.nix
+    # ../../core/services/homeassistant.nix
     ./hardware-configuration.nix
     #./symlinks.nix
 
