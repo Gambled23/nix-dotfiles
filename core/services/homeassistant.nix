@@ -12,6 +12,7 @@
       "glances"
       "google_translate"
       "met"
+      "mobile_app"
       "radio_browser"
       "roborock"
       "shell_command"
@@ -40,10 +41,11 @@
       # default_config = {
 
       # };
+      lovelace.mode = "storage";
       recorder.db_url = "postgresql://@/hass";
     };
 
-    configWritable = true;
+    # configWritable = true;
   };
 
   services.postgresql = {
