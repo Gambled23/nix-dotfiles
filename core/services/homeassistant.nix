@@ -24,6 +24,10 @@
     customComponents = with pkgs.home-assistant-custom-components; [
       # dreo
     ];
+    customLovelaceModules = with pkgs.home-assistant-custom-lovelace-modules; [
+      card-mod
+      mushroom
+    ];
     # config = null;
     config = {
       # Includes dependencies for a basic setup
