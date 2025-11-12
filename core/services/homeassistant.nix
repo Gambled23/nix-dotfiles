@@ -6,9 +6,9 @@
     extraPackages = ps: with ps; [ psycopg2 ];
     openFirewall = true;
     extraComponents = [
-      # Components required to complete the onboarding
       "analytics"
-      # "cast"
+      "backup"
+      "cast"
       "glances"
       "google_translate"
       "met"
