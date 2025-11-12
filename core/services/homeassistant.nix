@@ -7,12 +7,15 @@
     extraComponents = [
       # Components required to complete the onboarding
       "analytics"
+      "cast"
+      "glances"
       "google_translate"
       "met"
       "radio_browser"
+      "roborock"
       "shopping_list"
-      # Recommended for fast zlib compression
-      # https://www.home-assistant.io/integrations/isal
+      "spotify"
+      "tuya"
       "isal"
     ];
     # config = null;
