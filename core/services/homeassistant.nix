@@ -4,7 +4,7 @@
   services.home-assistant = {
     enable = true;
     extraPackages = ps: with ps; [ psycopg2 ];
-    openFirewall = true;
+    # openFirewall = true;
     extraComponents = [
       "analytics"
       "backup"
