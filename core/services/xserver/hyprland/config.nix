@@ -82,7 +82,6 @@ in
         "systemctl --user enable --now waybar.service"
         "systemctl --user enable --now hyprpaper.service"
         "systemctl --user enable --now hypridle.service"
-        "swayosd-server"
         "mako"
         "bluetoothctl connect 24:95:2F:60:BD:94"
         "openrgb --profile 'off.orp'"
@@ -295,9 +294,9 @@ in
         "$mainMod, J, togglesplit," # dwindle
 
         # Media controller
-        "ALT, 0, exec, pamixer -i 2 && paplay /etc/nixos/core/services/xserver/hyprland/volume.mp3 && swayosd --output-volume raise"
-        "ALT, 9, exec, pamixer -d 2 && paplay /etc/nixos/core/services/xserver/hyprland/volume.mp3 && swayosd --output-volume lower"
-        "ALT, 8, exec, pamixer -t && swayosd --output-volume mute-toggle"
+        "ALT, 0, exec, pamixer -i 2 && paplay /etc/nixos/core/services/xserver/hyprland/volume.mp3"
+        "ALT, 9, exec, pamixer -d 2 && paplay /etc/nixos/core/services/xserver/hyprland/volume.mp3"
+        "ALT, 8, exec, pamixer -t"
         "ALT, 1, exec, playerctl previous"
         "ALT, 2, exec, playerctl play-pause"
         "ALT, 3, exec, playerctl next"
