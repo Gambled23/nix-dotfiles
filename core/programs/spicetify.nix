@@ -15,25 +15,28 @@ in
 
     enabledExtensions = with spicePkgs.extensions; [
       # autoSkipVideo
+      addToQueueTop
+      # beautifulLyrics
       # bookmark
+      # copyToClipboard
       fullAppDisplayMod
+      # goToSong
       # groupSession
-      # loopyLoop
+      history
+      lastfm
+      loopyLoop
+      playingSource
       # popupLyrics
       powerBar
-      # lastfm
-      # shuffle
-      volumePercentage
-      skipOrPlayLikedSongs
-      # goToSong
-      showQueueDuration
-      # copyToClipboard
-      history
       # savePlaylists
-      playingSource
-      # sectionMarker
-      # beautifulLyrics
-      addToQueueTop
+      sectionMarker
+      skipOrPlayLikedSongs
+      showQueueDuration
+      shuffle
+      volumePercentage
     ];
+
+    wayland = true;
+    windowManagerPatch = true;
   };
 }

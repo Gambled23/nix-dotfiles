@@ -21,20 +21,21 @@ with lib;
   };
 
 
-  environment.systemPackages = [
-    pkgs.kitty # required for the default Hyprland config
-    pkgs.grim # Screenshot tool
-    pkgs.playerctl
-    # pkgs.hyprpolkitagent # Polkit for gui applications
-    pkgs.kdePackages.qtwayland
-    pkgs.libsForQt5.qt5.qtwayland
-    pkgs.pipewire
-    pkgs.pulseaudio
-    pkgs.wireplumber
-    pkgs.waybar
-    pkgs.hyprpaper
-    pkgs.hypridle
-    pkgs.pamixer
+  environment.systemPackages = with pkgs; [
+    kitty # required for the default Hyprland config
+    hyprshot # Screenshot tool
+    playerctl
+    # hyprpolkitagent # Polkit for gui applications
+    kdePackages.qtwayland
+    libsForQt5.qt5.qtwayland
+    pipewire
+    pulseaudio
+    wireplumber
+    waybar
+    hyprpaper
+    hypridle
+    pamixer
+    swayosd # On-screen display for volume/brightness changes
   ];
 
   # Optional, hint Electron apps to use Wayland:

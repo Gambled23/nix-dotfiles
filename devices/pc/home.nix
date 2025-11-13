@@ -80,8 +80,8 @@
     libreoffice
     # rquickshare
     scrcpy
-    nextcloud-client
-    zoom-us
+    # nextcloud-client
+    # zoom-us
     # koreader
     #logseq
 

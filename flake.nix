@@ -20,6 +20,12 @@
       url = "github:hyprwm/Hyprland-plugins";
       inputs.hyprland.follows = "hyprland";
     };
+    elephant.url = "github:abenz1267/elephant";
+
+    walker = {
+      url = "github:abenz1267/walker";
+      inputs.elephant.follows = "elephant";
+    };
     # Nur repo for firefox extensions
     # nur.url = "github:nix-community/NUR";
     # nur.inputs.nixpkgs.follows = "nixpkgs";
@@ -84,6 +90,7 @@
                 ./core/programs/spicetify.nix
                 inputs.nixcord.homeModules.nixcord
                 ./core/programs/nixcord.nix
+                inputs.walker.homeManagerModules.default
               ];
               home-manager.backupFileExtension = "uiod";
               nixpkgs.overlays = [
