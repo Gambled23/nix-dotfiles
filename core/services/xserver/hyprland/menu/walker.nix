@@ -33,7 +33,11 @@
 
     themes = {
       "gruvbox-dark-medium" = {
-        style = builtins.readFile ./style.css;
+        style = "@define-color window_bg_color #282828;
+@define-color accent_bg_color #98971a;
+@define-color theme_fg_color #ebdbb2;
+@define-color error_bg_color #cc241d;
+@define-color error_fg_color #fbf1c7;";
       };
     };
   };
