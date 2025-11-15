@@ -1,7 +1,8 @@
 { config, pkgs, lib, inputs, outputs, ... }:
 
 {
-  services.code-server = {
+  services.openvscode-server = {
     enable = true;
+    withoutConnectionToken = true;
   };
 }
