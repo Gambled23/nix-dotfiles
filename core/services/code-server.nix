@@ -1,8 +1,13 @@
 { config, pkgs, lib, inputs, outputs, ... }:
 
 {
-  services.openvscode-server = {
+  services.code-server = {
     enable = true;
-    withoutConnectionToken = true;
+    host = "0.0.0.0";
+    
   };
+  networking.firewall.allowedTCPPorts = [
+    config.services.code-server.port
+    4444
+  ];
 }
