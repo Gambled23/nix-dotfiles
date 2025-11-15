@@ -41,6 +41,16 @@
       # default_config = {
 
       # };
+
+      # Automation, Scene, and Script from the UI
+      "automation ui" = "!include automations.yaml";
+      "scene ui" = "!include scenes.yaml";
+      "script ui" = "!include scripts.yaml";
+      # These can be mixed with declarative configurations
+      # "automation nixos" = [
+        # YAML automations go here
+      # ];
+
       lovelace.mode = "storage";
       recorder.db_url = "postgresql://@/hass";
     };
