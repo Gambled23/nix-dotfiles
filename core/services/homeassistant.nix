@@ -46,7 +46,8 @@
       # Automation, Scene, and Script from the UI
       "automation ui" = "!include automations.yaml";
       "scene ui" = "!include scenes.yaml";
-      "script ui" = "!include scripts.yaml";
+      "switch" = "!include switch.yaml";
+
       # These can be mixed with declarative configurations
       # "automation nixos" = [
         # YAML automations go here
@@ -54,6 +55,27 @@
 
       # lovelace.mode = "storage";
       recorder.db_url = "postgresql://@/hass";
+
+      shell_command = {
+        "suspend_pcsuspend_pc" = "ssh -i /config/keys/id_rsa -o StrictHostKeyChecking=no gambled@192.168.1.17 'sudo systemctl start systemd-suspend'";
+        "hibernate_pc" = "ssh -i /config/keys/id_rsa -o StrictHostKeyChecking=no gambled@192.168.1.17 'sudo systemctl hibernate'";
+        "reboot_pc" = "ssh -i /config/keys/id_rsa -o StrictHostKeyChecking=no gambled@192.168.1.17 'sudo systemctl reboot'";
+        "poweroff_pc" = "ssh -i /config/keys/id_rsa -o StrictHostKeyChecking=no gambled@192.168.1.17 'sudo systemctl poweroff'";
+        "auto_push" = "ssh -i /config/keys/id_rsa -o StrictHostKeyChecking=no gambled@192.168.1.17 'aps'";
+        "auto_pull" = "ssh -i /config/keys/id_rsa -o StrictHostKeyChecking=no gambled@192.168.1.17 'apll'";
+        "desktop_1" = "ssh -i /config/keys/id_rsa -o StrictHostKeyChecking=no gambled@192.168.1.17 'qdbus org.kde.KWin /KWin setCurrentDesktop 1'";
+        "desktop_2" = "ssh -i /config/keys/id_rsa -o StrictHostKeyChecking=no gambled@192.168.1.17 'qdbus org.kde.KWin /KWin setCurrentDesktop 2'";
+        "desktop_3" = "ssh -i /config/keys/id_rsa -o StrictHostKeyChecking=no gambled@192.168.1.17 'qdbus org.kde.KWin /KWin setCurrentDesktop 3'";
+        "desktop_4" = "ssh -i /config/keys/id_rsa -o StrictHostKeyChecking=no gambled@192.168.1.17 'qdbus org.kde.KWin /KWin setCurrentDesktop 4'";
+        "desktop_5" = "ssh -i /config/keys/id_rsa -o StrictHostKeyChecking=no gambled@192.168.1.17 'qdbus org.kde.KWin /KWin setCurrentDesktop 5'";
+        "desktop_6" = "ssh -i /config/keys/id_rsa -o StrictHostKeyChecking=no gambled@192.168.1.17 'qdbus org.kde.KWin /KWin setCurrentDesktop 6'";
+        "modo_tele" = "ssh -i /config/keys/id_rsa -o StrictHostKeyChecking=no gambled@192.168.1.17 'modo-tele enable'";
+        "modo_monitor" = "ssh -i /config/keys/id_rsa -o StrictHostKeyChecking=no gambled@192.168.1.17 'modo-tele disable'";
+        "reboot_to_windows" = "ssh -i /config/keys/id_rsa -o StrictHostKeyChecking=no gambled@192.168.1.17 'reboot-to-windows'";
+        "gamescope" = "ssh -i /config/keys/id_rsa -o StrictHostKeyChecking=no gambled@192.168.1.17 'start-gamescope-session'";
+        "display_device_steamdeck" = "ssh -i /config/keys/id_rsa -o StrictHostKeyChecking=no gambled@192.168.1.17  'display-device -d steamdeck'";
+        "display_device_pc_gambled" = "ssh -i /config/keys/id_rsa -o StrictHostKeyChecking=no gambled@192.168.1.17  'display-device -d pc-gambled'";
+      };
     };
 
     # configWritable = true;
