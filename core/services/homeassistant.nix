@@ -8,6 +8,7 @@
     extraComponents = [
       "analytics"
       "backup"
+      "bluetooth"
       "cast"
       "glances"
       "google_translate"
@@ -51,7 +52,7 @@
         # YAML automations go here
       # ];
 
-      lovelace.mode = "storage";
+      # lovelace.mode = "storage";
       recorder.db_url = "postgresql://@/hass";
     };
 
