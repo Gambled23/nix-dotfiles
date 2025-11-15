@@ -5,6 +5,6 @@
     enable = true;
     user = "gambled";
     group = "users";
-    port = "44445";
+    port = 4445;
   };
 }
