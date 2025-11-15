@@ -3,8 +3,5 @@
 {
   services.code-server = {
     enable = true;
-    user = "gambled";
-    group = "users";
-    port = 4445;
   };
 }
