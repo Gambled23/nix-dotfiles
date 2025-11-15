@@ -17,4 +17,6 @@
     #../../core/bootloader/systemd.nix
     ../../core/bootloader/grub.nix
   ];
+
+  programs.nix-ld.enable = true; # for vscode remote server
 }
