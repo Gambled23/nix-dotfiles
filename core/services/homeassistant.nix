@@ -46,6 +46,7 @@
       # Automation, Scene, and Script from the UI
       "automation ui" = "!include automations.yaml";
       "scene ui" = "!include scenes.yaml";
+      "script ui" = "!include scripts.yaml";
       "switch" = "!include switch.yaml";
 
       # These can be mixed with declarative configurations
