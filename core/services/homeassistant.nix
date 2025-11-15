@@ -55,7 +55,7 @@
       recorder.db_url = "postgresql://@/hass";
     };
 
-    configWritable = true;
+    # configWritable = true;
   };
 
   services.postgresql = {
