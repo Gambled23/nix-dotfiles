@@ -53,6 +53,10 @@
         id = "3ATLG3P-4VXFG3H-G36OP5D-ZHUHWVQ-XMWUTBG-OWOZ2ZC-VSPUJUX-ALSPAQW";
         name = "steamdeck";
       };
+      "server-gambled" = {
+        id = "TK7DIYL-JOCJJ6T-C37SHGV-XXHMXGG-PWWO2TU-7A5SQCO-K5NDN72-T632CAI";
+        name = "server-gambled";
+      };
     };
   };
 }
