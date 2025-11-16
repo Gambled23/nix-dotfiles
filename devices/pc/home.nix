@@ -48,6 +48,7 @@
     #vulkan-tools
     pdfarranger
     via
+    winboat
 
     #* media
     vlc
