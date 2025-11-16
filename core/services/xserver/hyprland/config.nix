@@ -290,8 +290,8 @@ in
         "$mainMod, C, exec, $code"
         "$mainMod, V, togglefloating,"
         "$mainMod, R, exec, $menu"
-        "$mainMod, P, pseudo," # dwindle
         "$mainMod, J, togglesplit," # dwindle
+        "$mainMod, P, ,display-device -d pc-gambled" # dwindle
 
         # Media controller
         "ALT, 0, exec, pamixer -i 2 && paplay /etc/nixos/core/services/xserver/hyprland/volume.mp3"

@@ -12,6 +12,8 @@
       "cast"
       "glances"
       "google_translate"
+      "history"
+      "history_stats"
       "met"
       "mobile_app"
       "radio_browser"
