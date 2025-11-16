@@ -73,7 +73,7 @@
     gambled = {
       isNormalUser = true;
       description = "César Girón";
-      extraGroups = [ "networkmanager" "wheel" "adbusers" "audio" "jackaudio" "dialout"];
+      extraGroups = [ "networkmanager" "wheel" "adbusers" "audio" "jackaudio" "dialout" ];
     };
   };
 
