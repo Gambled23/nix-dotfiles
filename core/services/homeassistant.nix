@@ -56,7 +56,7 @@
         # YAML automations go here
       # ];
 
-      lovelace.mode = "storage";
+      lovelace.mode = "yaml";
       recorder.db_url = "postgresql://@/hass";
 
       shell_command = {
