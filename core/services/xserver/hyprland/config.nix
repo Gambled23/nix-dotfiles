@@ -13,14 +13,15 @@ let
 in 
 {
   imports = [
-    ./waybar/waybar.nix
+    # ./waybar/waybar.nix
     ./hyprsunset.nix
     ./hyprpaper.nix
     ./hypridle.nix
-    ./kitty.nix
-    ./notifications/mako.nix
-    ./menu/walker.nix
     ./hyprshot.nix
+    ./hyprpanel.nix
+    ./kitty.nix
+    # ./notifications/mako.nix
+    ./menu/walker.nix
   ];
   wayland.windowManager.hyprland = {
     enable = true;
@@ -401,7 +402,7 @@ in
         "size 622 652, class:(clipse)"
         "stayfocused, class:(clipse)"
 
-        "opacity 0.94 0.94, class:^(Code|Kitty|Vencord|Spotify)$"
+        "opacity 0.90 0.90, class:^(Code|Kitty|Vencord|Spotify)$"
       ];
       
     };
