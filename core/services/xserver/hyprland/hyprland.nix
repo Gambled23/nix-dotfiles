@@ -37,7 +37,7 @@ with lib;
     pulseaudio
     pulsemeeter
     wireplumber
-    waybar
+    # waybar
     hyprpaper
     hypridle
     pamixer

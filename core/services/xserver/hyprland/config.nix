@@ -80,12 +80,12 @@ in
 
       "exec-once" = [
         # "systemctl --user enable --now hyprpolkitagent.service"
-        "systemctl --user enable --now waybar.service"
-        "hyprpanel"
+        # "systemctl --user enable --now waybar.service"
+        # "mako"
         "systemctl --user enable --now hyprpaper.service"
         "systemctl --user enable --now hypridle.service"
-        # "mako"
         "clipse -listen"
+        "hyprpanel"
         "bluetoothctl connect 24:95:2F:60:BD:94"
         "openrgb --profile 'off.orp'"
         "uwsm app -- spotify %U"
