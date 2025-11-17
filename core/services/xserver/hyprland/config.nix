@@ -80,8 +80,8 @@ in
 
       "exec-once" = [
         # "systemctl --user enable --now hyprpolkitagent.service"
-        # "systemctl --user enable --now waybar.service"
         # "mako"
+        "systemctl --user enable --now waybar.service"
         "systemctl --user enable --now hyprpaper.service"
         "systemctl --user enable --now hypridle.service"
         "clipse -listen"
@@ -386,7 +386,7 @@ in
         # Example windowrule
         "workspace 5, class:^(spotify)$"
         "workspace 2, class:^(vesktop)$"
-        "workspace 2, class:^(altus)$"
+        "workspace 2, class:^(Altus)$"
         "workspace 4, class:^(steam)$"
         "workspace 3, class:^(stremio)$"
         "workspace 3, class:^(miru)$"
