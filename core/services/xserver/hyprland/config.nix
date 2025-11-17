@@ -83,6 +83,7 @@ in
         "systemctl --user enable --now hyprpaper.service"
         "systemctl --user enable --now hypridle.service"
         "mako"
+        "clipse -listen"
         "bluetoothctl connect 24:95:2F:60:BD:94"
         "openrgb --profile 'off.orp'"
         "uwsm app -- spotify %U"
@@ -344,6 +345,10 @@ in
         # Scroll through existing workspaces with mainMod + scroll
         "$mainMod, mouse_down, workspace, e+1"
         "$mainMod, mouse_up, workspace, e-1"
+
+        # Clipboard manager
+        "$mainMod, V, exec, kitty --class clipse -e clipse"
+        ""
       ];
 
       # Move/resize windows with mainMod + LMB/RMB and dragging
@@ -392,6 +397,11 @@ in
 
         # Fix some dragging issues with XWayland
         "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
+
+        # Clipboard manager
+        "float, class:(clipse)"
+        "size 622 652, class:(clipse)"
+        "stayfocused, class:(clipse)"
       ];
       
     };
