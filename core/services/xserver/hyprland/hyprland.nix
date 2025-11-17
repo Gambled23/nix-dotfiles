@@ -46,4 +46,9 @@ with lib;
   # Optional, hint Electron apps to use Wayland:
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
   xdg.menus.enable = true; # For dolphin to show up apps in the open with menu
+
+  # Icons for hyprpanel and others
+  fonts.packages = with pkgs; [
+    nerd-fonts.caskaydia-cove
+  ];
 }
