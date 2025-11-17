@@ -292,8 +292,9 @@ in
         "$mainMod, F, exec, $web_browser"
         "$mainMod, J, togglesplit," # dwindle
         "$mainMod, C, exec, $code"
-        "$mainMod, V, togglefloating,"
+        "$mainMod, V, exec, kitty --class clipse -e clipse"
         "$mainMod, B, exec, bluetoothctl connect 24:95:2F:60:BD:94"
+        "$mainMod, N, togglefloating,"
         "$mainMod, M, exit,"
 
         # Media controller
@@ -345,9 +346,6 @@ in
         # Scroll through existing workspaces with mainMod + scroll
         "$mainMod, mouse_down, workspace, e+1"
         "$mainMod, mouse_up, workspace, e-1"
-
-        # Clipboard manager
-        "$mainMod, V, exec, kitty --class clipse -e clipse"
       ];
 
       # Move/resize windows with mainMod + LMB/RMB and dragging
