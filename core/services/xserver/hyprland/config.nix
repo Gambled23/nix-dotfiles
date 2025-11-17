@@ -348,7 +348,6 @@ in
 
         # Clipboard manager
         "$mainMod, V, exec, kitty --class clipse -e clipse"
-        ""
       ];
 
       # Move/resize windows with mainMod + LMB/RMB and dragging
