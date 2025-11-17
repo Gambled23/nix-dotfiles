@@ -166,10 +166,11 @@ in
         # https://wiki.hypr.land/Configuring/Variables/#blur
         blur = {
           enabled = true;
-          size = 3;
+          size = 5;
           passes = 1;
-
+          new_optimizations = true;
           vibrancy = 0.1696;
+          popups = true;
         };
       };
 
@@ -399,6 +400,8 @@ in
         "float, class:(clipse)"
         "size 622 652, class:(clipse)"
         "stayfocused, class:(clipse)"
+
+        "opacity 0.94 0.94, class:^(Code|Kitty|Vencord|Spotify)$"
       ];
       
     };
