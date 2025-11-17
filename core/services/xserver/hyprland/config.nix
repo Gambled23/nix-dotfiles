@@ -282,16 +282,18 @@ in
 
       bind = [
         # Example binds, see https://wiki.hypr.land/Configuring/Binds/ for more
-        "$mainMod, RETURN, exec, $terminal"
-        "$mainMod, C, exec, $code"
-        "$mainMod, E, exec, $fileManager"
-        "$mainMod, F, exec, $web_browser"
-        "$mainMod, P, exec, display-device -d pc-gambled" # dwindle
-        "$mainMod, R, exec, $menu"
         "$mainMod, Q, killactive,"
-        "$mainMod, M, exit,"
-        "$mainMod, V, togglefloating,"
+        "$mainMod, E, exec, $fileManager"
+        "$mainMod, R, exec, $menu"
+        "$mainMod, O, exec, openrgb --profile 'off.orp'"
+        "$mainMod, P, exec, display-device -d pc-gambled" # dwindle
+        "$mainMod, RETURN, exec, $terminal"
+        "$mainMod, F, exec, $web_browser"
         "$mainMod, J, togglesplit," # dwindle
+        "$mainMod, C, exec, $code"
+        "$mainMod, V, togglefloating,"
+        "$mainMod, B, exec, bluetoothctl connect 24:95:2F:60:BD:94"
+        "$mainMod, M, exit,"
 
         # Media controller
         "ALT, 0, exec, pamixer -i 2 && paplay /etc/nixos/core/services/xserver/hyprland/volume.mp3"

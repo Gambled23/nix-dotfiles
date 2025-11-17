@@ -19,20 +19,20 @@ in
       # beautifulLyrics
       # bookmark
       # copyToClipboard
-      fullAppDisplayMod
+      # fullAppDisplayMod
       # goToSong
       # groupSession
-      history
-      lastfm
+      # history
+      # lastfm
       loopyLoop
-      playingSource
+      # playingSource
       # popupLyrics
-      powerBar
+      # powerBar
       # savePlaylists
       sectionMarker
-      skipOrPlayLikedSongs
-      showQueueDuration
-      shuffle
+      # skipOrPlayLikedSongs
+      # showQueueDuration
+      # shuffle
       volumePercentage
     ];
 
