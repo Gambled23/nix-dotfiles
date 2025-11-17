@@ -34,7 +34,7 @@
       menus.dashboard.directories.enabled = false;
       menus.dashboard.stats.enable_gpu = true;
 
-      theme.bar.transparent = true;
+      theme.bar.transparent = false;
 
       theme.font = {
         name = "CaskaydiaCove NF";
