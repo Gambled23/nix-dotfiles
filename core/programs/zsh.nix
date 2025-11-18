@@ -16,6 +16,7 @@
       cp = "cp -riv";
       gitfix = "git fetch origin main && git diff --exit-code origin/main";
       lg = "lazygit";
+      ls = "lsd";
       mkdir = "mkdir -vp";
       mv = "mv -iv";
       rm = "rm -riv";
