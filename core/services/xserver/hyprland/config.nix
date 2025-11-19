@@ -134,8 +134,8 @@ in
 
       # https://wiki.hypr.land/Configuring/Variables/#general
       general = {
-        gaps_in = 3;
-        gaps_out = 3;
+        gaps_in = 1;
+        gaps_out = 1;
         border_size = 1;
 
         # "col.active_border" = "rgba(99cc00ee) rgba(00ff99ee) 45deg";
