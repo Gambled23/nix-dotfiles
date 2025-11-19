@@ -19,14 +19,10 @@
     #hakuneko
     #kcc
     #calibre
-    #mangal
     komikku
-    coolercontrol.coolercontrold
     
     #* dev tools
     #android-studio
-    #cmake
-    arduino
     dbeaver-bin
     vscode
 
@@ -34,18 +30,15 @@
     gamemode
     wineWowPackages.stable
     winetricks
-    #heroic
     ryubing
     osu-lazer-bin
     #tetrio-desktop
     prismlauncher #minecra
     r2modman
-    sm64coopdx
     # mangohud
 
     #* utils
     polychromatic
-    #vulkan-tools
     pdfarranger
     via
     winboat
@@ -54,7 +47,7 @@
     vlc
 
     #* media creation
-    gimp
+    gimp-with-plugins
     inkscape-with-extensions
     obs-studio
 
@@ -69,26 +62,15 @@
     guitarix
     tonelib-metal
     carla
-    # gxplugins-lv2
 
     #* utils
     # activitywatch
-    # p3x-onenote
-    # protontricks
-    # galaxy-buds-client
-    # jellyfin-ffmpeg
     android-tools
     libreoffice
-    # rquickshare
     scrcpy
-    # nextcloud-client
     # zoom-us
-    # koreader
-    #logseq
 
     #* webbrowsers
     google-chrome
-    #floorp
-    #chromium
   ];
 }

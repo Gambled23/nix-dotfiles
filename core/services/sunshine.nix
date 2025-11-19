@@ -10,36 +10,22 @@
     autoStart = true;
     capSysAdmin = true;
     openFirewall = true;
-    applications =
-    {
+    applications = {
       env = {
         PATH = "$(PATH):$(HOME)/.local/bin";
       };
       apps = [
         {
-          name = "steamdeck";
+          name = "deck";
           cmd = "display-device -d steamdeck";
           exclude-global-prep-cmd = "false";
           elevated = "false";
-        }
-        {
-          name = "Desktop";
-          image-path = "desktop.png";
-          output = "/home/gambled/log.txt";
         }
         {
           name = "MoonDeckStream";
           cmd = "${pkgs.moondeck-buddy}/bin/MoonDeckStream";
           exclude-global-prep-cmd = "false";
           elevated = "false";
-        }
-        {
-          name = "Steam Big Picture";
-          image-path = "steam.png";
-          detached = [ "steam steam://open/bigpicture" ];
-          auto-detach = "true";
-          wait-all = "true";
-          exit-timeout = "5";
         }
       ];
     };
