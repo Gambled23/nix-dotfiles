@@ -53,7 +53,8 @@ in
       ################
 
       # See https://wiki.hypr.land/Configuring/Monitors/
-      monitor = "DP-3,3440x1440@180,0x0,1";
+      # monitor = "DP-3,3440x1440@180,0x0,1";
+      monitor = "eDP-1,1920x1080@60,0x0,1";
 
 
       ###################
@@ -68,7 +69,7 @@ in
       "$fileManager" = "uwsm app -- dolphin";
       "$web_browser" = "uwsm app -- google-chrome-stable";
       "$code" = "uwsm app -- code";
-      "$menu" = "walker";
+      "$menu" = "uwsm app -- walker";
 
 
       #################

@@ -135,7 +135,7 @@
               ./core/programs/nixcord.nix
               inputs.walker.homeManagerModules.default
             ];
-            home-manager.backupFileExtension = "uiod";
+            home-manager.backupFileExtension = "2";
             # nixpkgs.overlays = [
               # inputs.millennium.overlays.default
             # ];
