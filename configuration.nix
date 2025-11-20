@@ -7,7 +7,25 @@
     ./core/services/zerotier.nix
   ];
 
-  nix.settings.download-buffer-size = 524288000;
+  nix = {
+    settings = {
+      download-buffer-size = 524288000;
+      auto-optimise-store = true;
+      experimental-features = [ "nix-command" "flakes" ];
+      # cache for hyprland packages
+      substituters = ["https://hyprland.cachix.org"];
+      trusted-substituters = ["https://hyprland.cachix.org"];
+      trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
+      # cache for walker menu
+      extra-substituters = ["https://walker.cachix.org" "https://walker-git.cachix.org"];
+      extra-trusted-public-keys = ["walker.cachix.org-1:fG8q+uAaMqhsMxWjwvk0IMb4mFPFLqHjuvfwQxE4oJM=" "walker-git.cachix.org-1:vmC0ocfPWh0S/vRAQGtChuiZBTAe4wiKDeyyXM0/7pM="];
+    };
+    gc = {
+      automatic = true;
+      dates = "weekly";
+      options = "--delete-older-than 7d";
+    };
+  };
 
   boot.extraModprobeConfig = '' options bluetooth disable_ertm=1 '';
   programs.appimage.enable = true;
@@ -36,16 +54,6 @@
 
   time.timeZone = "America/Mexico_City";
   i18n.defaultLocale = "es_ES.UTF-8";
-
-  # nix auto gc delete old generations
-  nix = {
-    gc = {
-      automatic = true;
-      dates = "weekly";
-      options = "--delete-older-than 7d";
-    };
-  };
-  nix.settings.auto-optimise-store = true;
 
   # Enable sound with pipewire.
   #sound.enable = true;
@@ -92,7 +100,7 @@
   services.fwupd.enable = true; # Enable firmware updates
   programs.adb.enable = true;
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
   nixpkgs.config.allowUnfree = true;
   # nixpkgs.config.packageOverrides = pkgs: {
   #   nur = import (builtins.fetchTarball "https://github.com/nix-community/NUR/archive/master.tar.gz") {
