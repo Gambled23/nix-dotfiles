@@ -1,0 +1,43 @@
+{
+  inputs,
+  lib,
+  config,
+  pkgs,
+  ...
+}: {
+  # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
+  home.stateVersion = "25.05";
+  imports = [
+    ../../home.nix
+    # ../../core/programs/firefox.nix
+    ../../core/services/xserver/hyprland/config.nix
+
+  ];
+
+  home.packages = with pkgs; [    
+    #* dev tools
+    dbeaver-bin
+    vscode
+
+    #* media
+    vlc
+
+    #* media creation
+    gimp-with-plugins
+    inkscape-with-extensions
+
+    #* messaging
+    altus
+
+    #* networking
+    zerotierone
+
+    #* utils
+    android-tools
+    libreoffice
+    scrcpy
+
+    #* webbrowsers
+    google-chrome
+  ];
+}

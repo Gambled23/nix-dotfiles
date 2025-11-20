@@ -114,6 +114,32 @@
           }
         ];
       };
+
+      "nixos" = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        specialArgs = { inherit inputs; };
+        modules = commonModules ++ [
+          ./devices/dev/configuration.nix
+          stylix.nixosModules.stylix
+          {
+            home-manager.users.gambled.imports = [
+              ./devices/dev/home.nix
+              inputs.plasma-manager.homeModules.plasma-manager
+              ./core/services/xserver/kde/config.nix
+              spicetify-nix.homeManagerModules.default
+              ./core/programs/spicetify.nix
+              inputs.nixcord.homeModules.nixcord
+              ./core/programs/nixcord.nix
+              inputs.walker.homeManagerModules.default
+            ];
+            home-manager.backupFileExtension = "uiod";
+            # nixpkgs.overlays = [
+              # inputs.millennium.overlays.default
+            # ];
+          }
+        ];
+      };
+
     };
   };
 }
