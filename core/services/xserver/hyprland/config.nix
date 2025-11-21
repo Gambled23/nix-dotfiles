@@ -54,7 +54,7 @@ in
 
       # See https://wiki.hypr.land/Configuring/Monitors/
       # monitor = "DP-3,3440x1440@180,0x0,1";
-      monitor = "eDP-1,1920x1080@60,0x0,1";
+      monitor = "eDP-1,1920x1080@60,0x0,1.05";
 
 
       ###################
@@ -82,17 +82,17 @@ in
       "exec-once" = [
         # "systemctl --user enable --now hyprpolkitagent.service"
         # "mako"
-        "systemctl --user enable --now waybar.service"
+        # "systemctl --user enable --now waybar.service"
         "systemctl --user enable --now hyprpaper.service"
         "systemctl --user enable --now hypridle.service"
         "clipse -listen"
-        "hyprpanel"
-        "bluetoothctl connect 24:95:2F:60:BD:94"
         "openrgb --profile 'off.orp'"
+        "uwsm app -- hyprpanel"
         "uwsm app -- spotify %U"
         "uwsm app -- vesktop %U"
         "uwsm app -- altus %U"
         "uwsm app -- steam %U"
+        "bluetoothctl connect 24:95:2F:60:BD:94"
       ];
 
 
