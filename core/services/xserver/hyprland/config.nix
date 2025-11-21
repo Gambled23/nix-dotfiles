@@ -149,8 +149,8 @@
         # https://wiki.hypr.land/Configuring/Variables/#blur
         blur = {
           enabled = true;
-          size = 5;
-          passes = 1;
+          size = 10;
+          passes = 3;
           new_optimizations = true;
           vibrancy = 0.1696;
           popups = true;
@@ -379,7 +379,19 @@
         "size 622 652, class:(clipse)"
         "stayfocused, class:(clipse)"
 
-        "opacity 0.90 0.90, class:^(Code|Kitty|Vencord|Spotify)$"
+        "opacity 0.85, class:^(kitty|org.kde.dolphin)$"
+        # "opacity 0.95, class:^(org.kde.dolphin)$"
+      ];
+
+      layerrule = [
+        "blur, bar-0"
+        # "blur, dashboardmenu"
+        # "blur, audiomenu"
+        # "blur, networkmenu"
+        # "blur, bluetoothmenu"
+        # "blur, energymenu"
+        # "blur, calendarmenu"
+        # "blur, notificationsmenu"
       ];
       
     };

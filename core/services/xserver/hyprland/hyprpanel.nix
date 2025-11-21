@@ -111,7 +111,7 @@
           };
           dropdownGap = "2em";
           transparent = false;
-          opacity = 50;
+          opacity = 70;
           outer_spacing = "0em";
         };
         font = {
