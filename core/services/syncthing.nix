@@ -57,6 +57,10 @@
         id = "TK7DIYL-JOCJJ6T-C37SHGV-XXHMXGG-PWWO2TU-7A5SQCO-K5NDN72-T632CAI";
         name = "server-gambled";
       };
+      "dev-gambled" = {
+        id = "SUYWFCG-MFT3UN4-NDBW2VM-LEOZ2UW-WSYDRVV-AGV4MMF-F7P6FDA-QXSQZAF";
+        name = "dev-gambled";
+      };
     };
   };
 }

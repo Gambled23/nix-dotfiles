@@ -5,7 +5,15 @@ pkgs.writeShellScriptBin "dev_enviroment" ''
   set -e
 
   if [ ! $1 ]; then
-    echo "You must provide a template name"
+    echo "You must provide a template name!"
+    echo "Valid template names are:"
+    echp "cpp"
+    echp "laravel"
+    echp "nodejs"
+    echp "prolog"
+    echp "python"
+    echp "reflex"
+    echp "rust"
     exit 1
   fi
 

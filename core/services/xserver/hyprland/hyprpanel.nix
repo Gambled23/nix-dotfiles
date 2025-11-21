@@ -4,21 +4,22 @@
     enable = true;
 
     settings = {
-      bar.layouts = {
-        "0" = {
-          left = [ "dashboard" "workspaces" "windowtitle" ];
-          middle = [ "media" ];
-          right = [ 
-            "notifications" "volume" "network" "bluetooth" "battery" "systray" "clock" 
-          ];
-        };
-      };
-
       bar = {
+        layouts = {
+          "0" = {
+            left = [ "dashboard" "workspaces" ];
+            middle = [ "media" ];
+            right = [ "volume" "network" "bluetooth" "battery" "systray" "clock" "notifications" ];
+          };
+        };
+
         clock = {
           showTime = true;
           showIcon = true;
           format = "%a %b %d  %H:%M:%S";
+        };
+        launcher = {
+          autoDetectIcon = true;
         };
         media = {
           show_active_only = true;
@@ -36,36 +37,82 @@
         };
         workspaces = {
           show_icons = false;
-          show_numbered = false;
+          show_numbered = true;
           numbered_active_indicator =  "highlight";
         };
       };
 
       menus = {
+        clock = {
+          weather = {
+            location = "Mexico City";
+            key = "XXXXXXXXX";
+          };
+        };
+        dashboard = {
+          stats = {
+            enable_gpu = false;
+            directories = {
+              enabled = true;
+              left = {
+                directory1 = {
+                  command = "dolphin $HOME/Downloads/";
+                  label = "󰮛 Downloads";
+                };
+                directory2 = {
+                  command = "dolphin $HOME/Videos/";
+                  label = "󰉏 Videos";
+                };
+                directory3 = {
+                  command = "dolphin $HOME/Codes/";
+                  label = "󰚝 Codes";
+                };
+              };
+              right = {
+                directory1 = {
+                  command = "dolphin $HOME/Documents";
+                  label = "󱧶 Documents";
+                };
+                directory2 = {
+                  command = "dolphin $HOME/Pictures";
+                  label = "󰉏 Pictures";
+                };
+                directory3 = {
+                  command = "dolphin $HOME/";
+                  label = "󱂵 Home";
+                };
+              };
+            };
+          };
+        };
         media.hideAuthor = false;
         media.hideAlbum = false;
         media.displayTime = false;
         media.displayTimeTooltip = false;
-        clock.weather.location = "Mexico City";
-        clock.weather.key = "XXXXXXXXX";
-        dashboard.stats.enable_gpu = false;
-        dashboard.directories.enabled = true;
       };
+
       notifications = {
         showActionsOnHover = true;
         timeout = 5000;
       };
+      
       theme = {
         bar = {
-          transparent = false;
-          outer_spacing = "0em";
           buttons = {
             workspaces.smartHighlight = true;
             workspaces.pill.active_width = "12em";
             workspaces.pill.width = "4em";
             workspaces.numbered_active_highlight_border = "0.2em";
             y_margins = "0em";
+            monochrome = false;
+            opacity = 100;
+            spacing = "0.2em";
+            padding_x = "0.5rem";
           };
+          dropdownGap = "2em";
+          transparent = false;
+          opacity = 50;
+          outer_spacing = "0em";
         };
         font = {
           name = "CaskaydiaCove NF";

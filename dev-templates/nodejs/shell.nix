@@ -6,6 +6,6 @@ in pkgs.mkShell rec {
   name = "nodejs";
 
   buildInputs = [
-    nodejs_23
+    nodejs_24
   ];
 }

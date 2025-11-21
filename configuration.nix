@@ -44,6 +44,7 @@
     10.243.0.1 server-gambled
     10.243.0.2 pc-gambled
     10.243.0.3 android-gambled
+    10.243.0.4 dev-gambled
     10.243.0.10 home-gambled
   '';
 

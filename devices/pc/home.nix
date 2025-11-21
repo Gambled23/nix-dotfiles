@@ -9,8 +9,8 @@
   home.stateVersion = "25.05";
   imports = [
     ../../home.nix
+    ./hyprland/pc.nix
     # ../../core/programs/firefox.nix
-    ../../core/services/xserver/hyprland/config.nix
 
   ];
 
