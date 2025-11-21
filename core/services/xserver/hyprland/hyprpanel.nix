@@ -2,17 +2,15 @@
 {
   programs.hyprpanel = {
     enable = true;
-    
+
     settings = {
-      layout = {
-        bar.layouts = {
-          "0" = {
-            left = [ "dashboard" "workspaces" "windowtitle" ];
-            middle = [ "media" ];
-            right = [ 
-              "notifications" "volume" "network" "bluetooth" "battery" "systray" "clock" 
-            ];
-          };
+      bar.layouts = {
+        "0" = {
+          left = [ "dashboard" "workspaces" "windowtitle" ];
+          middle = [ "media" ];
+          right = [ 
+            "notifications" "volume" "network" "bluetooth" "battery" "systray" "clock" 
+          ];
         };
       };
 
