@@ -385,6 +385,7 @@
 
       layerrule = [
         "blur, bar-0"
+        "blur, verification"
         # "blur, dashboardmenu"
         # "blur, audiomenu"
         # "blur, networkmenu"
