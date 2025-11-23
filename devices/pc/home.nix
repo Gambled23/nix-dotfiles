@@ -70,6 +70,8 @@
     #* guitarra
     guitarix
     tonelib-metal
+    tonelib-gfx
+    tonelib-jam
     carla
 
     #* utils
