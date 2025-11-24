@@ -559,83 +559,83 @@ in
   };
 
   # BEGIN: Autostart apps
-  home.file.".config/autostart/spotify.desktop".text = ''
-    [Desktop Entry]
-    Categories=Audio;Music;Player;AudioVideo;
-    Exec=spotify %U
-    GenericName=Music Player
-    Icon=spotify-client
-    MimeType=x-scheme-handler/spotify;
-    Name=Spotify
-    StartupWMClass=spotify
-    Terminal=false
-    TryExec=spotify
-    Type=Application
-  '';
+  # home.file.".config/autostart/spotify.desktop".text = ''
+  #   [Desktop Entry]
+  #   Categories=Audio;Music;Player;AudioVideo;
+  #   Exec=spotify %U
+  #   GenericName=Music Player
+  #   Icon=spotify-client
+  #   MimeType=x-scheme-handler/spotify;
+  #   Name=Spotify
+  #   StartupWMClass=spotify
+  #   Terminal=false
+  #   TryExec=spotify
+  #   Type=Application
+  # '';
 
-  home.file.".config/autostart/steam.desktop".text = ''
-    [Desktop Action BigPicture]
-    Exec=steam steam://open/bigpicture
-    Name=Big Picture
+  # home.file.".config/autostart/steam.desktop".text = ''
+  #   [Desktop Action BigPicture]
+  #   Exec=steam steam://open/bigpicture
+  #   Name=Big Picture
 
-    [Desktop Action Community]
-    Exec=steam steam://url/SteamIDControlPage
-    Name=Community
+  #   [Desktop Action Community]
+  #   Exec=steam steam://url/SteamIDControlPage
+  #   Name=Community
 
-    [Desktop Action Friends]
-    Exec=steam steam://open/friends
-    Name=Friends
+  #   [Desktop Action Friends]
+  #   Exec=steam steam://open/friends
+  #   Name=Friends
 
-    [Desktop Action Library]
-    Exec=steam steam://open/games
-    Name=Library
+  #   [Desktop Action Library]
+  #   Exec=steam steam://open/games
+  #   Name=Library
 
-    [Desktop Action News]
-    Exec=steam steam://open/news
-    Name=News
+  #   [Desktop Action News]
+  #   Exec=steam steam://open/news
+  #   Name=News
 
-    [Desktop Action Screenshots]
-    Exec=steam steam://open/screenshots
-    Name=Screenshots
+  #   [Desktop Action Screenshots]
+  #   Exec=steam steam://open/screenshots
+  #   Name=Screenshots
 
-    [Desktop Action Servers]
-    Exec=steam steam://open/servers
-    Name=Servers
+  #   [Desktop Action Servers]
+  #   Exec=steam steam://open/servers
+  #   Name=Servers
 
-    [Desktop Action Settings]
-    Exec=steam steam://open/settings
-    Name=Settings
+  #   [Desktop Action Settings]
+  #   Exec=steam steam://open/settings
+  #   Name=Settings
 
-    [Desktop Action Store]
-    Exec=steam steam://store
-    Name=Store
+  #   [Desktop Action Store]
+  #   Exec=steam steam://store
+  #   Name=Store
 
-    [Desktop Entry]
-    Actions=Store;Community;Library;Servers;Screenshots;News;Settings;BigPicture;Friends;
-    Categories=Network;FileTransfer;Game;
-    Comment=Application for managing and playing games on Steam
-    Exec=steam %U
-    Icon=steam
-    MimeType=x-scheme-handler/steam;x-scheme-handler/steamlink;
-    Name=Steam
-    PrefersNonDefaultGPU=true
-    Terminal=false
-    Type=Application
-    X-KDE-RunOnDiscreteGpu=true
-  '';
+  #   [Desktop Entry]
+  #   Actions=Store;Community;Library;Servers;Screenshots;News;Settings;BigPicture;Friends;
+  #   Categories=Network;FileTransfer;Game;
+  #   Comment=Application for managing and playing games on Steam
+  #   Exec=steam %U
+  #   Icon=steam
+  #   MimeType=x-scheme-handler/steam;x-scheme-handler/steamlink;
+  #   Name=Steam
+  #   PrefersNonDefaultGPU=true
+  #   Terminal=false
+  #   Type=Application
+  #   X-KDE-RunOnDiscreteGpu=true
+  # '';
 
-  home.file.".config/autostart/vesktop.desktop".text = ''
-    [Desktop Entry]
-    Categories=Network;InstantMessaging;Chat
-    Exec=vesktop %U
-    GenericName=Internet Messenger
-    Icon=vesktop
-    Keywords=vesktop;vencord;electron;chat
-    Name=Vesktop
-    StartupWMClass=Vesktop
-    Type=Application
-    Version=1.4
-  '';
+  # home.file.".config/autostart/vesktop.desktop".text = ''
+  #   [Desktop Entry]
+  #   Categories=Network;InstantMessaging;Chat
+  #   Exec=vesktop %U
+  #   GenericName=Internet Messenger
+  #   Icon=vesktop
+  #   Keywords=vesktop;vencord;electron;chat
+  #   Name=Vesktop
+  #   StartupWMClass=Vesktop
+  #   Type=Application
+  #   Version=1.4
+  # '';
 
   # home.file.".config/autostart/bluetooth.desktop".text = ''
   #   [Desktop Entry]
