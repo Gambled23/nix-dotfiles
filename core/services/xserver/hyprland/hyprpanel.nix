@@ -9,7 +9,7 @@
           "0" = {
             left = [ "dashboard" "workspaces" ];
             middle = [ "media" ];
-            right = [ "volume" "network" "bluetooth" "battery" "systray" "clock" "notifications" ];
+            right = [ "volume" "bluetooth" "battery" "systray" "clock" "notifications" ];
           };
         };
 
@@ -108,6 +108,7 @@
             opacity = 100;
             spacing = "0.2em";
             padding_x = "0.5rem";
+            background_opacity = 0;
           };
           dropdownGap = "2em";
           transparent = false;

@@ -21,11 +21,14 @@
       inputs.hyprland.follows = "hyprland";
     };
 
-    elephant.url = "github:abenz1267/elephant";
-    walker = {
-      url = "github:abenz1267/walker";
-      inputs.elephant.follows = "elephant";
-    };
+    dolphin-overlay.url = "github:rumboon/dolphin-overlay";
+    vicinae.url = "github:vicinaehq/vicinae";
+
+    # elephant.url = "github:abenz1267/elephant";
+    # walker = {
+    #   url = "github:abenz1267/walker";
+    #   inputs.elephant.follows = "elephant";
+    # };
 
     stylix.url = "github:danth/stylix";
 
@@ -54,7 +57,9 @@
       # nur,
       nixcord,
       # jovian-nixos,
+      dolphin-overlay,
       stylix,
+      vicinae,
       # millennium,
       ... 
      }@inputs:
@@ -95,12 +100,14 @@
               ./core/programs/spicetify.nix
               inputs.nixcord.homeModules.nixcord
               ./core/programs/nixcord.nix
-              inputs.walker.homeManagerModules.default
+              # inputs.walker.homeManagerModules.default
+              vicinae.homeManagerModules.default
             ];
             home-manager.backupFileExtension = "uiod";
-            # nixpkgs.overlays = [
+            nixpkgs.overlays = [
               # inputs.millennium.overlays.default
-            # ];
+              dolphin-overlay.overlays.default
+            ];
           }
         ];
       };
@@ -133,12 +140,14 @@
               ./core/programs/spicetify.nix
               inputs.nixcord.homeModules.nixcord
               ./core/programs/nixcord.nix
-              inputs.walker.homeManagerModules.default
+              # inputs.walker.homeManagerModules.default
+              vicinae.homeManagerModules.default
             ];
             home-manager.backupFileExtension = "2";
-            # nixpkgs.overlays = [
+            nixpkgs.overlays = [
               # inputs.millennium.overlays.default
-            # ];
+              # dolphin-overlay.overlays.default
+            ];
           }
         ];
       };

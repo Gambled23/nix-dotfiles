@@ -18,7 +18,6 @@ with lib;
   environment.systemPackages = with pkgs; [
     kitty # required for the default Hyprland config
     hyprshot # Screenshot tool
-    clipse # Clipboard manager
     playerctl
     # hyprpolkitagent # Polkit for gui applications
     kdePackages.qtwayland

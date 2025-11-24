@@ -13,7 +13,8 @@
     ./hyprpanel.nix
     ./kitty.nix
     # ./notifications/mako.nix
-    ./menu/walker.nix
+    # ./menu/walker.nix
+    ./menu/vicinae.nix
   ];
   wayland.windowManager.hyprland = {
     enable = true;
@@ -51,7 +52,7 @@
       "$fileManager" = "uwsm app -- dolphin";
       "$web_browser" = "uwsm app -- google-chrome-stable";
       "$code" = "uwsm app -- code";
-      "$menu" = "uwsm app -- walker";
+      "$menu" = "uwsm app -- vicinae toggle";
 
 
       #################
@@ -67,7 +68,6 @@
         # "systemctl --user enable --now waybar.service"
         "systemctl --user enable --now hyprpaper.service"
         "systemctl --user enable --now hypridle.service"
-        "clipse -listen"
         "uwsm app -- hyprpanel"
         "uwsm app -- spotify %U"
         "uwsm app -- vesktop %U"
@@ -271,7 +271,7 @@
         "$mainMod, F, exec, $web_browser"
         "$mainMod, J, togglesplit," # dwindle
         "$mainMod, C, exec, $code"
-        "$mainMod, V, exec, kitty --class clipse -e clipse"
+        "$mainMod, V, exec, vicinae vicinae://extensions/vicinae/clipboard/history"
         "$mainMod, B, exec, bluetoothctl connect 24:95:2F:60:BD:94"
         "$mainMod, N, togglefloating,"
         "$mainMod, M, exit,"
@@ -374,11 +374,6 @@
         # Fix some dragging issues with XWayland
         "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
 
-        # Clipboard manager
-        "float, class:(clipse)"
-        "size 622 652, class:(clipse)"
-        "stayfocused, class:(clipse)"
-
         "opacity 0.85, class:^(kitty|org.kde.dolphin)$"
         # "opacity 0.95, class:^(org.kde.dolphin)$"
       ];
@@ -386,6 +381,8 @@
       layerrule = [
         "blur, bar-0"
         "blur, verification"
+        "blur, vicinae"
+        "ignorealpha 0, vicinae"
         # "blur, dashboardmenu"
         # "blur, audiomenu"
         # "blur, networkmenu"
