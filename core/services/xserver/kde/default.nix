@@ -113,6 +113,9 @@ with lib;
           48000
           48002
           48010
+          # Miracast
+          7236
+          5353
         ];
     allowedTCPPorts = [
           # MoonDeck Buddy
@@ -121,6 +124,9 @@ with lib;
           47984
           47989
           48010
+          # Miracast
+          7236
+          7250
         ];
   };
 }

@@ -36,7 +36,6 @@
     android-tools
     libreoffice
     scrcpy
-    miraclecast
     gnome-network-displays
 
     #* webbrowsers
