@@ -13,7 +13,5 @@
 
   home.packages = with pkgs; [
     lm_sensors
-    miraclecast
-    gnome-network-displays
   ];
 }
