@@ -110,6 +110,9 @@
             padding_x = "0.5rem";
             background_opacity = 0;
           };
+          menus = {
+            opacity = 70;
+          };
           dropdownGap = "2em";
           transparent = false;
           opacity = 70;
@@ -123,10 +126,13 @@
           orientation = "horizontal";
           rientation = "horizontal";
           location = "bottom";
-          enableShadow = true;
+          enableShadow = false;
           border.size = "0em";
           margins = "7px 7px 200px 7px";
           muted_zero = true;
+          opacity = 70;
+          bar_color = "#989719";
+          bar_container = "#282828";
         };
       };
     };
