@@ -1,3 +1,4 @@
+# Home manager file
 { pkgs, ... }: 
 let 
   theme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";

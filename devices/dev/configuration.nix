@@ -24,6 +24,7 @@
 
   environment.systemPackages = with pkgs; [
     (import ../../scripts/flash-kernelsu.nix { inherit pkgs; })
+    (import ../../scripts/songdetails.nix { inherit pkgs; })
 
   ];
 

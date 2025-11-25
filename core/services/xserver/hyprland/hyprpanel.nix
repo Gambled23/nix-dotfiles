@@ -1,3 +1,4 @@
+# Home manager file
 { inputs, ... }:
 {
   programs.hyprpanel = {

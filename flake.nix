@@ -24,12 +24,6 @@
     dolphin-overlay.url = "github:rumboon/dolphin-overlay";
     vicinae.url = "github:vicinaehq/vicinae";
 
-    # elephant.url = "github:abenz1267/elephant";
-    # walker = {
-    #   url = "github:abenz1267/walker";
-    #   inputs.elephant.follows = "elephant";
-    # };
-
     stylix.url = "github:danth/stylix";
 
     # Nur repo for firefox extensions
@@ -146,7 +140,7 @@
             home-manager.backupFileExtension = "2";
             nixpkgs.overlays = [
               # inputs.millennium.overlays.default
-              # dolphin-overlay.overlays.default
+              dolphin-overlay.overlays.default
             ];
           }
         ];

@@ -1,3 +1,4 @@
+# Home manager file
 { ... }: {
   services.hyprsunset = {
     enable = true;

@@ -1,3 +1,4 @@
+# Home manager file
 {
   inputs,
   pkgs,
@@ -5,23 +6,23 @@
 }: 
 {
   imports = [
-    # ./waybar/waybar.nix
     ./hyprsunset.nix
     ./hyprpaper.nix
     ./hypridle.nix
     ./hyprshot.nix
     ./hyprpanel.nix
+    ./hyprlock.nix
     ./kitty.nix
-    # ./notifications/mako.nix
-    # ./menu/walker.nix
     ./menu/vicinae.nix
   ];
+  
   wayland.windowManager.hyprland = {
     enable = true;
     systemd.enable = false;
 
     plugins = [
       inputs.hyprland-plugins.packages."${pkgs.system}".borders-plus-plus
+      inputs.hyprland-plugins.packages."${pkgs.system}".csgo-vulkan-fix
     ];
 
     settings = {
@@ -115,8 +116,8 @@
 
       # https://wiki.hypr.land/Configuring/Variables/#general
       general = {
-        gaps_in = 1;
-        gaps_out = 1;
+        gaps_in = 0;
+        gaps_out = 0;
         border_size = 1;
 
         # "col.active_border" = "rgba(99cc00ee) rgba(00ff99ee) 45deg";
@@ -273,6 +274,7 @@
         "$mainMod, C, exec, $code"
         "$mainMod, V, exec, vicinae vicinae://extensions/vicinae/clipboard/history"
         "$mainMod, B, exec, bluetoothctl connect 24:95:2F:60:BD:94"
+        "$mainMod, L, exec, hyprlock"
         "$mainMod, N, togglefloating,"
         "$mainMod, M, exit,"
 
@@ -385,6 +387,8 @@
         "ignorealpha 0, vicinae"
         "blur, dashboardmenu"
         "ignorealpha 0, dashboardmenu"
+        "blur, mediamenu"
+        "ignorealpha 0, mediamenu"
         "blur, audiomenu"
         "ignorealpha 0, audiomenu"
         "blur, networkmenu"

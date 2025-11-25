@@ -1,3 +1,4 @@
+# Home manager file
 { ... }: {
 programs.hyprshot = {
     enable = true;

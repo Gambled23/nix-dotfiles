@@ -1,3 +1,4 @@
+# Home manager file
 { ... }: {
   services.hyprpaper = {
     enable = true;
