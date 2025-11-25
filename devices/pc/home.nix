@@ -15,14 +15,14 @@
   ];
 
   home.packages = 
-    let
-      stremioPkgs = import inputs.nixpkgs-for-stremio {
-        inherit (pkgs) system;
-      };
-    in
+    # let
+    #   stremioPkgs = import inputs.nixpkgs-for-stremio {
+    #     inherit (pkgs) system;
+    #   };
+    # in
     with pkgs; [
 
-    (stremioPkgs.stremio)
+    # (stremioPkgs.stremio)
 
     #* books
     #hakuneko

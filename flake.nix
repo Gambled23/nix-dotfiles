@@ -44,7 +44,7 @@
 
 
     #stremio qt5
-    nixpkgs-for-stremio.url = "nixpkgs/5135c59491985879812717f4c9fea69604e7f26f";
+    # nixpkgs-for-stremio.url = "nixpkgs/5135c59491985879812717f4c9fea69604e7f26f";
   };
 
   outputs = { 
