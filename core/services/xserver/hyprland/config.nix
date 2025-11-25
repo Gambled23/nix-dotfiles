@@ -374,7 +374,7 @@
         # Fix some dragging issues with XWayland
         "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
 
-        "opacity 0.85, class:^(kitty|org.kde.dolphin)$"
+        "opacity 0.70, class:^(kitty|org.kde.dolphin)$"
         # "opacity 0.95, class:^(org.kde.dolphin)$"
       ];
 
