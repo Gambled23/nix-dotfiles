@@ -36,7 +36,7 @@
         inner_color = "rgba(100, 114, 125, 0.5)";
         font_color = "rgb(200, 200, 200)";
         fade_on_empty = false;
-        placeholder_text = "<i><span foreground=\"##ffffff99\">Hi, $USER</span></i>";
+        placeholder_text = "<i><span foreground=\"##ffffff99\">Hola, $USER</span></i>";
         hide_input = false;
         position = "0, -290";
         halign = "center";
@@ -45,16 +45,18 @@
 
       # Hour-Time
       label = [
+        # HOUR-TIME
         {
           monitor = "";
           text = "cmd[update:1000] echo -e \"$(date +\"%H\")\"";
-          color = "rgba(255, 185, 0, .6)";
+          color = "rgba(184, 187, 38, .6)";
           font_size = 180;
           font_family = "AlfaSlabOne";
           position = "0, 300";
           halign = "center";
           valign = "center";
         }
+        # Minute-Time
         {
           monitor = "";
           text = "cmd[update:1000] echo -e \"$(date +\"%M\")\"";
@@ -65,9 +67,10 @@
           halign = "center";
           valign = "center";
         }
+        # CURRENT DATE
         {
           monitor = "";
-          text = "cmd[update:1000] echo \"<span color='##ffffff99'>$(date '+%A, ')</span><span color='##ffb90099'>$(date '+%d %B')</span>\"";
+          text = "cmd[update:1000] echo \"<span color='##ffffff99'>$(date '+%A ')</span><span color='##98971a'>$(date '+%d de %B')</span>\"";
           font_size = 30;
           font_family = "SF Pro Display Bold";
           position = "0, -80";
@@ -75,16 +78,16 @@
           valign = "center";
         }
         # CURRENT SONG
-        {
-          monitor = "";
-          text = "cmd[update:1000] echo \"$(songdetails)\""; 
-          color = "rgba(255, 255, 255, 0.7)";
-          font_size = 18;
-          font_family = "JetBrains Mono Nerd, SF Pro Display Bold";
-          position = "0, 60";
-          halign = "center";
-          valign = "bottom";
-        }
+        # {
+        #   monitor = "";
+        #   text = "cmd[update:1000] echo \"$(songdetails)\""; 
+        #   color = "rgba(255, 255, 255, 0.7)";
+        #   font_size = 18;
+        #   font_family = "JetBrains Mono Nerd, SF Pro Display Bold";
+        #   position = "0, 60";
+        #   halign = "center";
+        #   valign = "bottom";
+        # }
       ];
     };
   };

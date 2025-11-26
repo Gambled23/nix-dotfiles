@@ -2,6 +2,7 @@
 {
   inputs,
   pkgs,
+  lib,
   ...
 }: 
 {
@@ -120,8 +121,8 @@
         gaps_out = 0;
         border_size = 1;
 
-        # "col.active_border" = "rgba(99cc00ee) rgba(00ff99ee) 45deg";
-        # "col.inactive_border" = "rgba(595959aa)";
+        "col.active_border" = lib.mkForce "rgba(98971aee) rgba(b8bb26ee)";
+        # "col.inactive_border" =  "rgba(595959aa)";
 
         # Set to true enable resizing windows by clicking and dragging on borders and gaps
         resize_on_border = false;
@@ -278,14 +279,6 @@
         "$mainMod, N, togglefloating,"
         "$mainMod, M, exit,"
 
-        # Media controller
-        "ALT, 0, exec, pamixer -i 2 && paplay /etc/nixos/core/services/xserver/hyprland/volume.mp3"
-        "ALT, 9, exec, pamixer -d 2 && paplay /etc/nixos/core/services/xserver/hyprland/volume.mp3"
-        "ALT, 8, exec, pamixer -t"
-        "ALT, 1, exec, playerctl previous"
-        "ALT, 2, exec, playerctl play-pause"
-        "ALT, 3, exec, playerctl next"
-
         # Tools
         ", Print, exec, hyprshot -m region"
 
@@ -327,6 +320,16 @@
         # Scroll through existing workspaces with mainMod + scroll
         "$mainMod, mouse_down, workspace, e+1"
         "$mainMod, mouse_up, workspace, e-1"
+      ];
+
+      binde = [
+        # Media controller
+        "ALT, 0, exec, pamixer -i 1 && paplay /etc/nixos/core/services/xserver/hyprland/volume.mp3"
+        "ALT, 9, exec, pamixer -d 1 && paplay /etc/nixos/core/services/xserver/hyprland/volume.mp3"
+        "ALT, 8, exec, pamixer -t"
+        "ALT, 1, exec, playerctl previous"
+        "ALT, 2, exec, playerctl play-pause"
+        "ALT, 3, exec, playerctl next"
       ];
 
       # Move/resize windows with mainMod + LMB/RMB and dragging
@@ -376,7 +379,7 @@
         # Fix some dragging issues with XWayland
         "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
 
-        "opacity 0.85, class:^(kitty|org.kde.dolphin)$"
+        "opacity 0.9, class:^(kitty|org.kde.dolphin|gjs|DBeaver)$"
         # "opacity 0.95, class:^(org.kde.dolphin)$"
       ];
 
