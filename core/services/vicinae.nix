@@ -26,8 +26,7 @@
     };
 
     extensions = [
-      (inputs.vicinae.mkVicinaeExtension.${pkgs.system} {
-        inherit pkgs;
+      (inputs.vicinae.packages.${pkgs.stdenv.hostPlatform.system}.mkVicinaeExtension {
         pname = "Nix";
         src = pkgs.fetchFromGitHub {
           owner = "vicinaehq";
@@ -36,8 +35,7 @@
           sha256 = "sha256-z4SqRFhJzAlBhNzgX7wHNZtEDnu5PIypYkBWOJtjyuA=";
         } + "/extensions/nix";
       })
-      (inputs.vicinae.mkVicinaeExtension.${pkgs.system} {
-        inherit pkgs;
+      (inputs.vicinae.packages.${pkgs.stdenv.hostPlatform.system}.mkVicinaeExtension {
         pname = "Hypr Keybinds";
         src = pkgs.fetchFromGitHub {
           owner = "vicinaehq";
@@ -46,8 +44,7 @@
           sha256 = "sha256-z4SqRFhJzAlBhNzgX7wHNZtEDnu5PIypYkBWOJtjyuA=";
         } + "/extensions/hypr-keybinds";
       })
-      (inputs.vicinae.mkVicinaeExtension.${pkgs.system} {
-        inherit pkgs;
+      (inputs.vicinae.packages.${pkgs.stdenv.hostPlatform.system}.mkVicinaeExtension {
         pname = "Bluethooth";
         src = pkgs.fetchFromGitHub {
           owner = "vicinaehq";

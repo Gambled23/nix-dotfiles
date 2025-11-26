@@ -7,13 +7,13 @@
       # BACKGROUND
       background = lib.mkForce [
         {
-            monitor = "";
-            path = "screenshot";
-            blur_passes = 3;
-            contrast = 0.8916;
-            brightness = 0.8172;
-            vibrancy = 0.1696;
-            vibrancy_darkness = 0.0;
+          monitor = "";
+          path = "screenshot";
+          blur_passes = 3;
+          contrast = 0.8916;
+          brightness = 0.8172;
+          vibrancy = 0.1696;
+          vibrancy_darkness = 0.0;
         }
       ];
 
@@ -30,7 +30,7 @@
         size = "250, 60";
         outline_thickness = 2;
         dots_size = 0.2; # Scale of input-field height, 0.2 - 0.8
-        dots_spacing = 0.2; # Scale of dots' absolute size, 0.0 - 1.0
+        dots_spacing = 0.4; # Scale of dots' absolute size, 0.0 - 1.0
         dots_center = true;
         outer_color = "rgba(0, 0, 0, 0)";
         inner_color = "rgba(100, 114, 125, 0.5)";
@@ -51,7 +51,7 @@
           text = "cmd[update:1000] echo -e \"$(date +\"%H\")\"";
           color = "rgba(184, 187, 38, .6)";
           font_size = 180;
-          font_family = "AlfaSlabOne";
+          font_family = "AlphaSlabOne";
           position = "0, 300";
           halign = "center";
           valign = "center";
@@ -62,7 +62,7 @@
           text = "cmd[update:1000] echo -e \"$(date +\"%M\")\"";
           color = "rgba(255, 255, 255, .6)";
           font_size = 180;
-          font_family = "AlfaSlabOne";
+          font_family = "AlphaSlabOne";
           position = "0, 75";
           halign = "center";
           valign = "center";
@@ -72,7 +72,7 @@
           monitor = "";
           text = "cmd[update:1000] echo \"<span color='##ffffff99'>$(date '+%A ')</span><span color='##98971a'>$(date '+%d de %B')</span>\"";
           font_size = 30;
-          font_family = "SF Pro Display Bold";
+          font_family = "JetBrains Mono Nerd, JetBrainsMonoNerd, JetBrainsMono";
           position = "0, -80";
           halign = "center";
           valign = "center";

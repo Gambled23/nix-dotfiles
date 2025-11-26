@@ -39,6 +39,7 @@ with lib;
   # Icons for hyprpanel and others
   fonts.packages = with pkgs; [
     nerd-fonts.caskaydia-cove
+    nerd-fonts.jetbrains-mono
     texlivePackages.alfaslabone
   ];
 

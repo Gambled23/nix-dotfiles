@@ -10,7 +10,7 @@
           "0" = {
             left = [ "dashboard" "workspaces" ];
             middle = [ "media" ];
-            right = [ "volume" "bluetooth" "battery" "systray" "clock" "notifications" ];
+            right = [ "systray" "bluetooth" "clock" "volume" "notifications" ];
           };
         };
 
@@ -131,7 +131,7 @@
               numbered_active_highlight_border = "0.2em";
               numbered_active_highlighted_text_color = "#282828";
               numbered_active_underline_color = "#fbf1c7";
-              hover = "#ebdbb2";
+              hover = "#a89984";
               active = "#989719";
               occupied = "#a89984";
               available = "#83a598";
