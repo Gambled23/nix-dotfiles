@@ -74,7 +74,8 @@ with lib;
     #kde-gruvbox
     #kdePackages.koi
     # graphite-kde-theme
-    vimix-cursors
+    # vimix-cursors
+    bibata-cursors
     # gruvbox-kvantum
     # nordic
     # qogir-kde

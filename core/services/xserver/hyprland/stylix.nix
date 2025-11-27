@@ -31,9 +31,14 @@ in
       #   name = "Joypixels";
       # };
     };
+    # cursor = {
+    #   package = pkgs.vimix-cursors;
+    #   name = "Vimix-cursors";
+    #   size = 24;
+    # };
     cursor = {
-      package = pkgs.vimix-cursors;
-      name = "Vimix-cursors";
+      package = pkgs.bibata-cursors;
+      name = "Bibata-Modern-Ice";
       size = 24;
     };
   };
