@@ -41,8 +41,8 @@
           hideCountWhenZero = true;
         };
         volume = {
-          scrollDown = "hyprpanel vol -1";
-          scrollUp =  "hyprpanel vol +1";
+          scrollDown = "pamixer -d 2 && paplay /etc/nixos/core/services/xserver/hyprland/volume.mp3";
+          scrollUp =  "pamixer -i 2 && paplay /etc/nixos/core/services/xserver/hyprland/volume.mp3";
         };
         workspaces = {
           show_icons = false;
@@ -101,7 +101,7 @@
       };
 
       notifications = {
-        showActionsOnHover = false;
+        showActionsOnHover = true;
         timeout = 5000;
       };
       
@@ -388,7 +388,7 @@
                   passive = "#ebdbb2";
                 };
                 icons = {
-                  active = "#fe8019";
+                  active = "#d3869b";
                   passive = "#bdae93";
                 };
                 background.color = "#282828";
@@ -548,11 +548,11 @@
                 text = "#ebdbb2";
               };
               dashboard = {
-                profile.name = "#d3869b";
+                profile.name = "#98971a";
                 controls = {
                   disabled = "#665c54";
                   volume = {
-                    background = "#fb4934";
+                    background = "#b8bb26";
                     text = "#3c3836";
                   };
                   input = {
@@ -564,7 +564,7 @@
                     text = "#3c3836";
                   };
                   wifi = {
-                    background = "#d3869b";
+                    background = "#fe8019";
                     text = "#3c3836";
                   };
                   notifications = {
@@ -613,7 +613,7 @@
                   };
                 };
                 powermenu = {
-                  sleep = "#83a598";
+                  sleep = "#fabd2f";
                   restart = "#fe8019";
                   logout = "#b8bb26";
                   shutdown = "#fb4934";
@@ -621,7 +621,7 @@
                     background = "#282828";
                     card = "#282828";
                     border = "#3c3836";
-                    label = "#83a598";
+                    label = "#98971a";
                     body = "#ebdbb2";
                     button_text = "#282828";
                     confirm = "#8ec07c";
@@ -687,16 +687,16 @@
         notification = {
           background = "#3c3836";
           border = "#3c3836";
-          label = "#83a598";
-          labelicon = "#83a598";
+          label = "#fabd2f";
+          labelicon = "#d79921";
           text = "#ebdbb2";
           time = "#bdae93";
           actions = {
-            background = "#83a598";
+            background = "#b8bb26";
             text = "#3c3836";
           };
           close_button = {
-            background = "#83a598";
+            background = "#fb4934";
             label = "#282828";
           };
         };
@@ -712,8 +712,8 @@
           bar_color = "#989719";
           bar_container = "#282828";
           icon = "#282828";
-          icon_container = "#83a598";
-          label = "#83a598";
+          icon_container = "#b8bb26";
+          label = "#989719";
           theme = {
             color = "#83a598";
             container = "#282828";
