@@ -305,7 +305,7 @@
             };
           };
           menus = {
-            opacity = 70;
+            opacity = 85;
             background = "#282828";
             border.color = "#3c3836";
             cards = "#282828";

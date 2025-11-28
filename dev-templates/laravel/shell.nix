@@ -5,10 +5,10 @@ let
 in pkgs.mkShell rec {
   name = "php";
 
-  buildInputs = [
-    php83
-    php83Packages.composer
-    nodejs_22
+  packages = [
+    php84
+    php84Packages.composer
+    nodejs_24
   ];
 
   postVenvCreation = ''
