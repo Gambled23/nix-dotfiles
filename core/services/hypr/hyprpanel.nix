@@ -17,7 +17,7 @@
         clock = {
           showTime = true;
           showIcon = true;
-          format = "%a %b %d  %H:%M:%S";
+          format = "%a %b %d - %H:%M:%S";
         };
         customModules = {
           hypridle = {

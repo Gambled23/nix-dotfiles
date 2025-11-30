@@ -60,7 +60,7 @@
       recorder.db_url = "postgresql://@/hass";
 
       shell_command = {
-        "suspend_pcsuspend_pc" = "ssh -i /config/keys/id_rsa -o StrictHostKeyChecking=no gambled@192.168.1.17 'sudo systemctl start systemd-suspend'";
+        "suspend_pc" = "ssh -i /config/keys/id_rsa -o StrictHostKeyChecking=no gambled@192.168.1.17 'sudo systemctl start systemd-suspend'";
         "hibernate_pc" = "ssh -i /config/keys/id_rsa -o StrictHostKeyChecking=no gambled@192.168.1.17 'sudo systemctl hibernate'";
         "reboot_pc" = "ssh -i /config/keys/id_rsa -o StrictHostKeyChecking=no gambled@192.168.1.17 'sudo systemctl reboot'";
         "poweroff_pc" = "ssh -i /config/keys/id_rsa -o StrictHostKeyChecking=no gambled@192.168.1.17 'sudo systemctl poweroff'";
