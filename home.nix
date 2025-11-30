@@ -22,6 +22,7 @@
 
     #* extras
     bat
+    jq # Json parser for terminal
     lxsession
     neofetch
     zsh
