@@ -17,6 +17,7 @@
       "Documents" = {
         versioning.type = "simple";
         path = "/home/gambled/Documents";
+        enable = true;
       };
       "Downloads" = {
         versioning.type = "simple";
@@ -29,6 +30,7 @@
       "Pictures" = {
         versioning.type = "simple";
         path = "/home/gambled/Pictures";
+        enable = true;
       };
       "Templates" = {
         versioning.type = "simple";
