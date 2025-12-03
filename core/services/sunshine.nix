@@ -23,7 +23,7 @@
         }
         {
           name = "phone";
-          cmd = "echo 'No display change for phone'";
+          cmd = "display-device -d android-gambled";
           exclude-global-prep-cmd = "false";
           elevated = "false";
         }

@@ -37,14 +37,17 @@ pkgs.writeShellScriptBin "display-device" ''
   fi
 
   case "$display_name" in
-    pc-gambled)
-      hyprctl keyword monitor "DP-3,3440x1440@180,0x0,1"
-      ;;
     steamdeck)
       hyprctl keyword monitor "DP-3,1280x800@60,0x0,1"
       ;;
+    pc-gambled)
+      hyprctl keyword monitor "DP-3,3440x1440@180,0x0,1"
+      ;;
     dev-gambled)
       hyprctl keyword monitor "DP-3,1920x1080@60,0x0,1"
+      ;;
+    android-gambled)
+      hyprctl keyword monitor "DP-3,2400x1080@90,0x0,1"
       ;;
     *)
       echo "Invalid display name: $display_name" >&2
