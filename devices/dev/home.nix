@@ -37,6 +37,7 @@
     libreoffice
     scrcpy
     gnome-network-displays
+    moonlight-qt
 
     #* webbrowsers
     google-chrome
