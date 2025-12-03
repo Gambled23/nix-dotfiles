@@ -22,8 +22,14 @@
           elevated = "false";
         }
         {
-          name = "MoonDeckStream";
-          cmd = "${pkgs.moondeck-buddy}/bin/MoonDeckStream";
+          name = "phone";
+          cmd = "echo 'No display change for phone'";
+          exclude-global-prep-cmd = "false";
+          elevated = "false";
+        }
+        {
+          name = "dev-gambled";
+          cmd = "display-device -d dev-gambled";
           exclude-global-prep-cmd = "false";
           elevated = "false";
         }

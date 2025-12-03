@@ -38,18 +38,13 @@ pkgs.writeShellScriptBin "display-device" ''
 
   case "$display_name" in
     pc-gambled)
-      # kscreen-doctor output.DP-3.mode.3440x1440@180
       hyprctl keyword monitor "DP-3,3440x1440@180,0x0,1"
-      sudo systemctl stop openrgb
-      sudo openrgb --server --profile "white_low.orp"
       ;;
     steamdeck)
-      # shutdown rgb
-      # kscreen-doctor output.DP-3.mode.1280x800@60
       hyprctl keyword monitor "DP-3,1280x800@60,0x0,1"
-      sudo systemctl stop openrgb
-      sudo openrgb --server --profile "off.orp" 
-      steam steam://open/bigpicture
+      ;;
+    dev-gambled)
+      hyprctl keyword monitor "DP-3,1920x1080@60,0x0,1"
       ;;
     *)
       echo "Invalid display name: $display_name" >&2

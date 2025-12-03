@@ -5,6 +5,7 @@
     enable = true;
     user = "gambled";
     openDefaultPorts = true;
+    guiAddress = "0.0.0.0:8384";
     dataDir = "/home/gambled";  # default location for new folders
     configDir = "/home/gambled/.config/syncthing";
 
