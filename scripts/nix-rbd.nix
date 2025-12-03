@@ -23,7 +23,7 @@ pkgs.writeShellScriptBin "nix-rbd" ''
   git commit -m "nix-rbd $rebuild_mode from $(hostname)" || echo "No changes to commit"
 
   git push
-  echo "Rebuild $rebuild_mode complete"
+  ${pkgs.libnotify}/bin/notify-send "nix-rbd" "Rebuild complete: $rebuild_mode"
 
   if [[ $1 = "-u" ]]; then
     agc
