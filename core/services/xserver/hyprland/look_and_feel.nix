@@ -43,9 +43,9 @@
         size = 6;
         passes = 2;
         new_optimizations = true;
-        contrast = 0.8916;
-        brightness = 0.8172;
-        vibrancy = 0.1696;
+        contrast = 0.8316;
+        brightness = 0.8872;
+        vibrancy = 0.2;
         vibrancy_darkness = 0.0;
         popups = true;
       };

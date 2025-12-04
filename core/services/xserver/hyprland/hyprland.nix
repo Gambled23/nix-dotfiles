@@ -28,6 +28,7 @@ with lib;
     wireplumber
     # waybar
     hyprpaper
+    waytrogen
     hypridle
     pamixer
   ];

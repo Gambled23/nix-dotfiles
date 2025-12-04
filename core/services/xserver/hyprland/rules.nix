@@ -22,8 +22,8 @@
       "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
 
       # Always set opacity for these apps
-      "opacity 0.9, class:^(kitty|org.kde.dolphin|gjs|DBeaver)$" 
-      "opacity 0.93, class:^(spotify)$" 
+      "opacity 0.86, class:^(kitty|org.kde.dolphin|gjs|DBeaver)$" 
+      "opacity 0.9, class:^(spotify)$" 
       # Opacity only on focus loss
       "opacity 1 0.9, class:^(code)$"
     ];
