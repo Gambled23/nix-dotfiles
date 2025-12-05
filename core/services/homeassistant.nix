@@ -43,16 +43,29 @@
       # Includes dependencies for a basic setup
       # https://www.home-assistant.io/integrations/default_config/
       default_config = {
-        logger = {
-          default = "debug";
-        };
+      };
+      
+      logger = {
+        default = "debug";
       };
 
       # Automation, Scene, and Script from the UI
       "automation ui" = "!include automations.yaml";
       "scene ui" = "!include scenes.yaml";
       "script ui" = "!include scripts.yaml";
-      "switch" = "!include switch.yaml";
+      # "switch" = "!include switch.yaml";
+      "switch" = [
+        {
+          platform = "wake_on_lan";
+          name = "pc-gambled";
+          mac = "10:FF:E0:AB:9B:CB";
+          host = "192.168.1.21";
+          turn_off = {
+            service = "shell_command.poweroff_pc";
+          };
+        }
+      ];
+
       # These can be mixed with declarative configurations
       # "automation nixos" = [
       #   YAML automations go here
@@ -62,24 +75,24 @@
       recorder.db_url = "postgresql://@/hass";
 
       shell_command = {
-        "suspend_pc" = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'sudo systemctl start systemd-suspend'";
-        "hibernate_pc" = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'sudo systemctl hibernate'";
-        "reboot_pc" = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'sudo systemctl reboot'";
-        "poweroff_pc" = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'sudo systemctl poweroff'";
-        "auto_push" = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'aps'";
-        "auto_pull" = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'apll'";
-        "desktop_1" = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'qdbus org.kde.KWin /KWin setCurrentDesktop 1'";
-        "desktop_2" = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'qdbus org.kde.KWin /KWin setCurrentDesktop 2'";
-        "desktop_3" = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'qdbus org.kde.KWin /KWin setCurrentDesktop 3'";
-        "desktop_4" = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'qdbus org.kde.KWin /KWin setCurrentDesktop 4'";
-        "desktop_5" = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'qdbus org.kde.KWin /KWin setCurrentDesktop 5'";
-        "desktop_6" = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'qdbus org.kde.KWin /KWin setCurrentDesktop 6'";
-        "modo_tele" = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'modo-tele enable'";
-        "modo_monitor" = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'modo-tele disable'";
-        "reboot_to_windows" = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'reboot-to-windows'";
-        "gamescope" = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'start-gamescope-session'";
-        "display_device_steamdeck" = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled  'display-device -d steamdeck'";
-        "display_device_pc_gambled" = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled  'display-device -d pc-gambled'";
+        "suspend_pc" = "ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'sudo systemctl start systemd-suspend'";
+        "hibernate_pc" = "ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'sudo systemctl hibernate'";
+        "reboot_pc" = "ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'sudo systemctl reboot'";
+        "poweroff_pc" = "ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'sudo systemctl poweroff'";
+        "auto_push" = "ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'aps'";
+        "auto_pull" = "ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'apll'";
+        "desktop_1" = "ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'qdbus org.kde.KWin /KWin setCurrentDesktop 1'";
+        "desktop_2" = "ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'qdbus org.kde.KWin /KWin setCurrentDesktop 2'";
+        "desktop_3" = "ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'qdbus org.kde.KWin /KWin setCurrentDesktop 3'";
+        "desktop_4" = "ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'qdbus org.kde.KWin /KWin setCurrentDesktop 4'";
+        "desktop_5" = "ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'qdbus org.kde.KWin /KWin setCurrentDesktop 5'";
+        "desktop_6" = "ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'qdbus org.kde.KWin /KWin setCurrentDesktop 6'";
+        "modo_tele" = "ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'modo-tele enable'";
+        "modo_monitor" = "ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'modo-tele disable'";
+        "reboot_to_windows" = "ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'reboot-to-windows'";
+        "gamescope" = "ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'start-gamescope-session'";
+        "display_device_steamdeck" = "ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled  'display-device -d steamdeck'";
+        "display_device_pc_gambled" = "ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled  'display-device -d pc-gambled'";
       };
     };
 
