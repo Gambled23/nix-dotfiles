@@ -40,13 +40,13 @@
       # https://wiki.hypr.land/Configuring/Variables/#blur
       blur = {
         enabled = true;
-        size = 6;
+        size = 5;
         passes = 2;
         new_optimizations = true;
-        contrast = 0.8316;
-        brightness = 0.8872;
-        vibrancy = 0.2;
-        vibrancy_darkness = 0.0;
+        # contrast = 0.8316;
+        # brightness = 0.8872;
+        vibrancy = 0.1696;
+        # vibrancy_darkness = 0.0;
         popups = true;
       };
     };

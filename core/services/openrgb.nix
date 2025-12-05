@@ -6,5 +6,6 @@ with lib;
   services.hardware.openrgb = {
     enable = true;
     motherboard = "amd";
+    startupProfile = "off.orp";
   };
 }
