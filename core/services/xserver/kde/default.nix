@@ -7,7 +7,7 @@ with lib;
   services.displayManager.defaultSession = "hyprland-uwsm";
 
   services.displayManager = {
-    autoLogin.enable = false;
+    autoLogin.enable = true;
     autoLogin.user = "gambled";
     sddm = {
       enable = true;
