@@ -25,6 +25,7 @@ with lib;
     pipewire
     pulseaudio
     pulsemeeter
+    sof-firmware # audio via hdmi
     wireplumber
     # waybar
     hyprpaper
