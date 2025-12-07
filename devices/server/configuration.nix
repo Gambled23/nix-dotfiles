@@ -18,5 +18,7 @@
     ../../core/bootloader/grub.nix
   ];
 
+  environment.systemPackages = with pkgs; [
+  ];
   programs.nix-ld.enable = true; # for vscode remote server
 }

@@ -27,7 +27,8 @@
       "isal"
       "wake_on_lan"
     ];
-    customComponents = with pkgs.home-assistant-custom-components; [
+
+    customComponents = with pkgs; [
       (callPackage ../../nixpkgs/pkgs/cozylife/package.nix {})
       # dreo
     ];
@@ -67,6 +68,15 @@
         }
       ];
 
+      hass_cozylife_local_pull = {
+        lang = "en";
+        ip = [
+          "192.168.1.1"
+          "192.168.1.19"
+          "192.168.1.20"
+          "192.168.1.27"
+        ];
+      };
       # These can be mixed with declarative configurations
       # "automation nixos" = [
       #   YAML automations go here
