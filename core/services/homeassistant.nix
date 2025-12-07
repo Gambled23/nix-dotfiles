@@ -28,6 +28,7 @@
       "wake_on_lan"
     ];
     customComponents = with pkgs.home-assistant-custom-components; [
+      (callPackage ../../nixpkgs/pkgs/cozylife/package.nix {})
       # dreo
     ];
     customLovelaceModules = with pkgs.home-assistant-custom-lovelace-modules; [
