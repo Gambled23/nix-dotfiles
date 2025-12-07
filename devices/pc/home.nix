@@ -24,6 +24,8 @@
 
     # (stremioPkgs.stremio)
 
+    kazumi
+
     #* books
     #hakuneko
     #kcc
