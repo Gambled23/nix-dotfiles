@@ -21,11 +21,6 @@
     #   };
     # in
     with pkgs; [
-
-    # (stremioPkgs.stremio)
-
-    kazumi
-
     #* books
     #hakuneko
     #kcc
