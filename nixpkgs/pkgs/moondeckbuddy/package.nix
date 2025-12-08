@@ -24,14 +24,14 @@ let
 in
 stdenv.mkDerivation (finalAttrs: {
   pname = "moondeck-buddy";
-  version = "1.8.2";
+  version = "1.6.3";
 
   src = fetchFromGitHub {
     owner = "FrogTheFrog";
     repo = "moondeck-buddy";
     tag = "v${finalAttrs.version}";
     fetchSubmodules = true;
-    hash = "sha256-FIb1e48SOlyJlDTIyh8HD6+veX2VfnhhQ60FMeGmOww=";
+    hash = "sha256-CcORcojz3jh1UZpq5qjDv+YktXC+F8t+r7E1SFyFkmw=";
   };
 
   buildInputs = [
@@ -46,10 +46,10 @@ stdenv.mkDerivation (finalAttrs: {
     wrapQtAppsHook
   ];
 
-  # postPatch = lib.optionalString useNixSteam ''
-  #   substituteInPlace src/lib/os/linux/steamregistryobserver.cpp \
-  #     --replace-fail /usr/bin/steam ${lib.getExe steam};
-  # '';
+  postPatch = lib.optionalString useNixSteam ''
+    substituteInPlace src/lib/os/linux/steamregistryobserver.cpp \
+      --replace-fail /usr/bin/steam ${lib.getExe steam};
+  '';
 
   passthru.updateScript = nix-update-script { };
 

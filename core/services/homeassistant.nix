@@ -1,5 +1,7 @@
 { config, pkgs, lib, inputs, outputs, ... }:
-
+let 
+  ssh_command = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled ";
+in
 {
   services.home-assistant = {
     enable = true;
@@ -82,25 +84,16 @@
       recorder.db_url = "postgresql://@/hass";
 
       shell_command = {
-        "suspend_pc" = "sudo ${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'sudo systemctl start systemd-suspend'";
-        "hibernate_pc" = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'sudo systemctl hibernate'";
-        "reboot_pc" = "sudo ${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'sudo systemctl reboot'";
-        "poweroff_pc" = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'sudo systemctl poweroff'";
-        # "auto_push" = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'aps'";
-        # "auto_pull" = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'apll'";
-        # "desktop_1" = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'qdbus org.kde.KWin /KWin setCurrentDesktop 1'";
-        # "desktop_2" = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'qdbus org.kde.KWin /KWin setCurrentDesktop 2'";
-        # "desktop_3" = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'qdbus org.kde.KWin /KWin setCurrentDesktop 3'";
-        # "desktop_4" = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'qdbus org.kde.KWin /KWin setCurrentDesktop 4'";
-        # "desktop_5" = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'qdbus org.kde.KWin /KWin setCurrentDesktop 5'";
-        # "desktop_6" = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'qdbus org.kde.KWin /KWin setCurrentDesktop 6'";
-        "modo_tele" = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'modo-tele enable'";
-        "modo_monitor" = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'modo-tele disable'";
-        "reboot_to_windows" = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'reboot-to-windows'";
-        # "gamescope" = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled 'start-gamescope-session'";
-        "display_device_steamdeck" = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled  'display-device -d steamdeck'";
-        "display_device_pc_gambled" = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled  'display-device -d pc-gambled'";
-        "touch_file" = "touch ~/test.txt";
+        "suspend_pc" = ssh_command + "'sudo systemctl start systemd-suspend'";
+        "hibernate_pc" = ssh_command + "'sudo systemctl hibernate'";
+        "reboot_pc" = ssh_command + "'sudo systemctl reboot'";
+        "poweroff_pc" = ssh_command + "'sudo systemctl poweroff'";
+        "desktop_1" = ssh_command + "'hyprctl dispatch workspace 1'";
+        "modo_tele" = ssh_command + "'modo-tele enable'";
+        "modo_monitor" = ssh_command + "'modo-tele disable'";
+        "reboot_to_windows" = ssh_command + "'reboot-to-windows'";
+        "display_device_steamdeck" = ssh_command + "'display-device -d steamdeck'";
+        "display_device_pc_gambled" = ssh_command + "'display-device -d pc-gambled'";
       };
     };
 
