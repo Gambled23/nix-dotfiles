@@ -7,7 +7,7 @@ in
   stylix = {
     enable = true;
     autoEnable = true;
-    image = ../../../../wallpaper.png;
+    # image = ../../../../wallpaper.png;
     base16Scheme = theme;
 
     fonts = {

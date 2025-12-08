@@ -16,9 +16,12 @@ with lib;
 
 
   environment.systemPackages = with pkgs; [
+    kdePackages.dolphin
+    kdePackages.dolphin-plugins
     kitty # required for the default Hyprland config
     hyprshot # Screenshot tool
     playerctl
+    brightnessctl
     # hyprpolkitagent # Polkit for gui applications
     kdePackages.qtwayland
     libsForQt5.qt5.qtwayland

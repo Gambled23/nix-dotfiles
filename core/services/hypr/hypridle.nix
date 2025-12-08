@@ -4,7 +4,8 @@
     enable = true;
     settings = {
       general = {
-        after_sleep_cmd = "openrgb --profile 'off.orp'";
+        lock_cmd = "pidof hyprlock || hyprlock";
+        after_sleep_cmd = "hyprctl dispatch dpms on && openrgb --profile 'off.orp'";
       };
     };
   };

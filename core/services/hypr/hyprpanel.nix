@@ -722,6 +722,8 @@
           };
         };
       };
+
+      wallpaper.enable = false;
     };
   };
 }
