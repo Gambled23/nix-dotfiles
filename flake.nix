@@ -35,10 +35,6 @@
     # Steam thingies
     # millennium.url = "git+https://github.com/SteamClientHomebrew/Millennium";
     # jovian-nixos.url = "github:Jovian-Experiments/Jovian-NixOS";
-
-
-    #stremio qt5
-    # nixpkgs-for-stremio.url = "nixpkgs/5135c59491985879812717f4c9fea69604e7f26f";
   };
 
   outputs = { 
@@ -94,7 +90,6 @@
               ./core/programs/spicetify.nix
               inputs.nixcord.homeModules.nixcord
               ./core/programs/nixcord.nix
-              # inputs.walker.homeManagerModules.default
               vicinae.homeManagerModules.default
             ];
             home-manager.backupFileExtension = "uiod";
@@ -134,7 +129,6 @@
               ./core/programs/spicetify.nix
               inputs.nixcord.homeModules.nixcord
               ./core/programs/nixcord.nix
-              # inputs.walker.homeManagerModules.default
               vicinae.homeManagerModules.default
             ];
             home-manager.backupFileExtension = "2";

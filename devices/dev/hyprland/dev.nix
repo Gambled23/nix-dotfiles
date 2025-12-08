@@ -23,13 +23,13 @@
   };
 
   services.hypridle.settings.listener = [
-    { # 2.5 min turn dim screen
-      timeout = 150;
+    { # 5 min turn dim screen
+      timeout = 300;
       on-timeout = "brightnessctl -s set 10";
       on-resume = "brightnessctl -r";
     }
-    { # 5 min turn off screen
-      timeout = 300;
+    { # 10 min lock screen
+      timeout = 600;
       on-timeout = "pidof hyprlock || hyprlock";
     }
     { # 30 min suspend pc
