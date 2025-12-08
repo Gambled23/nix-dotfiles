@@ -34,12 +34,7 @@
     ];
     customLovelaceModules = with pkgs.home-assistant-custom-lovelace-modules; [
       bubble-card
-      button-card
-      card-mod
-      light-entity-card
       mushroom
-      mini-graph-card
-      mini-media-player
     ];
     config = {
       # Includes dependencies for a basic setup
@@ -70,13 +65,14 @@
 
       hass_cozylife_local_pull = {
         lang = "en";
-        ip = [
-          "192.168.1.1"
-          "192.168.1.19"
-          "192.168.1.20"
-          "192.168.1.27"
-        ];
+        # ip = [
+        #   "192.168.1.1"
+        #   "192.168.1.19"
+        #   "192.168.1.20"
+        #   "192.168.1.27"
+        # ];
       };
+
       # These can be mixed with declarative configurations
       # "automation nixos" = [
       #   YAML automations go here
