@@ -37,17 +37,16 @@
     wineWowPackages.stable
     winetricks
     ryubing
-    osu-lazer-bin
+    # osu-lazer-bin
     #tetrio-desktop
     prismlauncher #minecra
-    r2modman
+    # r2modman
     # mangohud
 
     #* utils
     polychromatic
     pdfarranger
     via
-    winboat
 
     #* media
     vlc
@@ -65,11 +64,10 @@
     zerotierone
 
     #* guitarra
+    carla
     guitarix
-    tonelib-metal
     tonelib-gfx
     tonelib-jam
-    carla
 
     #* utils
     # activitywatch

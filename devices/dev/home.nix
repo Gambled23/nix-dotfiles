@@ -38,7 +38,8 @@
     scrcpy
     gnome-network-displays
     moonlight-qt
-
+    bitwarden-desktop
+    
     #* webbrowsers
     google-chrome
   ];
