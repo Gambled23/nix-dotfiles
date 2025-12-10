@@ -29,9 +29,6 @@
     #* messaging
     altus
 
-    #* networking
-    zerotierone
-
     #* utils
     android-tools
     libreoffice

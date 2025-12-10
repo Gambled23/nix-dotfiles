@@ -60,9 +60,6 @@
     altus
     materialgram
 
-    #* networking
-    zerotierone
-
     #* guitarra
     carla
     guitarix
