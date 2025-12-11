@@ -37,6 +37,7 @@ in
     customLovelaceModules = with pkgs.home-assistant-custom-lovelace-modules; [
       bubble-card
       mushroom
+      navbar-card
     ];
     config = {
       # Includes dependencies for a basic setup
@@ -89,8 +90,15 @@ in
         "reboot_pc" = ssh_command + "'sudo systemctl reboot'";
         "poweroff_pc" = ssh_command + "'sudo systemctl poweroff'";
         "desktop_1" = ssh_command + "'hyprctl dispatch workspace 1'";
-        "modo_tele" = ssh_command + "'modo-tele enable'";
-        "modo_monitor" = ssh_command + "'modo-tele disable'";
+        "desktop_2" = ssh_command + "'hyprctl dispatch workspace 2'";
+        "desktop_3" = ssh_command + "'hyprctl dispatch workspace 3'";
+        "desktop_4" = ssh_command + "'hyprctl dispatch workspace 4'";
+        "desktop_5" = ssh_command + "'hyprctl dispatch workspace 5'";
+        "desktop_6" = ssh_command + "'hyprctl dispatch workspace 6'";
+        "desktop_7" = ssh_command + "'hyprctl dispatch workspace 7'";
+        "desktop_8" = ssh_command + "'hyprctl dispatch workspace 8'";
+        "desktop_9" = ssh_command + "'hyprctl dispatch workspace 9'";
+        "desktop_10" = ssh_command + "'hyprctl dispatch workspace 10'";
         "reboot_to_windows" = ssh_command + "'reboot-to-windows'";
         "display_device_steamdeck" = ssh_command + "'display-device -d steamdeck'";
         "display_device_pc_gambled" = ssh_command + "'display-device -d pc-gambled'";
