@@ -54,42 +54,43 @@
       menus = {
         clock = {
           weather = {
-            location = "Mexico City";
-            key = "XXXXXXXXX";
+            location = "Zapopan";
+            key = "a8f4af4085aa45de842192722250512";
+            unit = "metric";
           };
         };
         dashboard = {
           stats = {
             enable_gpu = false;
-            directories = {
-              enabled = true;
-              left = {
-                directory1 = {
-                  command = "dolphin $HOME/Downloads/";
-                  label = "󰮛 Downloads";
-                };
-                directory2 = {
-                  command = "dolphin $HOME/Videos/";
-                  label = "󰉏 Videos";
-                };
-                directory3 = {
-                  command = "dolphin $HOME/Codes/";
-                  label = "󰚝 Codes";
-                };
+          };
+          directories = {
+            enabled = true;
+            left = {
+              directory1 = {
+                command = "dolphin Downloads/";
+                label = "󰮛 Downloads";
               };
-              right = {
-                directory1 = {
-                  command = "dolphin $HOME/Documents";
-                  label = "󱧶 Documents";
-                };
-                directory2 = {
-                  command = "dolphin $HOME/Pictures";
-                  label = "󰉏 Pictures";
-                };
-                directory3 = {
-                  command = "dolphin $HOME/";
-                  label = "󱂵 Home";
-                };
+              directory2 = {
+                command = "dolphin Videos/";
+                label = "󰉏 Videos";
+              };
+              directory3 = {
+                command = "dolphin Codes/";
+                label = "󰚝 Codes";
+              };
+            };
+            right = {
+              directory1 = {
+                command = "dolphin Documents";
+                label = "󱧶 Documents";
+              };
+              directory2 = {
+                command = "dolphin Pictures";
+                label = "󰉏 Pictures";
+              };
+              directory3 = {
+                command = "dolphin ";
+                label = "󱂵 Home";
               };
             };
           };
