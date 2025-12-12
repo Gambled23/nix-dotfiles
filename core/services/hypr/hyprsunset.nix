@@ -7,8 +7,13 @@
 
       profile = [
         {
-          time = "7:30";
+          time = "8:00";
           identity = true;
+        }
+        {
+          time = "19:00";
+          temperature = 6000;
+          gamma = 1;
         }
         {
           time = "21:00";
