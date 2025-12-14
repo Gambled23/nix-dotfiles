@@ -68,12 +68,13 @@ in
 
       hass_cozylife_local_pull = {
         lang = "en";
-        # ip = [
-        #   "192.168.1.1"
-        #   "192.168.1.19"
-        #   "192.168.1.20"
-        #   "192.168.1.27"
-        # ];
+        ip = [
+          "192.168.1.1"
+          "192.168.1.3"
+          "192.168.1.19"
+          "192.168.1.20"
+          "192.168.1.27"
+        ];
       };
 
       # These can be mixed with declarative configurations
