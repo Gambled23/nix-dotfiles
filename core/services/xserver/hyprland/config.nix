@@ -51,6 +51,7 @@
       #################
       "exec-once" = [
         # "systemctl --user enable --now hyprpolkitagent.service"
+        "hyprctl output create headless sunshine"
         "systemctl --user enable --now hyprpaper.service"
         "systemctl --user enable --now hypridle.service"
         "hyprpanel -q"

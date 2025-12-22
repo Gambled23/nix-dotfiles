@@ -11,6 +11,7 @@
     capSysAdmin = true;
     openFirewall = true;
     settings = {
+      sunshine_name = "el sunchine";
       output_name = 1;
     };
     applications = {

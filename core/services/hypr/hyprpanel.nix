@@ -12,6 +12,10 @@
             middle = [ "media" ];
             right = [ "systray" "bluetooth" "clock" "volume" "notifications" ];
           };
+          "1" = {
+            left = [ "dashboard" "workspaces" ];
+            right = [ "systray" "clock" "volume" "notifications" ];
+          };
         };
 
         clock = {
