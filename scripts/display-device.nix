@@ -50,7 +50,7 @@ pkgs.writeShellScriptBin "display-device" ''
       hyprctl keyword monitor "sunshine,1920x1080@60,0x0,1"
       ;;
     android-gambled)
-      hyprctl keyword monitor "DP-3,2400x1080@90,0x0,1"
+      hyprctl keyword monitor "DP-3, disable"
       hyprctl keyword monitor "sunshine,2400x1080@90,0x0,1"
       ;;
     *)
