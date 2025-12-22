@@ -10,6 +10,9 @@
     autoStart = true;
     capSysAdmin = true;
     openFirewall = true;
+    settings = {
+      output_name = 1;
+    };
     applications = {
       env = {
         PATH = "$(PATH):$(HOME)/.local/bin";

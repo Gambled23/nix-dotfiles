@@ -47,10 +47,12 @@ pkgs.writeShellScriptBin "display-device" ''
       ;;
     dev-gambled)
       hyprctl keyword monitor "DP-3,1920x1080@60,0x0,1"
+      hyprctl output create headless sunshine 
       hyprctl keyword monitor "sunshine,1920x1080@0.06x0,1"
       ;;
     android-gambled) ff
       hyprctl keyword monitor "DP-3,2400x1080@90,0x0,1"
+      hyprctl output create headless sunshine 
       hyprctl keyword monitor "sunshine,2400x1080@0.06x0,1"
       ;;
     *)
