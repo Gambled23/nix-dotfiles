@@ -14,12 +14,12 @@
     #core/programs/neovim.nix
     core/programs/starship.nix
     core/programs/zsh.nix
+    core/programs/zoxide.nix
   ];
   home.packages = with pkgs; [
     #* dev tools
     lazygit
     fzf
-    zoxide
 
     #* extras
     bat
