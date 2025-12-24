@@ -18,7 +18,8 @@
   home.packages = with pkgs; [
     #* dev tools
     lazygit
-    # fzf
+    fzf
+    zoxide
 
     #* extras
     bat
