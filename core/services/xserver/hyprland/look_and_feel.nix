@@ -7,8 +7,8 @@
   # https://wiki.hypr.land/Configuring/Variables/#misc
   wayland.windowManager.hyprland.settings = {
     general = {
-      gaps_in = 0;
-      gaps_out = 0;
+      gaps_in = 1;
+      gaps_out = 1;
       border_size = 1;
 
       "col.active_border" = lib.mkForce "rgba(98971aee) rgba(b8bb26ee)";
@@ -24,8 +24,8 @@
     };
 
     decoration = {
-      rounding = 10;
-      rounding_power = 5;
+      rounding = 0;
+      rounding_power = 0;
 
       # Change transparency of focused and unfocused windows
       active_opacity = 1.0;
