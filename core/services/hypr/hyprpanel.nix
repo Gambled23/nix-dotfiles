@@ -1,16 +1,25 @@
 # Home manager file
 { inputs, lib, ... }:
 {
+  imports = [
+    ./hyprpanel_modules.nix
+  ];
+
   programs.hyprpanel = {
     enable = true;
 
     settings = {
       bar = {
         layouts = {
-          "*" = {
+          "0" = {
             left = [ "dashboard" "workspaces" ];
             middle = [ "media" ];
             right = [ "systray" "bluetooth" "clock" "volume" "notifications" ];
+          };
+          "*" = {
+            left = [ "dashboard" "workspaces" ];
+            middle = [ "custom/vicinae" ];
+            right = [ "systray" "clock" "volume" ];
           };
         };
 

@@ -44,12 +44,12 @@ pkgs.writeShellScriptBin "display-device" ''
       steam steam://open/bigpicture 
       ;;
     pc-gambled)
-      hyprctl keyword monitor "DP-3,3440x1440@180,1920x0,1"
+      hyprctl keyword monitor "DP-3,3440x1440@180,0x0,1"
       hyprctl keyword monitor "sunshine, disable"
       ;;
     dev-gambled)
       hyprctl keyword monitor "DP-3, disable"
-      hyprctl keyword monitor "sunshine,1920x1080@60,0x0,1"
+      hyprctl keyword monitor "sunshine,1920x1080@60,1920x0,1"
       ;;
     android-gambled)
       hyprctl keyword monitor "DP-3, disable"
