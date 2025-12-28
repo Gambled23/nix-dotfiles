@@ -19,7 +19,7 @@
           "*" = {
             left = [ "dashboard" "workspaces" ];
             middle = [ "custom/vicinae" ];
-            right = [ "systray" "clock" "volume" ];
+            right = [ "clock" "volume" ];
           };
         };
 
