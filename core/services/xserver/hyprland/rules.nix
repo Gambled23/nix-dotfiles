@@ -5,56 +5,46 @@
   wayland.windowManager.hyprland.settings = {
     windowrule = [
       # Set default workspaces for apps
-      "workspace 10, class:^(spotify)$"
-      "workspace 9, class:^(vesktop)$"
-      "workspace 9, class:^(Altus)$"
-      "workspace 8, class:^(steam)$"
-      "workspace 7, class:^(stremio)$"
-      "workspace 7, class:^(miru)$"
+      "match:class ^(spotify)$, workspace 10"
+      "match:class ^(vesktop)$, workspace 9"
+      "match:class ^(Altus)$, workspace 9"
+      "match:class ^(steam)$, workspace 8"
+      "match:class ^(stremio)$, workspace 7"
+      "match:class ^(miru)$, workspace 7"
 
       # Steam fullscrenn
-      "fullscreen, class:^(steam)$"
+      "match:class ^(steam)$, fullscreen on"
 
       # Ignore focus on autostart apps
-      "noinitialfocus, class:^(steam|spotify|vesktop|Altus)$"
+      "match:class ^(steam|spotify|vesktop|Altus)$, no_initial_focus on"
 
       # Ignore maximize requests from apps. You'll probably like this.
-      "suppressevent maximize, class:.*"
+      " match:class .*, suppress_event maximize"
 
       # Fix some dragging issues with XWayland
-      "nofocus,class:^$,title:^$,xwayland:1,floating:1,pinned:0"
+      " match:class ^$, match:title ^$, match:xwayland 1, match:float 1, match:pin 0"
 
       # Always set opacity for these apps
-      "opacity 0.86, class:^(kitty|org.kde.dolphin|gjs|DBeaver)$" 
-      "opacity 0.9, class:^(spotify)$" 
+      "match:class ^(kitty|org.kde.dolphin|gjs|DBeaver)$, opacity 0.86" 
+      "match:class ^(spotify)$, opacity 0.9" 
       # Opacity only on focus loss
-      "opacity 1 0.9, class:^(code)$"
+      "match:class ^(code)$, opacity 1 0.9"
 
     ];
 
     layerrule = [
-      "blur, bar-0"
-      "blur, verification"
-      "blur, vicinae"
-      "ignorealpha 0, vicinae"
-      "blur, dashboardmenu"
-      "ignorealpha 0, dashboardmenu"
-      "blur, mediamenu"
-      "ignorealpha 0, mediamenu"
-      "blur, audiomenu"
-      "ignorealpha 0, audiomenu"
-      "blur, networkmenu"
-      "ignorealpha 0, networkmenu"
-      "blur, bluetoothmenu"
-      "ignorealpha 0, bluetoothmenu"
-      "blur, energymenu"
-      "ignorealpha 0, energymenu"
-      "blur, calendarmenu"
-      "ignorealpha 0, calendarmenu"
-      "blur, notificationsmenu"
-      "ignorealpha 0, notificationsmenu"
-      "blur, indicator"
-      "ignorealpha 0, indicator"
+      "match:namespace bar-0, blur on"
+      "match:namespace verification, blur on"
+      "match:namespace vicinae, blur on, ignore_alpha 0"
+      "match:namespace dashboardmenu, blur on, ignore_alpha 0"
+      "match:namespace mediamenu, blur on, ignore_alpha 0"
+      "match:namespace audiomenu, blur on, ignore_alpha 0"
+      "match:namespace networkmenu, blur on, ignore_alpha 0"
+      "match:namespace bluetoothmenu, blur on, ignore_alpha 0"
+      "match:namespace energymenu, blur on, ignore_alpha 0"
+      "match:namespace calendarmenu, blur on, ignore_alpha 0"
+      "match:namespace notificationsmenu, blur on, ignore_alpha 0"
+      "match:namespace indicator, blur on, ignore_alpha 0"
     ];
   };
 }

@@ -23,6 +23,10 @@
 
     dolphin-overlay.url = "github:rumboon/dolphin-overlay";
     vicinae.url = "github:vicinaehq/vicinae";
+    vicinae-extensions = {
+      url = "github:vicinaehq/extensions";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     stylix.url = "github:danth/stylix";
 

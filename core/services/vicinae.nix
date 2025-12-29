@@ -3,56 +3,40 @@
 {
   services.vicinae = {
     enable = true;
-    # autoStart = true;
+    systemd = {
+      enable = true;
+      autoStart = true;
+      environment = {
+        USE_LAYER_SHELL = 1;
+      };
+    };
     settings = {
-      closeOnFocusLoss = true;
-      faviconService = "twenty";
+      close_on_focus_loss = true;
+      consider_preedit = true;
+      pop_to_root_on_close = true;
+      favicon_service = "twenty";
       font = {
         size = 10.5;
       };
-      popToRootOnClose = true;
-      rootSearch = {
-        searchFiles = false;
+      search_files_in_root = true;
+      theme = {
+        iconTheme = "Default";
+        name = lib.mkForce "gruvbox-dark";
       };
-      # theme = {
-      #   iconTheme = "Default";
-      #   name = "gruvbox-dark";
-      # };
-      window = {
+      launcher_window = {
         csd = true;
         opacity = lib.mkForce 0.7;
         rounding = 10;
       };
     };
 
-    extensions = [
-      (inputs.vicinae.packages.${pkgs.stdenv.hostPlatform.system}.mkVicinaeExtension {
-        pname = "Nix";
-        src = pkgs.fetchFromGitHub {
-          owner = "vicinaehq";
-          repo = "extensions";
-          rev = "610459553a20cf510fa414844f0d094f14ae9643";
-          sha256 = "sha256-z4SqRFhJzAlBhNzgX7wHNZtEDnu5PIypYkBWOJtjyuA=";
-        } + "/extensions/nix";
-      })
-      (inputs.vicinae.packages.${pkgs.stdenv.hostPlatform.system}.mkVicinaeExtension {
-        pname = "Hypr Keybinds";
-        src = pkgs.fetchFromGitHub {
-          owner = "vicinaehq";
-          repo = "extensions";
-          rev = "610459553a20cf510fa414844f0d094f14ae9643";
-          sha256 = "sha256-z4SqRFhJzAlBhNzgX7wHNZtEDnu5PIypYkBWOJtjyuA=";
-        } + "/extensions/hypr-keybinds";
-      })
-      (inputs.vicinae.packages.${pkgs.stdenv.hostPlatform.system}.mkVicinaeExtension {
-        pname = "Bluethooth";
-        src = pkgs.fetchFromGitHub {
-          owner = "vicinaehq";
-          repo = "extensions";
-          rev = "610459553a20cf510fa414844f0d094f14ae9643";
-          sha256 = "sha256-z4SqRFhJzAlBhNzgX7wHNZtEDnu5PIypYkBWOJtjyuA=";
-        } + "/extensions/bluetooth";
-      })
+    extensions = with inputs.vicinae-extensions.packages.${pkgs.stdenv.hostPlatform.system}; [
+      bluetooth
+      nix
+      hypr-keybinds
+      ssh
+      vscode-recents
+      wifi-commander
     ];
   };
 }
