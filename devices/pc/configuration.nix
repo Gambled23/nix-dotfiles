@@ -40,7 +40,7 @@
     (import ../../scripts/flash-kernelsu.nix { inherit pkgs; })
     (import ../../scripts/songdetails.nix { inherit pkgs; })
     # (callPackage ../../nixpkgs/pkgs/hayase/package.nix {})
-    (callPackage ../../nixpkgs/pkgs/stremio/package.nix {})
+    # (callPackage ../../nixpkgs/pkgs/stremio/package.nix {})
     # (callPackage ../../nixpkgs/pkgs/moondeckbuddy/package.nix {})
 
   ];

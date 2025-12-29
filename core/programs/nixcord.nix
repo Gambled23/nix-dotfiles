@@ -30,15 +30,15 @@
         fullUserInChatbox.enable = true;
         gameActivityToggle.enable = true;
         implicitRelationships.enable = true;
-        lastFMRichPresence = {
-          enable = true;
-          username = "Gambled23";
-          apiKey = "1542ad92a0c24e9e2e17abdaedd49afc";
-          hideWithSpotify = false;
-          nameFormat = "artist-first";
-          useListeningStatus = true;
-          showLastFmLogo = false;
-        };
+        # lastFMRichPresence = {
+        #   enable = true;
+        #   username = "Gambled23";
+        #   apiKey = "1542ad92a0c24e9e2e17abdaedd49afc";
+        #   hideWithSpotify = false;
+        #   nameFormat = "artist-first";
+        #   useListeningStatus = true;
+        #   showLastFmLogo = false;
+        # };
         mentionAvatars.enable = true;
         # platformIndicators.enable = true;
         # serverListIndicators.enable = true;

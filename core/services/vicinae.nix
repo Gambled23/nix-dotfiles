@@ -1,9 +1,9 @@
-{ inputs, config, pkgs, ... }: 
+{ lib, inputs, config, pkgs, ... }: 
 
 {
   services.vicinae = {
     enable = true;
-    autoStart = true;
+    # autoStart = true;
     settings = {
       closeOnFocusLoss = true;
       faviconService = "twenty";
@@ -14,13 +14,13 @@
       rootSearch = {
         searchFiles = false;
       };
-      theme = {
-        iconTheme = "Default";
-        name = "gruvbox-dark";
-      };
+      # theme = {
+      #   iconTheme = "Default";
+      #   name = "gruvbox-dark";
+      # };
       window = {
         csd = true;
-        opacity = 0.7;
+        opacity = lib.mkForce 0.7;
         rounding = 10;
       };
     };
