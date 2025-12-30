@@ -45,6 +45,7 @@
       "match:namespace calendarmenu, blur on, ignore_alpha 0"
       "match:namespace notificationsmenu, blur on, ignore_alpha 0"
       "match:namespace indicator, blur on, ignore_alpha 0"
+      "match:namespace ashell-main-layer, blur on, ignore_alpha 0"
     ];
   };
 }

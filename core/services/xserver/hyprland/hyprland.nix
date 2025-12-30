@@ -35,6 +35,7 @@ with lib;
     waytrogen
     hypridle
     pamixer
+    swaynotificationcenter
   ];
 
   # Optional, hint Electron apps to use Wayland:
