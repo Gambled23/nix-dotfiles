@@ -35,6 +35,8 @@ with lib;
     waytrogen
     hypridle
     pamixer
+    pavucontrol
+    blueman
     swaynotificationcenter
   ];
 

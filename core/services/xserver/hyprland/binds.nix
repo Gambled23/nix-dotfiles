@@ -55,8 +55,12 @@
       "$mainMod SHIFT, 0, movetoworkspacesilent, 10"
 
       # Example special workspace (scratchpad)
-      "$mainMod, S, togglespecialworkspace, magic"
-      "$mainMod SHIFT, S, movetoworkspace, special:magic"
+      "$mainMod, S, togglespecialworkspace, S"
+      "$mainMod SHIFT, S, movetoworkspace, special:S"
+      "$mainMod, A, togglespecialworkspace, A"
+      "$mainMod SHIFT, A, movetoworkspace, special:A"
+      "$mainMod, D, togglespecialworkspace, D"
+      "$mainMod SHIFT, D, movetoworkspace, special:D"
 
       # Scroll through existing workspaces with mainMod + scroll
       "$mainMod, mouse_down, workspace, e-1"

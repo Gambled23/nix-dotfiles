@@ -20,10 +20,16 @@
       };
       search_files_in_root = true;
       theme = {
-        iconTheme = "Default";
-        name = lib.mkForce "gruvbox-dark";
+        light = {
+          name = lib.mkForce "gruvbox-light";
+          icon_theme = "default";
+        };
+        dark = {
+          name = lib.mkForce "gruvbox-dark";
+          icon_theme = "default";
+        };
       };
-      launcher_window = {
+      window = {
         csd = true;
         opacity = lib.mkForce 0.7;
         rounding = 10;
@@ -34,9 +40,7 @@
       bluetooth
       nix
       hypr-keybinds
-      ssh
-      vscode-recents
-      wifi-commander
+      process-manager
     ];
   };
 }
