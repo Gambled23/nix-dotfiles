@@ -6,10 +6,8 @@
     settings = {
       modules = {
         left = [
+          "Vicinae"
           "Workspaces"
-          [
-            "SystemInfo"
-          ]
         ];
         center = [
           "MediaPlayer"
@@ -21,11 +19,10 @@
           ]
           [
             "Clock"
-            "Settings"
+            "CustomNotifications"
           ]
           [
-            "Vicinae"
-            "CustomNotifications"
+            "Settings"
           ]
         ];
       };
@@ -49,6 +46,8 @@
       ];
 
       appearance = {
+        style = "Solid";
+        scale_factor = 1.3;
         opacity = lib.mkForce 0.6;
         menu = {
           opacity = lib.mkForce 0.7;
