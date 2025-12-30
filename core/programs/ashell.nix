@@ -15,18 +15,19 @@
           "MediaPlayer"
         ];
         right = [
-          [
             "Clock"
-          ]
           [
-            "Tray"
             "Privacy"
             "Settings"
           ]
           [
+            "Tray"
             "CustomNotifications"
           ]
         ];
+      };
+      clock = {
+        format = "%d/%b | %R";
       };
       workspaces = {
         disable_special_workspaces = true;
@@ -59,6 +60,7 @@
           icon = "";
           command = "swaync-client -t -sw";
           listen_cmd = "swaync-client -swb";
+          icons."dnd.*" = "";
           alert = ".*notification";
         }
         {
