@@ -38,6 +38,7 @@ with lib;
     pavucontrol
     blueman
     swaynotificationcenter
+    easyeffects
   ];
 
   # Optional, hint Electron apps to use Wayland:
