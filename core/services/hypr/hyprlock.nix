@@ -49,7 +49,7 @@
         {
           monitor = "";
           text = "cmd[update:1000] echo -e \"$(date +\"%H\")\"";
-          color = "rgba(214, 93, 14, .6)";
+          color = "rgba(254, 128, 25, .6)";
           font_size = 180;
           font_family = "AlphaSlabOne";
           position = "0, 300";
