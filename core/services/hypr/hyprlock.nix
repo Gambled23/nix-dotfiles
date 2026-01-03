@@ -49,7 +49,7 @@
         {
           monitor = "";
           text = "cmd[update:1000] echo -e \"$(date +\"%H\")\"";
-          color = "rgba(184, 187, 38, .6)";
+          color = "rgba(254, 128, 25, .6)";
           font_size = 180;
           font_family = "AlphaSlabOne";
           position = "0, 300";
@@ -70,7 +70,7 @@
         # CURRENT DATE
         {
           monitor = "";
-          text = "cmd[update:1000] echo \"<span color='##ffffff99'>$(date '+%A ')</span><span color='##98971a'>$(date '+%d de %B')</span>\"";
+          text = "cmd[update:1000] echo \"<span color='##ffffff99'>$(date '+%A ')</span><span color='##d65d0e'>$(date '+%d de %B')</span>\"";
           font_size = 30;
           font_family = "JetBrains Mono Nerd, JetBrainsMonoNerd, JetBrainsMono";
           position = "0, -80";

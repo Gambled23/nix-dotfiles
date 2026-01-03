@@ -13,9 +13,9 @@
     ../../hypr/hypridle.nix
     ../../hypr/hyprshot.nix
     # ../../hypr/hyprpanel.nix
-    ../../../programs/ashell.nix
+    # ../../../programs/ashell.nix
     ../../hypr/hyprlock.nix
-    ../../vicinae.nix
+    # ../../vicinae.nix
     ./kitty.nix
 
     # Hyprland settings
