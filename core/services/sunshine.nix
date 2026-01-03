@@ -37,6 +37,12 @@
           exclude-global-prep-cmd = "false";
           elevated = "false";
         }
+        {
+          name = "1080p";
+          cmd = "display-device -d 1080p";
+          exclude-global-prep-cmd = "false";
+          elevated = "false";
+        }
       ];
     };
   };

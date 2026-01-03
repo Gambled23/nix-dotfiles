@@ -13,15 +13,15 @@
         ];
         center = [
           "MediaPlayer"
+          "Clock"
         ];
         right = [
-            "Clock"
           [
             "Privacy"
-            "Settings"
+            "Tray"
           ]
           [
-            "Tray"
+            "Settings"
             "CustomNotifications"
           ]
         ];
@@ -31,6 +31,7 @@
       };
       workspaces = {
         disable_special_workspaces = true;
+        enable_workspace_filling = true;
       };
       settings = {
         shutdown_cmd = "sudo systemctl poweroff";

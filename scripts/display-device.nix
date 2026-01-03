@@ -58,6 +58,10 @@ pkgs.writeShellScriptBin "display-device" ''
       hyprctl keyword monitor "sunshine,2264x1080@90,0x0,1"
       hyprctl keyword monitor "DP-3, disable"
       ;;
+    1080p)
+      hyprctl keyword monitor "sunshine,1920x1080@60,0x0,1"
+      hyprctl keyword monitor "DP-3, disable"
+      ;;
     *)
       echo "Invalid display name: $display_name" >&2
       echo "Usage: display-device -d <display_name>"
