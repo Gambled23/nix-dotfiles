@@ -29,6 +29,7 @@
     };
 
     stylix.url = "github:danth/stylix";
+    ambxst.url = "github:darsh032/ambxst-fork-for-pr-idk/nix";
 
     # Nur repo for firefox extensions
     # nur.url = "github:nix-community/NUR";
