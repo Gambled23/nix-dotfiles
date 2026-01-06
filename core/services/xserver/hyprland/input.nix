@@ -21,9 +21,9 @@
     };
 
     device = {
-      name = "epic-mouse-v1";
-      sensitivity = -0.5;
-    };   
+      name = "asue1213:00-04f3:3283-touchpad";
+      sensitivity = -1;
+    };
 
     # gestures = {
     #   workspace_swipe = false;
