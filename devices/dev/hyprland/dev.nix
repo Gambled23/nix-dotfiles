@@ -17,7 +17,7 @@
 
       monitor = "eDP-1,1920x1200@60,0x0,1";
       "exec-once" = [
-        "hyprlock"
+        "ambxst lock"
       ];
     };
   };
@@ -30,7 +30,7 @@
     }
     { # 15 min lock screen
       timeout = 900;
-      on-timeout = "pidof hyprlock || hyprlock";
+      on-timeout = "ambxst lock";
     }
     { # 30 min suspend pc
       timeout = 1800;
