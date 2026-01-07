@@ -42,6 +42,7 @@
     10.243.0.2 pc-gambled
     10.243.0.3 android-gambled
     10.243.0.4 dev-gambled
+    10.243.0.5 steamdeck
     10.243.0.10 home-gambled
   '';
 

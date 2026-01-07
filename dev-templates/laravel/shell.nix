@@ -8,7 +8,7 @@ in pkgs.mkShell rec {
   packages = [
     php84
     php84Packages.composer
-    nodejs_24
+    nodejs_25
   ];
 
   postVenvCreation = ''
