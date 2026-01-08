@@ -13,7 +13,6 @@
         ];
         center = [
           "MediaPlayer"
-          "Clock"
         ];
         right = [
           [
@@ -23,6 +22,7 @@
           [
             "Settings"
             "CustomNotifications"
+            "Clock"
           ]
         ];
       };
