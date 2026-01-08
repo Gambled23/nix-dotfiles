@@ -75,6 +75,5 @@
 
     #* webbrowsers
     google-chrome
-    inputs.ambxst.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }

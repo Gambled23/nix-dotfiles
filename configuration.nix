@@ -97,7 +97,6 @@
   # Extra services
   services.packagekit.enable = true; # Enable packagekit for gnome software
   services.fwupd.enable = true; # Enable firmware updates
-  programs.adb.enable = true;
 
 
   nixpkgs.config.allowUnfree = true;

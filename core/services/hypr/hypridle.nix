@@ -4,7 +4,7 @@
     enable = true;
     settings = {
       general = {
-        lock_cmd = "ambxst lock";
+        lock_cmd = "hyprlock";
         after_sleep_cmd = "hyprctl dispatch dpms on && openrgb --profile 'off.orp'";
       };
     };
