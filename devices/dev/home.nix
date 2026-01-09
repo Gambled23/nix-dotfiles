@@ -14,7 +14,7 @@
 
   ];
 
-  home.packages = with pkgs; [    
+  home.packages = with pkgs; [
     #* dev tools
     dbeaver-bin
     vscode
@@ -39,6 +39,5 @@
     
     #* webbrowsers
     google-chrome
-    # inputs.ambxst.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }
