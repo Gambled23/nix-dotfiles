@@ -7,6 +7,9 @@
       modules = {
         left = [
           [
+            "Clock"
+          ]
+          [
             "Vicinae"
             "Workspaces"
           ]
@@ -18,11 +21,8 @@
           [
             "Privacy"
             "Tray"
-          ]
-          [
             "Settings"
             "CustomNotifications"
-            "Clock"
           ]
         ];
       };
