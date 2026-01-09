@@ -16,7 +16,7 @@ with lib;
 
 
   environment.systemPackages = with pkgs; [
-    inputs.ambxst.packages.${pkgs.stdenv.hostPlatform.system}.default
+    # inputs.ambxst.packages.${pkgs.stdenv.hostPlatform.system}.default
     kdePackages.dolphin
     kdePackages.dolphin-plugins
     kitty # required for the default Hyprland config
