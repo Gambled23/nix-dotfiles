@@ -7,11 +7,11 @@
       modules = {
         left = [
           [
-            "Clock"
-          ]
-          [
             "Vicinae"
             "Workspaces"
+          ]
+          [
+            "Clock"
           ]
         ];
         center = [
@@ -27,7 +27,7 @@
         ];
       };
       clock = {
-        format = "%d/%b | %R";
+        format = "%R | %d/%b";
       };
       workspaces = {
         disable_special_workspaces = true;
