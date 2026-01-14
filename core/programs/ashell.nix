@@ -7,11 +7,11 @@
       modules = {
         left = [
           [
-            "Vicinae"
-            "Workspaces"
+            "Clock"
           ]
           [
-            "Clock"
+            "Vicinae"
+            "Workspaces"
           ]
         ];
         center = [
