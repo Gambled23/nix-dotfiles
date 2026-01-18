@@ -62,7 +62,7 @@
 
     misc = {
       disable_hyprland_logo = true; # If true disables the random hyprland logo / anime girl background. :(
-      vrr = 1;
+      vrr = 2;
     };
   };
 }
