@@ -13,7 +13,7 @@
       "match:class ^(miru)$, workspace 7"
 
       # Steam fullscrenn
-      "match:class ^(steam)$, fullscreen on"
+      # "match:class ^(steam)$, fullscreen on"
 
       # Ignore focus on autostart apps
       "match:class ^(steam|spotify|vesktop|Altus)$, no_initial_focus on"
