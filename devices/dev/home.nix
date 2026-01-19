@@ -36,6 +36,7 @@
     gnome-network-displays
     moonlight-qt
     bitwarden-desktop
+    # inputs.quickshell.packages.${pkgs.stdenv.hostPlatform.system}.default
     
     #* webbrowsers
     google-chrome
