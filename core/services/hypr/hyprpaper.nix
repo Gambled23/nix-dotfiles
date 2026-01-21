@@ -4,9 +4,9 @@
     enable = true;
     settings = {
       preload =
-        [ "/etc/nixos/wallpaper.png" ];
+        [ "/etc/nixos/wallpaper.jpg" ];
       wallpaper = [
-        "/etc/nixos/wallpaper.png"
+        "/etc/nixos/wallpaper.jpg"
       ];
     };
   };
