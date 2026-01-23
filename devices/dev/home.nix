@@ -17,7 +17,7 @@
   home.packages = with pkgs; [
     #* dev tools
     dbeaver-bin
-    vscode
+    vscode-fhs
 
     #* media
     vlc
