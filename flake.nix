@@ -35,7 +35,7 @@
 
     stylix.url = "github:danth/stylix";
     # ambxst.url = "github:Axenide/Ambxst";
-    # ambxst.url = "github:smarthumankinda/ambxst-flake"; 
+    ambxst.url = "github:smarthumankinda/ambxst-flake"; 
 
     # Nur repo for firefox extensions
     # nur.url = "github:nix-community/NUR";
