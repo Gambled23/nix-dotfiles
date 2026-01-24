@@ -39,7 +39,7 @@
         hibernate_cmd = "sudo systemctl hibernate";
         reboot_cmd = "sudo systemctl reboot";
         logout_cmd = "loginctl kill-user $(whoami)";
-        lock_cmd = "hyprlock &";
+        lock_cmd = "ambxst lock &";
         audio_sinks_more_cmd = "pavucontrol -t 3";
         audio_sources_more_cmd = "pavucontrol -t 4";
         remove_airplane_btn = true;

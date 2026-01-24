@@ -30,7 +30,7 @@
     #* dev tools
     #android-studio
     dbeaver-bin
-    vscode-fhs
+    vscode
 
     #* games
     gamemode

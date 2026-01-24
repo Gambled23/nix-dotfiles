@@ -14,7 +14,7 @@
     ../../hypr/hyprshot.nix
     # ../../hypr/hyprpanel.nix
     # ../../../programs/ashell.nix
-    ../../hypr/hyprlock.nix
+    # ../../hypr/hyprlock.nix
     ../../vicinae.nix
     ./kitty.nix
 

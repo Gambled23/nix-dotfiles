@@ -21,7 +21,7 @@
         "HDMI-A-1, addreserved, 25, 25, 40, 40"
       ];
       "exec-once" = [
-        "hyprlock"
+        "ambxst lock"
       ];
     };
   };
@@ -34,7 +34,7 @@
     }
     { # 15 min lock screen
       timeout = 900;
-      on-timeout = "hyprlock";
+      on-timeout = "ambxst lock";
     }
     { # 30 min suspend pc
       timeout = 1800;
