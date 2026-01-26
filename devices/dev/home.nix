@@ -28,7 +28,7 @@
 
     #* messaging
     altus
-
+    
     #* utils
     android-tools
     libreoffice
