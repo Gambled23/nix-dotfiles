@@ -59,7 +59,7 @@
         "uwsm app -- vesktop %U"
         "uwsm app -- altus %U"
         "uwsm app -- kdeconnect-indicator %U"
-        "uwsm app -- ambxst %U "
+        "uwsm app -- ambxst"
         # "bluetoothctl connect 24:95:2F:60:BD:94"
       ];
 

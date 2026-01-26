@@ -41,10 +41,10 @@
       blur = {
         enabled = true;
         size = 5;
-        passes = 2;
+        passes = 5;
         new_optimizations = true;
         # contrast = 0.8316;
-        # brightness = 0.8872;
+        brightness = 0.8872;
         vibrancy = 0.1696;
         # vibrancy_darkness = 0.0;
         popups = true;
