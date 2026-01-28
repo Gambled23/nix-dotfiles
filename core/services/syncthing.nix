@@ -51,6 +51,11 @@
         name = "dev-gambled";
         autoAcceptFolders = true;
       };
+      "android-gambled" = {
+        id = "MBROAJY-UP2QSBY-QI4D74J-WDM6WZR-LBL3NIB-3DL3JOI-6YJOJYD-VISD2QP";
+        name = "android-gambled";
+        autoAcceptFolders = true;
+      };
     };
   };
 }
