@@ -16,6 +16,7 @@
     # ../../../programs/ashell.nix
     # ../../hypr/hyprlock.nix
     ../../vicinae.nix
+    ../../../programs/quickshell/quickshell.nix
     ./kitty.nix
 
     # Hyprland settings

@@ -48,7 +48,7 @@
       "match:namespace ashell-main-layer, blur on, ignore_alpha 0"
       "match:namespace swaync-control-center, blur on, ignore_alpha 0"
       "match:namespace swaync-notification-window, blur on, ignore_alpha 0"
-      "match:namespace quickshelll, blur on, ignore_alpha 0"
+      "match:namespace quickshell, blur on, ignore_alpha 0.3"
     ];
   };
 }
