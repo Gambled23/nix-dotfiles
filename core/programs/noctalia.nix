@@ -627,4 +627,14 @@
       # };
     };
   };
+
+  # home.file.".cache/noctalia/wallpapers.json" = {
+  #   text = builtins.toJSON {
+  #     defaultWallpaper = "/etc/nixos/wallpaper.jpg";
+  #     wallpapers = {
+  #       "DP-3" = "~/Pictures/Wallpapers/PC/ultrawide/anime-school-girl-vending-machine-coffee-shop-es-3440x1440.jpg";
+  #       "eDP-1" = "~/Pictures/Wallpapers/PC/minimalistic/wallhaven_o5ky29.jpg";
+  #     };
+  #   };
+  # };
 }
