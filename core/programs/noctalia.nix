@@ -7,10 +7,56 @@
   programs.noctalia-shell = {
     systemd.enable = true;
     enable = true;
+    colors = lib.mkForce {
+      mPrimary = "#b8bb26";
+      mOnPrimary = "#282828";
+      mSecondary = "#fabd2f";
+      mOnSecondary = "#282828";
+      mTertiary = "#83a598";
+      mOnTertiary = "#282828";
+      mError = "#fb4934";
+      mOnError = "#282828";
+      mSurface = "#282828";
+      mOnSurface = "#fbf1c7";
+      mSurfaceVariant = "#3c3836";
+      mOnSurfaceVariant = "#ebdbb2";
+      mOutline = "#57514e";
+      mShadow = "#282828";
+      mHover = "#83a598";
+      mOnHover = "#282828";
+      terminal = {
+        normal = {
+          black = "#282828";
+          red = "#cc241d";
+          green = "#98971a";
+          yellow = "#d79921";
+          blue = "#458588";
+          magenta = "#b16286";
+          cyan = "#689d6a";
+          white = "#a89984";
+        };
+        bright = {
+          black = "#928374";
+          red = "#fb4934";
+          green = "#b8bb26";
+          yellow = "#fabd2f";
+          blue = "#83a598";
+          magenta = "#d3869b";
+          cyan = "#8ec07c";
+          white = "#ebdbb2";
+        };
+        foreground = "#ebdbb2";
+        background = "#282828";
+        selectionFg = "#ebdbb2";
+        selectionBg = "#665c54";
+        cursorText = "#282828";
+        cursor = "#ebdbb2";
+      };
+    };
     settings = lib.mkForce {
       settingsVersion = 0;
       bar = {
-        barType = "simple";
+        barType = "framed";
         position = "top";
         monitors = [
           "DP-3"
@@ -25,21 +71,42 @@
         floating = false;
         marginVertical = 4;
         marginHorizontal = 4;
-        frameThickness = 8;
-        frameRadius = 12;
+        frameThickness = 4;
+        frameRadius = 10;
         outerCorners = true;
         exclusive = true;
         hideOnOverview = false;
         widgets = {
           left = [
             {
+              icon = "rocket";
               id = "Launcher";
+              usePrimaryColor = false;
             }
             {
+              customFont = "";
+              formatHorizontal = "ddd, MMM | dd HH:mm";
+              formatVertical = "HH mm - dd MM";
               id = "Clock";
+              tooltipFormat = "HH:mm ddd, MMM dd";
+              useCustomFont = false;
+              usePrimaryColor = false;
             }
             {
+              compactMode = true;
+              diskPath = "/";
               id = "SystemMonitor";
+              showCpuTemp = true;
+              showCpuUsage = true;
+              showDiskUsage = false;
+              showGpuTemp = false;
+              showLoadAverage = false;
+              showMemoryAsPercent = false;
+              showMemoryUsage = true;
+              showNetworkStats = false;
+              showSwapUsage = false;
+              useMonospaceFont = true;
+              usePrimaryColor = false;
             }
             {
               characterCount = 2;
@@ -63,27 +130,67 @@
           ];
           center = [
             {
+              compactMode = true;
+              compactShowAlbumArt = true;
+              compactShowVisualizer = false;
+              hideMode = "hidden";
+              hideWhenIdle = false;
               id = "MediaMini";
+              maxWidth = 300;
+              panelShowAlbumArt = true;
+              panelShowVisualizer = true;
+              scrollingMode = "hover";
+              showAlbumArt = true;
+              showArtistFirst = true;
+              showProgressRing = true;
+              showVisualizer = true;
+              useFixedWidth = false;
+              visualizerType = "linear";
             }
           ];
           right = [
             {
+              blacklist = [];
+              colorizeIcons = false;
+              drawerEnabled = true;
+              hidePassive = false;
               id = "Tray";
+              pinned = [];
             }
             {
+              deviceNativePath = "__default__";
+              displayMode = "onhover";
+              hideIfIdle = false;
+              hideIfNotDetected = true;
               id = "Battery";
+              showNoctaliaPerformance = false;
+              showPowerProfiles = false;
+              warningThreshold = 30;
             }
             {
+              displayMode = "onhover";
               id = "Volume";
+              middleClickCommand = "pwvucontrol || pavucontrol";
             }
             {
+              displayMode = "onhover";
               id = "Brightness";
             }
             {
+              hideWhenZero = false;
+              hideWhenZeroUnread = false;
               id = "NotificationHistory";
+              showUnreadBadge = true;
+              unreadBadgeColor = "primary";
             }
             {
+              colorizeDistroLogo = false;
+              colorizeSystemIcon = "none";
+              customIconPath = "";
+              enableColorization = false;
+              icon = "noctalia";
               id = "ControlCenter";
+              useDistroLogo = false;
             }
           ];
         };
@@ -171,7 +278,7 @@
         enableMultiMonitorDirectories = false;
         showHiddenFiles = false;
         viewMode = "single";
-        setWallpaperOnAllMonitors = true;
+        setWallpaperOnAllMonitors = false;
         fillMode = "fill";
         fillColor = "#000000";
         useSolidColor = false;
@@ -392,7 +499,7 @@
       };
       osd = {
         enabled = true;
-        location = "top_right";
+        location = "top";
         autoHideMs = 2000;
         overlayLayer = true;
         backgroundOpacity = 1;
@@ -486,29 +593,28 @@
           }
         ];
       };
-      plugins = {
-        sources = [
-          {
-            enabled = true;
-            name = "Official Noctalia Plugins";
-            url = "https://github.com/noctalia-dev/noctalia-plugins";
-          }
-        ];
-        states = {
-          catwalk = {
-            enabled = true;
-            sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
-          };
-        };
-        version = 1;
-      };
-
-      pluginSettings = {
-        catwalk = {
-          minimumThreshold = 25;
-          hideBackground = true;
-        };
-      };
+    };
+    plugins = {
+      sources = [
+        {
+          enabled = true;
+          name = "Official Noctalia Plugins";
+          url = "https://github.com/noctalia-dev/noctalia-plugins";
+        }
+      ];
+      # states = {
+      #   catwalk = {
+      #     enabled = true;
+      #     sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
+      #   };
+      # };
+      version = 1;
+    };
+    pluginSettings = {
+      # catwalk = {
+      #   minimumThreshold = 25;
+      #   hideBackground = true;
+      # };
     };
   };
 }
