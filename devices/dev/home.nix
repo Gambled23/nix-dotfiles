@@ -36,6 +36,7 @@
     gnome-network-displays
     moonlight-qt
     bitwarden-desktop
+    pixelflasher
     # inputs.quickshell.packages.${pkgs.stdenv.hostPlatform.system}.default
     
     #* webbrowsers
