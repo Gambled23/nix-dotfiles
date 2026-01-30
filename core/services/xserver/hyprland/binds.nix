@@ -15,7 +15,7 @@
       "$mainMod, V, exec, vicinae vicinae://extensions/vicinae/clipboard/history"
       "$mainMod, B, exec, vicinae vicinae://extensions/vicinae/bluetooth/devices"
       # "$mainMod, B, exec, bluetoothctl connect 24:95:2F:60:BD:94"
-      "$mainMod, L, exec, ambxst lock"
+      "$mainMod, L, exec, hyprlock"
       "$mainMod, N, togglefloating,"
       "$mainMod, M, exit,"
 

@@ -16,6 +16,7 @@
     core/programs/zsh.nix
     core/programs/zoxide.nix
   ];
+  
   home.packages = with pkgs; [
     #* dev tools
     lazygit

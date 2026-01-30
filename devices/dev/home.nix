@@ -11,7 +11,6 @@
     ../../home.nix
     ./hyprland/dev.nix
     # ../../core/programs/firefox.nix
-
   ];
 
   home.packages = with pkgs; [

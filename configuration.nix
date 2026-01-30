@@ -116,4 +116,7 @@
         KERNEL=="hidraw*", SUBSYSTEM=="hidraw", MODE="0666" 
       '';
   };
+
+  services.power-profiles-daemon.enable = true;
+  services.upower.enable = true;
 }

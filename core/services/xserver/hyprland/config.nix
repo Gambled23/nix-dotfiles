@@ -14,7 +14,8 @@
     ../../hypr/hyprshot.nix
     # ../../hypr/hyprpanel.nix
     # ../../../programs/ashell.nix
-    # ../../hypr/hyprlock.nix
+    ../../../programs/noctalia.nix
+    ../../hypr/hyprlock.nix
     ../../vicinae.nix
     # ../../../programs/quickshell/quickshell.nix
     ./kitty.nix
@@ -60,7 +61,6 @@
         "uwsm app -- vesktop %U"
         "uwsm app -- altus %U"
         "uwsm app -- kdeconnect-indicator %U"
-        # "uwsm app -- ambxst"
         "uwsm app -- noctalia-shell"
         # "bluetoothctl connect 24:95:2F:60:BD:94"
       ];

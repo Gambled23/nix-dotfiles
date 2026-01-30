@@ -28,14 +28,14 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # quickshell = {
-    #   url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
-
     stylix.url = "github:danth/stylix";
     # ambxst.url = "github:Axenide/Ambxst";
-    ambxst.url = "github:smarthumankinda/ambxst-flake"; 
+    # ambxst.url = "github:smarthumankinda/ambxst-flake"; 
+
+    noctalia = {
+      url = "github:noctalia-dev/noctalia-shell";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     # Nur repo for firefox extensions
     # nur.url = "github:nix-community/NUR";
