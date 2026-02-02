@@ -15,6 +15,7 @@
     # ../../hypr/hyprpanel.nix
     # ../../../programs/ashell.nix
     ../../../programs/noctalia.nix
+    ../../../programs/yazi.nix
     ../../hypr/hyprlock.nix
     ../../vicinae.nix
     # ../../../programs/quickshell/quickshell.nix
@@ -42,7 +43,7 @@
       ###################
       ### MY PROGRAMS ###
       ###################
-      "$terminal" = "uwsm app -- kitty";
+      "$terminal" = "uwsm app -- konsole";
       "$fileManager" = "uwsm app -- dolphin";
       "$web_browser" = "uwsm app -- google-chrome-stable";
       "$code" = "uwsm app -- code";

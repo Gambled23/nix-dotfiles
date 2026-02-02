@@ -61,6 +61,7 @@
         monitors = [
           "DP-3"
           "eDP-1"
+          "sunshine"
         ];
         density = "comfortable";
         showOutline = false;
