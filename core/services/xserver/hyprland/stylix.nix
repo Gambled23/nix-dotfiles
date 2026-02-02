@@ -9,7 +9,7 @@ in
     autoEnable = true;
     image = ../../../../wallpaper.jpg;
     base16Scheme = theme;
-
+    
     fonts = {
       serif = {
         package = pkgs.dejavu_fonts;

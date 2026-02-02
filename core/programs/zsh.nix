@@ -22,6 +22,9 @@
       rm = "rm -riv";
       
     };
-    initContent = "source <(fzf --zsh)\n eval $(zoxide init zsh)\n";
+    
+    initContent = "source <(fzf --zsh)\n
+    eval $(zoxide init zsh)\n
+    ";
   };
 }
