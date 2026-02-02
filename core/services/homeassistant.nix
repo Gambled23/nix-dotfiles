@@ -59,7 +59,7 @@ in
           platform = "wake_on_lan";
           name = "pc-gambled";
           mac = "10:FF:E0:AB:9B:CB";
-          host = "192.168.1.21";
+          host = "192.168.1.23";
           turn_off = {
             service = "shell_command.poweroff_pc";
           };
