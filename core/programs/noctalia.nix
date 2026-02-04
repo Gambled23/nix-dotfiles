@@ -86,7 +86,7 @@
             }
             {
               customFont = "";
-              formatHorizontal = "ddd, MMM | dd HH:mm";
+              formatHorizontal = "HH:mm";
               formatVertical = "HH mm - dd MM";
               id = "Clock";
               tooltipFormat = "HH:mm ddd, MMM dd";
@@ -595,6 +595,10 @@
           enabled = true;
           sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
         };
+        # weekly-calendar = {
+        #   enabled = true;
+        #   sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
+        # };
       };
       version = 1;
     };
