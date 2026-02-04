@@ -151,9 +151,6 @@
           ];
           right = [
             {
-              id = "plugin:hyprland-steam-overlay";
-            }
-            {
               id = "plugin:privacy-indicator";
             }
             {
@@ -611,10 +608,6 @@
       ];
       states = {
         privacy-indicator = {
-          enabled = true;
-          sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
-        };
-        hyprland-steam-overlay = {
           enabled = true;
           sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
         };
