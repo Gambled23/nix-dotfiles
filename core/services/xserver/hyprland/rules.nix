@@ -19,17 +19,16 @@
       "match:class ^(steam|spotify|vesktop|Altus)$, no_initial_focus on"
 
       # Ignore maximize requests from apps. You'll probably like this.
-      " match:class .*, suppress_event maximize"
+      "match:class .*, suppress_event maximize"
 
       # Fix some dragging issues with XWayland
-      " match:class ^$, match:title ^$, match:xwayland 1, match:float 1, match:pin 0"
+      "match:class ^$, match:title ^$, match:xwayland 1, match:float 1, match:pin 0"
 
       # Always set opacity for these apps
       "match:class ^(kitty|org.kde.dolphin|gjs|DBeaver|org.kde.konsole)$, opacity 0.85" 
       "match:class ^(spotify)$, opacity 0.9" 
       # Opacity only on focus loss
       "match:class ^(code)$, opacity 1 0.9"
-
     ];
 
     layerrule = [
