@@ -9,6 +9,8 @@
 
     plugins = {
       inherit (pkgs.yaziPlugins) mount;
+      lazy-git = pkgs.yaziPlugins.lazygit;
+      git = pkgs.yaziPlugins.git;
     };
 
     settings = {

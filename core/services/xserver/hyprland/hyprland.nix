@@ -32,14 +32,14 @@ with lib;
     sof-firmware # audio via hdmi
     wireplumber
     # waybar
-    hyprpaper
-    waytrogen
+    # hyprpaper
+    # waytrogen
     hypridle
     pamixer
     pavucontrol
-    blueman
-    swaynotificationcenter
-    easyeffects
+    # blueman
+    # swaynotificationcenter
+    # easyeffects
   ];
 
   # Optional, hint Electron apps to use Wayland:

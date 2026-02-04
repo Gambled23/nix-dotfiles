@@ -25,7 +25,7 @@
       " match:class ^$, match:title ^$, match:xwayland 1, match:float 1, match:pin 0"
 
       # Always set opacity for these apps
-      "match:class ^(kitty|org.kde.dolphin|gjs|DBeaver|konsole)$, opacity 0.86" 
+      "match:class ^(kitty|org.kde.dolphin|gjs|DBeaver|org.kde.konsole)$, opacity 0.85" 
       "match:class ^(spotify)$, opacity 0.9" 
       # Opacity only on focus loss
       "match:class ^(code)$, opacity 1 0.9"
@@ -33,22 +33,25 @@
     ];
 
     layerrule = [
-      "match:namespace bar-0, blur on"
-      "match:namespace verification, blur on"
-      "match:namespace vicinae, blur on, ignore_alpha 0"
-      "match:namespace dashboardmenu, blur on, ignore_alpha 0"
-      "match:namespace mediamenu, blur on, ignore_alpha 0"
-      "match:namespace audiomenu, blur on, ignore_alpha 0"
-      "match:namespace networkmenu, blur on, ignore_alpha 0"
-      "match:namespace bluetoothmenu, blur on, ignore_alpha 0"
-      "match:namespace energymenu, blur on, ignore_alpha 0"
-      "match:namespace calendarmenu, blur on, ignore_alpha 0"
-      "match:namespace notificationsmenu, blur on, ignore_alpha 0"
-      "match:namespace indicator, blur on, ignore_alpha 0"
-      "match:namespace ashell-main-layer, blur on, ignore_alpha 0"
-      "match:namespace swaync-control-center, blur on, ignore_alpha 0"
-      "match:namespace swaync-notification-window, blur on, ignore_alpha 0"
-      # "match:namespace noctalia-.*, blur on, ignore_alpha 0.2"
+      "match:namespace bar-0, blur on, blur_popups on, ignore_alpha 0"
+      "match:namespace verification, blur on, blur_popups on, ignore_alpha 0"
+      "match:namespace vicinae, blur on, blur_popups on, ignore_alpha 0"
+      "match:namespace dashboardmenu, blur on, blur_popups on, ignore_alpha 0"
+      "match:namespace mediamenu, blur on, blur_popups on, ignore_alpha 0"
+      "match:namespace audiomenu, blur on, blur_popups on, ignore_alpha 0"
+      "match:namespace networkmenu, blur on, blur_popups on, ignore_alpha 0"
+      "match:namespace bluetoothmenu, blur on, blur_popups on, ignore_alpha 0"
+      "match:namespace energymenu, blur on, blur_popups on, ignore_alpha 0"
+      "match:namespace calendarmenu, blur on, blur_popups on, ignore_alpha 0"
+      "match:namespace notificationsmenu, blur on, blur_popups on, ignore_alpha 0"
+      "match:namespace indicator, blur on, blur_popups on, ignore_alpha 0"
+      "match:namespace ashell-main-layer, blur on, blur_popups on, ignore_alpha 0"
+      "match:namespace swaync-control-center, blur on, blur_popups on, ignore_alpha 0"
+      "match:namespace swaync-notification-window, blur on, blur_popups on, ignore_alpha 0"
+      "match:namespace noctalia-background-.*$, blur on, blur_popups on, ignore_alpha 0.2"
+      "match:namespace noctalia-osd-.*$, blur on, blur_popups on, ignore_alpha 0.2"
+      "match:namespace noctalia-desktop-widgets-.*$, blur on, blur_popups on, ignore_alpha 0.2"
+      "match:namespace noctalia-dock-.*$, blur on, blur_popups on, ignore_alpha 0.2"
     ];
   };
 }

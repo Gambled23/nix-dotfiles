@@ -20,7 +20,7 @@
       mkdir = "mkdir -vp";
       mv = "mv -iv";
       rm = "rm -riv";
-      
+      cd = "z";
     };
     
     initContent = "source <(fzf --zsh)\n

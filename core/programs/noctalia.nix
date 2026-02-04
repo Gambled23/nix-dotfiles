@@ -67,7 +67,7 @@
         showOutline = false;
         showCapsule = true;
         capsuleOpacity = 1;
-        backgroundOpacity = 1;
+        backgroundOpacity = 0.8;
         useSeparateOpacity = false;
         floating = false;
         marginVertical = 4;
@@ -91,22 +91,6 @@
               id = "Clock";
               tooltipFormat = "HH:mm ddd, MMM dd";
               useCustomFont = false;
-              usePrimaryColor = false;
-            }
-            {
-              compactMode = true;
-              diskPath = "/";
-              id = "SystemMonitor";
-              showCpuTemp = true;
-              showCpuUsage = true;
-              showDiskUsage = false;
-              showGpuTemp = false;
-              showLoadAverage = false;
-              showMemoryAsPercent = false;
-              showMemoryUsage = true;
-              showNetworkStats = false;
-              showSwapUsage = false;
-              useMonospaceFont = true;
               usePrimaryColor = false;
             }
             {
@@ -235,7 +219,7 @@
         fontDefaultScale = 1;
         fontFixedScale = 1;
         tooltipsEnabled = true;
-        panelBackgroundOpacity = 1;
+        panelBackgroundOpacity = 0.8;
         panelsAttachedToBar = true;
         settingsPanelMode = "attached";
         wifiDetailsViewMode = "grid";
@@ -419,7 +403,7 @@
         enabled = true;
         position = "bottom";
         displayMode = "auto_hide";
-        backgroundOpacity = 1;
+        backgroundOpacity = 0.8;
         floatingRatio = 0.5;
         size = 1;
         onlySameOutput = true;
@@ -479,7 +463,7 @@
         monitors = [ ];
         location = "top";
         overlayLayer = true;
-        backgroundOpacity = 1;
+        backgroundOpacity = 0.8;
         respectExpireTimeout = false;
         lowUrgencyDuration = 3;
         normalUrgencyDuration = 8;
@@ -506,7 +490,7 @@
         location = "top";
         autoHideMs = 2000;
         overlayLayer = true;
-        backgroundOpacity = 1;
+        backgroundOpacity = 0.5;
         enabledTypes = [
           0
           1
@@ -622,13 +606,15 @@
     };
   };
 
-  # home.file.".cache/noctalia/wallpapers.json" = {
-  #   text = builtins.toJSON {
-  #     defaultWallpaper = "/etc/nixos/wallpaper.jpg";
-  #     wallpapers = {
-  #       "DP-3" = "~/Pictures/Wallpapers/PC/ultrawide/anime-school-girl-vending-machine-coffee-shop-es-3440x1440.jpg";
-  #       "eDP-1" = "~/Pictures/Wallpapers/PC/minimalistic/wallhaven_o5ky29.jpg";
-  #     };
-  #   };
-  # };
+  home.file.".cache/noctalia/wallpapers.json" = lib.mkForce {
+    text = builtins.toJSON {
+      defaultWallpaper = "/etc/nixos/wallpaper.jpg";
+      wallpapers = {
+        "DP-3" = "/home/gambled/Pictures/Wallpapers/PC/ultrawide/frieren.jpg";
+        "sunshine" = "/home/gambled/Pictures/Wallpapers/PC/anime/ononoki.png";
+        "HDMI-A-1" = "/home/gambled/Pictures/Wallpapers/PC/irl/leaves-wall.png";
+        "eDP-1" = "/home/gambled/Pictures/Wallpapers/PC/irl/leaves-wall.png";
+      };
+    };
+  };
 }
