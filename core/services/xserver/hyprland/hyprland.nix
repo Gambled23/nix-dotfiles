@@ -55,4 +55,6 @@ with lib;
 
   #hyprlock
   security.pam.services.hyprlock = {};
+
+  services.gnome.evolution-data-server.enable = true;
 }

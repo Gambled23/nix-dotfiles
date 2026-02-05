@@ -1,5 +1,5 @@
 # Home manager file
-{ lib, inputs, ... }: {
+{ lib, inputs, pkgs, ... }: {
   imports = [
     inputs.noctalia.homeModules.default
   ];
@@ -7,6 +7,7 @@
   programs.noctalia-shell = {
     systemd.enable = true;
     enable = true;
+    package = (inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default.override { calendarSupport = true; });
     colors = lib.mkForce {
       mPrimary = "#b8bb26";
       mOnPrimary = "#282828";
@@ -595,10 +596,10 @@
           enabled = true;
           sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
         };
-        # weekly-calendar = {
-        #   enabled = true;
-        #   sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
-        # };
+        weekly-calendar = {
+          enabled = true;
+          sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
+        };
       };
       version = 1;
     };
