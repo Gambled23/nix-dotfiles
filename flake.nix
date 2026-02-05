@@ -21,7 +21,7 @@
       inputs.hyprland.follows = "hyprland";
     };
 
-    dolphin-overlay.url = "github:rumboon/dolphin-overlay";
+    # dolphin-overlay.url = "github:rumboon/dolphin-overlay";
     vicinae.url = "github:vicinaehq/vicinae";
     vicinae-extensions = {
       url = "github:vicinaehq/extensions";
@@ -63,7 +63,7 @@
       # nur,
       nixcord,
       # jovian-nixos,
-      dolphin-overlay,
+      # dolphin-overlay,
       stylix,
       vicinae,
       # millennium,
@@ -111,7 +111,7 @@
             home-manager.backupFileExtension = "uiod";
             nixpkgs.overlays = [
               # inputs.millennium.overlays.default
-              dolphin-overlay.overlays.default
+              # dolphin-overlay.overlays.default
             ];
           }
         ];
@@ -150,7 +150,7 @@
             home-manager.backupFileExtension = "2";
             nixpkgs.overlays = [
               # inputs.millennium.overlays.default
-              dolphin-overlay.overlays.default
+              # dolphin-overlay.overlays.default
             ];
           }
         ];

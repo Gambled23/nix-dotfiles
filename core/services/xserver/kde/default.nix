@@ -63,7 +63,7 @@ with lib;
     kdePackages.kalk
     # kdePackages.qtstyleplugin-kvantum
     # libportal-qt6
-    kdePackages.dolphin-plugins
+    # kdePackages.dolphin-plugins
     kdePackages.kate
     kdePackages.qtwayland
 
