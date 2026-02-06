@@ -4,6 +4,7 @@
   wayland.windowManager.hyprland.settings = {
     bind = [
       "$mainMod, Q, killactive,"
+      # "$mainMod, G, hyprexpo:expo, toggle"
       "$mainMod, E, exec, $fileManager"
       "$mainMod, R, exec, $menu"
       "$mainMod, O, exec, openrgb --profile 'off.orp'"

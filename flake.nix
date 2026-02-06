@@ -28,7 +28,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    stylix.url = "github:danth/stylix";
+    stylix = {
+      url = "github:nix-community/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     # ambxst.url = "github:Axenide/Ambxst";
     # ambxst.url = "github:smarthumankinda/ambxst-flake"; 
 

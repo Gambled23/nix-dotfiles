@@ -75,7 +75,7 @@
         marginHorizontal = 4;
         frameThickness = 4;
         frameRadius = 10;
-        outerCorners = true;
+        outerCorners = false;
         exclusive = true;
         hideOnOverview = false;
         widgets = {
@@ -127,7 +127,7 @@
               panelShowVisualizer = true;
               scrollingMode = "hover";
               showAlbumArt = true;
-              showArtistFirst = true;
+              showArtistFirst = false;
               showProgressRing = true;
               showVisualizer = true;
               useFixedWidth = false;
@@ -202,9 +202,9 @@
         showSessionButtonsOnLockScreen = false;
         showHibernateOnLockScreen = false;
         enableShadows = true;
-        shadowDirection = "bottom_right";
-        shadowOffsetX = 2;
-        shadowOffsetY = 3;
+        shadowDirection = "center";
+        shadowOffsetX = 0;
+        shadowOffsetY = 0;
         language = "en";
         allowPanelsOnScreenWithoutBar = true;
         showChangelogOnStartup = true;
@@ -226,7 +226,7 @@
         wifiDetailsViewMode = "grid";
         bluetoothDetailsViewMode = "grid";
         networkPanelView = "wifi";
-        bluetoothHideUnnamedDevices = false;
+        bluetoothHideUnnamedDevices = true;
         boxBorderEnabled = false;
       };
       location = {
@@ -503,7 +503,7 @@
         volumeStep = 5;
         volumeOverdrive = false;
         cavaFrameRate = 30;
-        visualizerType = "linear";
+        visualizerType = "wave";
         mprisBlacklist = [ ];
         preferredPlayer = "Spotify";
         volumeFeedback = false;
