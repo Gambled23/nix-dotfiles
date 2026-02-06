@@ -3,6 +3,7 @@
   inputs,
   pkgs,
   lib,
+  config,
   ...
 }: 
 {
@@ -37,6 +38,7 @@
       inputs.hyprland-plugins.packages."${pkgs.stdenv.hostPlatform.system}".borders-plus-plus
       inputs.hyprland-plugins.packages."${pkgs.stdenv.hostPlatform.system}".hyprscrolling
       # inputs.hyprland-plugins.packages."${pkgs.stdenv.hostPlatform.system}".csgo-vulkan-fix
+      inputs.hyprland-plugins.packages."${pkgs.stdenv.hostPlatform.system}".hyprexpo
     ];
 
     settings = {
@@ -94,6 +96,9 @@
         "/usr/(bin|local/bin)/hyprpm, plugin, allow"
       ];
     };
+
+    systemd.variables = ["--all"]; # To pass environment variables to the systemd services started by Hyprland
   };
 
+  xdg.configFile."uwsm/env".source = "${config.home.sessionVariablesPackage}/etc/profile.d/hm-session-vars.sh"; 
 }
