@@ -592,6 +592,10 @@
         }
       ];
       states = {
+        clipper = {
+          enabled = true;
+          sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
+        };
         privacy-indicator = {
           enabled = true;
           sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
