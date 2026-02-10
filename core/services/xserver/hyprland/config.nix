@@ -58,13 +58,13 @@
       #################
       "exec-once" = [
         # "systemctl --user enable --now hyprpolkitagent.service"
-        "systemctl --user enable --now hyprpaper.service"
+        "konsole -e noctalia-shell -d"
+        # "systemctl --user enable --now hyprpaper.service"
         "systemctl --user enable --now hypridle.service"
         "uwsm app -- spotify %U"
         "uwsm app -- vesktop %U"
         "uwsm app -- altus %U"
         "uwsm app -- kdeconnect-indicator %U"
-        "konsole -e noctalia-shell -d"
         # "bluetoothctl connect 24:95:2F:60:BD:94"
       ];
 
