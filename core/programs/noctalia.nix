@@ -57,7 +57,7 @@
     settings = lib.mkForce {
       settingsVersion = 0;
       bar = {
-        barType = "framed";
+        barType = "simple";
         position = "top";
         monitors = [
           "DP-3"
@@ -80,6 +80,16 @@
         hideOnOverview = false;
         widgets = {
           left = [
+            {
+              defaultSettings = {
+                enableTodoIntegration = true;
+                notecardsEnabled = true;
+                pincardsEnabled = true;
+                position = "Bottom";
+                showCloseButton = false;
+              };
+              id = "plugin:clipper";
+            }
             {
               icon = "rocket";
               id = "Launcher";
@@ -461,7 +471,11 @@
       };
       notifications = {
         enabled = true;
-        monitors = [ ];
+        monitors = [
+          "DP-3"
+          "eDP-1"
+          "sunshine"
+        ];
         location = "top";
         overlayLayer = true;
         backgroundOpacity = 0.8;
@@ -469,7 +483,7 @@
         lowUrgencyDuration = 3;
         normalUrgencyDuration = 8;
         criticalUrgencyDuration = 15;
-        enableKeyboardLayoutToast = true;
+        enableKeyboardLayoutToast = false;
         saveToHistory = {
           low = true;
           normal = true;
