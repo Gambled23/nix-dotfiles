@@ -11,6 +11,7 @@
     ../../core/services/code-server.nix
     # ../../core/services/docker.nix
     ../../core/services/homeassistant.nix
+    # ../../core/services/tandoor.nix
     #./symlinks.nix
 
     # bootloader
