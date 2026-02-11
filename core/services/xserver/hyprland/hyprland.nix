@@ -37,6 +37,7 @@ with lib;
     hypridle
     pamixer
     pavucontrol
+    trash-cli	# for yazi trash plugin
     # blueman
     # swaynotificationcenter
     # easyeffects

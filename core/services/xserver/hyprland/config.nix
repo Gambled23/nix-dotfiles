@@ -16,7 +16,7 @@
     # ../../hypr/hyprpanel.nix
     # ../../../programs/ashell.nix
     ../../../programs/noctalia.nix
-    ../../../programs/yazi.nix
+    ../../../programs/yazi/yazi.nix
     ../../hypr/hyprlock.nix
     ../../vicinae.nix
     # ../../../programs/quickshell/quickshell.nix
