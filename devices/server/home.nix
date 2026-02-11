@@ -9,7 +9,6 @@
   home.stateVersion = "25.05";
   imports = [
     ../../home.nix
-    ../../core/programs/yazi/yazi.nix
   ];
 
   home.packages = with pkgs; [

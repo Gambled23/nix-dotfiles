@@ -15,6 +15,7 @@
     core/programs/starship.nix
     core/programs/zsh.nix
     core/programs/zoxide.nix
+    core/programs/yazi/yazi.nix
   ];
   
   home.packages = with pkgs; [
@@ -27,6 +28,7 @@
     lxsession
     neofetch
     zsh
+    trash-cli	# for yazi trash plugin
   ];
   
   home.sessionVariables = {
