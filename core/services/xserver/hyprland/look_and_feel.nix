@@ -30,6 +30,7 @@
       # Change transparency of focused and unfocused windows
       active_opacity = 1.0;
       inactive_opacity = 1.0;
+      dim_special = 0.3;
 
       shadow = {
         enabled = true;
@@ -41,14 +42,17 @@
       blur = {
         enabled = true;
         popups = true;
+        # special = true;
+        noise = 0.1;
         new_optimizations = true;
-        size = 3;
+        size = 5;
         passes = 2;
-        vibrancy = 0.1696;
-        # contrast = 0.8316;
-        # brightness = 0.8872;
-        # vibrancy_darkness = 0.0;
+        vibrancy = 0.5;
+        contrast = 1.0;
+        brightness = 1.5;
+        vibrancy_darkness = 0.05;
       };
+
     };
 
     dwindle = {
