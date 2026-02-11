@@ -18,8 +18,8 @@ stdenvNoCC.mkDerivation rec {
     ;
 
   src = fetchurl {
-    url = "https://github.com/hayase-app/ui/releases/download/v${version}/mac-hayase-${version}-mac.zip";
-    hash = "sha256-V4Vo9fuQ0X7Q6CBM7Akh3+MrgQOBgCuC41khFatYWi4=";
+    url = "https://api.hayase.watch/files/mac-hayase-${version}-mac.dmg";
+    hash = "sha256-ckEb4ocJyg55VcYRq+M/OHzz1delswlsDcRmbN3uHoA=";
   };
 
   sourceRoot = ".";
