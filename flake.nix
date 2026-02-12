@@ -3,13 +3,18 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
 
-    home-manager.url = "github:nix-community/home-manager";
-    home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    home-manager = {
+      url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
-    plasma-manager.url = "github:pjones/plasma-manager";
-    plasma-manager.inputs.nixpkgs.follows = "nixpkgs";
-    plasma-manager.inputs.home-manager.follows = "home-manager";
+    plasma-manager = {
+      url = "github:pjones/plasma-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.home-manager.follows = "home-manager";
+    };
 
     nixcord.url = "github:kaylorben/nixcord";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
@@ -45,6 +50,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    
     # Nur repo for firefox extensions
     # nur.url = "github:nix-community/NUR";
     # nur.inputs.nixpkgs.follows = "nixpkgs";
@@ -80,13 +86,13 @@
 
     commonModules = [
       home-manager.nixosModules.home-manager
-      # jovian-nixos.nixosModules.default
       # nur.modules.nixos.default
       {
         home-manager.useGlobalPkgs = true;
         home-manager.useUserPackages = true;
-        # home-manager.users.gambled.imports = [
-        # ];
+        home-manager.users.gambled.imports = [
+          inputs.nix-flatpak.homeManagerModules.nix-flatpak
+        ];
         home-manager.extraSpecialArgs = specialArgs;
       }
     ];
@@ -98,6 +104,7 @@
         specialArgs = { inherit inputs; };
         modules = commonModules ++ [
           ./devices/pc/configuration.nix
+          # jovian-nixos.nixosModules.default
           nixos-hardware.nixosModules.gigabyte-b650
           stylix.nixosModules.stylix
           {

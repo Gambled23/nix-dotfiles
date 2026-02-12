@@ -68,7 +68,7 @@
         showOutline = false;
         showCapsule = true;
         capsuleOpacity = 1;
-        backgroundOpacity = 0.8;
+        backgroundOpacity = 0.6;
         useSeparateOpacity = false;
         floating = false;
         marginVertical = 4;
@@ -113,7 +113,7 @@
               followFocusedScreen = false;
               groupedBorderOpacity = 1;
               hideUnoccupied = false;
-              iconScale = 0.8;
+              iconScale = 0.6;
               id = "Workspace";
               labelMode = "index";
               occupiedColor = "secondary";
@@ -230,7 +230,7 @@
         fontDefaultScale = 1;
         fontFixedScale = 1;
         tooltipsEnabled = true;
-        panelBackgroundOpacity = 0.8;
+        panelBackgroundOpacity = 0.6;
         panelsAttachedToBar = true;
         settingsPanelMode = "attached";
         wifiDetailsViewMode = "grid";
@@ -414,7 +414,7 @@
         enabled = true;
         position = "bottom";
         displayMode = "auto_hide";
-        backgroundOpacity = 0.8;
+        backgroundOpacity = 0.6;
         floatingRatio = 0.5;
         size = 1;
         onlySameOutput = true;
@@ -478,7 +478,7 @@
         ];
         location = "top";
         overlayLayer = true;
-        backgroundOpacity = 0.8;
+        backgroundOpacity = 0.6;
         respectExpireTimeout = false;
         lowUrgencyDuration = 3;
         normalUrgencyDuration = 8;
