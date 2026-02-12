@@ -197,7 +197,7 @@
       };
       general = {
         avatarImage = "/home/gambled/.face";
-        dimmerOpacity = 0.1;
+        dimmerOpacity = 0.2;
         showScreenCorners = false;
         forceBlackScreenCorners = false;
         scaleRatio = 1;
@@ -211,7 +211,7 @@
         lockOnSuspend = false;
         showSessionButtonsOnLockScreen = false;
         showHibernateOnLockScreen = false;
-        enableShadows = true;
+        enableShadows = false;
         shadowDirection = "center";
         shadowOffsetX = 0;
         shadowOffsetY = 0;
@@ -237,7 +237,7 @@
         bluetoothDetailsViewMode = "grid";
         networkPanelView = "wifi";
         bluetoothHideUnnamedDevices = true;
-        boxBorderEnabled = false;
+        boxBorderEnabled = true;
       };
       location = {
         name = "Zapopan";
@@ -505,7 +505,7 @@
         location = "top";
         autoHideMs = 2000;
         overlayLayer = true;
-        backgroundOpacity = 0.5;
+        backgroundOpacity = 0.6;
         enabledTypes = [
           0
           1

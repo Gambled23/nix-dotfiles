@@ -42,8 +42,8 @@
       blur = {
         enabled = true;
         popups = true;
-        # special = true;
-        noise = 0.1;
+        special = true;
+        noise = 0.05;
         new_optimizations = true;
         size = 5;
         passes = 2;
