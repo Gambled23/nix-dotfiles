@@ -34,7 +34,7 @@
 
     #* games
     gamemode
-    wineWowPackages.stable
+    # wineWowPackages.stable
     winetricks
     ryubing
     # osu-lazer-bin
