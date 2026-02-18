@@ -7,5 +7,5 @@ pkgs.writeShellScriptBin "dev_migrateDB" ''
   read -p "Ingresa la ruta del backup: " backup_route
   read -p "Ingresa el usuario de la DB: " db_user
 
-  mysql -u $db_user -p $db_name < $backup_route
+  mariadb -u $db_user -p $db_name < $backup_route
 ''

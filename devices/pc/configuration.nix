@@ -11,7 +11,7 @@
     # ../../core/services/coolercontrol.nix
     #../../core/programs/corectrl.nix
     ../../core/services/docker.nix
-    ../../core/services/mysql.nix
+    ../../core/services/mariadb.nix
     ../../core/services/openrgb.nix
     ../../core/programs/steam.nix
     ../../core/services/sunshine.nix

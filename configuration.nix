@@ -77,7 +77,7 @@
     (import ./scripts/dev/enviroment.nix { inherit pkgs; })
     (import ./scripts/dev/ssh-github.nix { inherit pkgs; })
     (import ./scripts/dev/migrateDB.nix { inherit pkgs; })
-    (import ./scripts/dev/mysqlSetupRoot.nix { inherit pkgs; })
+    (import ./scripts/dev/mariadbSetupRoot.nix { inherit pkgs; })
     (import ./scripts/dev/modular-prod-backup.nix { inherit pkgs; })
   ];
 

@@ -11,7 +11,7 @@ pkgs.writeShellScriptBin "modular-prod-backup" ''
 
   BACKUP_FILE="backup_$DATE.sql"
 
-  mysqldump -u $USERNAME -p$PASSWORD $DATABASE > $BACKUP_FILE
+  mariadb-dump -u $USERNAME -p$PASSWORD $DATABASE > $BACKUP_FILE
 
   echo "Backup created: $BACKUP_FILE"
 ''
