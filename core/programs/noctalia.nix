@@ -313,7 +313,7 @@
         pinnedApps = [ ];
         useApp2Unit = false;
         sortByMostUsed = true;
-        terminalCommand = "kitty -e";
+        terminalCommand = "konsole -e";
         customLaunchPrefixEnabled = false;
         customLaunchPrefix = "";
         viewMode = "list";

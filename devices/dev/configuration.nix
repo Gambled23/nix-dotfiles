@@ -8,7 +8,7 @@
     #./symlinks.nix
 
     ../../core/services/docker.nix
-    # ../../core/services/mariadb.nix
+    ../../core/services/mariadb.nix
 
     # bootloader
     #../../core/bootloader/systemd.nix

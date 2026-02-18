@@ -53,7 +53,7 @@
 
     #* media creation
     gimp-with-plugins
-    inkscape-with-extensions
+    # inkscape-with-extensions
     obs-studio
 
     #* messaging

@@ -23,7 +23,7 @@
 
     #* media creation
     gimp-with-plugins
-    inkscape-with-extensions
+    # inkscape-with-extensions
 
     #* messaging
     altus

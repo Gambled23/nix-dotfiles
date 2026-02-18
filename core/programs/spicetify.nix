@@ -15,7 +15,7 @@ in
 
     enabledExtensions = with spicePkgs.extensions; [
       # autoSkipVideo
-      addToQueueTop
+      # addToQueueTop
       # beautifulLyrics
       # bookmark
       # copyToClipboard

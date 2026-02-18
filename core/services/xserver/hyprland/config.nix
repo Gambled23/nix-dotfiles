@@ -44,8 +44,8 @@
       ###################
       ### MY PROGRAMS ###
       ###################
-      "$terminal" = "uwsm app -- kitty";
-      "$fileManager" = "kitty -e yazi";
+      "$terminal" = "uwsm app -- konsole";
+      "$fileManager" = "konsole -e yazi";
       "$web_browser" = "uwsm app -- google-chrome-stable";
       "$code" = "uwsm app -- code";
       "$menu" = "uwsm app -- vicinae toggle";
