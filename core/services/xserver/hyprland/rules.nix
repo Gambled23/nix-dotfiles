@@ -25,10 +25,9 @@
       "match:class ^$, match:title ^$, match:xwayland 1, match:float 1, match:pin 0"
 
       # Always set opacity for these apps
-      "match:class ^(kitty|org.kde.dolphin|gjs|DBeaver|org.kde.konsole)$, opacity 0.85" 
-      "match:class ^(spotify)$, opacity 0.9" 
+      "match:class ^(kitty|org.kde.dolphin|gjs|DBeaver|spotify)$, opacity 0.85"
       # Opacity only on focus loss
-      "match:class ^(code)$, opacity 1 0.9"
+      "match:class ^(code)$, opacity 1 0.8"
     ];
 
     layerrule = [
