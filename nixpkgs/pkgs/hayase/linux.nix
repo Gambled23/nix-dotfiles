@@ -18,7 +18,7 @@ appimageTools.wrapType2 rec {
 
   src = fetchurl {
     url = "https://api.hayase.watch/files/linux-hayase-${version}-linux.AppImage";
-    hash = "sha256-ckEb4ocJyg55VcYRq+M/OHzz1delswlsDcRmbN3uHoA=";
+    hash = "sha256-9Vw9KhcBwtzdi6+DnZE8ZcI5uNuY6iZkNf1n0+5Acc8=";
     name = "${pname}-${version}.AppImage";
   };
 
