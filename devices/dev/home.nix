@@ -17,6 +17,8 @@
     #* dev tools
     dbeaver-bin
     vscode
+    android-studio
+    jdk25_headless
 
     #* media
     vlc
