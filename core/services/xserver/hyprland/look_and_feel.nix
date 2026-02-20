@@ -49,7 +49,7 @@
         passes = 2;
         vibrancy = 0.5;
         contrast = 1.0;
-        brightness = 1.5;
+        brightness = 1.0;
         vibrancy_darkness = 0.05;
       };
 
