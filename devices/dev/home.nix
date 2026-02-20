@@ -19,6 +19,7 @@
     vscode
     android-studio
     jdk25_headless
+    remmina
 
     #* media
     vlc
