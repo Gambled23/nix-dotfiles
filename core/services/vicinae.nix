@@ -31,8 +31,10 @@
       };
       window = {
         csd = true;
-        opacity = lib.mkForce 0.7;
         rounding = 10;
+      };
+      launcher_window = {
+        opacity = lib.mkForce 0.6;
       };
     };
 
