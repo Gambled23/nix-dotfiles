@@ -66,6 +66,15 @@ in
         }
       ];
 
+      "device_tracker" = [
+        {
+          platform = "huawei_router";
+          host = "192.168.1.1";
+          username = "user";
+          password = "pass";
+        }
+      ];    
+
       hass_cozylife_local_pull = {
         lang = "en";
         ip = [

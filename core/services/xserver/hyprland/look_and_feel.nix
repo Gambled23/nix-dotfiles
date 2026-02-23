@@ -45,8 +45,8 @@
         special = true;
         noise = 0.05;
         new_optimizations = true;
-        size = 5;
-        passes = 2;
+        size = 6;
+        passes = 3;
         vibrancy = 0.5;
         contrast = 1.0;
         brightness = 1.0;

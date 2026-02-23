@@ -29,6 +29,8 @@
     
     #* dev tools
     #android-studio
+    android-studio
+    jdk25_headless
     dbeaver-bin
     vscode
 
@@ -47,6 +49,9 @@
     polychromatic
     pdfarranger
     via
+    ente-auth
+    bitwarden-desktop
+    keyguard
 
     #* media
     vlc
