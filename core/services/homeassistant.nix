@@ -16,13 +16,10 @@ in
       "google_translate"
       "history"
       "history_stats"
-      "huawei_lte"
       "met"
       "mobile_app"
-      "radio_browser"
       "roborock"
       "shell_command"
-      "shopping_list"
       "spotify"
       "switch"
       "tuya"
@@ -65,16 +62,7 @@ in
             service = "shell_command.poweroff_pc";
           };
         }
-      ];
-
-      "device_tracker" = [
-        {
-          platform = "huawei_router";
-          host = "192.168.1.1";
-          username = "user";
-          password = "pass";
-        }
-      ];    
+      ];   
 
       hass_cozylife_local_pull = {
         lang = "en";
