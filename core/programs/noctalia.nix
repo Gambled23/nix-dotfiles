@@ -633,8 +633,8 @@
     text = builtins.toJSON {
       defaultWallpaper = "/etc/nixos/wallpaper.jpg";
       wallpapers = {
-        "DP-3" = "/home/gambled/Pictures/Wallpapers/PC/ultrawide/frieren.jpg";
-        "sunshine" = "/home/gambled/Pictures/Wallpapers/PC/anime/ononoki.png";
+        "DP-3" = "/home/gambled/Pictures/Wallpapers/PC/ultrawide/wallhaven_o3lx3l.jpg";
+        "sunshine" = "/home/gambled/Pictures/Wallpapers/PC/anime/wallhaven_4oov9l.jpg";
         "HDMI-A-1" = "/home/gambled/Pictures/Wallpapers/PC/irl/leaves-wall.png";
         "eDP-1" = "/home/gambled/Pictures/Wallpapers/PC/irl/leaves-wall.png";
       };
