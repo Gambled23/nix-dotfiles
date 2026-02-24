@@ -16,6 +16,7 @@ in
       "google_translate"
       "history"
       "history_stats"
+      "huawei_lte"
       "met"
       "mobile_app"
       "radio_browser"
@@ -87,7 +88,7 @@ in
       #   YAML automations go here
       # ];
 
-      lovelace.mode = "yaml";
+      lovelace.resource_mode = "yaml";
       recorder.db_url = "postgresql://@/hass";
 
       shell_command = {
