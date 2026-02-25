@@ -46,5 +46,6 @@
 
   services.flatpak.packages = [
     "com.stremio.Stremio"
+    "com.artemchep.keyguard"
   ];
 }
