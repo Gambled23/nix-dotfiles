@@ -35,7 +35,7 @@
   boot.extraModprobeConfig = '' options bluetooth disable_ertm=1 '';
   programs.appimage.enable = true;
   programs.appimage.binfmt = true;
-  security.polkit.enable = true;
+  # security.polkit.enable = true;
 
   # set zsh shell
   users.defaultUserShell = pkgs.zsh;

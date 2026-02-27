@@ -43,10 +43,10 @@
         enabled = true;
         popups = true;
         special = true;
-        noise = 0.04;
+        noise = 0.06;
         new_optimizations = true;
-        size = 9;
-        passes = 2;
+        size = 7;
+        passes = 3;
         vibrancy = 0.8;
         contrast = 1.0;
         brightness = 1.3;
