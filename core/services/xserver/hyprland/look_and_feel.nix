@@ -43,13 +43,13 @@
         enabled = true;
         popups = true;
         special = true;
-        noise = 0.05;
+        noise = 0.04;
         new_optimizations = true;
-        size = 6;
-        passes = 3;
-        vibrancy = 0.5;
+        size = 9;
+        passes = 2;
+        vibrancy = 0.8;
         contrast = 1.0;
-        brightness = 1.0;
+        brightness = 1.3;
         vibrancy_darkness = 0.05;
       };
 
