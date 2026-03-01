@@ -58,7 +58,7 @@
     #nixpkgs-xr.url = "github:nix-community/nixpkgs-xr";
 
     # Steam thingies
-    # millennium.url = "git+https://github.com/SteamClientHomebrew/Millennium";
+    millennium.url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
     # jovian-nixos.url = "github:Jovian-Experiments/Jovian-NixOS";
   };
 
@@ -75,7 +75,7 @@
       # dolphin-overlay,
       stylix,
       vicinae,
-      # millennium,
+      millennium,
       ... 
      }@inputs:
   let
@@ -120,7 +120,7 @@
             ];
             home-manager.backupFileExtension = "uiod";
             nixpkgs.overlays = [
-              # inputs.millennium.overlays.default
+              inputs.millennium.overlays.default
               # dolphin-overlay.overlays.default
             ];
           }
@@ -159,7 +159,6 @@
             ];
             home-manager.backupFileExtension = "2";
             nixpkgs.overlays = [
-              # inputs.millennium.overlays.default
               # dolphin-overlay.overlays.default
             ];
           }

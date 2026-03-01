@@ -9,7 +9,7 @@
     # extest.enable = true;
     protontricks.enable = true;
 
-    # package = pkgs.steam-millennium;
+    package = pkgs.millennium-steam;
 
     extraCompatPackages = with pkgs; [
       proton-ge-bin
