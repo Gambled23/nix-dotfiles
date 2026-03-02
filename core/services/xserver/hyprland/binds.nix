@@ -8,16 +8,17 @@
       "$mainMod, E, exec, $fileManager"
       "$mainMod, R, exec, $menu"
       "$mainMod, O, exec, openrgb --profile 'off.orp'"
-      "$mainMod, P, exec, display-device -d pc-gambled" # dwindle
+      "$mainMod, P, exec, display-device -d pc-gambled"
       "$mainMod, RETURN, exec, $terminal"
       "$mainMod, F, exec, $web_browser"
       "$mainMod, J, togglesplit," # dwindle
+      "$mainMod, K, exec, scrcpy --render-driver=opengl -S -w"
+      "$mainMod, L, exec, hyprlock"
       "$mainMod, C, exec, $code"
       "$mainMod, V, exec, vicinae vicinae://extensions/vicinae/clipboard/history"
       "$mainMod, B, exec, vicinae vicinae://extensions/vicinae/bluetooth/devices"
       # "$mainMod, B, exec, bluetoothctl connect 24:95:2F:60:BD:94"
-      "$mainMod, L, exec, hyprlock"
-      "$mainMod, N, togglefloating,"
+      "$mainMod, X, togglefloating,"
       "$mainMod, M, exit,"
 
       # Tools
