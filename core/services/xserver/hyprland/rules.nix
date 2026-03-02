@@ -28,6 +28,7 @@
       "match:class ^(kitty|org.kde.dolphin|gjs|DBeaver|spotify)$, opacity 0.85"
       # Opacity only on focus loss
       "match:class ^(code)$, opacity 1 0.8"
+      "match:title Pixel 9 Pro XL, float on, center on, min_size 336 748, max_size 1344 2992, size 448 998, keep_aspect_ratio on"
     ];
 
     layerrule = [
