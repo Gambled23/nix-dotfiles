@@ -5,6 +5,7 @@ pkgs.writeShellScriptBin "display-device" ''
   echo "Display device script"
 
   display_name=""
+  CONFIG_FILE="$HOME/.config/display-device"
 
   # -d expects an argument, h is help
   while getopts "hd:ac" opt; do
@@ -27,7 +28,11 @@ pkgs.writeShellScriptBin "display-device" ''
         exit 0
         ;;
       c)
-        echo "Current display name: $display_name"
+        if [ -f "$CONFIG_FILE" ]; then
+          echo "Current display name: $(cat "$CONFIG_FILE")"
+        else
+          echo "No display name set yet"
+        fi
         exit 0
         ;;
       \?)
@@ -48,6 +53,10 @@ pkgs.writeShellScriptBin "display-device" ''
     echo "  -d <display_name>   One of 'pc-gambled', 'steamdeck', 'dev-gambled', 'android-gambled', '1080p'"
     exit 1
   fi
+
+  # Save display name to file
+  mkdir -p "$(dirname "$CONFIG_FILE")"
+  echo "$display_name" > "$CONFIG_FILE"
 
   case "$display_name" in
     steamdeck)
