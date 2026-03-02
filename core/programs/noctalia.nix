@@ -91,6 +91,9 @@
               id = "plugin:clipper";
             }
             {
+              id = "plugin:display-device";
+            }
+            {
               icon = "rocket";
               id = "Launcher";
               usePrimaryColor = false;
@@ -604,6 +607,11 @@
           name = "Official Noctalia Plugins";
           url = "https://github.com/noctalia-dev/noctalia-plugins";
         }
+        {
+          enabled = true;
+          name = "Gambled's Plugins";
+          url = "https://github.com/Gambled23/noctalia-plugins";
+        }
       ];
       states = {
         clipper = {
@@ -617,6 +625,10 @@
         weekly-calendar = {
           enabled = true;
           sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
+        };
+        display-device = {
+          enabled = true;
+          sourceUrl = "https://github.com/Gambled23/noctalia-plugins";
         };
       };
       version = 1;
