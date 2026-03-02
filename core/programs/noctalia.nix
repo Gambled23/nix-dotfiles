@@ -91,7 +91,7 @@
               id = "plugin:clipper";
             }
             {
-              id = "plugin:display-device";
+              id = "plugin:e11650:display-device";
             }
             {
               icon = "rocket";

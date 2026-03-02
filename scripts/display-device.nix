@@ -7,21 +7,33 @@ pkgs.writeShellScriptBin "display-device" ''
   display_name=""
 
   # -d expects an argument, h is help
-  while getopts "hd:" opt; do
+  while getopts "hd:ac" opt; do
     case "$opt" in
       h)
         echo "Usage: display-device -d <display_name>"
-        echo "  -d <display_name>   One of 'pc-gambled', 'steamdeck'"
+        echo "  -d <display_name>   One of 'pc-gambled', 'steamdeck', 'dev-gambled', 'android-gambled', '1080p'"
         echo "  -h                  Show this help"
         exit 0
         ;;
       d)
         display_name="$OPTARG"
         ;;
+      a)
+        echo "  pc-gambled"
+        echo "  steamdeck"
+        echo "  dev-gambled"
+        echo "  android-gambled"
+        echo "  1080p"
+        exit 0
+        ;;
+      c)
+        echo "Current display name: $display_name"
+        exit 0
+        ;;
       \?)
         echo "Invalid option: -$OPTARG" >&2
         echo "Usage: display-device -d <display_name>"
-        echo "  -d <display_name>   One of 'pc-gambled', 'steamdeck'"
+        echo "  -d <display_name>   One of 'pc-gambled', 'steamdeck', 'dev-gambled', 'android-gambled', '1080p'"
         echo "  -h                  Show this help"
         exit 1
         ;;
@@ -33,7 +45,7 @@ pkgs.writeShellScriptBin "display-device" ''
   if [ -z "$display_name" ]; then
     echo "No display name provided." >&2
     echo "Usage: display-device -d <display_name>"
-    echo "  -d <display_name>   One of 'pc-gambled', 'steamdeck', 'dev-gambled', 'android-gambled'"
+    echo "  -d <display_name>   One of 'pc-gambled', 'steamdeck', 'dev-gambled', 'android-gambled', '1080p'"
     exit 1
   fi
 
@@ -65,7 +77,7 @@ pkgs.writeShellScriptBin "display-device" ''
     *)
       echo "Invalid display name: $display_name" >&2
       echo "Usage: display-device -d <display_name>"
-      echo "  -d <display_name>   One of 'pc-gambled', 'steamdeck', 'dev-gambled', 'android-gambled'"
+      echo "  -d <display_name>   One of 'pc-gambled', 'steamdeck', 'dev-gambled', 'android-gambled', '1080p'"
       echo "  -h                  Show this help"
       exit 1
       ;;
