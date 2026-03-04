@@ -8,7 +8,7 @@
       "$mainMod, E, exec, $fileManager"
       "$mainMod, R, exec, $menu"
       "$mainMod, O, exec, openrgb --profile 'off.orp'"
-      "$mainMod, P, exec, scrcpy --render-driver=opengl -S -w -K"
+      "$mainMod, P, exec, scrcpy --render-driver=opengl -S -w -K -b15M --power-off-on-close"
       "$mainMod, F, exec, $web_browser"
       "$mainMod, J, togglesplit," # dwindle
       "$mainMod, K, exec, display-device -d pc-gambled"
