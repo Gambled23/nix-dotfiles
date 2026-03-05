@@ -21,7 +21,6 @@
     #   };
     # in
     with pkgs; [
-    inputs.sls-steam.packages.${pkgs.stdenv.hostPlatform.system}.sls-steam
     #* books
     #hakuneko
     #kcc
@@ -81,6 +80,8 @@
 
     #* webbrowsers
     google-chrome
+
+    inputs.sls-steam.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 
   home.file.".zshrc".text = "export LD_LIBRARY_PATH=${pkgs.stdenv.cc.cc.lib}/lib:${pkgs.libGL}/lib/";
