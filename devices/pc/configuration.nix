@@ -83,4 +83,10 @@
     pulse.enable = true;
     jack.enable = true;
   };
+
+  # environment = {
+  # sessionVariables = {
+  #     LD_LIBRARY_PATH = "${pkgs.stdenv.cc.cc.lib}/lib:${pkgs.libGL}/lib/";
+  #   };
+  # };
 }

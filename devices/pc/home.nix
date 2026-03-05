@@ -82,7 +82,7 @@
     google-chrome
   ];
 
-  home.file.".zshrc".text = "export LD_LIBRARY_PATH=${pkgs.libGL}/lib/";
+  home.file.".zshrc".text = "export LD_LIBRARY_PATH=${pkgs.stdenv.cc.cc.lib}/lib:${pkgs.libGL}/lib/";
 
   services.flatpak.packages = [
     "com.stremio.Stremio"
