@@ -10,6 +10,7 @@
   imports = [
     ../../home.nix
     ./hyprland/pc.nix
+    ../../core/services/slsteam.nix
     # ../../core/programs/firefox.nix
 
   ];

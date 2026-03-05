@@ -81,6 +81,7 @@
       stylix,
       vicinae,
       millennium,
+      sls-steam,
       ... 
      }@inputs:
   let
