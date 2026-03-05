@@ -21,6 +21,7 @@
     #   };
     # in
     with pkgs; [
+    inputs.sls-steam.packages.${pkgs.stdenv.hostPlatform.system}.sls-steam
     #* books
     #hakuneko
     #kcc

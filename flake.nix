@@ -50,6 +50,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    sls-steam = {
+      url = "github:AceSLS/SLSsteam";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     
     # Nur repo for firefox extensions
     # nur.url = "github:nix-community/NUR";
