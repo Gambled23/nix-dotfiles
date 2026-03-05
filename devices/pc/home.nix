@@ -82,6 +82,8 @@
     google-chrome
   ];
 
+  home.file.".zshrc".text = "export LD_LIBRARY_PATH=${pkgs.libGL}/lib/";
+
   services.flatpak.packages = [
     "com.stremio.Stremio"
     "com.artemchep.keyguard"
