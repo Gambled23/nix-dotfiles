@@ -89,4 +89,9 @@
   #     LD_LIBRARY_PATH = "${pkgs.stdenv.cc.cc.lib}/lib:${pkgs.libGL}/lib/";
   #   };
   # };
+
+  nixpkgs.overlays = [
+    inputs.millennium.overlays.default
+    # dolphin-overlay.overlays.default
+  ];
 }

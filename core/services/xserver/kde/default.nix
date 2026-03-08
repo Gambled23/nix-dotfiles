@@ -42,7 +42,7 @@ with lib;
   # System Packages Configuration
   #---------------------------------------------------------------------
   environment.systemPackages = with pkgs; [
-    kde-rounded-corners
+    # kde-rounded-corners
     kdePackages.krohnkite
     kdePackages.plasma-browser-integration
     kdePackages.kaccounts-integration

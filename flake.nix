@@ -125,10 +125,6 @@
               vicinae.homeManagerModules.default
             ];
             home-manager.backupFileExtension = "uiod";
-            nixpkgs.overlays = [
-              inputs.millennium.overlays.default
-              # dolphin-overlay.overlays.default
-            ];
           }
         ];
       };

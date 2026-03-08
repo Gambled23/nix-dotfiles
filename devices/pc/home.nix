@@ -36,6 +36,7 @@
     vscode
 
     #* games
+    itch
     gamemode
     # wineWowPackages.stable
     winetricks
@@ -68,7 +69,7 @@
 
     #* guitarra
     carla
-    guitarix
+    # guitarix
     tonelib-gfx
     tonelib-jam
 
