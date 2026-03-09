@@ -275,6 +275,10 @@
       wallpaper = {
         enabled = true;
         overviewEnabled = true;
+        overviewBlur = 0.4;
+        overviewTint = 0.6;
+        skipStartupTransition = true;
+        sortOrder = "name";
         directory = "/home/gambled/Pictures/Wallpapers/PC";
         monitorDirectories = [ ];
         enableMultiMonitorDirectories = false;
@@ -445,30 +449,37 @@
         largeButtonsStyle = true;
         largeButtonsLayout = "grid";
         showNumberLabels = true;
+        showKeybinds = true;
         powerOptions = [
           {
             action = "lock";
             enabled = true;
+            keybind = "1";
           }
           {
             action = "suspend";
             enabled = true;
+            keybind = "2";
           }
           {
             action = "hibernate";
             enabled = true;
+            keybind = "3";
           }
           {
             action = "reboot";
             enabled = true;
+            keybind = "4";
           }
           {
             action = "logout";
             enabled = true;
+            keybind = "5";
           }
           {
             action = "shutdown";
             enabled = true;
+            keybind = "6";
           }
         ];
       };

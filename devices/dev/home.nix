@@ -38,6 +38,7 @@
     gnome-network-displays
     moonlight-qt
     bitwarden-desktop
+    stremio-linux-shell
     # inputs.quickshell.packages.${pkgs.stdenv.hostPlatform.system}.default
     
     #* webbrowsers

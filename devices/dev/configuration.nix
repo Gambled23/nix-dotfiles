@@ -60,4 +60,6 @@
     jack.enable = true;
   };
   nixpkgs.config.android_sdk.accept_license = true;
+
+  nix.settings.max-jobs = 4;
 }
