@@ -126,7 +126,7 @@
         marginHorizontal = 4;
         frameThickness = 4;
         frameRadius = 10;
-        outerCorners = false;
+        outerCorners = true;
         displayMode = "always_visible";
         fontScale = 1;
         middleClickAction = "none";
@@ -139,7 +139,7 @@
               icon = "rocket";
               id = "Launcher";
               iconColor = "none";
-              useDistroLogo = true;
+              useDistroLogo = false;
               colorizeSystemIcon = "none";
               customIconPath = "";
               enableColorization = false;
