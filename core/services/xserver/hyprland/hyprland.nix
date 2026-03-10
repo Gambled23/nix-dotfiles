@@ -23,7 +23,7 @@ with lib;
     hyprshot # Screenshot tool
     playerctl
     brightnessctl
-    hyprpolkitagent # Polkit for gui applications
+    # hyprpolkitagent # Polkit for gui applications
     kdePackages.qtwayland
     libsForQt5.qt5.qtwayland
     pipewire
@@ -40,6 +40,7 @@ with lib;
     # blueman
     # swaynotificationcenter
     # easyeffects
+    kdePackages.qttools # for noctalia kde connect plugin
   ];
 
   # Optional, hint Electron apps to use Wayland:

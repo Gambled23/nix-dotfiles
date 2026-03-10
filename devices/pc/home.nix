@@ -16,11 +16,6 @@
   ];
 
   home.packages = 
-    # let
-    #   stremioPkgs = import inputs.nixpkgs-for-stremio {
-    #     inherit (pkgs) system;
-    #   };
-    # in
     with pkgs; [
     #* books
     #hakuneko
@@ -56,6 +51,7 @@
     keyguard
 
     #* media
+    stremio-linux-shell
     vlc
 
     #* media creation
@@ -89,7 +85,7 @@
   home.file.".zshrc".text = "export LD_LIBRARY_PATH=${pkgs.stdenv.cc.cc.lib}/lib:${pkgs.libGL}/lib/";
 
   services.flatpak.packages = [
-    "com.stremio.Stremio"
+    # "com.stremio.Stremio"
     "com.artemchep.keyguard"
   ];
 }
