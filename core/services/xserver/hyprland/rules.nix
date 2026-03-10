@@ -54,6 +54,7 @@
       "match:namespace noctalia-dock-.*$, blur on, blur_popups on, ignore_alpha 0.2"
       "match:namespace noctalia-notifications-.*$, blur on, blur_popups on, ignore_alpha 0.2"
       "match:namespace noctalia-toast-.*$, blur on, blur_popups on, ignore_alpha 0.2"
+      "match:namespace noctalia-launcher-.*$, blur on, blur_popups on, ignore_alpha 0.2"
     ];
   };
 }

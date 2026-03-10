@@ -22,6 +22,7 @@
     #* dev tools
     lazygit
     fzf
+    jq
 
     #* extras
     bat
