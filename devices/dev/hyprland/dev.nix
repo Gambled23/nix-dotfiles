@@ -16,7 +16,7 @@
       # See https://wiki.hypr.land/Configuring/Monitors/
 
       monitor = [
-        "eDP-1,1920x1200@60,0x0,1.15"
+        "eDP-1,1920x1200@60,0x0,1"
         "HDMI-A-1, 1920x1080@60, -1920x0, 1"
         "HDMI-A-1, addreserved, 25, 25, 40, 40"
       ];

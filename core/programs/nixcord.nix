@@ -11,6 +11,7 @@
     config = {
       autoUpdate = true;
       autoUpdateNotification = true;
+      notifyAboutUpdates = true;
       themeLinks = [
         https://raw.githubusercontent.com/shvedes/discord-gruvbox/refs/heads/main/gruvbox-dark.theme.css
       ];
@@ -42,7 +43,7 @@
         #   showLastFmLogo = false;
         # };
         mentionAvatars.enable = true;
-        # platformIndicators.enable = true;
+        platformIndicators.enable = true;
         # serverListIndicators.enable = true;
         # spotifyControls.enable = true;
         typingIndicator.enable = true;
@@ -51,7 +52,10 @@
         validReply.enable = true;
         validUser.enable = true;
         viewIcons.enable = true;
-        volumeBooster.enable = true;
+        volumeBooster = {
+          enable = true;
+          multiplier = 2.0;
+        };
         webScreenShareFixes.enable = true;
         whoReacted.enable = true;
       };
