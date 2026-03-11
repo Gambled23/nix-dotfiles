@@ -9,6 +9,8 @@
     discord.enable = false;
     vesktop.enable = true;
     config = {
+      autoUpdate = true;
+      autoUpdateNotification = true;
       themeLinks = [
         https://raw.githubusercontent.com/shvedes/discord-gruvbox/refs/heads/main/gruvbox-dark.theme.css
       ];
