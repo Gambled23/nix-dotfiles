@@ -136,28 +136,6 @@
         widgets = {
           left = [
             {
-              icon = "rocket";
-              id = "Launcher";
-              iconColor = "none";
-              useDistroLogo = false;
-              colorizeSystemIcon = "none";
-              customIconPath = "";
-              enableColorization = false;
-            }
-            {
-              id = "plugin:e11650:display-device";
-            }
-            {
-              defaultSettings = {
-                enableTodoIntegration = true;
-                notecardsEnabled = true;
-                pincardsEnabled = true;
-                position = "Bottom";
-                showCloseButton = false;
-              };
-              id = "plugin:clipper";
-            }
-            {
               clockColor = "none";
               customFont = "";
               formatHorizontal = "HH:mm";
@@ -166,6 +144,25 @@
               tooltipFormat = "HH:mm ddd, MMM dd";
               useCustomFont = false;
             }
+            {
+              icon = "rocket";
+              id = "Launcher";
+              iconColor = "none";
+              useDistroLogo = false;
+              colorizeSystemIcon = "none";
+              customIconPath = "";
+              enableColorization = false;
+            }
+            # {
+            #   defaultSettings = {
+            #     enableTodoIntegration = true;
+            #     notecardsEnabled = true;
+            #     pincardsEnabled = true;
+            #     position = "Bottom";
+            #     showCloseButton = false;
+            #   };
+            #   id = "plugin:clipper";
+            # }
             {
               characterCount = 2;
               colorizeIcons = false;
@@ -186,6 +183,38 @@
               showLabelsOnlyWhenOccupied = false;
               unfocusedIconsOpacity = 1;
             }
+            {
+              defaultSettings = {
+                borderRadius = 1;
+                expandDirection = "down";
+                focusBorderColor = "primary";
+                mainIcon = "layout-grid";
+                primaryPillColor = "none";
+                primaryShowPill = false;
+                primarySize = 0.9;
+                primarySymbolColor = "none";
+                secondaryPillColor = "primary";
+                secondaryShowPill = true;
+                secondarySize = 0.9;
+                secondarySymbolColor = "none";
+                workspaces = [
+                  {
+                    icon = "letter-a";
+                    name = "A";
+                  }
+                  {
+                    icon = "letter-s";
+                    name = "S";
+                  }
+                  {
+                    icon = "letter-d";
+                    name = "D";
+                  }
+                ];
+              };
+              id = "plugin:special-workspaces";
+            }
+
           ];
           center = [
             {
@@ -228,6 +257,9 @@
               pinned = [];
             }
             {
+              id = "plugin:kde-connect";
+            }
+            {
               deviceNativePath = "__default__";
               displayMode = "onhover";
               hideIfIdle = false;
@@ -242,6 +274,9 @@
               id = "Volume";
               middleClickCommand = "pwvucontrol || pavucontrol";
               textColor = "none";
+            }
+            {
+              id = "plugin:e11650:display-device";
             }
             {
               applyToAllMonitors = false;
@@ -370,22 +405,11 @@
 
       desktopWidgets = {
         enabled = true;
-        gridSnap = false;
+        gridSnap = true;
         monitorWidgets = [
           {
-            name= "eDP-1";
+            name= ["eDP-1" "sunshine" "DP-3"];
             widgets = [
-              {
-                clockStyle = "digital";
-                format = "HH:mm\\nd MMMM yyyy";
-                id = "Clock";
-                scale = 2.1418669661817136;
-                showBackground = true;
-                useCustomFont = false;
-                usePrimaryColor = false;
-                x = 1555;
-                y = 252;
-              }
               {
                 hideMode = "visible";
                 id = "MediaPlayer";
@@ -396,8 +420,38 @@
                 showButtons = true;
                 showVisualizer = true;
                 visualizerType = "linear";
-                x = 8;
-                y = 49;
+                x = 1220;
+                y = 60;
+              }
+              {
+                diskPath = "/";
+                id = "SystemStat";
+                layout = "bottom";
+                roundedCorners = true;
+                scale = 1.4080963667879236;
+                showBackground = true;
+                statType = "CPU";
+                x = 820;
+                y = 1020;
+              }
+            ];
+          }
+          {
+            name = ["HDMI-A-1"];
+            widgets = [
+              {
+                clockColor = "none";
+                clockStyle = "minimal";
+                customFont = "";
+                format = "HH:mm\\nd MMMM yyyy";
+                id = "Clock";
+                roundedCorners = true;
+                scale = 4.537139686148306;
+                showBackground = true;
+                useCustomFont = false;
+                usePrimaryColor = false;
+                x = 620;
+                y = 40;
               }
             ];
           }
@@ -765,14 +819,10 @@
           enabled = true;
           sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
         };
-        custom-sticker = {
-          enabled = true;
-          sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
-        };
-        kde-connect = {
-          enabled = true;
-          sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
-        };
+        # kde-connect = {
+        #   enabled = true;
+        #   sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
+        # };
         polkit-agent = {
           enabled = true;
           sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
