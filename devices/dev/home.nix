@@ -20,7 +20,9 @@
     android-studio
     jdk25_headless
     # remmina
-    postman
+    # postman
+    bruno
+    yaak
 
     #* media
     vlc

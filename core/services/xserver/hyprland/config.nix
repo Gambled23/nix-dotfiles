@@ -61,7 +61,7 @@
         # "systemctl --user enable --now hyprpaper.service"
         "systemctl --user enable --now hypridle.service"
         "uwsm app -- spotify %U"
-        "uwsm app -- vesktop %U"
+        "uwsm app -- discord %U"
         "uwsm app -- altus %U"
         "uwsm app -- kdeconnect-indicator %U"
         # "bluetoothctl connect 24:95:2F:60:BD:94"

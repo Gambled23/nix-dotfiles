@@ -6,7 +6,7 @@
     windowrule = [
       # Set default workspaces for apps
       "match:class ^(spotify)$, workspace 10"
-      "match:class ^(vesktop)$, workspace 9"
+      "match:class ^(discord)$, workspace 9"
       "match:class ^(Altus)$, workspace 9"
       "match:class ^(steam)$, workspace 8"
       "match:class ^(stremio)$, workspace 7"
@@ -16,7 +16,7 @@
       # "match:class ^(steam)$, fullscreen on"
 
       # Ignore focus on autostart apps
-      "match:class ^(steam|spotify|vesktop|Altus)$, no_initial_focus on"
+      "match:class ^(steam|spotify|discord|Altus)$, no_initial_focus on"
 
       # Ignore maximize requests from apps. You'll probably like this.
       "match:class .*, suppress_event maximize"
