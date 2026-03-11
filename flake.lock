@@ -910,15 +910,15 @@
         "nixpkgs": "nixpkgs_3"
       },
       "locked": {
-        "lastModified": 1772891434,
-        "narHash": "sha256-+MUN+5lOvWS6T4pvIZBGL4AKJkflLXGgVRYTlNeZEiE=",
-        "owner": "kaylorben",
+        "lastModified": 1773217223,
+        "narHash": "sha256-nuJm0CAgTFHQr900Euks0iTjcI5zagGfJTzeCEk3W8g=",
+        "owner": "gambled23",
         "repo": "nixcord",
-        "rev": "fc63af2dbc92cdcfeb6c650d986280057b0f135c",
+        "rev": "41d6b20512a433203018777b630853c96b0294f8",
         "type": "github"
       },
       "original": {
-        "owner": "kaylorben",
+        "owner": "gambled23",
         "repo": "nixcord",
         "type": "github"
       }

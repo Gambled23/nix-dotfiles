@@ -16,7 +16,7 @@
       inputs.home-manager.follows = "home-manager";
     };
 
-    nixcord.url = "github:kaylorben/nixcord";
+    nixcord.url = "github:gambled23/nixcord";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
