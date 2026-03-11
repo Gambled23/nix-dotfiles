@@ -186,7 +186,7 @@
             {
               defaultSettings = {
                 borderRadius = 1;
-                expandDirection = "down";
+                expandDirection = "left";
                 focusBorderColor = "primary";
                 mainIcon = "layout-grid";
                 primaryPillColor = "none";
