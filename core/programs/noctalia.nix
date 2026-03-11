@@ -408,7 +408,7 @@
         gridSnap = true;
         monitorWidgets = [
           {
-            name= ["eDP-1" "sunshine" "DP-3"];
+            name= "eDP-1";
             widgets = [
               {
                 hideMode = "visible";
@@ -437,7 +437,7 @@
             ];
           }
           {
-            name = ["HDMI-A-1"];
+            name = "HDMI-A-1";
             widgets = [
               {
                 clockColor = "none";
