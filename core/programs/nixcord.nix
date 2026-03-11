@@ -35,7 +35,6 @@
         fullSearchContext.enable = true;
         fullUserInChatbox.enable = true;
         gameActivityToggle.enable = true;
-        ghosted.enable = true;
         implicitRelationships.enable = true;
         # lastFMRichPresence = {
         #   enable = true;
