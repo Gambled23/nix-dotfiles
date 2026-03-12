@@ -19,10 +19,7 @@
     vscode
     android-studio
     jdk25_headless
-    # remmina
-    # postman
     bruno
-    yaak
 
     #* media
     vlc
