@@ -84,11 +84,11 @@
     jack.enable = true;
   };
 
-  environment = {
-  sessionVariables = lib.mkForce {
-      LD_LIBRARY_PATH = "${pkgs.stdenv.cc.cc.lib}/lib:${pkgs.libGL}/lib/:${pkgs.libxkbcommon}/lib/:${pkgs.libx11}/lib/:${pkgs.fontconfig}/lib";
-    };
-  };
+  # environment = {
+  # sessionVariables = lib.mkForce {
+  #     LD_LIBRARY_PATH = "${pkgs.stdenv.cc.cc.lib}/lib:${pkgs.libGL}/lib/:${pkgs.libxkbcommon}/lib/:${pkgs.libx11}/lib/:${pkgs.fontconfig}/lib";
+  #   };
+  # };
 
   nixpkgs.overlays = [
     inputs.millennium.overlays.default
