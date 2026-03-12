@@ -84,14 +84,20 @@
     jack.enable = true;
   };
 
-  # environment = {
-  # sessionVariables = {
-  #     LD_LIBRARY_PATH = "${pkgs.stdenv.cc.cc.lib}/lib:${pkgs.libGL}/lib/";
-  #   };
-  # };
+ environment.variables = {
+    LD_LIBRARY_PATH = with pkgs; lib.makeLibraryPath [
+      fontconfig
+      stdenv.cc.cc.lib
+      libGL
+      libxkbcommon
+      libx11
+    ];
+  }
 
   nixpkgs.overlays = [
     inputs.millennium.overlays.default
     # dolphin-overlay.overlays.default
   ];
+
+
 }
