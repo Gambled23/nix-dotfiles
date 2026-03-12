@@ -92,7 +92,7 @@
       libxkbcommon
       libx11
     ];
-  }
+  };
 
   nixpkgs.overlays = [
     inputs.millennium.overlays.default
