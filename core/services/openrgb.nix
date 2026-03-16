@@ -20,7 +20,7 @@ in {
     };
     services.udev.packages = [ pkgs.openrgb ];
     services.udev.extraRules = (builtins.readFile "${pkgs.openrgb}/lib/udev/rules.d/60-openrgb.rules");
-    boot.kernelModules = [ "i2c-dev" "i2c-piix4"];
+    boot.kernelModules = [ "i2c-dev" "i2c-piix4" "i2c-nct6775"];
     hardware.i2c.enable = true;
 
     systemd.services.no-rgb = {
