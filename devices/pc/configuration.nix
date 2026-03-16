@@ -35,7 +35,6 @@
   environment.systemPackages = with pkgs; [
     lact
     i2c-tools
-    openrgb-with-all-plugins
     (import ../../scripts/reboot-to-windows.nix { inherit pkgs; })
     (import ../../scripts/display-device.nix { inherit pkgs; })
     (import ../../scripts/modo-tele.nix { inherit pkgs; })

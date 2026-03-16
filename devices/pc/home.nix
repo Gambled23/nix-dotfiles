@@ -43,6 +43,7 @@
     # mangohud
 
     #* utils
+    openrgb-with-all-plugins
     polychromatic
     pdfarranger
     via

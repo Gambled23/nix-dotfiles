@@ -19,7 +19,8 @@ in {
       startupProfile = "off.orp";
     };
     services.udev.packages = [ pkgs.openrgb ];
-    boot.kernelModules = [ "i2c-dev" ];
+    services.udev.extraRules = (builtins.readFile "${pkgs.openrgb}/lib/udev/rules.d/60-openrgb.rules");
+    boot.kernelModules = [ "i2c-dev" "i2c-piix4"];
     hardware.i2c.enable = true;
 
     systemd.services.no-rgb = {
