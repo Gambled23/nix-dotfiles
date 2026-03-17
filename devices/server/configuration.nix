@@ -20,6 +20,7 @@
   ];
 
   environment.systemPackages = with pkgs; [
+    openclaw
   ];
   programs.nix-ld.enable = true; # for vscode remote server
 }
