@@ -41,6 +41,7 @@ with lib;
     # swaynotificationcenter
     # easyeffects
     kdePackages.qttools # for noctalia kde connect plugin
+    dragon-drop # for drag and drop support in yazi
   ];
 
   # Optional, hint Electron apps to use Wayland:
