@@ -12,7 +12,7 @@ pkgs.writeShellScriptBin "display-device" ''
     case "$opt" in
       h)
         echo "Usage: display-device -d <display_name>"
-        echo "  -d <display_name>   One of 'pc-gambled', 'steamdeck', 'dev-gambled', 'android-gambled', '1080p'"
+        echo "  -d <display_name>   One of 'pc-gambled', 'steamdeck', 'dev-gambled', 'android-gambled', '1080p', 'dev-borderless', 'dev-bordermore'"
         echo "  -h                  Show this help"
         exit 0
         ;;
@@ -25,6 +25,8 @@ pkgs.writeShellScriptBin "display-device" ''
         echo "  dev-gambled"
         echo "  android-gambled"
         echo "  1080p"
+        echo "  dev-borderless"
+        echo "  dev-bordermore"
         exit 0
         ;;
       c)
@@ -38,7 +40,7 @@ pkgs.writeShellScriptBin "display-device" ''
       \?)
         echo "Invalid option: -$OPTARG" >&2
         echo "Usage: display-device -d <display_name>"
-        echo "  -d <display_name>   One of 'pc-gambled', 'steamdeck', 'dev-gambled', 'android-gambled', '1080p'"
+        echo "  -d <display_name>   One of 'pc-gambled', 'steamdeck', 'dev-gambled', 'android-gambled', '1080p', 'dev-borderless', 'dev-bordermore'"
         echo "  -h                  Show this help"
         exit 1
         ;;
@@ -50,7 +52,7 @@ pkgs.writeShellScriptBin "display-device" ''
   if [ -z "$display_name" ]; then
     echo "No display name provided." >&2
     echo "Usage: display-device -d <display_name>"
-    echo "  -d <display_name>   One of 'pc-gambled', 'steamdeck', 'dev-gambled', 'android-gambled', '1080p'"
+    echo "  -d <display_name>   One of 'pc-gambled', 'steamdeck', 'dev-gambled', 'android-gambled', '1080p', 'dev-borderless', 'dev-bordermore'"
     exit 1
   fi
 
@@ -83,10 +85,16 @@ pkgs.writeShellScriptBin "display-device" ''
       hyprctl keyword monitor "sunshine,1920x1080@60,0x0,1"
       hyprctl keyword monitor "DP-3, disable"
       ;;
+    dev-borderless)
+      hyprctl keyword monitor "HDMI-A-1, addreserved, 28, 28, 40, 40"
+      ;;
+    dev-bordermore)
+      hyprctl keyword monitor "HDMI-A-1, addreserved, 0, 0, 0, 0"
+      ;;
     *)
       echo "Invalid display name: $display_name" >&2
       echo "Usage: display-device -d <display_name>"
-      echo "  -d <display_name>   One of 'pc-gambled', 'steamdeck', 'dev-gambled', 'android-gambled', '1080p'"
+      echo "  -d <display_name>   One of 'pc-gambled', 'steamdeck', 'dev-gambled', 'android-gambled', '1080p', 'dev-borderless', 'dev-bordermore'"
       echo "  -h                  Show this help"
       exit 1
       ;;

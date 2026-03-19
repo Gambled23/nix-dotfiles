@@ -32,7 +32,6 @@
         { run = "plugin compress -phl"; on = [ "c" "a" "u" ]; desc = "Archive selected files (password+header+level)"; }
         # Extras
         { run = "shell -- dragon -x -i -T %h"; on = [ "<C-n>" ]; desc = "Drag and drop files"; }
-        { run = [ "shell -- for path in %s; do echo "file://$path"; done | wl-copy -t text/uri-list" "yank" ]; on = [ "y" ]; desc = "Copy selected files to the system clipboard while yanking"; }
         { run = "shell \"$SHELL\" --block"; on = [ "!" ]; desc = "Open $SHELL here"; }
       ];
     };
