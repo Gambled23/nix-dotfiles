@@ -16,6 +16,7 @@
       smart-enter = pkgs.yaziPlugins.smart-enter;
       smart-filter = pkgs.yaziPlugins.smart-filter;
       starship = pkgs.yaziPlugins.starship;
+      wl-clipboard = pkgs.yaziPlugins.wl-clipboard;
     };
 
     keymap = {
@@ -24,6 +25,7 @@
         { run = "plugin smart-enter"; on = [ "l" ]; desc="Smart enter"; }
         { run = "plugin recycle-bin"; on = [ "g" "b" ]; desc="Recycle bin"; }
         { run = "plugin smart-filter"; on = [ "F" ]; desc="Smart filter"; }
+        { run = "plugin wl-clipboard"; on = [ "<C-y>" ]; desc="WL Clipboard"; }
         # Compress plugin
         { run = "plugin compress"; on = [ "c" "a" "a" ]; desc = "Archive selected files"; }
         { run = "plugin compress -p"; on = [ "c" "a" "p" ]; desc = "Archive selected files (password)"; }

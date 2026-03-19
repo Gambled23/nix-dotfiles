@@ -86,10 +86,10 @@ pkgs.writeShellScriptBin "display-device" ''
       hyprctl keyword monitor "DP-3, disable"
       ;;
     dev-borderless)
-      hyprctl keyword monitor "HDMI-A-1, addreserved, 28, 28, 40, 40"
+      hyprctl keyword monitor "HDMI-A-1, addreserved, 0, 0, 0, 0"
       ;;
     dev-bordermore)
-      hyprctl keyword monitor "HDMI-A-1, addreserved, 0, 0, 0, 0"
+      hyprctl keyword monitor "HDMI-A-1, addreserved, 28, 28, 40, 40"
       ;;
     *)
       echo "Invalid display name: $display_name" >&2
