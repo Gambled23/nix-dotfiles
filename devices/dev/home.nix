@@ -36,7 +36,7 @@
     libreoffice
     scrcpy
     miraclecast
-    gnome-network-displays
+    # gnome-network-displays
     moonlight-qt
     stremio-linux-shell
     # inputs.quickshell.packages.${pkgs.stdenv.hostPlatform.system}.default
@@ -49,5 +49,6 @@
   services.flatpak.packages = [
     # "com.stremio.Stremio"
     "com.artemchep.keyguard"
+    "org.gnome.NetworkDisplays"
   ];
 }

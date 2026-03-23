@@ -15,13 +15,19 @@
         versioning.type = "simple";
         path = "/home/gambled/Documents";
         enable = true;
-        devices = [ "pc-gambled" "home-gambled" "steamdeck" "server-gambled" "dev-gambled" ];
+        devices = [ "pc-gambled" "server-gambled" "dev-gambled" ];
       };
       "Pictures" = {
         versioning.type = "simple";
         path = "/home/gambled/Pictures";
         enable = true;
-        devices = [ "pc-gambled" "home-gambled" "steamdeck" "server-gambled" "dev-gambled" ];
+        devices = [ "pc-gambled" "server-gambled" "dev-gambled" ];
+      };
+      "SiYuan" = {
+        versioning.type = "simple";
+        path = "/home/gambled/SiYuan";
+        enable = true;
+        devices = [ "pc-gambled" "server-gambled" "dev-gambled" ];
       };
     };
 

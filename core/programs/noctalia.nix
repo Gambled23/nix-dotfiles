@@ -257,9 +257,6 @@
               pinned = [];
             }
             {
-              id = "plugin:kde-connect";
-            }
-            {
               deviceNativePath = "__default__";
               displayMode = "onhover";
               hideIfIdle = false;
@@ -278,13 +275,13 @@
             {
               id = "plugin:e11650:display-device";
             }
-            {
-              applyToAllMonitors = false;
-              displayMode = "onhover";
-              iconColor = "none";
-              id = "Brightness";
-              textColor = "none";
-            }
+            # {
+            #   applyToAllMonitors = false;
+            #   displayMode = "onhover";
+            #   iconColor = "none";
+            #   id = "Brightness";
+            #   textColor = "none";
+            # }
             {
               hideWhenZero = false;
               hideWhenZeroUnread = false;
@@ -354,10 +351,19 @@
               id = "Bluetooth";
             }
             {
-              id = "WallpaperSelector";
+              id = "NoctaliaPerformance";
             }
             {
-              id = "NoctaliaPerformance";
+              defaultSettings = {
+                enableTodoIntegration = true;
+                notecardsEnabled = true;
+                pincardsEnabled = true;
+                showCloseButton =true;
+              };
+              id = "plugin:clipper";
+            }
+            {
+              id = "plugin:kde-connect";
             }
           ];
           right = [
@@ -389,7 +395,7 @@
             id = "audio-card";
           }
           {
-            enabled = false;
+            enabled = true;
             id = "brightness-card";
           }
           {
