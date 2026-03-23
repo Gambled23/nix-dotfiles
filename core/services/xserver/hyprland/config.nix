@@ -20,7 +20,6 @@
     ../../vicinae.nix
     # ../../../programs/quickshell/quickshell.nix
     ./kitty.nix
-    ../../../programs/btop.nix
 
     # Hyprland settings
     ./animations.nix

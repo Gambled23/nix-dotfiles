@@ -10,7 +10,7 @@
       "$mainMod, O, exec, openrgb --profile 'off.orp'"
       "$mainMod, P, exec, scrcpy --render-driver=opengl -S -w -K -b15M --power-off-on-close"
       "$mainMod, F, exec, $web_browser"
-      "$mainMod, J, togglesplit," # dwindle
+      "$mainMod, H, togglesplit," # dwindle
       "$mainMod, K, exec, display-device -d pc-gambled"
       "$mainMod, L, exec, hyprlock"
       "$mainMod, RETURN, exec, $terminal"
@@ -23,6 +23,7 @@
 
       # Tools
       ", Print, exec, hyprshot -m region"
+      "$mainMod, ESCAPE, exec, konsole -e btop"
 
 
       # Move focus with mainMod + arrow keys

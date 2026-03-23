@@ -17,8 +17,8 @@
     #* dev tools
     dbeaver-bin
     vscode
-    android-studio
-    jdk25_headless
+    # android-studio
+    # jdk25_headless
     bruno
 
     #* media
@@ -35,12 +35,13 @@
     android-tools
     libreoffice
     scrcpy
+    miraclecast
     gnome-network-displays
     moonlight-qt
-    bitwarden-desktop
     stremio-linux-shell
     # inputs.quickshell.packages.${pkgs.stdenv.hostPlatform.system}.default
-    
+    siyuan
+
     #* webbrowsers
     google-chrome
   ];

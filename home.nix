@@ -8,14 +8,15 @@
 {
   imports = [
     #core/programs/alacritty.nix
+    core/programs/btop.nix
     core/programs/direnv.nix
     core/programs/git.nix
     core/programs/lsd.nix
-    #core/programs/neovim.nix
+    core/programs/neovim.nix
     core/programs/starship.nix
+    core/programs/yazi/yazi.nix
     core/programs/zsh.nix
     core/programs/zoxide.nix
-    core/programs/yazi/yazi.nix
   ];
   
   home.packages = with pkgs; [
