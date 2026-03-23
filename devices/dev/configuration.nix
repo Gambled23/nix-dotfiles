@@ -16,7 +16,7 @@
 
     # Desktop enviroment
     ../../core/services/xserver/hyprland/hyprland.nix
-    ../../core/services/xserver/kde/default.nix
+    # ../../core/services/xserver/kde/default.nix
     #../../core/services/xserver/gnome/default.nix
     #../../core/services/xserver/i3/default.nix
     #../../core/services/xserver/awesome/awesomewm.nix

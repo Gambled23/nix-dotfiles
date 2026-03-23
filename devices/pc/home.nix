@@ -50,6 +50,7 @@
     ente-auth
     bitwarden-desktop
     keyguard
+    headsetcontrol
 
     #* media
     stremio-linux-shell

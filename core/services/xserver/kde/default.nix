@@ -107,27 +107,27 @@ with lib;
       { from = 1714; to = 1764; } # KDE Connect
     ];
     allowedUDPPorts = [
-          # Moonlight
-          5353
-          47998
-          47999
-          48000
-          48002
-          48010
-          # Miracast
-          7236
-          5353
-        ];
+      # Moonlight
+      5353
+      47998
+      47999
+      48000
+      48002
+      48010
+      # Miracast
+      7236
+      5353
+    ];
     allowedTCPPorts = [
-          # MoonDeck Buddy
-          59999
-          # Moonlight
-          47984
-          47989
-          48010
-          # Miracast
-          7236
-          7250
-        ];
+      # MoonDeck Buddy
+      59999
+      # Moonlight
+      47984
+      47989
+      48010
+      # Miracast
+      7236
+      7250
+    ];
   };
 }

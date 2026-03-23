@@ -116,8 +116,8 @@
           {
             home-manager.users.gambled.imports = [
               ./devices/pc/home.nix
-              inputs.plasma-manager.homeModules.plasma-manager
-              ./core/services/xserver/kde/config.nix
+              # inputs.plasma-manager.homeModules.plasma-manager
+              # ./core/services/xserver/kde/config.nix
               spicetify-nix.homeManagerModules.default
               ./core/programs/spicetify.nix
               inputs.nixcord.homeModules.nixcord
@@ -151,8 +151,8 @@
           {
             home-manager.users.gambled.imports = [
               ./devices/dev/home.nix
-              inputs.plasma-manager.homeModules.plasma-manager
-              ./core/services/xserver/kde/config.nix
+              # inputs.plasma-manager.homeModules.plasma-manager
+              # ./core/services/xserver/kde/config.nix
               spicetify-nix.homeManagerModules.default
               ./core/programs/spicetify.nix
               inputs.nixcord.homeModules.nixcord

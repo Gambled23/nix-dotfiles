@@ -14,7 +14,6 @@ with lib;
     portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
   };
 
-
   environment.systemPackages = with pkgs; [
     # inputs.ambxst.packages.${pkgs.stdenv.hostPlatform.system}.default
     # kdePackages.dolphin
@@ -42,6 +41,8 @@ with lib;
     # easyeffects
     kdePackages.qttools # for noctalia kde connect plugin
     dragon-drop # for drag and drop support in yazi
+    pipewire
+    bibata-cursors
   ];
 
   # Optional, hint Electron apps to use Wayland:
@@ -59,4 +60,62 @@ with lib;
   security.pam.services.hyprlock = {};
 
   services.gnome.evolution-data-server.enable = true;
+
+  # SDDM for autologin
+  services.displayManager.defaultSession = "hyprland-uwsm";
+  services.displayManager = {
+    autoLogin.enable = true;
+    autoLogin.user = "gambled";
+    sddm = {
+      enable = true;
+      autoNumlock = true;
+      wayland.enable = true;
+    };
+  };
+
+  services.xserver = {
+    dpi = 98;
+    enable = true;
+    exportConfiguration = true;
+
+    # keyboard layout
+    xkb = {
+      layout = "us";
+      variant = "altgr-intl";
+    };
+  };
+
+  programs.kdeconnect.enable = true;
+  networking.firewall = {
+    enable = true;
+    allowedTCPPortRanges = [
+      { from = 1714; to = 1764; } # KDE Connect
+    ];
+    allowedUDPPortRanges = [
+      { from = 1714; to = 1764; } # KDE Connect
+    ];
+    allowedUDPPorts = [
+      # Moonlight
+      5353
+      47998
+      47999
+      48000
+      48002
+      48010
+      # Miracast
+      7236
+      5353
+    ];
+    allowedTCPPorts = [
+      # MoonDeck Buddy
+      59999
+      # Moonlight
+      47984
+      47989
+      48010
+      # Miracast
+      7236
+      7250
+    ];
+  };
 }
