@@ -9,12 +9,6 @@
   ];
   wayland.windowManager.hyprland = {
     settings = {
-      ################
-      ### MONITORS ###
-      ################
-
-      # See https://wiki.hypr.land/Configuring/Monitors/
-
       monitor = [
         "eDP-1,1920x1200@60,0x0,1"
         "HDMI-A-1, 1920x1080@60, -1920x0, 1"
@@ -36,8 +30,8 @@
       timeout = 900;
       on-timeout = "hyprlock";
     }
-    { # 30 min suspend pc
-      timeout = 1800;
+    { # 60 min suspend pc
+      timeout = 3600;
       on-timeout = "systemctl suspend";
     }
   ];
