@@ -7,10 +7,28 @@
   programs.starship = {
     enable = true;
     enableZshIntegration = true;
-    settings = {};
+    enableBashIntegration = true;
+    settings = {
+      format = lib.concatStrings [
+        "$username"
+        "$hostname"
+        "$directory"
+        "$git_branch"
+        "$git_state"
+        "$git_status"
+        "$cmd_duration"
+        "$python"
+        "$line_break"
+        "$character"
+      ];
+    };
+    presets = [
+      "bracketed-segments"
+      # "gruvbox-rainbow"
+    ];
   };
 
-  # home.file.".config/starship.toml".text = ''
+  # home.file.".config/starship.toml".text = lib.mkForce ''
   # format = """
   # $username\
   # $hostname\
