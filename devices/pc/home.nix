@@ -49,8 +49,8 @@
     via
     ente-auth
     bitwarden-desktop
-    keyguard
     headsetcontrol
+    siyuan
 
     #* media
     stremio-linux-shell
