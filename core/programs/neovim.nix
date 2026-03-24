@@ -11,9 +11,9 @@
     vimAlias = true;
     vimdiffAlias = true;
 
-    extraConfig = ''
-      let g:python3_host_prog = "${pkgs.python3}/bin/python";
-    '';
+    # extraConfig = ''
+    #   let g:python3_host_prog = "${pkgs.python3}/bin/python";
+    # '';
 
     plugins = with pkgs.vimPlugins; [
       nvim-lspconfig
