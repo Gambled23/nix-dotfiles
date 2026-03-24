@@ -25,30 +25,30 @@
     
     #* dev tools
     #android-studio
-    android-studio
-    jdk25_headless
+    # android-studio
+    # jdk25_headless
     dbeaver-bin
     vscode
 
     #* games
-    itch
+    # itch
     gamemode
     # wineWowPackages.stable
     winetricks
     ryubing
     # osu-lazer-bin
     #tetrio-desktop
-    prismlauncher #minecra
+    # prismlauncher #minecra
     # r2modman
     # mangohud
 
     #* utils
     openrgb-with-all-plugins
     polychromatic
-    pdfarranger
+    # pdfarranger
     via
-    ente-auth
-    bitwarden-desktop
+    # ente-auth
+    # bitwarden-desktop
     headsetcontrol
     siyuan
 
@@ -66,7 +66,7 @@
     materialgram
 
     #* guitarra
-    carla
+    # carla
     # guitarix
     tonelib-gfx
     tonelib-jam
@@ -81,7 +81,7 @@
     #* webbrowsers
     google-chrome
 
-    inputs.sls-steam.packages.${pkgs.stdenv.hostPlatform.system}.default
+    # inputs.sls-steam.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 
   home.file.".zshrc".text = "export LD_LIBRARY_PATH=${pkgs.stdenv.cc.cc.lib}/lib:${pkgs.libGL}/lib/:${pkgs.libxkbcommon}/lib/:${pkgs.libx11}/lib/:${pkgs.fontconfig}/lib";
