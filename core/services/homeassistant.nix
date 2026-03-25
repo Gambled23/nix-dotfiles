@@ -3,6 +3,7 @@ let
   ssh_command = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled ";
 in
 {
+  # systemctl --user stop openclaw-gateway
   services.home-assistant = {
     enable = true;
     extraPackages = ps: with ps; [ psycopg2 ];
