@@ -5,7 +5,9 @@ in
 {
   programs.spicetify = {
     enable = true;
-    # theme = spicePkgs.themes.onepunch;
+    # theme = {
+    #   name = lib.mkForce "onepunch";
+    # };
 
     enabledCustomApps = with spicePkgs.apps; [
       # newReleases
@@ -14,18 +16,22 @@ in
     ];
 
     enabledExtensions = with spicePkgs.extensions; [
+      aiBandBlocker
       # autoSkipVideo
       # addToQueueTop
-      # beautifulLyrics
+      beautifulLyrics
+      betterGenres
       # bookmark
       # copyToClipboard
-      # fullAppDisplayMod
+      coverAmbience
       # goToSong
       # groupSession
       # history
       # lastfm
       loopyLoop
-      # playingSource
+      madeForYouShortcut
+      playingSource
+      playNext
       # popupLyrics
       # powerBar
       # savePlaylists

@@ -21,6 +21,7 @@
   
   home.packages = with pkgs; [
     #* dev tools
+    devenv
     lazygit
     fzf
     jq
