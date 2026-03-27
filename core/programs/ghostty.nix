@@ -12,8 +12,10 @@
     enableZshIntegration = true;
     enableBashIntegration = true;
     settings = {
+      cursor-click-to-move = true;
       theme = "Gruvbox Dark";
       background-opacity = 0.7;
+      background-blur = false;
     };
   };
 }
