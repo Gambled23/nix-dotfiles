@@ -69,7 +69,7 @@
         pinnedApps = [ ];
         useApp2Unit = false;
         sortByMostUsed = true;
-        terminalCommand = "konsole -e";
+        terminalCommand = "ghostty -e";
         customLaunchPrefixEnabled = false;
         customLaunchPrefix = "";
         viewMode = "list";
