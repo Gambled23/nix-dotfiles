@@ -44,8 +44,8 @@
       ###################
       ### MY PROGRAMS ###
       ###################
-      "$terminal" = "uwsm app -- konsole";
-      "$fileManager" = "konsole -e yazi";
+      "$terminal" = "uwsm app -- ghostty";
+      "$fileManager" = "$terminal -e yazi";
       "$web_browser" = "uwsm app -- google-chrome-stable";
       "$code" = "uwsm app -- code";
       "$menu" = "uwsm app -- vicinae toggle";
@@ -57,7 +57,7 @@
       #################
       "exec-once" = [
         # "systemctl --user enable --now hyprpolkitagent.service"
-        "konsole -e noctalia-shell -d"
+        "ghostty -e noctalia-shell -d"
         # "systemctl --user enable --now hyprpaper.service"
         "systemctl --user enable --now hypridle.service"
         "uwsm app -- spotify %U"

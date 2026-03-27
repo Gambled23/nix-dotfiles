@@ -22,7 +22,7 @@
       rm = "rm -riv";
       cd = "z";
       mdb = "mariadb -u root -p";
-      noctalia = "noctalia-shell kill && konsole -e noctalia-shell -d";
+      noctalia = "noctalia-shell kill && ghostty -e noctalia-shell -d";
     };
     
     initContent = "source <(fzf --zsh)\n

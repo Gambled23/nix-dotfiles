@@ -10,6 +10,7 @@
   imports = [
     ../../home.nix
     ./hyprland/dev.nix
+    ../../core/programs/ghostty.nix
     # ../../core/programs/firefox.nix
   ];
 
