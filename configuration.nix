@@ -127,4 +127,5 @@
 
   services.power-profiles-daemon.enable = true;
   services.upower.enable = true;
+  programs.nix-index-database.comma.enable = true;
 }
