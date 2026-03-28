@@ -55,6 +55,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    nix-index-database = {
+      url = "github:nix-community/nix-index-database";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     
     # Nur repo for firefox extensions
     # nur.url = "github:nix-community/NUR";
@@ -82,6 +87,7 @@
       vicinae,
       millennium,
       sls-steam,
+      nix-index-database,
       ... 
      }@inputs:
   let
@@ -91,6 +97,7 @@
     };
 
     commonModules = [
+      nix-index-database.nixosModules.default
       home-manager.nixosModules.home-manager
       # nur.modules.nixos.default
       {
