@@ -5,6 +5,8 @@
     ./core/services/openssh.nix
     ./core/services/syncthing.nix
     ./core/services/zerotier.nix
+    ./cachix/nvf.nix
+    ./cachix.nix
   ];
 
   nix = {
@@ -69,6 +71,7 @@
 
   hardware.xone.enable = true;
   environment.systemPackages = with pkgs; [
+    cachix.bin
     grub2
     (import ./scripts/nix-rbd.nix { inherit pkgs; })
     (import ./scripts/update-flake.nix { inherit pkgs; })
@@ -134,4 +137,5 @@
     clean.extraArgs = "--keep-since 4d --keep 3";
     flake = "./"; # sets NH_OS_FLAKE variable for you
   };
+  nix.settings.trusted-users = [ "root" "gambled" ];
 }

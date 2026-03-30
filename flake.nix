@@ -60,6 +60,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    nvf = {
+      url = "github:NotAShelf/nvf";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     
     # Nur repo for firefox extensions
     # nur.url = "github:nix-community/NUR";
@@ -105,6 +110,7 @@
         home-manager.useUserPackages = true;
         home-manager.users.gambled.imports = [
           inputs.nix-flatpak.homeManagerModules.nix-flatpak
+          inputs.nvf.homeManagerModules.default
         ];
         home-manager.extraSpecialArgs = specialArgs;
       }
