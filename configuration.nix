@@ -25,11 +25,11 @@
         "yazi.cachix.org-1:Dcdz63NZKfvUCbDGngQDAZq6kOroIrFoyO064uvLh8k="
       ];
     };
-    gc = {
-      automatic = true;
-      dates = "weekly";
-      options = "--delete-older-than 7d";
-    };
+    # gc = {
+    #   automatic = true;
+    #   dates = "weekly";
+    #   options = "--delete-older-than 7d";
+    # };
   };
 
   boot.extraModprobeConfig = '' options bluetooth disable_ertm=1 '';
@@ -128,4 +128,10 @@
   services.power-profiles-daemon.enable = true;
   services.upower.enable = true;
   programs.nix-index-database.comma.enable = true;
+  programs.nh = {
+    enable = true;
+    clean.enable = true;
+    clean.extraArgs = "--keep-since 4d --keep 3";
+    flake = "./"; # sets NH_OS_FLAKE variable for you
+  };
 }

@@ -16,8 +16,9 @@ in
     ];
 
     enabledExtensions = with spicePkgs.extensions; [
+      adblock
       aiBandBlocker
-      # autoSkipVideo
+      autoSkipVideo
       # addToQueueTop
       beautifulLyrics
       betterGenres
