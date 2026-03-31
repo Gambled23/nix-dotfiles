@@ -4,27 +4,27 @@
   wayland.windowManager.hyprland.settings = {
     bind = [
       "$mainMod, Q, killactive,"
-      # "$mainMod, G, hyprexpo:expo, toggle"
       "$mainMod, E, exec, $fileManager"
       "$mainMod, R, exec, $menu"
-      "$mainMod, O, exec, openrgb --profile 'off.orp'"
-      "$mainMod, P, exec, scrcpy --render-driver=opengl -S -w -K -b15M --power-off-on-close"
       "$mainMod, F, exec, $web_browser"
-      "$mainMod, H, togglesplit," # dwindle
-      "$mainMod, K, exec, display-device -d pc-gambled"
-      "$mainMod, L, exec, hyprlock"
       "$mainMod, RETURN, exec, $terminal"
       "$mainMod, C, exec, $code"
-      "$mainMod, V, exec, vicinae vicinae://extensions/vicinae/clipboard/history"
-      "$mainMod, B, exec, vicinae vicinae://extensions/vicinae/bluetooth/devices"
+
+      # "$mainMod, V, exec, vicinae vicinae://extensions/vicinae/clipboard/history"
+      # "$mainMod, B, exec, vicinae vicinae://extensions/vicinae/bluetooth/devices"
       # "$mainMod, B, exec, bluetoothctl connect 24:95:2F:60:BD:94"
+
+      "$mainMod, L, exec, hyprlock"
       "$mainMod, X, togglefloating,"
       "$mainMod, M, exit,"
 
+      # Connect to streaming services
+      "$mainMod, O, exec, moonlight stream 'el sunchine' 'dev-gambled'"
+      "$mainMod, P, exec, scrcpy --render-driver=opengl -S -w -K -b15M --power-off-on-close"
+
       # Tools
       ", Print, exec, hyprshot -m region"
-      "$mainMod, ESCAPE, exec, konsole -e btop"
-
+      "$mainMod, ESCAPE, exec, $terminal -e btop"
 
       # Move focus with mainMod + arrow keys
       "$mainMod, left, movefocus, l"
@@ -33,6 +33,9 @@
       "$mainMod, down, movefocus, d"
 
       # Switch workspaces with mainMod + [0-9]
+      "$mainMod, A, togglespecialworkspace, A"
+      "$mainMod, S, togglespecialworkspace, S"
+      "$mainMod, D, togglespecialworkspace, D"
       "$mainMod, 1, workspace, 1"
       "$mainMod, 2, workspace, 2"
       "$mainMod, 3, workspace, 3"
@@ -56,13 +59,8 @@
       "$mainMod SHIFT, 8, movetoworkspacesilent, 8"
       "$mainMod SHIFT, 9, movetoworkspacesilent, 9"
       "$mainMod SHIFT, 0, movetoworkspacesilent, 10"
-
-      # Example special workspace (scratchpad)
-      "$mainMod, S, togglespecialworkspace, S"
-      "$mainMod SHIFT, S, movetoworkspace, special:S"
-      "$mainMod, A, togglespecialworkspace, A"
       "$mainMod SHIFT, A, movetoworkspace, special:A"
-      "$mainMod, D, togglespecialworkspace, D"
+      "$mainMod SHIFT, S, movetoworkspace, special:S"
       "$mainMod SHIFT, D, movetoworkspace, special:D"
 
       # Scroll through existing workspaces with mainMod + scroll
