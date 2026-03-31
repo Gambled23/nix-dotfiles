@@ -80,7 +80,9 @@
 
     bindm = [
       "$mainMod, mouse:272, movewindow"
+      "$mainMod, Control_L, movewindow"
       "$mainMod, mouse:273, resizewindow"
+      "$mainMod, ALT_L, resizewindow"
     ];
 
     bindel = [

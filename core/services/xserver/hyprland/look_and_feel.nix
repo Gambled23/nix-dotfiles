@@ -21,6 +21,10 @@
       allow_tearing = false;
 
       layout = "dwindle";
+
+      snap = {
+        enabled = true;
+      };
     };
 
     decoration = {
@@ -34,8 +38,8 @@
 
       shadow = {
         enabled = true;
-        range = 4;
-        render_power = 3;
+        range = 6;
+        render_power = 4;
       };
 
       # https://wiki.hypr.land/Configuring/Variables/#blur
