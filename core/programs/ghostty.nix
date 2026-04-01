@@ -17,6 +17,7 @@
       background-opacity = 0.7;
       background-blur = false;
       confirm-close-surface = false;
+      shell-integration-features = true;
     };
   };
 }
