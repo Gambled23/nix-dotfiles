@@ -90,7 +90,7 @@
   # };
 
   nixpkgs.overlays = [
-    inputs.millennium.overlays.default
+    # inputs.millennium.overlays.default
     # dolphin-overlay.overlays.default
   ];
 

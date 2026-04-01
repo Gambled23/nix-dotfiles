@@ -83,7 +83,7 @@
     #* webbrowsers
     google-chrome
 
-    # inputs.sls-steam.packages.${pkgs.stdenv.hostPlatform.system}.default
+    inputs.sls-steam.packages.${pkgs.stdenv.hostPlatform.system}.wrapped
   ];
 
   home.file.".zshrc".text = "export LD_LIBRARY_PATH=${pkgs.stdenv.cc.cc.lib}/lib:${pkgs.libGL}/lib/:${pkgs.libxkbcommon}/lib/:${pkgs.libx11}/lib/:${pkgs.fontconfig}/lib";

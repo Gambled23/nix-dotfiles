@@ -8,12 +8,12 @@
     gamescopeSession.enable = true;
     # extest.enable = true;
     protontricks.enable = true;
-    package = pkgs.millennium-steam.override {
-      extraEnv = {
-        LD_AUDIT = "${inputs.sls-steam.packages.${pkgs.system}.sls-steam}/library-inject.so:${inputs.sls-steam.packages.${pkgs.system}.sls-steam}/SLSsteam.so";
-        WINEDLLOVERRIDES = "OnlineFix64=n;SteamOverlay64=n;winmm=n,b;dnet=n;steam_api64=n;winhttp=n,b";
-      };
-    };
+    # package = pkgs.millennium-steam.override {
+    #   extraEnv = {
+    #     LD_AUDIT = "${inputs.sls-steam.packages.${pkgs.system}.sls-steam}/library-inject.so:${inputs.sls-steam.packages.${pkgs.system}.sls-steam}/SLSsteam.so";
+    #     WINEDLLOVERRIDES = "OnlineFix64=n;SteamOverlay64=n;winmm=n,b;dnet=n;steam_api64=n;winhttp=n,b";
+    #   };
+    # };
 
     extraCompatPackages = with pkgs; [
       proton-ge-bin
