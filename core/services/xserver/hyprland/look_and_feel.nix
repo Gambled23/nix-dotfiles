@@ -7,8 +7,8 @@
   # https://wiki.hypr.land/Configuring/Variables/#misc
   wayland.windowManager.hyprland.settings = {
     general = {
-      gaps_in = 2;
-      gaps_out = 1;
+      gaps_in = 1;
+      gaps_out = 0;
       border_size = 0;
 
       "col.active_border" = lib.mkForce "rgba(98971aee) rgba(b8bb26ee)";
