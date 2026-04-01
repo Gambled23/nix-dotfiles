@@ -55,7 +55,7 @@
     siyuan
 
     #* media
-    stremio-linux-shell
+    # stremio-linux-shell
     vlc
 
     #* media creation

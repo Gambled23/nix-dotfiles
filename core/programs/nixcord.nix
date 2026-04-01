@@ -48,10 +48,8 @@
         mentionAvatars.enable = true;
         moyai.enable = true;
         moreCommands.enable = true;
-        moreKaomoji.enable = true;
         moreStickers.enable = true;
         noNitroUpsell.enable = true;
-        noOnboarding.enable = true;
         platformIndicators.enable = true;
         # serverListIndicators.enable = true;
         # spotifyControls.enable = true;

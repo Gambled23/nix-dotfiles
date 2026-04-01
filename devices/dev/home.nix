@@ -39,7 +39,7 @@
     miraclecast
     # gnome-network-displays
     moonlight-qt
-    stremio-linux-shell
+    # stremio-linux-shell
     # inputs.quickshell.packages.${pkgs.stdenv.hostPlatform.system}.default
     siyuan
 
