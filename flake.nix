@@ -73,7 +73,7 @@
     #nixpkgs-xr.url = "github:nix-community/nixpkgs-xr";
 
     # Steam thingies
-    # millennium.url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
+    millennium.url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
     # jovian-nixos.url = "github:Jovian-Experiments/Jovian-NixOS";
   };
 
@@ -90,7 +90,7 @@
       # dolphin-overlay,
       stylix,
       vicinae,
-      # millennium,
+      millennium,
       sls-steam,
       nix-index-database,
       ... 
@@ -134,6 +134,7 @@
               spicetify-nix.homeManagerModules.default
               ./core/programs/spicetify.nix
               inputs.nixcord.homeModules.nixcord
+              inputs.sls-steam.homeModules.sls-steam
               ./core/programs/nixcord.nix
               vicinae.homeManagerModules.default
             ];

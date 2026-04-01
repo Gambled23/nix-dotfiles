@@ -5,22 +5,42 @@
     remotePlay.openFirewall = true;
     localNetworkGameTransfers.openFirewall = true;
     dedicatedServer.openFirewall = true;
-    gamescopeSession.enable = true;
     # extest.enable = true;
     protontricks.enable = true;
-    package = pkgs.steam.override {
+    gamescopeSession = {
+      enable = true;
+      args = [
+        "--mangoapp"
+      ];
+    };
+    package = pkgs.millennium-steam.override {
       extraEnv = {
-        LD_AUDIT = "${inputs.sls-steam.packages.${pkgs.system}.sls-steam}/library-inject.so:${inputs.sls-steam.packages.${pkgs.system}.sls-steam}/SLSsteam.so";
-        WINEDLLOVERRIDES = "OnlineFix64=n;SteamOverlay64=n;winmm=n,b;dnet=n;steam_api64=n;winhttp=n,b";
+        MANGOHUD = true;
+        OBS_VKCAPTURE = true;
+        # LD_AUDIT = "${inputs.sls-steam.packages.${pkgs.system}.sls-steam}/library-inject.so:${inputs.sls-steam.packages.${pkgs.system}.sls-steam}/SLSsteam.so";
+        # WINEDLLOVERRIDES = "OnlineFix64=n;SteamOverlay64=n;winmm=n,b;dnet=n;steam_api64=n;winhttp=n,b";
       };
     };
+
 
     extraCompatPackages = with pkgs; [
       proton-ge-bin
     ];
   };
+  programs.gamescope = {
+    enable = true;
+    capSysNice = true;
+    args = [
+      "--mangoapp"
+    ];
+  };
   programs.gamemode.enable = true;
 
+  environment.systemPackages = with pkgs; [
+    protonup-ng
+    inputs.sls-steam.packages.${pkgs.system}.wrapped
+    gamescope-wsi
+  ];
 
   # jovian = {
   #   steam = {

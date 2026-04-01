@@ -35,6 +35,8 @@
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
+    extraPackages = with pkgs; [gamemode];
+    extraPackages32 = with pkgs; [gamemode];
   };
   hardware.amdgpu.initrd.enable = true;
   services.xserver.videoDrivers = ["modesetting"];
