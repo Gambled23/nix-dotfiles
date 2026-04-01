@@ -12,6 +12,7 @@
     #../../core/programs/corectrl.nix
     ../../core/services/docker.nix
     ../../core/services/mariadb.nix
+    ../../core/services/ollama.nix
     ../../core/services/openrgb.nix
     ../../core/programs/steam.nix
     ../../core/services/sunshine.nix
