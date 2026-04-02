@@ -62,7 +62,6 @@
   };
 
   time.timeZone = "America/Mexico_City";
-  i18n.defaultLocale = "es_ES.UTF-8";
 
   # Enable sound with pipewire.
   #sound.enable = true;

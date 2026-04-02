@@ -25,7 +25,7 @@
       "match:class ^$, match:title ^$, match:xwayland 1, match:float 1, match:pin 0"
 
       # Always set opacity for these apps
-      "match:class ^(kitty|org.kde.dolphin|gjs|DBeaver|spotify)$, opacity 0.85"
+      # "match:class ^(kitty|org.kde.dolphin|gjs|DBeaver|spotify)$, opacity 0.85"
       # Opacity only on focus loss
       # "match:class ^(code)$, opacity 1 0.8"
       "match:title Pixel 9 Pro XL, float on, center on, min_size 336 748, max_size 1344 2992, size 518 1153, keep_aspect_ratio on"
