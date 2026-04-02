@@ -10,12 +10,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    plasma-manager = {
-      url = "github:pjones/plasma-manager";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.home-manager.follows = "home-manager";
-    };
-
     nixcord.url = "github:kaylorben/nixcord";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
@@ -42,11 +36,6 @@
 
     noctalia = {
       url = "github:noctalia-dev/noctalia-shell";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    yazi = {
-      url = "github:sxyazi/yazi";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -81,7 +70,6 @@
       self, 
       nixpkgs, 
       home-manager,
-      plasma-manager, 
       spicetify-nix, 
       nixos-hardware,
       # nur,
@@ -129,7 +117,6 @@
           {
             home-manager.users.gambled.imports = [
               ./devices/pc/home.nix
-              # inputs.plasma-manager.homeModules.plasma-manager
               # ./core/services/xserver/kde/config.nix
               spicetify-nix.homeManagerModules.default
               ./core/programs/spicetify.nix
@@ -165,7 +152,6 @@
           {
             home-manager.users.gambled.imports = [
               ./devices/dev/home.nix
-              # inputs.plasma-manager.homeModules.plasma-manager
               # ./core/services/xserver/kde/config.nix
               spicetify-nix.homeManagerModules.default
               ./core/programs/spicetify.nix

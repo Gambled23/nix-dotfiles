@@ -126,7 +126,7 @@
         marginHorizontal = 4;
         frameThickness = 4;
         frameRadius = 10;
-        outerCorners = true;
+        outerCorners = false;
         displayMode = "always_visible";
         fontScale = 1;
         middleClickAction = "none";

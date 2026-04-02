@@ -46,11 +46,11 @@
       blur = {
         enabled = true;
         popups = true;
-        special = true;
-        noise = 0.06;
+        special = false;
+        noise = 0.05;
         new_optimizations = true;
-        size = 5;
-        passes = 3;
+        size = 6;
+        passes = 2;
         vibrancy = 0.8;
         contrast = 1.0;
         brightness = 1.3;
