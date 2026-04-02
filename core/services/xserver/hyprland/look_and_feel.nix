@@ -49,7 +49,7 @@
         special = false;
         noise = 0;
         new_optimizations = true;
-        size = 8;
+        size = 7;
         passes = 2;
         vibrancy = 0.8;
         contrast = 1.0;
