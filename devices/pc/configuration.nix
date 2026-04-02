@@ -12,7 +12,7 @@
     #../../core/programs/corectrl.nix
     ../../core/services/docker.nix
     ../../core/services/mariadb.nix
-    ../../core/services/ollama.nix
+    # ../../core/services/ollama.nix
     ../../core/services/openrgb.nix
     ../../core/programs/steam.nix
     ../../core/services/sunshine.nix
@@ -36,7 +36,7 @@
   environment.systemPackages = with pkgs; [
     lact
     i2c-tools
-    openclaw
+    # openclaw
     (import ../../scripts/reboot-to-windows.nix { inherit pkgs; })
     (import ../../scripts/display-device.nix { inherit pkgs; })
     (import ../../scripts/modo-tele.nix { inherit pkgs; })
@@ -96,9 +96,9 @@
     # dolphin-overlay.overlays.default
   ];
 
-  nixpkgs.config.permittedInsecurePackages = [
-    "openclaw-2026.3.12"
-  ];
+  # nixpkgs.config.permittedInsecurePackages = [
+  #   "openclaw-2026.3.12"
+  # ];
 
   
 }
