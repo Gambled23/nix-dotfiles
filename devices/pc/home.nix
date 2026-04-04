@@ -69,7 +69,7 @@
 
     #* guitarra
     # carla
-    # guitarix
+    guitarix
     tonelib-gfx
     tonelib-jam
 
