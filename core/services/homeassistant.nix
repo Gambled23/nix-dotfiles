@@ -11,7 +11,7 @@ in
     extraComponents = [
       "analytics"
       "backup"
-      "bluetooth"
+      # "bluetooth"
       "cast"
       "glances"
       "google_translate"
