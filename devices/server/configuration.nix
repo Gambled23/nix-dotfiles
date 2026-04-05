@@ -20,10 +20,10 @@
   ];
 
   environment.systemPackages = with pkgs; [
-    openclaw
+    # openclaw
   ];
   nixpkgs.config.permittedInsecurePackages = [
-    "openclaw-2026.3.12"
+    # "openclaw-2026.3.12"
   ];
   programs.nix-ld.enable = true; # for vscode remote server
 }
