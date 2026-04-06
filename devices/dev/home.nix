@@ -49,8 +49,8 @@
   ];
 
   services.flatpak.packages = [
-    # "com.stremio.Stremio"
+    "com.stremio.Stremio"
     "com.artemchep.keyguard"
-    "org.gnome.NetworkDisplays"
+    # "org.gnome.NetworkDisplays"
   ];
 }
