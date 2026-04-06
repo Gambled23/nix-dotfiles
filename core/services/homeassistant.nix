@@ -6,6 +6,7 @@ in
   # systemctl --user stop openclaw-gateway
   services.home-assistant = {
     enable = true;
+    configDir = "/var/lib/home-assistant";
     extraPackages = ps: with ps; [ psycopg2 ];
     # openFirewall = true;
     extraComponents = [
