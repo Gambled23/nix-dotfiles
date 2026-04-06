@@ -14,7 +14,7 @@
     core/programs/lsd.nix
     core/programs/neovim.nix
     core/programs/starship.nix
-    core/programs/yazi/yazi.nix
+    # core/programs/yazi/yazi.nix
     core/programs/zsh.nix
     core/programs/zoxide.nix
   ];

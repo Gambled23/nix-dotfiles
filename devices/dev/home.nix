@@ -16,6 +16,7 @@
 
   home.packages = with pkgs; [
     #* dev tools
+    speedcrunch
     dbeaver-bin
     vscode
     # android-studio
