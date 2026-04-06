@@ -1,6 +1,6 @@
 { config, pkgs, lib, inputs, outputs, ... }:
 {
-  system.stateVersion = "25.05";
+  system.stateVersion = "26.11";
   networking.hostName = "pc-gambled";
   imports = [
     ../../configuration.nix
