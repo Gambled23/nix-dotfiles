@@ -15,16 +15,53 @@
           # sourcePlugins = [ "lsp" "path" "snippets" "buffer" ];
         };
       };
+      
+      vim.autopairs = {
+        nvim-autopairs.enable = true;
+      };
 
       vim.clipboard = {
         enable = true;
         providers.wl-copy.enable = true;
       };
 
+      vim.dashboard = {
+        alpha = {
+          enable = true;
+          theme = "dashboard";
+        };
+      };
+
+      vim.diagnostics = {
+        enable = true;
+        config = {
+          virtual_lines = true;
+          virtual_text = true;
+          update_in_insert = true;
+          underline = true;
+        };
+      };
+
+      vim.debugger = {
+        nvim-dap = {
+          enable = true;
+          ui.enable = true;
+          ui.autoStart = true;
+        };
+      };
+
       vim.filetree = {
         nvimTree = {
           enable = true;
         };
+      };
+
+      vim.gestures = {
+        gesture-nvim.enable = true;
+      };
+
+      vim.git = {
+        enable = true;
       };
 
       vim.globals = {
@@ -59,12 +96,51 @@
         languages = [ "en" ];
       };
 
+      # List of https://github.com/nvim-mini/mini.nvim
+      vim.mini = {
+        animate.enable = true;
+        bracketed.enable = true;
+        clue.enable = true;
+        cursorword.enable = true;
+        comment.enable = true;
+        move.enable = true;
+      };
+
+      vim.minimap = {
+        codewindow.enable = true;
+      };
+
       vim.notify = {
         nvim-notify.enable = true;
       };
 
+      vim.presence = {
+        neocord.enable = true;
+      };
+
+      vim.projects = {
+        project-nvim = {
+          enable = true;
+
+        };
+      };
+
+      vim.runner = {
+        run-nvim.enable = true;
+      };
+
       vim.telescope = {
         enable = true;
+      };
+
+      vim.terminal = {
+        toggleterm = {
+          enable = true;
+          mappings.open = "<leader>j";
+          lazygit = {
+            enable = true;
+          };
+        };
       };
 
       vim.theme = lib.mkForce {
@@ -91,6 +167,10 @@
         colorful-menu-nvim.enable = true;
         colorizer.enable = true;
         smartcolumn.enable = true;
+      };
+
+      vim.undoFile = {
+        enable = true;
       };
 
       vim.utility = {
