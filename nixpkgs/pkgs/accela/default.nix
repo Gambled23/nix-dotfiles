@@ -12,20 +12,7 @@ let
     dotnet-runtime_9
   ];
 
-  justPlayback = pkgs.python3Packages.buildPythonPackage rec {
-    pname = "just-playback";
-    version = "0.1.8";
-    pyproject = true;
-
-    src = pkgs.fetchurl {
-      url = "https://files.pythonhosted.org/packages/a4/2d/19ffa29233196f146dd98ffcfd3751b81e43efdd6274f5fac0bdd245038d/just_playback-0.1.8.tar.gz";
-      sha256 = "sha256-5ZdHSfEPque7drPx43eaE2knWrF52HWdrifp8ptBA1A=";
-    };
-
-    build-system = with pkgs.python3Packages; [ setuptools cffi ];
-
-    dependencies = with pkgs.python3Packages; [ cffi tinytag pydub ];
-  };
+  justPlayback = pkgs.python3Packages.callPackage ../justPlayback/package.nix { };
 
   pythonEnv = pkgs.python3.withPackages (ps: with ps; [
     pyqt6 psutil beautifulsoup4 requests configobj cryptography 
