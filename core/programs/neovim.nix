@@ -26,10 +26,8 @@
       };
 
       vim.dashboard = {
-        alpha = {
-          enable = true;
-          theme = "dashboard";
-        };
+        alpha.enable = true;
+        alpha.theme = "startify";
       };
 
       vim.diagnostics = {
@@ -56,9 +54,9 @@
         };
       };
 
-      vim.gestures = {
-        gesture-nvim.enable = true;
-      };
+      # vim.gestures = {
+      #   gesture-nvim.enable = true;
+      # };
 
       vim.git = {
         enable = true;
@@ -106,9 +104,9 @@
         move.enable = true;
       };
 
-      # vim.minimap = {
-      #   codewindow.enable = true;
-      # };
+      vim.minimap = {
+        minimap-vim.enable = true;
+      };
 
       vim.notify = {
         nvim-notify.enable = true;
