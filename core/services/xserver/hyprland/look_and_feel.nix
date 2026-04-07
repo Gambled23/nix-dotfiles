@@ -34,7 +34,7 @@
       # Change transparency of focused and unfocused windows
       active_opacity = 1.0;
       inactive_opacity = 1.0;
-      dim_special = 0;
+      dim_special = 0.5;
 
       shadow = {
         enabled = true;
@@ -53,7 +53,7 @@
         passes = 2;
         vibrancy = 0.8;
         contrast = 1.0;
-        brightness = 1;
+        brightness = 1.3;
         vibrancy_darkness = 0.05;
       };
 
