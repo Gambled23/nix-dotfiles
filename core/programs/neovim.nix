@@ -35,7 +35,7 @@
       vim.diagnostics = {
         enable = true;
         config = {
-          virtual_lines = true;
+          virtual_lines = { current_line = true; };
           virtual_text = true;
           update_in_insert = true;
           underline = true;
@@ -106,9 +106,9 @@
         move.enable = true;
       };
 
-      vim.minimap = {
-        codewindow.enable = true;
-      };
+      # vim.minimap = {
+      #   codewindow.enable = true;
+      # };
 
       vim.notify = {
         nvim-notify.enable = true;
@@ -121,7 +121,6 @@
       vim.projects = {
         project-nvim = {
           enable = true;
-
         };
       };
 
