@@ -9,6 +9,7 @@
       "$mainMod, F, exec, $web_browser"
       "$mainMod, RETURN, exec, $terminal"
       "$mainMod, C, exec, $code"
+      "$mainMod, V, exec, $terminal -e vim"
 
       # "$mainMod, V, exec, vicinae vicinae://extensions/vicinae/clipboard/history"
       # "$mainMod, B, exec, vicinae vicinae://extensions/vicinae/bluetooth/devices"

@@ -34,7 +34,7 @@
       # Change transparency of focused and unfocused windows
       active_opacity = 1.0;
       inactive_opacity = 1.0;
-      dim_special = 0.3;
+      dim_special = 0;
 
       shadow = {
         enabled = true;
@@ -46,7 +46,7 @@
       blur = {
         enabled = true;
         popups = true;
-        special = false;
+        special = true;
         noise = 0;
         new_optimizations = true;
         size = 6;
