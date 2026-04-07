@@ -54,6 +54,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    accela = {
+      url = "github:ciscosweater/enter-the-wired";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     
     # Nur repo for firefox extensions
     # nur.url = "github:nix-community/NUR";

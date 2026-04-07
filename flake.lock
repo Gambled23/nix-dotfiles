@@ -17,6 +17,26 @@
         "type": "github"
       }
     },
+    "accela": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1775148853,
+        "narHash": "sha256-uKkQiS60Afxy0Xqrc03qiluSchMTeCW1pJeduqJR2gI=",
+        "owner": "ciscosweater",
+        "repo": "enter-the-wired",
+        "rev": "26c3d07020532b4e35da2f923a209fef13270b88",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ciscosweater",
+        "repo": "enter-the-wired",
+        "type": "github"
+      }
+    },
     "aquamarine": {
       "inputs": {
         "hyprutils": [
@@ -1276,6 +1296,7 @@
     },
     "root": {
       "inputs": {
+        "accela": "accela",
         "home-manager": "home-manager",
         "hyprland": "hyprland",
         "hyprland-plugins": "hyprland-plugins",
