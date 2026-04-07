@@ -27,7 +27,6 @@
     
     initContent = "source <(fzf --zsh)\n
     eval $(zoxide init zsh)\n
-    export EDITOR=vim\n
     ";
   };
 }

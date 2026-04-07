@@ -135,7 +135,15 @@
     enable = true;
     clean.enable = true;
     clean.extraArgs = "--keep-since 4d --keep 3";
-    flake = "./"; # sets NH_OS_FLAKE variable for you
+    flake = "/etc/nixos"; # sets NH_OS_FLAKE variable for you
   };
   nix.settings.trusted-users = [ "root" "gambled" ];
+
+  i18n = {
+    defaultLocale = "en_US.UTF-8";
+  }; 
+
+  environment.variables = {
+    EDITOR = "vim";
+  };
 }
