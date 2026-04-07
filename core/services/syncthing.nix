@@ -15,7 +15,7 @@
         versioning.type = "simple";
         path = "/home/gambled/Documents";
         enable = true;
-        devices = [ "pc-gambled" "server-gambled" "dev-gambled" ];
+        devices = [ "pc-gambled" "server-gambled" "dev-gambled" "android-gambled" ];
       };
       "Pictures" = {
         versioning.type = "simple";
@@ -28,6 +28,12 @@
         path = "/home/gambled/SiYuan";
         enable = true;
         devices = [ "pc-gambled" "server-gambled" "dev-gambled" ];
+      };
+      "Alpha" = {
+        versioning.type = "simple";
+        path = "/home/gambled/Alpha";
+        enable = true;
+        devices = [ "server-gambled" "dev-gambled" ];
       };
     };
 
