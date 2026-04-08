@@ -26,14 +26,8 @@
       };
 
       vim.dashboard = {
-        # alpha.enable = true;
-        # alpha.theme = null;
-        startify = {
-          enable = true;
-          sessionAutoload = true;
-          sessionPersistence = true;
-          sessionSort = true; # If true will order by date, instead of alphabetically
-        };
+        alpha.enable = true;
+        alpha.theme = "startify";
       };
 
       vim.diagnostics = {
