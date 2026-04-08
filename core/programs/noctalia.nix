@@ -633,7 +633,7 @@
         enabled = true;
         monitors = [
           "DP-3"
-          "eDP-1"
+          "HDMI-A-1"
           "sunshine"
         ];
         location = "top";
