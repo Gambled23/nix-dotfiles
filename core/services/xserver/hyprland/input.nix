@@ -13,11 +13,13 @@
 
       follow_mouse = 1;
 
-      sensitivity = -0.8; # -1.0 - 1.0, 0 means no modification.
+      sensitivity = -0.8;
 
       touchpad = {
-          natural_scroll = false;
+        natural_scroll = false;
       };
+
+      numlock_by_default = true;
     };
 
     device = {
@@ -25,8 +27,8 @@
       sensitivity = -0.1;
     };
 
-    # gestures = {
-    #   workspace_swipe = false;
-    # };   
+    gestures = {
+      workspace_swipe = false;
+    };   
   };
 }

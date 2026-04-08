@@ -10,12 +10,19 @@
   wayland.windowManager.hyprland = {
     settings = {
       monitor = [
-        "eDP-1,1920x1200@60,-1920x0, 1"
         "HDMI-A-1, 1920x1080@60, 0x0, 1"
+        "eDP-1,1920x1200@60,-1920x0, 1"
         # "HDMI-A-1, addreserved, 24, 24, 38, 38"
       ];
       "exec-once" = [
         "hyprlock"
+      ];
+
+      workspace = [
+        "1, monitor:eDP-1"
+        "2, monitor:HDMI-A-1"
+        "9, monitor:HDMI-A-1"
+        "0, monitor:HDMI-A-1"
       ];
     };
   };
