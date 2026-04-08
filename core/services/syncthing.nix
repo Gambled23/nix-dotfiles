@@ -43,11 +43,6 @@
         name = "pc-gambled";
         autoAcceptFolders = true;
       };
-      "home-gambled" = {
-        id = "IJSFZTV-LJ2AHAT-4TZGE56-3CE5EHO-C5AGHH5-VVU5VQE-HQTKIDH-CIUYTAI";
-        name = "home-gambled";
-        autoAcceptFolders = true;
-      };
       "steamdeck" = {
         id = "3ATLG3P-4VXFG3H-G36OP5D-ZHUHWVQ-XMWUTBG-OWOZ2ZC-VSPUJUX-ALSPAQW";
         name = "steamdeck";

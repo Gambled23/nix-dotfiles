@@ -11,7 +11,7 @@
       name = "gambled";
       isDefault = true;
       settings = {
-        "browser.startup.homepage" = "http://home-gambled:8123/lovelace/default_view";
+        "browser.startup.homepage" = "http://server-gambled:8123/lovelace/default_view";
         "browser.toolbars.bookmarks.visibility" = "always";
         # Hardware acceleration
         "gfx.webrender.all" = true;
