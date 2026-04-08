@@ -26,8 +26,14 @@
       };
 
       vim.dashboard = {
-        alpha.enable = true;
-        alpha.theme = "startify";
+        # alpha.enable = true;
+        # alpha.theme = null;
+        startify = {
+          enable = true;
+          sessionAutoload = true;
+          sessionPersistence = true;
+          sessionSort = true; # If true will order by date, instead of alphabetically
+        };
       };
 
       vim.diagnostics = {
@@ -124,6 +130,12 @@
 
       vim.runner = {
         run-nvim.enable = true;
+      };
+
+      vim.session = {
+        nvim-session-manager = {
+          enable = true;
+        };
       };
 
       vim.telescope = {

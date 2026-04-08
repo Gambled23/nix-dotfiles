@@ -18,6 +18,9 @@
       background-blur = false;
       confirm-close-surface = false;
       shell-integration-features = true;
+      keybind = [
+        "ctrl+backspace=text:\x17"
+      ];
     };
   };
 }
