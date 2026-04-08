@@ -186,7 +186,7 @@
         highlight-undo.enable = true;
         hlargs-nvim.enable = true;
         nvim-cursorline.enable = true;
-        nvim-scrollbar.enable = true;
+        # nvim-scrollbar.enable = true;
         rainbow-delimiters.enable = true;
       };
     };

@@ -104,7 +104,7 @@
         position = "top";
         monitors = [
           "DP-3"
-          "eDP-1"
+          "HDMI-A-1"
           "sunshine"
         ];
         mouseWheelAction = "none";
@@ -414,7 +414,7 @@
         gridSnap = true;
         monitorWidgets = [
           {
-            name= "eDP-1";
+            name= "HDMI-A-1";
             widgets = [
               {
                 hideMode = "visible";
