@@ -13,7 +13,7 @@
     ../../core/services/homeassistant.nix
     # ../../core/services/tandoor.nix
     #./symlinks.nix
-    ../../core/services/ollama.nix
+    # ../../core/services/ollama.nix
     
     # bootloader
     #../../core/bootloader/systemd.nix
