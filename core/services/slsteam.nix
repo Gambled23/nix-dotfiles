@@ -42,7 +42,7 @@
   programs.mangohud = {
     enable = true;
     settings = {
-      toggle hud = "F11";
+      toggle_hud = "F11";
     };
   };
 }
