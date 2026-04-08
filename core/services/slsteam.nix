@@ -5,14 +5,18 @@
     PlayNotOwnedGames = true;
     DisableFamilyShareLock = true;
     AppIds = [
-      3769130
-      2512930
-      2868840
+      2868840 # Slay the Spire 2
+      4130120 # Genome Guardian 2
+      2161700 # Persona 3 Reload
+      1647550 # NEO: The World Ends with You
+      2356780 # Dungeon Clawler
     ];
     AdditionalApps = [
-      3769130
-      2512930
-      2868840
+      2868840 # Slay the Spire 2
+      4130120 # Genome Guardian 2
+      2161700 # Persona 3 Reload
+      1647550 # NEO: The World Ends with You
+      2356780 # Dungeon Clawler
     ];
     SafeMode = true;
   };
