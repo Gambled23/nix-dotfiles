@@ -103,6 +103,7 @@
         barType = "simple";
         position = "top";
         monitors = [
+          "eDP-1"
           "DP-3"
           "HDMI-A-1"
           "sunshine"
@@ -414,7 +415,7 @@
         gridSnap = true;
         monitorWidgets = [
           {
-            name= "HDMI-A-1";
+            name= "eDP-1";
             widgets = [
               {
                 hideMode = "visible";
