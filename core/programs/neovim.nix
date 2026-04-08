@@ -48,11 +48,11 @@
         };
       };
 
-      vim.filetree = {
-        nvimTree = {
-          enable = true;
-        };
-      };
+      # vim.filetree = {
+      #   nvimTree = {
+      #     enable = true;
+      #   };
+      # };
 
       # vim.gestures = {
       #   gesture-nvim.enable = true;
