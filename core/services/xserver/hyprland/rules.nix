@@ -10,7 +10,7 @@
       "match:class ^(Altus)$, workspace 9"
       "match:class ^(steam)$, workspace 8"
       "match:class ^(stremio)$, workspace 7"
-      "match:class ^(miru)$, workspace 7"
+      "match:class ^(hayase)$, workspace 7"
       "match:class ^(com.moonlight_stream.Moonlight)$, workspace 2"
       # Steam fullscrenn
       # "match:class ^(steam)$, fullscreen on"

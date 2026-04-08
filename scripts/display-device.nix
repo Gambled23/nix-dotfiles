@@ -70,17 +70,13 @@ pkgs.writeShellScriptBin "display-device" ''
       hyprctl keyword monitor "sunshine, disable"
       ;;
     dev-gambled)
-      hyprctl keyword monitor "sunshine,1920x1200@60,0x0,1"
+      hyprctl keyword monitor "sunshine,1920x1080@60,0x0,1"
       hyprctl keyword monitor "DP-3, disable"
       ;;
     android-gambled)
       hyprctl dispatch workspace 8
       steam steam://open/bigpicture
       hyprctl keyword monitor "sunshine,2992x1344@120,0x0,1"
-      hyprctl keyword monitor "DP-3, disable"
-      ;;
-    1080p)
-      hyprctl keyword monitor "sunshine,1920x1080@60,0x0,1"
       hyprctl keyword monitor "DP-3, disable"
       ;;
     *)
