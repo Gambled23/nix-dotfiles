@@ -27,8 +27,8 @@
       sensitivity = -0.1;
     };
 
-    gestures = {
-      workspace_swipe = false;
-    };   
+  #   gestures = {
+  #     workspace_swipe = false;
+  #   };   
   };
 }
