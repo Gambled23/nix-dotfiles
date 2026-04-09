@@ -109,7 +109,13 @@
       };
 
       vim.notify = {
-        nvim-notify.enable = true;
+        nvim-notify = {
+          enable = true;
+          setupOpts = {
+            background_color = "#000000";
+            timeout = 3000;
+          };
+        };
       };
 
       vim.presence = {
