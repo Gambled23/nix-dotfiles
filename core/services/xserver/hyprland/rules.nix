@@ -29,8 +29,9 @@
       # Opacity only on focus loss
       # "match:class ^(code)$, opacity 1 0.8"
       "match:title Pixel 9 Pro XL, float on, center on, min_size 336 748, max_size 1344 2992, size 518 1153, keep_aspect_ratio on"
-      "match:title Imagen en imagen, float on, center on, keep_aspect_ratio on"
-
+      "match:title Picture in picture, float on, center on, keep_aspect_ratio on"
+      "match:title Open File, float on, center on"
+      
       # Shadow for floating windows
       "match:float off, no_shadow on"
     ];
