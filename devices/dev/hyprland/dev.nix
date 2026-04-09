@@ -22,7 +22,7 @@
         "1, monitor:eDP-1"
         "2, monitor:HDMI-A-1"
         "9, monitor:HDMI-A-1"
-        "0, monitor:HDMI-A-1"
+        "10, monitor:HDMI-A-1"
       ];
     };
   };
