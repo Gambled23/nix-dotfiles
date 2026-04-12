@@ -129,7 +129,7 @@
               ./core/programs/nixcord.nix
               vicinae.homeManagerModules.default
             ];
-            home-manager.backupFileExtension = "uiod";
+            home-manager.backupFileExtension = "1e";
           }
         ];
       };
@@ -142,7 +142,7 @@
             home-manager.users.gambled.imports = [
               ./devices/server/home.nix
             ];
-            home-manager.backupFileExtension = "meme";
+            home-manager.backupFileExtension = "2e";
           }
         ];
       };
@@ -163,7 +163,7 @@
               ./core/programs/nixcord.nix
               vicinae.homeManagerModules.default
             ];
-            home-manager.backupFileExtension = "2";
+            home-manager.backupFileExtension = "3e";
             nixpkgs.overlays = [
               # dolphin-overlay.overlays.default
             ];
