@@ -15,9 +15,9 @@
       # "$mainMod, B, exec, vicinae vicinae://extensions/vicinae/bluetooth/devices"
       # "$mainMod, B, exec, bluetoothctl connect 24:95:2F:60:BD:94"
 
-      "$mainMod, L, exec, hyprlock"
+      "$mainMod, M, exec, hyprlock"
       "$mainMod, X, togglefloating,"
-      "$mainMod, M, exit,"
+      # "$mainMod, M, exit,"
 
       # Connect to streaming services
       "$mainMod, O, exec, moonlight stream 'el sunchine' 'dev-gambled'"
@@ -28,10 +28,10 @@
       "$mainMod, ESCAPE, exec, $terminal -e btop"
 
       # Move focus with mainMod + arrow keys
-      "$mainMod, left, movefocus, l"
-      "$mainMod, right, movefocus, r"
-      "$mainMod, up, movefocus, u"
-      "$mainMod, down, movefocus, d"
+      "$mainMod, H, movefocus, l"
+      "$mainMod, J, movefocus, r"
+      "$mainMod, K, movefocus, u"
+      "$mainMod, L, movefocus, d"
 
       # Switch workspaces with mainMod + [0-9]
       "$mainMod, A, togglespecialworkspace, A"
