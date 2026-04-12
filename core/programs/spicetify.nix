@@ -5,9 +5,9 @@ in
 {
   programs.spicetify = {
     enable = true;
-    # theme = {
-    #   name = lib.mkForce "onepunch";
-    # };
+    theme = {
+      name = lib.mkForce "text";
+    };
 
     enabledCustomApps = with spicePkgs.apps; [
       # newReleases
