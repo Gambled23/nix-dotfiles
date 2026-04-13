@@ -24,7 +24,7 @@
               siteMonitor = "http://server-gambled:8384";
               widget = {
                 type = "strelaysrv";
-                url = "http://server-gambled:8384";
+                url = "http://0.0.0.0:8384";
               };
             };
           }
