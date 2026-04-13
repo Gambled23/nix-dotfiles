@@ -22,10 +22,10 @@
               icon = "syncthing";
               href = "http://server-gambled:8384";
               siteMonitor = "http://server-gambled:8384";
-              widget = {
-                type = "strelaysrv";
-                url = "http://0.0.0.0:8384";
-              };
+              # widget = {
+              #   type = "strelaysrv";
+              #   url = "http://0.0.0.0:8384";
+              # };
             };
           }
           {
