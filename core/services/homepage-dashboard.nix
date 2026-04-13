@@ -12,17 +12,27 @@
         "Dev" = [
           {
             "Homeassistant" = {
-              href = "http://localhost/8123";
+              icon = "home-assistant";
+              href = "http://server-gambled:8123";
+              siteMonitor = "http://server-gambled:8123";
             };
           }
           {
             "Syncthing" = {
-              href = "http://localhost/8384";
+              icon = "syncthing";
+              href = "http://server-gambled:8384";
+              siteMonitor = "http://server-gambled:8384";
+              widget = {
+                type = "strelaysrv";
+                url = "http://server-gambled:8384";
+              };
             };
           }
           {
             "Code server" = {
-              href = "http://0.0.0.0/4444";
+              icon = "code";
+              href = "http://server-gambled:4444";
+              siteMonitor = "http://server-gambled:4444";
             };
           }
         ];
