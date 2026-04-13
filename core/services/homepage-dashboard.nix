@@ -5,7 +5,7 @@
     enable = true;
     openFirewall = true;
     listenPort = 8082;
-    allowedHosts = [ "*" ];
+    allowedHosts = "*";
 
     services = [
       {
