@@ -6,9 +6,9 @@
     mysql = {
       enable = true;
       package = pkgs.mariadb;
-      initialDatabases =[
-        { name = "databasa"; }
-      ];
+      # initialDatabases =[
+      #   { name = "databasa"; }
+      # ];
       # ensureUsers= [
       #   {
       #     name = "root";
