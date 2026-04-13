@@ -13,9 +13,11 @@ in {
   services.avahi.nssmdns4 = true;
   services.avahi.publish.workstation = true; # ADDED TO DESKTOP MACHINES
 
-  services.zerotierone.enable = true;
-  services.zerotierone.joinNetworks = [ 
-    "159924d6307a98fe" #Angry patatas
-    "abfd31bd4708f79c" #Rafael Vaca
+  services.zerotierone = {
+    enable = true;
+    joinNetworks = [ 
+      "159924d6307a98fe" #Angry patatas
+      "abfd31bd4708f79c" #Rafael Vaca
     ]; # ZT NETWORK ID
+  };
 }
