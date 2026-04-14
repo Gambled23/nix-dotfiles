@@ -43,7 +43,6 @@
             };
           }
         ];
-
       }
       {
         "PC" = [
@@ -59,6 +58,13 @@
               icon = "sunshine";
               href = "http://pc-gambled:47989/";
               siteMonitor = "http://pc-gambled:47989/";
+            };
+          }
+          {
+            "Syncthing" = {
+              icon = "syncthing";
+              href = "http://pc-gambled:8384";
+              siteMonitor = "http://pc-gambled:8384";
             };
           }
         ];
