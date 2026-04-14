@@ -43,6 +43,9 @@
             };
           }
         ];
+
+      }
+      {
         "PC" = [
           {
             "Ollama" = {
@@ -60,16 +63,6 @@
           }
         ];
       }
-      # {
-      #   "My Second Group" = [
-      #     {
-      #       "My Second Service" = {
-      #         description = "Homepage is the best";
-      #         href = "http://localhost/";
-      #       };
-      #     }
-      #   ];
-      # }
     ];
   };
 }
