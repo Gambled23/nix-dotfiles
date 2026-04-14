@@ -35,6 +35,13 @@
               siteMonitor = "http://server-gambled:4444";
             };
           }
+          {
+            "Nginx" = {
+              icon = "nginx";
+              href = "https://server-gambled:443";
+              siteMonitor = "https://server-gambled:443";
+            };
+          }
         ];
       }
       # {

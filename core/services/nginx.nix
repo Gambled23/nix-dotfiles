@@ -1,7 +1,7 @@
 { config, pkgs, lib, ... }:
 # Recipe manager for home cooking
 {
-  secutiry.acme = {
+  security.acme = {
     acceptTerms = true;
     defaults.email = "ipog71@gmail.com";
   };
