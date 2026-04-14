@@ -27,11 +27,17 @@
       ", Print, exec, hyprshot -m region"
       "$mainMod, ESCAPE, exec, $terminal -e btop"
 
-      # Move focus with mainMod + arrow keys
+      # Move focus with mainMod + hjkl
       "$mainMod, H, movefocus, l"
       "$mainMod, J, movefocus, d"
       "$mainMod, K, movefocus, u"
       "$mainMod, L, movefocus, r"
+
+      # Move active window
+      "$mainMod SHIFT, H, movewindow, l"
+      "$mainMod SHIFT, J, movewindow, d"
+      "$mainMod SHIFT, K, movewindow, u"
+      "$mainMod SHIFT, L, movewindow, r"
 
       # Switch workspaces with mainMod + [0-9]
       "$mainMod, A, togglespecialworkspace, A"

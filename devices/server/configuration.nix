@@ -12,7 +12,7 @@
     # ../../core/services/docker.nix
     ../../core/services/homeassistant.nix
     ../../core/services/homepage-dashboard.nix
-     ../../core/services/nginx.nix
+    # ../../core/services/nginx.nix
 
     # ../../core/services/tandoor.nix
     #./symlinks.nix
