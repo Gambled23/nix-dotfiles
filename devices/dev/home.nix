@@ -18,6 +18,7 @@
     #* dev tools
     speedcrunch
     dbeaver-bin
+    sqlit-tui
     vscode
     # android-studio
     # jdk25_headless
