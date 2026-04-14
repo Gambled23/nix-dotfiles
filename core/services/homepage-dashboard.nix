@@ -42,6 +42,13 @@
               siteMonitor = "https://server-gambled:443";
             };
           }
+          {
+            "Ollama" = {
+              icon = "ollama";
+              href = "http://pc-gambled:11434/";
+              siteMonitor = "http://pc-gambled:11434/";
+            };
+          }
         ];
       }
       # {
