@@ -9,14 +9,7 @@
 
     services = [
       {
-        "Dev" = [
-          {
-            "Homeassistant" = {
-              icon = "home-assistant";
-              href = "http://server-gambled:8123";
-              siteMonitor = "http://server-gambled:8123";
-            };
-          }
+        "Server" = [
           {
             "Syncthing" = {
               icon = "syncthing";
@@ -26,6 +19,13 @@
               #   type = "strelaysrv";
               #   url = "http://0.0.0.0:8384";
               # };
+            };
+          }
+          {
+            "Homeassistant" = {
+              icon = "home-assistant";
+              href = "http://server-gambled:8123";
+              siteMonitor = "http://server-gambled:8123";
             };
           }
           {
@@ -47,6 +47,13 @@
       {
         "PC" = [
           {
+            "Syncthing" = {
+              icon = "syncthing";
+              href = "http://pc-gambled:8384";
+              siteMonitor = "http://pc-gambled:8384";
+            };
+          }
+          {
             "Ollama" = {
               icon = "ollama";
               href = "http://pc-gambled:11434/";
@@ -61,11 +68,15 @@
               siteMonitor = "https://pc-gambled:47990/";
             };
           }
+        ];
+      }
+      {
+        "Dev" = [
           {
             "Syncthing" = {
               icon = "syncthing";
-              href = "http://pc-gambled:8384";
-              siteMonitor = "http://pc-gambled:8384";
+              href = "http://dev-gambled:8384";
+              siteMonitor = "http://dev-gambled:8384";
             };
           }
         ];
