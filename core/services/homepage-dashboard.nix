@@ -57,8 +57,8 @@
           {
             "Sunshine" = {
               icon = "sunshine";
-              href = "http://pc-gambled:47990/";
-              siteMonitor = "http://pc-gambled:47990/";
+              href = "https://pc-gambled:47990/";
+              siteMonitor = "https://pc-gambled:47990/";
             };
           }
           {
