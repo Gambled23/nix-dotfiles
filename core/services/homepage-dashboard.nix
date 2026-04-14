@@ -53,11 +53,12 @@
               siteMonitor = "http://pc-gambled:11434/";
             };
           }
+          # 47989 port for the streaming service, 47990 for the web interface
           {
             "Sunshine" = {
               icon = "sunshine";
-              href = "http://pc-gambled:47989/";
-              siteMonitor = "http://pc-gambled:47989/";
+              href = "http://pc-gambled:47990/";
+              siteMonitor = "http://pc-gambled:47990/";
             };
           }
           {
