@@ -7,7 +7,7 @@
   programs.nixcord = {
     enable = true;
     discord.enable = true;
-    discord.equicord.enable = true;
+    discord.equicord.enable = false;
     discord.vencord.enable = false;
     vesktop.enable = false;
     config = {
