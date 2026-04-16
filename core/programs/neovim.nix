@@ -7,6 +7,26 @@
   programs.nvf = {
     enable = true;
     settings = {
+      vim.assistant = {
+        codecompanion-nvim = {
+          enable = true;
+
+          setupOpts.providers = {
+            ollama = {
+              endpoint = "http://pc-gambled:11434";
+              timeout = 30000; # Timeout in milliseconds
+              extra_request_body = {
+                options = {
+                  temperature = 0.75;
+                  num_ctx = 20480;
+                  keep_alive = "5m";
+                };
+              };
+            };
+          };
+        };
+      };
+
       vim.autocomplete = {
         enableSharedCmpSources = true;
         blink-cmp = {
