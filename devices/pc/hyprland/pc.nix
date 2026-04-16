@@ -22,7 +22,7 @@
 
       "exec-once" = [
         "openrgb --profile 'off.orp'"
-        "uwsm app -- steam %U"
+        "steam %U"
         "hyprctl output create headless sunshine"
       ];
     };

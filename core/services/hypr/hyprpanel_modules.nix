@@ -13,7 +13,7 @@
         "hideOnEmpty": false,
         "scrollThreshold": 1,
         "actions": {
-          "onLeftClick": "uwsm app -- vicinae toggle",
+          "onLeftClick": "vicinae toggle",
           "onRightClick": "",
           "onMiddleClick": "",
           "onScrollUp": "",
