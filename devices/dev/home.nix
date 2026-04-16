@@ -20,6 +20,7 @@
     dbeaver-bin
     sqlit-tui
     vscode
+    claude-code
     # android-studio
     # jdk25_headless
     bruno
