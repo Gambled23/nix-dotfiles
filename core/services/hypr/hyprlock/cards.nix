@@ -230,7 +230,7 @@
           color = "rgba(240, 230, 220, 1.0)";
           font_size = 14;
           font_family = "JetBrainsMono Nerd Font";
-          position = "200, -10";
+          position = "200, -40";
           halign = "center";
           valign = "center";
           zindex = 11;
