@@ -36,6 +36,7 @@ with lib;
     kdePackages.qttools # for noctalia kde connect plugin
     dragon-drop # for drag and drop support in yazi
     bibata-cursors
+    iw # for cards layout in hyprlock
   ];
 
   # Optional, hint Electron apps to use Wayland:
