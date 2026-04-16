@@ -32,6 +32,7 @@
     fastfetch
     zsh
     trash-cli	# for yazi trash plugin
+    rbw
   ];
   
   home.sessionVariables = {
