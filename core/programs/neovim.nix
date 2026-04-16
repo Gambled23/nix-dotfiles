@@ -75,6 +75,9 @@
 
       vim.lsp = {
         enable = true;
+        presets = {
+          tailwindcss-language-server.enable = true;
+        };
       };
 
       vim.languages = {
@@ -90,7 +93,6 @@
         bash.enable = true;
         css.enable = true;
         kotlin.enable = true;
-        tailwind.enable = true;
         yaml.enable = true;
         ts.enable = true;
       };
