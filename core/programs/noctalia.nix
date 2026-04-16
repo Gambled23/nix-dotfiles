@@ -67,7 +67,8 @@
         clipboardWatchImageCommand = "wl-paste --type image --watch cliphist store";
         position = "center";
         pinnedApps = [ ];
-        useApp2Unit = false;
+        enableClipboardChips = true;
+        enableClipboardSmartIcons = true;
         sortByMostUsed = true;
         terminalCommand = "ghostty -e";
         customLaunchPrefixEnabled = false;
@@ -93,6 +94,7 @@
         volumeFeedback = true;
         spectrumFrameRate = 30;
         volumeFeedbackSoundFile = "/etc/nixos/core/services/xserver/hyprland/volume.mp3";
+        spectrumMirrored = true;
       };
 
       bar = {
@@ -100,7 +102,7 @@
         autoShowDelay = 150;
         capsuleColorKey = "none";
         contentPadding = 2;
-        barType = "simple";
+        barType = "framed";
         position = "top";
         monitors = [
           "eDP-1"
@@ -126,7 +128,7 @@
         marginVertical = 4;
         marginHorizontal = 4;
         frameThickness = 4;
-        frameRadius = 10;
+        frameRadius = 4;
         outerCorners = false;
         displayMode = "always_visible";
         fontScale = 1;
@@ -137,15 +139,6 @@
         widgets = {
           left = [
             {
-              clockColor = "none";
-              customFont = "";
-              formatHorizontal = "HH:mm";
-              formatVertical = "HH mm - dd MM";
-              id = "Clock";
-              tooltipFormat = "HH:mm ddd, MMM dd";
-              useCustomFont = false;
-            }
-            {
               icon = "rocket";
               id = "Launcher";
               iconColor = "none";
@@ -153,6 +146,11 @@
               colorizeSystemIcon = "none";
               customIconPath = "";
               enableColorization = false;
+            }
+            {
+              defaultSettings = {
+              };
+              id = "plugin:workspace-overview";
             }
             # {
             #   defaultSettings = {
@@ -219,6 +217,15 @@
           ];
           center = [
             {
+              clockColor = "none";
+              customFont = "";
+              formatHorizontal = "HH:mm";
+              formatVertical = "HH mm - dd MM";
+              id = "Clock";
+              tooltipFormat = "HH:mm ddd, MMM dd";
+              useCustomFont = false;
+            }
+            {
               compactMode = true;
               hideMode = "hidden";
               hideWhenIdle = false;
@@ -237,18 +244,6 @@
           ];
           right = [
             {
-              defaultSettings = {
-              activeColor = "primary";
-              enableToast = true;
-              hideInactive = false;
-              iconSpacing = 4;
-              inactiveColor = "none";
-              micFilterRegex = "";
-              removeMargins = false;
-              };
-              id = "plugin:privacy-indicator";
-            }
-            {
               blacklist = [];
               chevronColor = "none";
               colorizeIcons = false;
@@ -258,12 +253,45 @@
               pinned = [];
             }
             {
+              commandPrefix = "ssh";
+              defaultSettings = {
+                pollInterval = 10;
+                showInactiveHosts = true;
+                terminalCommand = "";
+              };
+              id = "plugin:ssh-sessions";
+            }
+            {
+              defaultSettings = {
+                autoMount = true;
+                fileBrowser = "yazi";
+                hideWhenEmpty = true;
+                iconColor = "none";
+                showBadge = true;
+                showNotifications = true;
+                terminalCommand = "ghostty";
+              };
+              id = "plugin:usb-drive-manager";
+            }
+            {
+              defaultSettings = {
+              activeColor = "primary";
+              enableToast = true;
+              hideInactive = true;
+              iconSpacing = 4;
+              inactiveColor = "none";
+              micFilterRegex = "";
+              removeMargins = false;
+              };
+              id = "plugin:privacy-indicator";
+            }
+            {
               deviceNativePath = "__default__";
-              displayMode = "onhover";
+              displayMode = "icon-hover";
               hideIfIdle = false;
               hideIfNotDetected = true;
               id = "Battery";
-              showNoctaliaPerformance = false;
+              showNoctaliaPerformance = true;
               showPowerProfiles = true;
             }
             {
@@ -284,8 +312,8 @@
             #   textColor = "none";
             # }
             {
-              hideWhenZero = false;
-              hideWhenZeroUnread = false;
+              hideWhenZero = true;
+              hideWhenZeroUnread = true;
               id = "NotificationHistory";
               showUnreadBadge = true;
               unreadBadgeColor = "primary";
@@ -298,7 +326,7 @@
               enableColorization = false;
               icon = "noctalia";
               id = "ControlCenter";
-              useDistroLogo = false;
+              useDistroLogo = true;
             }
           ];
         };
@@ -338,6 +366,7 @@
         manualSunset = "18:30";
         generationMethod = "tonal-spot";
         monitorForColors = "";
+        syncGsettings = true;
       };
 
       controlCenter = {
@@ -352,9 +381,6 @@
               id = "Bluetooth";
             }
             {
-              id = "NoctaliaPerformance";
-            }
-            {
               defaultSettings = {
                 enableTodoIntegration = true;
                 notecardsEnabled = true;
@@ -363,22 +389,16 @@
               };
               id = "plugin:clipper";
             }
-            {
-              id = "plugin:kde-connect";
-            }
           ];
           right = [
             {
               id = "Notifications";
             }
             {
-              id = "PowerProfile";
-            }
-            {
               id = "KeepAwake";
             }
             {
-              id = "WallpaperSelector";
+              id = "plugin:kde-connect";
             }
           ];
         };
