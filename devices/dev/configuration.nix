@@ -71,4 +71,8 @@
   networking.firewall.allowedUDPPorts = [ 7236 5353 ];
 
   programs.wayvnc.enable = true;
+
+  environment.variables = {
+    OLLAMA_HOST="pc-gambled:11434";
+  };
 }

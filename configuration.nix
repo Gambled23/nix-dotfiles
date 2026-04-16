@@ -144,5 +144,6 @@
 
   environment.variables = {
     EDITOR = "vim";
+    SHELL = "zsh";
   };
 }

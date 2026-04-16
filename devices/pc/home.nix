@@ -32,6 +32,7 @@
     # jdk25_headless
     dbeaver-bin
     vscode
+    claude-code
 
     #* games
     # itch
