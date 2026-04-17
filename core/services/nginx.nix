@@ -1,18 +1,9 @@
 { config, pkgs, lib, ... }:
 
 {
-  security.acme = {
-    acceptTerms = true;
-    defaults.email = "ipog71@gmail.com";
-  };
-
-  users.users.nginx.extraGroups = [ "acme" ];
-
   services.nginx = {
     enable = true;
     virtualHosts."_" = {
-      forceSSL = true;
-      enableACME = true;
       locations = {
         "/" = {
           proxyPass = "http://127.0.0.1:8082/";
