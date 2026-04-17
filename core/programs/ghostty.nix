@@ -14,7 +14,7 @@
     settings = {
       cursor-click-to-move = true;
       theme = "Gruvbox Dark";
-      background-opacity = 0.7;
+      background-opacity = 0.6;
       background-blur = false;
       confirm-close-surface = false;
       shell-integration-features = true;
