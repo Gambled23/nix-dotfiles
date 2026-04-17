@@ -42,6 +42,13 @@
               siteMonitor = "https://server-gambled:443";
             };
           }
+          {
+            "Paperless" = {
+              icon = "paperless";
+              href = "https://server-gambled:28981";
+              siteMonitor = "https://server-gambled:28981";
+            };
+          }
         ];
       }
       {

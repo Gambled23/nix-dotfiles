@@ -1,5 +1,5 @@
 { config, pkgs, lib, ... }:
-# Recipe manager for home cooking
+
 {
   security.acme = {
     acceptTerms = true;
@@ -10,10 +10,23 @@
 
   services.nginx = {
     enable = true;
-    virtualHosts."example.com" = {
-      forceSSL = true;
-      enableACME = true;
-      root = "/var/www/example.com";
+    virtualHosts."_" = {
+      locations = {
+        "/paperless/" = {
+          proxyPass = "http://127.0.0.1:28981/";
+          proxyWebsockets = true;
+          extraConfig = ''
+            rewrite ^/paperless/(.*)$ /$1 break;
+          '';
+        };
+        "/code-server/" = {
+          proxyPass = "http://127.0.0.1:4444/";
+          proxyWebsockets = true;
+          extraConfig = ''
+            rewrite ^/code-server/(.*)$ /$1 break;
+          '';
+        };
+      };
     };
   };
 

@@ -48,7 +48,7 @@ with lib;
     nerd-fonts.caskaydia-cove
     nerd-fonts.jetbrains-mono
     texlivePackages.alfaslabone
-  ];
+  ]; 
 
   #hyprlock
   security.pam.services.hyprlock = {};
