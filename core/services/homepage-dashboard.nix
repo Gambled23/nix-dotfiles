@@ -38,8 +38,8 @@
           {
             "Nginx" = {
               icon = "nginx";
-              href = "https://server-gambled";
-              siteMonitor = "https://server-gambled";
+              href = "http://server-gambled";
+              siteMonitor = "http://server-gambled";
             };
           }
           {
