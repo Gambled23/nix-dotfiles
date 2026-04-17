@@ -12,6 +12,13 @@
     enable = true;
     virtualHosts."_" = {
       locations = {
+        "/" = {
+          proxyPass = "http://127.0.0.1:8384/";
+          proxyWebsockets = true;
+          extraConfig = ''
+            rewrite ^/(.*)$ /$1 break;
+          '';
+        };
         "/paperless/" = {
           proxyPass = "http://127.0.0.1:28981/";
           proxyWebsockets = true;
