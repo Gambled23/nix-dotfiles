@@ -9,7 +9,7 @@ with lib;
     
   programs.hyprland = {
     enable = true;
-    withUWSM = false;
+    withUWSM = true;
     package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
     portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
   };
@@ -55,15 +55,13 @@ with lib;
 
   services.gnome.evolution-data-server.enable = true;
 
-  # SDDM for autologin
-  services.displayManager.defaultSession = "hyprland";
+  # Display manager and session
+  services.displayManager.defaultSession = "hyprland-uwsm";
   services.displayManager = {
     autoLogin.enable = true;
     autoLogin.user = "gambled";
-    sddm = {
+    ly = {
       enable = true;
-      autoNumlock = true;
-      wayland.enable = true;
     };
   };
 
