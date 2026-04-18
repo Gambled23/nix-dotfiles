@@ -19,6 +19,7 @@
       1880620 # Once Upon A KATAMARI
       3314790 # CloverPit
       2779120 # Modulus Factory Automation
+      2416450 # MOUSE: P.I. For Hire
     ];
     AdditionalApps = [
       2868840 # Slay the Spire 2
@@ -35,6 +36,7 @@
       1880620 # Once Upon A KATAMARI
       3314790 # CloverPit
       2779120 # Modulus Factory Automation
+      2416450 # MOUSE: P.I. For Hire
     ];
     SafeMode = true;
   };
