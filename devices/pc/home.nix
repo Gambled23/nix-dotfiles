@@ -33,6 +33,7 @@
     dbeaver-bin
     vscode
     claude-code
+    python315
 
     #* games
     # itch
