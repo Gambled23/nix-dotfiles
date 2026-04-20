@@ -6,15 +6,13 @@
     systemd = {
       enable = true;
       autoStart = true;
-      environment = {
-        USE_LAYER_SHELL = 1;
-      };
     };
     settings = {
       close_on_focus_loss = true;
       consider_preedit = true;
       pop_to_root_on_close = true;
       favicon_service = "twenty";
+      launcher_window.layer_shell.enabled = false;
       font = {
         size = 10.5;
       };
