@@ -9,6 +9,7 @@
 
     ../../core/services/docker.nix
     ../../core/services/mariadb.nix
+    ../../core/services/ollama-client.nix
 
     # bootloader
     #../../core/bootloader/systemd.nix
