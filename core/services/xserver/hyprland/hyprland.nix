@@ -34,7 +34,8 @@ with lib;
     pamixer
     pavucontrol
     kdePackages.qttools # for noctalia kde connect plugin
-    dragon-drop # for drag and drop support in yazi
+    ripdrag # for yazi drag plugin
+    glib # for yazi gvfs plugin
     bibata-cursors
     iw # for cards layout in hyprlock
     squeekboard
@@ -55,6 +56,9 @@ with lib;
   security.pam.services.hyprlock = {};
 
   services.gnome.evolution-data-server.enable = true;
+
+  # yazi
+  services.gvfs.enable = true;
 
   # Display manager and session
   services.displayManager.defaultSession = "hyprland-uwsm";
