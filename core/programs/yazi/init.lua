@@ -14,6 +14,8 @@ require("full-border"):setup {
 
 require("duckdb"):setup()
 
+require("relative-motions"):setup({ show_numbers="relative", show_motion = true, enter_mode ="first" })
+
 require("gvfs"):setup({
   -- (Optional) Allowed keys to select device.
   which_keys = "1234567890qwertyuiopasdfghjklzxcvbnm-=[]\\;',./!@#$%^&*()_+{}|:\"<>?",

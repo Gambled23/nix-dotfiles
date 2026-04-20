@@ -14,6 +14,7 @@
       gvfs = pkgs.yaziPlugins.gvfs;
       lazygit = pkgs.yaziPlugins.lazygit;
       recycle-bin = pkgs.yaziPlugins.recycle-bin;
+      relative-motions = pkgs.yaziPlugins.relative-motions;
       smart-enter = pkgs.yaziPlugins.smart-enter;
       smart-filter = pkgs.yaziPlugins.smart-filter;
       smart-paste = pkgs.yaziPlugins.smart-paste;
@@ -52,7 +53,16 @@
         { run = "plugin duckdb +1"; on = [ "L" ]; desc="Scroll one column to the right"; }
         { run = "plugin duckdb -ui"; on = [ "g" "u" ]; desc="Open with duckdb ui"; }
         { run = "plugin duckdb -open"; on = [ "g" "o" ]; desc="Open with duckdb"; }
-
+        # relative motions plugin
+        { run = "plugin relative-motions 1"; on = [ "1" ]; desc="Move in relative steps"; }
+        { run = "plugin relative-motions 2"; on = [ "2" ]; desc="Move in relative steps"; }
+        { run = "plugin relative-motions 3"; on = [ "3" ]; desc="Move in relative steps"; }
+        { run = "plugin relative-motions 4"; on = [ "4" ]; desc="Move in relative steps"; }
+        { run = "plugin relative-motions 5"; on = [ "5" ]; desc="Move in relative steps"; }
+        { run = "plugin relative-motions 6"; on = [ "6" ]; desc="Move in relative steps"; }
+        { run = "plugin relative-motions 7"; on = [ "7" ]; desc="Move in relative steps"; }
+        { run = "plugin relative-motions 8"; on = [ "8" ]; desc="Move in relative steps"; }
+        { run = "plugin relative-motions 9"; on = [ "9" ]; desc="Move in relative steps"; }
         # Extras
         { run = "shell \"$SHELL\" --block"; on = [ "!" ]; desc = "Open $SHELL here"; }
       ];
