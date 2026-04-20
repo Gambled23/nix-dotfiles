@@ -37,6 +37,7 @@ with lib;
     dragon-drop # for drag and drop support in yazi
     bibata-cursors
     iw # for cards layout in hyprlock
+    squeekboard
   ];
 
   # Optional, hint Electron apps to use Wayland:
