@@ -30,6 +30,7 @@
     #android-studio
     # android-studio
     # jdk25_headless
+    act3
     dbeaver-bin
     vscode
     claude-code
