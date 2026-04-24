@@ -38,6 +38,7 @@
     altus
     
     #* utils
+    ente-auth
     android-tools
     libreoffice
     scrcpy

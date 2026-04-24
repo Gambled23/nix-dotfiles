@@ -58,6 +58,7 @@
     # bitwarden-desktop
     headsetcontrol
     siyuan
+    ente-auth
 
     #* media
     # stremio-linux-shell
