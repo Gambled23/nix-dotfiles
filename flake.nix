@@ -129,7 +129,7 @@
               ./core/programs/nixcord.nix
               vicinae.homeManagerModules.default
             ];
-            home-manager.backupFileExtension = "1ee";
+            home-manager.backupFileExtension = "1eee";
           }
         ];
       };
@@ -142,7 +142,7 @@
             home-manager.users.gambled.imports = [
               ./devices/server/home.nix
             ];
-            home-manager.backupFileExtension = "2ee";
+            home-manager.backupFileExtension = "2eee";
           }
         ];
       };
@@ -163,7 +163,7 @@
               ./core/programs/nixcord.nix
               vicinae.homeManagerModules.default
             ];
-            home-manager.backupFileExtension = "3ee";
+            home-manager.backupFileExtension = "3eee";
             nixpkgs.overlays = [
               # dolphin-overlay.overlays.default
             ];

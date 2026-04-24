@@ -31,6 +31,7 @@
     # android-studio
     # jdk25_headless
     act3
+    harlequin
     dbeaver-bin
     vscode
     claude-code

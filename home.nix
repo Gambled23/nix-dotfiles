@@ -22,6 +22,7 @@
   home.packages = with pkgs; [
     #* dev tools
     gh
+    lazyjournal
     devenv
     lazygit
     fzf

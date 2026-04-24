@@ -18,7 +18,8 @@
     #* dev tools
     speedcrunch
     dbeaver-bin
-    sqlit-tui
+    act3
+    harlequin
     vscode
     ollama
     claude-code
