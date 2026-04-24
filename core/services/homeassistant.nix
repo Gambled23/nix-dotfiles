@@ -32,7 +32,7 @@ in
 
     customComponents = with pkgs; [
       (callPackage ../../nixpkgs/pkgs/cozylife/package.nix {})
-      dreo
+      home-assistant-custom-components.dreo
     ];
     customLovelaceModules = with pkgs.home-assistant-custom-lovelace-modules; [
       bubble-card
