@@ -44,7 +44,7 @@
 
       # https://wiki.hypr.land/Configuring/Variables/#blur
       blur = {
-        enabled = false;
+        enabled = true;
         popups = true;
         special = true;
         noise = 0;
