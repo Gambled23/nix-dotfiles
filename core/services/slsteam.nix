@@ -18,6 +18,7 @@
       2779120 # Modulus Factory Automation
       2416450 # MOUSE: P.I. For Hire
       3265700 # Vampire crawlers
+      1147860 # UFO 50
     ];
     AdditionalApps = [
       2868840 # Slay the Spire 2
@@ -33,6 +34,7 @@
       2779120 # Modulus Factory Automation
       2416450 # MOUSE: P.I. For Hire
       3265700 # Vampire crawlers
+      1147860 # UFO 50
     ];
     SafeMode = true;
   };
