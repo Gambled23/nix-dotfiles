@@ -5,6 +5,7 @@ with lib;
 {
   imports = [
     ./stylix.nix
+    # ../../../programs/dankmaterialshell.nix
   ];
     
   programs.hyprland = {
@@ -38,7 +39,6 @@ with lib;
     glib # for yazi gvfs plugin
     bibata-cursors
     iw # for cards layout in hyprlock
-    squeekboard
   ];
 
   # Optional, hint Electron apps to use Wayland:
