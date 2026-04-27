@@ -348,7 +348,7 @@
       image = [
         {
           monitor = "";
-          path = "~/.face";
+          path = "~/face.jpg";
           size = 120;
           rounding = 20;
           border_size = 4;

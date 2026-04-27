@@ -1018,7 +1018,7 @@
       };
 
       general = {
-        avatarImage = "/home/gambled/.face";
+        avatarImage = "/home/gambled/face.jpg";
         dimmerOpacity = 0.2;
         showScreenCorners = false;
         forceBlackScreenCorners = false;
