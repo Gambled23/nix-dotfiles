@@ -1,6 +1,8 @@
 { config, pkgs, lib, inputs, outputs, ... }:
 let 
   ssh_command = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled ";
+  pc_host = "192.168.1.25";
+  pc_mac = "10:FF:E0:AB:9B:CB";
 in
 {
   # systemctl --user stop openclaw-gateway
@@ -58,8 +60,8 @@ in
         {
           platform = "wake_on_lan";
           name = "pc-gambled";
-          mac = "10:FF:E0:AB:9B:CB";
-          host = "192.168.1.20";
+          mac = pc_mac;
+          host = pc_host;
           turn_off = {
             service = "shell_command.poweroff_pc";
           };
