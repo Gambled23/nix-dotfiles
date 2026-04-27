@@ -5,7 +5,6 @@ with lib;
 {
   imports = [
     ./stylix.nix
-    # ../../../programs/dankmaterialshell.nix
   ];
     
   programs.hyprland = {

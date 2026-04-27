@@ -3,7 +3,7 @@
 with lib;
 
 {
-  programs.dms-shell = {
+  programs.dank-material-shell = {
     enable = true;
     systemd.enable = true;
     systemd.restartIfChanged = true;
@@ -13,5 +13,9 @@ with lib;
     enableClipboardPaste = true;
     enableCalendarEvents = true;
     enableAudioWavelength = true;
+    settings = {
+      theme = "dark";
+      dynamicTheming = true;
+    };
   };
 }

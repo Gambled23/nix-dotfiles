@@ -31,11 +31,17 @@
       url = "github:nix-community/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
     # ambxst.url = "github:Axenide/Ambxst";
     # ambxst.url = "github:smarthumankinda/ambxst-flake"; 
 
     noctalia = {
       url = "github:noctalia-dev/noctalia-shell";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    dms = {
+      url = "github:AvengeMedia/DankMaterialShell/stable";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -96,6 +102,7 @@
     commonModules = [
       nix-index-database.nixosModules.default
       home-manager.nixosModules.home-manager
+      stylix.nixosModules.stylix
       # nur.modules.nixos.default
       {
         home-manager.useGlobalPkgs = true;
@@ -107,29 +114,43 @@
         home-manager.extraSpecialArgs = specialArgs;
       }
     ];
+
+    desktopModules = [
+      {
+        home-manager.users.gambled.imports = [
+          spicetify-nix.homeManagerModules.default
+          ./core/programs/spicetify.nix
+
+          inputs.nixcord.homeModules.nixcord
+          ./core/programs/nixcord.nix
+
+          inputs.dms.homeModules.dank-material-shell
+          ./core/programs/dankmaterialshell.nix
+
+          vicinae.homeManagerModules.default
+        ];
+        home-manager.backupFileExtension = "4eeee";
+        nixpkgs.overlays = [
+          # dolphin-overlay.overlays.default
+        ];
+      }
+    ];
   in {
     nixosConfigurations = {
 
       "pc-gambled" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
-        modules = commonModules ++ [
+        modules = commonModules ++ desktopModules ++ [
           ./devices/pc/configuration.nix
           # jovian-nixos.nixosModules.default
           nixos-hardware.nixosModules.gigabyte-b650
-          stylix.nixosModules.stylix
           {
             home-manager.users.gambled.imports = [
               ./devices/pc/home.nix
-              # ./core/services/xserver/kde/config.nix
-              spicetify-nix.homeManagerModules.default
-              ./core/programs/spicetify.nix
-              inputs.nixcord.homeModules.nixcord
+
               inputs.sls-steam.homeModules.sls-steam
-              ./core/programs/nixcord.nix
-              vicinae.homeManagerModules.default
             ];
-            home-manager.backupFileExtension = "1eee";
           }
         ];
       };
@@ -150,22 +171,11 @@
       "dev-gambled" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
-        modules = commonModules ++ [
+        modules = commonModules ++ desktopModules ++ [
           ./devices/dev/configuration.nix
-          stylix.nixosModules.stylix
           {
             home-manager.users.gambled.imports = [
               ./devices/dev/home.nix
-              # ./core/services/xserver/kde/config.nix
-              spicetify-nix.homeManagerModules.default
-              ./core/programs/spicetify.nix
-              inputs.nixcord.homeModules.nixcord
-              ./core/programs/nixcord.nix
-              vicinae.homeManagerModules.default
-            ];
-            home-manager.backupFileExtension = "3eee";
-            nixpkgs.overlays = [
-              # dolphin-overlay.overlays.default
             ];
           }
         ];
