@@ -13,12 +13,12 @@ with lib;
     enableClipboardPaste = true;
     enableCalendarEvents = true;
     enableAudioWavelength = true;
-    settings = lib.mkForce {
+    settings = {
       currentThemeName = "dynamic";
       currentThemeCategory = "dynamic";
       customThemeFile = "";
       registryThemeVariants = {
-
+      
       };
       matugenScheme = "scheme-tonal-spot";
       runUserMatugenTemplates = true;
@@ -30,15 +30,15 @@ with lib;
       controlCenterTileColorMode = "primary";
       buttonColorMode = "primary";
       cornerRadius = 12;
-      niriLayoutGapsOverride = -1;
-      niriLayoutRadiusOverride = -1;
-      niriLayoutBorderSize = -1;
-      hyprlandLayoutGapsOverride = -1;
-      hyprlandLayoutRadiusOverride = -1;
-      hyprlandLayoutBorderSize = -1;
-      mangoLayoutGapsOverride = -1;
-      mangoLayoutRadiusOverride = -1;
-      mangoLayoutBorderSize = -1;
+      niriLayoutGapsOverride = (-1);
+      niriLayoutRadiusOverride = (-1);
+      niriLayoutBorderSize = (-1);
+      hyprlandLayoutGapsOverride = (-1);
+      hyprlandLayoutRadiusOverride = (-1);
+      hyprlandLayoutBorderSize = (-1);
+      mangoLayoutGapsOverride = (-1);
+      mangoLayoutRadiusOverride = (-1);
+      mangoLayoutBorderSize = (-1);
       use24HourClock = true;
       showSeconds = false;
       padHours12Hour = false;
@@ -74,7 +74,7 @@ with lib;
       showGpuTemp = true;
       selectedGpuIndex = 0;
       enabledGpuPciIds = [
-
+      
       ];
       showSystemTray = true;
       systemTrayIconTintMode = "primary";
@@ -164,7 +164,7 @@ with lib;
       workspaceFocusedBorderColor = "primary";
       workspaceFocusedBorderThickness = 2;
       workspaceNameIcons = {
-
+      
       };
       waveProgressEnabled = true;
       scrollTitleEnabled = true;
@@ -233,20 +233,20 @@ with lib;
       spotlightModalViewMode = "list";
       browserPickerViewMode = "grid";
       browserUsageHistory = {
-
+      
       };
       appPickerViewMode = "grid";
       filePickerUsageHistory = {
-
+      
       };
       sortAppsAlphabetically = true;
       appLauncherGridColumns = 4;
       spotlightCloseNiriOverview = true;
       spotlightSectionViewModes = {
-
+      
       };
       appDrawerSectionViewModes = {
-
+      
       };
       niriOverviewOverlayEnabled = true;
       dankLauncherV2Size = "compact";
@@ -290,7 +290,7 @@ with lib;
       notepadFontFamily = "";
       notepadFontSize = 14;
       notepadShowLineNumbers = false;
-      notepadTransparencyOverride = -1;
+      notepadTransparencyOverride = (-1);
       notepadLastCustomTransparency = 0.7;
       soundsEnabled = true;
       useSystemSoundTheme = false;
@@ -316,10 +316,10 @@ with lib;
       fadeToDpmsGracePeriod = 5;
       launchPrefix = "";
       brightnessDevicePins = {
-
+      
       };
       wifiNetworkPins = {
-
+      
       };
       bluetoothDevicePins = {
         preferredDevice = [
@@ -327,10 +327,10 @@ with lib;
         ];
       };
       audioInputDevicePins = {
-
+      
       };
       audioOutputDevicePins = {
-
+      
       };
       gtkThemingEnabled = true;
       qtThemingEnabled = true;
@@ -352,7 +352,7 @@ with lib;
       matugenTemplateKitty = true;
       matugenTemplateFoot = true;
       matugenTemplateAlacritty = true;
-      matugenTemplateNeovim = false;
+      matugenTemplateNeovim = true;
       matugenTemplateWezterm = true;
       matugenTemplateDgop = true;
       matugenTemplateKcolorscheme = true;
@@ -409,8 +409,8 @@ with lib;
       notificationTimeoutLow = 5000;
       notificationTimeoutNormal = 5000;
       notificationTimeoutCritical = 0;
-      notificationCompactMode = true;
-      notificationPopupPosition = -1;
+      notificationCompactMode = false;
+      notificationPopupPosition = (-1);
       notificationAnimationSpeed = 1;
       notificationCustomAnimationDuration = 400;
       notificationHistoryEnabled = true;
@@ -420,7 +420,7 @@ with lib;
       notificationHistorySaveNormal = true;
       notificationHistorySaveCritical = true;
       notificationRules = [
-
+      
       ];
       osdAlwaysShowValue = false;
       osdPosition = 5;
@@ -462,19 +462,19 @@ with lib;
         ];
       };
       showOnLastDisplay = {
-
+      
       };
       niriOutputSettings = {
-
+      
       };
       hyprlandOutputSettings = {
-
+      
       };
       displayProfiles = {
-
+      
       };
       activeDisplayProfile = {
-
+      
       };
       displayProfileAutoSelect = false;
       displayShowDisconnected = false;
@@ -494,8 +494,8 @@ with lib;
               id = "music";
             }
             {
-              id = "discordVoice";
               enabled = true;
+              id = "discordVoice";
             }
           ];
           clickThrough = false;
@@ -508,20 +508,20 @@ with lib;
           innerPadding = 4;
           leftWidgets = [
             {
+              enabled = true;
               id = "launcherButton";
-              enabled = true;
             }
             {
+              enabled = true;
               id = "clock";
-              enabled = true;
             }
             {
+              enabled = true;
               id = "workspaceSwitcher";
-              enabled = true;
             }
             {
-              id = "usbManager";
               enabled = true;
+              id = "usbManager";
             }
           ];
           maximizeWidgetIcons = false;
@@ -534,28 +534,28 @@ with lib;
           removeWidgetPadding = false;
           rightWidgets = [
             {
+              enabled = true;
               id = "dankKDEConnect";
-              enabled = true;
             }
             {
+              enabled = true;
               id = "systemTray";
-              enabled = true;
             }
             {
+              enabled = true;
               id = "volumeMixer";
-              enabled = true;
             }
             {
+              enabled = true;
               id = "battery";
-              enabled = true;
             }
             {
+              enabled = true;
               id = "notificationButton";
-              enabled = true;
             }
             {
-              id = "controlCenterButton";
               enabled = true;
+              id = "controlCenterButton";
               showAudioPercent = false;
               showBatteryIcon = false;
             }
@@ -580,10 +580,10 @@ with lib;
         g = 1;
         b = 1;
         a = 1;
-        hsvHue = -1;
+        hsvHue = (-1);
         hsvSaturation = 0;
         hsvValue = 1;
-        hslHue = -1;
+        hslHue = (-1);
         hslSaturation = 0;
         hslLightness = 1;
         valid = true;
@@ -591,8 +591,8 @@ with lib;
       desktopClockShowDate = true;
       desktopClockShowAnalogNumbers = false;
       desktopClockShowAnalogSeconds = true;
-      desktopClockX = -1;
-      desktopClockY = -1;
+      desktopClockX = (-1);
+      desktopClockY = (-1);
       desktopClockWidth = 280;
       desktopClockHeight = 180;
       desktopClockDisplayPreferences = [
@@ -607,10 +607,10 @@ with lib;
         g = 1;
         b = 1;
         a = 1;
-        hsvHue = -1;
+        hsvHue = (-1);
         hsvSaturation = 0;
         hsvValue = 1;
-        hslHue = -1;
+        hslHue = (-1);
         hslSaturation = 0;
         hslLightness = 1;
         valid = true;
@@ -630,21 +630,21 @@ with lib;
       systemMonitorTopProcessSortBy = "cpu";
       systemMonitorGraphInterval = 60;
       systemMonitorLayoutMode = "auto";
-      systemMonitorX = -1;
-      systemMonitorY = -1;
+      systemMonitorX = (-1);
+      systemMonitorY = (-1);
       systemMonitorWidth = 320;
       systemMonitorHeight = 480;
       systemMonitorDisplayPreferences = [
         "all"
       ];
       systemMonitorVariants = [
-
+      
       ];
       desktopWidgetPositions = {
-
+      
       };
       desktopWidgetGridSettings = {
-
+      
       };
       desktopWidgetInstances = [
         {
@@ -686,10 +686,10 @@ with lib;
               y = 166.46484375;
             };
             eDP-1 = {
-              height = 687.07421875;
-              width = 971.625;
-              x = 927.1640625;
-              y = 381.1484375;
+              height = 527.8203125;
+              width = 701.94921875;
+              x = 0;
+              y = 672.1796875;
             };
           };
           widgetType = "systemMonitor";
@@ -715,21 +715,84 @@ with lib;
             HDMI-A-1 = {
               height = 416.09375;
               width = 416.09375;
-              x = 731.56640625;
-              y = 146.17578125;
+              x = 1503.90625;
+              y = 40.96484375;
             };
             eDP-1 = {
-              height = 578.19140625;
-              width = 578.19140625;
-              x = 11.48828125;
-              y = 55.3359375;
+              height = 487.90625;
+              width = 487.90625;
+              x = 0.109375;
+              y = 44.11328125;
             };
           };
           widgetType = "desktopClock";
         }
+        {
+          id = "dw_1777328235435_gpl786lqf";
+          widgetType = "dankDesktopWeather";
+          name = "Dank Desktop Weather";
+          enabled = true;
+          config = {
+            displayPreferences = [
+              {
+                name = "eDP-1";
+                model = "0x1618";
+              }
+            ];
+            viewMode = "detailed";
+            showPressure = true;
+            showHourlyForecast = true;
+            hourlyCount = 12;
+          };
+          positions = {
+            eDP-1 = {
+              width = 747.7890625;
+              height = 529.7109375;
+              x = 1172.2109375;
+              y = 670.2890625;
+            };
+            HDMI-A-1 = {
+              width = 292.9296875;
+              height = 291.4375;
+              x = 309.45703125;
+              y = 636.58984375;
+            };
+          };
+        }
+        {
+          id = "dw_1777328238920_6zg9yppl4";
+          widgetType = "mediaPlayer";
+          name = "Media Player";
+          enabled = true;
+          config = {
+            displayPreferences = [
+              {
+                name = "eDP-1";
+                model = "0x1618";
+              }
+            ];
+            showOnOverlay = false;
+            borderOpacity = 0;
+            rotateThumbnail = true;
+          };
+          positions = {
+            eDP-1 = {
+              width = 458.7578125;
+              height = 195.7890625;
+              x = 708.0859375;
+              y = 669.90625;
+            };
+            HDMI-A-1 = {
+              width = 558.3671875;
+              height = 215.1953125;
+              x = 1348.45703125;
+              y = 56.7421875;
+            };
+          };
+        }
       ];
       desktopWidgetGroups = [
-
+      
       ];
       builtInPluginSettings = {
         dms_settings_search = {
@@ -738,13 +801,12 @@ with lib;
       };
       clipboardEnterToPaste = false;
       launcherPluginVisibility = {
-
+      
       };
       launcherPluginOrder = [
-
+      
       ];
       configVersion = 5;
-
     };
 
     plugins = {

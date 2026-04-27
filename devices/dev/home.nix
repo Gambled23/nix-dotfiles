@@ -21,6 +21,7 @@
     act3
     harlequin
     claude-code
+    opencode
     bruno
     # android-studio
     # jdk25_headless
