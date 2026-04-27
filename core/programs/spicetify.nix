@@ -6,7 +6,13 @@ in
   programs.spicetify = {
     enable = true;
     theme = {
-      name = lib.mkForce "text";
+      name = "text";
+      src = pkgs.fetchFromGitHub {
+        owner = "spicetify";
+        repo = "spicetify-themes";
+        tag = "2.6.0";
+        hash = "sha256-qii6iRU7ZaHTT8DuRwhSt8y/K/41ElltLZvmc/1dRpQ=";
+      };
     };
 
     enabledCustomApps = with spicePkgs.apps; [

@@ -45,6 +45,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    dms-plugin-registry = {
+      url = "github:AvengeMedia/dms-plugin-registry";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     sls-steam = {
       url = "github:AceSLS/SLSsteam";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -102,7 +107,7 @@
     commonModules = [
       nix-index-database.nixosModules.default
       home-manager.nixosModules.home-manager
-      stylix.nixosModules.stylix
+      # stylix.nixosModules.stylix
       # nur.modules.nixos.default
       {
         home-manager.useGlobalPkgs = true;
@@ -126,6 +131,7 @@
 
           inputs.dms.homeModules.dank-material-shell
           ./core/programs/dankmaterialshell.nix
+          inputs.dms-plugin-registry.modules.default
 
           vicinae.homeManagerModules.default
         ];

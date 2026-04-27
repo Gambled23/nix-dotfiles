@@ -10,11 +10,10 @@
   imports = [
     ../../home.nix
     ./hyprland/pc.nix
-    ../../core/services/slsteam.nix
+
     ../../core/programs/ghostty.nix
+    ../../core/programs/vscode.nix
     ../../core/services/slsteam.nix
-    # ../../../core/programs/firefox.nix
-    # ../../core/programs/firefox.nix
 
   ];
 
@@ -33,9 +32,7 @@
     act3
     harlequin
     dbeaver-bin
-    vscode
     claude-code
-    python315
 
     #* games
     # itch

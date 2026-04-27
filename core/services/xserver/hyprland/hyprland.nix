@@ -4,7 +4,7 @@ with lib;
 
 {
   imports = [
-    ./stylix.nix
+    # ./stylix.nix
   ];
     
   programs.hyprland = {
@@ -19,6 +19,7 @@ with lib;
     kdePackages.dolphin
     kdePackages.dolphin-plugins
     kdePackages.qt6ct
+    kdePackages.qtwebsockets
     kitty # required for the default Hyprland config
     hyprshot # Screenshot tool
     playerctl

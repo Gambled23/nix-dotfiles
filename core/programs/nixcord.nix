@@ -6,10 +6,12 @@
 }: {
   programs.nixcord = {
     enable = true;
-    discord.enable = true;
+    equibop.enable = true;
+    vesktop.enable = false;
+    discord.enable = false;
     discord.equicord.enable = true;
     discord.vencord.enable = false;
-    vesktop.enable = false;
+    
     config = {
       autoUpdate = true;
       autoUpdateNotification = true;
@@ -27,6 +29,7 @@
         betterUploadButton.enable = true;
         biggerStreamPreview.enable = true;
         callTimer.enable = true;
+        equibopStreamFixes.enable = true;
         fakeNitro.enable = true;
         fakeProfileThemes.enable = true;
         # forceOwnerCrown.enable = true;

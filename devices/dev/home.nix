@@ -10,22 +10,20 @@
   imports = [
     ../../home.nix
     ./hyprland/dev.nix
+    
     ../../core/programs/ghostty.nix
-    # ../../core/programs/firefox.nix
+    ../../core/programs/vscode.nix
   ];
 
   home.packages = with pkgs; [
     #* dev tools
-    speedcrunch
     dbeaver-bin
     act3
     harlequin
-    vscode
-    ollama
     claude-code
+    bruno
     # android-studio
     # jdk25_headless
-    bruno
 
     #* media
     vlc
@@ -38,16 +36,15 @@
     altus
     
     #* utils
-    ente-auth
+    speedcrunch
     android-tools
     libreoffice
     scrcpy
-    miraclecast
-    # gnome-network-displays
     moonlight-qt
+    siyuan
+    # gnome-network-displays
     # stremio-linux-shell
     # inputs.quickshell.packages.${pkgs.stdenv.hostPlatform.system}.default
-    siyuan
 
     #* webbrowsers
     google-chrome

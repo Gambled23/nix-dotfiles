@@ -15,7 +15,7 @@
     ../../hypr/hyprshot.nix
     # ../../hypr/hyprpanel.nix
     # ../../../programs/ashell.nix
-    ../../../programs/noctalia.nix
+    # ../../../programs/noctalia.nix
     ../../hypr/hyprlock/cards.nix
     ../../vicinae.nix
     # ../../../programs/quickshell/quickshell.nix
@@ -57,7 +57,7 @@
       #################
       "exec-once" = [
         # "systemctl --user enable --now hyprpolkitagent.service"
-        "ghostty -e noctalia-shell -d"
+        # "ghostty -e noctalia-shell -d"
         # "systemctl --user enable --now hyprpaper.service"
         "systemctl --user enable --now hypridle.service"
         "spotify"
