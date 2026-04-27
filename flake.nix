@@ -129,7 +129,6 @@
 
           vicinae.homeManagerModules.default
         ];
-        home-manager.backupFileExtension = "4eeee";
         nixpkgs.overlays = [
           # dolphin-overlay.overlays.default
         ];
@@ -177,6 +176,7 @@
             home-manager.users.gambled.imports = [
               ./devices/dev/home.nix
             ];
+            home-manager.backupFileExtension = "memeback";
           }
         ];
       };

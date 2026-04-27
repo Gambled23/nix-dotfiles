@@ -18,6 +18,7 @@ with lib;
     # inputs.ambxst.packages.${pkgs.stdenv.hostPlatform.system}.default
     kdePackages.dolphin
     kdePackages.dolphin-plugins
+    kdePackages.qt6ct
     kitty # required for the default Hyprland config
     hyprshot # Screenshot tool
     playerctl
