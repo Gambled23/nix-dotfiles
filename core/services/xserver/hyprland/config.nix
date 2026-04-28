@@ -45,7 +45,7 @@
       ### MY PROGRAMS ###
       ###################
       "$terminal" = "ghostty";
-      "$fileManager" = "$terminal -e yazi";
+      "$file_manager" = "yazi";
       "$web_browser" = "google-chrome-stable";
       "$code" = "code";
       "$menu" = "vicinae toggle";
@@ -61,7 +61,7 @@
         # "systemctl --user enable --now hyprpaper.service"
         "systemctl --user enable --now hypridle.service"
         "spotify"
-        "discord"
+        "equibop"
         "altus"
         "kdeconnect-indicator"
         # "bluetoothctl connect 24:95:2F:60:BD:94"

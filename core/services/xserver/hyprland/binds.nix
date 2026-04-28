@@ -4,7 +4,7 @@
   wayland.windowManager.hyprland.settings = {
     bind = [
       "$mainMod, Q, killactive,"
-      "$mainMod, E, exec, $fileManager"
+      "$mainMod, E, exec, $file_manager"
       "$mainMod, R, exec, $menu"
       "$mainMod, F, exec, $web_browser"
       "$mainMod, RETURN, exec, $terminal"

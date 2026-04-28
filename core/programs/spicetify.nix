@@ -5,15 +5,16 @@ in
 {
   programs.spicetify = {
     enable = true;
-    # theme = {
-    #   name = "text";
-    #   src = pkgs.fetchFromGitHub {
-    #     owner = "spicetify";
-    #     repo = "spicetify-themes";
-    #     tag = "2.6.0";
-    #     hash = "sha256-qii6iRU7ZaHTT8DuRwhSt8y/K/41ElltLZvmc/1dRpQ=";
-    #   };
-    # };
+    theme = {
+      name = "comfy";
+
+      src = pkgs.fetchFromGitHub {
+        owner = "Comfy-Themes";
+        repo = "Spicetify";
+        rev = "32ff101e27cfd33d85b7cc587f7f95db6b2df8b0";
+        hash = "sha256-sqvmSXJMLE2in/cB8ZIJE/t4J5D0PKRddWECdYJjgX0=";
+      };
+    };
 
     enabledCustomApps = with spicePkgs.apps; [
       # newReleases
@@ -24,10 +25,8 @@ in
     enabledExtensions = with spicePkgs.extensions; [
       adblock
       aiBandBlocker
-      autoSkipVideo
       # addToQueueTop
       beautifulLyrics
-      betterGenres
       # bookmark
       # copyToClipboard
       coverAmbience
