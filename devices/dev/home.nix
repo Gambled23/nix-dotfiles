@@ -12,12 +12,12 @@
     ./hyprland/dev.nix
     
     ../../core/programs/ghostty.nix
-    ../../core/programs/vscode.nix
     # ../../core/programs/matugen.nix
   ];
 
   home.packages = with pkgs; [
     #* dev tools
+    vscode
     dbeaver-bin
     act3
     harlequin

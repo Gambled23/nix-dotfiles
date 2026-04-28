@@ -137,6 +137,9 @@
           # ./core/programs/dankmaterialshell.nix
           # inputs.dms-plugin-registry.modules.default
 
+          inputs.noctalia.homeModules.default
+          ./core/programs/noctalia.nix
+
           vicinae.homeManagerModules.default
         ];
         nixpkgs.overlays = [

@@ -12,7 +12,6 @@
     ./hyprland/pc.nix
 
     ../../core/programs/ghostty.nix
-    ../../core/programs/vscode.nix
     ../../core/services/slsteam.nix
 
   ];
@@ -29,6 +28,7 @@
     #android-studio
     # android-studio
     # jdk25_headless
+    vscode
     act3
     harlequin
     dbeaver-bin

@@ -1,8 +1,5 @@
 # Home manager file
 { lib, inputs, pkgs, ... }: {
-  imports = [
-    inputs.noctalia.homeModules.default
-  ];
   
   programs.noctalia-shell = {
     systemd.enable = true;

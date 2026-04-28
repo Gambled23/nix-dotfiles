@@ -13,7 +13,7 @@
     enableBashIntegration = true;
     settings = {
       cursor-click-to-move = true;
-      theme = "dankcolors";
+      theme = "Gruvbox Dark";
       background-opacity = 0.6;
       background-blur = false;
       confirm-close-surface = false;
