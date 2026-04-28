@@ -13,6 +13,7 @@
     
     ../../core/programs/ghostty.nix
     ../../core/programs/vscode.nix
+    # ../../core/programs/matugen.nix
   ];
 
   home.packages = with pkgs; [

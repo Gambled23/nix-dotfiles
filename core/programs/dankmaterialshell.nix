@@ -13,7 +13,7 @@ with lib;
     enableClipboardPaste = true;
     enableCalendarEvents = true;
     enableAudioWavelength = true;
-    settings = {
+    settings = lib.mkForce {
       currentThemeName = "dynamic";
       currentThemeCategory = "dynamic";
       customThemeFile = "";

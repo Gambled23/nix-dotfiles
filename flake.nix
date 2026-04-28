@@ -69,6 +69,10 @@
       url = "github:ciscosweater/enter-the-wired";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    matugen = {
+      url = "github:/InioX/Matugen";
+    };
     
     # Nur repo for firefox extensions
     # nur.url = "github:nix-community/NUR";
@@ -107,7 +111,7 @@
     commonModules = [
       nix-index-database.nixosModules.default
       home-manager.nixosModules.home-manager
-      # stylix.nixosModules.stylix
+      stylix.nixosModules.stylix
       # nur.modules.nixos.default
       {
         home-manager.useGlobalPkgs = true;
