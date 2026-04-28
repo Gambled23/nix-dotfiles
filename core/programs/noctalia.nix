@@ -308,10 +308,10 @@
                 }
                 {
                   colorizeDistroLogo = false;
-                  colorizeSystemIcon = "none";
+                  colorizeSystemIcon = "primary";
                   colorizeSystemText = "none";
                   customIconPath = "";
-                  enableColorization = false;
+                  enableColorization = true;
                   icon = "noctalia";
                   id = "ControlCenter";
                   useDistroLogo = true;
@@ -489,10 +489,10 @@
                 }
                 {
                   colorizeDistroLogo = false;
-                  colorizeSystemIcon = "none";
+                  colorizeSystemIcon = "primary";
                   colorizeSystemText = "none";
                   customIconPath = "";
-                  enableColorization = false;
+                  enableColorization = true;
                   icon = "noctalia";
                   id = "ControlCenter";
                   useDistroLogo = true;
@@ -664,10 +664,10 @@
                 }
                 {
                   colorizeDistroLogo = false;
-                  colorizeSystemIcon = "none";
+                  colorizeSystemIcon = "primary";
                   colorizeSystemText = "none";
                   customIconPath = "";
-                  enableColorization = false;
+                  enableColorization = true;
                   icon = "noctalia";
                   id = "ControlCenter";
                   useDistroLogo = true;
@@ -816,10 +816,10 @@
                 }
                 {
                   colorizeDistroLogo = false;
-                  colorizeSystemIcon = "none";
+                  colorizeSystemIcon = "primary";
                   colorizeSystemText = "none";
                   customIconPath = "";
-                  enableColorization = false;
+                  enableColorization = true;
                   icon = "noctalia";
                   id = "ControlCenter";
                   useDistroLogo = true;
@@ -1026,9 +1026,9 @@
         iRadiusRatio = 1;
         boxRadiusRatio = 1;
         clockFormat = "hh\\nmm";
-        clockStyle = "custom";
+        clockStyle = "digital";
         enableBlurBehind = true;
-        enableLockScreenMediaControls = false;
+        enableLockScreenMediaControls = true;
         keybinds = {
           keyDown = [
             "Down"
@@ -1053,17 +1053,17 @@
             "Up"
           ];
         };
-        lockScreenAnimations = false;
-        lockScreenBlur = 0;
+        lockScreenAnimations = true;
+        lockScreenBlur = 1;
         lockScreenMonitors = [ ];
-        lockScreenTint = 0;
-        passwordChars = false;
+        lockScreenTint = 0.1;
+        passwordChars = true;
         reverseScroll = false;
         screenRadiusRatio = 1;
         animationSpeed = 1;
         animationDisabled = false;
         compactLockScreen = false;
-        lockOnSuspend = false;
+        lockOnSuspend = true;
         showSessionButtonsOnLockScreen = false;
         showHibernateOnLockScreen = false;
         enableShadows = false;
