@@ -33,7 +33,6 @@ in
       # history
       # lastfm
       loopyLoop
-      madeForYouShortcut
       playNext
       # popupLyrics
       # powerBar

@@ -15,7 +15,7 @@
     ../../hypr/hyprshot.nix
     # ../../hypr/hyprpanel.nix
     # ../../../programs/ashell.nix
-    # ../../../programs/noctalia.nix
+    ../../../programs/noctalia.nix
     ../../hypr/hyprlock/cards.nix
     ../../vicinae.nix
     # ../../../programs/quickshell/quickshell.nix
@@ -45,7 +45,7 @@
       ### MY PROGRAMS ###
       ###################
       "$terminal" = "ghostty";
-      "$file_manager" = "yazi";
+      "$file_manager" = "$terminal -e yazi";
       "$web_browser" = "google-chrome-stable";
       "$code" = "code";
       "$menu" = "vicinae toggle";

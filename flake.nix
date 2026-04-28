@@ -133,9 +133,9 @@
           inputs.nixcord.homeModules.nixcord
           ./core/programs/nixcord.nix
 
-          inputs.dms.homeModules.dank-material-shell
-          ./core/programs/dankmaterialshell.nix
-          inputs.dms-plugin-registry.modules.default
+          # inputs.dms.homeModules.dank-material-shell
+          # ./core/programs/dankmaterialshell.nix
+          # inputs.dms-plugin-registry.modules.default
 
           vicinae.homeManagerModules.default
         ];
