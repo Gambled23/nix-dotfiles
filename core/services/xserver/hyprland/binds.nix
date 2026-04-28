@@ -15,7 +15,7 @@
       # "$mainMod, B, exec, vicinae vicinae://extensions/vicinae/bluetooth/devices"
       # "$mainMod, B, exec, bluetoothctl connect 24:95:2F:60:BD:94"
 
-      "$mainMod, M, exec, hyprlock"
+      "$mainMod, M, exec, noctalia-shell ipc call lockScreen lock"
       "$mainMod, X, togglefloating,"
       # "$mainMod, M, exit,"
 

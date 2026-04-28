@@ -1190,8 +1190,8 @@
 
       osd = {
         enabled = true;
-        location = "top";
-        autoHideMs = 2000;
+        location = "right";
+        autoHideMs = 3000;
         overlayLayer = true;
         backgroundOpacity = 0.6;
         enabledTypes = [
