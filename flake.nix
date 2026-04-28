@@ -111,7 +111,6 @@
     commonModules = [
       nix-index-database.nixosModules.default
       home-manager.nixosModules.home-manager
-      stylix.nixosModules.stylix
       # nur.modules.nixos.default
       {
         home-manager.useGlobalPkgs = true;
@@ -119,8 +118,11 @@
         home-manager.users.gambled.imports = [
           inputs.nix-flatpak.homeManagerModules.nix-flatpak
           inputs.nvf.homeManagerModules.default
+          stylix.homeModules.stylix
+          ./core/services/xserver/hyprland/stylix.nix
         ];
         home-manager.extraSpecialArgs = specialArgs;
+        home-manager.backupFileExtension = "back";
       }
     ];
 
@@ -142,9 +144,9 @@
 
           vicinae.homeManagerModules.default
         ];
-        nixpkgs.overlays = [
-          # dolphin-overlay.overlays.default
-        ];
+        # nixpkgs.overlays = [
+        #   dolphin-overlay.overlays.default
+        # ];
       }
     ];
   in {
@@ -175,7 +177,6 @@
             home-manager.users.gambled.imports = [
               ./devices/server/home.nix
             ];
-            home-manager.backupFileExtension = "2eee";
           }
         ];
       };
@@ -189,7 +190,6 @@
             home-manager.users.gambled.imports = [
               ./devices/dev/home.nix
             ];
-            home-manager.backupFileExtension = "memeback";
           }
         ];
       };

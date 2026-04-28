@@ -5,52 +5,54 @@
     systemd.enable = true;
     enable = true;
     package = (inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default.override { calendarSupport = true; });
-    colors = lib.mkForce {
-      mPrimary = "#b8bb26";
-      mOnPrimary = "#282828";
-      mSecondary = "#fabd2f";
-      mOnSecondary = "#282828";
-      mTertiary = "#83a598";
-      mOnTertiary = "#282828";
-      mError = "#fb4934";
-      mOnError = "#282828";
-      mSurface = "#282828";
-      mOnSurface = "#fbf1c7";
-      mSurfaceVariant = "#3c3836";
-      mOnSurfaceVariant = "#ebdbb2";
-      mOutline = "#57514e";
-      mShadow = "#282828";
-      mHover = "#83a598";
-      mOnHover = "#282828";
-      terminal = {
-        normal = {
-          black = "#282828";
-          red = "#cc241d";
-          green = "#98971a";
-          yellow = "#d79921";
-          blue = "#458588";
-          magenta = "#b16286";
-          cyan = "#689d6a";
-          white = "#a89984";
-        };
-        bright = {
-          black = "#928374";
-          red = "#fb4934";
-          green = "#b8bb26";
-          yellow = "#fabd2f";
-          blue = "#83a598";
-          magenta = "#d3869b";
-          cyan = "#8ec07c";
-          white = "#ebdbb2";
-        };
-        foreground = "#ebdbb2";
-        background = "#282828";
-        selectionFg = "#ebdbb2";
-        selectionBg = "#665c54";
-        cursorText = "#282828";
-        cursor = "#ebdbb2";
-      };
-    };
+    
+    # colors = lib.mkForce {
+    #   mPrimary = "#b8bb26";
+    #   mOnPrimary = "#282828";
+    #   mSecondary = "#fabd2f";
+    #   mOnSecondary = "#282828";
+    #   mTertiary = "#83a598";
+    #   mOnTertiary = "#282828";
+    #   mError = "#fb4934";
+    #   mOnError = "#282828";
+    #   mSurface = "#282828";
+    #   mOnSurface = "#fbf1c7";
+    #   mSurfaceVariant = "#3c3836";
+    #   mOnSurfaceVariant = "#ebdbb2";
+    #   mOutline = "#57514e";
+    #   mShadow = "#282828";
+    #   mHover = "#83a598";
+    #   mOnHover = "#282828";
+    #   terminal = {
+    #     normal = {
+    #       black = "#282828";
+    #       red = "#cc241d";
+    #       green = "#98971a";
+    #       yellow = "#d79921";
+    #       blue = "#458588";
+    #       magenta = "#b16286";
+    #       cyan = "#689d6a";
+    #       white = "#a89984";
+    #     };
+    #     bright = {
+    #       black = "#928374";
+    #       red = "#fb4934";
+    #       green = "#b8bb26";
+    #       yellow = "#fabd2f";
+    #       blue = "#83a598";
+    #       magenta = "#d3869b";
+    #       cyan = "#8ec07c";
+    #       white = "#ebdbb2";
+    #     };
+    #     foreground = "#ebdbb2";
+    #     background = "#282828";
+    #     selectionFg = "#ebdbb2";
+    #     selectionBg = "#665c54";
+    #     cursorText = "#282828";
+    #     cursor = "#ebdbb2";
+    #   };
+    # };
+
     settings = lib.mkForce {
       settingsVersion = 59;
 
@@ -853,14 +855,14 @@
       };
 
       colorSchemes = {
-        useWallpaperColors = false;
+        useWallpaperColors = true;
         predefinedScheme = "Gruvbox";
         darkMode = true;
         schedulingMode = "off";
         manualSunrise = "06:30";
         manualSunset = "18:30";
         generationMethod = "tonal-spot";
-        monitorForColors = "";
+        monitorForColors = "eDP-1";
         syncGsettings = true;
       };
 
@@ -1272,7 +1274,60 @@
       };
 
       templates = {
-        activeTemplates = [ ];
+        activeTemplates = [
+          {
+            enabled = true;
+            id = "ghostty";
+          }
+          {
+            enabled = true;
+            id = "yazi";
+          }
+          {
+            enabled = true;
+            id = "btop";
+          }
+          {
+            enabled = true;
+            id = "gtk";
+          }
+          {
+            enabled = true;
+            id = "spicetify";
+          }
+          {
+            enabled = true;
+            id = "kcolorscheme";
+          }
+          {
+            enabled = true;
+            id = "qt";
+          }
+          {
+            enabled = true;
+            id = "code";
+          }
+          {
+            enabled = true;
+            id = "hyprland";
+          }
+          {
+            enabled = true;
+            id = "alacritty";
+          }
+          {
+            enabled = true;
+            id = "starship";
+          }
+          {
+            enabled = true;
+            id = "discord";
+          }
+          {
+            enabled = true;
+            id = "vicinae";
+          }
+        ];
         enableUserTheming = false;
       };
 
@@ -1411,8 +1466,8 @@
       wallpapers = {
         "DP-3" = "/home/gambled/Pictures/Wallpapers/PC/gruvbox-ultrawide/wallhaven_1klxl3.jpg";
         "sunshine" = "/home/gambled/Pictures/Wallpapers/PC/anime/111257494_p1.jpg";
-        "HDMI-A-1" = "/home/gambled/Pictures/Wallpapers/PC/anime/wallhaven_powjmm.jpg";
-        "eDP-1" = "/home/gambled/Pictures/Wallpapers/PC/anime/wallhaven_powjmm.jpg";
+        "HDMI-A-1" = "/home/gambled/Pictures/Wallpapers/PC/pixelart/dock.jpg";
+        "eDP-1" = "/home/gambled/Pictures/Wallpapers/PC/pixelart/dock.jpg";
       };
     };
   };

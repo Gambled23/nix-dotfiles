@@ -18,10 +18,6 @@
       notifyAboutUpdates = true;
       transparent = true;
 
-      enabledThemes = [
-        "dms-midnight.css"
-      ];
-
       plugins = {
         accountPanelServerProfile.enable = true;
         betterActivities.enable = true;

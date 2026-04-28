@@ -31,15 +31,32 @@ in
       #   name = "Joypixels";
       # };
     };
+
     # cursor = {
     #   package = pkgs.vimix-cursors;
     #   name = "Vimix-cursors";
     #   size = 24;
     # };
+
     cursor = {
       package = pkgs.bibata-cursors;
       name = "Bibata-Modern-Ice";
       size = 24;
+    };
+
+    targets = {
+      noctalia-shell.enable = false;
+      spicetify.enable = false;
+      starship.enable = false;
+      qt.enable = false;
+      gtk.enable = false;
+      ghostty.enable = false;
+      vicinae.enable = false;
+      yazi.enable = false;
+      btop.enable = false;
+      vscode.enable = false;
+      alacritty.enable = false;
+      kde.enable = false;
     };
   };
 }

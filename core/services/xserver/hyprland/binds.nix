@@ -77,8 +77,8 @@
 
     binde = [
       # Media controller
-      "ALT, 0, exec, pamixer -i 1"
-      "ALT, 9, exec, pamixer -d 1"
+      "ALT, 0, exec, pamixer -i 1 && paplay /etc/nixos/core/services/xserver/hyprland/volume.mp3"
+      "ALT, 9, exec, pamixer -d 1 && paplay /etc/nixos/core/services/xserver/hyprland/volume.mp3"
       "ALT, 8, exec, pamixer -t"
       "ALT, 1, exec, playerctl previous"
       "ALT, 2, exec, playerctl play-pause"

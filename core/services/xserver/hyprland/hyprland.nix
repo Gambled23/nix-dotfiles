@@ -3,10 +3,6 @@
 with lib;
 
 {
-  imports = [
-    ./stylix.nix
-  ];
-    
   programs.hyprland = {
     enable = true;
     withUWSM = true;
