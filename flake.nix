@@ -123,6 +123,7 @@
         ];
         home-manager.extraSpecialArgs = specialArgs;
         home-manager.backupFileExtension = "back";
+        home-manager.overwriteBackup = true;
       }
     ];
 
