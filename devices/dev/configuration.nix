@@ -51,7 +51,7 @@
     "boot.shell_on_fail"
   ];
 
-  
+
   services.flatpak.enable = true; # Enable flatpak
   services.libinput.enable = true; # Enable touchpad support
   services.printing.enable = true; # Enable CUPS to print documents.
@@ -64,7 +64,10 @@
   };
   nixpkgs.config.android_sdk.accept_license = true;
 
-  nix.settings.max-jobs = 4;
+  nix.settings = {
+    max-jobs = 2;
+    cores = 4;
+  };
 
   networking.firewall.trustedInterfaces = [ "p2p-wl+" ];
 

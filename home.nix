@@ -12,13 +12,13 @@
     core/programs/direnv.nix
     core/programs/git.nix
     core/programs/lsd.nix
-    core/programs/neovim.nix
+    # core/programs/neovim.nix
     core/programs/starship.nix
     core/programs/yazi/yazi.nix
     core/programs/zsh.nix
     core/programs/zoxide.nix
   ];
-  
+
   home.packages = with pkgs; [
     #* dev tools
     gh
@@ -36,7 +36,7 @@
     trash-cli	# for yazi trash plugin
     rbw
   ];
-  
+
   home.sessionVariables = {
     NIXOS_OZONE_WL = "1";
     ELECTRON_OZONE_PLATFORM_HINT = "wayland";

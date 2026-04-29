@@ -18,7 +18,7 @@
     # ../../core/services/tandoor.nix
     #./symlinks.nix
     # ../../core/services/ollama.nix
-    
+
     # bootloader
     #../../core/bootloader/systemd.nix
     ../../core/bootloader/grub.nix
@@ -31,4 +31,10 @@
     # "openclaw-2026.3.12"
   ];
   programs.nix-ld.enable = true; # for vscode remote server
+
+  nix.settings = {
+    max-jobs = 1;
+    cores = 2;
+  };
+
 }
