@@ -17,6 +17,7 @@
 
   home.packages = with pkgs; [
     #* dev tools
+    zed-editor-fhs
     vscode
     dbeaver-bin
     act3
