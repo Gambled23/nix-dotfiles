@@ -73,6 +73,7 @@
     cachix.bin
     grub2
     wl-clipboard
+    nixd
     (import ./scripts/nix-rbd.nix { inherit pkgs; })
     (import ./scripts/update-flake.nix { inherit pkgs; })
     (import ./scripts/auto-gc.nix { inherit pkgs; })
@@ -122,9 +123,9 @@
   services.udev = {
     enable = true;
     # Dar permisos a dispositivos hidraw para headsetcontrol
-    extraRules = 
+    extraRules =
       ''
-        KERNEL=="hidraw*", SUBSYSTEM=="hidraw", MODE="0666" 
+        KERNEL=="hidraw*", SUBSYSTEM=="hidraw", MODE="0666"
       '';
   };
 
@@ -141,7 +142,7 @@
 
   i18n = {
     defaultLocale = "en_US.UTF-8";
-  }; 
+  };
 
   environment.variables = {
     EDITOR = "vim";

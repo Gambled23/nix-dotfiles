@@ -44,7 +44,7 @@
     # (import ../../scripts/songdetails.nix { inherit pkgs; })
     (callPackage ../../nixpkgs/pkgs/hayase/package.nix {})
     # (callPackage ../../nixpkgs/pkgs/stremio/package.nix {})
-    (callPackage ../../nixpkgs/pkgs/accela/default.nix {})
+    # (callPackage ../../nixpkgs/pkgs/accela/default.nix {})
   ];
 
   # amdgpu
@@ -66,7 +66,7 @@
     "boot.shell_on_fail"
   ];
 
-  
+
   # virtualisation
   # virtualisation.vmware.host.enable = true; # vmware
   # virtualisation.waydroid.enable = true; # Waydroid
@@ -100,5 +100,5 @@
   #   "openclaw-2026.3.12"
   # ];
 
-  
+
 }

@@ -33,7 +33,7 @@
     };
 
     # ambxst.url = "github:Axenide/Ambxst";
-    # ambxst.url = "github:smarthumankinda/ambxst-flake"; 
+    # ambxst.url = "github:smarthumankinda/ambxst-flake";
 
     noctalia = {
       url = "github:noctalia-dev/noctalia-shell";
@@ -73,7 +73,7 @@
     matugen = {
       url = "github:/InioX/Matugen";
     };
-    
+
     # Nur repo for firefox extensions
     # nur.url = "github:nix-community/NUR";
     # nur.inputs.nixpkgs.follows = "nixpkgs";
@@ -85,11 +85,11 @@
     # jovian-nixos.url = "github:Jovian-Experiments/Jovian-NixOS";
   };
 
-  outputs = { 
-      self, 
-      nixpkgs, 
+  outputs = {
+      self,
+      nixpkgs,
       home-manager,
-      spicetify-nix, 
+      spicetify-nix,
       nixos-hardware,
       # nur,
       nixcord,
@@ -100,7 +100,7 @@
       millennium,
       sls-steam,
       nix-index-database,
-      ... 
+      ...
      }@inputs:
   let
     specialArgs = {

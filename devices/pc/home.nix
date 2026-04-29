@@ -16,14 +16,14 @@
 
   ];
 
-  home.packages = 
+  home.packages =
     with pkgs; [
     #* books
     #hakuneko
     #kcc
     #calibre
     komikku
-    
+
     #* dev tools
     #android-studio
     # android-studio
@@ -35,6 +35,7 @@
     claude-code
 
     #* games
+    inputs.accela.packages.${pkgs.stdenv.hostPlatform.system}.default
     # itch
     gamemode
     # wineWowPackages.stable
