@@ -25,6 +25,8 @@
     claude-code
     opencode
     bruno
+    remmina
+    android-tools
     # android-studio
     # jdk25_headless
 
@@ -40,7 +42,6 @@
     
     #* utils
     speedcrunch
-    android-tools
     libreoffice
     scrcpy
     moonlight-qt
@@ -57,5 +58,6 @@
     "com.stremio.Stremio"
     "com.artemchep.keyguard"
     "org.gnome.NetworkDisplays"
+    "app.zen_browser.zen"
   ];
 }

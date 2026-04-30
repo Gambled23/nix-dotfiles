@@ -110,7 +110,7 @@
           "HDMI-A-1"
           "sunshine"
         ];
-        mouseWheelAction = "none";
+        mouseWheelAction = "workspace";
         mouseWheelWrap = true;
         reverseScroll = false;
         rightClickAction = "controlCenter";
@@ -127,11 +127,11 @@
         marginVertical = 4;
         marginHorizontal = 4;
         frameThickness = 4;
-        frameRadius = 4;
+        frameRadius = 10;
         outerCorners = false;
         displayMode = "always_visible";
         fontScale = 1;
-        middleClickAction = "none";
+        middleClickAction = "controlCenter";
         middleClickCommand = "";
         middleClickFollowMouse = false;
         hideOnOverview = false;
@@ -144,40 +144,18 @@
             widgets = {
               left = [
                 {
+                  clockColor = "none";
+                  customFont = "";
+                  formatHorizontal = "HH:mm";
+                  formatVertical = "HH mm - dd MM";
+                  id = "Clock";
+                  tooltipFormat = "HH:mm ddd, MMM dd";
+                  useCustomFont = false;
+                }
+                {
                   defaultSettings = {
                   };
                   id = "plugin:workspace-overview";
-                }
-                # {
-                #   defaultSettings = {
-                #     enableTodoIntegration = true;
-                #     notecardsEnabled = true;
-                #     pincardsEnabled = true;
-                #     position = "Bottom";
-                #     showCloseButton = false;
-                #   };
-                #   id = "plugin:clipper";
-                # }
-                {
-                  characterCount = 2;
-                  colorizeIcons = false;
-                  emptyColor = "secondary";
-                  enableScrollWheel = true;
-                  focusedColor = "primary";
-                  followFocusedScreen = false;
-                  groupedBorderOpacity = 1;
-                  hideUnoccupied = false;
-                  iconScale = 0.6;
-                  id = "Workspace";
-                  labelMode = "index";
-                  occupiedColor = "secondary";
-                  pillSize = 0.6;
-                  fontWeight = "bold";
-                  showApplications = true;
-                  showBadge = true;
-                  showLabelsOnlyWhenOccupied = false;
-                  unfocusedIconsOpacity = 1;
-                  showApplicationsHover = false;
                 }
                 {
                   defaultSettings = {
@@ -210,17 +188,40 @@
                   };
                   id = "plugin:special-workspaces";
                 }
-
+                {
+                  characterCount = 2;
+                  colorizeIcons = false;
+                  emptyColor = "secondary";
+                  enableScrollWheel = true;
+                  focusedColor = "primary";
+                  followFocusedScreen = false;
+                  groupedBorderOpacity = 1;
+                  hideUnoccupied = false;
+                  iconScale = 0.6;
+                  id = "Workspace";
+                  labelMode = "index";
+                  occupiedColor = "secondary";
+                  pillSize = 0.6;
+                  fontWeight = "bold";
+                  showApplications = true;
+                  showBadge = true;
+                  showLabelsOnlyWhenOccupied = false;
+                  unfocusedIconsOpacity = 1;
+                  showApplicationsHover = false;
+                }
               ];
               center = [
                 {
-                  clockColor = "none";
-                  customFont = "";
-                  formatHorizontal = "HH:mm";
-                  formatVertical = "HH mm - dd MM";
-                  id = "Clock";
-                  tooltipFormat = "HH:mm ddd, MMM dd";
-                  useCustomFont = false;
+                  defaultSettings = {
+                    autoMount = false;
+                    fileBrowser = "yazi";
+                    hideWhenEmpty = true;
+                    iconColor = "primary";
+                    showBadge = true;
+                    showNotifications = true;
+                    terminalCommand = "ghostty";
+                  };
+                  id = "plugin:usb-drive-manager";
                 }
                 {
                   compactMode = true;
@@ -238,38 +239,6 @@
                   visualizerType = "linear";
                   textColor = "none";
                 }
-              ];
-              right = [
-                {
-                  blacklist = [];
-                  chevronColor = "none";
-                  colorizeIcons = false;
-                  drawerEnabled = true;
-                  hidePassive = false;
-                  id = "Tray";
-                  pinned = [];
-                }
-                {
-                  commandPrefix = "ssh";
-                  defaultSettings = {
-                    pollInterval = 10;
-                    showInactiveHosts = true;
-                    terminalCommand = "";
-                  };
-                  id = "plugin:ssh-sessions";
-                }
-                {
-                  defaultSettings = {
-                    autoMount = true;
-                    fileBrowser = "yazi";
-                    hideWhenEmpty = true;
-                    iconColor = "none";
-                    showBadge = true;
-                    showNotifications = true;
-                    terminalCommand = "ghostty";
-                  };
-                  id = "plugin:usb-drive-manager";
-                }
                 {
                   defaultSettings = {
                   activeColor = "primary";
@@ -282,9 +251,20 @@
                   };
                   id = "plugin:privacy-indicator";
                 }
+              ];
+              right = [
+                {
+                  blacklist = [];
+                  chevronColor = "primary";
+                  colorizeIcons = false;
+                  drawerEnabled = true;
+                  hidePassive = false;
+                  id = "Tray";
+                  pinned = [];
+                }
                 {
                   deviceNativePath = "__default__";
-                  displayMode = "icon-hover";
+                  displayMode = "icon-always";
                   hideIfIdle = false;
                   hideIfNotDetected = true;
                   id = "Battery";
@@ -292,11 +272,23 @@
                   showPowerProfiles = true;
                 }
                 {
-                  displayMode = "onhover";
-                  iconColor = "none";
+                  displayMode = "alwaysShow";
+                  iconColor = "primary";
                   id = "Volume";
                   middleClickCommand = "pwvucontrol || pavucontrol";
                   textColor = "none";
+                }
+                {
+                  commandPrefix = "ssh";
+                  defaultSettings = {
+                    pollInterval = 10;
+                    showInactiveHosts = true;
+                    terminalCommand = "";
+                  };
+                  id = "plugin:ssh-sessions";
+                }
+                {
+                  id = "plugin:clipboard";
                 }
                 {
                   hideWhenZero = true;
@@ -325,40 +317,18 @@
             widgets = {
               left = [
                 {
+                  clockColor = "none";
+                  customFont = "";
+                  formatHorizontal = "HH:mm";
+                  formatVertical = "HH mm - dd MM";
+                  id = "Clock";
+                  tooltipFormat = "HH:mm ddd, MMM dd";
+                  useCustomFont = false;
+                }
+                {
                   defaultSettings = {
                   };
                   id = "plugin:workspace-overview";
-                }
-                # {
-                #   defaultSettings = {
-                #     enableTodoIntegration = true;
-                #     notecardsEnabled = true;
-                #     pincardsEnabled = true;
-                #     position = "Bottom";
-                #     showCloseButton = false;
-                #   };
-                #   id = "plugin:clipper";
-                # }
-                {
-                  characterCount = 2;
-                  colorizeIcons = false;
-                  emptyColor = "secondary";
-                  enableScrollWheel = true;
-                  focusedColor = "primary";
-                  followFocusedScreen = false;
-                  groupedBorderOpacity = 1;
-                  hideUnoccupied = false;
-                  iconScale = 0.6;
-                  id = "Workspace";
-                  labelMode = "index";
-                  occupiedColor = "secondary";
-                  pillSize = 0.6;
-                  fontWeight = "bold";
-                  showApplications = true;
-                  showBadge = true;
-                  showLabelsOnlyWhenOccupied = false;
-                  unfocusedIconsOpacity = 1;
-                  showApplicationsHover = false;
                 }
                 {
                   defaultSettings = {
@@ -391,17 +361,40 @@
                   };
                   id = "plugin:special-workspaces";
                 }
-
+                {
+                  characterCount = 2;
+                  colorizeIcons = false;
+                  emptyColor = "secondary";
+                  enableScrollWheel = true;
+                  focusedColor = "primary";
+                  followFocusedScreen = false;
+                  groupedBorderOpacity = 1;
+                  hideUnoccupied = false;
+                  iconScale = 0.6;
+                  id = "Workspace";
+                  labelMode = "index";
+                  occupiedColor = "secondary";
+                  pillSize = 0.6;
+                  fontWeight = "bold";
+                  showApplications = true;
+                  showBadge = true;
+                  showLabelsOnlyWhenOccupied = false;
+                  unfocusedIconsOpacity = 1;
+                  showApplicationsHover = false;
+                }
               ];
               center = [
                 {
-                  clockColor = "none";
-                  customFont = "";
-                  formatHorizontal = "HH:mm";
-                  formatVertical = "HH mm - dd MM";
-                  id = "Clock";
-                  tooltipFormat = "HH:mm ddd, MMM dd";
-                  useCustomFont = false;
+                  defaultSettings = {
+                    autoMount = false;
+                    fileBrowser = "yazi";
+                    hideWhenEmpty = true;
+                    iconColor = "primary";
+                    showBadge = true;
+                    showNotifications = true;
+                    terminalCommand = "ghostty";
+                  };
+                  id = "plugin:usb-drive-manager";
                 }
                 {
                   compactMode = true;
@@ -419,38 +412,6 @@
                   visualizerType = "linear";
                   textColor = "none";
                 }
-              ];
-              right = [
-                {
-                  blacklist = [];
-                  chevronColor = "none";
-                  colorizeIcons = false;
-                  drawerEnabled = true;
-                  hidePassive = false;
-                  id = "Tray";
-                  pinned = [];
-                }
-                {
-                  commandPrefix = "ssh";
-                  defaultSettings = {
-                    pollInterval = 10;
-                    showInactiveHosts = true;
-                    terminalCommand = "";
-                  };
-                  id = "plugin:ssh-sessions";
-                }
-                {
-                  defaultSettings = {
-                    autoMount = true;
-                    fileBrowser = "yazi";
-                    hideWhenEmpty = true;
-                    iconColor = "none";
-                    showBadge = true;
-                    showNotifications = true;
-                    terminalCommand = "ghostty";
-                  };
-                  id = "plugin:usb-drive-manager";
-                }
                 {
                   defaultSettings = {
                   activeColor = "primary";
@@ -463,9 +424,20 @@
                   };
                   id = "plugin:privacy-indicator";
                 }
+              ];
+              right = [
+                {
+                  blacklist = [];
+                  chevronColor = "primary";
+                  colorizeIcons = false;
+                  drawerEnabled = true;
+                  hidePassive = false;
+                  id = "Tray";
+                  pinned = [];
+                }
                 {
                   deviceNativePath = "__default__";
-                  displayMode = "icon-hover";
+                  displayMode = "icon-always";
                   hideIfIdle = false;
                   hideIfNotDetected = true;
                   id = "Battery";
@@ -473,11 +445,23 @@
                   showPowerProfiles = true;
                 }
                 {
-                  displayMode = "onhover";
-                  iconColor = "none";
+                  displayMode = "alwaysShow";
+                  iconColor = "primary";
                   id = "Volume";
                   middleClickCommand = "pwvucontrol || pavucontrol";
                   textColor = "none";
+                }
+                {
+                  commandPrefix = "ssh";
+                  defaultSettings = {
+                    pollInterval = 10;
+                    showInactiveHosts = true;
+                    terminalCommand = "";
+                  };
+                  id = "plugin:ssh-sessions";
+                }
+                {
+                  id = "plugin:clipboard";
                 }
                 {
                   hideWhenZero = true;
@@ -506,40 +490,18 @@
             widgets = {
               left = [
                 {
+                  clockColor = "none";
+                  customFont = "";
+                  formatHorizontal = "HH:mm";
+                  formatVertical = "HH mm - dd MM";
+                  id = "Clock";
+                  tooltipFormat = "HH:mm ddd, MMM dd";
+                  useCustomFont = false;
+                }
+                {
                   defaultSettings = {
                   };
                   id = "plugin:workspace-overview";
-                }
-                # {
-                #   defaultSettings = {
-                #     enableTodoIntegration = true;
-                #     notecardsEnabled = true;
-                #     pincardsEnabled = true;
-                #     position = "Bottom";
-                #     showCloseButton = false;
-                #   };
-                #   id = "plugin:clipper";
-                # }
-                {
-                  characterCount = 2;
-                  colorizeIcons = false;
-                  emptyColor = "secondary";
-                  enableScrollWheel = true;
-                  focusedColor = "primary";
-                  followFocusedScreen = false;
-                  groupedBorderOpacity = 1;
-                  hideUnoccupied = false;
-                  iconScale = 0.6;
-                  id = "Workspace";
-                  labelMode = "index";
-                  occupiedColor = "secondary";
-                  pillSize = 0.6;
-                  fontWeight = "bold";
-                  showApplications = true;
-                  showBadge = true;
-                  showLabelsOnlyWhenOccupied = false;
-                  unfocusedIconsOpacity = 1;
-                  showApplicationsHover = false;
                 }
                 {
                   defaultSettings = {
@@ -572,17 +534,40 @@
                   };
                   id = "plugin:special-workspaces";
                 }
-
+                {
+                  characterCount = 2;
+                  colorizeIcons = false;
+                  emptyColor = "secondary";
+                  enableScrollWheel = true;
+                  focusedColor = "primary";
+                  followFocusedScreen = false;
+                  groupedBorderOpacity = 1;
+                  hideUnoccupied = false;
+                  iconScale = 0.6;
+                  id = "Workspace";
+                  labelMode = "index";
+                  occupiedColor = "secondary";
+                  pillSize = 0.6;
+                  fontWeight = "bold";
+                  showApplications = true;
+                  showBadge = true;
+                  showLabelsOnlyWhenOccupied = false;
+                  unfocusedIconsOpacity = 1;
+                  showApplicationsHover = false;
+                }
               ];
               center = [
                 {
-                  clockColor = "none";
-                  customFont = "";
-                  formatHorizontal = "HH:mm";
-                  formatVertical = "HH mm - dd MM";
-                  id = "Clock";
-                  tooltipFormat = "HH:mm ddd, MMM dd";
-                  useCustomFont = false;
+                  defaultSettings = {
+                    autoMount = false;
+                    fileBrowser = "yazi";
+                    hideWhenEmpty = true;
+                    iconColor = "primary";
+                    showBadge = true;
+                    showNotifications = true;
+                    terminalCommand = "ghostty";
+                  };
+                  id = "plugin:usb-drive-manager";
                 }
                 {
                   compactMode = true;
@@ -600,29 +585,6 @@
                   visualizerType = "linear";
                   textColor = "none";
                 }
-              ];
-              right = [
-                {
-                  blacklist = [];
-                  chevronColor = "none";
-                  colorizeIcons = false;
-                  drawerEnabled = true;
-                  hidePassive = false;
-                  id = "Tray";
-                  pinned = [];
-                }
-                {
-                  defaultSettings = {
-                    autoMount = true;
-                    fileBrowser = "yazi";
-                    hideWhenEmpty = true;
-                    iconColor = "none";
-                    showBadge = true;
-                    showNotifications = true;
-                    terminalCommand = "ghostty";
-                  };
-                  id = "plugin:usb-drive-manager";
-                }
                 {
                   defaultSettings = {
                   activeColor = "primary";
@@ -635,9 +597,20 @@
                   };
                   id = "plugin:privacy-indicator";
                 }
+              ];
+              right = [
+                {
+                  blacklist = [];
+                  chevronColor = "primary";
+                  colorizeIcons = false;
+                  drawerEnabled = true;
+                  hidePassive = false;
+                  id = "Tray";
+                  pinned = [];
+                }
                 {
                   deviceNativePath = "__default__";
-                  displayMode = "icon-hover";
+                  displayMode = "icon-always";
                   hideIfIdle = false;
                   hideIfNotDetected = true;
                   id = "Battery";
@@ -645,14 +618,23 @@
                   showPowerProfiles = true;
                 }
                 {
-                  displayMode = "onhover";
-                  iconColor = "none";
+                  displayMode = "alwaysShow";
+                  iconColor = "primary";
                   id = "Volume";
                   middleClickCommand = "pwvucontrol || pavucontrol";
                   textColor = "none";
                 }
                 {
-                  id = "plugin:e11650:display-device";
+                  commandPrefix = "ssh";
+                  defaultSettings = {
+                    pollInterval = 10;
+                    showInactiveHosts = true;
+                    terminalCommand = "";
+                  };
+                  id = "plugin:ssh-sessions";
+                }
+                {
+                  id = "plugin:clipboard";
                 }
                 {
                   hideWhenZero = true;
@@ -695,16 +677,6 @@
                   };
                   id = "plugin:workspace-overview";
                 }
-                # {
-                #   defaultSettings = {
-                #     enableTodoIntegration = true;
-                #     notecardsEnabled = true;
-                #     pincardsEnabled = true;
-                #     position = "Bottom";
-                #     showCloseButton = false;
-                #   };
-                #   id = "plugin:clipper";
-                # }
                 {
                   characterCount = 2;
                   colorizeIcons = false;
@@ -878,24 +850,51 @@
               id = "Bluetooth";
             }
             {
-              defaultSettings = {
-                enableTodoIntegration = true;
-                notecardsEnabled = true;
-                pincardsEnabled = true;
-                showCloseButton =true;
-              };
-              id = "plugin:clipper";
+              id = "plugin:kde-connect";
+            }
+            {
+              id = "Notifications";
             }
           ];
           right = [
             {
-              id = "Notifications";
-            }
-            {
               id = "KeepAwake";
             }
             {
-              id = "plugin:kde-connect";
+              defaultSettings = {
+                backend = "auto";
+                gridSize = 40;
+                hyprctlCommand = "hyprctl";
+                iconColor = "primary";
+                snapToGrid = true;
+                swayCommand = "swaymsg";
+              };
+              id = "plugin:monitor-layout";
+            }
+            {
+              defaultSettings = {
+                colorHistory = [
+                ];
+                detectedCompositor = "";
+                detectedRecorder = "";
+                filenameFormat = "";
+                installedLangs = [
+                  "eng"
+                ];
+                paletteColors = [
+                ];
+                screenshotPath = "";
+                selectedOcrLang = "eng";
+                transAvailable = false;
+                videoPath = "";
+              };
+              id = "plugin:screen-toolkit";
+            }
+            {
+              id = "NightLight";
+            }
+            {
+              id = "WallpaperSelector";
             }
           ];
         };
@@ -1327,6 +1326,18 @@
             enabled = true;
             id = "vicinae";
           }
+          {
+            enabled = true;
+            id ="steam";
+          }
+          {
+            enabled = true;
+            id ="hyprtoolkit";
+          }
+          {
+            enabled = true;
+            id ="zed";
+          }
         ];
         enableUserTheming = false;
       };
@@ -1408,11 +1419,27 @@
         }
       ];
       states = {
-        clipper = {
+        clipboard = {
+          enabled = true;
+          sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
+        };
+        cookie-clock = {
+          enabled = true;
+          sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
+        };
+        custom-commands = {
+          enabled = true;
+          sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
+        };
+        custom-sticker = {
           enabled = true;
           sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
         };
         kde-connect = {
+          enabled = true;
+          sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
+        };
+        monitor-layout = {
           enabled = true;
           sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
         };
@@ -1421,6 +1448,10 @@
           sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
         };
         privacy-indicator = {
+          enabled = true;
+          sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
+        };
+        screen-toolkit = {
           enabled = true;
           sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
         };
@@ -1449,6 +1480,7 @@
           enabled = true;
           sourceUrl = "https://github.com/Gambled23/noctalia-plugins";
         };
+
       };
       version = 1;
     };
@@ -1471,4 +1503,18 @@
       };
     };
   };
+
+  home.packages = with pkgs; [
+    # For screenshotting and screen recording plugins
+    grim
+    slurp
+    wl-clipboard
+    tesseract
+    imagemagick
+    zbar
+    curl
+    ffmpeg
+    jq
+    wl-screenrec
+  ];
 }

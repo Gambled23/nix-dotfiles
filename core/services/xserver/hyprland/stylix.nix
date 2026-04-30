@@ -45,18 +45,19 @@ in
     };
 
     targets = {
+      alacritty.enable = false;
+      btop.enable = false;
+      ghostty.enable = false;
+      gtk.enable = false;
+      kde.enable = false;
+      nixcord.enable = false;
       noctalia-shell.enable = false;
+      qt.enable = false;
       spicetify.enable = false;
       starship.enable = false;
-      qt.enable = false;
-      gtk.enable = false;
-      ghostty.enable = false;
       vicinae.enable = false;
-      yazi.enable = false;
-      btop.enable = false;
       vscode.enable = false;
-      alacritty.enable = false;
-      kde.enable = false;
+      yazi.enable = false;
     };
   };
 }

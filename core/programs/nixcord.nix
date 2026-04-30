@@ -6,9 +6,11 @@
 }: {
   programs.nixcord = {
     enable = true;
-    equibop.enable = true;
+
+    discord.enable = true;
+    equibop.enable = false;
     vesktop.enable = false;
-    discord.enable = false;
+
     discord.equicord.enable = true;
     discord.vencord.enable = false;
     
@@ -17,6 +19,8 @@
       autoUpdateNotification = true;
       notifyAboutUpdates = true;
       transparent = true;
+
+      enabledThemes = [ "noctalia.theme.css" ];
 
       plugins = {
         accountPanelServerProfile.enable = true;

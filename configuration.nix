@@ -72,8 +72,8 @@
   environment.systemPackages = with pkgs; [
     cachix.bin
     grub2
-    wl-clipboard
     nixd
+    nil
     (import ./scripts/nix-rbd.nix { inherit pkgs; })
     (import ./scripts/update-flake.nix { inherit pkgs; })
     (import ./scripts/auto-gc.nix { inherit pkgs; })
