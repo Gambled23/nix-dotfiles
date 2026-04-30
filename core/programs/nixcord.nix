@@ -32,34 +32,20 @@
         betterRoleDot.enable = true;
         betterUploadButton.enable = true;
         biggerStreamPreview.enable = true;
-        callTimer.enable = true;
-        equibopStreamFixes.enable = true;
         fakeNitro.enable = true;
         fakeProfileThemes.enable = true;
-        # forceOwnerCrown.enable = true;
         friendsSince.enable = true;
         friendshipRanks.enable = true;
         fullSearchContext.enable = true;
         fullUserInChatbox.enable = true;
         gameActivityToggle.enable = true;
         implicitRelationships.enable = true;
-        # lastFMRichPresence = {
-        #   enable = true;
-        #   username = "Gambled23";
-        #   apiKey = "1542ad92a0c24e9e2e17abdaedd49afc";
-        #   hideWithSpotify = false;
-        #   nameFormat = "artist-first";
-        #   useListeningStatus = true;
-        #   showLastFmLogo = false;
-        # };
         mentionAvatars.enable = true;
         moyai.enable = true;
         moreCommands.enable = true;
         moreStickers.enable = true;
         noNitroUpsell.enable = true;
         platformIndicators.enable = true;
-        # serverListIndicators.enable = true;
-        # spotifyControls.enable = true;
         sidebarChat.enable = true;
         sekaiStickers.enable = true;
         statusWhileActive.enable = true;
@@ -84,9 +70,9 @@
         };
       };
 
-      themeLinks = [ 
-        https://github.com/refact0r/system24/blob/main/theme/flavors/system24-vencord.theme.css
-      ];
+      # themeLinks = [ 
+      #   https://github.com/refact0r/system24/blob/main/theme/flavors/system24-vencord.theme.css
+      # ];
     };
   };
 }

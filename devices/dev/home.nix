@@ -57,7 +57,5 @@
   services.flatpak.packages = [
     "com.stremio.Stremio"
     "com.artemchep.keyguard"
-    "org.gnome.NetworkDisplays"
-    "app.zen_browser.zen"
   ];
 }

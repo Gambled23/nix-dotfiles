@@ -2,7 +2,6 @@
 { lib, inputs, pkgs, ... }: {
   
   programs.noctalia-shell = {
-    systemd.enable = true;
     enable = true;
     package = (inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default.override { calendarSupport = true; });
     
@@ -1405,6 +1404,7 @@
         favorites = [ ];
       };
     };
+
     plugins = {
       sources = [
         {
@@ -1484,6 +1484,7 @@
       };
       version = 1;
     };
+    
     pluginSettings = {
       # catwalk = {
       #   minimumThreshold = 25;

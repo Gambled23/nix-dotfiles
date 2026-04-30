@@ -56,11 +56,11 @@
       #################
       "exec-once" = [
         # "systemctl --user enable --now hyprpolkitagent.service"
-        "ghostty -e noctalia-shell -d"
+        "noctalia-shell"
         # "systemctl --user enable --now hyprpaper.service"
         "systemctl --user enable --now hypridle.service"
         "spotify"
-        "equibop"
+        "discord"
         "altus"
         "kdeconnect-indicator"
         # "bluetoothctl connect 24:95:2F:60:BD:94"

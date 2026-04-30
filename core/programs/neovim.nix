@@ -12,7 +12,8 @@
       #     enable = true;
       #   };
       # };
-
+      vim.enableLuaLoader = true;
+      
       vim.autocomplete = {
         enableSharedCmpSources = true;
         blink-cmp = {
