@@ -24,15 +24,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1777468421,
-        "narHash": "sha256-5fCE0C/gvZdfRnHTpUY9QNJeQvx09eeBlLEnMbVXhm4=",
-        "owner": "ciscosweater",
+        "lastModified": 1777487957,
+        "narHash": "sha256-Di7hC2Q++b0u5V2VOhICCBZpm2JuaoHDKXO5W5bAFWQ=",
+        "owner": "gambled23",
         "repo": "enter-the-wired",
-        "rev": "f03b67652f792dfa2027071adc289a1d8248600b",
+        "rev": "e78e33cb49b1f86e6ae45b5ad7da2dbaf6195bc3",
         "type": "github"
       },
       "original": {
-        "owner": "ciscosweater",
+        "owner": "gambled23",
+        "ref": "fix-accela-hash",
         "repo": "enter-the-wired",
         "type": "github"
       }

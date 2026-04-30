@@ -66,7 +66,7 @@
     };
 
     accela = {
-      url = "github:ciscosweater/enter-the-wired";
+      url = "github:gambled23/enter-the-wired/fix-accela-hash";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
