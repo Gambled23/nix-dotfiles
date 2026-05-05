@@ -1,5 +1,5 @@
 # Home manager file
-{ lib, inputs, pkgs, ... }: {
+{ lib, inputs, pkgs, config, osConfig, ... }: {
   
   programs.noctalia-shell = {
     enable = true;
@@ -833,7 +833,12 @@
         manualSunrise = "06:30";
         manualSunset = "18:30";
         generationMethod = "tonal-spot";
-        monitorForColors = "eDP-1";
+        monitorForColors =
+          if osConfig.networking.hostName == "dev-gambled" 
+          then "eDP-1"
+          else if osConfig.networking.hostName == "pc-gabmled"
+          then "DP-3"
+          else "sunshine";
         syncGsettings = true;
       };
 
