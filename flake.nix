@@ -79,6 +79,8 @@
     # Steam thingies
     millennium.url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
     # jovian-nixos.url = "github:Jovian-Experiments/Jovian-NixOS";
+
+    # myWebService.url = "path:/home/gambled/Codes/cng-plus-front";
   };
 
   outputs = {
@@ -183,6 +185,7 @@
         specialArgs = { inherit inputs; };
         modules = commonModules ++ desktopModules ++ [
           ./devices/dev/configuration.nix
+          # inputs.myWebService.nixosModules.nginxWebService
           {
             home-manager.users.gambled.imports = [
               ./devices/dev/home.nix
