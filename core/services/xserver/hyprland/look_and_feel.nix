@@ -1,5 +1,6 @@
 # Home manager file
-{ lib, ... }: {
+{ lib, ... }:
+{
   # https://wiki.hypr.land/Configuring/Variables/#general
   # https://wiki.hypr.land/Configuring/Variables/#decoration
   # https://wiki.hypr.land/Configuring/Dwindle-Layout/
@@ -8,10 +9,11 @@
   wayland.windowManager.hyprland.settings = {
     general = {
       gaps_in = 1;
-      gaps_out = 0;
-      border_size = 2;
+      gaps_out = 2;
+      border_size = 1;
 
-      "col.active_border" = lib.mkForce "rgba(98971aee) rgba(b8bb26ee)";
+      # Default color; runtime command updates from noctalia-colors.conf
+      "col.active_border" = lib.mkForce "000000 000000";
       # "col.inactive_border" =  "rgba(595959aa)";
 
       # Set to true enable resizing windows by clicking and dragging on borders and gaps

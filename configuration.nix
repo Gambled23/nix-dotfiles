@@ -13,7 +13,11 @@
     settings = {
       download-buffer-size = 524288000;
       auto-optimise-store = true;
-      experimental-features = [ "nix-command" "flakes" ];
+      experimental-features = [ 
+        "nix-command" 
+        "flakes" 
+        "pipe-operators"
+      ];
       # cache for hyprland packages
       substituters = [
         "https://hyprland.cachix.org"

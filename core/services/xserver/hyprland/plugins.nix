@@ -7,8 +7,11 @@
         gap_size = 5;
         bg_col = "rgb(111111)";
         workspace_method = "center current";
-        gesture_distance = 300;
       };
     };
+
+    "exec-once" = [
+      "hyprctl plugin load \"$HYPR_PLUGIN_DIR/lib/libhyprexpo.so\""
+    ];
   };
 }
