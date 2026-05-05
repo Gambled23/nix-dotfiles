@@ -40,7 +40,6 @@
     gamemode
     # wineWowPackages.stable
     winetricks
-    ryubing
     # osu-lazer-bin
     #tetrio-desktop
     # prismlauncher #minecra

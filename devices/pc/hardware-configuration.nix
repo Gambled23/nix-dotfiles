@@ -29,11 +29,11 @@
       fsType = "ext4";
     };
 
-  # fileSystems."/hdd" = { 
-  #   device = "/dev/disk/by-label/HDD";
-  #   fsType = "ntfs"; 
-  #   options = [ "rw" "uid=1000"];
-  # };
+  fileSystems."/hdd" = { 
+    device = "/dev/disk/by-label/HDD";
+    fsType = "ntfs"; 
+    options = [ "rw" "uid=1000"];
+  };
 
   # fileSystems."/games" = { 
   #   device = "/dev/disk/by-label/games";

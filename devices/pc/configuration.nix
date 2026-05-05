@@ -34,6 +34,7 @@
   ];
 
   environment.systemPackages = with pkgs; [
+    ryubing
     lact
     i2c-tools
     # openclaw
