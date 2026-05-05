@@ -183,7 +183,6 @@
         specialArgs = { inherit inputs; };
         modules = commonModules ++ desktopModules ++ [
           ./devices/dev/configuration.nix
-          inputs.monique.nixosModules.default
           {
             home-manager.users.gambled.imports = [
               ./devices/dev/home.nix
