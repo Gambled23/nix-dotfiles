@@ -17,7 +17,7 @@
         "nix-command" 
         "flakes" 
         "pipe-operators"
-      ];
+      ];      
       # cache for hyprland packages
       substituters = [
         "https://hyprland.cachix.org"

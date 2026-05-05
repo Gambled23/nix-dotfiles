@@ -57,7 +57,7 @@
     style.name = "noctalia";
     qt6ctSettings = {
       Appearance = {
-        icon_theme="Gruvbox-Plus-Dark";
+        icon_theme="Fluent";
       };
     };
   };

@@ -38,8 +38,7 @@
       # inputs.Hyprspace.packages.${pkgs.stdenv.hostPlatform.system}.Hyprspace
       # inputs.hyprland-plugins.packages."${pkgs.stdenv.hostPlatform.system}".hyprscrolling
       # inputs.hyprland-plugins.packages."${pkgs.stdenv.hostPlatform.system}".csgo-vulkan-fix
-      inputs.hyprland-plugins.packages."${pkgs.stdenv.hostPlatform.system}".hyprexpo
-      # pkgs.hyprlandPlugins.hyprexpo
+      # inputs.hyprland-plugins.packages."${pkgs.stdenv.hostPlatform.system}".hyprexpo
     ];
 
     settings = {
@@ -60,7 +59,6 @@
       "exec-once" = [
         # "systemctl --user enable --now hyprpolkitagent.service"
         "noctalia-shell"
-        "sh -lc 'f=\"$HOME/.config/hypr/noctalia/noctalia-colors.conf\"; for i in $(seq 1 50); do [ -f \"$f\" ] && break; sleep 0.1; done; p=$(grep -m1 \"^\\$primary\" \"$f\" | sed \"s/^\\$primary = //\"); [ -n \"$p\" ] && hyprctl keyword general:col.active_border \"$p $p\"'"
         # "systemctl --user enable --now hyprpaper.service"
         "systemctl --user enable --now hypridle.service"
         "spotify"

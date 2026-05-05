@@ -10,7 +10,6 @@
       "$mainMod, RETURN, exec, $terminal"
       "$mainMod, C, exec, $code"
       "$mainMod, V, exec, $terminal -e vim"
-      "$mainMod, W, hyprexpo:toggle"
 
       # "$mainMod, V, exec, vicinae vicinae://extensions/vicinae/clipboard/history"
       # "$mainMod, B, exec, vicinae vicinae://extensions/vicinae/bluetooth/devices"

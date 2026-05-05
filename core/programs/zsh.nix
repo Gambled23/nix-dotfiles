@@ -25,8 +25,9 @@
       noctalia = "noctalia-shell kill && ghostty -e noctalia-shell -d";
     };
     
-    initContent = "source <(fzf --zsh)\n
-    eval $(zoxide init zsh)\n
+    initContent = "
+      source <(fzf --zsh)\n
+      eval $(zoxide init zsh)\n
     ";
   };
 }

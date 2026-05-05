@@ -1,5 +1,5 @@
 # Home manager file
-{ lib, ... }:
+{ lib, pkgs, ... }:
 {
   # https://wiki.hypr.land/Configuring/Variables/#general
   # https://wiki.hypr.land/Configuring/Variables/#decoration
@@ -12,8 +12,7 @@
       gaps_out = 2;
       border_size = 1;
 
-      # Default color; runtime command updates from noctalia-colors.conf
-      "col.active_border" = lib.mkForce "000000 000000";
+      # "col.active_border" = lib.mkForce "${colorPrimary}";
       # "col.inactive_border" =  "rgba(595959aa)";
 
       # Set to true enable resizing windows by clicking and dragging on borders and gaps
