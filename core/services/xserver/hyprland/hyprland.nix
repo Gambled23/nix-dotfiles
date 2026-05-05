@@ -36,6 +36,7 @@ with lib;
     glib # for yazi gvfs plugin
     bibata-cursors
     iw # for cards layout in hyprlock
+    fluent-icon-theme
   ];
 
   # Optional, hint Electron apps to use Wayland:

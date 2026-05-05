@@ -46,4 +46,19 @@
   systemd.user.startServices = "sd-switch";
 
   programs.home-manager.enable = true;
+
+  gtk = {
+    enable = true;
+    theme.name = "noctalia";
+  };
+
+  qt = {
+    enable = true;
+    style.name = "noctalia";
+    qt6ctSettings = {
+      Appearance = {
+        icon_theme="Gruvbox-Plus-Dark";
+      };
+    };
+  };
 }

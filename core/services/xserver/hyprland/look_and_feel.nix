@@ -9,13 +9,13 @@
     general = {
       gaps_in = 1;
       gaps_out = 0;
-      border_size = 0;
+      border_size = 2;
 
       "col.active_border" = lib.mkForce "rgba(98971aee) rgba(b8bb26ee)";
       # "col.inactive_border" =  "rgba(595959aa)";
 
       # Set to true enable resizing windows by clicking and dragging on borders and gaps
-      resize_on_border = false;
+      resize_on_border = true;
 
       # Please see https://wiki.hypr.land/Configuring/Tearing/ before you turn this on
       allow_tearing = false;
@@ -38,8 +38,8 @@
 
       shadow = {
         enabled = true;
-        range = 6;
-        render_power = 4;
+        range = 7;
+        render_power = 5;
       };
 
       # https://wiki.hypr.land/Configuring/Variables/#blur

@@ -10,7 +10,7 @@
   imports = [
     # Services and programs
     ../../hypr/hyprsunset.nix
-    ../../hypr/hyprpaper.nix
+    # ../../hypr/hyprpaper.nix
     ../../hypr/hypridle.nix
     ../../hypr/hyprshot.nix
     # ../../hypr/hyprpanel.nix
@@ -25,6 +25,7 @@
     ./binds.nix
     ./rules.nix
     ./input.nix
+    ./plugins.nix
     ./look_and_feel.nix
   ];
   
@@ -33,10 +34,11 @@
     systemd.enable = false;
 
     plugins = [
-      # inputs.hyprland-plugins.packages."${pkgs.stdenv.hostPlatform.system}".borders-plus-plus
+      inputs.hyprland-plugins.packages."${pkgs.stdenv.hostPlatform.system}".borders-plus-plus
+      # inputs.Hyprspace.packages.${pkgs.stdenv.hostPlatform.system}.Hyprspace
       # inputs.hyprland-plugins.packages."${pkgs.stdenv.hostPlatform.system}".hyprscrolling
       # inputs.hyprland-plugins.packages."${pkgs.stdenv.hostPlatform.system}".csgo-vulkan-fix
-      # inputs.hyprland-plugins.packages."${pkgs.stdenv.hostPlatform.system}".hyprexpo
+      inputs.hyprland-plugins.packages."${pkgs.stdenv.hostPlatform.system}".hyprexpo
     ];
 
     settings = {
@@ -74,6 +76,7 @@
       env = [
         "XCURSOR_SIZE,24"
         "HYPRCURSOR_SIZE,24"
+        "QT_QPA_PLATFORMTHEME,qt6ct"
       ];
 
 
