@@ -1503,7 +1503,7 @@
       defaultWallpaper = "/etc/nixos/wallpaper.jpg";
       wallpapers = {
         "DP-3" = "/home/gambled/Pictures/Wallpapers/Ultrawide/games/wallhaven_v9r3g8.jpg";
-        "sunshine" = "/home/gambled/Pictures/Wallpapers/wide/anime/36206589_p0.jpg";
+        "sunshine" = "/home/gambled/Pictures/Wallpapers/Wide/anime/36206589_p0.jpg";
         "HDMI-A-1" = "/home/gambled/Pictures/Wallpapers/Wide/pixelart/dock.jpg";
         "eDP-1" = "/home/gambled/Pictures/Wallpapers/Wide/pixelart/dock.jpg";
       };
