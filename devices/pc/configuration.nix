@@ -67,10 +67,10 @@
   ];
 
   # Nix settings
-  nix.settings = {
-    max-jobs = 2;
-    cores = 6;
-  };
+  # nix.settings = {
+  #   max-jobs = 2;
+  #   cores = 6;
+  # };
 
   # virtualisation
   # virtualisation.vmware.host.enable = true; # vmware

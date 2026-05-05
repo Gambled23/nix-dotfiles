@@ -148,4 +148,6 @@
     EDITOR = "vim";
     SHELL = "zsh";
   };
+
+  programs.dconf.enable = true;
 }
