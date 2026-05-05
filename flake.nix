@@ -40,15 +40,15 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    dms = {
-      url = "github:AvengeMedia/DankMaterialShell/stable";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # dms = {
+    #   url = "github:AvengeMedia/DankMaterialShell/stable";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
-    dms-plugin-registry = {
-      url = "github:AvengeMedia/dms-plugin-registry";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # dms-plugin-registry = {
+    #   url = "github:AvengeMedia/dms-plugin-registry";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
     sls-steam = {
       url = "github:AceSLS/SLSsteam";
@@ -68,10 +68,6 @@
     accela = {
       url = "github:gambled23/enter-the-wired/fix-accela-hash";
       inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    matugen = {
-      url = "github:/InioX/Matugen";
     };
 
     # Nur repo for firefox extensions
@@ -187,6 +183,7 @@
         specialArgs = { inherit inputs; };
         modules = commonModules ++ desktopModules ++ [
           ./devices/dev/configuration.nix
+          inputs.monique.nixosModules.default
           {
             home-manager.users.gambled.imports = [
               ./devices/dev/home.nix

@@ -65,7 +65,7 @@
   nixpkgs.config.android_sdk.accept_license = true;
 
   nix.settings = {
-    max-jobs = 2;
+    max-jobs = 3;
     cores = 4;
   };
 
