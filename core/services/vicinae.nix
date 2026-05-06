@@ -17,16 +17,16 @@
         size = 10.5;
       };
       search_files_in_root = true;
-      # theme = {
-      #   light = {
-      #     name = lib.mkForce "gruvbox-light";
-      #     icon_theme = "default";
-      #   };
-      #   dark = {
-      #     name = lib.mkForce "gruvbox-dark";
-      #     icon_theme = "default";
-      #   };
-      # };
+      theme = {
+        light = {
+          # name = lib.mkForce "gruvbox-light";
+          icon_theme = "Reversal";
+        };
+        dark = {
+          # name = lib.mkForce "gruvbox-dark";
+          icon_theme = "Reversal";
+        };
+      };
       window = {
         csd = true;
         rounding = 10;

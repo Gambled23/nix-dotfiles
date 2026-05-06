@@ -52,13 +52,22 @@
     theme.name = "noctalia";
   };
 
-  qt = {
-    enable = true;
-    style.name = "noctalia";
-    qt6ctSettings = {
+  qt =
+  let 
+    qtsettings = {
       Appearance = {
-        icon_theme="Fluent";
+        icon_theme = "Reversal";
+        style = "Fusion";
+        custom_palette = "true";
+        color_scheme_path = "$HOME/.config/qt6ct/colors/noctalia.conf";  
       };
     };
+  in 
+  {
+    enable = true;
+    style.name = "noctalia";
+
+    qt5ctSettings = qtsettings;
+    qt6ctSettings = qtsettings;
   };
 }

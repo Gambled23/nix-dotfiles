@@ -836,9 +836,7 @@
         monitorForColors =
           if osConfig.networking.hostName == "dev-gambled" 
           then "eDP-1"
-          else if osConfig.networking.hostName == "pc-gabmled"
-          then "DP-3"
-          else "sunshine";
+          else "DP-3";
         syncGsettings = true;
       };
 

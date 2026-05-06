@@ -12,31 +12,39 @@ with lib;
 
   environment.systemPackages = with pkgs; [
     # inputs.ambxst.packages.${pkgs.stdenv.hostPlatform.system}.default
-    kdePackages.dolphin
-    kdePackages.dolphin-plugins
-    kdePackages.qt6ct
+
+    # Libs?
     kdePackages.qtwebsockets
-    kitty # required for the default Hyprland config
-    hyprshot # Screenshot tool
-    playerctl
-    brightnessctl
-    # hyprpolkitagent # Polkit for gui applications
+    kdePackages.qt6ct
     kdePackages.qtwayland
     libsForQt5.qt5.qtwayland
     pipewire
     pulseaudio
     pulsemeeter
-    sof-firmware # audio via hdmi
     wireplumber
+
+    #Tools
+    kitty # required for the default Hyprland config
+    kdePackages.dolphin
+    kdePackages.dolphin-plugins
+    playerctl
+    brightnessctl
     hypridle
     pamixer
     pavucontrol
+    # hyprpolkitagent # Polkit for gui applications
+
+
+    # Dependencies
+    sof-firmware # audio via hdmi
     kdePackages.qttools # for noctalia kde connect plugin
     ripdrag # for yazi drag plugin
     glib # for yazi gvfs plugin
-    bibata-cursors
     iw # for cards layout in hyprlock
-    fluent-icon-theme
+
+    # Theming
+    bibata-cursors
+    reversal-icon-theme
   ];
 
   # Optional, hint Electron apps to use Wayland:
