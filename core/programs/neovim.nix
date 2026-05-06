@@ -87,15 +87,15 @@
 
         nix.enable = true;
         python.enable = true;
-        # markdown.enable = true;
         html.enable = true;
-        lua.enable = true;
-        php.enable = true;
         bash.enable = true;
         css.enable = true;
-        kotlin.enable = true;
         yaml.enable = true;
-        typescript.enable = true;
+        # markdown.enable = true;
+        # lua.enable = true;
+        # php.enable = true;
+        # kotlin.enable = true;
+        # typescript.enable = true;
       };
 
       vim.spellcheck = {
