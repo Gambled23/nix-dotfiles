@@ -87,7 +87,7 @@
 
         nix.enable = true;
         python.enable = true;
-        markdown.enable = true;
+        # markdown.enable = true;
         html.enable = true;
         lua.enable = true;
         php.enable = true;
@@ -95,7 +95,7 @@
         css.enable = true;
         kotlin.enable = true;
         yaml.enable = true;
-        ts.enable = true;
+        typescript.enable = true;
       };
 
       vim.spellcheck = {
