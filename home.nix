@@ -56,7 +56,7 @@
   let 
     qtsettings = {
       Appearance = {
-        icon_theme = "Reversal";
+        icon_theme = "Papirus";
         style = "Fusion";
         custom_palette = "true";
         color_scheme_path = "$HOME/.config/qt6ct/colors/noctalia.conf";  

@@ -20,11 +20,11 @@
       theme = {
         light = {
           # name = lib.mkForce "gruvbox-light";
-          icon_theme = "Reversal";
+          icon_theme = "Papirus";
         };
         dark = {
           # name = lib.mkForce "gruvbox-dark";
-          icon_theme = "Reversal";
+          icon_theme = "Papirus";
         };
       };
       window = {
