@@ -44,7 +44,6 @@ with lib;
 
     # Theming
     bibata-cursors
-    reversal-icon-theme
     papirus-icon-theme
   ];
 

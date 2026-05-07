@@ -51,11 +51,9 @@
     polychromatic
     # pdfarranger
     via
-    # ente-auth
     # bitwarden-desktop
     headsetcontrol
     siyuan
-    ente-auth
 
     #* media
     # stremio-linux-shell

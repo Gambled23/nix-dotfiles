@@ -949,17 +949,6 @@
                 x = 1220;
                 y = 60;
               }
-              {
-                diskPath = "/";
-                id = "SystemStat";
-                layout = "bottom";
-                roundedCorners = true;
-                scale = 1.4080963667879236;
-                showBackground = true;
-                statType = "CPU";
-                x = 820;
-                y = 1020;
-              }
             ];
           }
           {
@@ -1423,10 +1412,6 @@
       ];
       states = {
         clipboard = {
-          enabled = true;
-          sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
-        };
-        cookie-clock = {
           enabled = true;
           sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
         };
