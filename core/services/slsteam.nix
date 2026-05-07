@@ -19,6 +19,7 @@
       2416450 # MOUSE: P.I. For Hire
       3265700 # Vampire crawlers
       1147860 # UFO 50
+      2416100 # Goodnight Universe
     ];
     AdditionalApps = [
       2868840 # Slay the Spire 2
@@ -35,6 +36,7 @@
       2416450 # MOUSE: P.I. For Hire
       3265700 # Vampire crawlers
       1147860 # UFO 50
+      2416100 # Goodnight Universe
     ];
     SafeMode = true;
   };
