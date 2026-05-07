@@ -45,6 +45,7 @@ with lib;
     # Theming
     bibata-cursors
     reversal-icon-theme
+    papirus-icon-theme
   ];
 
   # Optional, hint Electron apps to use Wayland:
