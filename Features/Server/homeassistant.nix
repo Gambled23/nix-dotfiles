@@ -33,7 +33,7 @@ in
     ];
 
     customComponents = with pkgs; [
-      (callPackage ../../nixpkgs/pkgs/cozylife/package.nix {})
+      (callPackage ../../Pkgs/cozylife/package.nix {})
       home-assistant-custom-components.dreo
     ];
     customLovelaceModules = with pkgs.home-assistant-custom-lovelace-modules; [

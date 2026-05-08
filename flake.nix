@@ -1,5 +1,5 @@
 {
-  description = "NixOS configuration";
+  description = "Gambled's NixOS configuration - エル・プサイ・ コングルゥ";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
@@ -84,30 +84,19 @@
   };
 
   outputs = {
-      self,
-      nixpkgs,
-      home-manager,
-      spicetify-nix,
-      nixos-hardware,
-      # nur,
-      nixcord,
-      # jovian-nixos,
-      # dolphin-overlay,
-      stylix,
-      vicinae,
-      millennium,
-      sls-steam,
-      nix-index-database,
-      ...
-     }@inputs:
+    self,
+    nixpkgs,
+    home-manager,
+    ...
+    }@inputs:
   let
     specialArgs = {
       inherit inputs;
       inherit spicetify-nix;
     };
 
-    commonModules = [
-      nix-index-database.nixosModules.default
+    coreModules = [
+      inputs.nix-index-database.nixosModules.default
       home-manager.nixosModules.home-manager
       {
         home-manager.useGlobalPkgs = true;
@@ -122,7 +111,7 @@
       "dev-gambled" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
-        modules = commonModules ++ [
+        modules = coreModules ++ [
           ./Hosts/dev-gambled/configuration.nix
           # inputs.myWebService.nixosModules.nginxWebService
           {
@@ -136,7 +125,7 @@
       "pc-gambled" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
-        modules = commonModules ++ [
+        modules = coreModules ++ [
           ./Hosts/pc-gambled/configuration.nix
           # jovian-nixos.nixosModules.default
           nixos-hardware.nixosModules.gigabyte-b650
@@ -150,7 +139,7 @@
 
       "server-gambled" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
-        modules = commonModules ++ [
+        modules = coreModules ++ [
           ./Hosts/server-gambled/configuration.nix
           {
             home-manager.users.gambled.imports = [

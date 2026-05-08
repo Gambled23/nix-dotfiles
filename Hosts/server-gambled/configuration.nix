@@ -6,37 +6,26 @@
 
   imports = [
     ./hardware-configuration.nix
+    ./symlinks.nix
+    ../../Machines/Core/configuration.nix
+    ../../Machines/Server/configuration.nix
 
     ../../Features/Gaming/glances.nix
-    
-    ../../configuration.nix
-    ../../core/services/code-server.nix
-    # ../../core/services/docker.nix
-    ../../core/services/homeassistant.nix
-    ../../core/services/homepage-dashboard.nix
-    ../../core/services/paperless.nix
-    ../../core/services/nginx.nix
 
-    # ../../core/services/tandoor.nix
-    #./symlinks.nix
-    # ../../core/services/ollama.nix
+    ../../Features/Server/code-server.nix
+    ../../Features/Server/homeassistant.nix
+    ../../Features/Server/homepage-dashboard.nix
+    ../../Features/Server/paperless.nix
+    ../../Features/Server/nginx.nix
 
     # bootloader
-    #../../core/bootloader/systemd.nix
-    ../../core/bootloader/grub.nix
+    ../../Features/Boot/grub.nix
   ];
 
-  environment.systemPackages = with pkgs; [
-    # openclaw
-  ];
-  nixpkgs.config.permittedInsecurePackages = [
-    # "openclaw-2026.3.12"
-  ];
   programs.nix-ld.enable = true; # for vscode remote server
 
   nix.settings = {
     max-jobs = 1;
     cores = 2;
   };
-
 }

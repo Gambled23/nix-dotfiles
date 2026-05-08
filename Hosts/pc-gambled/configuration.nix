@@ -9,8 +9,8 @@
     ../../Machines/Core/configuration.nix
     ../../Machines/Desktop/configuration.nix
 
-    ../../Features/Gaming/glances.nix
     ../../Features/Dev/ollama-server.nix
+    ../../Features/Gaming/glances.nix
     ../../Features/Gaming/steam.nix
     ../../Features/Gaming/sunshine.nix
     ../../Features/Network/wakeonlan.nix
