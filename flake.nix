@@ -119,6 +119,19 @@
     ];
   in {
     nixosConfigurations = {
+      "dev-gambled" = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        specialArgs = { inherit inputs; };
+        modules = commonModules ++ [
+          ./Hosts/dev-gambled/configuration.nix
+          # inputs.myWebService.nixosModules.nginxWebService
+          {
+            home-manager.users.gambled.imports = [
+              ./Hosts/dev-gambled/home.nix
+            ];
+          }
+        ];
+      };
 
       "pc-gambled" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
@@ -146,21 +159,6 @@
           }
         ];
       };
-
-      "dev-gambled" = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        specialArgs = { inherit inputs; };
-        modules = commonModules ++ [
-          ./Hosts/dev-gambled/configuration.nix
-          # inputs.myWebService.nixosModules.nginxWebService
-          {
-            home-manager.users.gambled.imports = [
-              ./Hosts/dev-gambled/home.nix
-            ];
-          }
-        ];
-      };
-
     };
   };
 }

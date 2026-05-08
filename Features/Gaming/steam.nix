@@ -27,6 +27,7 @@
       proton-ge-bin
     ];
   };
+
   programs.gamescope = {
     enable = true;
     capSysNice = true;
@@ -34,12 +35,18 @@
     #   "--mangoapp"
     # ];
   };
+
   programs.gamemode.enable = true;
 
   environment.systemPackages = with pkgs; [
     protonup-ng
     inputs.sls-steam.packages.${pkgs.stdenv.hostPlatform.system}.wrapped
     gamescope-wsi
+  ];
+
+  nixpkgs.overlays = [
+    inputs.millennium.overlays.default
+    # dolphin-overlay.overlays.default
   ];
 
   # jovian = {

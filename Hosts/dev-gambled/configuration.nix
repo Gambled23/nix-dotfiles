@@ -21,5 +21,4 @@
     max-jobs = 3;
     cores = 4;
   };
-
 }

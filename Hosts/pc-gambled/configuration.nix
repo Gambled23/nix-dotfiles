@@ -10,19 +10,13 @@
     ../../Machines/Desktop/configuration.nix
 
     ../../Features/Gaming/glances.nix
-
-    ../../core/services/ollama-server.nix
-    ../../core/services/openrgb.nix
-    ../../core/programs/steam.nix
-    ../../core/services/sunshine.nix
-    ../../core/services/wakeonlan.nix
-
+    ../../Features/Dev/ollama-server.nix
+    ../../Features/Gaming/steam.nix
+    ../../Features/Gaming/sunshine.nix
+    ../../Features/Network/wakeonlan.nix
 
     # bootloader
-    ../../core/bootloader/grub.nix
-
-    # Desktop enviroment
-    ../../core/services/xserver/hyprland/hyprland.nix
+    ../../Features/Boot/grub.nix
   ];
 
   environment.systemPackages = with pkgs; [
@@ -39,41 +33,13 @@
     # (callPackage ../../nixpkgs/pkgs/accela/default.nix {})
   ];
 
-  # Nix settings
-  # nix.settings = {
-  #   max-jobs = 2;
-  #   cores = 6;
-  # };
-
-  # virtualisation
-  # virtualisation.vmware.host.enable = true; # vmware
-  # virtualisation.waydroid.enable = true; # Waydroid
   # for gpu overclock
   systemd.packages = with pkgs; [ lact ];
   systemd.services.lactd.wantedBy = ["multi-user.target"];
-
-  services.pipewire = {
-    enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
-    pulse.enable = true;
-    jack.enable = true;
-  };
 
   # environment = {
   # sessionVariables = lib.mkForce {
   #     LD_LIBRARY_PATH = "${pkgs.stdenv.cc.cc.lib}/lib:${pkgs.libGL}/lib/:${pkgs.libxkbcommon}/lib/:${pkgs.libx11}/lib/:${pkgs.fontconfig}/lib";
   #   };
   # };
-
-  nixpkgs.overlays = [
-    inputs.millennium.overlays.default
-    # dolphin-overlay.overlays.default
-  ];
-
-  # nixpkgs.config.permittedInsecurePackages = [
-  #   "openclaw-2026.3.12"
-  # ];
-
-
 }

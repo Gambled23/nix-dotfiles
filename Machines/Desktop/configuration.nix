@@ -59,4 +59,8 @@
     allowedTCPPorts = [ 7236 7250 ];
     allowedUDPPorts = [ 7236 5353 ];
   };
+
+  # Virtualisation
+  # virtualisation.vmware.host.enable = true; # vmware
+  # virtualisation.waydroid.enable = true; # Waydroid
 }

@@ -9,13 +9,12 @@
   home.stateVersion = "26.05";
   imports = [
     inputs.sls-steam.homeModules.sls-steam
-    
-    ../../home.nix
-    ./hyprland/pc.nix
 
-    ../../core/programs/ghostty.nix
+    ./hyprland.nix
+    ../../Machines/Core/home.nix
+    ../../Machines/Desktop/home.nix
+
     ../../core/services/slsteam.nix
-
   ];
 
   home.packages =
@@ -27,48 +26,20 @@
     komikku
 
     #* dev tools
-    #android-studio
+    vscode
     # android-studio
     # jdk25_headless
-    vscode
-    act3
-    harlequin
-    dbeaver-bin
-    claude-code
 
     #* games
     inputs.accela.packages.${pkgs.stdenv.hostPlatform.system}.default
     # itch
     gamemode
-    # wineWowPackages.stable
     winetricks
     # osu-lazer-bin
-    #tetrio-desktop
+    # tetrio-desktop
     # prismlauncher #minecra
     # r2modman
     # mangohud
-
-    #* utils
-    openrgb-with-all-plugins
-    polychromatic
-    # pdfarranger
-    via
-    # bitwarden-desktop
-    headsetcontrol
-    siyuan
-
-    #* media
-    # stremio-linux-shell
-    vlc
-
-    #* media creation
-    gimp-with-plugins
-    # inkscape-with-extensions
-    obs-studio
-
-    #* messaging
-    altus
-    materialgram
 
     #* guitarra
     # carla
@@ -77,20 +48,23 @@
     tonelib-jam
 
     #* utils
-    # activitywatch
-    android-tools
-    libreoffice
-    scrcpy
-    # zoom-us
+    polychromatic
+    via
+    headsetcontrol
 
-    #* webbrowsers
-    google-chrome
+    #* media
+    vlc
+
+    #* media creation
+    obs-studio
+
+    #* messaging
+    materialgram
   ];
 
   home.file.".zshrc".text = "export LD_LIBRARY_PATH=${pkgs.stdenv.cc.cc.lib}/lib:${pkgs.libGL}/lib/:${pkgs.libxkbcommon}/lib/:${pkgs.libx11}/lib/:${pkgs.fontconfig}/lib";
 
   services.flatpak.packages = [
     "com.stremio.Stremio"
-    "com.artemchep.keyguard"
   ];
 }
