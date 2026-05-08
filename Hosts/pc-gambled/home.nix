@@ -8,6 +8,8 @@
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
   home.stateVersion = "26.05";
   imports = [
+    inputs.sls-steam.homeModules.sls-steam
+    
     ../../home.nix
     ./hyprland/pc.nix
 

@@ -81,6 +81,8 @@
       extraGroups = [ "networkmanager" "wheel" "adbusers" "audio" "jackaudio" "dialout" "hass" "i2c"];
     };
   };
+  users.defaultUserShell = pkgs.zsh;
+  programs.zsh.enable = true;
 
   # All sudo comands will be passwordless (I use this for home assistant)
   security.sudo.extraRules= [{

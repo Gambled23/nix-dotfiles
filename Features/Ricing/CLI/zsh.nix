@@ -3,9 +3,7 @@
   pkgs,
   lib,
   ...
-}: {
-  users.defaultUserShell = pkgs.zsh;
-  
+}: {  
   programs.zsh = {
     enable = true;
     autosuggestion.enable = true;

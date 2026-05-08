@@ -109,43 +109,12 @@
     commonModules = [
       nix-index-database.nixosModules.default
       home-manager.nixosModules.home-manager
-      # nur.modules.nixos.default
       {
         home-manager.useGlobalPkgs = true;
         home-manager.useUserPackages = true;
-        home-manager.users.gambled.imports = [
-          inputs.nix-flatpak.homeManagerModules.nix-flatpak
-          inputs.nvf.homeManagerModules.default
-          stylix.homeModules.stylix
-          ./core/services/xserver/hyprland/stylix.nix
-        ];
         home-manager.extraSpecialArgs = specialArgs;
         home-manager.backupFileExtension = "back";
         home-manager.overwriteBackup = true;
-      }
-    ];
-
-    desktopModules = [
-      {
-        home-manager.users.gambled.imports = [
-          spicetify-nix.homeManagerModules.default
-          ./core/programs/spicetify.nix
-
-          inputs.nixcord.homeModules.nixcord
-          ./core/programs/nixcord.nix
-
-          # inputs.dms.homeModules.dank-material-shell
-          # ./core/programs/dankmaterialshell.nix
-          # inputs.dms-plugin-registry.modules.default
-
-          inputs.noctalia.homeModules.default
-          ./core/programs/noctalia.nix
-
-          vicinae.homeManagerModules.default
-        ];
-        # nixpkgs.overlays = [
-        #   dolphin-overlay.overlays.default
-        # ];
       }
     ];
   in {
@@ -154,15 +123,13 @@
       "pc-gambled" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
-        modules = commonModules ++ desktopModules ++ [
+        modules = commonModules ++ [
           ./Hosts/pc-gambled/configuration.nix
           # jovian-nixos.nixosModules.default
           nixos-hardware.nixosModules.gigabyte-b650
           {
             home-manager.users.gambled.imports = [
               ./Hosts/pc-gambled/home.nix
-
-              inputs.sls-steam.homeModules.sls-steam
             ];
           }
         ];
@@ -183,7 +150,7 @@
       "dev-gambled" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
-        modules = commonModules ++ desktopModules ++ [
+        modules = commonModules ++ [
           ./Hosts/dev-gambled/configuration.nix
           # inputs.myWebService.nixosModules.nginxWebService
           {

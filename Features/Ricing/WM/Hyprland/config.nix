@@ -9,16 +9,11 @@
 {
   imports = [
     # Services and programs
-    ../../hypr/hyprsunset.nix
-    # ../../hypr/hyprpaper.nix
-    ../../hypr/hypridle.nix
-    ../../hypr/hyprshot.nix
-    # ../../hypr/hyprpanel.nix
-    # ../../../programs/ashell.nix
-    ../../hypr/hyprlock/cards.nix
-    ../../vicinae.nix
-    # ../../../programs/quickshell/quickshell.nix
-    ./kitty.nix
+    ../../hyprsunset.nix
+    ../../hypridle.nix
+    ../../../Tools/Media/hyprshot.nix
+    ../../Hyprlock/cards.nix
+    ../../../Tools/vicinae.nix
 
     # Hyprland settings
     ./animations.nix
@@ -27,6 +22,9 @@
     ./input.nix
     ./plugins.nix
     ./look_and_feel.nix
+
+    # Shells
+    ../../Shells/noctalia.nix
   ];
   
   wayland.windowManager.hyprland = {

@@ -1,6 +1,10 @@
 { lib, inputs, config, pkgs, ... }: 
 
 {
+  imports = [
+    inputs.vicinae.homeManagerModules.default
+  ];
+  
   services.vicinae = {
     enable = true;
     systemd = {

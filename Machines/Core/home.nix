@@ -7,16 +7,23 @@
 }:
 {
   imports = [
-    #core/programs/alacritty.nix
-    core/programs/btop.nix
-    core/programs/direnv.nix
-    core/programs/git.nix
-    core/programs/lsd.nix
-    core/programs/neovim.nix
-    core/programs/starship.nix
-    core/programs/yazi/yazi.nix
-    core/programs/zsh.nix
-    core/programs/zoxide.nix
+    inputs.nix-flatpak.homeManagerModules.nix-flatpak
+    inputs.nvf.homeManagerModules.default
+    inputs.stylix.homeModules.stylix
+
+    ../../Features/Dev/direnv.nix
+    ../../Features/Dev/git.nix
+    ../../Features/Dev/neovim.nix
+
+    ../../Features/Tools/btop.nix
+    ../../Features/Tools/Files/lsd.nix
+    ../../Features/Tools/Files/zoxide.nix
+    ../../Features/Tools/Files/yazi/yazi.nix
+
+    ../../Features/Ricing/CLI/starship.nix
+    ../../Features/Ricing/CLI/zsh.nix
+    ../../Features/Ricing/WM/Hyprland/stylix.nix
+
   ];
 
   home.packages = with pkgs; [
