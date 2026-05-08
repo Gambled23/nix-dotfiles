@@ -87,6 +87,9 @@
     self,
     nixpkgs,
     home-manager,
+    spicetify-nix,
+    nixos-hardware,
+    nix-index-database,
     ...
     }@inputs:
   let
@@ -96,7 +99,7 @@
     };
 
     coreModules = [
-      inputs.nix-index-database.nixosModules.default
+      nix-index-database.nixosModules.default
       home-manager.nixosModules.home-manager
       {
         home-manager.useGlobalPkgs = true;
