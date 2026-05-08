@@ -2,6 +2,10 @@
 
 {
   boot = {
+    tmp.useTmpfs = false;
+    kernelPackages = pkgs.linuxPackages_latest;
+    extraModprobeConfig = '' options bluetooth disable_ertm=1 '';
+
     # Plymouth
     consoleLogLevel = 0;
     initrd.verbose = false;

@@ -7,6 +7,8 @@
     ./hardware-configuration.nix
     #./symlinks.nix
 
+    ../../Features/Gaming/glances.nix
+    
     #../../core/programs/alvr.nix
     # ../../core/services/coolercontrol.nix
     #../../core/programs/corectrl.nix

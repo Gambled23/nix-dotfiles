@@ -3,31 +3,24 @@
   system.stateVersion = "26.11";
   networking.hostName = "dev-gambled";
   imports = [
-    ../../configuration.nix
+    ../../Machines/Core/configuration.nix
+    ../../Machines/Desktop/configuration.nix
     ./hardware-configuration.nix
-    #./symlinks.nix
+    ./symlinks.nix
 
-    ../../core/services/docker.nix
-    ../../core/services/mariadb.nix
-    ../../core/services/ollama-client.nix
+    ../../Features/Dev/ollama-client.nix
+    ../../Features/Dev/docker.nix
+    ../../Features/Dev/mariadb.nix
 
     # bootloader
-    #../../core/bootloader/systemd.nix
-    ../../core/bootloader/grub.nix
+    ../../Features/Boot/grub.nix
 
     # Desktop enviroment
-    ../../core/services/xserver/hyprland/hyprland.nix
-    # ../../core/services/xserver/kde/default.nix
-    #../../core/services/xserver/gnome/default.nix
-    #../../core/services/xserver/i3/default.nix
-    #../../core/services/xserver/awesome/awesomewm.nix
+    ../../Features/Ricing/WM/Hyprland/hyprland.nix
   ];
 
   environment.systemPackages = with pkgs; [
-    (import ../../scripts/flash-kernelsu.nix { inherit pkgs; })
-    # (import ../../scripts/songdetails.nix { inherit pkgs; })
-    # (import ../../scripts/display-device.nix { inherit pkgs; })
-    # (callPackage ../../nixpkgs/pkgs/future_cursors/package.nix {})
+    (import ../../Scripts/flash-kernelsu.nix { inherit pkgs; })
   ];
 
   # amdgpu

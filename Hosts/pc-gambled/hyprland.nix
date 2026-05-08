@@ -5,8 +5,9 @@
 }: 
 {
   imports = [
-    ../../../core/services/xserver/hyprland/config.nix
+    ../../Features/Ricing/WM/Hyprland/config.nix
   ];
+
   wayland.windowManager.hyprland = {
     settings = {
       ################

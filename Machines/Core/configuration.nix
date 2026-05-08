@@ -1,16 +1,17 @@
 { config, pkgs, lib, inputs, outputs, ... }:
 {
   imports = [
-    ./core/services/glances.nix
-    ./core/services/openssh.nix
-    ./core/services/syncthing.nix
-    ./core/services/zerotier.nix
-    ./cachix/nvf.nix
-    ./cachix.nix
+    ../../Features/Network/openssh.nix
+    ../../Features/Network/syncthing.nix
+    ../../Features/Network/zerotier.nix
+
+    ../../Cachix/cachix.nix
+    ../../Cachix/nvf.nix
   ];
 
   nix = {
     settings = {
+      trusted-users = [ "root" "gambled" ];
       download-buffer-size = 524288000;
       auto-optimise-store = true;
       experimental-features = [ 
@@ -18,34 +19,19 @@
         "flakes" 
         "pipe-operators"
       ];      
-      # cache for hyprland packages
       substituters = [
-        "https://hyprland.cachix.org"
-        "https://vicinae.cachix.org"
         "https://yazi.cachix.org"
       ];
-      trusted-substituters = ["https://hyprland.cachix.org"];
       trusted-public-keys = [
-        "hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="
-        "vicinae.cachix.org-1:1kDrfienkGHPYbkpNj1mWTr7Fm1+zcenzgTizIcI3oc="
         "yazi.cachix.org-1:Dcdz63NZKfvUCbDGngQDAZq6kOroIrFoyO064uvLh8k="
       ];
     };
-    # gc = {
-    #   automatic = true;
-    #   dates = "weekly";
-    #   options = "--delete-older-than 7d";
-    # };
   };
 
-  boot.extraModprobeConfig = '' options bluetooth disable_ertm=1 '';
-  programs.appimage.enable = true;
-  programs.appimage.binfmt = true;
-  # security.polkit.enable = true;
+  system.autoUpgrade.enable = true;
+  system.autoUpgrade.allowReboot = true;
 
-  # set zsh shell
-  users.defaultUserShell = pkgs.zsh;
-  programs.zsh.enable = true;
+  # security.polkit.enable = true;
 
   networking.networkmanager.enable = true;
   networking.extraHosts =
@@ -77,19 +63,16 @@
     grub2
     nixd
     nil
-    (import ./scripts/nix-rbd.nix { inherit pkgs; })
-    (import ./scripts/update-flake.nix { inherit pkgs; })
-    (import ./scripts/auto-gc.nix { inherit pkgs; })
-    (import ./scripts/git-clone.nix { inherit pkgs; })
-    (import ./scripts/dev/enviroment.nix { inherit pkgs; })
-    (import ./scripts/dev/ssh-github.nix { inherit pkgs; })
-    (import ./scripts/dev/migrateDB.nix { inherit pkgs; })
-    (import ./scripts/dev/mariadbSetupRoot.nix { inherit pkgs; })
-    (import ./scripts/dev/modular-prod-backup.nix { inherit pkgs; })
-  ];
+    (import ../../Scripts/nix-rbd.nix { inherit pkgs; })
+    (import ../../Scripts/update-flake.nix { inherit pkgs; })
+    (import ../../Scripts/auto-gc.nix { inherit pkgs; })
+    (import ../../Scripts/git-clone.nix { inherit pkgs; })
 
-  system.autoUpgrade.enable = true;
-  system.autoUpgrade.allowReboot = true;
+    (import ../../Scripts/dev/enviroment.nix { inherit pkgs; })
+    (import ../../Scripts/dev/ssh-github.nix { inherit pkgs; })
+    (import ../../Scripts/dev/migrateDB.nix { inherit pkgs; })
+    (import ../../Scripts/dev/mariadbSetupRoot.nix { inherit pkgs; })
+  ];
 
   users.users = {
     gambled = {
@@ -110,9 +93,7 @@
 
 
   # Extra services
-  services.packagekit.enable = true; # Enable packagekit for gnome software
   services.fwupd.enable = true; # Enable firmware updates
-
 
   nixpkgs.config.allowUnfree = true;
   # nixpkgs.config.packageOverrides = pkgs: {
@@ -120,8 +101,6 @@
   #     inherit pkgs;
   #   };
   # };
-  boot.tmp.useTmpfs = false;
-  boot.kernelPackages = pkgs.linuxPackages_latest;
 
   services.udev = {
     enable = true;
@@ -134,6 +113,7 @@
 
   services.power-profiles-daemon.enable = true;
   services.upower.enable = true;
+
   programs.nix-index-database.comma.enable = true;
   programs.nh = {
     enable = true;
@@ -141,7 +121,6 @@
     clean.extraArgs = "--keep-since 4d --keep 3";
     flake = "/etc/nixos"; # sets NH_OS_FLAKE variable for you
   };
-  nix.settings.trusted-users = [ "root" "gambled" ];
 
   i18n = {
     defaultLocale = "en_US.UTF-8";

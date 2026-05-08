@@ -7,6 +7,8 @@
   imports = [
     ./hardware-configuration.nix
 
+    ../../Features/Gaming/glances.nix
+    
     ../../configuration.nix
     ../../core/services/code-server.nix
     # ../../core/services/docker.nix

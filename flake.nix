@@ -155,12 +155,12 @@
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
         modules = commonModules ++ desktopModules ++ [
-          ./devices/pc/configuration.nix
+          ./Hosts/pc-gambled/configuration.nix
           # jovian-nixos.nixosModules.default
           nixos-hardware.nixosModules.gigabyte-b650
           {
             home-manager.users.gambled.imports = [
-              ./devices/pc/home.nix
+              ./Hosts/pc-gambled/home.nix
 
               inputs.sls-steam.homeModules.sls-steam
             ];
@@ -171,10 +171,10 @@
       "server-gambled" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         modules = commonModules ++ [
-          ./devices/server/configuration.nix
+          ./Hosts/server-gambled/configuration.nix
           {
             home-manager.users.gambled.imports = [
-              ./devices/server/home.nix
+              ./Hosts/server-gambled/home.nix
             ];
           }
         ];
@@ -184,11 +184,11 @@
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
         modules = commonModules ++ desktopModules ++ [
-          ./devices/dev/configuration.nix
+          ./Hosts/dev-gambled/configuration.nix
           # inputs.myWebService.nixosModules.nginxWebService
           {
             home-manager.users.gambled.imports = [
-              ./devices/dev/home.nix
+              ./Hosts/dev-gambled/home.nix
             ];
           }
         ];
