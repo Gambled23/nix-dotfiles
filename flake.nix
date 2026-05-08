@@ -1,5 +1,5 @@
 {
-  description = "NixOS configuration";
+  description = "Gambled's NixOS configuration - エル・プサイ・ コングルゥ";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
@@ -84,85 +84,54 @@
   };
 
   outputs = {
-      self,
-      nixpkgs,
-      home-manager,
-      spicetify-nix,
-      nixos-hardware,
-      # nur,
-      nixcord,
-      # jovian-nixos,
-      # dolphin-overlay,
-      stylix,
-      vicinae,
-      millennium,
-      sls-steam,
-      nix-index-database,
-      ...
-     }@inputs:
+    self,
+    nixpkgs,
+    home-manager,
+    ...
+    }@inputs:
   let
     specialArgs = {
       inherit inputs;
       inherit spicetify-nix;
     };
 
-    commonModules = [
-      nix-index-database.nixosModules.default
+    coreModules = [
+      inputs.nix-index-database.nixosModules.default
       home-manager.nixosModules.home-manager
-      # nur.modules.nixos.default
       {
         home-manager.useGlobalPkgs = true;
         home-manager.useUserPackages = true;
-        home-manager.users.gambled.imports = [
-          inputs.nix-flatpak.homeManagerModules.nix-flatpak
-          inputs.nvf.homeManagerModules.default
-          stylix.homeModules.stylix
-          ./core/services/xserver/hyprland/stylix.nix
-        ];
         home-manager.extraSpecialArgs = specialArgs;
         home-manager.backupFileExtension = "back";
         home-manager.overwriteBackup = true;
       }
     ];
-
-    desktopModules = [
-      {
-        home-manager.users.gambled.imports = [
-          spicetify-nix.homeManagerModules.default
-          ./core/programs/spicetify.nix
-
-          inputs.nixcord.homeModules.nixcord
-          ./core/programs/nixcord.nix
-
-          # inputs.dms.homeModules.dank-material-shell
-          # ./core/programs/dankmaterialshell.nix
-          # inputs.dms-plugin-registry.modules.default
-
-          inputs.noctalia.homeModules.default
-          ./core/programs/noctalia.nix
-
-          vicinae.homeManagerModules.default
-        ];
-        # nixpkgs.overlays = [
-        #   dolphin-overlay.overlays.default
-        # ];
-      }
-    ];
   in {
     nixosConfigurations = {
+      "dev-gambled" = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        specialArgs = { inherit inputs; };
+        modules = coreModules ++ [
+          ./Hosts/dev-gambled/configuration.nix
+          # inputs.myWebService.nixosModules.nginxWebService
+          {
+            home-manager.users.gambled.imports = [
+              ./Hosts/dev-gambled/home.nix
+            ];
+          }
+        ];
+      };
 
       "pc-gambled" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
-        modules = commonModules ++ desktopModules ++ [
-          ./devices/pc/configuration.nix
+        modules = coreModules ++ [
+          ./Hosts/pc-gambled/configuration.nix
           # jovian-nixos.nixosModules.default
           nixos-hardware.nixosModules.gigabyte-b650
           {
             home-manager.users.gambled.imports = [
-              ./devices/pc/home.nix
-
-              inputs.sls-steam.homeModules.sls-steam
+              ./Hosts/pc-gambled/home.nix
             ];
           }
         ];
@@ -170,30 +139,15 @@
 
       "server-gambled" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
-        modules = commonModules ++ [
-          ./devices/server/configuration.nix
+        modules = coreModules ++ [
+          ./Hosts/server-gambled/configuration.nix
           {
             home-manager.users.gambled.imports = [
-              ./devices/server/home.nix
+              ./Hosts/server-gambled/home.nix
             ];
           }
         ];
       };
-
-      "dev-gambled" = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        specialArgs = { inherit inputs; };
-        modules = commonModules ++ desktopModules ++ [
-          ./devices/dev/configuration.nix
-          # inputs.myWebService.nixosModules.nginxWebService
-          {
-            home-manager.users.gambled.imports = [
-              ./devices/dev/home.nix
-            ];
-          }
-        ];
-      };
-
     };
   };
 }

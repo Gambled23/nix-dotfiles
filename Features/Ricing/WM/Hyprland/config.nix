@@ -1,0 +1,103 @@
+# Home manager file
+{
+  inputs,
+  pkgs,
+  lib,
+  config,
+  ...
+}: 
+{
+  imports = [
+    # Services and programs
+    ../../hyprsunset.nix
+    ../../hypridle.nix
+    ../../../Tools/Media/hyprshot.nix
+    ../../Hyprlock/cards.nix
+    ../../../Tools/vicinae.nix
+
+    # Hyprland settings
+    ./animations.nix
+    ./binds.nix
+    ./rules.nix
+    ./input.nix
+    ./plugins.nix
+    ./look_and_feel.nix
+
+    # Shells
+    ../../Shells/noctalia.nix
+  ];
+  
+  wayland.windowManager.hyprland = {
+    enable = true;
+    systemd.enable = false;
+
+    plugins = [
+      # inputs.hyprland-plugins.packages."${pkgs.stdenv.hostPlatform.system}".borders-plus-plus
+      # inputs.Hyprspace.packages.${pkgs.stdenv.hostPlatform.system}.Hyprspace
+      # inputs.hyprland-plugins.packages."${pkgs.stdenv.hostPlatform.system}".hyprscrolling
+      # inputs.hyprland-plugins.packages."${pkgs.stdenv.hostPlatform.system}".csgo-vulkan-fix
+      # inputs.hyprland-plugins.packages."${pkgs.stdenv.hostPlatform.system}".hyprexpo
+    ];
+
+    settings = {
+      ###################
+      ### MY PROGRAMS ###
+      ###################
+      "$terminal" = "ghostty";
+      "$file_manager" = "$terminal -e yazi";
+      "$web_browser" = "google-chrome-stable";
+      "$code" = "code";
+      "$menu" = "vicinae toggle";
+      "$mainMod" = "SUPER";
+
+
+      #################
+      ### AUTOSTART ###
+      #################
+      "exec-once" = [
+        # "systemctl --user enable --now hyprpolkitagent.service"
+        "noctalia-shell"
+        # "systemctl --user enable --now hyprpaper.service"
+        "systemctl --user enable --now hypridle.service"
+        "spotify"
+        "discord"
+        "altus"
+        "kdeconnect-indicator"
+        # "bluetoothctl connect 24:95:2F:60:BD:94"
+      ];
+
+
+      #############################
+      ### ENVIRONMENT VARIABLES ###
+      #############################
+      # See https://wiki.hypr.land/Configuring/Environment-variables/
+      env = [
+        "XCURSOR_SIZE,24"
+        "HYPRCURSOR_SIZE,24"
+        "QT_QPA_PLATFORMTHEME,qt6ct"
+      ];
+
+
+      ###################
+      ### PERMISSIONS ###
+      ###################
+      # See https://wiki.hypr.land/Configuring/Permissions/
+      # Please note permission changes here require a Hyprland restart and are not applied on-the-fly
+      # for security reasons
+
+      # ecosystem = {
+      #   enforce_permissions = 1;
+      # };
+
+      permission = [
+        "/usr/(bin|local/bin)/grim, screencopy, allow"
+        "/usr/(lib|libexec|lib64)/xdg-desktop-portal-hyprland, screencopy, allow"
+        "/usr/(bin|local/bin)/hyprpm, plugin, allow"
+      ];
+    };
+
+    systemd.variables = ["--all"]; # To pass environment variables to the systemd services started by Hyprland
+  };
+
+  xdg.configFile."uwsm/env".source = "${config.home.sessionVariablesPackage}/etc/profile.d/hm-session-vars.sh"; 
+}
