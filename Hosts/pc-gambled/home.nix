@@ -50,6 +50,7 @@
     tonelib-jam
 
     #* utils
+    pywalfox-native
     polychromatic
     via
     headsetcontrol
