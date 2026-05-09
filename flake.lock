@@ -1337,11 +1337,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1777454249,
-        "narHash": "sha256-BylCmB2DFgUL+f0JmY50GMuUIaB+Avj52BNs7sd1rrs=",
+        "lastModified": 1778055398,
+        "narHash": "sha256-rOUktUFIBXIjmUtfoMULlM9wQaw90UwY1PvGg53Xix4=",
         "owner": "AceSLS",
         "repo": "SLSsteam",
-        "rev": "fd38c03f9e667bf7b74127c4fc5b5c75e1bff521",
+        "rev": "71a711cacf18e0197118a7eb266674bff993a2f5",
         "type": "github"
       },
       "original": {
