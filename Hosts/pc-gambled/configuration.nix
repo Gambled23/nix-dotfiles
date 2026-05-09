@@ -24,11 +24,11 @@
     i2c-tools #for monitoring sensors
     ryubing
 
-    (import ../../scripts/reboot-to-windows.nix { inherit pkgs; })
-    (import ../../scripts/display-device.nix { inherit pkgs; })
-    (import ../../scripts/modo-tele.nix { inherit pkgs; })
+    (import ../../Scripts/reboot-to-windows.nix { inherit pkgs; })
+    (import ../../Scripts/display-device.nix { inherit pkgs; })
+    (import ../../Scripts/modo-tele.nix { inherit pkgs; })
 
-    (callPackage ../../nixpkgs/pkgs/hayase/package.nix {})
+    (callPackage ../../Pkgs/hayase/package.nix {})
     # (callPackage ../../nixpkgs/pkgs/stremio/package.nix {})
     # (callPackage ../../nixpkgs/pkgs/accela/default.nix {})
   ];

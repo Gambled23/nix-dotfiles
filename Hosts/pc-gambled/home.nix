@@ -14,7 +14,7 @@
     ../../Machines/Core/home.nix
     ../../Machines/Desktop/home.nix
 
-    ../../core/services/slsteam.nix
+    ../../Features/Gaming/slsteam.nix
   ];
 
   home.packages =
