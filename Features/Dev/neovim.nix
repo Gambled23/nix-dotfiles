@@ -14,6 +14,22 @@
       # };
       vim.enableLuaLoader = true;
       
+      vim.autocmds = [
+        {
+          enable = true;
+          callback = lib.generators.mkLuaInline ''
+            function()
+              if vim.bo.modified and vim.fn.expand("%") ~= "" then
+                vim.cmd("silent! update")
+              end
+          '';
+          desc = "Autocommand to autosave";
+          event = [
+            "InsertLeave"
+            "TextChanged"
+          ];
+        }
+      ];
       vim.autocomplete = {
         enableSharedCmpSources = true;
         blink-cmp = {
@@ -121,8 +137,8 @@
         nvim-notify = {
           enable = true;
           setupOpts = {
-            background_color = "#000000";
-            timeout = 3000;
+            background_colour = "#000000";
+            timeout = 5000;
           };
         };
       };
@@ -200,7 +216,7 @@
       vim.utility = {
         sleuth.enable = true;
         preview.markdownPreview.enable = true;
-
+        surround.enable = true;
         yazi-nvim = {
           enable = true;
         };
