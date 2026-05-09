@@ -6,7 +6,6 @@
     ../../Features/Network/zerotier.nix
 
     ../../Cachix/cachix.nix
-    ../../Cachix/nvf.nix
   ];
 
   nix = {

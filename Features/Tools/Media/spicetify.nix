@@ -10,6 +10,8 @@ in
   programs.spicetify = {
     enable = true;
     theme = spicePkgs.themes.comfy;
+    colorScheme = "Sunset";
+
 
     enabledCustomApps = with spicePkgs.apps; [
       marketplace
