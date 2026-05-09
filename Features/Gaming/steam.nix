@@ -13,7 +13,8 @@
       #   "--mangoapp"
       # ];
     };
-    package = pkgs.steam.override {
+
+    package = pkgs.millennium-steam.override {
       extraEnv = {
         # MANGOHUD = true;
         OBS_VKCAPTURE = true;
@@ -21,7 +22,6 @@
         WINEDLLOVERRIDES = "OnlineFix64=n;SteamOverlay64=n;winmm=n,b;dnet=n;steam_api64=n;winhttp=n,b";
       };
     };
-
 
     extraCompatPackages = with pkgs; [
       proton-ge-bin
