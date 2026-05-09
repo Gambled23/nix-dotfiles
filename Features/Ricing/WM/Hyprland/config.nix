@@ -43,11 +43,11 @@
       ###################
       ### MY PROGRAMS ###
       ###################
-      "$terminal" = "ghostty";
+      "$terminal" = "uwsm app -- ghostty";
       "$file_manager" = "$terminal -e yazi";
-      "$web_browser" = "google-chrome-stable";
-      "$code" = "code";
-      "$menu" = "vicinae toggle";
+      "$web_browser" = "uwsm app -- google-chrome-stable";
+      "$code" = "uwsm app -- code";
+      "$menu" = "uwsm app -- vicinae toggle";
       "$mainMod" = "SUPER";
 
 
@@ -56,13 +56,13 @@
       #################
       "exec-once" = [
         # "systemctl --user enable --now hyprpolkitagent.service"
-        "noctalia-shell"
+        "uwsm app -- noctalia-shell"
         # "systemctl --user enable --now hyprpaper.service"
         "systemctl --user enable --now hypridle.service"
-        "spotify"
-        "discord"
-        "altus"
-        "kdeconnect-indicator"
+        "uwsm app -- spotify"
+        "uwsm app --uwsm app -- discord"
+        "uwsm app -- altus"
+        "uwsm app -- kdeconnect-indicator"
         # "bluetoothctl connect 24:95:2F:60:BD:94"
       ];
 
