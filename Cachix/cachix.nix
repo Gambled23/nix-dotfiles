@@ -18,6 +18,7 @@ in {
         "https://yazi.cachix.org"
         "https://cache.nixos.org/"
         "https://nvf.cachix.org"
+        "https://noctalia.cachix.org"
       ];
 
       trusted-substituters = [
@@ -26,12 +27,14 @@ in {
         "https://yazi.cachix.org"
         "https://cache.nixos.org/"
         "https://nvf.cachix.org"
+        "https://noctalia.cachix.org"
       ];
       
       trusted-public-keys = [
         "hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="
         "yazi.cachix.org-1:Dcdz63NZKfvUCbDGngQDAZq6kOroIrFoyO064uvLh8k="
         "nvf.cachix.org-1:GMQWiUhZ6ux9D5CvFFMwnc2nFrUHTeGaXRlVBXo+naI="
+        "noctalia.cachix.org-1:pCOR47nnMEo5thcxNDtzWpOxNFQsBRglJzxWPp3dkU4="
       ];
     };
   };
