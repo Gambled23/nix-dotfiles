@@ -71,8 +71,8 @@
     };
 
     # Nur repo for firefox extensions
-    # nur.url = "github:nix-community/NUR";
-    # nur.inputs.nixpkgs.follows = "nixpkgs";
+    nur.url = "github:nix-community/NUR";
+    nur.inputs.nixpkgs.follows = "nixpkgs";
 
     #nixpkgs-xr.url = "github:nix-community/nixpkgs-xr";
 
@@ -90,12 +90,16 @@
     spicetify-nix,
     nixos-hardware,
     nix-index-database,
+    nur,
     ...
     }@inputs:
   let
     specialArgs = {
       inherit inputs;
       inherit spicetify-nix;
+      inherit nixos-hardware;
+      inherit nix-index-database;
+      inherit nur;
     };
 
     coreModules = [

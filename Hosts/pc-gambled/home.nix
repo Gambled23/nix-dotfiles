@@ -15,6 +15,8 @@
     ../../Machines/Desktop/home.nix
 
     ../../Features/Gaming/slsteam.nix
+
+    ../../Features/Tools/Web/firefox.nix
   ];
 
   home.packages =

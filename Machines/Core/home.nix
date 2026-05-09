@@ -57,6 +57,9 @@
   gtk = {
     enable = true;
     theme.name = "noctalia";
+    iconTheme.name = "Papirus";
+    cursorTheme.name = "Bibata-Modern-Ice";
+    cursorTheme.size = 24;
   };
 
   qt =
