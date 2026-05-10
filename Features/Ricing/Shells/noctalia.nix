@@ -1624,5 +1624,6 @@
     jq
     wl-screenrec
     adw-gtk3 # custom color theme for gtk
+    qt6.qtwebsockets 
   ];
 }
