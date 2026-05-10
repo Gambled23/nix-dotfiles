@@ -56,6 +56,7 @@
     headsetcontrol
 
     #* media
+    qbittorrent
     vlc
 
     #* media creation
