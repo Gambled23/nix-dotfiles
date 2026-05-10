@@ -16,13 +16,14 @@
       cp = "cp -riv";
       gitfix = "git fetch origin main && git diff --exit-code origin/main";
       lg = "lazygit";
+      lj = "lazyjournal";
       ls = "lsd";
       mkdir = "mkdir -vp";
       mv = "mv -iv";
       rm = "rm -riv";
       cd = "z";
       mdb = "mariadb -u root -p";
-      noctalia = "noctalia-shell kill && ghostty -e noctalia-shell -d";
+      noctalia = "noctalia-shell kill && noctalia-shell -d";
     };
     
     initContent = "

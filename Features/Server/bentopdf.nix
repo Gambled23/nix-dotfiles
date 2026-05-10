@@ -9,7 +9,7 @@
       enable = true;
       virtualHost.listen = [
         {
-          addr = "0.0.0.0";
+          addr = "_";
           port = 8090;
         }
       ];
