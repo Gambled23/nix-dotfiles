@@ -5,6 +5,8 @@
 
 {
   system.userActivationScripts.linktosharedfolder.text = ''
-
+    if [[ ! -h "$HOME/hass_backups" ]]; then
+      ln -s "/var/lib/hass/backups" "$HOME/hass_backups"
+    fi
   '';
 }

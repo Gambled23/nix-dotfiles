@@ -36,6 +36,12 @@
         enable = true;
         devices = [ "server-gambled" "dev-gambled" ];
       };
+      "hass_backups" = {
+        versioning.type = "simple";
+        path = "/home/gambled/hass_backups";
+        enable = true;
+        devices = [ "server-gambled" "pc-gambled" ];
+      };
     };
 
     settings.devices = {
