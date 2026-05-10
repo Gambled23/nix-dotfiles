@@ -23,6 +23,7 @@
     lact # gpu overclocking
     i2c-tools #for monitoring sensors
     ryubing
+    dolphin-emu
 
     (import ../../Scripts/reboot-to-windows.nix { inherit pkgs; })
     (import ../../Scripts/display-device.nix { inherit pkgs; })
