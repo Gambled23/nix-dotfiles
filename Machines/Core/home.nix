@@ -56,7 +56,7 @@
 
   gtk = {
     enable = true;
-    theme.name = "noctalia";
+    theme.name = "adw-gtk3";
     iconTheme.name = "Papirus";
     cursorTheme.name = "Bibata-Modern-Ice";
     cursorTheme.size = 24;
@@ -69,7 +69,7 @@
         icon_theme = "Papirus";
         style = "Fusion";
         custom_palette = "true";
-        color_scheme_path = "$HOME/.config/qt6ct/colors/noctalia.conf";  
+        color_scheme_path = "$HOME/.config/qt6ct/colors/noctalia.conf";
       };
     };
   in 
