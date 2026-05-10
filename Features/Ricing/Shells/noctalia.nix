@@ -934,7 +934,7 @@
 
       desktopWidgets = {
         enabled = true;
-        gridSnap = true;
+        gridSnap = false;
         gridSnapScale = false;
         monitorWidgets = [
           {
@@ -971,6 +971,112 @@
                 usePrimaryColor = false;
                 x = 620;
                 y = 40;
+              }
+            ];
+          }
+          {
+            name = "DP-3";
+            widgets = [
+              {
+                clockColor = "none";
+                clockStyle = "digital";
+                customFont = "";
+                format = "HH:mm\\nd MMMM yyyy";
+                id = "Clock";
+                roundedCorners = true;
+                scale = 1.3174091884595163;
+                showBackground = true;
+                useCustomFont = false;
+                x = 1445;
+                y = 384;
+              }
+              {
+                hideMode = "visible";
+                id = "MediaPlayer";
+                roundedCorners = true;
+                scale = 2.3626262995809864;
+                showAlbumArt = true;
+                showBackground = true;
+                showButtons = false;
+                showVisualizer = true;
+                visualizerType = "wave";
+                x = 1125;
+                y = 45;
+              }
+              {
+                id = "Weather";
+                roundedCorners = true;
+                scale = 1.142967570256372;
+                showBackground = true;
+                x = 1118;
+                y = 383;
+              }
+              {
+                defaultSettings = {
+                  roundedCorners = true;
+                  showBackground = true;
+                };
+                id = "plugin:calendar-widget";
+                scale = 1.4323710820047957;
+                showBackground = true;
+                x = 1695;
+                y = 262;
+              }
+              {
+                hideMode = "visible";
+                id = "MediaPlayer";
+                roundedCorners = true;
+                scale = 1.3071426522512377;
+                showAlbumArt = false;
+                showBackground = true;
+                showButtons = true;
+                showVisualizer = false;
+                visualizerType = "linear";
+                x = 1119;
+                y = 261;
+              }
+              {
+                defaultSettings = {
+                  hideBackground = false;
+                  minimumThreshold = 10;
+                };
+                id = "plugin:catwalk";
+                scale = 1.106362479106558;
+                showBackground = true;
+                x = 1444;
+                y = 595;
+              }
+              {
+                defaultSettings = {
+                  completedCount = 0;
+                  count = 0;
+                  current_page_id = 0;
+                  exportEmptySections = false;
+                  exportFormat = "markdown";
+                  exportPath = "~/Documents";
+                  isExpanded = false;
+                  pages = [
+                    {
+                      id = 0;
+                      name = "General";
+                    }
+                  ];
+                  priorityColors = {
+                    high = "#f44336";
+                    low = "#9e9e9e";
+                    medium = "#2196f3";
+                  };
+                  showBackground = true;
+                  showCompleted = true;
+                  todos = [
+                  ];
+                  useCustomColors = false;
+                };
+                id = "plugin:todo";
+                scale = 1.0452990281697632;
+                showBackground = true;
+                x = 1117;
+                y = 489;
               }
             ];
           }
@@ -1361,7 +1467,7 @@
         overviewTint = 0.6;
         skipStartupTransition = true;
         sortOrder = "name";
-        directory = "/home/gambled/Pictures/Wallpapers/PC";
+        directory = "/home/gambled/Pictures/Wallpapers";
         monitorDirectories = [ ];
         enableMultiMonitorDirectories = false;
         showHiddenFiles = false;

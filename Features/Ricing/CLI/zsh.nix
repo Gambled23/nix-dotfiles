@@ -23,7 +23,7 @@
       rm = "rm -riv";
       cd = "z";
       mdb = "mariadb -u root -p";
-      noctalia = "noctalia-shell kill && noctalia-shell -d";
+      noctalia = "noctalia-shell kill; sleep 3; noctalia-shell -d";
     };
     
     initContent = "
