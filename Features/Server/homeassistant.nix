@@ -13,9 +13,13 @@ in
     # openFirewall = true;
     extraComponents = [
       "analytics"
+      "androidtv"
+      "androidtv_remote"
       "backup"
+      "bluetooth"
       # "bluetooth"
       "cast"
+      "fitbit"
       "glances"
       "google_translate"
       "history"
@@ -26,6 +30,7 @@ in
       "shell_command"
       "spotify"
       "switch"
+      "syncthing"
       "tuya"
       "upnp"
       "isal"
@@ -35,6 +40,7 @@ in
     customComponents = with pkgs; [
       (callPackage ../../Pkgs/cozylife/package.nix {})
       home-assistant-custom-components.dreo
+      home-assistant-custom-components.scheduler
     ];
     customLovelaceModules = with pkgs.home-assistant-custom-lovelace-modules; [
       bubble-card
