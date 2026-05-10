@@ -1521,6 +1521,14 @@
         }
       ];
       states = {
+        calendar-widget = {
+          enabled = true;
+          sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
+        };
+        catwalk = {
+          enabled = true;
+          sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
+        };
         clipboard = {
           enabled = true;
           sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
