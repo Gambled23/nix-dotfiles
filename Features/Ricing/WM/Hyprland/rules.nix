@@ -31,7 +31,7 @@
       "match:class .scrcpy-wrapped, float on, center on, min_size 336 748, max_size 1344 2992, size 469 1044, keep_aspect_ratio on"
       "match:title Picture in picture, float on, center on, keep_aspect_ratio on, size 284 160"
       "match:title (Open File.*|Select Folder to Upload|Select a file|.*Yazi.*), size 1150 700, float on, center on"
-      "match:title (Keyguard), size 790 570, float on, center on"
+      "match:title (Keyguard), size 790 570, min_size 790 570, max_size 791 571, float on, center on"
       # Shadow for floating windows
       "match:float off, no_shadow on"
     ];

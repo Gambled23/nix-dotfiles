@@ -14,6 +14,7 @@
 
   home.packages = with pkgs; [
     #* dev tools
+    zed-editor-fhs
     vscode
     
     #* media creation

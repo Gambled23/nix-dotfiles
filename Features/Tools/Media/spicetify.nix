@@ -1,8 +1,13 @@
-{ pkgs, lib, spicetify-nix, ... }:
+{ pkgs, lib, spicetify-nix, config, ... }:
 let
   spicePkgs = spicetify-nix.legacyPackages.${pkgs.stdenv.hostPlatform.system};
+  # myFile = builtins.path {
+  #   path = "/home/gambled/.config/spicetify/Themes/Comfy/color.ini";
+  #   name = "color.ini";
+  # };
 in
 {
+  # home.file.".config/spicetify/Themes/Comfy/noctalia.ini".source = myFile;
   imports = [
     spicetify-nix.homeManagerModules.default
   ];
@@ -10,8 +15,12 @@ in
   programs.spicetify = {
     enable = true;
     theme = spicePkgs.themes.comfy;
-    colorScheme = "Sunset";
 
+    # Noctalia custom color scheme
+    # colorScheme = "custom";
+    # customColorScheme = {
+    #   Comfy = myFile;
+    # };
 
     enabledCustomApps = with spicePkgs.apps; [
       marketplace

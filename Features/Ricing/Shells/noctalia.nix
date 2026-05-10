@@ -1509,5 +1509,6 @@
     ffmpeg
     jq
     wl-screenrec
+    adw-gtk3 # custom color theme for gtk
   ];
 }

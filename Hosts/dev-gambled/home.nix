@@ -15,7 +15,6 @@
 
   home.packages = with pkgs; [
     #* dev tools
-    zed-editor-fhs
     dbeaver-bin
     claude-code
     bruno
