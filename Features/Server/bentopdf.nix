@@ -7,7 +7,7 @@
     domain = "0.0.0.0";
     nginx = {
       enable = true;
-      virtualHosts."bentopdf" = {
+      virtualHosts.listen."bentopdf" = {
         port = 8090;
       };
     };
