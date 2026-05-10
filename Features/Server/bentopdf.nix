@@ -5,14 +5,14 @@
   services.bentopdf = {
     enable = true;
     domain = "_";
-    nginx = {
-      enable = true;
-      virtualHost.listen = [
-        {
-          addr = "0.0.0.0";
-          port = 8090;
-        }
-      ];
-    };
+    # nginx = {
+    #   enable = true;
+    #   virtualHost.listen = [
+    #     {
+    #       addr = "0.0.0.0";
+    #       port = 8090;
+    #     }
+    #   ];
+    # };
   };
 }
