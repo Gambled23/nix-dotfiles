@@ -78,7 +78,7 @@
 
     # Steam thingies
     millennium.url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
-    # jovian-nixos.url = "github:Jovian-Experiments/Jovian-NixOS";
+    jovian-nixos.url = "github:Jovian-Experiments/Jovian-NixOS";
 
     # myWebService.url = "path:/home/gambled/Codes/cng-plus-front";
   };
@@ -87,6 +87,7 @@
     self,
     nixpkgs,
     home-manager,
+    jovian-nixos,
     spicetify-nix,
     nixos-hardware,
     nix-index-database,
@@ -96,6 +97,8 @@
   let
     specialArgs = {
       inherit inputs;
+      inherit home-manager;
+      inherit jovian-nixos;
       inherit spicetify-nix;
       inherit nixos-hardware;
       inherit nix-index-database;
@@ -134,7 +137,7 @@
         specialArgs = { inherit inputs; };
         modules = coreModules ++ [
           ./Hosts/pc-gambled/configuration.nix
-          # jovian-nixos.nixosModules.default
+          jovian-nixos.nixosModules.default
           nixos-hardware.nixosModules.gigabyte-b650
           {
             home-manager.users.gambled.imports = [
