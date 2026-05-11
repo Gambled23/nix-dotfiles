@@ -19,6 +19,7 @@ in {
         "https://cache.nixos.org/"
         "https://nvf.cachix.org"
         "https://noctalia.cachix.org"
+        "https://jovian.cachix.org/"
       ];
 
       trusted-substituters = [
@@ -28,6 +29,7 @@ in {
         "https://cache.nixos.org/"
         "https://nvf.cachix.org"
         "https://noctalia.cachix.org"
+        "https://jovian.cachix.org/"
       ];
       
       trusted-public-keys = [
