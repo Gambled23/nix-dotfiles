@@ -5,6 +5,13 @@
     inputs.noctalia.homeModules.default
   ];
 
+  home.file.".config/noctalia/user-templates.toml".text = ''
+    [templates.nvim-base16]
+    input_path = "~/.config/nvim/lua/matugen-template.lua"
+    output_path = "~/.config/nvim/lua/matugen.lua"
+    post_hook = 'pkill -SIGUSR1 nvim'
+  '';
+
   programs.noctalia-shell = {
     enable = true;
     package = (inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default.override { calendarSupport = true; });
