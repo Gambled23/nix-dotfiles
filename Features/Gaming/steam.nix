@@ -14,7 +14,7 @@
       # ];
     };
 
-    package = pkgs.millennium-steam.override {
+    package = pkgs.steam.override {
       extraEnv = {
         # MANGOHUD = true;
         OBS_VKCAPTURE = true;
@@ -28,13 +28,13 @@
     ];
   };
 
-  programs.gamescope = {
-    enable = true;
-    capSysNice = true;
-    # args = [
-    #   "--mangoapp"
-    # ];
-  };
+  # programs.gamescope = {
+  #   enable = true;
+  #   capSysNice = true;
+  #   # args = [
+  #   #   "--mangoapp"
+  #   # ];
+  # };
 
   programs.gamemode.enable = true;
 
@@ -50,23 +50,23 @@
     # dolphin-overlay.overlays.default
   ];
 
-  # jovian = {
-  #   steam = {
-  #     enable = true;
-  #     # autoStart = true;
-  #     desktopSession = "plasma";
-  #     user = "gambled";
-  #     updater.splash = "jovian";
-  #   };
-  #   decky-loader = {
-  #     enable = true;
-  #     user = "gambled";
-  #   };
-  #   hardware.has.amd.gpu = true;
-  # };
-  # system.userActivationScripts.linktosharedfolder.text = ''
-  #   if [[ ! -h "$HOME/.homebrew" ]]; then
-  #     ln -s "/var/lib/decky-loader/" "$HOME/.homebrew"
-  #   fi
-  # '';
+  jovian = {
+    steam = {
+      enable = true;
+      # autoStart = true;
+      desktopSession = "hyprland-uwsm";
+      user = "gambled";
+      updater.splash = "jovian";
+    };
+    decky-loader = {
+      enable = true;
+      user = "gambled";
+    };
+    hardware.has.amd.gpu = true;
+  };
+  system.userActivationScripts.linktosharedfolder.text = ''
+    if [[ ! -h "$HOME/.homebrew" ]]; then
+      ln -s "/var/lib/decky-loader/" "$HOME/.homebrew"
+    fi
+  '';
 }
