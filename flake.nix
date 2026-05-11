@@ -1,18 +1,23 @@
 {
-  description = "Gambled's NixOS configuration - エル・プサイ・ コングルゥ";
+  description = "Gambled's NixOS configuration - ( 'ω')/";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixcord.url = "github:kaylorben/nixcord";
+    spicetify-nix.url = "github:Gerg-L/spicetify-nix";
+    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
+    nvf.url = "github:NotAShelf/nvf";
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
+    noctalia.url = "github:noctalia-dev/noctalia-shell";
+    millennium.url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
+    jovian-nixos.url = "github:Jovian-Experiments/Jovian-NixOS";
+    #nixpkgs-xr.url = "github:nix-community/nixpkgs-xr";
+    # myWebService.url = "path:/home/gambled/Codes/cng-plus-front";
 
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    nixcord.url = "github:kaylorben/nixcord";
-    spicetify-nix.url = "github:Gerg-L/spicetify-nix";
-    nixos-hardware.url = "github:NixOS/nixos-hardware/master";
 
     hyprland.url = "github:hyprwm/Hyprland";
     hyprland-plugins = {
@@ -20,7 +25,6 @@
       inputs.hyprland.follows = "hyprland";
     };
 
-    # dolphin-overlay.url = "github:rumboon/dolphin-overlay";
     vicinae.url = "github:vicinaehq/vicinae";
     vicinae-extensions = {
       url = "github:vicinaehq/extensions";
@@ -32,24 +36,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # ambxst.url = "github:Axenide/Ambxst";
-    # ambxst.url = "github:smarthumankinda/ambxst-flake";
-
-    noctalia = {
-      url = "github:noctalia-dev/noctalia-shell";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    # dms = {
-    #   url = "github:AvengeMedia/DankMaterialShell/stable";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
-
-    # dms-plugin-registry = {
-    #   url = "github:AvengeMedia/dms-plugin-registry";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
-
     sls-steam = {
       url = "github:AceSLS/SLSsteam";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -60,28 +46,31 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nvf = {
-      url = "github:NotAShelf/nvf";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     accela = {
       url = "github:gambled23/enter-the-wired/fix-accela-hash";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
     # Nur repo for firefox extensions
-    nur.url = "github:nix-community/NUR";
-    nur.inputs.nixpkgs.follows = "nixpkgs";
+    nur = {
+      url = "github:nix-community/NUR";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
-    #nixpkgs-xr.url = "github:nix-community/nixpkgs-xr";
+    # dolphin-overlay.url = "github:rumboon/dolphin-overlay";
 
-    # Steam thingies
-    millennium.url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
-    jovian-nixos.url = "github:Jovian-Experiments/Jovian-NixOS";
+    # ambxst.url = "github:Axenide/Ambxst";
+    # ambxst.url = "github:smarthumankinda/ambxst-flake";
 
-    # myWebService.url = "path:/home/gambled/Codes/cng-plus-front";
+    # dms = {
+    #   url = "github:AvengeMedia/DankMaterialShell/stable";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
+    # dms-plugin-registry = {
+    #   url = "github:AvengeMedia/dms-plugin-registry";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
   };
 
   outputs = {

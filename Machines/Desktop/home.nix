@@ -14,6 +14,7 @@
 
   home.packages = with pkgs; [
     #* dev tools
+    act3
     zed-editor-fhs
     vscode
     

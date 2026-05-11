@@ -71,6 +71,13 @@
         };
       };
 
+      # vim.extraPlugins = with pkgs.vimPlugins; {
+      #   base16 = {
+      #     package = base16-nvim;
+      #     setup = "require('matugen').setup {}";
+      #   };
+      # };
+
       # vim.filetree = {
       #   nvimTree = {
       #     enable = true;
@@ -184,8 +191,8 @@
       };
 
       vim.theme = lib.mkForce {
-        name = "gruvbox";
-        style = "dark";
+        name = "base16";
+        # style = "dark";
         transparent = true;
       };
       

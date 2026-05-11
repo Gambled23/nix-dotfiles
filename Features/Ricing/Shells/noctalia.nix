@@ -843,7 +843,7 @@
         schedulingMode = "off";
         manualSunrise = "06:30";
         manualSunset = "18:30";
-        generationMethod = "tonal-spot";
+        generationMethod = "vibrant";
         monitorForColors =
           if osConfig.networking.hostName == "dev-gambled" 
           then "eDP-1"
@@ -1612,8 +1612,8 @@
       wallpapers = {
         "DP-3" = "/home/gambled/Pictures/Wallpapers/Ultrawide/abstract/wallhaven_zpqj8g.jpg";
         "sunshine" = "/home/gambled/Pictures/Wallpapers/Wide/anime/36206589_p0.jpg";
-        "HDMI-A-1" = "/home/gambled/Pictures/Wallpapers/Wide/irl/leaves-2.jpg";
-        "eDP-1" = "/home/gambled/Pictures/Wallpapers/Wide/irl/leaves-2.jpg";
+        "HDMI-A-1" = "/home/gambled/Pictures/Wallpapers/Wide/mix/flower.jpg";
+        "eDP-1" = "/home/gambled/Pictures/Wallpapers/Wide/mix/flower.jpg";
       };
     };
   };
