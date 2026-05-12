@@ -1,5 +1,110 @@
 # Home manager file
 { lib, inputs, pkgs, config, osConfig, ... }: 
+let 
+  default_desktop_widgets = [
+    {
+      clockColor = "none";
+      clockStyle = "digital";
+      customFont = "";
+      format = "HH:mm\\nd MMMM yyyy";
+      id = "Clock";
+      roundedCorners = true;
+      scale = 1.3174091884595163;
+      showBackground = true;
+      useCustomFont = false;
+      x = 1445;
+      y = 384;
+    }
+    {
+      hideMode = "visible";
+      id = "MediaPlayer";
+      roundedCorners = true;
+      scale = 2.3626262995809864;
+      showAlbumArt = true;
+      showBackground = true;
+      showButtons = false;
+      showVisualizer = true;
+      visualizerType = "wave";
+      x = 1125;
+      y = 45;
+    }
+    {
+      id = "Weather";
+      roundedCorners = true;
+      scale = 1.142967570256372;
+      showBackground = true;
+      x = 1118;
+      y = 383;
+    }
+    {
+      defaultSettings = {
+        roundedCorners = true;
+        showBackground = true;
+      };
+      id = "plugin:calendar-widget";
+      scale = 1.4323710820047957;
+      showBackground = true;
+      x = 1695;
+      y = 262;
+    }
+    {
+      hideMode = "visible";
+      id = "MediaPlayer";
+      roundedCorners = true;
+      scale = 1.3071426522512377;
+      showAlbumArt = false;
+      showBackground = true;
+      showButtons = true;
+      showVisualizer = false;
+      visualizerType = "linear";
+      x = 1119;
+      y = 261;
+    }
+    {
+      defaultSettings = {
+        hideBackground = false;
+        minimumThreshold = 10;
+      };
+      id = "plugin:catwalk";
+      scale = 1.106362479106558;
+      showBackground = true;
+      x = 1444;
+      y = 595;
+    }
+    {
+      defaultSettings = {
+        completedCount = 0;
+        count = 0;
+        current_page_id = 0;
+        exportEmptySections = false;
+        exportFormat = "markdown";
+        exportPath = "~/Documents";
+        isExpanded = false;
+        pages = [
+          {
+            id = 0;
+            name = "General";
+          }
+        ];
+        priorityColors = {
+          high = "#f44336";
+          low = "#9e9e9e";
+          medium = "#2196f3";
+        };
+        showBackground = true;
+        showCompleted = true;
+        todos = [
+        ];
+        useCustomColors = false;
+      };
+      id = "plugin:todo";
+      scale = 1.0452990281697632;
+      showBackground = true;
+      x = 1117;
+      y = 489;
+    }
+  ];
+in 
 {
   imports = [
     inputs.noctalia.homeModules.default
@@ -234,6 +339,14 @@
                   id = "plugin:usb-drive-manager";
                 }
                 {
+                  hideWhenZero = true;
+                  hideWhenZeroUnread = true;
+                  id = "NotificationHistory";
+                  showUnreadBadge = true;
+                  unreadBadgeColor = "primary";
+                  iconColor = "none";
+                }
+                {
                   compactMode = true;
                   hideMode = "hidden";
                   hideWhenIdle = false;
@@ -299,14 +412,6 @@
                 }
                 {
                   id = "plugin:clipboard";
-                }
-                {
-                  hideWhenZero = true;
-                  hideWhenZeroUnread = true;
-                  id = "NotificationHistory";
-                  showUnreadBadge = true;
-                  unreadBadgeColor = "primary";
-                  iconColor = "none";
                 }
                 {
                   colorizeDistroLogo = false;
@@ -407,6 +512,14 @@
                   id = "plugin:usb-drive-manager";
                 }
                 {
+                  hideWhenZero = true;
+                  hideWhenZeroUnread = true;
+                  id = "NotificationHistory";
+                  showUnreadBadge = true;
+                  unreadBadgeColor = "primary";
+                  iconColor = "none";
+                }
+                {
                   compactMode = true;
                   hideMode = "hidden";
                   hideWhenIdle = false;
@@ -472,14 +585,6 @@
                 }
                 {
                   id = "plugin:clipboard";
-                }
-                {
-                  hideWhenZero = true;
-                  hideWhenZeroUnread = true;
-                  id = "NotificationHistory";
-                  showUnreadBadge = true;
-                  unreadBadgeColor = "primary";
-                  iconColor = "none";
                 }
                 {
                   colorizeDistroLogo = false;
@@ -580,6 +685,14 @@
                   id = "plugin:usb-drive-manager";
                 }
                 {
+                  hideWhenZero = true;
+                  hideWhenZeroUnread = true;
+                  id = "NotificationHistory";
+                  showUnreadBadge = true;
+                  unreadBadgeColor = "primary";
+                  iconColor = "none";
+                }
+                {
                   compactMode = true;
                   hideMode = "hidden";
                   hideWhenIdle = false;
@@ -644,15 +757,10 @@
                   id = "plugin:ssh-sessions";
                 }
                 {
-                  id = "plugin:clipboard";
+                  id = "plugin:e11650:display-device";
                 }
                 {
-                  hideWhenZero = true;
-                  hideWhenZeroUnread = true;
-                  id = "NotificationHistory";
-                  showUnreadBadge = true;
-                  unreadBadgeColor = "primary";
-                  iconColor = "none";
+                  id = "plugin:clipboard";
                 }
                 {
                   colorizeDistroLogo = false;
@@ -752,6 +860,14 @@
                   useCustomFont = false;
                 }
                 {
+                  hideWhenZero = true;
+                  hideWhenZeroUnread = true;
+                  id = "NotificationHistory";
+                  showUnreadBadge = true;
+                  unreadBadgeColor = "primary";
+                  iconColor = "none";
+                }
+                {
                   compactMode = true;
                   hideMode = "hidden";
                   hideWhenIdle = false;
@@ -787,14 +903,6 @@
                 }
                 {
                   id = "plugin:e11650:display-device";
-                }
-                {
-                  hideWhenZero = true;
-                  hideWhenZeroUnread = true;
-                  id = "NotificationHistory";
-                  showUnreadBadge = true;
-                  unreadBadgeColor = "primary";
-                  iconColor = "none";
                 }
                 {
                   colorizeDistroLogo = false;
@@ -946,146 +1054,15 @@
         monitorWidgets = [
           {
             name= "eDP-1";
-            widgets = [
-              {
-                hideMode = "visible";
-                id = "MediaPlayer";
-                roundedCorners = true;
-                scale = 1.6983416033780894;
-                showAlbumArt = true;
-                showBackground = true;
-                showButtons = true;
-                showVisualizer = true;
-                visualizerType = "linear";
-                x = 1220;
-                y = 60;
-              }
-            ];
+            widgets = default_desktop_widgets;
           }
           {
             name = "HDMI-A-1";
-            widgets = [
-              {
-                clockColor = "none";
-                clockStyle = "minimal";
-                customFont = "";
-                format = "HH:mm\\nd MMMM yyyy";
-                id = "Clock";
-                roundedCorners = true;
-                scale = 4.537139686148306;
-                showBackground = true;
-                useCustomFont = false;
-                usePrimaryColor = false;
-                x = 620;
-                y = 40;
-              }
-            ];
+            widgets = default_desktop_widgets;
           }
           {
             name = "DP-3";
-            widgets = [
-              {
-                clockColor = "none";
-                clockStyle = "digital";
-                customFont = "";
-                format = "HH:mm\\nd MMMM yyyy";
-                id = "Clock";
-                roundedCorners = true;
-                scale = 1.3174091884595163;
-                showBackground = true;
-                useCustomFont = false;
-                x = 1445;
-                y = 384;
-              }
-              {
-                hideMode = "visible";
-                id = "MediaPlayer";
-                roundedCorners = true;
-                scale = 2.3626262995809864;
-                showAlbumArt = true;
-                showBackground = true;
-                showButtons = false;
-                showVisualizer = true;
-                visualizerType = "wave";
-                x = 1125;
-                y = 45;
-              }
-              {
-                id = "Weather";
-                roundedCorners = true;
-                scale = 1.142967570256372;
-                showBackground = true;
-                x = 1118;
-                y = 383;
-              }
-              {
-                defaultSettings = {
-                  roundedCorners = true;
-                  showBackground = true;
-                };
-                id = "plugin:calendar-widget";
-                scale = 1.4323710820047957;
-                showBackground = true;
-                x = 1695;
-                y = 262;
-              }
-              {
-                hideMode = "visible";
-                id = "MediaPlayer";
-                roundedCorners = true;
-                scale = 1.3071426522512377;
-                showAlbumArt = false;
-                showBackground = true;
-                showButtons = true;
-                showVisualizer = false;
-                visualizerType = "linear";
-                x = 1119;
-                y = 261;
-              }
-              {
-                defaultSettings = {
-                  hideBackground = false;
-                  minimumThreshold = 10;
-                };
-                id = "plugin:catwalk";
-                scale = 1.106362479106558;
-                showBackground = true;
-                x = 1444;
-                y = 595;
-              }
-              {
-                defaultSettings = {
-                  completedCount = 0;
-                  count = 0;
-                  current_page_id = 0;
-                  exportEmptySections = false;
-                  exportFormat = "markdown";
-                  exportPath = "~/Documents";
-                  isExpanded = false;
-                  pages = [
-                    {
-                      id = 0;
-                      name = "General";
-                    }
-                  ];
-                  priorityColors = {
-                    high = "#f44336";
-                    low = "#9e9e9e";
-                    medium = "#2196f3";
-                  };
-                  showBackground = true;
-                  showCompleted = true;
-                  todos = [
-                  ];
-                  useCustomColors = false;
-                };
-                id = "plugin:todo";
-                scale = 1.0452990281697632;
-                showBackground = true;
-                x = 1117;
-                y = 489;
-              }
-            ];
+            widgets = default_desktop_widgets;
           }
         ];
         overviewEnabled = true;
@@ -1545,6 +1522,10 @@
           sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
         };
         custom-sticker = {
+          enabled = true;
+          sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
+        };
+        hassio = {
           enabled = true;
           sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
         };
