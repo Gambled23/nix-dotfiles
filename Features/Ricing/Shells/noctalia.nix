@@ -150,8 +150,8 @@ in
           # post_hook = "myapp --reload-theme";
         };
         nvf = {
-          input_path = "~/.config/noctalia/templates/nvf.ini";
-          output_path = "/etc/nixos/Features/Ricing/noctalia_colors/nvf.ini";
+          input_path = "~/.config/noctalia/templates/nvf.nix";
+          output_path = "/etc/nixos/Features/Ricing/noctalia_colors/nvf.nix";
           # post_hook = "myapp --reload-theme";
         };
       };
@@ -1626,23 +1626,25 @@ in
     radio-btn-active   = {{colors.on_tertiary_container.default.hex_stripped}}
   '';
 
-  home.file.".config/noctalia/templates/nvf.ini".text = ''
-    base00 = {{colors.surface.default.hex}}
-    base01 = {{colors.surface_container.default.hex}}
-    base02 = {{colors.surface_container_high.default.hex}}
-    base03 = {{colors.outline.default.hex}}
-    base04 = {{colors.on_surface_variant.default.hex}}
-    base05 = {{colors.on_surface.default.hex}}
-    base06 = {{colors.on_surface.default.hex}}
-    base07 = {{colors.on_background.default.hex}}
-    base08 = {{colors.error.default.hex}}
-    base09 = {{colors.tertiary.default.hex}}
-    base0A = {{colors.secondary.default.hex}}
-    base0B = {{colors.primary.default.hex}}
-    base0C = {{colors.tertiary_fixed_dim.default.hex}}
-    base0D = {{colors.primary_fixed_dim.default.hex}}
-    base0E = {{colors.secondary_fixed_dim.default.hex}}
-    base0F = {{colors.error_container.default.hex}}
+  home.file.".config/noctalia/templates/nvf.nix".text = ''
+    {
+      base00 = "{{colors.surface.default.hex}}";
+      base01 = "{{colors.surface_container.default.hex}}";
+      base02 = "{{colors.surface_container_high.default.hex}}";
+      base03 = "{{colors.outline.default.hex}}";
+      base04 = "{{colors.on_surface_variant.default.hex}}";
+      base05 = "{{colors.on_surface.default.hex}}";
+      base06 = "{{colors.on_surface.default.hex}}";
+      base07 = "{{colors.on_background.default.hex}}";
+      base08 = "{{colors.error.default.hex}}";
+      base09 = "{{colors.tertiary.default.hex}}";
+      base0A = "{{colors.secondary.default.hex}}";
+      base0B = "{{colors.primary.default.hex}}";
+      base0C = "{{colors.tertiary_fixed_dim.default.hex}}";
+      base0D = "{{colors.primary_fixed_dim.default.hex}}";
+      base0E = "{{colors.secondary_fixed_dim.default.hex}}";
+      base0F = "{{colors.error_container.default.hex}}";
+    }
   '';
 
   home.packages = with pkgs; [
