@@ -12,8 +12,8 @@ let
       scale = 1.3174091884595163;
       showBackground = true;
       useCustomFont = false;
-      x = 1445;
-      y = 384;
+      x = if osConfig.networking.hostName == "pc-gambled" then 1445 else 827;
+      y = if osConfig.networking.hostName == "pc-gambled" then 384 else 390;
     }
     {
       hideMode = "visible";
@@ -25,16 +25,16 @@ let
       showButtons = false;
       showVisualizer = true;
       visualizerType = "wave";
-      x = 1125;
-      y = 45;
+      x = if osConfig.networking.hostName == "pc-gambled" then 1118 else 500;
+      y = if osConfig.networking.hostName == "pc-gambled" then 45 else 53;
     }
     {
       id = "Weather";
       roundedCorners = true;
       scale = 1.142967570256372;
       showBackground = true;
-      x = 1118;
-      y = 383;
+      x = if osConfig.networking.hostName == "pc-gambled" then 1118 else 500;
+      y = if osConfig.networking.hostName == "pc-gambled" then 384 else 390;
     }
     {
       defaultSettings = {
@@ -44,8 +44,8 @@ let
       id = "plugin:calendar-widget";
       scale = 1.4323710820047957;
       showBackground = true;
-      x = 1695;
-      y = 262;
+      x = if osConfig.networking.hostName == "pc-gambled" then 1695 else 1064;
+      y = if osConfig.networking.hostName == "pc-gambled" then 262 else 269;
     }
     {
       hideMode = "visible";
@@ -57,8 +57,8 @@ let
       showButtons = true;
       showVisualizer = false;
       visualizerType = "linear";
-      x = 1119;
-      y = 261;
+      x = if osConfig.networking.hostName == "pc-gambled" then 1118 else 500;
+      y = if osConfig.networking.hostName == "pc-gambled" then 262 else 269;
     }
     {
       defaultSettings = {
@@ -68,40 +68,19 @@ let
       id = "plugin:catwalk";
       scale = 1.106362479106558;
       showBackground = true;
-      x = 1444;
-      y = 595;
+      x = if osConfig.networking.hostName == "pc-gambled" then 1445 else 826;
+      y = if osConfig.networking.hostName == "pc-gambled" then 595 else 601;
     }
     {
-      defaultSettings = {
-        completedCount = 0;
-        count = 0;
-        current_page_id = 0;
-        exportEmptySections = false;
-        exportFormat = "markdown";
-        exportPath = "~/Documents";
-        isExpanded = false;
-        pages = [
-          {
-            id = 0;
-            name = "General";
-          }
-        ];
-        priorityColors = {
-          high = "#f44336";
-          low = "#9e9e9e";
-          medium = "#2196f3";
-        };
-        showBackground = true;
-        showCompleted = true;
-        todos = [
-        ];
-        useCustomColors = false;
-      };
-      id = "plugin:todo";
-      scale = 1.0452990281697632;
+      diskPath = "/";
+      id = "SystemStat";
+      layout = "bottom";
+      roundedCorners = true;
+      scale = 1.2896928094173636;
       showBackground = true;
-      x = 1117;
-      y = 489;
+      statType = "Memory";
+      x = if osConfig.networking.hostName == "pc-gambled" then 1118 else 500;
+      y = if osConfig.networking.hostName == "pc-gambled" then 520 else 525;
     }
   ];
 in 
@@ -109,13 +88,6 @@ in
   imports = [
     inputs.noctalia.homeModules.default
   ];
-
-  home.file.".config/noctalia/user-templates.toml".text = ''
-    [templates.nvim-base16]
-    input_path = "~/.config/nvim/lua/matugen-template.lua"
-    output_path = "~/.config/nvim/lua/matugen.lua"
-    post_hook = 'pkill -SIGUSR1 nvim'
-  '';
 
   programs.noctalia-shell = {
     enable = true;
@@ -167,6 +139,23 @@ in
     #     cursor = "#ebdbb2";
     #   };
     # };
+    user-templates = {
+      config = {
+        # General template settings
+      };
+      templates = {
+        spicetify-nix = {
+          input_path = "~/.config/noctalia/templates/spicetify.ini";
+          output_path = "/etc/nixos/Features/Ricing/noctalia_colors/spicetify.ini";
+          # post_hook = "myapp --reload-theme";
+        };
+        nvf = {
+          input_path = "~/.config/noctalia/templates/nvf.ini";
+          output_path = "/etc/nixos/Features/Ricing/noctalia_colors/nvf.ini";
+          # post_hook = "myapp --reload-theme";
+        };
+      };
+    };
 
     settings = lib.mkForce {
       settingsVersion = 59;
@@ -976,6 +965,15 @@ in
             {
               id = "Notifications";
             }
+            {
+              defaultSettings = {
+                entities = [
+                ];
+                haToken = "";
+                haUrl = "";
+              };
+              id = "plugin:hassio";
+            }
           ];
           right = [
             {
@@ -1424,7 +1422,7 @@ in
             id ="zed";
           }
         ];
-        enableUserTheming = false;
+        enableUserTheming = true;
       };
 
       ui = {
@@ -1598,6 +1596,54 @@ in
       };
     };
   };
+
+  home.file.".config/noctalia/templates/spicetify.ini".text = ''
+    text               = {{colors.on_surface.default.hex_stripped}}
+    subtext            = {{colors.on_surface_variant.default.hex_stripped}}
+    main               = {{colors.surface.default.hex_stripped}}
+    main-elevated      = {{colors.surface.default.hex_stripped}}
+    main-transition    = {{colors.surface_container_lowest.default.hex_stripped}}
+    highlight          = {{colors.surface_container_low.default.hex_stripped}}
+    highlight-elevated = {{colors.surface_container_highest.default.hex_stripped}}
+    sidebar            = {{colors.surface.default.hex_stripped}}
+    player             = {{colors.surface.default.hex_stripped}}
+    card               = {{colors.surface.default.hex_stripped}}
+    shadow             = {{colors.surface.default.hex_stripped}}
+    selected-row       = {{colors.on_surface.default.hex_stripped}}
+    button             = {{colors.primary.default.hex_stripped}}
+    button-active      = {{colors.primary.default.hex_stripped}}
+    button-disabled    = {{colors.primary.default.hex_stripped}}
+    tab-active         = {{colors.surface.default.hex_stripped}}
+    notification       = {{colors.tertiary.default.hex_stripped}}
+    notification-error = {{colors.error.default.hex_stripped}}
+    misc               = {{colors.surface.default.hex_stripped}}
+    play-button        = {{colors.secondary.default.hex_stripped}}
+    play-button-active = {{colors.secondary.default.hex_stripped}}
+    progress-fg        = {{colors.primary.default.hex_stripped}}
+    progress-bg        = {{colors.surface.default.hex_stripped}}
+    heart              = {{colors.error.default.hex_stripped}}
+    pagelink-active    = {{colors.on_tertiary_container.default.hex_stripped}}
+    radio-btn-active   = {{colors.on_tertiary_container.default.hex_stripped}}
+  '';
+
+  home.file.".config/noctalia/templates/nvf.ini".text = ''
+    base00 = {{colors.surface.default.hex}}
+    base01 = {{colors.surface_container.default.hex}}
+    base02 = {{colors.surface_container_high.default.hex}}
+    base03 = {{colors.outline.default.hex}}
+    base04 = {{colors.on_surface_variant.default.hex}}
+    base05 = {{colors.on_surface.default.hex}}
+    base06 = {{colors.on_surface.default.hex}}
+    base07 = {{colors.on_background.default.hex}}
+    base08 = {{colors.error.default.hex}}
+    base09 = {{colors.tertiary.default.hex}}
+    base0A = {{colors.secondary.default.hex}}
+    base0B = {{colors.primary.default.hex}}
+    base0C = {{colors.tertiary_fixed_dim.default.hex}}
+    base0D = {{colors.primary_fixed_dim.default.hex}}
+    base0E = {{colors.secondary_fixed_dim.default.hex}}
+    base0F = {{colors.error_container.default.hex}}
+  '';
 
   home.packages = with pkgs; [
     # For screenshotting and screen recording plugins

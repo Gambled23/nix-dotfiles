@@ -14,7 +14,7 @@ in
     # Noctalia custom color scheme
     colorScheme = "custom";
     customColorScheme = {
-      Comfy = builtins.readFile "/home/gambled/.config/spicetify/Themes/Comfy/color.ini";
+      Comfy = builtins.readFile ../../Ricing/noctalia_colors/spicetify.ini;
     };
 
     enabledCustomApps = with spicePkgs.apps; [

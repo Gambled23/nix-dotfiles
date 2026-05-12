@@ -3,7 +3,22 @@
   pkgs,
   lib,
   ...
-}: {
+}:
+let
+  noctalia_color_file = builtins.readFile ../../Features/Ricing/noctalia_colors/nvf.ini;
+  lines = builtins.split "\n" noctalia_color_file;
+  kvs = builtins.filter (x: x != null)
+    (map (line:
+      let m = builtins.match "^[ \\t]*([A-Za-z0-9_]+)[ \\t]*=[ \\t]*#?([A-Fa-f0-9]{6})" line;
+      in if m == null then null else { name = m[1]; value = m[2]; })
+    lines);
+  normalize = val:
+    if val == null then null
+    else if builtins.substring 0 1 val == "#" then val
+    else "#" + val;
+  colors = builtins.listToAttrs (map (e: { name = e.name; value = normalize e.value; }) (builtins.filter (e: e.value != null) kvs));
+in
+{
   programs.nvf = {
     enable = true;
     settings = {
@@ -194,6 +209,24 @@
         name = "base16";
         # style = "dark";
         transparent = true;
+        base16-colors = {
+          base00 = colors.base00 or "#000000";
+          base01 = colors.base01 or "#1c1c1c";
+          base02 = colors.base02 or "#383838";
+          base03 = colors.base03 or "#545454";
+          base04 = colors.base04 or "#b8b8b8";
+          base05 = colors.base05 or "#d8d8d8";
+          base06 = colors.base06 or "#e8e8e8";
+          base07 = colors.base07 or "#f8f8f8";
+          base08 = colors.base08 or "#ab4646";
+          base09 = colors.base09 or "#dc9656";
+          base0A = colors.base0A or "#f7ca88";
+          base0B = colors.base0B or "#a1b56c";
+          base0C = colors.base0C or "#86c1b9";
+          base0D = colors.base0D or "#7cafc2";
+          base0E = colors.base0E or "#ba8baf";
+          base0F = colors.base0F or "#a16946";
+        };
       };
       
       vim.treesitter = {
