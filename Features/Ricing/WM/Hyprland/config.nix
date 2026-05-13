@@ -43,7 +43,7 @@
       ###################
       ### MY PROGRAMS ###
       ###################
-      "$terminal" = "uwsm app -- ghostty";
+      "$terminal" = "ghostty";
       "$file_manager" = "$terminal -e yazi";
       "$web_browser" = "uwsm app -- google-chrome-stable";
       "$code" = "uwsm app -- code";
