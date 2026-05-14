@@ -100,4 +100,11 @@
   };
 
   xdg.configFile."uwsm/env".source = "${config.home.sessionVariablesPackage}/etc/profile.d/hm-session-vars.sh"; 
+  
+  # Using the KDE File Picker With XDPH
+  home.file.".config/xdg-desktop-portal/hyprland-portals.conf".text = ''
+    [preferred]
+    default = hyprland;gtk
+    org.freedesktop.impl.portal.FileChooser = kde
+  '';
 }
