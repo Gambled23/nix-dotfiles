@@ -9,8 +9,8 @@
 {
   imports = [
     # Services and programs
-    ../../hyprsunset.nix
-    ../../hypridle.nix
+    # ../../hyprsunset.nix
+    # ../../hypridle.nix
     ../../../Tools/Media/hyprshot.nix
     ../../Hyprlock/cards.nix
     ../../../Tools/vicinae.nix
@@ -60,7 +60,7 @@
         # "systemctl --user enable --now hyprpaper.service"
         "systemctl --user enable --now hypridle.service"
         "uwsm app -- spotify"
-        "uwsm app --uwsm app -- discord"
+        "uwsm app -- discord"
         "uwsm app -- altus"
         "uwsm app -- kdeconnect-indicator"
         # "bluetoothctl connect 24:95:2F:60:BD:94"

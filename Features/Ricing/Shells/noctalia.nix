@@ -240,6 +240,12 @@ in
         middleClickFollowMouse = false;
         hideOnOverview = false;
 
+        widgets = {
+          center = [ ];
+          left = [ ];
+          right = [ ];
+        };
+
         #Widgets per screen
         screenOverrides = [
           {
@@ -1178,10 +1184,10 @@ in
 
       idle = {
         customCommands = "[]";
-        enabled = false;
-        fadeDuration = 5;
+        enabled = true;
+        fadeDuration = 10;
         lockCommand = "";
-        lockTimeout = 660;
+        lockTimeout = 900;
         resumeLockCommand = "";
         resumeScreenOffCommand = "";
         resumeSuspendCommand = "";
@@ -1220,13 +1226,13 @@ in
       };
 
       nightLight = {
-        enabled = false;
+        enabled = true;
         forced = false;
         autoSchedule = true;
         nightTemp = "4000";
         dayTemp = "6500";
-        manualSunrise = "06:30";
-        manualSunset = "18:30";
+        # manualSunrise = "06:30";
+        # manualSunset = "18:30";
       };
 
       noctaliaPerformance = {

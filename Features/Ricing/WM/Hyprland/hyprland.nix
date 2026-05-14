@@ -24,9 +24,8 @@ with lib;
     wireplumber
 
     #Tools
-    kitty # required for the default Hyprland config
-    kdePackages.dolphin
-    kdePackages.dolphin-plugins
+    # kitty # required for the default Hyprland config
+    nautilus
     playerctl
     brightnessctl
     hypridle
