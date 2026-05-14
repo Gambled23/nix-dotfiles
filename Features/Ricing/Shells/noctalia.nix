@@ -23,7 +23,7 @@ let
       showAlbumArt = true;
       showBackground = true;
       showButtons = false;
-      showVisualizer = true;
+      showVisualizer = false;
       visualizerType = "wave";
       x = if osConfig.networking.hostName == "pc-gambled" then 1118 else 500;
       y = if osConfig.networking.hostName == "pc-gambled" then 45 else 53;
@@ -83,6 +83,179 @@ let
       y = if osConfig.networking.hostName == "pc-gambled" then 520 else 525;
     }
   ];
+
+  dev_bar_widgets = {
+    left = [
+      {
+        clockColor = "none";
+        customFont = "";
+        formatHorizontal = "HH:mm";
+        formatVertical = "HH mm - dd MM";
+        id = "Clock";
+        tooltipFormat = "HH:mm ddd, MMM dd";
+        useCustomFont = false;
+      }
+      {
+        defaultSettings = {
+        };
+        id = "plugin:workspace-overview";
+      }
+      {
+        defaultSettings = {
+          borderRadius = 1;
+          expandDirection = "left";
+          focusBorderColor = "primary";
+          mainIcon = "layout-grid";
+          primaryPillColor = "none";
+          primaryShowPill = false;
+          primarySize = 0.9;
+          primarySymbolColor = "none";
+          secondaryPillColor = "primary";
+          secondaryShowPill = true;
+          secondarySize = 0.9;
+          secondarySymbolColor = "none";
+          workspaces = [
+            {
+              icon = "letter-a";
+              name = "A";
+            }
+            {
+              icon = "letter-s";
+              name = "S";
+            }
+            {
+              icon = "letter-d";
+              name = "D";
+            }
+          ];
+        };
+        id = "plugin:special-workspaces";
+      }
+      {
+        characterCount = 2;
+        colorizeIcons = false;
+        emptyColor = "secondary";
+        enableScrollWheel = true;
+        focusedColor = "primary";
+        followFocusedScreen = false;
+        groupedBorderOpacity = 1;
+        hideUnoccupied = false;
+        iconScale = 0.6;
+        id = "Workspace";
+        labelMode = "index";
+        occupiedColor = "secondary";
+        pillSize = 0.6;
+        fontWeight = "bold";
+        showApplications = true;
+        showBadge = true;
+        showLabelsOnlyWhenOccupied = false;
+        unfocusedIconsOpacity = 1;
+        showApplicationsHover = false;
+      }
+    ];
+    center = [
+      {
+        defaultSettings = {
+          autoMount = false;
+          fileBrowser = "yazi";
+          hideWhenEmpty = true;
+          iconColor = "primary";
+          showBadge = true;
+          showNotifications = true;
+          terminalCommand = "ghostty";
+        };
+        id = "plugin:usb-drive-manager";
+      }
+      {
+        hideWhenZero = true;
+        hideWhenZeroUnread = true;
+        id = "NotificationHistory";
+        showUnreadBadge = true;
+        unreadBadgeColor = "primary";
+        iconColor = "none";
+      }
+      {
+        compactMode = true;
+        hideMode = "hidden";
+        hideWhenIdle = false;
+        id = "MediaMini";
+        maxWidth = 300;
+        panelShowAlbumArt = true;
+        scrollingMode = "hover";
+        showAlbumArt = true;
+        showArtistFirst = false;
+        showProgressRing = true;
+        showVisualizer = true;
+        useFixedWidth = false;
+        visualizerType = "linear";
+        textColor = "none";
+      }
+      {
+        defaultSettings = {
+        activeColor = "primary";
+        enableToast = true;
+        hideInactive = true;
+        iconSpacing = 4;
+        inactiveColor = "none";
+        micFilterRegex = "";
+        removeMargins = false;
+        };
+        id = "plugin:privacy-indicator";
+      }
+    ];
+    right = [
+      {
+        blacklist = [];
+        chevronColor = "primary";
+        colorizeIcons = false;
+        drawerEnabled = true;
+        hidePassive = false;
+        id = "Tray";
+        pinned = [];
+      }
+      {
+        deviceNativePath = "__default__";
+        displayMode = "icon-always";
+        hideIfIdle = false;
+        hideIfNotDetected = true;
+        id = "Battery";
+        showNoctaliaPerformance = true;
+        showPowerProfiles = true;
+      }
+      {
+        displayMode = "alwaysShow";
+        iconColor = "primary";
+        id = "Volume";
+        middleClickCommand = "pwvucontrol || pavucontrol";
+        textColor = "none";
+      }
+      {
+        commandPrefix = "ssh";
+        defaultSettings = {
+          pollInterval = 10;
+          showInactiveHosts = true;
+          terminalCommand = "";
+        };
+        id = "plugin:ssh-sessions";
+      }
+      {
+        id = "plugin:git-companion";
+      }
+      {
+        id = "plugin:clipboard";
+      }
+      {
+        colorizeDistroLogo = false;
+        colorizeSystemIcon = "primary";
+        colorizeSystemText = "none";
+        customIconPath = "";
+        enableColorization = true;
+        icon = "noctalia";
+        id = "ControlCenter";
+        useDistroLogo = true;
+      }
+    ];
+  };
 in 
 {
   imports = [
@@ -251,348 +424,12 @@ in
           {
             enabled = true;
             name = "HDMI-A-1";
-            widgets = {
-              left = [
-                {
-                  clockColor = "none";
-                  customFont = "";
-                  formatHorizontal = "HH:mm";
-                  formatVertical = "HH mm - dd MM";
-                  id = "Clock";
-                  tooltipFormat = "HH:mm ddd, MMM dd";
-                  useCustomFont = false;
-                }
-                {
-                  defaultSettings = {
-                  };
-                  id = "plugin:workspace-overview";
-                }
-                {
-                  defaultSettings = {
-                    borderRadius = 1;
-                    expandDirection = "left";
-                    focusBorderColor = "primary";
-                    mainIcon = "layout-grid";
-                    primaryPillColor = "none";
-                    primaryShowPill = false;
-                    primarySize = 0.9;
-                    primarySymbolColor = "none";
-                    secondaryPillColor = "primary";
-                    secondaryShowPill = true;
-                    secondarySize = 0.9;
-                    secondarySymbolColor = "none";
-                    workspaces = [
-                      {
-                        icon = "letter-a";
-                        name = "A";
-                      }
-                      {
-                        icon = "letter-s";
-                        name = "S";
-                      }
-                      {
-                        icon = "letter-d";
-                        name = "D";
-                      }
-                    ];
-                  };
-                  id = "plugin:special-workspaces";
-                }
-                {
-                  characterCount = 2;
-                  colorizeIcons = false;
-                  emptyColor = "secondary";
-                  enableScrollWheel = true;
-                  focusedColor = "primary";
-                  followFocusedScreen = false;
-                  groupedBorderOpacity = 1;
-                  hideUnoccupied = false;
-                  iconScale = 0.6;
-                  id = "Workspace";
-                  labelMode = "index";
-                  occupiedColor = "secondary";
-                  pillSize = 0.6;
-                  fontWeight = "bold";
-                  showApplications = true;
-                  showBadge = true;
-                  showLabelsOnlyWhenOccupied = false;
-                  unfocusedIconsOpacity = 1;
-                  showApplicationsHover = false;
-                }
-              ];
-              center = [
-                {
-                  defaultSettings = {
-                    autoMount = false;
-                    fileBrowser = "yazi";
-                    hideWhenEmpty = true;
-                    iconColor = "primary";
-                    showBadge = true;
-                    showNotifications = true;
-                    terminalCommand = "ghostty";
-                  };
-                  id = "plugin:usb-drive-manager";
-                }
-                {
-                  hideWhenZero = true;
-                  hideWhenZeroUnread = true;
-                  id = "NotificationHistory";
-                  showUnreadBadge = true;
-                  unreadBadgeColor = "primary";
-                  iconColor = "none";
-                }
-                {
-                  compactMode = true;
-                  hideMode = "hidden";
-                  hideWhenIdle = false;
-                  id = "MediaMini";
-                  maxWidth = 300;
-                  panelShowAlbumArt = true;
-                  scrollingMode = "hover";
-                  showAlbumArt = true;
-                  showArtistFirst = false;
-                  showProgressRing = true;
-                  showVisualizer = true;
-                  useFixedWidth = false;
-                  visualizerType = "linear";
-                  textColor = "none";
-                }
-                {
-                  defaultSettings = {
-                  activeColor = "primary";
-                  enableToast = true;
-                  hideInactive = true;
-                  iconSpacing = 4;
-                  inactiveColor = "none";
-                  micFilterRegex = "";
-                  removeMargins = false;
-                  };
-                  id = "plugin:privacy-indicator";
-                }
-              ];
-              right = [
-                {
-                  blacklist = [];
-                  chevronColor = "primary";
-                  colorizeIcons = false;
-                  drawerEnabled = true;
-                  hidePassive = false;
-                  id = "Tray";
-                  pinned = [];
-                }
-                {
-                  deviceNativePath = "__default__";
-                  displayMode = "icon-always";
-                  hideIfIdle = false;
-                  hideIfNotDetected = true;
-                  id = "Battery";
-                  showNoctaliaPerformance = true;
-                  showPowerProfiles = true;
-                }
-                {
-                  displayMode = "alwaysShow";
-                  iconColor = "primary";
-                  id = "Volume";
-                  middleClickCommand = "pwvucontrol || pavucontrol";
-                  textColor = "none";
-                }
-                {
-                  commandPrefix = "ssh";
-                  defaultSettings = {
-                    pollInterval = 10;
-                    showInactiveHosts = true;
-                    terminalCommand = "";
-                  };
-                  id = "plugin:ssh-sessions";
-                }
-                {
-                  id = "plugin:clipboard";
-                }
-                {
-                  colorizeDistroLogo = false;
-                  colorizeSystemIcon = "primary";
-                  colorizeSystemText = "none";
-                  customIconPath = "";
-                  enableColorization = true;
-                  icon = "noctalia";
-                  id = "ControlCenter";
-                  useDistroLogo = true;
-                }
-              ];
-            };
+            widgets = dev_bar_widgets;
           }
           {
             enabled = true;
             name = "eDP-1";
-            widgets = {
-              left = [
-                {
-                  clockColor = "none";
-                  customFont = "";
-                  formatHorizontal = "HH:mm";
-                  formatVertical = "HH mm - dd MM";
-                  id = "Clock";
-                  tooltipFormat = "HH:mm ddd, MMM dd";
-                  useCustomFont = false;
-                }
-                {
-                  defaultSettings = {
-                  };
-                  id = "plugin:workspace-overview";
-                }
-                {
-                  defaultSettings = {
-                    borderRadius = 1;
-                    expandDirection = "left";
-                    focusBorderColor = "primary";
-                    mainIcon = "layout-grid";
-                    primaryPillColor = "none";
-                    primaryShowPill = false;
-                    primarySize = 0.9;
-                    primarySymbolColor = "none";
-                    secondaryPillColor = "primary";
-                    secondaryShowPill = true;
-                    secondarySize = 0.9;
-                    secondarySymbolColor = "none";
-                    workspaces = [
-                      {
-                        icon = "letter-a";
-                        name = "A";
-                      }
-                      {
-                        icon = "letter-s";
-                        name = "S";
-                      }
-                      {
-                        icon = "letter-d";
-                        name = "D";
-                      }
-                    ];
-                  };
-                  id = "plugin:special-workspaces";
-                }
-                {
-                  characterCount = 2;
-                  colorizeIcons = false;
-                  emptyColor = "secondary";
-                  enableScrollWheel = true;
-                  focusedColor = "primary";
-                  followFocusedScreen = false;
-                  groupedBorderOpacity = 1;
-                  hideUnoccupied = false;
-                  iconScale = 0.6;
-                  id = "Workspace";
-                  labelMode = "index";
-                  occupiedColor = "secondary";
-                  pillSize = 0.6;
-                  fontWeight = "bold";
-                  showApplications = true;
-                  showBadge = true;
-                  showLabelsOnlyWhenOccupied = false;
-                  unfocusedIconsOpacity = 1;
-                  showApplicationsHover = false;
-                }
-              ];
-              center = [
-                {
-                  defaultSettings = {
-                    autoMount = false;
-                    fileBrowser = "yazi";
-                    hideWhenEmpty = true;
-                    iconColor = "primary";
-                    showBadge = true;
-                    showNotifications = true;
-                    terminalCommand = "ghostty";
-                  };
-                  id = "plugin:usb-drive-manager";
-                }
-                {
-                  hideWhenZero = true;
-                  hideWhenZeroUnread = true;
-                  id = "NotificationHistory";
-                  showUnreadBadge = true;
-                  unreadBadgeColor = "primary";
-                  iconColor = "none";
-                }
-                {
-                  compactMode = true;
-                  hideMode = "hidden";
-                  hideWhenIdle = false;
-                  id = "MediaMini";
-                  maxWidth = 300;
-                  panelShowAlbumArt = true;
-                  scrollingMode = "hover";
-                  showAlbumArt = true;
-                  showArtistFirst = false;
-                  showProgressRing = true;
-                  showVisualizer = true;
-                  useFixedWidth = false;
-                  visualizerType = "linear";
-                  textColor = "none";
-                }
-                {
-                  defaultSettings = {
-                  activeColor = "primary";
-                  enableToast = true;
-                  hideInactive = true;
-                  iconSpacing = 4;
-                  inactiveColor = "none";
-                  micFilterRegex = "";
-                  removeMargins = false;
-                  };
-                  id = "plugin:privacy-indicator";
-                }
-              ];
-              right = [
-                {
-                  blacklist = [];
-                  chevronColor = "primary";
-                  colorizeIcons = false;
-                  drawerEnabled = true;
-                  hidePassive = false;
-                  id = "Tray";
-                  pinned = [];
-                }
-                {
-                  deviceNativePath = "__default__";
-                  displayMode = "icon-always";
-                  hideIfIdle = false;
-                  hideIfNotDetected = true;
-                  id = "Battery";
-                  showNoctaliaPerformance = true;
-                  showPowerProfiles = true;
-                }
-                {
-                  displayMode = "alwaysShow";
-                  iconColor = "primary";
-                  id = "Volume";
-                  middleClickCommand = "pwvucontrol || pavucontrol";
-                  textColor = "none";
-                }
-                {
-                  commandPrefix = "ssh";
-                  defaultSettings = {
-                    pollInterval = 10;
-                    showInactiveHosts = true;
-                    terminalCommand = "";
-                  };
-                  id = "plugin:ssh-sessions";
-                }
-                {
-                  id = "plugin:clipboard";
-                }
-                {
-                  colorizeDistroLogo = false;
-                  colorizeSystemIcon = "primary";
-                  colorizeSystemText = "none";
-                  customIconPath = "";
-                  enableColorization = true;
-                  icon = "noctalia";
-                  id = "ControlCenter";
-                  useDistroLogo = true;
-                }
-              ];
-            };
+            widgets = dev_bar_widgets;
           }
           {
             enabled = true;

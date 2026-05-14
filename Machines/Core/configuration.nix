@@ -47,7 +47,7 @@
   #sound.enable = true;
   #hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
-  security.polkit.enable = lib.mkForce false;
+  # security.polkit.enable = lib.mkForce false;
 
   hardware.xone.enable = true;
   environment.systemPackages = with pkgs; [

@@ -31,6 +31,7 @@ with lib;
     hypridle
     pamixer
     pavucontrol
+    gparted
     # hyprpolkitagent # Polkit for gui applications
 
 

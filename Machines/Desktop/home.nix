@@ -31,7 +31,7 @@
     libreoffice
     scrcpy
     siyuan
-    speedcrunch
+    qalculate-gtk
     # zoom-us
 
     #* webbrowsers

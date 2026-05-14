@@ -5,7 +5,8 @@
     bind = [
       "$mainMod, Q, killactive,"
       "$mainMod, E, exec, $file_manager"
-      "$mainMod, R, exec, $menu"
+      "$mainMod shift, E, exec uwsm app -- nautilus"
+      "$mainMod, R, exec, $menu" 
       "$mainMod, F, exec, $web_browser"
       "$mainMod, RETURN, exec, $terminal"
       "$mainMod, C, exec, $code"
