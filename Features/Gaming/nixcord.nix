@@ -75,9 +75,9 @@
         };
       };
 
-      # themeLinks = [ 
-      #   https://github.com/refact0r/system24/blob/main/theme/flavors/system24-vencord.theme.css
-      # ];
+      themeLinks = [ 
+        https://github.com/refact0r/system24/blob/main/theme/flavors/system24-vencord.theme.css
+      ];
     };
   };
 }
