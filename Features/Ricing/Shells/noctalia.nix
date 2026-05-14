@@ -987,17 +987,6 @@ in
             }
             {
               defaultSettings = {
-                backend = "auto";
-                gridSize = 40;
-                hyprctlCommand = "hyprctl";
-                iconColor = "primary";
-                snapToGrid = true;
-                swayCommand = "swaymsg";
-              };
-              id = "plugin:monitor-layout";
-            }
-            {
-              defaultSettings = {
                 colorHistory = [
                 ];
                 detectedCompositor = "";
@@ -1529,15 +1518,15 @@ in
           enabled = true;
           sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
         };
+        git-companion = {
+          enabled = true;
+          sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
+        };
         hassio = {
           enabled = true;
           sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
         };
         kde-connect = {
-          enabled = true;
-          sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
-        };
-        monitor-layout = {
           enabled = true;
           sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
         };

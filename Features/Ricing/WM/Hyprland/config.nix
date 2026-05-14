@@ -55,7 +55,6 @@
       ### AUTOSTART ###
       #################
       "exec-once" = [
-        # "systemctl --user enable --now hyprpolkitagent.service"
         "uwsm app -- noctalia-shell"
         # "systemctl --user enable --now hyprpaper.service"
         "systemctl --user enable --now hypridle.service"
