@@ -27,7 +27,8 @@
       # Always set opacity for these apps
       # "match:class ^(kitty|org.kde.dolphin|gjs|DBeaver|spotify)$, opacity 0.85"
       # Opacity only on focus loss
-      "match:class ^(ripdrag)$, opacity 0.7"
+      "match:title (ripdrag), opacity 0.7"
+      "match:class (mpv), float on, center on, keep_aspect_ratio on, size 284 160"
       "match:class .scrcpy-wrapped, float on, center on, min_size 336 748, max_size 1344 2992, size 469 1044, keep_aspect_ratio on"
       "match:title Picture in picture, float on, center on, keep_aspect_ratio on, size 284 160"
       "match:title (Open File.*|Select Folder to Upload|Select a file|.*Yazi.*), size 1150 700, float on, center on"
