@@ -30,8 +30,6 @@
     (import ../../Scripts/modo-tele.nix { inherit pkgs; })
 
     (callPackage ../../Pkgs/hayase/package.nix {})
-    # (callPackage ../../nixpkgs/pkgs/stremio/package.nix {})
-    # (callPackage ../../nixpkgs/pkgs/accela/default.nix {})
   ];
 
   # for gpu overclock

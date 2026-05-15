@@ -6,14 +6,13 @@
     windowrule = [
       # Set default workspaces for apps
       "match:class ^(spotify)$, workspace 10"
-      "match:class ^(discord)$, workspace 9"
       "match:class ^(Altus)$, workspace 9"
       "match:class ^(steam)$, workspace 8"
       "match:class ^(stremio)$, workspace 7"
       "match:class ^(hayase)$, workspace 7"
       "match:class ^(com.moonlight_stream.Moonlight)$, workspace 2"
       # Steam fullscrenn
-      # "match:class ^(steam)$, fullscreen on"
+      "match:class ^(steam)$, fullscreen off"
 
       # Ignore focus on autostart apps
       "match:class ^(steam|spotify|discord|Altus)$, no_initial_focus on"
@@ -25,7 +24,7 @@
       "match:class ^$, match:title ^$, match:xwayland 1, match:float 1, match:pin 0"
 
       # Always set opacity for these apps
-      # "match:class ^(kitty|org.kde.dolphin|gjs|DBeaver|spotify)$, opacity 0.85"
+      # "match:class ^(kitty|org.kde.dolphin|gjs |DBeaver|spotify)$, opacity 0.85"
       # Opacity only on focus loss
       "match:title (ripdrag), opacity 0.7"
       "match:class (mpv), float on, center on, keep_aspect_ratio on, size 284 160"

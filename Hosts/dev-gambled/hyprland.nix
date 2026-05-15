@@ -19,6 +19,10 @@
         "hyprlock"
       ];
 
+      windowrule = [
+        "match:class ^(discord)$, workspace 8"
+      ];
+
       workspace = [
         "1, monitor:eDP-1"
         "2, monitor:HDMI-A-1"
@@ -28,19 +32,19 @@
     };
   };
 
-  services.hypridle.settings.listener = [
-    { # 10 min turn dim screen
-      timeout = 600;
-      on-timeout = "brightnessctl -s set 10";
-      on-resume = "brightnessctl -r";
-    }
-    { # 15 min lock screen
-      timeout = 900;
-      on-timeout = "hyprlock";
-    }
-    { # 60 min suspend pc
-      timeout = 3600;
-      on-timeout = "systemctl suspend";
-    }
-  ];
+  # services.hypridle.settings.listener = [
+  #   { # 10 min turn dim screen
+  #     timeout = 600;
+  #     on-timeout = "brightnessctl -s set 10";
+  #     on-resume = "brightnessctl -r";
+  #   }
+  #   { # 15 min lock screen
+  #     timeout = 900;
+  #     on-timeout = "hyprlock";
+  #   }
+  #   { # 60 min suspend pc
+  #     timeout = 3600;
+  #     on-timeout = "systemctl suspend";
+  #   }
+  # ];
 }

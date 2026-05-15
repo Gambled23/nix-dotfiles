@@ -26,6 +26,10 @@
         "steam %U"
         "hyprctl output create headless sunshine"
       ];
+
+      windowrule = [
+        "match:class ^(discord)$, workspace 8"
+      ];
     };
   };
 }

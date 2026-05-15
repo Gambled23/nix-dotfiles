@@ -65,8 +65,4 @@
   ];
 
   home.file.".zshrc".text = "export LD_LIBRARY_PATH=${pkgs.stdenv.cc.cc.lib}/lib:${pkgs.libGL}/lib/:${pkgs.libxkbcommon}/lib/:${pkgs.libx11}/lib/:${pkgs.fontconfig}/lib";
-
-  services.flatpak.packages = [
-    "com.stremio.Stremio"
-  ];
 }

@@ -56,8 +56,6 @@
       #################
       "exec-once" = [
         "uwsm app -- noctalia-shell"
-        # "systemctl --user enable --now hyprpaper.service"
-        "systemctl --user enable --now hypridle.service"
         "uwsm app -- spotify"
         "uwsm app -- discord"
         "uwsm app -- altus"

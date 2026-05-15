@@ -25,8 +25,4 @@
     #* utils
     moonlight-qt
   ];
-
-  services.flatpak.packages = [
-    "com.stremio.Stremio"
-  ];
 }

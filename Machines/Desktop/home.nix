@@ -25,6 +25,8 @@
 
     #* messaging
     altus
+    #* Media
+    # stremio-linux-shell
 
     #* utils
     android-tools
@@ -40,5 +42,6 @@
 
   services.flatpak.packages = [
     "com.artemchep.keyguard"
+    "com.stremio.Stremio"
   ];
 }
