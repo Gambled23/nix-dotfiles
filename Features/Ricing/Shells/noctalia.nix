@@ -1422,7 +1422,7 @@ in
       defaultWallpaper = "/etc/nixos/wallpaper.jpg";
       wallpapers = {
         "DP-3" = "/home/gambled/Pictures/Wallpapers/Ultrawide/abstract/wallhaven_zpqj8g.jpg";
-        "sunshine" = "/home/gambled/Pictures/Wallpapers/Wide/anime/36206589_p0.jpg";
+        "sunshine" = "/home/gambled/Pictures/Wallpapers/Wide/anime/ononoki.png";
         "HDMI-A-1" = "/home/gambled/Pictures/Wallpapers/Wide/mix/flower.jpg";
         "eDP-1" = "/home/gambled/Pictures/Wallpapers/Wide/mix/flower.jpg";
       };
