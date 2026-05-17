@@ -20,6 +20,7 @@
       3265700 # Vampire crawlers
       1147860 # UFO 50
       2416100 # Goodnight Universe
+      2582320 # Mixtape
     ];
     AdditionalApps = [
       2868840 # Slay the Spire 2
@@ -37,6 +38,7 @@
       3265700 # Vampire crawlers
       1147860 # UFO 50
       2416100 # Goodnight Universe
+      2582320 # Mixtape
     ];
     SafeMode = true;
   };
