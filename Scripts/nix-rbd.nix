@@ -7,7 +7,8 @@ pkgs.writeShellScriptBin "nix-rbd" ''
   cd /etc/nixos/
   git pull
 
-  git add .
+  git add --all
+  git reset -- nvf.nix spicetify.ini #Don't commit changes to these files, they are local overrides
 
   rebuild_mode="switch"
 
