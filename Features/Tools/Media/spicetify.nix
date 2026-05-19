@@ -19,7 +19,7 @@ in
 
     enabledCustomApps = with spicePkgs.apps; [
       marketplace
-      betterLibrary
+      # betterLibrary
     ];
 
     enabledExtensions = with spicePkgs.extensions; [
