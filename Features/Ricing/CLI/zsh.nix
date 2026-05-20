@@ -24,6 +24,7 @@
       cd = "z";
       mdb = "mariadb -u root -p";
       noctalia = "noctalia-shell kill; sleep 3; noctalia-shell -d";
+      gnome-control-center-fixed = "env XDG_CURRENT_DESKTOP=GNOME gnome-control-center";
     };
     
     initContent = "

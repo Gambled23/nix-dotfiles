@@ -11,8 +11,8 @@
     noctalia.url = "github:noctalia-dev/noctalia-shell";
     millennium.url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
     jovian-nixos.url = "github:Jovian-Experiments/Jovian-NixOS";
-    #nixpkgs-xr.url = "github:nix-community/nixpkgs-xr";
-    # myWebService.url = "path:/home/gambled/Codes/cng-plus-front";
+    # #nixpkgs-xr.url = "github:nix-community/nixpkgs-xr";
+    # myWebService.url = "path:/home/gambled/Codes/financiero";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -113,7 +113,7 @@
         specialArgs = { inherit inputs; };
         modules = coreModules ++ [
           ./Hosts/dev-gambled/configuration.nix
-          # inputs.myWebService.nixosModules.nginxWebService
+          # inputs.myWebService.nixosModules.financiero
           {
             home-manager.users.gambled.imports = [
               ./Hosts/dev-gambled/home.nix

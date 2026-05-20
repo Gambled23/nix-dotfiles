@@ -1265,7 +1265,7 @@ in
         panelBackgroundOpacity = 0.6;
         panelsAttachedToBar = true;
         settingsPanelMode = "attached";
-        boxBorderEnabled = true;
+        boxBorderEnabled = false;
         scrollbarAlwaysVisible = false;
         settingsPanelSideBarCardStyle = true;
         tooltipsEnabled = true;

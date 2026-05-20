@@ -25,6 +25,7 @@ with lib;
 
     #Tools
     # kitty # required for the default Hyprland config
+    gnome-calendar
     nautilus
     playerctl
     brightnessctl
@@ -56,6 +57,7 @@ with lib;
       pkgs.xdg-desktop-portal-gtk
       pkgs.kdePackages.xdg-desktop-portal-kde
     ];
+    config.common.default = "hyprland;gtk";
   };
 
   # Icons for hyprpanel and others
@@ -67,8 +69,6 @@ with lib;
 
   #hyprlock
   security.pam.services.hyprlock = {};
-
-  services.gnome.evolution-data-server.enable = true;
 
   # yazi
   services.gvfs.enable = true;
@@ -96,6 +96,7 @@ with lib;
   };
 
   programs.kdeconnect.enable = true;
+
   networking.firewall = {
     enable = true;
     allowedTCPPortRanges = [
@@ -128,4 +129,9 @@ with lib;
       7250
     ];
   };
+
+  # gnome online accounts
+  services.gnome.gnome-online-accounts.enable = true;
+  services.gnome.evolution-data-server.enable = true;
+  services.gnome.gnome-keyring.enable = true;
 }
