@@ -28,7 +28,7 @@
       ];
 
       windowrule = [
-        "match:class ^(discord)$, workspace 8"
+        "match:class ^(discord)$, workspace 9"
       ];
     };
   };
