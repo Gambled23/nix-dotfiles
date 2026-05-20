@@ -26,6 +26,8 @@ with lib;
     #Tools
     # kitty # required for the default Hyprland config
     gnome-calendar
+    gnome-contacts
+    qalculate-gtk
     nautilus
     playerctl
     brightnessctl

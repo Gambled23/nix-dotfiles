@@ -44,8 +44,7 @@
     #* guitarra
     # carla
     guitarix
-    tonelib-gfx
-    tonelib-jam
+    fretboard
 
     #* utils
     pywalfox-native
