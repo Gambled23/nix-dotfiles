@@ -6,9 +6,13 @@
 
     loadModels = [
       "gemma4:e4b"
-      "qwen2.5-coder:3b"
-      "qwen2.5-coder:7b"
-      "qwen3.5:35b"
+    #   "qwen2.5-coder:3b"
+    #   "qwen2.5-coder:7b"
+    #   "qwen3.5:35b"
+      "gemma4:26b"
+      "qwen3.5:9b"
+      "qwen3-coder:30b"
+      "qwen3:e4b"
     ];
     syncModels = true; #Synchronize all currently installed models with those declared in services.ollama.loadModels, removing any models that are installed but not currently declared there.
 
