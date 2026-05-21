@@ -1423,8 +1423,8 @@ in
       wallpapers = {
         "DP-3" = "/home/gambled/Pictures/Wallpapers/Ultrawide/abstract/wallhaven_zpqj8g.jpg";
         "sunshine" = "/home/gambled/Pictures/Wallpapers/Wide/anime/ononoki.png";
-        "HDMI-A-1" = "/home/gambled/Pictures/Wallpapers/Wide/mix/flower.jpg";
-        "eDP-1" = "/home/gambled/Pictures/Wallpapers/Wide/mix/flower.jpg";
+        "HDMI-A-1" = "/home/gambled/Pictures/Wallpapers/Wide/vibrant/wallhaven_yj96lx.jpg";
+        "eDP-1" = "/home/gambled/Pictures/Wallpapers/Wide/vibrant/wallhaven_yj96lx.jpg";
       };
     };
   };
