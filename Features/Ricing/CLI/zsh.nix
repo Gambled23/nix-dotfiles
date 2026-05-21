@@ -30,6 +30,7 @@
     initContent = "
       source <(fzf --zsh)\n
       eval $(zoxide init zsh)\n
+      eval $(pay-respects zsh)\n
     ";
   };
 }

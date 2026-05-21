@@ -126,4 +126,8 @@
   };
 
   programs.dconf.enable = true;
+
+  programs.pay-respects = {
+    enable = true;
+  };
 }
