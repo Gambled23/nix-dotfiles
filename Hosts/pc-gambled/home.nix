@@ -32,6 +32,7 @@
 
     #* games
     inputs.accela.packages.${pkgs.stdenv.hostPlatform.system}.default
+    vintagestory
     # itch
     gamemode
     winetricks
