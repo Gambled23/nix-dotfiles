@@ -67,6 +67,13 @@
               siteMonitor = "http://pc-gambled:11434/";
             };
           }
+          {
+            "Ollama-nextjs" = {
+              icon = "ollama";
+              href = "http://pc-gambled:3000/";
+              siteMonitor = "http://pc-gambled:3000/";
+            };
+          }
           # 47989 port for the streaming service, 47990 for the web interface
           {
             "Sunshine" = {

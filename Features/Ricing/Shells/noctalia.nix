@@ -369,7 +369,7 @@ in
         preferredPlayer = "Spotify";
         volumeFeedback = true;
         spectrumFrameRate = 30;
-        volumeFeedbackSoundFile = "/etc/nixos/core/services/xserver/hyprland/volume.mp3";
+        volumeFeedbackSoundFile = "${pkgs.pantheon.elementary-sound-theme}/share/sounds/elementary/stereo/audio-volume-change.wav";
         spectrumMirrored = true;
       };
 
@@ -912,22 +912,22 @@ in
         pinnedStatic = false;
         inactiveIndicators = false;
         deadOpacity = 0.6;
-        animationSpeed = 1;
+        animationSpeed = 1.5;
         dockType = "floating";
-        groupApps = false;
-        groupClickAction = "cycle";
+        groupApps = true;
+        groupClickAction = "list";
         groupContextMenuMode = "extended";
         groupIndicatorStyle = "dots";
         indicatorColor = "primary";
         indicatorOpacity = 0.6;
         indicatorThickness = 3;
-        launcherIconColor = "none";
-        launcherPosition = "end";
-        showDockIndicator = false;
-        showLauncherIcon = false;
+        launcherIconColor = "primary";
+        launcherPosition = "start";
+        showDockIndicator = true;
+        showLauncherIcon = true;
         sitOnFrame = false;
         launcherIcon = "";
-        launcherUseDistroLogo = false;
+        launcherUseDistroLogo = true;
       };
 
       general = {
@@ -970,7 +970,7 @@ in
         lockScreenAnimations = true;
         lockScreenBlur = 1;
         lockScreenMonitors = [ ];
-        lockScreenTint = 0.1;
+        lockScreenTint = 0.5;
         passwordChars = true;
         reverseScroll = false;
         screenRadiusRatio = 1;
@@ -980,7 +980,7 @@ in
         lockOnSuspend = true;
         showSessionButtonsOnLockScreen = false;
         showHibernateOnLockScreen = false;
-        enableShadows = false;
+        enableShadows = true;
         shadowDirection = "center";
         shadowOffsetX = 0;
         shadowOffsetY = 0;
@@ -1011,16 +1011,16 @@ in
       idle = {
         customCommands = "[]";
         enabled = true;
-        fadeDuration = 10;
-        lockCommand = "";
-        lockTimeout = 900;
+        fadeDuration = 30;
         resumeLockCommand = "";
         resumeScreenOffCommand = "";
         resumeSuspendCommand = "";
         screenOffCommand = "";
-        screenOffTimeout = 600;
+        screenOffTimeout = if osConfig.networking.hostName == "pc-gambled" then 1800 else 600;
+        lockCommand = "";
+        lockTimeout = if osConfig.networking.hostName == "pc-gambled" then 3600 else 900;
         suspendCommand = "";
-        suspendTimeout = 1800;
+        suspendTimeout = if osConfig.networking.hostName == "pc-gambled" then 7200 else 1800;
       };
 
       location = {
@@ -1091,7 +1091,7 @@ in
           critical = true;
         };
         sounds = {
-          enabled = false;
+          enabled = true;
           volume = 0.5;
           separateSounds = false;
           criticalSoundFile = "";
@@ -1123,10 +1123,10 @@ in
 
       sessionMenu = {
         enableCountdown = true;
-        countdownDuration = 10000;
+        countdownDuration = 5000;
         position = "center";
         showHeader = true;
-        largeButtonsStyle = true;
+        largeButtonsStyle = false;
         largeButtonsLayout = "grid";
         showKeybinds = true;
         powerOptions = [
@@ -1269,7 +1269,7 @@ in
         scrollbarAlwaysVisible = false;
         settingsPanelSideBarCardStyle = true;
         tooltipsEnabled = true;
-        translucentWidgets = false;
+        translucentWidgets = true;
       };
 
       wallpaper = {

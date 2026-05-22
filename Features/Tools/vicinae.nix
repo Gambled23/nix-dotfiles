@@ -72,14 +72,12 @@
     };
 
     extensions = with inputs.vicinae-extensions.packages.${pkgs.stdenv.hostPlatform.system}; [
-      chromium-bookmarks
       bluetooth
       ssh
-      hypr-keybinds
-      player-pilot
       process-manager
       nix
       noctalia-shell-wallpaper-selector
+      zoxide-recent-directories
     ];
   };
 }

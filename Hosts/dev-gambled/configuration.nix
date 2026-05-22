@@ -21,4 +21,24 @@
     max-jobs = 3;
     cores = 4;
   };
+
+  # # Update nix-rbd before I leave work for the day
+  # systemd.timers."nix-rbd-before-bed" = {
+  #   wantedBy = [ "timers.target" ];
+  #   timerConfig = {
+  #     OnCalendar = "Mon..Fri 17:45";
+  #     Persistent = true; 
+  #     Unit = "nix-rbd-before-bed.service";
+  #   };
+  # };
+
+  # systemd.services."nix-rbd-before-bed" = {
+  #   script = ''
+  #   '';
+  #   serviceConfig = {
+  #     Type = "oneshot";
+  #     User = "gambled";
+  #     ExecStart = "${pkgs.writeShellScriptBin}/bin/nix-rbd";
+  #   };
+  # };
 }
