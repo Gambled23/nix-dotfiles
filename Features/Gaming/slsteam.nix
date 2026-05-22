@@ -6,12 +6,9 @@
     DisableFamilyShareLock = true;
     AppIds = [
       2868840 # Slay the Spire 2
-      4130120 # Genome Guardian 2
       1647550 # NEO: The World Ends with You
       2356780 # Dungeon Clawler
       3035120 # Is This Seat Taken
-      3401490 # Replicube
-      2239150 # Thronefall
       2968420 # PowerWash Simulator 2
       3110070 # Fever Meme
       3314790 # CloverPit
@@ -19,17 +16,13 @@
       2416450 # MOUSE: P.I. For Hire
       3265700 # Vampire crawlers
       1147860 # UFO 50
-      2416100 # Goodnight Universe
       2582320 # Mixtape
     ];
     AdditionalApps = [
       2868840 # Slay the Spire 2
-      4130120 # Genome Guardian 2
       1647550 # NEO: The World Ends with You
       2356780 # Dungeon Clawler
       3035120 # Is This Seat Taken
-      3401490 # Replicube
-      2239150 # Thronefall
       2968420 # PowerWash Simulator 2
       3110070 # Fever Meme
       3314790 # CloverPit
@@ -37,7 +30,6 @@
       2416450 # MOUSE: P.I. For Hire
       3265700 # Vampire crawlers
       1147860 # UFO 50
-      2416100 # Goodnight Universe
       2582320 # Mixtape
     ];
     SafeMode = true;
