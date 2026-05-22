@@ -369,7 +369,7 @@ in
         preferredPlayer = "Spotify";
         volumeFeedback = true;
         spectrumFrameRate = 30;
-        volumeFeedbackSoundFile = "${pkgs.pantheon.elementary-sound-theme}/share/sounds/elementary/stereo/audio-volume-change.wav";
+        volumeFeedbackSoundFile = "${pkgs.pantheon.elementary-sound-theme}/share/sounds/elementary/stereo/bell.wav";
         spectrumMirrored = true;
       };
 
