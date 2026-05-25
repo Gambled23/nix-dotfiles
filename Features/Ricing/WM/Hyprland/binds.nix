@@ -17,6 +17,7 @@
       # "$mainMod, B, exec, bluetoothctl connect 24:95:2F:60:BD:94"
 
       "$mainMod, M, exec, noctalia-shell ipc call lockScreen lock"
+      "$mainMod, N, exec, $termial -e nix-rbd"
       "$mainMod, X, togglefloating,"
       # "$mainMod, M, exit,"
 

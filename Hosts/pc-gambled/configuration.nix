@@ -24,6 +24,7 @@
     i2c-tools #for monitoring sensors
     ryubing
     dolphin-emu
+    dotnet-runtime_9
 
     (import ../../Scripts/reboot-to-windows.nix { inherit pkgs; })
     (import ../../Scripts/display-device.nix { inherit pkgs; })
