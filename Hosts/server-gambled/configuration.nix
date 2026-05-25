@@ -16,7 +16,7 @@
     ../../Features/Server/homeassistant.nix
     ../../Features/Server/homepage-dashboard.nix
     ../../Features/Server/paperless.nix
-    ../../Features/Server/onlyoffice.nix
+    # ../../Features/Server/onlyoffice.nix
     ../../Features/Server/nginx.nix
 
     # bootloader

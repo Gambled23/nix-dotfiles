@@ -46,13 +46,13 @@
             proxy_set_header X-Forwarded-Proto $scheme;
           '';
         };
-        "/onlyoffice/" = {
-          proxyPass = "http://127.0.0.1:8005/";
-          proxyWebsockets = true;
-          extraConfig = ''
-            rewrite ^/onlyoffice/(.*)$ /$1 break;
-          '';
-        };
+        # "/onlyoffice/" = {
+        #   proxyPass = "http://127.0.0.1:8005/";
+        #   proxyWebsockets = true;
+        #   extraConfig = ''
+        #     rewrite ^/onlyoffice/(.*)$ /$1 break;
+        #   '';
+        # };
       };
     };
   };
