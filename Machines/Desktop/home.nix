@@ -31,6 +31,7 @@
     #* utils
     android-tools
     libreoffice
+    onlyoffice-desktopeditors
     scrcpy
     siyuan
     qalculate-gtk

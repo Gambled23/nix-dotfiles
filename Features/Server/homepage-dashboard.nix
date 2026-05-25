@@ -49,6 +49,13 @@
               siteMonitor = "https://server-gambled/paperless";
             };
           }
+          {
+            "Onlyoffice" = {
+              icon = "onlyoffice";
+              href = "https://server-gambled/onlyoffice";
+              siteMonitor = "https://server-gambled/onlyoffice";
+            };
+          }
         ];
       }
       {
