@@ -26,7 +26,7 @@
 
   networking.networkmanager.enable = true;
   networking.extraHosts =
-  ''
+  ''    
     192.168.1.1 router
 
     10.243.0.1 server-gambled
