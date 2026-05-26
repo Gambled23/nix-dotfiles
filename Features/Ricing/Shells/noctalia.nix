@@ -1062,7 +1062,7 @@ in
       };
 
       noctaliaPerformance = {
-        disableDesktopWidgets = false;
+        disableDesktopWidgets = true;
         disableWallpaper = false;
       };
 

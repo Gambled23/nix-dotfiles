@@ -18,6 +18,7 @@
     dbeaver-bin
     claude-code
     bruno
+    awscli
     remmina
     # android-studio
     # jdk25_headless
