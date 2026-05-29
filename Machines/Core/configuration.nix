@@ -26,11 +26,8 @@
 
   networking.networkmanager.enable = true;
   networking.extraHosts =
-  ''
-    # 127.0.0.1 mm.alphapm.mx
-    # 127.0.0.1 app.alphapm.mx
-    # 127.0.0.1 app.og26.mx
-    # 127.0.0.1 invoice.alphapm.mx
+  ''   
+    98.89.51.199 app.og26.mx
     192.168.1.1 router
 
     10.243.0.1 server-gambled

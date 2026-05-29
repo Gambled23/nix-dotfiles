@@ -32,6 +32,7 @@
       "match:title Picture in picture, float on, center on, keep_aspect_ratio on, size 284 160"
       "match:title (Open File.*|Select Folder to Upload|Select a file|.*Yazi.*), size 1150 700, float on, center on"
       "match:title (Keyguard), size 790 570, min_size 790 570, max_size 791 571, float on, center on"
+      "match:title (Yazi.*), float on, center on, size 600 400"
       # Shadow for floating windows
       "match:float off, no_shadow on"
     ];
