@@ -14,7 +14,7 @@
     #   # ];
     # };
 
-    package = pkgs.steam.override {
+    package = pkgs.millennium-steam.override {
       extraEnv = {
         # MANGOHUD = true;
         OBS_VKCAPTURE = true;
@@ -28,6 +28,17 @@
     ];
   };
 
+  environment.systemPackages = with pkgs; [
+    protonup-ng
+    inputs.sls-steam.packages.${pkgs.stdenv.hostPlatform.system}.wrapped
+    inputs.sls-steam.packages.${pkgs.stdenv.hostPlatform.system}.sls-steam
+    # gamescope-wsi
+  ];
+
+  nixpkgs.overlays = [
+    inputs.millennium.overlays.default
+  ];
+
   # programs.gamescope = {
   #   enable = true;
   #   capSysNice = true;
@@ -38,35 +49,23 @@
 
   # programs.gamemode.enable = true;
 
-  environment.systemPackages = with pkgs; [
-    protonup-ng
-    inputs.sls-steam.packages.${pkgs.stdenv.hostPlatform.system}.wrapped
-    inputs.sls-steam.packages.${pkgs.stdenv.hostPlatform.system}.sls-steam
-    # gamescope-wsi
-  ];
-
-  nixpkgs.overlays = [
-    inputs.millennium.overlays.default
-    # dolphin-overlay.overlays.default
-  ];
-
-  jovian = {
-    steam = {
-      enable = true;
-      # autoStart = true;
-      # desktopSession = "hyprland-uwsm";
-      user = "gambled";
-      updater.splash = "jovian";
-    };
-    decky-loader = {
-      enable = true;
-      user = "gambled";
-    };
-    hardware.has.amd.gpu = true;
-  };
-  system.userActivationScripts.linktosharedfolder.text = ''
-    if [[ ! -h "$HOME/.homebrew" ]]; then
-      ln -s "/var/lib/decky-loader/" "$HOME/.homebrew"
-    fi
-  '';
+  # jovian = {
+  #   steam = {
+  #     enable = true;
+  #     # autoStart = true;
+  #     # desktopSession = "hyprland-uwsm";
+  #     user = "gambled";
+  #     updater.splash = "jovian";
+  #   };
+  #   decky-loader = {
+  #     enable = true;
+  #     user = "gambled";
+  #   };
+  #   hardware.has.amd.gpu = true;
+  # };
+  # system.userActivationScripts.linktosharedfolder.text = ''
+  #   if [[ ! -h "$HOME/.homebrew" ]]; then
+  #     ln -s "/var/lib/decky-loader/" "$HOME/.homebrew"
+  #   fi
+  # '';
 }
