@@ -14,7 +14,7 @@
     #   # ];
     # };
 
-    package = pkgs.millennium-steam.override {
+    package = pkgs.steam.override {
       extraEnv = {
         # MANGOHUD = true;
         OBS_VKCAPTURE = true;
@@ -36,7 +36,7 @@
   #   # ];
   # };
 
-  programs.gamemode.enable = true;
+  # programs.gamemode.enable = true;
 
   environment.systemPackages = with pkgs; [
     protonup-ng
@@ -54,7 +54,7 @@
     steam = {
       enable = true;
       # autoStart = true;
-      desktopSession = "hyprland-uwsm";
+      # desktopSession = "hyprland-uwsm";
       user = "gambled";
       updater.splash = "jovian";
     };
