@@ -7,12 +7,12 @@
     dedicatedServer.openFirewall = true;
     # extest.enable = true;
     protontricks.enable = true;
-    gamescopeSession = {
-      enable = true;
-      # args = [
-      #   "--mangoapp"
-      # ];
-    };
+    # gamescopeSession = {
+    #   enable = true;
+    #   # args = [
+    #   #   "--mangoapp"
+    #   # ];
+    # };
 
     package = pkgs.millennium-steam.override {
       extraEnv = {
@@ -28,13 +28,13 @@
     ];
   };
 
-  programs.gamescope = {
-    enable = true;
-    capSysNice = true;
-    # args = [
-    #   "--mangoapp"
-    # ];
-  };
+  # programs.gamescope = {
+  #   enable = true;
+  #   capSysNice = true;
+  #   # args = [
+  #   #   "--mangoapp"
+  #   # ];
+  # };
 
   programs.gamemode.enable = true;
 
@@ -42,7 +42,7 @@
     protonup-ng
     inputs.sls-steam.packages.${pkgs.stdenv.hostPlatform.system}.wrapped
     inputs.sls-steam.packages.${pkgs.stdenv.hostPlatform.system}.sls-steam
-    gamescope-wsi
+    # gamescope-wsi
   ];
 
   nixpkgs.overlays = [
@@ -50,23 +50,23 @@
     # dolphin-overlay.overlays.default
   ];
 
-  # jovian = {
-  #   steam = {
-  #     enable = true;
-  #     # autoStart = true;
-  #     desktopSession = "hyprland-uwsm";
-  #     user = "gambled";
-  #     updater.splash = "jovian";
-  #   };
-  #   decky-loader = {
-  #     enable = true;
-  #     user = "gambled";
-  #   };
-  #   hardware.has.amd.gpu = true;
-  # };
-  # system.userActivationScripts.linktosharedfolder.text = ''
-  #   if [[ ! -h "$HOME/.homebrew" ]]; then
-  #     ln -s "/var/lib/decky-loader/" "$HOME/.homebrew"
-  #   fi
-  # '';
+  jovian = {
+    steam = {
+      enable = true;
+      # autoStart = true;
+      desktopSession = "hyprland-uwsm";
+      user = "gambled";
+      updater.splash = "jovian";
+    };
+    decky-loader = {
+      enable = true;
+      user = "gambled";
+    };
+    hardware.has.amd.gpu = true;
+  };
+  system.userActivationScripts.linktosharedfolder.text = ''
+    if [[ ! -h "$HOME/.homebrew" ]]; then
+      ln -s "/var/lib/decky-loader/" "$HOME/.homebrew"
+    fi
+  '';
 }
