@@ -20,6 +20,7 @@
     bruno
     awscli
     remmina
+    antigravity
     # android-studio
     # jdk25_headless
 
