@@ -10,6 +10,7 @@
     ../../Features/Tools/ghostty.nix
     ../../Features/Tools/Media/spicetify.nix
     ../../Features/Gaming/nixcord.nix
+    ../../Features/Ricing/WM/Niri/config.nix
   ];
 
   home.packages = with pkgs; [

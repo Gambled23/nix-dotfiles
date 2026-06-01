@@ -57,6 +57,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    niri = {
+      url = "github:sodiboo/niri-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     # dolphin-overlay.url = "github:rumboon/dolphin-overlay";
 
     # ambxst.url = "github:Axenide/Ambxst";
@@ -82,6 +87,7 @@
     nixos-hardware,
     nix-index-database,
     nur,
+    niri,
     ...
     }@inputs:
   let
@@ -93,6 +99,7 @@
       inherit nixos-hardware;
       inherit nix-index-database;
       inherit nur;
+      inherit niri;
     };
 
     coreModules = [

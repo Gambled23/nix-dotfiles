@@ -20,6 +20,7 @@ in {
         "https://nvf.cachix.org"
         "https://noctalia.cachix.org"
         "https://jovian.cachix.org/"
+        "https://niri.cachix.org/"
       ];
 
       trusted-substituters = [
@@ -30,6 +31,7 @@ in {
         "https://nvf.cachix.org"
         "https://noctalia.cachix.org"
         "https://jovian.cachix.org/"
+        "https://niri.cachix.org/"
       ];
       
       trusted-public-keys = [
