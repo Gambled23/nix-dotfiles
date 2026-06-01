@@ -59,7 +59,7 @@ with lib;
       pkgs.xdg-desktop-portal-gtk
       pkgs.kdePackages.xdg-desktop-portal-kde
     ];
-    config.common.default = "hyprland;gtk";
+    config.common.default = "gtk;hyprland";
   };
 
   # Icons for hyprpanel and others
