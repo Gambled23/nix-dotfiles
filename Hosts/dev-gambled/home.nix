@@ -8,7 +8,7 @@
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
   home.stateVersion = "26.05";
   imports = [
-    ./hyprland.nix
+    # ./hyprland.nix
     ../../Machines/Core/home.nix
     ../../Machines/Desktop/home.nix
   ];
