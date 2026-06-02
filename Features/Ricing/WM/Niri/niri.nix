@@ -8,5 +8,5 @@
     inputs.niri.overlays.niri
   ];
 
-  # programs.niri.enable = true;
+  programs.niri.enable = true;
 }
