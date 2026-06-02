@@ -28,6 +28,7 @@
   networking.extraHosts =
   ''   
     98.89.51.199 app.og26.mx
+    98.89.51.199 www.ida-imagenologia.com
     192.168.1.1 router
 
     10.243.0.1 server-gambled

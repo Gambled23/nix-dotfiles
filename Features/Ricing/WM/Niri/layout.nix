@@ -6,13 +6,13 @@
         enable = true;
         width = 2;
       };
-      gaps = 8;
+      gaps = 4;
 
       struts = {
         bottom = 0;
         top = 0;
-        left = 12;
-        right = 12;
+        left = 8;
+        right = 8;
       };
     };
   };
