@@ -3,7 +3,7 @@
   imports = [
     # Desktop enviroment
     ../../Features/Ricing/WM/Hyprland/hyprland.nix
-    ../../Features/Ricing/WM/Niri/niri.nix
+    # ../../Features/Ricing/WM/Niri/niri.nix
   ];
 
   environment.systemPackages = with pkgs; [
