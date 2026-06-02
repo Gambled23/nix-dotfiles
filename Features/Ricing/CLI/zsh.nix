@@ -31,6 +31,7 @@
     initContent = "
       source <(fzf --zsh)\n
       eval $(zoxide init zsh)\n
+      eval $(devenv hook zsh)\n
     ";
   };
 }
