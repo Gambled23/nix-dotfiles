@@ -13,4 +13,6 @@
   programs.niri.settings = {
     prefer-no-csd = true;
   };
+
+  # wayland.windowManager.niri.package = pkgs.niri-unstable;
 }

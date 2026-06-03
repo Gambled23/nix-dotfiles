@@ -62,6 +62,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    antigravity-nix = {
+      url = "github:jacopone/antigravity-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     # dolphin-overlay.url = "github:rumboon/dolphin-overlay";
 
     # ambxst.url = "github:Axenide/Ambxst";
@@ -88,6 +93,7 @@
     nix-index-database,
     nur,
     niri,
+    antigravity-nix,
     ...
     }@inputs:
   let
@@ -100,6 +106,7 @@
       inherit nix-index-database;
       inherit nur;
       inherit niri;
+      inherit antigravity-nix;
     };
 
     coreModules = [

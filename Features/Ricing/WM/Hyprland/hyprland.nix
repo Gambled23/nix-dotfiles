@@ -35,7 +35,7 @@ with lib;
     pamixer
     pavucontrol
     gparted
-    # hyprpolkitagent # Polkit for gui applications
+    hyprpolkitagent # Polkit for gui applications
 
 
     # Dependencies
@@ -59,7 +59,7 @@ with lib;
       pkgs.xdg-desktop-portal-gtk
       pkgs.kdePackages.xdg-desktop-portal-kde
     ];
-    config.common.default = "gtk;hyprland";
+    config.common.default = "hyprland;gtk";
   };
 
   # Icons for hyprpanel and others
@@ -83,6 +83,7 @@ with lib;
     ly = {
       enable = true;
     };
+    # plasma-login-manager.enable = true;
   };
 
   services.xserver = {

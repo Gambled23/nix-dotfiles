@@ -17,6 +17,7 @@
       ];
       "exec-once" = [
         "hyprlock"
+        # "noctalia-shell ipc call lockScreen lock"
       ];
 
       windowrule = [

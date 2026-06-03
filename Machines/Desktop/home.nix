@@ -19,6 +19,9 @@
     act3
     zed-editor-fhs
     vscode
+    inputs.antigravity-nix.packages.x86_64-linux.google-antigravity-no-fhs # Base App
+    inputs.antigravity-nix.packages.x86_64-linux.google-antigravity-ide-no-fhs # IDE
+    inputs.antigravity-nix.packages.x86_64-linux.google-antigravity-cli # CLI
     
     #* media creation
     gimp-with-plugins
@@ -31,7 +34,6 @@
 
     #* utils
     android-tools
-    libreoffice
     onlyoffice-desktopeditors
     scrcpy
     siyuan

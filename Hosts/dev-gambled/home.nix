@@ -16,11 +16,9 @@
   home.packages = with pkgs; [
     #* dev tools
     dbeaver-bin
-    claude-code
     bruno
     awscli
     remmina
-    antigravity
     # android-studio
     # jdk25_headless
 
