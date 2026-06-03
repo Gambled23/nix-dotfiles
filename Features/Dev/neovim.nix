@@ -76,17 +76,19 @@ in
       };
 
       # vim.extraPlugins = with pkgs.vimPlugins; {
-      #   base16 = {
-      #     package = base16-nvim;
-      #     setup = "require('matugen').setup {}";
+      #   vim-dadbod-ui = {
+      #     package = vim-dadbod-ui;
       #   };
       # };
 
-      # vim.filetree = {
-      #   nvimTree = {
-      #     enable = true;
-      #   };
-      # };
+      vim.filetree = {
+        # nvimTree = {
+        #   enable = true;
+        # };
+        neo-tree = {
+          enable = true;
+        };
+      };
 
       # vim.gestures = {
       #   gesture-nvim.enable = true;

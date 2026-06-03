@@ -32,7 +32,7 @@
         betterActivities.enable = true;
         betterAudioPlayer.enable = true;
         betterGifPicker.enable = true;
-        betterNotesBox.enable = true;
+        # betterNotesBox.enable = true;
         betterRoleContext.enable = true;
         betterRoleDot.enable = true;
         betterUploadButton.enable = true;
@@ -51,8 +51,8 @@
         moreStickers.enable = true;
         noNitroUpsell.enable = true;
         platformIndicators.enable = true;
-        sidebarChat.enable = true;
-        sekaiStickers.enable = true;
+        # sidebarChat.enable = true;
+        # sekaiStickers.enable = true;
         statusWhileActive.enable = true;
         steamStatusSync.enable = true;
         themeLibrary.enable = true;

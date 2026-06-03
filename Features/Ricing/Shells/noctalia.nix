@@ -245,6 +245,9 @@ let
         id = "plugin:clipboard";
       }
       {
+        id = "plugin:assistant-panel";
+      }
+      {
         colorizeDistroLogo = false;
         colorizeSystemIcon = "primary";
         colorizeSystemText = "none";
@@ -1399,6 +1402,11 @@ in
           enabled = true;
           sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
         };
+        assistant-panel = {
+          enabled = true;
+          sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
+        };
+
 
         "e11650:display-device" = {
           enabled = true;

@@ -24,7 +24,7 @@ with lib;
     wireplumber
 
     #Tools
-    # kitty # required for the default Hyprland config
+    kitty # required for the default Hyprland config
     gnome-calendar
     gnome-contacts
     qalculate-gtk

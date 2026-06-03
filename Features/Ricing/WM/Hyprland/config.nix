@@ -16,85 +16,100 @@
     ../../../Tools/vicinae.nix
 
     # Hyprland settings
-    ./animations.nix
-    ./binds.nix
-    ./rules.nix
-    ./input.nix
-    ./plugins.nix
-    ./look_and_feel.nix
+    # ./animations.nix
+    # ./binds.nix
+    # ./rules.nix
+    # ./input.nix
+    # ./plugins.nix
+    # ./look_and_feel.nix
 
     # Shells
     ../../Shells/noctalia.nix
   ];
+
   
   wayland.windowManager.hyprland = {
     enable = true;
     systemd.enable = false;
+    
+    configType = "lua";
 
-    plugins = [
-      # inputs.hyprland-plugins.packages."${pkgs.stdenv.hostPlatform.system}".borders-plus-plus
-      # inputs.Hyprspace.packages.${pkgs.stdenv.hostPlatform.system}.Hyprspace
-      # inputs.hyprland-plugins.packages."${pkgs.stdenv.hostPlatform.system}".hyprscrolling
-      # inputs.hyprland-plugins.packages."${pkgs.stdenv.hostPlatform.system}".csgo-vulkan-fix
-      # inputs.hyprland-plugins.packages."${pkgs.stdenv.hostPlatform.system}".hyprexpo
-    ];
+    # extraConfig = builtins.readFile ./config.lua;
 
-    settings = {
-      ###################
-      ### MY PROGRAMS ###
-      ###################
-      "$terminal" = "ghostty";
-      "$file_manager" = "$terminal -e yazi";
-      "$web_browser" = "uwsm app -- google-chrome-stable";
-      "$code" = "uwsm app -- code";
-      "$menu" = "uwsm app -- vicinae toggle";
-      "$mainMod" = "SUPER";
+    # plugins = [
+    #   # inputs.hyprland-plugins.packages."${pkgs.stdenv.hostPlatform.system}".borders-plus-plus
+    #   # inputs.Hyprspace.packages.${pkgs.stdenv.hostPlatform.system}.Hyprspace
+    #   # inputs.hyprland-plugins.packages."${pkgs.stdenv.hostPlatform.system}".hyprscrolling
+    #   # inputs.hyprland-plugins.packages."${pkgs.stdenv.hostPlatform.system}".csgo-vulkan-fix
+    #   # inputs.hyprland-plugins.packages."${pkgs.stdenv.hostPlatform.system}".hyprexpo
+    # ];
 
-
-      #################
-      ### AUTOSTART ###
-      #################
-      "exec-once" = [
-        "uwsm app -- noctalia-shell"
-        "uwsm app -- spotify"
-        "uwsm app -- discord"
-        "uwsm app -- altus"
-        "uwsm app -- kdeconnect-indicator"
-        # "bluetoothctl connect 24:95:2F:60:BD:94"
-      ];
+    # settings = {
+    #   ###################
+    #   ### MY PROGRAMS ###
+    #   ###################
+    #   "$terminal" = "ghostty";
+    #   "$file_manager" = "$terminal -e yazi";
+    #   "$web_browser" = "uwsm app -- google-chrome-stable";
+    #   "$code" = "uwsm app -- code";
+    #   "$menu" = "uwsm app -- vicinae toggle";
+    #   "$mainMod" = "SUPER";
 
 
-      #############################
-      ### ENVIRONMENT VARIABLES ###
-      #############################
-      # See https://wiki.hypr.land/Configuring/Environment-variables/
-      env = [
-        "XCURSOR_SIZE,24"
-        "HYPRCURSOR_SIZE,24"
-        "QT_QPA_PLATFORMTHEME,qt6ct"
-      ];
+    #   #################
+    #   ### AUTOSTART ###
+    #   #################
+    #   "exec-once" = [
+    #     "uwsm app -- noctalia-shell"
+    #     "uwsm app -- spotify"
+    #     "uwsm app -- discord"
+    #     "uwsm app -- altus"
+    #     "uwsm app -- kdeconnect-indicator"
+    #     # "bluetoothctl connect 24:95:2F:60:BD:94"
+    #   ];
 
 
-      ###################
-      ### PERMISSIONS ###
-      ###################
-      # See https://wiki.hypr.land/Configuring/Permissions/
-      # Please note permission changes here require a Hyprland restart and are not applied on-the-fly
-      # for security reasons
+    #   #############################
+    #   ### ENVIRONMENT VARIABLES ###
+    #   #############################
+    #   # See https://wiki.hypr.land/Configuring/Environment-variables/
+    #   env = [
+    #     "XCURSOR_SIZE,24"
+    #     "HYPRCURSOR_SIZE,24"
+    #     "QT_QPA_PLATFORMTHEME,qt6ct"
+    #   ];
 
-      # ecosystem = {
-      #   enforce_permissions = 1;
-      # };
 
-      permission = [
-        "/usr/(bin|local/bin)/grim, screencopy, allow"
-        "/usr/(lib|libexec|lib64)/xdg-desktop-portal-hyprland, screencopy, allow"
-        "/usr/(bin|local/bin)/hyprpm, plugin, allow"
-      ];
-    };
+    #   ###################
+    #   ### PERMISSIONS ###
+    #   ###################
+    #   # See https://wiki.hypr.land/Configuring/Permissions/
+    #   # Please note permission changes here require a Hyprland restart and are not applied on-the-fly
+    #   # for security reasons
+
+    #   # ecosystem = {
+    #   #   enforce_permissions = 1;
+    #   # };
+
+    #   permission = [
+    #     "/usr/(bin|local/bin)/grim, screencopy, allow"
+    #     "/usr/(lib|libexec|lib64)/xdg-desktop-portal-hyprland, screencopy, allow"
+    #     "/usr/(bin|local/bin)/hyprpm, plugin, allow"
+    #   ];
+    # };
 
     systemd.variables = ["--all"]; # To pass environment variables to the systemd services started by Hyprland
   };
+
+  xdg.configFile."hypr/hyprland.lua".source =
+    config.lib.file.mkOutOfStoreSymlink
+    "/etc/nixos/Features/Ricing/WM/Hyprland/lua/config.lua";
+  xdg.configFile."hypr/dev-gambled.lua".source =
+    config.lib.file.mkOutOfStoreSymlink
+    "/etc/nixos/Features/Ricing/WM/Hyprland/lua/hosts/dev-gambled.lua";
+  xdg.configFile."hypr/pc-gambled.lua".source =
+    config.lib.file.mkOutOfStoreSymlink
+    "/etc/nixos/Features/Ricing/WM/Hyprland/lua/hosts/pc-gambled.lua";
 
   xdg.configFile."uwsm/env".source = "${config.home.sessionVariablesPackage}/etc/profile.d/hm-session-vars.sh"; 
   

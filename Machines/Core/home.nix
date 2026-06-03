@@ -2,6 +2,7 @@
   inputs,
   lib,
   config,
+  osConfig,
   pkgs,
   ...
 }:
@@ -47,6 +48,7 @@
   home.sessionVariables = {
     NIXOS_OZONE_WL = "1";
     ELECTRON_OZONE_PLATFORM_HINT = "wayland";
+    HOSTNAME = osConfig.networking.hostName or "nixos";
   };
 
   # Nicely reload system units when changing configs

@@ -11,6 +11,7 @@
     ../../Features/Tools/Media/spicetify.nix
     ../../Features/Gaming/nixcord.nix
     # ../../Features/Ricing/WM/Niri/config.nix
+    ../../Features/Ricing/WM/Hyprland/config.nix
   ];
 
   home.packages = with pkgs; [

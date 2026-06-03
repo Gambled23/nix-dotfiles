@@ -18,9 +18,11 @@ in {
         "https://yazi.cachix.org"
         "https://cache.nixos.org/"
         "https://nvf.cachix.org"
+        "https://neovim-nightly.cachix.org/"
         "https://noctalia.cachix.org"
         "https://jovian.cachix.org/"
         "https://niri.cachix.org/"
+        "https://nix-community.cachix.org/"
       ];
 
       trusted-substituters = [
@@ -29,9 +31,11 @@ in {
         "https://yazi.cachix.org"
         "https://cache.nixos.org/"
         "https://nvf.cachix.org"
+        "https://neovim-nightly.cachix.org/"
         "https://noctalia.cachix.org"
         "https://jovian.cachix.org/"
         "https://niri.cachix.org/"
+        "https://nix-community.cachix.org/"
       ];
       
       trusted-public-keys = [
@@ -39,8 +43,10 @@ in {
         "vicinae.cachix.org-1:1kDrfienkGHPYbkpNj1mWTr7Fm1+zcenzgTizIcI3oc="
         "yazi.cachix.org-1:Dcdz63NZKfvUCbDGngQDAZq6kOroIrFoyO064uvLh8k="
         "nvf.cachix.org-1:GMQWiUhZ6ux9D5CvFFMwnc2nFrUHTeGaXRlVBXo+naI="
+        "neovim-nightly.cachix.org-1:feIoInHRevVEplgdZvQDjhp11kYASYCE2NGY9hNrwxY="
         "noctalia.cachix.org-1:pCOR47nnMEo5thcxNDtzWpOxNFQsBRglJzxWPp3dkU4="
         "jovian.cachix.org-1:8Vq4Txku6VZIRhYrHYki3Ab9XHJRoWmdYqMqj4rB/Uc="
+        "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
       ];
     };
   };
