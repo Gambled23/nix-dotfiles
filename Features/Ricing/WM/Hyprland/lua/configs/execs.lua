@@ -1,0 +1,7 @@
+hl.on("hyprland.start", function()
+    hl.exec_cmd("uwsm app -- noctalia-shell")
+    hl.exec_cmd("uwsm app -- spotify")
+    hl.exec_cmd("uwsm app -- discord")
+    hl.exec_cmd("uwsm app -- altus")
+    hl.exec_cmd("uwsm app -- kdeconnect-indicator")
+end)
