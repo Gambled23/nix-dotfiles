@@ -8,7 +8,7 @@ hl.monitor({
 
 hl.monitor({
     output = "sunshine",
-    mode = "disable",
+    disabled = true,
 })
 
 hl.window_rule({
@@ -17,7 +17,6 @@ hl.window_rule({
     },
     workspace = "9",
 })
-
 
 hl.on("hyprland.start", function()
     hl.exec_cmd("steam %U")

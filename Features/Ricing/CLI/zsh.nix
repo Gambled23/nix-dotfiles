@@ -28,10 +28,10 @@
       gnome-control-center-fixed = "env XDG_CURRENT_DESKTOP=GNOME gnome-control-center";
     };
     
-    initContent = "
-      source <(fzf --zsh)\n
-      eval $(zoxide init zsh)\n
-      eval $(devenv hook zsh)\n
-    ";
+    initContent = ''
+      source <(fzf --zsh)
+      eval $(zoxide init zsh)
+      eval "''$(devenv hook zsh)"
+    '';
   };
 }

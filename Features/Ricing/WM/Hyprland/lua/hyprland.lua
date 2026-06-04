@@ -109,3 +109,5 @@ hl.config({
         disable_hyprland_logo = true,
     },
 })
+-- This loads Noctalia-generated Hyprland colors.
+dofile("/home/gambled/.config/hypr/noctalia/noctalia-colors.lua")
