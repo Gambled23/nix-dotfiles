@@ -598,6 +598,9 @@ in
                   id = "plugin:clipboard";
                 }
                 {
+                  id = "plugin:assistant-panel";
+                }
+                {
                   colorizeDistroLogo = false;
                   colorizeSystemIcon = "primary";
                   colorizeSystemText = "none";

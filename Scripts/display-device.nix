@@ -62,22 +62,62 @@ pkgs.writeShellScriptBin "display-device" ''
     steamdeck)
       hyprctl dispatch workspace 8
       steam steam://open/bigpicture
-      hyprctl keyword monitor "sunshine,1280x800@60,0x0,1"
-      hyprctl keyword monitor "DP-3, disable"
+      hyprctl eval "
+      hl.monitor({
+          output = \"sunshine\",
+          mode = \"1280x800@60\",
+          position = \"0x0\",
+          scale = \"1\",
+      })
+
+      hl.monitor({
+          output = \"DP-3\",
+          disabled = true,
+      })"
       ;;
     pc-gambled)
-      hyprctl keyword monitor "DP-3,3440x1440@180,0x0,1"
-      hyprctl keyword monitor "sunshine, disable"
+      hyprctl eval "
+      hl.monitor({
+          output = \"DP-3\",
+          mode = \"3440x1440@180\",
+          position = \"0x0\",
+          scale = \"1\",
+      })
+
+      hl.monitor({
+          output = \"sunshine\",
+          disabled = true,
+      })"
       ;;
     dev-gambled)
-      hyprctl keyword monitor "sunshine,1920x1200@60,0x0,1"
-      hyprctl keyword monitor "DP-3, disable"
+      hyprctl eval "
+      hl.monitor({
+          output = \"sunshine\",
+          mode = \"1920x1200@60\",
+          position = \"0x0\",
+          scale = \"1\",
+      })
+
+      hl.monitor({
+          output = \"DP-3\",
+          disabled = true,
+      })"
       ;;
     android-gambled)
       hyprctl dispatch workspace 8
       steam steam://open/bigpicture
-      hyprctl keyword monitor "sunshine,2992x1344@120,0x0,1"
-      hyprctl keyword monitor "DP-3, disable"
+      hyprctl eval "
+      hl.monitor({
+          output = \"sunshine\",
+          mode = \"2992x1344@120\",
+          position = \"0x0\",
+          scale = \"1\",
+      })
+
+      hl.monitor({
+          output = \"DP-3\",
+          disabled = true,
+      })"
       ;;
     *)
       echo "Invalid display name: $display_name" >&2
