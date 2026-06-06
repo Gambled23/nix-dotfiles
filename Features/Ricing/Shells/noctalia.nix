@@ -402,7 +402,7 @@ in
         showOutline = false;
         showCapsule = true;
         capsuleOpacity = 1;
-        backgroundOpacity = 0.6;
+        backgroundOpacity = 0.2;
         useSeparateOpacity = false;
         marginVertical = 4;
         marginHorizontal = 4;
@@ -908,7 +908,7 @@ in
         enabled = true;
         position = "bottom";
         displayMode = "auto_hide";
-        backgroundOpacity = 0.6;
+        backgroundOpacity = 0.2;
         floatingRatio = 0.5;
         size = 1;
         onlySameOutput = true;
@@ -917,7 +917,7 @@ in
         colorizeIcons = false;
         pinnedStatic = false;
         inactiveIndicators = false;
-        deadOpacity = 0.6;
+        deadOpacity = 0.2;
         animationSpeed = 1.5;
         dockType = "floating";
         groupApps = true;
@@ -925,7 +925,7 @@ in
         groupContextMenuMode = "extended";
         groupIndicatorStyle = "dots";
         indicatorColor = "primary";
-        indicatorOpacity = 0.6;
+        indicatorOpacity = 0.2;
         indicatorThickness = 3;
         launcherIconColor = "primary";
         launcherPosition = "start";
@@ -1081,7 +1081,7 @@ in
         ];
         location = "top";
         overlayLayer = true;
-        backgroundOpacity = 0.6;
+        backgroundOpacity = 0.2;
         respectExpireTimeout = false;
         lowUrgencyDuration = 3;
         normalUrgencyDuration = 8;
@@ -1113,7 +1113,7 @@ in
         location = "right";
         autoHideMs = 3000;
         overlayLayer = true;
-        backgroundOpacity = 0.6;
+        backgroundOpacity = 0.2;
         enabledTypes = [
           0
           1
@@ -1268,14 +1268,14 @@ in
         fontFixed = "DejaVu Sans Mono";
         fontDefaultScale = 1;
         fontFixedScale = 1;
-        panelBackgroundOpacity = 0.6;
+        panelBackgroundOpacity = 0.4;
         panelsAttachedToBar = true;
         settingsPanelMode = "attached";
         boxBorderEnabled = false;
         scrollbarAlwaysVisible = false;
         settingsPanelSideBarCardStyle = true;
         tooltipsEnabled = true;
-        translucentWidgets = true;
+        translucentWidgets = false;
       };
 
       wallpaper = {
