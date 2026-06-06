@@ -38,12 +38,20 @@
           elevated = "false";
         }
         {
-          name = "1080p";
-          cmd = "display-device -d 1080p";
+          name = "tv-sala";
+          cmd = "display-device -d tv-sala";
+          exclude-global-prep-cmd = "false";
+          elevated = "false";
+        }
+        {
+          name = "no-change";
+          cmd = "";
           exclude-global-prep-cmd = "false";
           elevated = "false";
         }
       ];
     };
   };
+
+  programs.monique.enable = true;
 }

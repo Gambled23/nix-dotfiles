@@ -24,6 +24,7 @@
     #kcc
     #calibre
     komikku
+    grayjay
 
     #* dev tools
     vscode

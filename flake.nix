@@ -67,6 +67,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    monique = {
+      url = "github:ToRvaLDz/monique";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     # dolphin-overlay.url = "github:rumboon/dolphin-overlay";
 
     # ambxst.url = "github:Axenide/Ambxst";
@@ -94,6 +99,7 @@
     nur,
     niri,
     antigravity-nix,
+    monique,
     ...
     }@inputs:
   let
@@ -107,6 +113,7 @@
       inherit nur;
       inherit niri;
       inherit antigravity-nix;
+      inherit monique;
     };
 
     coreModules = [
@@ -143,6 +150,7 @@
           ./Hosts/pc-gambled/configuration.nix
           jovian-nixos.nixosModules.default
           nixos-hardware.nixosModules.gigabyte-b650
+          monique.nixosModules.default
           {
             home-manager.users.gambled.imports = [
               ./Hosts/pc-gambled/home.nix

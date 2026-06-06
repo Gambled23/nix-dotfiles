@@ -12,7 +12,7 @@ pkgs.writeShellScriptBin "display-device" ''
     case "$opt" in
       h)
         echo "Usage: display-device -d <display_name>"
-        echo "  -d <display_name>   One of 'pc-gambled', 'steamdeck', 'dev-gambled', 'android-gambled', '1080p'"
+        echo "  -d <display_name>   One of 'pc-gambled', 'steamdeck', 'dev-gambled', 'android-gambled', 'tv-sala'"
         echo "  -h                  Show this help"
         exit 0
         ;;
@@ -24,7 +24,7 @@ pkgs.writeShellScriptBin "display-device" ''
         echo "  steamdeck"
         echo "  dev-gambled"
         echo "  android-gambled"
-        echo "  1080p"
+        echo "  tv-sala"
         exit 0
         ;;
       c)
@@ -38,7 +38,7 @@ pkgs.writeShellScriptBin "display-device" ''
       \?)
         echo "Invalid option: -$OPTARG" >&2
         echo "Usage: display-device -d <display_name>"
-        echo "  -d <display_name>   One of 'pc-gambled', 'steamdeck', 'dev-gambled', 'android-gambled', '1080p'"
+        echo "  -d <display_name>   One of 'pc-gambled', 'steamdeck', 'dev-gambled', 'android-gambled', 'tv-sala'"
         echo "  -h                  Show this help"
         exit 1
         ;;
@@ -50,7 +50,7 @@ pkgs.writeShellScriptBin "display-device" ''
   if [ -z "$display_name" ]; then
     echo "No display name provided." >&2
     echo "Usage: display-device -d <display_name>"
-    echo "  -d <display_name>   One of 'pc-gambled', 'steamdeck', 'dev-gambled', 'android-gambled', '1080p'"
+    echo "  -d <display_name>   One of 'pc-gambled', 'steamdeck', 'dev-gambled', 'android-gambled', 'tv-sala'"
     exit 1
   fi
 
@@ -64,14 +64,14 @@ pkgs.writeShellScriptBin "display-device" ''
       steam steam://open/bigpicture
       hyprctl eval "
       hl.monitor({
-          output = \"sunshine\",
+          output = \"DP-3\",
           mode = \"1280x800@60\",
           position = \"0x0\",
           scale = \"1\",
       })
 
       hl.monitor({
-          output = \"DP-3\",
+          output = \"sunshine\",
           disabled = true,
       })"
       ;;
@@ -103,6 +103,20 @@ pkgs.writeShellScriptBin "display-device" ''
           disabled = true,
       })"
       ;;
+    tv-sala)
+      hyprctl eval "
+      hl.monitor({
+          output = \"DP-3\",
+          mode = \"1920x1080@60\",
+          position = \"0x0\",
+          scale = \"1\",
+      })
+
+      hl.monitor({
+          output = \"sunshine\",
+          disabled = true,
+      })"
+      ;;
     android-gambled)
       hyprctl dispatch workspace 8
       steam steam://open/bigpicture
@@ -122,7 +136,7 @@ pkgs.writeShellScriptBin "display-device" ''
     *)
       echo "Invalid display name: $display_name" >&2
       echo "Usage: display-device -d <display_name>"
-      echo "  -d <display_name>   One of 'pc-gambled', 'steamdeck', 'dev-gambled', 'android-gambled', '1080p'"
+      echo "  -d <display_name>   One of 'pc-gambled', 'steamdeck', 'dev-gambled', 'android-gambled', 'tv-sala'"
       echo "  -h                  Show this help"
       exit 1
       ;;
