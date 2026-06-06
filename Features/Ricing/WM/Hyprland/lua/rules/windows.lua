@@ -22,7 +22,14 @@ hl.window_rule({
 
 hl.window_rule({
     match = {
-        class = "^(stremio)$",
+        class = "^(eden)$",
+    },
+    workspace = "2",
+})
+
+hl.window_rule({
+    match = {
+        class = "^(com.stremio.stremio)$",
     },
     workspace = "7",
 })
@@ -39,13 +46,6 @@ hl.window_rule({
         class = "^(com.moonlight_stream.Moonlight)$",
     },
     workspace = "2",
-})
-
-hl.window_rule({
-    match = {
-        class = "^(steam)$",
-    },
-    fullscreen = false,
 })
 
 hl.window_rule({

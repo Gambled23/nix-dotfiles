@@ -32,8 +32,9 @@
     # jdk25_headless
 
     #* games
+    eden
     # inputs.accela.packages.${pkgs.stdenv.hostPlatform.system}.default
-    vintagestory
+    # vintagestory
     # itch
     gamemode
     winetricks
