@@ -10,6 +10,10 @@ in
     enable = true;
     configDir = "/var/lib/hass";
     extraPackages = ps: with ps; [ psycopg2 ];
+
+    themes = with pkgs.home-assistant-themes; [
+      material-you-theme
+    ];
     # openFirewall = true;
     extraComponents = [
       "analytics"
