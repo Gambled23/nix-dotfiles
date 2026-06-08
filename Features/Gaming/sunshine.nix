@@ -38,8 +38,8 @@
           elevated = "false";
         }
         {
-          name = "tv-sala";
-          cmd = "display-device -d tv-sala";
+          name = "1080-169";
+          cmd = "display-device -d 1080-169";
           exclude-global-prep-cmd = "false";
           elevated = "false";
         }
