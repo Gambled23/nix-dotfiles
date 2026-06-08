@@ -68,6 +68,7 @@ pkgs.writeShellScriptBin "display-device" ''
           mode = \"1280x800@60\",
           position = \"0x0\",
           scale = \"1\",
+          disabled = false,
       })
 
       hl.monitor({
@@ -82,6 +83,7 @@ pkgs.writeShellScriptBin "display-device" ''
           mode = \"3440x1440@180\",
           position = \"0x0\",
           scale = \"1\",
+          disabled = false,
       })
 
       hl.monitor({
@@ -96,6 +98,7 @@ pkgs.writeShellScriptBin "display-device" ''
           mode = \"1920x1200@60\",
           position = \"0x0\",
           scale = \"1\",
+          disabled = false,
       })
 
       hl.monitor({
@@ -110,6 +113,7 @@ pkgs.writeShellScriptBin "display-device" ''
           mode = \"1920x1080@60\",
           position = \"0x0\",
           scale = \"1\",
+          disabled = false,
       })
 
       hl.monitor({
@@ -126,6 +130,7 @@ pkgs.writeShellScriptBin "display-device" ''
           mode = \"2992x1344@120\",
           position = \"0x0\",
           scale = \"1\",
+          disabled = false,
       })
 
       hl.monitor({
