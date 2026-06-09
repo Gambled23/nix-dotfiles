@@ -595,6 +595,9 @@ in
                   id = "plugin:e11650:display-device";
                 }
                 {
+                  id = "plugin:monique";
+                }
+                {
                   id = "plugin:clipboard";
                 }
                 {
@@ -741,6 +744,9 @@ in
                 }
                 {
                   id = "plugin:e11650:display-device";
+                }
+                {
+                  id = "plugin:monique";
                 }
                 {
                   colorizeDistroLogo = false;
@@ -1370,6 +1376,10 @@ in
           sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
         };
         kde-connect = {
+          enabled = true;
+          sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
+        };
+        monique = {
           enabled = true;
           sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
         };

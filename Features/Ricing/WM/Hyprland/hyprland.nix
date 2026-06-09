@@ -59,7 +59,15 @@ with lib;
       pkgs.xdg-desktop-portal-gtk
       pkgs.kdePackages.xdg-desktop-portal-kde
     ];
-    config.common.default = "hyprland;gtk";
+    config = {
+      common = {
+        default = [ "hyprland;gtk" ];
+        # Send settings requests (used by Monique/GTK apps) to the GTK portal
+        "org.freedesktop.impl.portal.Settings" = [ "gtk" ];
+        # Use GTK for file choosers too (optional but recommended)
+        "org.freedesktop.impl.portal.FileChooser" = [ "gtk" ];
+      };
+    };
   };
 
   # Icons for hyprpanel and others
