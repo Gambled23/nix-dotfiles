@@ -8,7 +8,7 @@ pkgs.writeShellScriptBin "nix-rbd" ''
   git pull
 
   git add --all
-  git reset -- nvf.nix spicetify.ini #Don't commit changes to these files, they are local overrides
+  git restore --staged Features/Ricing/noctalia_colors/nvf.nix Features/Ricing/noctalia_colors/spicetify.ini
 
   rebuild_mode="switch"
 

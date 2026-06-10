@@ -943,7 +943,7 @@ in
       };
 
       general = {
-        avatarImage = "/home/gambled/face.jpg";
+        avatarImage = "/home/gambled/Pictures/face.jpg";
         dimmerOpacity = 0.2;
         showScreenCorners = false;
         forceBlackScreenCorners = false;
