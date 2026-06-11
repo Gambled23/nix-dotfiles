@@ -11,7 +11,7 @@
 
     ../../Features/Dev/ollama-client.nix
     ../../Features/Dev/docker.nix
-    ../../Features/Dev/mariadb.nix
+    # ../../Features/Dev/mariadb.nix
 
     # bootloader
     ../../Features/Boot/grub.nix

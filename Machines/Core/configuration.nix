@@ -91,6 +91,10 @@
 
   # Extra services
   services.fwupd.enable = true; # Enable firmware updates
+  systemd.services.fwupd-refresh = {
+    # Forces Systemd to recognize the exit code returned by fwupdmgr (usually 2) as a success
+    serviceConfig.SuccessExitStatus = "2";
+  };
 
   nixpkgs.config.allowUnfree = true;
   # nixpkgs.config.packageOverrides = pkgs: {
