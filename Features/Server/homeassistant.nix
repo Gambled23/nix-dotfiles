@@ -50,6 +50,7 @@ in
       bubble-card
       mushroom
       navbar-card
+      material-you-utilities
     ];
     config = {
       # Includes dependencies for a basic setup
