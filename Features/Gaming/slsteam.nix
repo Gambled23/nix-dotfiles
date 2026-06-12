@@ -18,6 +18,8 @@
       2612700 # S4U CITYPUNK 2011 AND LOVE PUNCH
       1539140 # STONKS9800 Stock Market Simulator
       2581950 # Tiny Aquarium
+      3833760 # You Know The Drill
+      2914150 # Yunyun Syndrome Rhythm Psychosis
     ];
     AdditionalApps = [
       2868840 # Slay the Spire 2
@@ -33,6 +35,8 @@
       2612700 # S4U CITYPUNK 2011 AND LOVE PUNCH
       1539140 # STONKS9800 Stock Market Simulator
       2581950 # Tiny Aquarium
+      2914150 # Yunyun Syndrome Rhythm Psychosis
+      3833760 # You Know The Drill
     ];
     SafeMode = true;
   };

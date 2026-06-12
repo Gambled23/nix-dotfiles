@@ -22,7 +22,7 @@
   environment.systemPackages = with pkgs; [
     lact # gpu overclocking
     i2c-tools #for monitoring sensors
-    ryubing
+    eden
     dolphin-emu
     dotnet-runtime_9
 

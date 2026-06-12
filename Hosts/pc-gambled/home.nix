@@ -9,8 +9,6 @@
   home.stateVersion = "26.05";
   imports = [
     inputs.sls-steam.homeModules.sls-steam
-
-    ./hyprland.nix
     ../../Machines/Core/home.nix
     ../../Machines/Desktop/home.nix
 
@@ -32,7 +30,6 @@
     # jdk25_headless
 
     #* games
-    eden
     inputs.accela.packages.${pkgs.stdenv.hostPlatform.system}.default
     # vintagestory
     # itch

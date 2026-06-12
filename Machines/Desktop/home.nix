@@ -17,8 +17,6 @@
   home.packages = with pkgs; [
     #* dev tools
     github-cli
-    act3
-    zed-editor-fhs
     vscode
     inputs.antigravity-nix.packages.x86_64-linux.google-antigravity-no-fhs # Base App
     inputs.antigravity-nix.packages.x86_64-linux.google-antigravity-ide-no-fhs # IDE
@@ -39,6 +37,7 @@
     scrcpy
     siyuan
     qalculate-gtk
+    gnome-control-center
     # zoom-us
 
     #* webbrowsers

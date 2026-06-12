@@ -23,5 +23,6 @@
 
     #* utils
     moonlight-qt
+    vlc
   ];
 }

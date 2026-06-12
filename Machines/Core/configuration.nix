@@ -29,6 +29,7 @@
   ''   
     98.89.51.199 app.og26.mx
     98.89.51.199 www.ida-imagenologia.com
+    98.89.51.199 factorio.alphapm.mx
     192.168.1.1 router
 
     10.243.0.1 server-gambled
@@ -90,6 +91,10 @@
 
   # Extra services
   services.fwupd.enable = true; # Enable firmware updates
+  systemd.services.fwupd-refresh = {
+    # Forces Systemd to recognize the exit code returned by fwupdmgr (usually 2) as a success
+    serviceConfig.SuccessExitStatus = "2";
+  };
 
   nixpkgs.config.allowUnfree = true;
   # nixpkgs.config.packageOverrides = pkgs: {

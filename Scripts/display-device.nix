@@ -7,40 +7,20 @@ pkgs.writeShellScriptBin "display-device" ''
   display_name=""
   CONFIG_FILE="$HOME/.config/display-device"
 
-  # -d expects an argument, h is help
-  while getopts "hd:ac" opt; do
+  # -d expects an argument, h is help, r is restore
+  while getopts "hd:acr" opt; do
     case "$opt" in
       h)
-        echo "Usage: display-device -d <display_name>"
-        echo "  -d <display_name>   One of 'pc-gambled', 'steamdeck', 'dev-gambled', 'android-gambled', 'tv-sala'"
+        echo "Usage: display-device [options]"
+        echo "  -d <display_name>   Switch to: 'pc-gambled', 'steamdeck', 'dev-gambled', 'android-gambled', '1080-169'"
+        echo "  -r                  Restore display configuration from saved state"
+        echo "  -c                  Show current display configuration"
+        echo "  -a                  List available display configurations"
         echo "  -h                  Show this help"
         exit 0
         ;;
       d)
         display_name="$OPTARG"
-        ;;
-      a)
-        echo "  pc-gambled"
-        echo "  steamdeck"
-        echo "  dev-gambled"
-        echo "  android-gambled"
-        echo "  tv-sala"
-        exit 0
-        ;;
-      c)
-        if [ -f "$CONFIG_FILE" ]; then
-          echo "Current display name: $(cat "$CONFIG_FILE")"
-        else
-          echo "No display name set yet"
-        fi
-        exit 0
-        ;;
-      \?)
-        echo "Invalid option: -$OPTARG" >&2
-        echo "Usage: display-device -d <display_name>"
-        echo "  -d <display_name>   One of 'pc-gambled', 'steamdeck', 'dev-gambled', 'android-gambled', 'tv-sala'"
-        echo "  -h                  Show this help"
-        exit 1
         ;;
     esac
   done
@@ -49,94 +29,99 @@ pkgs.writeShellScriptBin "display-device" ''
 
   if [ -z "$display_name" ]; then
     echo "No display name provided." >&2
-    echo "Usage: display-device -d <display_name>"
-    echo "  -d <display_name>   One of 'pc-gambled', 'steamdeck', 'dev-gambled', 'android-gambled', 'tv-sala'"
+    echo "Usage: display-device [options]" >&2
+    echo "  -d <display_name>   Switch to: 'pc-gambled', 'steamdeck', 'dev-gambled', 'android-gambled', '1080-169'" >&2
     exit 1
   fi
-
-  # Save display name to file
-  mkdir -p "$(dirname "$CONFIG_FILE")"
-  echo "$display_name" > "$CONFIG_FILE"
 
   case "$display_name" in
     steamdeck)
       hyprctl dispatch workspace 8
       steam steam://open/bigpicture
-      hyprctl eval "
-      hl.monitor({
-          output = \"DP-3\",
-          mode = \"1280x800@60\",
-          position = \"0x0\",
-          scale = \"1\",
-      })
+      monique --switch-profile "steamdeck"
+      # hyprctl eval "
+      # hl.monitor({
+      #     output = \"sunshine\",
+      #     mode = \"1280x800@60\",
+      #     position = \"0x0\",
+      #     scale = \"1\",
+      #     disabled = false,
+      # })
 
-      hl.monitor({
-          output = \"sunshine\",
-          disabled = true,
-      })"
+      # hl.monitor({
+      #     output = \"DP-3\",
+      #     disabled = true,
+      # })"
       ;;
     pc-gambled)
-      hyprctl eval "
-      hl.monitor({
-          output = \"DP-3\",
-          mode = \"3440x1440@180\",
-          position = \"0x0\",
-          scale = \"1\",
-      })
+      monique --switch-profile "pc-gambled"
+      # hyprctl eval "
+      # hl.monitor({
+      #     output = \"DP-3\",
+      #     mode = \"3440x1440@180\",
+      #     position = \"0x0\",
+      #     scale = \"1\",
+      #     disabled = false,
+      # })
 
-      hl.monitor({
-          output = \"sunshine\",
-          disabled = true,
-      })"
+      # hl.monitor({
+      #     output = \"sunshine\",
+      #     disabled = true,
+      # })"
       ;;
     dev-gambled)
-      hyprctl eval "
-      hl.monitor({
-          output = \"sunshine\",
-          mode = \"1920x1200@60\",
-          position = \"0x0\",
-          scale = \"1\",
-      })
+      monique --switch-profile "dev-gambled"
+      # hyprctl eval "
+      # hl.monitor({
+      #     output = \"sunshine\",
+      #     mode = \"1920x1200@60\",
+      #     position = \"0x0\",
+      #     scale = \"1\",
+      #     disabled = false,
+      # })
 
-      hl.monitor({
-          output = \"DP-3\",
-          disabled = true,
-      })"
+      # hl.monitor({
+      #     output = \"DP-3\",
+      #     disabled = true,
+      # })"
       ;;
-    tv-sala)
-      hyprctl eval "
-      hl.monitor({
-          output = \"DP-3\",
-          mode = \"1920x1080@60\",
-          position = \"0x0\",
-          scale = \"1\",
-      })
+    1080-169)
+      monique --switch-profile "1080-169"
+      # hyprctl eval "
+      # hl.monitor({
+      #     output = \"sunshine\",
+      #     mode = \"1920x1080@60\",
+      #     position = \"0x0\",
+      #     scale = \"1\",
+      #     disabled = false,
+      # })
 
-      hl.monitor({
-          output = \"sunshine\",
-          disabled = true,
-      })"
+      # hl.monitor({
+      #     output = \"DP-3\",
+      #     disabled = true,
+      # })"
       ;;
     android-gambled)
       hyprctl dispatch workspace 8
       steam steam://open/bigpicture
-      hyprctl eval "
-      hl.monitor({
-          output = \"sunshine\",
-          mode = \"2992x1344@120\",
-          position = \"0x0\",
-          scale = \"1\",
-      })
+      monique --switch-profile "android-gambled"
+      # hyprctl eval "
+      # hl.monitor({
+      #     output = \"sunshine\",
+      #     mode = \"2992x1344@120\",
+      #     position = \"0x0\",
+      #     scale = \"1\",
+      #     disabled = false,
+      # })
 
-      hl.monitor({
-          output = \"DP-3\",
-          disabled = true,
-      })"
+      # hl.monitor({
+      #     output = \"DP-3\",
+      #     disabled = true,
+      # })"
       ;;
     *)
       echo "Invalid display name: $display_name" >&2
       echo "Usage: display-device -d <display_name>"
-      echo "  -d <display_name>   One of 'pc-gambled', 'steamdeck', 'dev-gambled', 'android-gambled', 'tv-sala'"
       echo "  -h                  Show this help"
       exit 1
       ;;

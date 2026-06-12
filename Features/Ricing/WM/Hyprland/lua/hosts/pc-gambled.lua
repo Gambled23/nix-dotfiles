@@ -21,4 +21,5 @@ hl.window_rule({
 hl.on("hyprland.start", function()
     hl.exec_cmd("steam %U")
     hl.exec_cmd("hyprctl output create headless sunshine")
+    hl.exec_cmd("display-device -r")
 end)

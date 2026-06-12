@@ -3,6 +3,7 @@ require("configs.binds")
 require("configs.execs")
 require("rules.windows")
 require("rules.layers")
+require("monitors")
 
 local function getHostname()
     local f = io.popen("hostname")
@@ -37,7 +38,7 @@ hl.config({
             enabled = true,
             new_optimizations = true,
             noise = 0,
-            passes = 3,
+            passes = 2,
             popups = true,
             size = 5,
             special = true,
