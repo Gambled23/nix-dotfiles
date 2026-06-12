@@ -37,7 +37,6 @@
 
   nixpkgs.overlays = [
     inputs.millennium.overlays.default
-    inputs.monique.overlays.default
   ];
 
   # programs.gamescope = {

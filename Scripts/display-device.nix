@@ -38,81 +38,86 @@ pkgs.writeShellScriptBin "display-device" ''
     steamdeck)
       hyprctl dispatch workspace 8
       steam steam://open/bigpicture
-      hyprctl eval "
-      hl.monitor({
-          output = \"sunshine\",
-          mode = \"1280x800@60\",
-          position = \"0x0\",
-          scale = \"1\",
-          disabled = false,
-      })
+      monique --switch-profile "steamdeck"
+      # hyprctl eval "
+      # hl.monitor({
+      #     output = \"sunshine\",
+      #     mode = \"1280x800@60\",
+      #     position = \"0x0\",
+      #     scale = \"1\",
+      #     disabled = false,
+      # })
 
-      hl.monitor({
-          output = \"DP-3\",
-          disabled = true,
-      })"
+      # hl.monitor({
+      #     output = \"DP-3\",
+      #     disabled = true,
+      # })"
       ;;
     pc-gambled)
-      hyprctl eval "
-      hl.monitor({
-          output = \"DP-3\",
-          mode = \"3440x1440@180\",
-          position = \"0x0\",
-          scale = \"1\",
-          disabled = false,
-      })
+      monique --switch-profile "pc-gambled"
+      # hyprctl eval "
+      # hl.monitor({
+      #     output = \"DP-3\",
+      #     mode = \"3440x1440@180\",
+      #     position = \"0x0\",
+      #     scale = \"1\",
+      #     disabled = false,
+      # })
 
-      hl.monitor({
-          output = \"sunshine\",
-          disabled = true,
-      })"
+      # hl.monitor({
+      #     output = \"sunshine\",
+      #     disabled = true,
+      # })"
       ;;
     dev-gambled)
-      hyprctl eval "
-      hl.monitor({
-          output = \"sunshine\",
-          mode = \"1920x1200@60\",
-          position = \"0x0\",
-          scale = \"1\",
-          disabled = false,
-      })
+      monique --switch-profile "dev-gambled"
+      # hyprctl eval "
+      # hl.monitor({
+      #     output = \"sunshine\",
+      #     mode = \"1920x1200@60\",
+      #     position = \"0x0\",
+      #     scale = \"1\",
+      #     disabled = false,
+      # })
 
-      hl.monitor({
-          output = \"DP-3\",
-          disabled = true,
-      })"
+      # hl.monitor({
+      #     output = \"DP-3\",
+      #     disabled = true,
+      # })"
       ;;
     1080-169)
-      hyprctl eval "
-      hl.monitor({
-          output = \"sunshine\",
-          mode = \"1920x1080@60\",
-          position = \"0x0\",
-          scale = \"1\",
-          disabled = false,
-      })
+      monique --switch-profile "1080-169"
+      # hyprctl eval "
+      # hl.monitor({
+      #     output = \"sunshine\",
+      #     mode = \"1920x1080@60\",
+      #     position = \"0x0\",
+      #     scale = \"1\",
+      #     disabled = false,
+      # })
 
-      hl.monitor({
-          output = \"DP-3\",
-          disabled = true,
-      })"
+      # hl.monitor({
+      #     output = \"DP-3\",
+      #     disabled = true,
+      # })"
       ;;
     android-gambled)
       hyprctl dispatch workspace 8
       steam steam://open/bigpicture
-      hyprctl eval "
-      hl.monitor({
-          output = \"sunshine\",
-          mode = \"2992x1344@120\",
-          position = \"0x0\",
-          scale = \"1\",
-          disabled = false,
-      })
+      monique --switch-profile "android-gambled"
+      # hyprctl eval "
+      # hl.monitor({
+      #     output = \"sunshine\",
+      #     mode = \"2992x1344@120\",
+      #     position = \"0x0\",
+      #     scale = \"1\",
+      #     disabled = false,
+      # })
 
-      hl.monitor({
-          output = \"DP-3\",
-          disabled = true,
-      })"
+      # hl.monitor({
+      #     output = \"DP-3\",
+      #     disabled = true,
+      # })"
       ;;
     *)
       echo "Invalid display name: $display_name" >&2
