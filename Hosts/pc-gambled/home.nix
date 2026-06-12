@@ -25,7 +25,6 @@
     grayjay
 
     #* dev tools
-    vscode
     # android-studio
     # jdk25_headless
 
@@ -35,6 +34,7 @@
     # itch
     gamemode
     winetricks
+    steam-rom-manager
     # osu-lazer-bin
     # tetrio-desktop
     # prismlauncher #minecra

@@ -14,7 +14,6 @@
 
   home.packages = with pkgs; [
     #* dev tools
-    dbeaver-bin
     bruno
     awscli
     remmina
