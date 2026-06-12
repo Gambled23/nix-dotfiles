@@ -25,8 +25,6 @@
     grayjay
 
     #* dev tools
-    vscode
-    dbeaver
     # android-studio
     # jdk25_headless
 
