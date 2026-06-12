@@ -91,7 +91,6 @@ in
       #   YAML automations go here
       # ];
 
-      lovelace.resource_mode = "yaml";
       recorder.db_url = "postgresql://@/hass";
 
       shell_command = {
@@ -112,6 +111,14 @@ in
         "reboot_to_windows" = ssh_command + "'reboot-to-windows'";
         "display_device_steamdeck" = ssh_command + "'display-device -d steamdeck'";
         "display_device_pc_gambled" = ssh_command + "'display-device -d pc-gambled'";
+      };
+
+      panel_custom = {
+        name = "material-you-panel";
+        url_path = "material-you-configuration";
+        sidebar_title = "Material You Utilities";
+        sidebar_icon = "mdi:material-design";
+        module_url = "/local/nixos-lovelace-modules/material-you-utilities.min.js";
       };
     };
 
