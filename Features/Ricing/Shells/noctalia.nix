@@ -1,6 +1,6 @@
 # Home manager file
-{ lib, inputs, pkgs, config, osConfig, ... }: 
-let 
+{ lib, inputs, pkgs, config, osConfig, ... }:
+let
   default_desktop_widgets = [
     {
       clockColor = "none";
@@ -259,7 +259,7 @@ let
       }
     ];
   };
-in 
+in
 {
   imports = [
     inputs.noctalia.homeModules.default
@@ -622,14 +622,39 @@ in
             widgets = {
               left = [
                 {
-                  icon = "rocket";
-                  id = "Launcher";
-                  iconColor = "none";
-                  useDistroLogo = false;
-                  colorizeSystemIcon = "none";
+                  colorizeSystemIcon = "primary";
                   colorizeSystemText = "none";
-                  customIconPath = "";
-                  enableColorization = false;
+                  generalTooltipText = "Vicinae";
+                  hideMode = "alwaysExpanded";
+                  icon = "rocket";
+                  iconPosition = "left";
+                  id = "CustomButton";
+                  ipcIdentifier = "";
+                  leftClickExec = "vicinae toggle";
+                  leftClickUpdateText = true;
+                  maxTextLength = {
+                    horizontal = 10;
+                    vertical = 10;
+                  };
+                  middleClickExec = "";
+                  middleClickUpdateText = false;
+                  parseJson = false;
+                  rightClickExec = "";
+                  rightClickUpdateText = false;
+                  showExecTooltip = true;
+                  showIcon = true;
+                  showTextTooltip = true;
+                  textCollapse = "";
+                  textCommand = "";
+                  textIntervalMs = 3000;
+                  textStream = false;
+                  wheelDownExec = "";
+                  wheelDownUpdateText = false;
+                  wheelExec = "";
+                  wheelMode = "unified";
+                  wheelUpExec = "";
+                  wheelUpUpdateText = false;
+                  wheelUpdateText = false;
                 }
                 {
                   defaultSettings = {

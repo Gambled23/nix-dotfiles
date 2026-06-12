@@ -12,7 +12,7 @@
       autoStart = true;
     };
     settings = {
-      close_on_focus_loss = true;
+      close_on_focus_loss = false;
       consider_preedit = true;
       pop_to_root_on_close = true;
       favicon_service = "twenty";
@@ -36,7 +36,7 @@
         rounding = 10;
       };
       launcher_window = {
-        opacity = lib.mkForce 0.6;
+        opacity = lib.mkForce 0.2;
       };
       providers = {
         "@knoopx/vicinae-extension-nix-0" = {
