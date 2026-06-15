@@ -36,7 +36,7 @@
         rounding = 10;
       };
       launcher_window = {
-        opacity = lib.mkForce 0.2;
+        opacity = lib.mkForce 0.5;
       };
       providers = {
         "@knoopx/vicinae-extension-nix-0" = {

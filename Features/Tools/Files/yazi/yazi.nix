@@ -6,12 +6,15 @@
 
     plugins = {
       inherit (pkgs.yaziPlugins) mount;
+      bookmarks = pkgs.yaziPlugins.bookmarks;
       compress = pkgs.yaziPlugins.compress;
       drag = pkgs.yaziPlugins.drag;
       duckdb = pkgs.yaziPlugins.duckdb;
       full-border = pkgs.yaziPlugins.full-border;
       git = pkgs.yaziPlugins.git;
       gvfs = pkgs.yaziPlugins.gvfs;
+      kdeconnect-send = pkgs.yaziPlugins.kdeconnect-send;
+      keep-preferences = pkgs.yaziPlugins.keep-preferences;
       lazygit = pkgs.yaziPlugins.lazygit;
       recycle-bin = pkgs.yaziPlugins.recycle-bin;
       relative-motions = pkgs.yaziPlugins.relative-motions;
@@ -23,7 +26,7 @@
     };
 
     keymap = {
-      mgr.prepend_keymap = [
+      manager.prepend_keymap = [
         { run = "plugin drag"; on = [ "<C-d>" ]; desc="Drag files"; }
         { run = "plugin lazygit"; on = [ "g" "i" ]; desc="Enter lazygit"; }
         { run = "plugin recycle-bin"; on = [ "g" "b" ]; desc="Recycle bin"; }
@@ -63,6 +66,13 @@
         { run = "plugin relative-motions 7"; on = [ "7" ]; desc="Move in relative steps"; }
         { run = "plugin relative-motions 8"; on = [ "8" ]; desc="Move in relative steps"; }
         { run = "plugin relative-motions 9"; on = [ "9" ]; desc="Move in relative steps"; }
+        # bookmarks
+        { run = "plugin bookmarks save"; on = [ "b" "a" ]; desc="Save current directory as bookmark"; }
+        { run = "plugin bookmarks delete"; on = [ "b" "d" ]; desc="Delete a bookmark"; }
+        { run = "plugin bookmarks delete_all"; on = [ "b" "D" ]; desc="Delete all bookmarks"; }
+        { run = "plugin bookmarks jump"; on = [ "'" ]; desc="Jump to a bookmark"; }
+        # Kde connect plugin
+        { run = "plugin kdeconnect-send"; on = [ "<C-s>" ]; desc="Send selected files to a KDE Connect device"; }
         # Extras
         { run = "shell \"$SHELL\" --block"; on = [ "!" ]; desc = "Open $SHELL here"; }
       ];
@@ -79,7 +89,7 @@
         sort_sensitive = true;
         sort_reverse = false;
         sort_dir_first = true;
-        linemode = "none";
+        linemode = "size";
         show_hidden = true;
         show_symlink = true;
       };

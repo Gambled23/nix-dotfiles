@@ -47,10 +47,12 @@ in
       home-assistant-custom-components.scheduler
     ];
     customLovelaceModules = with pkgs.home-assistant-custom-lovelace-modules; [
+      (callPackage ../../Pkgs/material-components/package.nix {})
       bubble-card
       mushroom
       navbar-card
       material-you-utilities
+      xiaomi-vacuum-map-card
     ];
     config = {
       # Includes dependencies for a basic setup
