@@ -12,10 +12,10 @@ buildNpmPackage rec {
     owner = "giovannilamarmora";
     repo = "lovelace-material-components";
     rev = "v${version}";
-    hash = "sha256-kYaAg5HJGoUpAllzJNYrVITbmZ8txJRoikfLLzyDHJo=";
+    hash = "sha256-CGR//TPl1eOisua9DTlrpu6eY4R4pgTWLd9oPFAx8Xw=";
   };
 
-  npmDepsHash = "sha256-jyw8U99R7M3JJwu30ADefAitm4lWWVHEwq108gWZpfg=";
+  npmDepsHash = lib.fakeHash;
 
   preBuild = ''
     rm -rf dist
@@ -35,7 +35,7 @@ buildNpmPackage rec {
     changelog = "https://github.com/giovannilamarmora/lovelace-material-components/releases/tag/v${version}";
     description = "Material Home Component is a custom Home Assistant plugin that displays interactive cards for your devices. It shows real-time status (e.g., playing, idle), current media information, and allows quick control like play/pause, volume adjustment, and more — all styled with a modern, dynamic UI.";
     homepage = "https://github.com/giovannilamarmora/lovelace-material-components";
-    license = lib.licenses.apache20;
+    license = lib.licenses.asl20;
     maintainers = with lib.maintainers; [ gambled23 ];
   };
 }

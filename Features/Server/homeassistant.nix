@@ -46,13 +46,13 @@ in
       home-assistant-custom-components.dreo
       home-assistant-custom-components.scheduler
     ];
-    customLovelaceModules = with pkgs.home-assistant-custom-lovelace-modules; [
+    customLovelaceModules = with pkgs; [
       (callPackage ../../Pkgs/material-components/package.nix {})
-      bubble-card
-      mushroom
-      navbar-card
-      material-you-utilities
-      xiaomi-vacuum-map-card
+      home-assistant-custom-lovelace-modules.bubble-card
+      home-assistant-custom-lovelace-modules.mushroom
+      home-assistant-custom-lovelace-modules.navbar-card
+      home-assistant-custom-lovelace-modules.material-you-utilities
+      home-assistant-custom-lovelace-modules.xiaomi-vacuum-map-card
     ];
     config = {
       # Includes dependencies for a basic setup
