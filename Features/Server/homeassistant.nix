@@ -47,7 +47,7 @@ in
       home-assistant-custom-components.scheduler
     ];
     customLovelaceModules = with pkgs; [
-      # (callPackage ../../Pkgs/material-components/package.nix {})
+      (callPackage ../../Pkgs/material-components/package.nix {})
       home-assistant-custom-lovelace-modules.bubble-card
       home-assistant-custom-lovelace-modules.mushroom
       home-assistant-custom-lovelace-modules.navbar-card
