@@ -81,7 +81,7 @@ hl.window_rule({
 
 hl.window_rule({
     match = {
-        class = "(mpv)",
+        class = "(mpv|vlc)",
     },
     float = true,
     center = true,
