@@ -12,7 +12,7 @@
     openFirewall = true;
     settings = {
       sunshine_name = "el sunchine";
-      output_name = 1;
+      output_name = 0;
     };
     applications = {
       env = {
@@ -45,7 +45,6 @@
         }
         {
           name = "no-change";
-          cmd = "";
           exclude-global-prep-cmd = "false";
           elevated = "false";
         }
