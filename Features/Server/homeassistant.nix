@@ -48,10 +48,14 @@ in
     ];
     customLovelaceModules = with pkgs; [
       (callPackage ../../Pkgs/material-components/package.nix {})
+      home-assistant-custom-lovelace-modules.auto-entities
+      home-assistant-custom-lovelace-modules.button-card
       home-assistant-custom-lovelace-modules.bubble-card
+      home-assistant-custom-lovelace-modules.card-mod
       home-assistant-custom-lovelace-modules.mushroom
       home-assistant-custom-lovelace-modules.navbar-card
       home-assistant-custom-lovelace-modules.material-you-utilities
+      (callPackage ../../Pkgs/swipe-card/package.nix {})
       home-assistant-custom-lovelace-modules.xiaomi-vacuum-map-card
     ];
     config = {
