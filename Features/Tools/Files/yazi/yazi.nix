@@ -13,8 +13,8 @@
       full-border = pkgs.yaziPlugins.full-border;
       git = pkgs.yaziPlugins.git;
       gvfs = pkgs.yaziPlugins.gvfs;
-      kdeconnect-send = pkgs.yaziPlugins.kdeconnect-send;
-      keep-preferences = pkgs.yaziPlugins.keep-preferences;
+      # kdeconnect-send = pkgs.yaziPlugins.kdeconnect-send;
+      # keep-preferences = pkgs.yaziPlugins.keep-preferences;
       lazygit = pkgs.yaziPlugins.lazygit;
       recycle-bin = pkgs.yaziPlugins.recycle-bin;
       relative-motions = pkgs.yaziPlugins.relative-motions;
@@ -72,7 +72,7 @@
         { run = "plugin bookmarks delete_all"; on = [ "b" "D" ]; desc="Delete all bookmarks"; }
         { run = "plugin bookmarks jump"; on = [ "'" ]; desc="Jump to a bookmark"; }
         # Kde connect plugin
-        { run = "plugin kdeconnect-send"; on = [ "<C-s>" ]; desc="Send selected files to a KDE Connect device"; }
+        # { run = "plugin kdeconnect-send"; on = [ "<C-s>" ]; desc="Send selected files to a KDE Connect device"; }
         # Extras
         { run = "shell \"$SHELL\" --block"; on = [ "!" ]; desc = "Open $SHELL here"; }
       ];
