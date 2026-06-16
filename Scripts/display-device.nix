@@ -36,7 +36,6 @@ pkgs.writeShellScriptBin "display-device" ''
 
   case "$display_name" in
     steamdeck)
-      hyprctl dispatch workspace 8
       steam steam://open/bigpicture
       monique --switch-profile "steamdeck"
       # hyprctl eval "
@@ -102,7 +101,6 @@ pkgs.writeShellScriptBin "display-device" ''
       # })"
       ;;
     android-gambled)
-      hyprctl dispatch workspace 8
       steam steam://open/bigpicture
       monique --switch-profile "android-gambled"
       # hyprctl eval "

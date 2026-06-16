@@ -23,3 +23,24 @@ hl.on("hyprland.start", function()
     hl.exec_cmd("hyprctl output create headless sunshine")
     hl.exec_cmd("display-device -d pc-gambled")
 end)
+
+-- When a monitor becomes active (added/enabled), migrate ALL workspaces to it.
+-- This is needed because Hyprland does not automatically move workspaces off a
+-- *disabled* monitor (unlike a physically disconnected one). Without this, windows
+-- get stranded on the dead output and are inaccessible.
+local function migrate_all_workspaces_to(monitor_name)
+    local workspaces = hl.get_workspaces()
+    for _, ws in ipairs(workspaces) do
+        -- Skip special/scratchpad workspaces (id < 0)
+        if ws.id > 0 then
+            hl.dispatch(hl.dsp.workspace.move({ workspace = ws.id, monitor = monitor_name }))
+        end
+    end
+end
+
+hl.on("monitor.added", function(monitor)
+    if monitor.name == "sunshine" or monitor.name == "DP-3" then
+        migrate_all_workspaces_to(monitor.name)
+    end
+end)
+
