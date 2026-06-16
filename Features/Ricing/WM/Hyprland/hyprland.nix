@@ -17,7 +17,7 @@ with lib;
     kdePackages.qtwebsockets
     kdePackages.qt6ct
     kdePackages.qtwayland
-    libsForQt5.qt5.qtwayland
+    qt5.qtwayland
     pipewire
     pulseaudio
     pulsemeeter
