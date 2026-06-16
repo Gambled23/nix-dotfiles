@@ -81,3 +81,5 @@ require("bookmarks"):setup({
 		},
 	},
 })
+
+require("keep-preferences"):setup()

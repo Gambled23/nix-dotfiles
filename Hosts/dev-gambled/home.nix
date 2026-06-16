@@ -17,6 +17,7 @@
     bruno
     awscli
     remmina
+    mariadb
     # android-studio
     # jdk25_headless
 
