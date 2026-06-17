@@ -1,4 +1,7 @@
-{config, inputs, ...}:
+{inputs, osConfig, ...}:
+let 
+  hostconfig = if osConfig.networking.hostName == "pc-gambled" then ./hosts/pc-gambled.nix else ./hosts/dev-gambled.nix;
+in 
 {
   imports = [
     inputs.mangowm.hmModules.mango
@@ -8,6 +11,7 @@
     ./configs/input.nix
     ./rules/window.nix
     ./rules/layer.nix
+    hostconfig
   ];
 
   wayland.windowManager.mango = {

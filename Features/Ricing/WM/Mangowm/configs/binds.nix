@@ -1,7 +1,6 @@
 {mangowm, ...}:
 let 
   terminal="ghostty";
-  code = "code";
   file_manager = "${terminal} -e yazi";
   menu = "vicinae toggle";
   web_browser = "google-chrome-stable";
@@ -20,7 +19,7 @@ in
       "SUPER,r,spawn,${menu}"
       "SUPER,f,spawn,${web_browser}"
       "SUPER,Return,spawn,${terminal}"
-      "SUPER,c,spawn,${code}"
+      "SUPER,c,spawn,code"
       "SUPER,v,spawn,${terminal} -e vim"
       "SUPER,b,spawn,flatpak run com.artemchep.keyguard"
       "SUPER,m,spawn,noctalia-shell ipc call lockScreen lock"
@@ -56,15 +55,32 @@ in
       "SUPER+SHIFT,9,tagsilent,9"
       "SUPER+SHIFT,0,tagsilent,0"
 
+      # Windows
+      "SUPER,h,focusdir,left"
+      "SUPER,j,focusdir,down"
+      "SUPER,k,focusdir,up"
+      "SUPER,l,focusdir,right"
+      "SUPER+SHIFT,h,exchange_client,left"
+      "SUPER+SHIFT,j,exchange_client,down"
+      "SUPER+SHIFT,k,exchange_client,up"
+      "SUPER+SHIFT,l,exchange_client,right"
+      "SUPER+SHIFT,h,scroller_stack,left"
+      "SUPER+SHIFT,j,scroller_stack,down"
+      "SUPER+SHIFT,k,scroller_stack,up"
+      "SUPER+SHIFT,l,scroller_stack,right"
+
       # Media
-      "ALT,0,spawn,noctalia msg volume-up"
-      "ALT,9,spawn,noctalia msg volume-down"
-      "ALT,8,spawn,noctalia msg volume-mute"
-      "NONE,XF86AudioRaiseVolume,spawn,noctalia msg volume-up"
-      "NONE,XF86AudioLowerVolume,spawn,noctalia msg volume-down"
-      "NONE,XF86AudioMute,spawn,noctalia msg volume-mute"
-      "NONE,XF86MonBrightnessUp,spawn,noctalia msg brightness-up"
-      "NONE,XF86MonBrightnessDown,spawn,noctalia msg brightness-down"
+      "ALT,1,spawn,playerctl previous"
+      "ALT,2,spawn,playerctl play-pause"
+      "ALT,3,spawn,playerctl next"
+      "ALT,0,spawn,noctalia-shell ipc call volume increase"
+      "ALT,9,spawn,noctalia-shell ipc call volume decrease"
+      "ALT,8,spawn,noctalia-shell ipc call volume muteOutput"
+      "NONE,XF86AudioRaiseVolume,spawn,noctalia-shell ipc call volume increase"
+      "NONE,XF86AudioLowerVolume,spawn,noctalia-shell ipc call volume decrease"
+      "NONE,XF86AudioMute,spawn,noctalia-shell ipc call volume muteOutput"
+      "NONE,XF86MonBrightnessUp,spawn,noctalia-shell ipc call brightness increase"
+      "NONE,XF86MonBrightnessDown,spawn,noctalia-shell ipc call brightness decrease"
     ];
 
     mousebind = [
