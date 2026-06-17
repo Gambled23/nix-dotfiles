@@ -86,7 +86,7 @@ hl.window_rule({
     float = true,
     center = true,
     keep_aspect_ratio = true,
-    size = "284 160",
+    size = "284 161",
 })
 
 hl.window_rule({
