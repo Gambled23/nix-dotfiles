@@ -1,9 +1,13 @@
 { config, pkgs, lib, inputs, outputs, ... }:
 {
   imports = [
-    # Desktop enviroment
+    # Window Manager
     ../../Features/Ricing/WM/Hyprland/hyprland.nix
     # ../../Features/Ricing/WM/Niri/niri.nix
+    ../../Features/Ricing/WM/Mangowm/mangowm.nix
+
+    #Display Manager
+    ../../Features/Ricing/DM/ly.nix
   ];
 
   environment.systemPackages = with pkgs; [

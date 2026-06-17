@@ -12,6 +12,7 @@
     ../../Features/Gaming/nixcord.nix
     # ../../Features/Ricing/WM/Niri/config.nix
     ../../Features/Ricing/WM/Hyprland/config.nix
+    ../../Features/Ricing/WM/Mangowm/config.nix
   ];
 
   home.packages = with pkgs; [

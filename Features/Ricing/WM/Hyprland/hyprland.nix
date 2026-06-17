@@ -3,6 +3,10 @@
 with lib;
 
 {
+  imports = [
+    inputs.monique.nixosModules.default
+  ];
+
   programs.hyprland = {
     enable = true;
     withUWSM = true;
@@ -82,17 +86,6 @@ with lib;
 
   # yazi
   services.gvfs.enable = true;
-
-  # Display manager and session
-  services.displayManager.defaultSession = "hyprland-uwsm";
-  services.displayManager = {
-    autoLogin.enable = true;
-    autoLogin.user = "gambled";
-    ly = {
-      enable = true;
-    };
-    # plasma-login-manager.enable = true;
-  };
 
   services.xserver = {
     dpi = 98;

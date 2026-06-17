@@ -24,6 +24,11 @@
       inputs.hyprland.follows = "hyprland";
     };
 
+    mangowm = {
+      url = "github:mangowm/mango";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     vicinae.url = "github:vicinaehq/vicinae";
     vicinae-extensions = {
       url = "github:vicinaehq/extensions";
@@ -99,6 +104,7 @@
     niri,
     antigravity-nix,
     monique,
+    mangowm,
     ...
     }@inputs:
   let
@@ -113,6 +119,7 @@
       inherit niri;
       inherit antigravity-nix;
       inherit monique;
+      inherit mangowm;
     };
 
     coreModules = [
@@ -133,7 +140,6 @@
         specialArgs = { inherit inputs; };
         modules = coreModules ++ [
           ./Hosts/dev-gambled/configuration.nix
-          monique.nixosModules.default
           {
             home-manager.users.gambled.imports = [
               ./Hosts/dev-gambled/home.nix
@@ -147,9 +153,7 @@
         specialArgs = { inherit inputs; };
         modules = coreModules ++ [
           ./Hosts/pc-gambled/configuration.nix
-          jovian-nixos.nixosModules.default
           nixos-hardware.nixosModules.gigabyte-b650
-          monique.nixosModules.default
           {
             home-manager.users.gambled.imports = [
               ./Hosts/pc-gambled/home.nix

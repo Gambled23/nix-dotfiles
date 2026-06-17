@@ -978,7 +978,7 @@ in
         boxRadiusRatio = 1;
         clockFormat = "hh\\nmm";
         clockStyle = "digital";
-        enableBlurBehind = true;
+        enableBlurBehind = false;
         enableLockScreenMediaControls = true;
         keybinds = {
           keyDown = [
@@ -1017,7 +1017,7 @@ in
         lockOnSuspend = true;
         showSessionButtonsOnLockScreen = false;
         showHibernateOnLockScreen = false;
-        enableShadows = true;
+        enableShadows = false;
         shadowDirection = "center";
         shadowOffsetX = 0;
         shadowOffsetY = 0;
@@ -1289,6 +1289,10 @@ in
           {
             enabled = true;
             id ="zed";
+          }
+          {
+            enabled = true;
+            id ="mango";
           }
         ];
         enableUserTheming = true;

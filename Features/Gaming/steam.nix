@@ -1,5 +1,9 @@
 { inputs, config, pkgs, lib, jovian-nixos, ... }:
 {
+  imports = [
+    jovian-nixos.nixosModules.default
+  ];
+  
   programs.steam = {
     enable = true;
     remotePlay.openFirewall = true;
