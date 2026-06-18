@@ -1,7 +1,7 @@
-{ inputs, config, pkgs, lib, jovian-nixos, ... }:
+{ inputs, config, pkgs, lib, ... }:
 {
   imports = [
-    jovian-nixos.nixosModules.default
+    inputs.jovian-nixos.nixosModules.default
   ];
   
   programs.steam = {
