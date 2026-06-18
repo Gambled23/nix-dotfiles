@@ -24,7 +24,7 @@
     shadows=1;
     layer_shadows=1;
     shadow_only_floating=1;
-    shadows_size=12;
+    shadows_size=8;
     shadows_blur=15;
     shadows_position_x=0;
     shadows_position_y=0;
