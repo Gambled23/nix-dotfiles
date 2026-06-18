@@ -34,6 +34,7 @@
     # stremio-linux-shell
 
     #* utils
+    pixelflasher
     android-tools
     onlyoffice-desktopeditors
     scrcpy

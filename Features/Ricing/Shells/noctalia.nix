@@ -248,6 +248,9 @@ let
         id = "plugin:assistant-panel";
       }
       {
+        id = "plugin:mangowc-layout-switcher";
+      }     
+      {
         colorizeDistroLogo = false;
         colorizeSystemIcon = "primary";
         colorizeSystemText = "none";
@@ -594,14 +597,17 @@ in
                 {
                   id = "plugin:e11650:display-device";
                 }
-                {
-                  id = "plugin:monique";
-                }
+                # {
+                #   id = "plugin:monique";
+                # }
                 {
                   id = "plugin:clipboard";
                 }
                 {
                   id = "plugin:assistant-panel";
+                }
+                {
+                  id = "plugin:mangowc-layout-switcher";
                 }
                 {
                   colorizeDistroLogo = false;
@@ -770,8 +776,11 @@ in
                 {
                   id = "plugin:e11650:display-device";
                 }
+                # {
+                #   id = "plugin:monique";
+                # }
                 {
-                  id = "plugin:monique";
+                  id = "plugin:mangowc-layout-switcher";
                 }
                 {
                   colorizeDistroLogo = false;
@@ -1408,10 +1417,10 @@ in
           enabled = true;
           sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
         };
-        monique = {
-          enabled = true;
-          sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
-        };
+        # monique = {
+        #   enabled = true;
+        #   sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
+        # };
         # polkit-agent = {
         #   enabled = true;
         #   sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
@@ -1445,6 +1454,10 @@ in
           sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
         };
         assistant-panel = {
+          enabled = true;
+          sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
+        };
+        mangowc-layout-switcher = {
           enabled = true;
           sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
         };

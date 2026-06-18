@@ -5,7 +5,7 @@
     windowrule =[
       "appid:Altus,tags:9,isopensilent:1"
       "appid:discord,tags:9,isopensilent:1"
-      "appid:Spotify,tags:0,isopensilent:1"
+      "appid:Spotify,tags:4,isopensilent:1"
       "appid:steam,tags:8,isopensilent:1"
       "appid:eden,tags:2"
       "appid:com.stremio.stremio,tags:7"
@@ -19,7 +19,7 @@
       "title:(Open File.*|Select Folder to Upload|Select a file|.*Yazi.*),width:1150,height:700,isfloating:1"
       "title:(Keyguard),width:790,height:570,isfloating:1"
       "title:(Yazi.*),width:600,height:400,isfloating:1"
-      "appid:vicinae,allow_csd:1"
+      "appid:vicinae,allow_csd:1,isnoanimation:1"
     ];
   };
 }

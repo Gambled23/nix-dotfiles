@@ -43,7 +43,6 @@ in
       "SUPER,7,view,7"
       "SUPER,8,view,8"
       "SUPER,9,view,9"
-      "SUPER,0,view,0"
       "SUPER+SHIFT,1,tagsilent,1"
       "SUPER+SHIFT,2,tagsilent,2"
       "SUPER+SHIFT,3,tagsilent,3"
@@ -86,6 +85,11 @@ in
     mousebind = [
       "SUPER,btn_left,moveresize,curmove"
       "SUPER,btn_right,moveresize,curresize"
+    ];
+
+    axisbind = [
+      "SUPER,UP,viewtoleft_have_client"
+      "SUPER,DOWN,viewtoright_have_client"
     ];
 
     tagrule = [
