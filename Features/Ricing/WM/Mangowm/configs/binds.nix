@@ -63,10 +63,10 @@ in
       "SUPER+SHIFT,j,exchange_client,down"
       "SUPER+SHIFT,k,exchange_client,up"
       "SUPER+SHIFT,l,exchange_client,right"
-      "SUPER+SHIFT,h,scroller_stack,left"
-      "SUPER+SHIFT,j,scroller_stack,down"
-      "SUPER+SHIFT,k,scroller_stack,up"
-      "SUPER+SHIFT,l,scroller_stack,right"
+      # "SUPER+SHIFT,h,scroller_stack,left"
+      # "SUPER+SHIFT,j,scroller_stack,down"
+      # "SUPER+SHIFT,k,scroller_stack,up"
+      # "SUPER+SHIFT,l,scroller_stack,right"
 
       # Media
       "ALT,1,spawn,playerctl previous"

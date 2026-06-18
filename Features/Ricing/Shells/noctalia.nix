@@ -368,14 +368,14 @@ in
       };
 
       audio = {
-        volumeStep = 5;
+        volumeStep = 1;
         volumeOverdrive = false;
         visualizerType = "wave";
         mprisBlacklist = [ ];
         preferredPlayer = "Spotify";
         volumeFeedback = true;
         spectrumFrameRate = 30;
-        volumeFeedbackSoundFile = "${pkgs.pantheon.elementary-sound-theme}/share/sounds/elementary/stereo/bell.wav";
+        volumeFeedbackSoundFile = "${pkgs.kdePackages.ocean-sound-theme}/share/sounds/ocean/stereo/audio-volume-change.oga";
         spectrumMirrored = true;
       };
 

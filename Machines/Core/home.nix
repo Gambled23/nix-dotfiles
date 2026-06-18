@@ -30,6 +30,7 @@
   home.packages = with pkgs; [
     #* dev tools
     gh
+    tmux
     lazyjournal
     devenv
     lazygit
