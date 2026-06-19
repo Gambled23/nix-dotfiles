@@ -40,12 +40,12 @@ pkgs.writeShellScriptBin "display-device" ''
   case "$display_name" in
     steamdeck)
       steam steam://open/bigpicture
-      mmsg dispatch destroy_all_virtual_output
-      mmsg dispatch create_virtual_output
-      ${pkgs.wlr-randr}/bin/wlr-randr --output HEADLESS-1 --pos 0,0 --scale 1 --custom-mode 1280x800@60Hz
-      mmsg dispatch disable_monitor,${monitor}
+      # mmsg dispatch destroy_all_virtual_output
+      # mmsg dispatch create_virtual_output
+      # ${pkgs.wlr-randr}/bin/wlr-randr --output HEADLESS-* --pos 0,0 --scale 1 --custom-mode 1280x800@60Hz
+      # mmsg dispatch disable_monitor,${monitor}
 
-      # monique --switch-profile "steamdeck"
+      monique --switch-profile "steamdeck"
       # hyprctl eval "
       # hl.monitor({
       #     output = \"sunshine\",
@@ -61,9 +61,9 @@ pkgs.writeShellScriptBin "display-device" ''
       # })"
       ;;
     pc-gambled)
-      mmsg dispatch enable_monitor,${monitor}
-      mmsg dispatch destroy_all_virtual_output
-      # monique --switch-profile "pc-gambled"
+      # mmsg dispatch enable_monitor,${monitor}
+      # mmsg dispatch destroy_all_virtual_output
+      monique --switch-profile "pc-gambled"
       # hyprctl eval "
       # hl.monitor({
       #     output = \"DP-3\",
@@ -79,11 +79,11 @@ pkgs.writeShellScriptBin "display-device" ''
       # })"
       ;;
     dev-gambled)
-      mmsg dispatch destroy_all_virtual_output
-      mmsg dispatch create_virtual_output
-      ${pkgs.wlr-randr}/bin/wlr-randr --output HEADLESS-1 --pos 0,0 --scale 1 --custom-mode 1920x1200@60Hz
-      mmsg dispatch disable_monitor,${monitor}
-      # monique --switch-profile "dev-gambled"
+      # mmsg dispatch destroy_all_virtual_output
+      # mmsg dispatch create_virtual_output
+      # ${pkgs.wlr-randr}/bin/wlr-randr --output HEADLESS-1 --pos 0,0 --scale 1 --custom-mode 1920x1200@60Hz
+      # mmsg dispatch disable_monitor,${monitor}
+      monique --switch-profile "dev-gambled"
       # hyprctl eval "
       # hl.monitor({
       #     output = \"sunshine\",
@@ -99,11 +99,11 @@ pkgs.writeShellScriptBin "display-device" ''
       # })"
       ;;
     1080-169)
-      mmsg dispatch destroy_all_virtual_output
-      mmsg dispatch create_virtual_output
-      ${pkgs.wlr-randr}/bin/wlr-randr --output HEADLESS-1 --pos 0,0 --scale 1 --custom-mode 1920x1080@60Hz
-      mmsg dispatch disable_monitor,${monitor}
-      # monique --switch-profile "1080-169"
+      # mmsg dispatch destroy_all_virtual_output
+      # mmsg dispatch create_virtual_output
+      # ${pkgs.wlr-randr}/bin/wlr-randr --output HEADLESS-1 --pos 0,0 --scale 1 --custom-mode 1920x1080@60Hz
+      # mmsg dispatch disable_monitor,${monitor}
+      monique --switch-profile "1080-169"
       # hyprctl eval "
       # hl.monitor({
       #     output = \"sunshine\",
@@ -120,11 +120,11 @@ pkgs.writeShellScriptBin "display-device" ''
       ;;
     android-gambled)
       steam steam://open/bigpicture
-      mmsg dispatch destroy_all_virtual_output
-      mmsg dispatch create_virtual_output
-      ${pkgs.wlr-randr}/bin/wlr-randr --output HEADLESS-1 --pos 0,0 --scale 1 --custom-mode 2244x1008@120Hz
-      mmsg dispatch disable_monitor,${monitor}
-      # monique --switch-profile "android-gambled"
+      # mmsg dispatch destroy_all_virtual_output
+      # mmsg dispatch create_virtual_output
+      # ${pkgs.wlr-randr}/bin/wlr-randr --output HEADLESS-1 --pos 0,0 --scale 1 --custom-mode 2244x1008@120Hz
+      # mmsg dispatch disable_monitor,${monitor}
+      monique --switch-profile "android-gambled"
       # hyprctl eval "
       # hl.monitor({
       #     output = \"sunshine\",
