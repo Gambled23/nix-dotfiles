@@ -4,7 +4,7 @@
   # services.displayManager.defaultSession = "hyprland-uwsm";
   services.displayManager.defaultSession = "mango";
   services.displayManager = {
-    autoLogin.enable = false;
+    autoLogin.enable = true;
     autoLogin.user = "gambled";
     ly = {
       enable = true;
