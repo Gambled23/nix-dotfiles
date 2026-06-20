@@ -1485,7 +1485,7 @@ in
       defaultWallpaper = "/etc/nixos/wallpaper.jpg";
       wallpapers = {
         "DP-3" = "/home/gambled/Pictures/Wallpapers/Ultrawide/abstract/wallhaven_lyql6p.jpg";
-        "sunshine" = "/home/gambled/Pictures/Wallpapers/Wide/anime/ononoki.png";
+        "sunshine" = "/home/gambled/Pictures/Wallpapers/Wide/irl/ferns-green.jpg";
         "HDMI-A-1" = "/home/gambled/Pictures/Wallpapers/Wide/vibrant/wallhaven_yj96lx.jpg";
         "eDP-1" = "/home/gambled/Pictures/Wallpapers/Wide/vibrant/wallhaven_yj96lx.jpg";
       };

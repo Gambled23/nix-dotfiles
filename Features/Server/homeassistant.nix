@@ -3,6 +3,12 @@ let
   ssh_command = "${pkgs.openssh}/bin/ssh -i ~/.ssh/id_ed25519 -o StrictHostKeyChecking=no gambled@pc-gambled ";
   pc_host = "192.168.1.25";
   pc_mac = "10:FF:E0:AB:9B:CB";
+
+  hyprland_fix = ''
+    export XDG_RUNTIME_DIR=/run/user/$(id -u);
+    export WAYLAND_DISPLAY=wayland-1;
+    export HYPRLAND_INSTANCE_SIGNATURE=$(ls -t $XDG_RUNTIME_DIR/hypr | head -n 1)
+  '';
 in
 {
   # systemctl --user stop openclaw-gateway
@@ -99,21 +105,21 @@ in
         "hibernate_pc" =  ssh_command + "'sudo systemctl hibernate'";
         "reboot_pc" =  ssh_command + "'sudo systemctl reboot'";
         "poweroff_pc" =  ssh_command + "'sudo systemctl poweroff'";
-        "desktop_1" =  ssh_command + "'hyprctl dispatch \"hl.dsp.focus({ workspace = 1 })\"'";
-        "desktop_2" =  ssh_command + "'hyprctl dispatch \"hl.dsp.focus({ workspace = 2 })\"'";
-        "desktop_3" =  ssh_command + "'hyprctl dispatch \"hl.dsp.focus({ workspace = 3 })\"'";
-        "desktop_4" =  ssh_command + "'hyprctl dispatch \"hl.dsp.focus({ workspace = 4 })\"'";
-        "desktop_5" =  ssh_command + "'hyprctl dispatch \"hl.dsp.focus({ workspace = 5 })\"'";
-        "desktop_6" =  ssh_command + "'hyprctl dispatch \"hl.dsp.focus({ workspace = 6 })\"'";
-        "desktop_7" =  ssh_command + "'hyprctl dispatch \"hl.dsp.focus({ workspace = 7 })\"'";
-        "desktop_8" =  ssh_command + "'hyprctl dispatch \"hl.dsp.focus({ workspace = 8 })\"'";
-        "desktop_9" =  ssh_command + "'hyprctl dispatch \"hl.dsp.focus({ workspace = 9 })\"'";
-        "desktop_10" =  ssh_command + "'hyprctl dispatch \"hl.dsp.focus({ workspace = 10 })\"'";
+        "desktop_1" =  ssh_command + "'${hyprland_fix}; hyprctl dispatch \"hl.dsp.focus({ workspace = 1 })\"'";
+        "desktop_2" =  ssh_command + "'${hyprland_fix}; hyprctl dispatch \"hl.dsp.focus({ workspace = 2 })\"'";
+        "desktop_3" =  ssh_command + "'${hyprland_fix}; hyprctl dispatch \"hl.dsp.focus({ workspace = 3 })\"'";
+        "desktop_4" =  ssh_command + "'${hyprland_fix}; hyprctl dispatch \"hl.dsp.focus({ workspace = 4 })\"'";
+        "desktop_5" =  ssh_command + "'${hyprland_fix}; hyprctl dispatch \"hl.dsp.focus({ workspace = 5 })\"'";
+        "desktop_6" =  ssh_command + "'${hyprland_fix}; hyprctl dispatch \"hl.dsp.focus({ workspace = 6 })\"'";
+        "desktop_7" =  ssh_command + "'${hyprland_fix}; hyprctl dispatch \"hl.dsp.focus({ workspace = 7 })\"'";
+        "desktop_8" =  ssh_command + "'${hyprland_fix}; hyprctl dispatch \"hl.dsp.focus({ workspace = 8 })\"'";
+        "desktop_9" =  ssh_command + "'${hyprland_fix}; hyprctl dispatch \"hl.dsp.focus({ workspace = 9 })\"'";
+        "desktop_10" =  ssh_command + "'${hyprland_fix}; hyprctl dispatch \"hl.dsp.focus({ workspace = 10 })\"'";
         "reboot_to_windows" =  ssh_command + "'reboot-to-windows'";
-        "display_device_steamdeck" =  ssh_command + "'display-device -d steamdeck'";
-        "display_device_pc_gambled" =  ssh_command + "'display-device -d pc-gambled'";
-        "display_device_dev_gambled" =  ssh_command + "'display-device -d dev-gambled'";
-        "display_device_tv" =  ssh_command + "'display-device -d tv'";
+        "display_device_steamdeck" =  ssh_command + "'${hyprland_fix}; display-device -d steamdeck'";
+        "display_device_pc_gambled" =  ssh_command + "'${hyprland_fix}; display-device -d pc-gambled'";
+        "display_device_dev_gambled" =  ssh_command + "'${hyprland_fix}; display-device -d dev-gambled'";
+        "display_device_tv" =  ssh_command + "'${hyprland_fix}; display-device -d tv'";
       };
 
       panel_custom = {
