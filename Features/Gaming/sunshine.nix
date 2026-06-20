@@ -20,14 +20,14 @@
       };
       apps = [
         {
-          name = "deck";
+          name = "steamdeck";
           cmd = "display-device -d steamdeck";
           exclude-global-prep-cmd = "false";
           elevated = "false";
         }
         {
-          name = "phone";
-          cmd = "display-device -d android-gambled";
+          name = "pc-gambled";
+          cmd = "display-device -d pc-gambled";
           exclude-global-prep-cmd = "false";
           elevated = "false";
         }
@@ -38,8 +38,8 @@
           elevated = "false";
         }
         {
-          name = "1080-169";
-          cmd = "display-device -d 1080-169";
+          name = "tv";
+          cmd = "display-device -d tv";
           exclude-global-prep-cmd = "false";
           elevated = "false";
         }

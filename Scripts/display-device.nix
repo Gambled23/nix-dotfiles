@@ -15,10 +15,8 @@ pkgs.writeShellScriptBin "display-device" ''
     case "$opt" in
       h)
         echo "Usage: display-device [options]"
-        echo "  -d <display_name>   Switch to: 'pc-gambled', 'steamdeck', 'dev-gambled', 'android-gambled', '1080-169'"
-        echo "  -r                  Restore display configuration from saved state"
+        echo "  -d <display_name>   Switch to: 'pc-gambled', 'steamdeck', 'dev-gambled', 'tv'"
         echo "  -c                  Show current display configuration"
-        echo "  -a                  List available display configurations"
         echo "  -h                  Show this help"
         exit 0
         ;;
@@ -40,104 +38,16 @@ pkgs.writeShellScriptBin "display-device" ''
   case "$display_name" in
     steamdeck)
       steam steam://open/bigpicture
-      # mmsg dispatch destroy_all_virtual_output
-      # mmsg dispatch create_virtual_output
-      # ${pkgs.wlr-randr}/bin/wlr-randr --output HEADLESS-* --pos 0,0 --scale 1 --custom-mode 1280x800@60Hz
-      # mmsg dispatch disable_monitor,${monitor}
-
       monique --switch-profile "steamdeck"
-      # hyprctl eval "
-      # hl.monitor({
-      #     output = \"sunshine\",
-      #     mode = \"1280x800@60\",
-      #     position = \"0x0\",
-      #     scale = \"1\",
-      #     disabled = false,
-      # })
-
-      # hl.monitor({
-      #     output = \"DP-3\",
-      #     disabled = true,
-      # })"
       ;;
     pc-gambled)
-      # mmsg dispatch enable_monitor,${monitor}
-      # mmsg dispatch destroy_all_virtual_output
       monique --switch-profile "pc-gambled"
-      # hyprctl eval "
-      # hl.monitor({
-      #     output = \"DP-3\",
-      #     mode = \"3440x1440@180\",
-      #     position = \"0x0\",
-      #     scale = \"1\",
-      #     disabled = false,
-      # })
-
-      # hl.monitor({
-      #     output = \"sunshine\",
-      #     disabled = true,
-      # })"
       ;;
     dev-gambled)
-      # mmsg dispatch destroy_all_virtual_output
-      # mmsg dispatch create_virtual_output
-      # ${pkgs.wlr-randr}/bin/wlr-randr --output HEADLESS-1 --pos 0,0 --scale 1 --custom-mode 1920x1200@60Hz
-      # mmsg dispatch disable_monitor,${monitor}
       monique --switch-profile "dev-gambled"
-      # hyprctl eval "
-      # hl.monitor({
-      #     output = \"sunshine\",
-      #     mode = \"1920x1200@60\",
-      #     position = \"0x0\",
-      #     scale = \"1\",
-      #     disabled = false,
-      # })
-
-      # hl.monitor({
-      #     output = \"DP-3\",
-      #     disabled = true,
-      # })"
       ;;
-    1080-169)
-      # mmsg dispatch destroy_all_virtual_output
-      # mmsg dispatch create_virtual_output
-      # ${pkgs.wlr-randr}/bin/wlr-randr --output HEADLESS-1 --pos 0,0 --scale 1 --custom-mode 1920x1080@60Hz
-      # mmsg dispatch disable_monitor,${monitor}
-      monique --switch-profile "1080-169"
-      # hyprctl eval "
-      # hl.monitor({
-      #     output = \"sunshine\",
-      #     mode = \"1920x1080@60\",
-      #     position = \"0x0\",
-      #     scale = \"1\",
-      #     disabled = false,
-      # })
-
-      # hl.monitor({
-      #     output = \"DP-3\",
-      #     disabled = true,
-      # })"
-      ;;
-    android-gambled)
-      steam steam://open/bigpicture
-      # mmsg dispatch destroy_all_virtual_output
-      # mmsg dispatch create_virtual_output
-      # ${pkgs.wlr-randr}/bin/wlr-randr --output HEADLESS-1 --pos 0,0 --scale 1 --custom-mode 2244x1008@120Hz
-      # mmsg dispatch disable_monitor,${monitor}
-      monique --switch-profile "android-gambled"
-      # hyprctl eval "
-      # hl.monitor({
-      #     output = \"sunshine\",
-      #     mode = \"2992x1344@120\",
-      #     position = \"0x0\",
-      #     scale = \"1\",
-      #     disabled = false,
-      # })
-
-      # hl.monitor({
-      #     output = \"DP-3\",
-      #     disabled = true,
-      # })"
+    tv)
+      monique --switch-profile "tv"
       ;;
     *)
       echo "Invalid display name: $display_name" >&2

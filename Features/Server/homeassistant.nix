@@ -92,31 +92,28 @@ in
         ];
       };
 
-      # These can be mixed with declarative configurations
-      # "automation nixos" = [
-      #   YAML automations go here
-      # ];
-
       recorder.db_url = "postgresql://@/hass";
 
-      shell_command = {
-        "suspend_pc" = ssh_command + "'sudo systemctl start systemd-suspend'";
-        "hibernate_pc" = ssh_command + "'sudo systemctl hibernate'";
-        "reboot_pc" = ssh_command + "'sudo systemctl reboot'";
-        "poweroff_pc" = ssh_command + "'sudo systemctl poweroff'";
-        "desktop_1" = ssh_command + "'hyprctl dispatch workspace 1'";
-        "desktop_2" = ssh_command + "'hyprctl dispatch workspace 2'";
-        "desktop_3" = ssh_command + "'hyprctl dispatch workspace 3'";
-        "desktop_4" = ssh_command + "'hyprctl dispatch workspace 4'";
-        "desktop_5" = ssh_command + "'hyprctl dispatch workspace 5'";
-        "desktop_6" = ssh_command + "'hyprctl dispatch workspace 6'";
-        "desktop_7" = ssh_command + "'hyprctl dispatch workspace 7'";
-        "desktop_8" = ssh_command + "'hyprctl dispatch workspace 8'";
-        "desktop_9" = ssh_command + "'hyprctl dispatch workspace 9'";
-        "desktop_10" = ssh_command + "'hyprctl dispatch workspace 10'";
-        "reboot_to_windows" = ssh_command + "'reboot-to-windows'";
-        "display_device_steamdeck" = ssh_command + "'display-device -d steamdeck'";
-        "display_device_pc_gambled" = ssh_command + "'display-device -d pc-gambled'";
+      shell_command = builtins.mapAttrs (name: cmd: "${ssh_command}${cmd}") {
+        "suspend_pc" = "'sudo systemctl start systemd-suspend'";
+        "hibernate_pc" = "'sudo systemctl hibernate'";
+        "reboot_pc" = "'sudo systemctl reboot'";
+        "poweroff_pc" = "'sudo systemctl poweroff'";
+        "desktop_1" = "'hyprctl dispatch \"hl.dsp.focus({ workspace = 1 })\"'";
+        "desktop_2" = "'hyprctl dispatch \"hl.dsp.focus({ workspace = 2 })\"'";
+        "desktop_3" = "'hyprctl dispatch \"hl.dsp.focus({ workspace = 3 })\"'";
+        "desktop_4" = "'hyprctl dispatch \"hl.dsp.focus({ workspace = 4 })\"'";
+        "desktop_5" = "'hyprctl dispatch \"hl.dsp.focus({ workspace = 5 })\"'";
+        "desktop_6" = "'hyprctl dispatch \"hl.dsp.focus({ workspace = 6 })\"'";
+        "desktop_7" = "'hyprctl dispatch \"hl.dsp.focus({ workspace = 7 })\"'";
+        "desktop_8" = "'hyprctl dispatch \"hl.dsp.focus({ workspace = 8 })\"'";
+        "desktop_9" = "'hyprctl dispatch \"hl.dsp.focus({ workspace = 9 })\"'";
+        "desktop_10" = "'hyprctl dispatch \"hl.dsp.focus({ workspace = 10 })\"'";
+        "reboot_to_windows" = "'reboot-to-windows'";
+        "display_device_steamdeck" = "'display-device -d steamdeck'";
+        "display_device_pc_gambled" = "'display-device -d pc-gambled'";
+        "display_device_dev_gambled" = "'display-device -d dev-gambled'";
+        "display_device_tv" = "'display-device -d tv'";
       };
 
       panel_custom = {
