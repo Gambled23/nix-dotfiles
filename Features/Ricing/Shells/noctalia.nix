@@ -1484,7 +1484,7 @@ in
     text = builtins.toJSON {
       defaultWallpaper = "/etc/nixos/wallpaper.jpg";
       wallpapers = {
-        "DP-3" = "/home/gambled/Pictures/Wallpapers/Ultrawide/games/wallhaven_3zwy5v.jpg";
+        "DP-3" = "/home/gambled/Pictures/Wallpapers/Ultrawide/abstract/wallhaven_lyql6p.jpg";
         "sunshine" = "/home/gambled/Pictures/Wallpapers/Wide/anime/ononoki.png";
         "HDMI-A-1" = "/home/gambled/Pictures/Wallpapers/Wide/vibrant/wallhaven_yj96lx.jpg";
         "eDP-1" = "/home/gambled/Pictures/Wallpapers/Wide/vibrant/wallhaven_yj96lx.jpg";

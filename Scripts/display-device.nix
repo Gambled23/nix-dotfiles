@@ -31,7 +31,7 @@ pkgs.writeShellScriptBin "display-device" ''
   if [ -z "$display_name" ]; then
     echo "No display name provided." >&2
     echo "Usage: display-device [options]" >&2
-    echo "  -d <display_name>   Switch to: 'pc-gambled', 'steamdeck', 'dev-gambled', 'android-gambled', '1080-169'" >&2
+    echo "  -d <display_name>   Switch to: 'pc-gambled', 'steamdeck', 'dev-gambled', 'tv'" >&2
     exit 1
   fi
 
@@ -48,7 +48,9 @@ pkgs.writeShellScriptBin "display-device" ''
       ;;
     tv)
       monique --switch-profile "tv"
-      ;;
+      sleep 2
+      hyprctl dispatch "hl.dsp.focus({ workspace = 8 })"
+      ;;  
     *)
       echo "Invalid display name: $display_name" >&2
       echo "Usage: display-device -d <display_name>"
