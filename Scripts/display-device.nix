@@ -5,7 +5,7 @@ in
 
 pkgs.writeShellScriptBin "display-device" ''
   #!${pkgs.bash}/bin/bash
-  echo "Display device script"
+  desktop = $XDG_CURRENT_DESKTOP
 
   display_name=""
   CONFIG_FILE="$HOME/.config/display-device"
@@ -38,18 +38,41 @@ pkgs.writeShellScriptBin "display-device" ''
   case "$display_name" in
     steamdeck)
       steam steam://open/bigpicture
-      monique --switch-profile "steamdeck"
+      if [ "$desktop" = "Hyprland" ]; then 
+        monique --switch-profile "steamdeck"
+      else 
+        mmsg dispatch create_virtual_output
+        wlr-randr --output HEADLESS-1 --pos 0,0 --custom-mode 1200x800@60Hz --transform normal
+        wlr-randr --output DP-3 --off
+      fi
       ;;
     pc-gambled)
-      monique --switch-profile "pc-gambled"
+      if [ "$desktop" = "Hyprland" ]; then 
+        monique --switch-profile "pc-gambled"
+      else
+        mmsg dispatch destroy_all_virtual_output
+        wlr-randr --output DP-3 --on        
+      fi
       ;;
     dev-gambled)
-      monique --switch-profile "dev-gambled"
+      if [ "$desktop" = "Hyprland" ]; then 
+        monique --switch-profile "dev-gambled"
+      else
+        mmsg dispatch create_virtual_output
+        wlr-randr --output HEADLESS-1 --pos 0,0 --custom-mode 1920x1080@60Hz --transform normal
+        wlr-randr --output DP-3 --off    
+      fi
       ;;
     tv)
-      monique --switch-profile "tv"
-      sleep 2
-      hyprctl dispatch "hl.dsp.focus({ workspace = 8 })"
+      if [ "$desktop" = "Hyprland" ]; then 
+        monique --switch-profile "tv"
+        sleep 2
+        hyprctl dispatch "hl.dsp.focus({ workspace = 8 })"
+      else
+        mmsg dispatch create_virtual_output
+        wlr-randr --output HEADLESS-1 --pos 0,0 --custom-mode 1920x1080@60Hz --transform normal
+        wlr-randr --output DP-3 --off    
+      fi
       ;;  
     *)
       echo "Invalid display name: $display_name" >&2
