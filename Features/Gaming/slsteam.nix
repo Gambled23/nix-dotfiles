@@ -20,6 +20,7 @@
       2581950 # Tiny Aquarium
       3833760 # You Know The Drill
       2914150 # Yunyun Syndrome Rhythm Psychosis
+      2789810 # Bingle Bingle
     ];
     AdditionalApps = [
       2868840 # Slay the Spire 2
@@ -37,6 +38,7 @@
       2581950 # Tiny Aquarium
       2914150 # Yunyun Syndrome Rhythm Psychosis
       3833760 # You Know The Drill
+      2789810 # Bingle Bingle
     ];
     SafeMode = true;
   };

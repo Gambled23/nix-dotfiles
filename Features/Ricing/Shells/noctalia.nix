@@ -987,7 +987,7 @@ in
         boxRadiusRatio = 1;
         clockFormat = "hh\\nmm";
         clockStyle = "digital";
-        enableBlurBehind = false;
+        enableBlurBehind = true;
         enableLockScreenMediaControls = true;
         keybinds = {
           keyDown = [

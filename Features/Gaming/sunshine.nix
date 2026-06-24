@@ -21,27 +21,55 @@
       apps = [
         {
           name = "steamdeck";
-          cmd = "display-device -d steamdeck";
+          cmd = "";
           exclude-global-prep-cmd = "false";
           elevated = "false";
+          prep-cmd = [
+            {
+              do = "display-device -d steamdeck";
+              undo = "display-device -d pc-gambled";
+              elevated = false;
+            }
+          ];
         }
         {
           name = "pc-gambled";
-          cmd = "display-device -d pc-gambled";
+          cmd = "";
           exclude-global-prep-cmd = "false";
           elevated = "false";
+          prep-cmd = [
+            {
+              do = "display-device -d pc-gambled";
+              undo = "";
+              elevated = false;
+            }
+          ];
         }
         {
           name = "dev-gambled";
-          cmd = "display-device -d dev-gambled";
+          cmd = "";
           exclude-global-prep-cmd = "false";
           elevated = "false";
+          prep-cmd = [
+            {
+              do = "display-device -d dev-gambled";
+              undo = "";
+              elevated = false;
+            }
+          ];
         }
         {
           name = "tv";
-          cmd = "display-device -d tv";
+          cmd = "";
           exclude-global-prep-cmd = "false";
           elevated = "false";
+          prep-cmd = [
+            {
+              do = "display-device -d tv";
+              undo = "";
+              elevated = false;
+            }
+          ];
         }
         {
           name = "no-change";
