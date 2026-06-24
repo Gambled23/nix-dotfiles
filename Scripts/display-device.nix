@@ -5,7 +5,7 @@ in
 
 pkgs.writeShellScriptBin "display-device" ''
   #!${pkgs.bash}/bin/bash
-  desktop = $XDG_CURRENT_DESKTOP
+  desktop=$XDG_CURRENT_DESKTOP
 
   display_name=""
   CONFIG_FILE="$HOME/.config/display-device"

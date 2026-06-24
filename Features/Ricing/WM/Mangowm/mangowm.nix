@@ -12,6 +12,7 @@
     # Clipboard
     cliphist
     wl-clipboard
+    wlr-randr
   ];
    
   services.pipewire.enable = true;
