@@ -90,6 +90,11 @@
     #   url = "github:AvengeMedia/dms-plugin-registry";
     #   inputs.nixpkgs.follows = "nixpkgs";
     # };
+
+
+
+    # Alpha
+    backup-transfer.url = "path:/home/gambled/Codes/nixos";
   };
 
   outputs = {

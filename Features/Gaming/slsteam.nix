@@ -21,6 +21,7 @@
       3833760 # You Know The Drill
       2914150 # Yunyun Syndrome Rhythm Psychosis
       2789810 # Bingle Bingle
+      2615540 # voidbreaker
     ];
     AdditionalApps = [
       2868840 # Slay the Spire 2
@@ -39,6 +40,7 @@
       2914150 # Yunyun Syndrome Rhythm Psychosis
       3833760 # You Know The Drill
       2789810 # Bingle Bingle
+      2615540 # voidbreaker
     ];
     SafeMode = true;
   };
