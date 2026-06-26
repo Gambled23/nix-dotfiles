@@ -27,7 +27,7 @@
           prep-cmd = [
             {
               do = "display-device -d steamdeck";
-              undo = "display-device -d pc-gambled";
+              # undo = "display-device -d pc-gambled";
               elevated = false;
             }
           ];
