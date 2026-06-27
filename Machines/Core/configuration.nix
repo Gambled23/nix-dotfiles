@@ -57,7 +57,6 @@
     nixd
     nil
     (import ../../Scripts/nix-rbd.nix { inherit pkgs; })
-    (import ../../Scripts/update-flake.nix { inherit pkgs; })
     (import ../../Scripts/auto-gc.nix { inherit pkgs; })
     (import ../../Scripts/git-clone.nix { inherit pkgs; })
 

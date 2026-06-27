@@ -24,7 +24,8 @@
     # ./look_and_feel.nix
 
     # Shells
-    ../../Shells/noctalia.nix
+    # ../../Shells/noctalia_v4.nix
+    ../../Shells/noctalia_v5.nix
   ];
 
   

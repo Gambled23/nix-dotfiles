@@ -8,13 +8,17 @@
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     nvf.url = "github:NotAShelf/nvf";
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
-    noctalia.url = "github:noctalia-dev/noctalia-shell";
     millennium.url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
     jovian-nixos.url = "github:Jovian-Experiments/Jovian-NixOS";
     # #nixpkgs-xr.url = "github:nix-community/nixpkgs-xr";
 
     home-manager = {
       url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    
+    noctalia = {
+      url = "github:noctalia-dev/noctalia";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 

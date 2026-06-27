@@ -7,7 +7,7 @@
     ./spawns.nix
 
     ../../../Tools/vicinae.nix
-    ../../Shells/noctalia.nix
+    ../../Shells/noctalia_v4.nix
   ];
 
   programs.niri.settings = {

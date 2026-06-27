@@ -1,5 +1,5 @@
 local terminal = "ghostty"
-local code = "uwsm app -- code"
+local code = "uwsm app -- antigravity-ide"
 local file_manager = terminal .. " -e yazi"
 local mainMod = "SUPER"
 local menu = "uwsm app -- vicinae toggle"
