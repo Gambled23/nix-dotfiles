@@ -18,6 +18,7 @@ with lib;
     # inputs.ambxst.packages.${pkgs.stdenv.hostPlatform.system}.default
 
     # Libs?
+    ddcutil
     kdePackages.qtwebsockets
     kdePackages.qt6ct
     kdePackages.qtwayland
