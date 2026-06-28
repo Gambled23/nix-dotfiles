@@ -22,6 +22,7 @@
       2914150 # Yunyun Syndrome Rhythm Psychosis
       2789810 # Bingle Bingle
       2615540 # voidbreaker
+      3892270 # Gamble With Your Friends
     ];
     AdditionalApps = [
       2868840 # Slay the Spire 2
@@ -41,6 +42,7 @@
       3833760 # You Know The Drill
       2789810 # Bingle Bingle
       2615540 # voidbreaker
+      3892270 # Gamble With Your Friends
     ];
     SafeMode = true;
   };
