@@ -35,16 +35,15 @@ let
       audio = {
           enable_sounds = true;
           mprisBlacklist = [  ];
-          notification_sound = "qq";
+          notification_sound = "${pkgs.kdePackages.ocean-sound-theme}/share/sounds/ocean/stereo/completion-success.oga";
           preferredPlayer = "Spotify";
           spectrumFrameRate = 30;
           spectrumMirrored = true;
           visualizerType = "wave";
           volumeFeedback = true;
-          volumeFeedbackSoundFile = "/nix/store/gqr6pb1k35ipkp4icslxkg4anrf9wivb-ocean-sound-theme-6.6.5/share/sounds/ocean/stereo/audio-volume-change.oga";
           volumeOverdrive = false;
           volumeStep = 1;
-          volume_change_sound = "xd";
+          volume_change_sound = "${pkgs.kdePackages.ocean-sound-theme}/share/sounds/ocean/stereo/bell.oga";
       };
       bar = {
           autoHideDelay = 500;
@@ -1704,7 +1703,6 @@ in
   home.packages = with pkgs; [
     # For screenshotting and screen recording plugins
     inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
-    grim
     slurp
     wl-clipboard
     tesseract

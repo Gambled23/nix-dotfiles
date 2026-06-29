@@ -11,7 +11,7 @@
     # Services and programs
     # ../../hyprsunset.nix
     # ../../hypridle.nix
-    ../../../Tools/Media/hyprshot.nix
+    # ../../../Tools/Media/hyprshot.nix
     ../../Hyprlock/cards.nix
     ../../../Tools/vicinae.nix
 

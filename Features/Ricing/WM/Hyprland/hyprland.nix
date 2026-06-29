@@ -37,7 +37,6 @@ with lib;
     playerctl
     brightnessctl
     hypridle
-    pamixer
     pavucontrol
     gparted
     # hyprpolkitagent # Polkit for gui applications
