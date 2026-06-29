@@ -3,6 +3,7 @@ require("configs.binds")
 require("configs.execs")
 require("rules.windows")
 require("rules.layers")
+require("rules.workspaces")
 require("noctalia")
 require("monitors")
 
