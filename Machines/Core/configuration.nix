@@ -47,7 +47,7 @@
   # Enable sound with pipewire.
   #sound.enable = true;
   #hardware.pulseaudio.enable = false;
-  security.rtkit.enable = true;
+  # security.rtkit.enable = true;
   # security.polkit.enable = lib.mkForce false;
 
   hardware.xone.enable = true;

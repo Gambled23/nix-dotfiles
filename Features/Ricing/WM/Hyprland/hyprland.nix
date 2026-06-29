@@ -40,7 +40,7 @@ with lib;
     pamixer
     pavucontrol
     gparted
-    hyprpolkitagent # Polkit for gui applications
+    # hyprpolkitagent # Polkit for gui applications
 
 
     # Dependencies
@@ -138,5 +138,5 @@ with lib;
   # gnome online accounts
   services.gnome.gnome-online-accounts.enable = true;
   services.gnome.evolution-data-server.enable = true;
-  services.gnome.gnome-keyring.enable = true;
+  services.gnome.gnome-keyring.enable = false;
 }
