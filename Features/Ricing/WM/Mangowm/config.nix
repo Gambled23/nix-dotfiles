@@ -21,13 +21,21 @@ in
       spotify &
       discord &
       altus &
+      steam %U &
       kdeconnect-indicator &
       wl-clip-persist --clipboard regular --reconnect-tries 0 &
       wl-paste --type text --watch cliphist store &
     '';
+
+    settings = {
+      enable_floating_snap = 1;
+      allow_tearing = 1;
+      tag_carousel = 1;
+    };
+
+    systemd.xdgAutostart = true;
     
     extraConfig = ''
-      allow_tearing=1;
       source = ./noctalia.conf
     '';
   };

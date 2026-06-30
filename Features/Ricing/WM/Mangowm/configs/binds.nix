@@ -10,6 +10,7 @@ in
   wayland.windowManager.mango.settings = {
     # Use lists for duplicate keys like bind and tagrule
     bind = [
+      "none,Print,spawn,${noctalia_ipc} screenshot-region"
       "ALT,Tab,toggleoverview"
       "ALT,r,setkeymode,extras"  # Enter resize mode
       "SUPER+SHIFT,r,reload_config"
@@ -44,6 +45,7 @@ in
       "SUPER,7,view,7"
       "SUPER,8,view,8"
       "SUPER,9,view,9"
+      "SUPER,Tab,view,-1"
       "SUPER+SHIFT,1,tagsilent,1"
       "SUPER+SHIFT,2,tagsilent,2"
       "SUPER+SHIFT,3,tagsilent,3"
@@ -53,7 +55,6 @@ in
       "SUPER+SHIFT,7,tagsilent,7"
       "SUPER+SHIFT,8,tagsilent,8"
       "SUPER+SHIFT,9,tagsilent,9"
-      "SUPER+SHIFT,0,tagsilent,0"
 
       # Windows
       "SUPER,h,focusdir,left"
@@ -91,19 +92,6 @@ in
     axisbind = [
       "SUPER,UP,viewtoleft_have_client"
       "SUPER,DOWN,viewtoright_have_client"
-    ];
-
-    tagrule = [
-      "id:1,layout_name:dwindle"
-      "id:2,layout_name:dwindle"
-      "id:3,layout_name:dwindle"
-      "id:4,layout_name:dwindle"
-      "id:5,layout_name:dwindle"
-      "id:6,layout_name:dwindle"
-      "id:7,layout_name:dwindle"
-      "id:8,layout_name:dwindle"
-      "id:9,layout_name:scroller"
-      "id:0,layout_name:dwindle"
     ];
 
     # Keymodes (submaps) for modal keybindings

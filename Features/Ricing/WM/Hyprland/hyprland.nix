@@ -65,7 +65,7 @@ with lib;
     ];
     config = {
       common = {
-        default = [ "hyprland;gtk" ];
+        # default = [ "hyprland;gtk" ];
         # Send settings requests (used by Monique/GTK apps) to the GTK portal
         "org.freedesktop.impl.portal.Settings" = [ "gtk" ];
         # Use GTK for file choosers too (optional but recommended)

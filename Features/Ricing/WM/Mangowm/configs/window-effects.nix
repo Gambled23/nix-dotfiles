@@ -19,17 +19,17 @@
       saturation=1;
     };
 
-    layer_animations=0;
+    # layer_animations=0;
 
     border_radius = 8;
 
     shadows=0;
     layer_shadows=0;
     shadow_only_floating=1;
-    shadows_size=12;
-    shadows_blur=15;
-    shadows_position_x=2;
-    shadows_position_y=2;
+    shadows_size=8;
+    shadows_blur=12;
+    shadows_position_x=1;
+    shadows_position_y=1;
     shadowscolor="0x000000ff";
 
     borderpx=1;

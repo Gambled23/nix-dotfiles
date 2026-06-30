@@ -3,14 +3,13 @@
   wayland.windowManager.mango.settings = {
     # windowrule = "tags:9,monitor:HDMI-A-1,appid:discord";
     windowrule =[
-      "appid:Altus,tags:9,isopensilent:1"
-      "appid:discord,tags:9,isopensilent:1"
-      "appid:Spotify,tags:4,isopensilent:1"
-      "appid:steam,tags:8,isopensilent:1"
-      "appid:eden,tags:2"
-      "appid:com.stremio.stremio,tags:7"
-      "appid:hayase,tags:6"
-      "appid:com.moonlight_stream.Moonlight,tags:5"
+      "appid:Altus,tags:8,isopensilent:1"
+      "appid:discord,tags:8,isopensilent:1"
+      "appid:Spotify,tags:9,isopensilent:1"
+      "appid:steam,tags:7,isopensilent:1"
+      "appid:com.stremio.stremio,tags:6"
+      "appid:hayase,tags:5"
+      
       "title:ripdrag,focused_opacity:0.7,unfocused_opacity:0.7"
       "appid:mpv,width:284,height:161,isfloating:1"
       "appid:vlc,width:284,height:161,isfloating:1"
