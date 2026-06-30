@@ -43,7 +43,7 @@ pkgs.writeShellScriptBin "display-device" ''
       elif [ "$desktop" = "mango" ]; then 
         mmsg dispatch create_virtual_output
         virtual_monitor=$(wlr-randr | grep 'HEADLESS-' | cut -d ' ' -f1)
-        wlr-randr --output $virtual_monitor --pos 0,0 --custom-mode 1200x800@60Hz
+        wlr-randr --output $virtual_monitor --pos 0,0 --custom-mode 1280x800@60Hz
         wlr-randr --output DP-3 --off
       else
         echo "$desktop not configured"

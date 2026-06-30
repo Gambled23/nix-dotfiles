@@ -20,7 +20,7 @@ in
       "SUPER,r,spawn,${menu}"
       "SUPER,f,spawn,${web_browser}"
       "SUPER,Return,spawn,${terminal}"
-      "SUPER,c,spawn,antigravity-cli"
+      "SUPER,c,spawn,antigravity-ide"
       "SUPER,v,spawn,${terminal} -e vim"
       "SUPER,b,spawn,flatpak run com.artemchep.keyguard"
       "SUPER,m,spawn,${noctalia_ipc} session lock"
