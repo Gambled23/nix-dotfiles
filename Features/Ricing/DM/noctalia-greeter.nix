@@ -5,19 +5,26 @@
     ];
 
     programs.noctalia-greeter = {
-    enable = true;
-    package = inputs.noctalia-greeter.packages.${pkgs.stdenv.hostPlatform.system}.default;
+        enable = true;
+        package = inputs.noctalia-greeter.packages.${pkgs.stdenv.hostPlatform.system}.default;
 
-    # Optional configuration
-    greeter-args = "";
-    settings = {
-        cursor = {
-        theme = "Adwaita";
-        size = 24;
-        };
-        keyboard = {
-        layout = "us";
+        # Optional configuration
+        greeter-args = "";
+        settings = {
+            cursor = {
+                theme = "Bibata-Modern-Ice";
+                size = 24;
+            };
+            keyboard = {
+                layout = "us";
+            };
         };
     };
+    
+    services.displayManager = {
+        defaultSession = "mango";
+
+        autoLogin.enable = true;
+        autoLogin.user = "gambled";
     };
 }

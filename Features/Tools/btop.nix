@@ -6,6 +6,7 @@
       truecolor = false;
       theme_background = false;
       vim_keys = true;
+      color_theme = "noctalia";
     };
   };
 }
