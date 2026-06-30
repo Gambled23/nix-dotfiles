@@ -40,27 +40,35 @@ pkgs.writeShellScriptBin "display-device" ''
       steam steam://open/bigpicture
       if [ "$desktop" = "Hyprland" ]; then 
         monique --switch-profile "steamdeck"
-      else 
+      elif [ "$desktop" = "mango" ]; then 
         mmsg dispatch create_virtual_output
-        wlr-randr --output HEADLESS-1 --pos 0,0 --custom-mode 1200x800@60Hz --transform normal
+        virtual_monitor=$(wlr-randr | grep 'HEADLESS-' | cut -d ' ' -f1)
+        wlr-randr --output $virtual_monitor --pos 0,0 --custom-mode 1200x800@60Hz
         wlr-randr --output DP-3 --off
+      else
+        echo "$desktop not configured"
       fi
       ;;
     pc-gambled)
       if [ "$desktop" = "Hyprland" ]; then 
         monique --switch-profile "pc-gambled"
-      else
+      elif [ "$desktop" = "mango" ]; then 
         mmsg dispatch destroy_all_virtual_output
         wlr-randr --output DP-3 --on        
+      else
+        echo "$desktop not configured"
       fi
       ;;
     dev-gambled)
       if [ "$desktop" = "Hyprland" ]; then 
         monique --switch-profile "dev-gambled"
-      else
+      elif [ "$desktop" = "mango" ]; then 
         mmsg dispatch create_virtual_output
-        wlr-randr --output HEADLESS-1 --pos 0,0 --custom-mode 1920x1080@60Hz --transform normal
+        virtual_monitor=$(wlr-randr | grep 'HEADLESS-' | cut -d ' ' -f1)
+        wlr-randr --output $virtual_monitor --pos 0,0 --custom-mode 1920x1200@60Hz --transform normal
         wlr-randr --output DP-3 --off    
+      else
+        echo "$desktop not configured"
       fi
       ;;
     tv)
@@ -68,10 +76,13 @@ pkgs.writeShellScriptBin "display-device" ''
         monique --switch-profile "tv"
         sleep 2
         hyprctl dispatch "hl.dsp.focus({ workspace = 8 })"
-      else
+      elif [ "$desktop" = "mango" ]; then 
         mmsg dispatch create_virtual_output
-        wlr-randr --output HEADLESS-1 --pos 0,0 --custom-mode 1920x1080@60Hz --transform normal
+        virtual_monitor=$(wlr-randr | grep 'HEADLESS-' | cut -d ' ' -f1)
+        wlr-randr --output $virtual_monitor --pos 0,0 --custom-mode 1920x1080@60Hz --transform normal
         wlr-randr --output DP-3 --off    
+      else
+        echo "$desktop not configured"
       fi
       ;;  
     *)

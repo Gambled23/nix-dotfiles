@@ -27,6 +27,7 @@ in
     '';
     
     extraConfig = ''
+      allow_tearing=1;
       source = ./noctalia.conf
     '';
   };

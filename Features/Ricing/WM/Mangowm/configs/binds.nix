@@ -4,6 +4,7 @@ let
   file_manager = "${terminal} -e yazi";
   menu = "vicinae toggle";
   web_browser = "google-chrome-stable";
+  noctalia_ipc = "noctalia msg";
 in 
 {
   wayland.windowManager.mango.settings = {
@@ -19,10 +20,10 @@ in
       "SUPER,r,spawn,${menu}"
       "SUPER,f,spawn,${web_browser}"
       "SUPER,Return,spawn,${terminal}"
-      "SUPER,c,spawn,code"
+      "SUPER,c,spawn,antigravity-cli"
       "SUPER,v,spawn,${terminal} -e vim"
       "SUPER,b,spawn,flatpak run com.artemchep.keyguard"
-      "SUPER,m,spawn,noctalia-shell ipc call lockScreen lock"
+      "SUPER,m,spawn,${noctalia_ipc} session lock"
       "SUPER,n,spawn,$termial -e nix-rbd"
       "SUPER,o,spawn,moonlight stream 'el sunchine' 'dev-gambled'"
       "SUPER,p,spawn,scrcpy --render-driver=opengl -S -w -K -b15M --power-off-on-close"
@@ -72,14 +73,14 @@ in
       "ALT,1,spawn,playerctl previous"
       "ALT,2,spawn,playerctl play-pause"
       "ALT,3,spawn,playerctl next"
-      "ALT,0,spawn,noctalia-shell ipc call volume increase"
-      "ALT,9,spawn,noctalia-shell ipc call volume decrease"
-      "ALT,8,spawn,noctalia-shell ipc call volume muteOutput"
-      "NONE,XF86AudioRaiseVolume,spawn,noctalia-shell ipc call volume increase"
-      "NONE,XF86AudioLowerVolume,spawn,noctalia-shell ipc call volume decrease"
-      "NONE,XF86AudioMute,spawn,noctalia-shell ipc call volume muteOutput"
-      "NONE,XF86MonBrightnessUp,spawn,noctalia-shell ipc call brightness increase"
-      "NONE,XF86MonBrightnessDown,spawn,noctalia-shell ipc call brightness decrease"
+      "ALT,0,spawn,${noctalia_ipc} volume-up 1"
+      "ALT,9,spawn,${noctalia_ipc} volume-down 1"
+      "ALT,8,spawn,${noctalia_ipc} volume-mute"
+      "NONE,XF86AudioRaiseVolume,spawn,${noctalia_ipc} volume-up 1"
+      "NONE,XF86AudioLowerVolume,spawn,${noctalia_ipc} volume-down 1"
+      "NONE,XF86AudioMute,spawn,${noctalia_ipc} volume-mute"
+      "NONE,XF86MonBrightnessUp,spawn,${noctalia_ipc} brightness-up"
+      "NONE,XF86MonBrightnessDown,spawn,${noctalia_ipc} brightness-down"
     ];
 
     mousebind = [
