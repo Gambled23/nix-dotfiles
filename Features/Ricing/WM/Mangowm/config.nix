@@ -15,6 +15,11 @@ in
     hostconfig
   ];
 
+  services.gnome-keyring = {
+    enable = true;
+    components = [ "pkcs11" "secrets" "ssh" ];
+  };
+
   wayland.windowManager.mango = {
     enable = true;
     autostart_sh = ''

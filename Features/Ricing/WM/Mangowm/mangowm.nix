@@ -33,4 +33,8 @@
       };
     };
   };
+
+  security.pam.services.login.enableGnomeKeyring = true;
+  services.dbus.packages = [ pkgs.gcr ];
+
 }

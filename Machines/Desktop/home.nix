@@ -34,6 +34,7 @@
     # stremio-linux-shell
 
     #* utils
+    seahorse #gnome keyring manager
     pixelflasher
     android-tools
     onlyoffice-desktopeditors
