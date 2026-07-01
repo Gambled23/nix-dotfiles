@@ -11,6 +11,7 @@ in
     ./configs/input.nix
     ./rules/window.nix
     ./rules/layer.nix
+    ./rules/tags.nix
     hostconfig
   ];
 

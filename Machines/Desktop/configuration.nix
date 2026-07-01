@@ -7,8 +7,8 @@
     ../../Features/Ricing/WM/Mangowm/mangowm.nix
 
     #Display Manager
-    # ../../Features/Ricing/DM/ly.nix
-    ../../Features/Ricing/DM/noctalia-greeter.nix
+    ../../Features/Ricing/DM/ly.nix
+    # ../../Features/Ricing/DM/noctalia-greeter.nix
   ];
 
   environment.systemPackages = with pkgs; [
