@@ -59,7 +59,7 @@
         typingIndicator.enable = true;
         typingTweaks.enable = true;
         userVoiceShow.enable = true;
-        UserPFP.enable = true;
+        userPfp.enable = true;
         validReply.enable = true;
         validUser.enable = true;
         viewIcons.enable = true;
