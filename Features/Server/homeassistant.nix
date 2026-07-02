@@ -6,7 +6,7 @@ let
 
   hyprland_fix = ''
     export XDG_RUNTIME_DIR=/run/user/$(id -u);
-    export WAYLAND_DISPLAY=wayland-1;
+    export WAYLAND_DISPLAY=wayland-0; # 0 or 1, try what works for you
     export MANGO_INSTANCE_SIGNATURE=$(ls -t $XDG_RUNTIME_DIR/mango-* | head -n 1)
   '';
 in
