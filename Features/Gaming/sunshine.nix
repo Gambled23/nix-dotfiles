@@ -12,7 +12,7 @@
     openFirewall = true;
     settings = {
       sunshine_name = "el sunchine";
-      output_name = 0;
+      # output_name = 0;
     };
     applications = {
       env = {
