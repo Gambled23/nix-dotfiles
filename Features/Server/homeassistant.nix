@@ -7,7 +7,7 @@ let
   hyprland_fix = ''
     export XDG_RUNTIME_DIR=/run/user/$(id -u);
     export WAYLAND_DISPLAY=wayland-1;
-    # export HYPRLAND_INSTANCE_SIGNATURE=$(ls -t $XDG_RUNTIME_DIR/hypr | head -n 1)
+    export MANGO_INSTANCE_SIGNATURE=$(ls -t $XDG_RUNTIME_DIR/mango-* | head -n 1)
   '';
 in
 {
