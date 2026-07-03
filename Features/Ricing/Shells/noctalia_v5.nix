@@ -508,8 +508,8 @@ let
 		source = "wallpaper";
 		wallpaper_scheme = "m3-content";
 		templates = {
-			builtin_ids = [ "btop" "gtk3" "gtk4" "ghostty" "hyprland" "kcolorscheme" "kitty" "mango" "niri" "qt" "starship" ];
-			community_ids = [ "spicetify" "neovim" "vscode" "zed" "vicinae" "discord" "steam" "yazi" "hyprtoolkit" ];
+			builtin_ids = [ "btop" "gtk3" "gtk4" "ghostty" "hyprland" "mango" "qt" "starship" ];
+			community_ids = [ "spicetify" "neovim" "vscode" "vicinae" "discord" "steam" "yazi" "hyprtoolkit" ];
 			user = {
 				antigravity-ide = {
 					input_path = "$XDG_CONFIG_HOME/noctalia/templates/spicetify.ini";
