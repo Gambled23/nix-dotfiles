@@ -61,12 +61,12 @@
           ];
         }
         {
-          name = "tv";
+          name = "pixel";
           cmd = "";
           exclude-global-prep-cmd = "false";
           elevated = "false";
           detached = [
-            "display-device -d tv"
+            "display-device -d pixel"
           ];
           prep-cmd = [
             {

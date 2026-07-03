@@ -67,21 +67,21 @@ pkgs.writeShellScriptBin "display-device" ''
         mmsg dispatch create_virtual_output
         virtual_monitor=$(wlr-randr | grep 'HEADLESS-' | cut -d ' ' -f1)
         wlr-randr --output DP-3 --off    
-        wlr-randr --output $virtual_monitor --pos 0,0 --custom-mode 1920x1080@60Hz --transform normal
+        wlr-randr --output $virtual_monitor --pos 0,0 --mode 1920x1080@60Hz --transform normal
       else
         echo "$desktop not configured"
       fi
       ;;
-    tv)
+    pixel)
       if [ "$desktop" = "Hyprland" ]; then 
-        monique --switch-profile "tv"
+        monique --switch-profile "pixel"
         sleep 2
         hyprctl dispatch "hl.dsp.focus({ workspace = 8 })"
       elif [ "$desktop" = "mango" ]; then 
         mmsg dispatch create_virtual_output
         virtual_monitor=$(wlr-randr | grep 'HEADLESS-' | cut -d ' ' -f1)
         wlr-randr --output DP-3 --off    
-        wlr-randr --output $virtual_monitor --pos 0,0 --custom-mode 1920x1080@60Hz --transform normal
+        wlr-randr --output $virtual_monitor --pos 0,0 --mode 2992x1344@120Hz --transform normal
       else
         echo "$desktop not configured"
       fi
