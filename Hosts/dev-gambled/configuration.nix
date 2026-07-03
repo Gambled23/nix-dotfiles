@@ -10,7 +10,7 @@
     ../../Machines/Desktop/configuration.nix
 
     # ../../Features/Dev/ollama-client.nix
-    # ../../Features/Dev/docker.nix
+    ../../Features/Dev/docker.nix
     # ../../Features/Dev/mariadb.nix
 
     # bootloader
@@ -21,7 +21,4 @@
     max-jobs = 3;
     cores = 4;
   };
-
-  programs.monique.enable = true;
-  programs.monique.enablePolkit = false;
 }

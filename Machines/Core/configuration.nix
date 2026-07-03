@@ -70,7 +70,7 @@
     gambled = {
       isNormalUser = true;
       description = "César Girón";
-      extraGroups = [ "networkmanager" "wheel" "adbusers" "audio" "jackaudio" "dialout" "hass" "i2c" "root"];
+      extraGroups = [ "docker" "networkmanager" "wheel" "adbusers" "audio" "jackaudio" "dialout" "hass" "i2c" "root"];
     };
   };
   users.defaultUserShell = pkgs.zsh;
