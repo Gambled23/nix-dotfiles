@@ -54,5 +54,4 @@
 
   # Virtualisation
   # virtualisation.vmware.host.enable = true; # vmware
-  # virtualisation.waydroid.enable = true; # Waydroid
 }

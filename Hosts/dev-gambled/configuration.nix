@@ -11,6 +11,7 @@
 
     # ../../Features/Dev/ollama-client.nix
     ../../Features/Dev/docker.nix
+    ../../Features/Tools/waydroid.nix
     # ../../Features/Dev/mariadb.nix
 
     # bootloader

@@ -85,7 +85,7 @@ pkgs.writeShellScriptBin "display-device" ''
       else
         echo "$desktop not configured"
       fi
-      ;;  
+      ;;
     *)
       echo "Invalid display name: $display_name" >&2
       echo "Usage: display-device -d <display_name>"
