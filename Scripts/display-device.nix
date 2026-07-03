@@ -35,6 +35,8 @@ pkgs.writeShellScriptBin "display-device" ''
     exit 1
   fi
 
+  mmsg dispatch destroy_all_virtual_output
+
   case "$display_name" in
     steamdeck)
       steam steam://open/bigpicture
@@ -43,10 +45,8 @@ pkgs.writeShellScriptBin "display-device" ''
       elif [ "$desktop" = "mango" ]; then 
         mmsg dispatch create_virtual_output
         virtual_monitor=$(wlr-randr | grep 'HEADLESS-' | cut -d ' ' -f1)
-        mmsg dispatch enable_monitor,$virtual_monitor
-        wlr-randr --output $virtual_monitor --pos 3440,0 --custom-mode 1280x800@60Hz
-        # mmsg dispatch disable_monitor,DP-3
-        # wlr-randr --output DP-3 --off
+        wlr-randr --output DP-3 --off    
+        wlr-randr --output $virtual_monitor --pos 0,0 --custom-mode 1280x800@60Hz --transform normal
       else
         echo "$desktop not configured"
       fi
@@ -55,11 +55,7 @@ pkgs.writeShellScriptBin "display-device" ''
       if [ "$desktop" = "Hyprland" ]; then 
         monique --switch-profile "pc-gambled"
       elif [ "$desktop" = "mango" ]; then 
-        # mmsg dispatch destroy_all_virtual_output
-        virtual_monitor=$(wlr-randr | grep 'HEADLESS-' | cut -d ' ' -f1)
-        mmsg dispatch enable_monitor,DP-3
-        mmsg dispatch disable_monitor,$virtual_monitor
-        # wlr-randr --output DP-3 --on        
+        wlr-randr --output DP-3 --on        
       else
         echo "$desktop not configured"
       fi
@@ -71,7 +67,7 @@ pkgs.writeShellScriptBin "display-device" ''
         mmsg dispatch create_virtual_output
         virtual_monitor=$(wlr-randr | grep 'HEADLESS-' | cut -d ' ' -f1)
         wlr-randr --output DP-3 --off    
-        wlr-randr --output $virtual_monitor --pos 0,0 --custom-mode 1920x1200@60Hz --transform normal
+        wlr-randr --output $virtual_monitor --pos 0,0 --custom-mode 1920x1080@60Hz --transform normal
       else
         echo "$desktop not configured"
       fi
