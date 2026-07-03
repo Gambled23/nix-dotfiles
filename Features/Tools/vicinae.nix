@@ -55,12 +55,12 @@
             };
           };
         };
-        "@Gimblet/vicinae-extension-noctalia-shell-wallpaper-selector-0" = {
-          preferences = {
-            display_name = "eDP-1";
-            wallpaper_directory = "/home/gambled/Pictures/Wallpapers/PC";
-          };
-        };
+        # "@Gimblet/vicinae-extension-noctalia-shell-wallpaper-selector-0" = {
+        #   preferences = {
+        #     display_name = "eDP-1";
+        #     wallpaper_directory = "/home/gambled/Pictures/Wallpapers/PC";
+        #   };
+        # };
         "@leonkohli/vicinae-extension-process-manager-0" = {
           entrypoints = {
             kill = {
@@ -76,7 +76,7 @@
       ssh
       process-manager
       nix
-      noctalia-shell-wallpaper-selector
+      # noctalia-shell-wallpaper-selector
       zoxide-recent-directories
     ];
   };

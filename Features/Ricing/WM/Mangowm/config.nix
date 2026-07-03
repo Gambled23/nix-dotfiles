@@ -35,8 +35,11 @@ in
 
     settings = {
       enable_floating_snap = 1;
+      snap_distance = 30;
       allow_tearing = 1;
+      syncobj_enable = 1; #Enable drm_syncobj timeline support (helps with gaming stutter/lag). Requires restart.
       tag_carousel = 1;
+      drag_tile_to_tile = 1;
     };
 
     systemd.xdgAutostart = true;

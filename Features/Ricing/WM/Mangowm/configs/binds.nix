@@ -17,6 +17,7 @@ in
       "SUPER,x,togglefloating"
       
       "SUPER,q,killclient"
+      "SUPER+SHIFT,q,quit" # close mangowm
       "SUPER,e,spawn,${file_manager}"
       "SUPER,r,spawn,${menu}"
       "SUPER,f,spawn,${web_browser}"
@@ -31,20 +32,20 @@ in
       "SUPER,Escape,spawn,${terminal} -e btop"
 
       # Scratchpads
-      "SUPER+SHIFT,s,minimized"
-      "SUPER+SHIFT,s,restore_minimized"
+      "SUPER,z,minimized"
+      "SUPER+SHIFT,z,restore_minimized"
       "SUPER,s,toggle_scratchpad"
 
       # Tags
-      "SUPER,1,view,1"
-      "SUPER,2,view,2"
-      "SUPER,3,view,3"
-      "SUPER,4,view,4"
-      "SUPER,5,view,5"
-      "SUPER,6,view,6"
-      "SUPER,7,view,7"
-      "SUPER,8,view,8"
-      "SUPER,9,view,9"
+      "SUPER,1,comboview,1"
+      "SUPER,2,comboview,2"
+      "SUPER,3,comboview,3"
+      "SUPER,4,comboview,4"
+      "SUPER,5,comboview,5"
+      "SUPER,6,comboview,6"
+      "SUPER,7,comboview,7"
+      "SUPER,8,comboview,8"
+      "SUPER,9,comboview,9"
       "SUPER,Tab,view,-1"
       "SUPER+SHIFT,1,tagsilent,1"
       "SUPER+SHIFT,2,tagsilent,2"

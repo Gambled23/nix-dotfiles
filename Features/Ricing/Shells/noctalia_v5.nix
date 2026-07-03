@@ -172,7 +172,7 @@ let
 	};
 	dock = {
 		auto_hide = true;
-		background_opacity = 0.4999999888241291;
+		background_opacity = 0.3;
 		enabled = true;
 		monitors = [  ];
 		position = "bottom";

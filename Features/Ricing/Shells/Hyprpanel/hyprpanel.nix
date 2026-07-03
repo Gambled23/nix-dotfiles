@@ -50,8 +50,8 @@
           hideCountWhenZero = true;
         };
         volume = {
-          scrollDown = "pamixer -d 2 && paplay /etc/nixos/core/services/xserver/hyprland/volume.mp3";
-          scrollUp =  "pamixer -i 2 && paplay /etc/nixos/core/services/xserver/hyprland/volume.mp3";
+          scrollDown = "pamixer -d 1";
+          scrollUp =  "pamixer -i 1";
         };
         workspaces = {
           show_icons = false;
