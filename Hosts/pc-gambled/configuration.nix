@@ -9,7 +9,7 @@
     ../../Machines/Core/configuration.nix
     ../../Machines/Desktop/configuration.nix
 
-    ../../Features/Dev/ollama-server.nix
+    # ../../Features/Dev/ollama-server.nix
     ../../Features/Gaming/glances.nix
     ../../Features/Gaming/steam.nix
     ../../Features/Gaming/sunshine.nix
