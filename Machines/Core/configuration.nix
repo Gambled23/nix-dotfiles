@@ -47,8 +47,8 @@
   # Enable sound with pipewire.
   #sound.enable = true;
   #hardware.pulseaudio.enable = false;
-  # security.rtkit.enable = true;
-  # security.polkit.enable = lib.mkForce false;
+  security.rtkit.enable = true;
+  security.polkit.enable = true;
 
   hardware.xone.enable = true;
   environment.systemPackages = with pkgs; [
@@ -70,7 +70,7 @@
     gambled = {
       isNormalUser = true;
       description = "César Girón";
-      extraGroups = [ "networkmanager" "wheel" "adbusers" "audio" "jackaudio" "dialout" "hass" "i2c" "root"];
+      extraGroups = [ "networkmanager" "wheel" "adbusers" "audio" "jackaudio" "dialout" "hass" "i2c" "root" "uinput" ];
     };
   };
   users.defaultUserShell = pkgs.zsh;

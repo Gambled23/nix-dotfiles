@@ -12,7 +12,7 @@
     openFirewall = true;
     settings = {
       sunshine_name = "el sunchine";
-      # output_name = 0;
+      output_name = 1;
     };
     applications = {
       env = {
@@ -24,10 +24,13 @@
           cmd = "";
           exclude-global-prep-cmd = "false";
           elevated = "false";
+          detached = [
+            "display-device -d steamdeck"
+          ];
           prep-cmd = [
             {
-              do = "display-device -d steamdeck";
-              # undo = "display-device -d pc-gambled";
+              do = "";
+              undo = "display-device -d pc-gambled";
               elevated = false;
             }
           ];
@@ -37,12 +40,8 @@
           cmd = "";
           exclude-global-prep-cmd = "false";
           elevated = "false";
-          prep-cmd = [
-            {
-              do = "display-device -d pc-gambled";
-              undo = "";
-              elevated = false;
-            }
+          detached = [
+            "display-device -d pc-gambled"
           ];
         }
         {
@@ -50,10 +49,13 @@
           cmd = "";
           exclude-global-prep-cmd = "false";
           elevated = "false";
+          detached = [
+            "display-device -d dev-gambled"
+          ];
           prep-cmd = [
             {
-              do = "display-device -d dev-gambled";
-              undo = "";
+              do = "";
+              undo = "display-device -d pc-gambled";
               elevated = false;
             }
           ];
@@ -63,10 +65,13 @@
           cmd = "";
           exclude-global-prep-cmd = "false";
           elevated = "false";
+          detached = [
+            "display-device -d tv"
+          ];
           prep-cmd = [
             {
-              do = "display-device -d tv";
-              undo = "";
+              do = "";
+              undo = "display-device -d pc-gambled";
               elevated = false;
             }
           ];
