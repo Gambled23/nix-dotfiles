@@ -516,15 +516,20 @@ let
 					output_path = "$XDG_CONFIG_HOME/noctalia/templates/ignore";
 					post_hook = "cp ~/.vscode/extensions/noctalia.noctaliatheme-*/themes/NoctaliaTheme-color-theme.json ~/.antigravity-ide/extensions/noctalia.noctaliatheme-*/themes/NoctaliaTheme-color-theme.json";
 				};
+				starship = {
+					input_path = "$XDG_CONFIG_HOME/noctalia/templates/spicetify.ini";
+					output_path = "$XDG_CONFIG_HOME/noctalia/templates/ignore";
+					post_hook = "cp ~/.cache/noctalia/starship-palette.toml /etc/nixos/Features/Ricing/noctalia_colors/starship.toml";
+				};
 				nvf = {
 					input_path = "$XDG_CONFIG_HOME/noctalia/templates/nvf.nix";
 					output_path = "/etc/nixos/Features/Ricing/noctalia_colors/nvf.nix";
-					post_hook = "nh os switch";
+					post_hook = "";
 				};
 				spicetify-nix = {
 					input_path = "$XDG_CONFIG_HOME/noctalia/templates/spicetify.ini";
 					output_path = "/etc/nixos/Features/Ricing/noctalia_colors/spicetify.ini";
-					post_hook = "nh os switch";
+					post_hook = "";
 				};
 			};
 		};
@@ -535,11 +540,11 @@ let
 		per_monitor_directories = true;
 		transition_on_startup = true;
 		automation = {
-			enabled = true;
+			enabled = false;
 			interval_seconds = 86400;
 		};
 		default = {
-			path = "/home/gambled/Pictures/Wallpapers/Wide/vibrant/firewatchguy.jpg";
+			path = "/home/gambled/Pictures/Wallpapers/Wide/pixelart/dock.jpg";
 		};
 		last = {
 			path = "/home/gambled/Pictures/Wallpapers/Wide/pixelart/dock.jpg";

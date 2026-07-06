@@ -8,7 +8,7 @@
     enable = true;
     enableZshIntegration = true;
     enableBashIntegration = true;
-settings = {
+    settings = {
       format = lib.concatStrings [
         "$username"
         "$hostname"
@@ -22,7 +22,7 @@ settings = {
         "$character"
       ];
       palette = "noctalia";
-    }; #// builtins.fromTOML (builtins.readFile "${config.home.homeDirectory}/.cache/noctalia/starship-palette.toml");
+    } // fromTOML (builtins.readFile ../noctalia_colors/starship.toml);
     presets = [
       "bracketed-segments"
       # "gruvbox-rainbow"

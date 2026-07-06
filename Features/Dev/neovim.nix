@@ -47,6 +47,12 @@ in
         nvim-autopairs.enable = true;
       };
 
+      vim.binds = {
+        whichKey = {
+          enable = true;
+        };
+      };
+
       vim.clipboard = {
         enable = true;
         providers.wl-copy.enable = true;
@@ -103,6 +109,28 @@ in
         maplocalleader = ","; 
       };
 
+      # vim.lazy = {
+      #   enable = true;
+      # };
+
+      vim.languages = {
+        enableFormat = true;
+        enableTreesitter = true;
+
+        bash.enable = true;
+        css.enable = true;
+        html.enable = true;
+        json.enable = true;
+        markdown.enable = true;
+        nix.enable = true;
+        python.enable = true;
+        yaml.enable = true;
+        # lua.enable = true;
+        # php.enable = true;
+        # kotlin.enable = true;
+        # typescript.enable = true;
+      };
+
       vim.lsp = {
         enable = true;
         presets = {
@@ -110,40 +138,23 @@ in
         };
       };
 
-      vim.languages = {
-        enableFormat = true;
-        enableTreesitter = true;
-
-        nix.enable = true;
-        python.enable = true;
-        html.enable = true;
-        bash.enable = true;
-        css.enable = true;
-        yaml.enable = true;
-        # markdown.enable = true;
-        # lua.enable = true;
-        # php.enable = true;
-        # kotlin.enable = true;
-        # typescript.enable = true;
-      };
-
-      vim.spellcheck = {
-        enable = true;
-        languages = [ "en" ];
-      };
-
       # List of https://github.com/nvim-mini/mini.nvim
       vim.mini = {
         animate.enable = true;
+        align.enable = true;
         bracketed.enable = true;
         clue.enable = true;
         cursorword.enable = true;
         comment.enable = true;
+        hipatterns.enable = true;
         move.enable = true;
       };
 
       vim.minimap = {
-        minimap-vim.enable = true;
+        # minimap-vim.enable = true;
+        # codewindow = {
+        #   enable = true;
+        # };
       };
 
       vim.notify = {
@@ -169,11 +180,18 @@ in
       vim.runner = {
         run-nvim.enable = true;
       };
+      
+      vim.searchCase = "smart";
 
       vim.session = {
         nvim-session-manager = {
           enable = true;
         };
+      };
+
+      vim.spellcheck = {
+        enable = true;
+        languages = [ "en" ];
       };
       
       vim.statusline = {
@@ -237,7 +255,9 @@ in
         breadcrumbs.enable = true;
         colorful-menu-nvim.enable = true;
         colorizer.enable = true;
-        smartcolumn.enable = true;
+        modes-nvim.enable = true;
+        nvim-ufo.enable = true;
+        # smartcolumn.enable = true;
       };
 
       vim.undoFile = {
@@ -259,6 +279,7 @@ in
         fidget-nvim.enable = true;
         highlight-undo.enable = true;
         hlargs-nvim.enable = true;
+        indent-blankline.enable = true;
         nvim-cursorline.enable = true;
         nvim-scrollbar.enable = true;
         rainbow-delimiters.enable = true;
