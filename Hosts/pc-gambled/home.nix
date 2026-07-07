@@ -22,7 +22,8 @@
     #kcc
     #calibre
     komikku
-    grayjay
+    # grayjay
+    (callPackage ../../Pkgs/hayase/package.nix {})
 
     #* dev tools
     # android-studio
