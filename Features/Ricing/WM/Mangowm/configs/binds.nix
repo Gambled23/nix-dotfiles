@@ -1,4 +1,4 @@
-{mangowm, ...}:
+{...}:
 let 
   terminal="ghostty";
   file_manager = "${terminal} -e yazi";
@@ -26,7 +26,7 @@ in
       "SUPER,v,spawn,${terminal} -e vim"
       "SUPER,b,spawn,flatpak run com.artemchep.keyguard"
       "SUPER,m,spawn,${noctalia_ipc} session lock"
-      "SUPER,n,spawn,$termial -e nix-rbd"
+      "SUPER,n,spawn,${terminal} -e nix-rbd"
       "SUPER,o,spawn,moonlight stream 'el sunchine' 'dev-gambled'"
       "SUPER,p,spawn,scrcpy --render-driver=opengl -S -w -K -b15M --power-off-on-close"
       "SUPER,Escape,spawn,${terminal} -e btop"

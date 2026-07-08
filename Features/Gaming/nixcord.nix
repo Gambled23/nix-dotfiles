@@ -39,7 +39,7 @@
         biggerStreamPreview.enable = true;
         fakeNitro.enable = true;
         fakeProfileThemes.enable = true;
-        friendsSince.enable = true;
+        # friendsSince.enable = true;
         friendshipRanks.enable = true;
         fullSearchContext.enable = true;
         fullUserInChatbox.enable = true;

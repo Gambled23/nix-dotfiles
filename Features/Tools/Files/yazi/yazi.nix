@@ -130,4 +130,10 @@
 
     initLua = ./init.lua;
   };
+
+  home.packages = with pkgs; [
+    trash-cli	# for yazi trash plugin
+    ripdrag # for yazi drag plugin
+    glib # for yazi gvfs plugin
+  ];
 } 

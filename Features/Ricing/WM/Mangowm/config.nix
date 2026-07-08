@@ -22,19 +22,16 @@ in
 
   wayland.windowManager.mango = {
     enable = true;
-    autostart_sh = ''
-      noctalia-shell &
-      spotify &
-      discord &
-      altus &
-      steam %U &
-      kdeconnect-indicator &
-      wl-clip-persist --clipboard regular --reconnect-tries 0 &
-      wl-paste --type text --watch cliphist store &
-      sleep 10; systemctl --user restart sunshine &
-    '';
 
     settings = {
+      exec-once = [
+        "noctalia"
+        "discord"
+        "altus"
+        "kdeconnect-indicator"
+        "wl-clip-persist --clipboard regular --reconnect-tries 0"
+        "wl-paste --type text --watch cliphist store"
+      ];
       enable_floating_snap = 1;
       snap_distance = 30;
       allow_tearing = 1;

@@ -24,10 +24,11 @@
     inputs.antigravity-nix.packages.x86_64-linux.google-antigravity-ide-no-fhs # IDE
     inputs.antigravity-nix.packages.x86_64-linux.google-antigravity-cli # CLI
     
-    #* media creation
+    #* media 
     gimp-with-plugins
     (callPackage ../../Pkgs/nuvio/package.nix {})
     # inkscape-with-extensions
+    spotify-player
 
     #* messaging
     altus
@@ -36,7 +37,7 @@
 
     #* utils
     seahorse #gnome keyring manager
-    pixelflasher
+    # pixelflasher
     android-tools
     onlyoffice-desktopeditors
     scrcpy

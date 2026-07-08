@@ -12,7 +12,40 @@
   ];
 
   environment.systemPackages = with pkgs; [
+    # Scripts
     (import ../../Scripts/flash-kernelsu.nix { inherit pkgs; })
+    
+    # Clipboard
+    cliphist
+    wl-clipboard
+
+    # Libs?
+    playerctl
+    brightnessctl
+    pavucontrol
+    ddcutil
+    kdePackages.qtwebsockets
+    kdePackages.qt6ct
+    kdePackages.qtwayland
+    qt5.qtwayland
+    pipewire
+    pulseaudio
+    pulsemeeter
+    wireplumber
+    sof-firmware # audio via hdmi
+
+
+    # Tools
+    gnome-calendar
+    gnome-contacts
+    qalculate-gtk
+    nautilus
+    gparted
+
+    # Theming
+    bibata-cursors
+    papirus-icon-theme
+    
   ];
 
   programs.appimage = {

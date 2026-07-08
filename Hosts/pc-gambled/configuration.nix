@@ -28,7 +28,6 @@
 
     (import ../../Scripts/reboot-to-windows.nix { inherit pkgs; })
     (import ../../Scripts/display-device.nix { inherit pkgs; })
-    (import ../../Scripts/modo-tele.nix { inherit pkgs; })
 
   ];
 

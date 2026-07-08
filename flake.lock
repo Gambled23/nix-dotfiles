@@ -40,7 +40,7 @@
     "accela_2": {
       "inputs": {
         "nixpkgs": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "nixpkgs"
         ]
@@ -65,13 +65,37 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1781734251,
-        "narHash": "sha256-6kpZJqU6iNfy6UgK+Es9E6RTbTpRvDxwkJNwYx6phVM=",
+        "lastModified": 1783361866,
+        "narHash": "sha256-levhv3qlUOum+SOTrPp/JmHn+VB4/Ktdcggs8/Btvhc=",
         "path": "/home/alpha/administrativo",
         "type": "path"
       },
       "original": {
         "path": "/home/alpha/administrativo",
+        "type": "path"
+      }
+    },
+    "alpha-server": {
+      "inputs": {
+        "administrativo": "administrativo",
+        "factorio": "factorio",
+        "facturacion": "facturacion",
+        "financiero": "financiero",
+        "gambled-config": "gambled-config",
+        "home-manager": "home-manager_2",
+        "nix-index-database": "nix-index-database_2",
+        "nixpkgs": "nixpkgs_14",
+        "quiniela": "quiniela",
+        "sops-nix": "sops-nix"
+      },
+      "locked": {
+        "lastModified": 1783528559,
+        "narHash": "sha256-ZnfJY6vjoGWnSygjMkAaVZezFJIT1zsc/ktKSMEyVTA=",
+        "path": "/home/gambled/Codes/nixos",
+        "type": "path"
+      },
+      "original": {
+        "path": "/home/gambled/Codes/nixos",
         "type": "path"
       }
     },
@@ -83,11 +107,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1782979602,
-        "narHash": "sha256-o/v/wXdmBUT4mRqhExg7AV9XW+moGISeQbG2tj13uBo=",
+        "lastModified": 1783497076,
+        "narHash": "sha256-NMMOfgLJPZU6yimIOVk8LnM5+SZlWwz6XG9zdDbZ/2c=",
         "owner": "jacopone",
         "repo": "antigravity-nix",
-        "rev": "df5fb92fb91600b47fa88811553c48a4f50973b1",
+        "rev": "4f034162ad799768a372e4ce32bc6a95f7d056d5",
         "type": "github"
       },
       "original": {
@@ -99,25 +123,25 @@
     "aquamarine": {
       "inputs": {
         "hyprutils": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "hyprutils"
         ],
         "hyprwayland-scanner": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "hyprwayland-scanner"
         ],
         "nixpkgs": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "nixpkgs"
         ],
         "systems": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "systems"
@@ -185,30 +209,6 @@
         "ref": "asio-1-30-0",
         "repo": "asio",
         "type": "github"
-      }
-    },
-    "backup-transfer": {
-      "inputs": {
-        "administrativo": "administrativo",
-        "factorio": "factorio",
-        "facturacion": "facturacion",
-        "financiero": "financiero",
-        "gambled-config": "gambled-config",
-        "home-manager": "home-manager_2",
-        "nix-index-database": "nix-index-database_2",
-        "nixpkgs": "nixpkgs_14",
-        "quiniela": "quiniela",
-        "sops-nix": "sops-nix"
-      },
-      "locked": {
-        "lastModified": 1782408546,
-        "narHash": "sha256-ldF6A2qUGZ+knYHIxAgHSP7evOV2Pe+17wJ/Haaz72o=",
-        "path": "/home/gambled/Codes/nixos",
-        "type": "path"
-      },
-      "original": {
-        "path": "/home/gambled/Codes/nixos",
-        "type": "path"
       }
     },
     "base16": {
@@ -411,8 +411,8 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1781733766,
-        "narHash": "sha256-OcgAd8uPCJGh8/xunK2G2asUw1tNV2y5oplFcHnMT98=",
+        "lastModified": 1783361782,
+        "narHash": "sha256-BTdqRw9XLcOkh3znjVrTHzblNuluAeeImE603AUxyz0=",
         "path": "/home/alpha/factorio",
         "type": "path"
       },
@@ -426,8 +426,8 @@
         "nixpkgs": "nixpkgs_3"
       },
       "locked": {
-        "lastModified": 1781733766,
-        "narHash": "sha256-C6y3viumBjg3vX6sh55GX9KKSMm4mlNbx483wFghnG4=",
+        "lastModified": 1783361782,
+        "narHash": "sha256-4SA1h+0ZRi89o+p+IglqmDIraDdf2e+IcsankBnNdqY=",
         "path": "/home/alpha/facturacion",
         "type": "path"
       },
@@ -441,8 +441,8 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1781733947,
-        "narHash": "sha256-KLU5n0SjN1eMi1lio0mLWUFqEbfpNUElw4z8ziJ86yg=",
+        "lastModified": 1783361963,
+        "narHash": "sha256-LTaWQ9sRIAcMTKldWHWiLLE4IuNAWsjbyWJUmG1WVAI=",
         "path": "/home/alpha/financiero",
         "type": "path"
       },
@@ -628,7 +628,7 @@
     "flake-parts_2": {
       "inputs": {
         "nixpkgs-lib": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "nur",
           "nixpkgs"
@@ -651,7 +651,7 @@
     "flake-parts_3": {
       "inputs": {
         "nixpkgs-lib": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "nvf",
           "nixpkgs"
@@ -674,7 +674,7 @@
     "flake-parts_4": {
       "inputs": {
         "nixpkgs-lib": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "stylix",
           "nixpkgs"
@@ -717,11 +717,11 @@
         "nixpkgs-lib": "nixpkgs-lib_3"
       },
       "locked": {
-        "lastModified": 1778716662,
-        "narHash": "sha256-m1Yf0wZ8j1OHjTc2UwHwyQRSnNeSgLJOd7q5Y45hzi4=",
+        "lastModified": 1782949081,
+        "narHash": "sha256-vp6Y/Grm98ESt6ceOkWiHWyZRDV3J1RID4w+6NWK9yA=",
         "owner": "hercules-ci",
         "repo": "flake-parts",
-        "rev": "f7c1a2d347e4c52d5fb8d10cb4d94b5884e546fb",
+        "rev": "17c9d6cdfc60c64f4ee8d306f9bc0b4ccb51481e",
         "type": "github"
       },
       "original": {
@@ -754,27 +754,6 @@
     "flake-parts_8": {
       "inputs": {
         "nixpkgs-lib": [
-          "nvf",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1778716662,
-        "narHash": "sha256-m1Yf0wZ8j1OHjTc2UwHwyQRSnNeSgLJOd7q5Y45hzi4=",
-        "owner": "hercules-ci",
-        "repo": "flake-parts",
-        "rev": "f7c1a2d347e4c52d5fb8d10cb4d94b5884e546fb",
-        "type": "github"
-      },
-      "original": {
-        "owner": "hercules-ci",
-        "repo": "flake-parts",
-        "type": "github"
-      }
-    },
-    "flake-parts_9": {
-      "inputs": {
-        "nixpkgs-lib": [
           "stylix",
           "nixpkgs"
         ]
@@ -795,7 +774,7 @@
     },
     "flake-utils": {
       "inputs": {
-        "systems": "systems"
+        "systems": "systems_8"
       },
       "locked": {
         "lastModified": 1731533236,
@@ -917,7 +896,7 @@
     "gitignore": {
       "inputs": {
         "nixpkgs": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "pre-commit-hooks",
@@ -997,7 +976,7 @@
     "home-manager": {
       "inputs": {
         "nixpkgs": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "nixpkgs"
         ]
@@ -1019,7 +998,7 @@
     "home-manager_2": {
       "inputs": {
         "nixpkgs": [
-          "backup-transfer",
+          "alpha-server",
           "nixpkgs"
         ]
       },
@@ -1044,11 +1023,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1781615165,
-        "narHash": "sha256-CFF4fNNfr2GZSx1xJhBNBi7VMj8OtOqZGOV+fiBSbzw=",
+        "lastModified": 1783525612,
+        "narHash": "sha256-OEFYdbtG6Qy04KGteknnrx15Uo2XXkYVuUvBvFNEn+Q=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "34dd288e65012954cf7170658e0e6a61255b0327",
+        "rev": "1aac8895fea6fcabc6a0184c63a80fb2f99fd208",
         "type": "github"
       },
       "original": {
@@ -1060,19 +1039,19 @@
     "hyprcursor": {
       "inputs": {
         "hyprlang": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "hyprlang"
         ],
         "nixpkgs": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "nixpkgs"
         ],
         "systems": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "systems"
@@ -1124,19 +1103,19 @@
     "hyprgraphics": {
       "inputs": {
         "hyprutils": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "hyprutils"
         ],
         "nixpkgs": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "nixpkgs"
         ],
         "systems": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "systems"
@@ -1198,7 +1177,7 @@
         "hyprwire": "hyprwire",
         "nixpkgs": "nixpkgs_5",
         "pre-commit-hooks": "pre-commit-hooks",
-        "systems": "systems_2",
+        "systems": "systems",
         "xdph": "xdph"
       },
       "locked": {
@@ -1218,44 +1197,44 @@
     "hyprland-guiutils": {
       "inputs": {
         "aquamarine": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "aquamarine"
         ],
         "hyprgraphics": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "hyprgraphics"
         ],
         "hyprlang": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "hyprlang"
         ],
         "hyprtoolkit": "hyprtoolkit",
         "hyprutils": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "hyprutils"
         ],
         "hyprwayland-scanner": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "hyprwayland-scanner"
         ],
         "nixpkgs": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "nixpkgs"
         ],
         "systems": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "systems"
@@ -1324,19 +1303,19 @@
     "hyprland-plugins": {
       "inputs": {
         "hyprland": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland"
         ],
         "nixpkgs": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland-plugins",
           "hyprland",
           "nixpkgs"
         ],
         "systems": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland-plugins",
           "hyprland",
@@ -1390,13 +1369,13 @@
     "hyprland-protocols": {
       "inputs": {
         "nixpkgs": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "nixpkgs"
         ],
         "systems": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "systems"
@@ -1474,19 +1453,19 @@
     "hyprlang": {
       "inputs": {
         "hyprutils": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "hyprutils"
         ],
         "nixpkgs": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "nixpkgs"
         ],
         "systems": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "systems"
@@ -1538,49 +1517,49 @@
     "hyprtoolkit": {
       "inputs": {
         "aquamarine": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "hyprland-guiutils",
           "aquamarine"
         ],
         "hyprgraphics": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "hyprland-guiutils",
           "hyprgraphics"
         ],
         "hyprlang": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "hyprland-guiutils",
           "hyprlang"
         ],
         "hyprutils": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "hyprland-guiutils",
           "hyprutils"
         ],
         "hyprwayland-scanner": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "hyprland-guiutils",
           "hyprwayland-scanner"
         ],
         "nixpkgs": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "hyprland-guiutils",
           "nixpkgs"
         ],
         "systems": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "hyprland-guiutils",
@@ -1656,13 +1635,13 @@
     "hyprutils": {
       "inputs": {
         "nixpkgs": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "nixpkgs"
         ],
         "systems": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "systems"
@@ -1710,13 +1689,13 @@
     "hyprwayland-scanner": {
       "inputs": {
         "nixpkgs": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "nixpkgs"
         ],
         "systems": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "systems"
@@ -1764,19 +1743,19 @@
     "hyprwire": {
       "inputs": {
         "hyprutils": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "hyprutils"
         ],
         "nixpkgs": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "nixpkgs"
         ],
         "systems": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "systems"
@@ -1931,23 +1910,6 @@
         "type": "github"
       }
     },
-    "luajit-src_2": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1763177035,
-        "narHash": "sha256-oYD86MqmlJpiCuEs4LwVtxvarPtz1RPWm8nJqNE0sBs=",
-        "owner": "SteamClientHomebrew",
-        "repo": "LuaJIT",
-        "rev": "89550023569c3e195e75e12951c067fe5591e0d2",
-        "type": "github"
-      },
-      "original": {
-        "owner": "SteamClientHomebrew",
-        "ref": "v2.1",
-        "repo": "LuaJIT",
-        "type": "github"
-      }
-    },
     "luajson-src": {
       "flake": false,
       "locked": {
@@ -2043,33 +2005,32 @@
     "millennium-src_2": {
       "flake": false,
       "locked": {
-        "lastModified": 1780619503,
-        "narHash": "sha256-H6h3p4C3XtAhS64MnmRhHvDF8P1gEDGQ5Oo93KI5MvY=",
+        "lastModified": 1782175707,
+        "narHash": "sha256-nAgnski2c247PqLtcK3g5NER7hVj/zlCJd9CTb2lne4=",
         "owner": "SteamClientHomebrew",
         "repo": "Millennium",
-        "rev": "f8ec21d14e0f2536f099cd06dd099e39fd04cda7",
+        "rev": "5729ba4bb432a071a0276abb416b2c26d27afa71",
         "type": "github"
       },
       "original": {
         "owner": "SteamClientHomebrew",
         "repo": "Millennium",
-        "rev": "f8ec21d14e0f2536f099cd06dd099e39fd04cda7",
+        "rev": "5729ba4bb432a071a0276abb416b2c26d27afa71",
         "type": "github"
       }
     },
     "millennium_2": {
       "inputs": {
-        "luajit-src": "luajit-src_2",
         "millennium-src": "millennium-src_2",
         "nixpkgs": "nixpkgs_18"
       },
       "locked": {
         "dir": "packages/nix",
-        "lastModified": 1781375615,
-        "narHash": "sha256-x6g4flLj2MBA9iIG2bSxLAywzmA7apD9sAA2YHArIt8=",
+        "lastModified": 1783273395,
+        "narHash": "sha256-ZCFyI5uR7pwkoLzLYxFqJWV8mjujVQIgqCqm+KeF+a4=",
         "owner": "SteamClientHomebrew",
         "repo": "Millennium",
-        "rev": "61061caf4c78b8df00ffb5dda50b19ceef407030",
+        "rev": "3e6443a6ea1a5213adabe0327d3844e1ab432094",
         "type": "github"
       },
       "original": {
@@ -2184,7 +2145,7 @@
     "ndg": {
       "inputs": {
         "nixpkgs": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "nvf",
           "nixpkgs"
@@ -2201,28 +2162,6 @@
       "original": {
         "owner": "feel-co",
         "ref": "refs/tags/v2.6.0",
-        "repo": "ndg",
-        "type": "github"
-      }
-    },
-    "ndg_2": {
-      "inputs": {
-        "nixpkgs": [
-          "nvf",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1779233504,
-        "narHash": "sha256-YIKEyzh0NFQlD0O92LQQNMoVCDwV8yw1Xz0Iu+4ZC5U=",
-        "owner": "feel-co",
-        "repo": "ndg",
-        "rev": "86f6644411a64d5413711895b7cf6e0e1be465b6",
-        "type": "github"
-      },
-      "original": {
-        "owner": "feel-co",
-        "ref": "refs/tags/v2.8.0",
         "repo": "ndg",
         "type": "github"
       }
@@ -2320,7 +2259,7 @@
     "nix-github-actions": {
       "inputs": {
         "nixpkgs": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "jovian-nixos",
           "nixpkgs"
@@ -2366,7 +2305,7 @@
     "nix-index-database": {
       "inputs": {
         "nixpkgs": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "nixpkgs"
         ]
@@ -2388,7 +2327,7 @@
     "nix-index-database_2": {
       "inputs": {
         "nixpkgs": [
-          "backup-transfer",
+          "alpha-server",
           "nixpkgs"
         ]
       },
@@ -2413,11 +2352,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1782636943,
-        "narHash": "sha256-ripjZa7BBLwL1uS5VJF3s/VpZpWt5ZIQEvkJ/FJNpQw=",
+        "lastModified": 1783414108,
+        "narHash": "sha256-RY8e+gR2/DhXsYDxGDL6Hhe9+POD9u4+llwxMBqMQDs=",
         "owner": "nix-community",
         "repo": "nix-index-database",
-        "rev": "058b1f9381fa79fcda49982370a750ff92dbba43",
+        "rev": "96d6de10eb281b98f5cfcd1841394c03da5df77c",
         "type": "github"
       },
       "original": {
@@ -2455,11 +2394,11 @@
         "nixpkgs-nixcord": "nixpkgs-nixcord_2"
       },
       "locked": {
-        "lastModified": 1781603972,
-        "narHash": "sha256-w+vYlzaw2h0h8ALEpQSXCqlgvh5HjQZagfdPg8Nr12o=",
+        "lastModified": 1783482236,
+        "narHash": "sha256-nuHRE13JbCT+xE76blZIfUEG8rV8eWld+gSVfjqCTZw=",
         "owner": "kaylorben",
         "repo": "nixcord",
-        "rev": "bb2d2dd4d7a49b9a23074911f6fcb1feddd050f1",
+        "rev": "6c9dd68b37f50f6db57bea777e92fd67e0b2e0bb",
         "type": "github"
       },
       "original": {
@@ -2489,11 +2428,11 @@
         "nixpkgs": "nixpkgs_20"
       },
       "locked": {
-        "lastModified": 1781622756,
-        "narHash": "sha256-JrPh4M6S7aPsEE9tOENuZrxC6o2szSLlK+t4+nLke9s=",
+        "lastModified": 1783370751,
+        "narHash": "sha256-E+3MIMvKuo9k+K+qLQ9YXzsBzkgHuyVLnsEbN2DFfuc=",
         "owner": "NixOS",
         "repo": "nixos-hardware",
-        "rev": "08018c72174a4df5657f8d94178ac69fb9c243e5",
+        "rev": "662bd6e312d2c8b212e32cb377abaee190749320",
         "type": "github"
       },
       "original": {
@@ -2505,11 +2444,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1781577229,
-        "narHash": "sha256-lrp67w8AulE9Ks53n27I45ADSzbOCn4H+CNW1Ck8B+8=",
+        "lastModified": 1783224372,
+        "narHash": "sha256-8i/87eeoqiGE4yOTjwSA3Eh/ziJRQEmd/unYU+K27sk=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "567a49d1913ce81ac6e9582e3553dd90a955875f",
+        "rev": "d407951447dcd00442e97087bf374aad70c04cea",
         "type": "github"
       },
       "original": {
@@ -2551,11 +2490,11 @@
     },
     "nixpkgs-lib_3": {
       "locked": {
-        "lastModified": 1777168982,
-        "narHash": "sha256-GOkGPcboWE9BmGCRMLX3worL4EMnsnG8MyKmXNeYuhQ=",
+        "lastModified": 1782614948,
+        "narHash": "sha256-ePjCwr1sNm9NYUqywL7QfK3JnlS015msC+eBu2zKlp8=",
         "owner": "nix-community",
         "repo": "nixpkgs.lib",
-        "rev": "f5901329dade4a6ea039af1433fb087bd9c1fe14",
+        "rev": "db3f255737b94216eb71cce308e2912cf6bc2d7c",
         "type": "github"
       },
       "original": {
@@ -2582,11 +2521,11 @@
     },
     "nixpkgs-nixcord_2": {
       "locked": {
-        "lastModified": 1780453794,
-        "narHash": "sha256-bXMRa9VTsHSPXL4Cw8R6JJLQeY3Y/IP4+YJCYVmQ7FY=",
+        "lastModified": 1782999065,
+        "narHash": "sha256-5Dgj5+pIQYZKrXUGaLCk7CKfN3MmpwIhO94++WVxvng=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "6b316287bae2ee04c9b93c8c858d930fd07d7338",
+        "rev": "80d591ed473cfc46329932c2aadac9b435342c7c",
         "type": "github"
       },
       "original": {
@@ -2691,11 +2630,11 @@
     },
     "nixpkgs_15": {
       "locked": {
-        "lastModified": 1781577229,
-        "narHash": "sha256-lrp67w8AulE9Ks53n27I45ADSzbOCn4H+CNW1Ck8B+8=",
+        "lastModified": 1783224372,
+        "narHash": "sha256-8i/87eeoqiGE4yOTjwSA3Eh/ziJRQEmd/unYU+K27sk=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "567a49d1913ce81ac6e9582e3553dd90a955875f",
+        "rev": "d407951447dcd00442e97087bf374aad70c04cea",
         "type": "github"
       },
       "original": {
@@ -2739,27 +2678,27 @@
     },
     "nixpkgs_18": {
       "locked": {
-        "lastModified": 1770115704,
-        "narHash": "sha256-KHFT9UWOF2yRPlAnSXQJh6uVcgNcWlFqqiAZ7OVlHNc=",
+        "lastModified": 1781577229,
+        "narHash": "sha256-lrp67w8AulE9Ks53n27I45ADSzbOCn4H+CNW1Ck8B+8=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "e6eae2ee2110f3d31110d5c222cd395303343b08",
+        "rev": "567a49d1913ce81ac6e9582e3553dd90a955875f",
         "type": "github"
       },
       "original": {
         "owner": "nixos",
-        "ref": "nixos-unstable",
         "repo": "nixpkgs",
+        "rev": "567a49d1913ce81ac6e9582e3553dd90a955875f",
         "type": "github"
       }
     },
     "nixpkgs_19": {
       "locked": {
-        "lastModified": 1780453794,
-        "narHash": "sha256-bXMRa9VTsHSPXL4Cw8R6JJLQeY3Y/IP4+YJCYVmQ7FY=",
+        "lastModified": 1782999065,
+        "narHash": "sha256-5Dgj5+pIQYZKrXUGaLCk7CKfN3MmpwIhO94++WVxvng=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "6b316287bae2ee04c9b93c8c858d930fd07d7338",
+        "rev": "80d591ed473cfc46329932c2aadac9b435342c7c",
         "type": "github"
       },
       "original": {
@@ -2771,11 +2710,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1781577229,
-        "narHash": "sha256-lrp67w8AulE9Ks53n27I45ADSzbOCn4H+CNW1Ck8B+8=",
+        "lastModified": 1783224372,
+        "narHash": "sha256-8i/87eeoqiGE4yOTjwSA3Eh/ziJRQEmd/unYU+K27sk=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "567a49d1913ce81ac6e9582e3553dd90a955875f",
+        "rev": "d407951447dcd00442e97087bf374aad70c04cea",
         "type": "github"
       },
       "original": {
@@ -2800,11 +2739,11 @@
     },
     "nixpkgs_21": {
       "locked": {
-        "lastModified": 1781074563,
-        "narHash": "sha256-md8WlXOlfnIeHeOScMTTHFyf2d6iaTwPl2apR5EQ3P4=",
+        "lastModified": 1783224372,
+        "narHash": "sha256-8i/87eeoqiGE4yOTjwSA3Eh/ziJRQEmd/unYU+K27sk=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
+        "rev": "d407951447dcd00442e97087bf374aad70c04cea",
         "type": "github"
       },
       "original": {
@@ -2816,27 +2755,24 @@
     },
     "nixpkgs_22": {
       "locked": {
-        "lastModified": 1781216227,
-        "narHash": "sha256-9mUW6gNwoN2SWc/l0fW4svPNOulXLl8ijqKyeSOGgJE=",
-        "owner": "nixos",
-        "repo": "nixpkgs",
-        "rev": "a0374025a863d007d98e3297f6aa46cc3141c2f0",
-        "type": "github"
+        "lastModified": 1783148766,
+        "narHash": "sha256-H9+N+GFtsbVC8ZniHliChM7ndizxtqVZs6bnGOLM3WQ=",
+        "rev": "a50de1b7d8a586adc18d2395c19de7d6058e6030",
+        "type": "tarball",
+        "url": "https://releases.nixos.org/nixos/26.05/nixos-26.05.4193.a50de1b7d8a5/nixexprs.tar.xz?lastModified=1783148766&rev=a50de1b7d8a586adc18d2395c19de7d6058e6030"
       },
       "original": {
-        "owner": "nixos",
-        "ref": "nixos-26.05",
-        "repo": "nixpkgs",
-        "type": "github"
+        "type": "tarball",
+        "url": "https://channels.nixos.org/nixos-26.05/nixexprs.tar.xz"
       }
     },
     "nixpkgs_23": {
       "locked": {
-        "lastModified": 1781074563,
-        "narHash": "sha256-d34lhgOet4IqYMnCxbIvwFBMOyTV6PT4TyNEOP0/ZhU=",
-        "rev": "9ae611a455b90cf061d8f332b977e387bda8e1ca",
+        "lastModified": 1783224372,
+        "narHash": "sha256-FGQ8TfSm9WviNE/fQAWsKs+y4GkX8fU4EScewpw54Y8=",
+        "rev": "d407951447dcd00442e97087bf374aad70c04cea",
         "type": "tarball",
-        "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1014179.9ae611a455b9/nixexprs.tar.xz"
+        "url": "https://releases.nixos.org/nixos/unstable/nixos-26.11pre1027867.d407951447dc/nixexprs.tar.xz"
       },
       "original": {
         "type": "tarball",
@@ -2861,11 +2797,11 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1781577229,
-        "narHash": "sha256-lrp67w8AulE9Ks53n27I45ADSzbOCn4H+CNW1Ck8B+8=",
+        "lastModified": 1783224372,
+        "narHash": "sha256-8i/87eeoqiGE4yOTjwSA3Eh/ziJRQEmd/unYU+K27sk=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "567a49d1913ce81ac6e9582e3553dd90a955875f",
+        "rev": "d407951447dcd00442e97087bf374aad70c04cea",
         "type": "github"
       },
       "original": {
@@ -2877,11 +2813,11 @@
     },
     "nixpkgs_4": {
       "locked": {
-        "lastModified": 1781577229,
-        "narHash": "sha256-lrp67w8AulE9Ks53n27I45ADSzbOCn4H+CNW1Ck8B+8=",
+        "lastModified": 1783224372,
+        "narHash": "sha256-8i/87eeoqiGE4yOTjwSA3Eh/ziJRQEmd/unYU+K27sk=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "567a49d1913ce81ac6e9582e3553dd90a955875f",
+        "rev": "d407951447dcd00442e97087bf374aad70c04cea",
         "type": "github"
       },
       "original": {
@@ -3013,12 +2949,12 @@
     "noctalia-qs": {
       "inputs": {
         "nixpkgs": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "noctalia",
           "nixpkgs"
         ],
-        "systems": "systems_3",
+        "systems": "systems_2",
         "treefmt-nix": "treefmt-nix"
       },
       "locked": {
@@ -3042,11 +2978,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1783005294,
-        "narHash": "sha256-sUbi4yCSk2j3a/XFA0vPztBkVbC/fkRbxn1eDP0AkT4=",
+        "lastModified": 1783525093,
+        "narHash": "sha256-I5lNhyN66gUPE9GcpJHUCn2BqevFI8cu463tzGfjGug=",
         "owner": "noctalia-dev",
         "repo": "noctalia",
-        "rev": "50618717623221aff3d33e1e61fea169cad04991",
+        "rev": "f63a44a7c9b3a9910710c377e04a06228e994fe1",
         "type": "github"
       },
       "original": {
@@ -3059,7 +2995,7 @@
       "inputs": {
         "flake-parts": "flake-parts_2",
         "nixpkgs": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "nixpkgs"
         ]
@@ -3081,13 +3017,13 @@
     "nur_2": {
       "inputs": {
         "flake-parts": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "stylix",
           "flake-parts"
         ],
         "nixpkgs": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "stylix",
           "nixpkgs"
@@ -3160,7 +3096,7 @@
         "mnw": "mnw",
         "ndg": "ndg",
         "nixpkgs": "nixpkgs_11",
-        "systems": "systems_4"
+        "systems": "systems_3"
       },
       "locked": {
         "lastModified": 1778049651,
@@ -3179,18 +3115,15 @@
     "nvf_2": {
       "inputs": {
         "flake-compat": "flake-compat_7",
-        "flake-parts": "flake-parts_8",
         "mnw": "mnw_2",
-        "ndg": "ndg_2",
-        "nixpkgs": "nixpkgs_22",
-        "systems": "systems_11"
+        "nixpkgs": "nixpkgs_22"
       },
       "locked": {
-        "lastModified": 1781534482,
-        "narHash": "sha256-d3UIqXuigQhsc7amQkZ7F+SWnaJFAxIROE2f2X+pzUs=",
+        "lastModified": 1783457578,
+        "narHash": "sha256-t8f/HFUfZC8SOllCFWXgbMKnWipdqoJNmplsn56s6EQ=",
         "owner": "NotAShelf",
         "repo": "nvf",
-        "rev": "63d8fc82d652c23419a837e2b2934dd4bead04f3",
+        "rev": "a6f93c1e49d40246635ba30a8b79c21aae1cb0bc",
         "type": "github"
       },
       "original": {
@@ -3204,7 +3137,7 @@
         "flake-compat": "flake-compat",
         "gitignore": "gitignore",
         "nixpkgs": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "nixpkgs"
@@ -3274,8 +3207,8 @@
         "nixpkgs": "nixpkgs_15"
       },
       "locked": {
-        "lastModified": 1781733947,
-        "narHash": "sha256-Kt6I9O+66SqSLkBd7a8eSLgI9Vi7t/IqqIfMb2RG/yo=",
+        "lastModified": 1783361963,
+        "narHash": "sha256-M8scZssIwRtmqBzbnfFOaPOwSQT9vEVfr3cuPwceE1Q=",
         "path": "/home/alpha/quiniela",
         "type": "path"
       },
@@ -3304,8 +3237,8 @@
     "root": {
       "inputs": {
         "accela": "accela",
+        "alpha-server": "alpha-server",
         "antigravity-nix": "antigravity-nix",
-        "backup-transfer": "backup-transfer",
         "dms": "dms",
         "dms-plugin-registry": "dms-plugin-registry",
         "home-manager": "home-manager_3",
@@ -3356,7 +3289,7 @@
     "sls-steam": {
       "inputs": {
         "nixpkgs": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "nixpkgs"
         ]
@@ -3382,11 +3315,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1782904329,
-        "narHash": "sha256-V1iSXPh0vjOkmOlM4epi0AQijomag0j0IzkKQlViGQ8=",
+        "lastModified": 1783322884,
+        "narHash": "sha256-BmYEQewp9fCTP6KFGnYh2dh6EjMj62FfJQTrksSSN3c=",
         "owner": "AceSLS",
         "repo": "SLSsteam",
-        "rev": "ebfb0797680e585825951b95e1b02c7b107b8909",
+        "rev": "8ef40a2bdc662331f215775e525e1b010a2ffba3",
         "type": "github"
       },
       "original": {
@@ -3398,7 +3331,7 @@
     "sops-nix": {
       "inputs": {
         "nixpkgs": [
-          "backup-transfer",
+          "alpha-server",
           "nixpkgs"
         ]
       },
@@ -3419,7 +3352,7 @@
     "spicetify-nix": {
       "inputs": {
         "nixpkgs": "nixpkgs_12",
-        "systems": "systems_5"
+        "systems": "systems_4"
       },
       "locked": {
         "lastModified": 1777789800,
@@ -3438,14 +3371,14 @@
     "spicetify-nix_2": {
       "inputs": {
         "nixpkgs": "nixpkgs_23",
-        "systems": "systems_12"
+        "systems": "systems_11"
       },
       "locked": {
-        "lastModified": 1781425310,
-        "narHash": "sha256-GTBka4Df/ZOacmisI/DI2LICyNChEqn/giah83LucdM=",
+        "lastModified": 1783303713,
+        "narHash": "sha256-d6Zs6wD0kvWQXn7qPU0YsuqoqBhT7zi5+1M365FINt8=",
         "owner": "Gerg-L",
         "repo": "spicetify-nix",
-        "rev": "aeaf7c81a45d3761da61cb05bfc370ac6d1b0441",
+        "rev": "d9d714243e2f8d10af28db5111f018ec2d77acc9",
         "type": "github"
       },
       "original": {
@@ -3464,12 +3397,12 @@
         "flake-parts": "flake-parts_4",
         "gnome-shell": "gnome-shell",
         "nixpkgs": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "nixpkgs"
         ],
         "nur": "nur_2",
-        "systems": "systems_6",
+        "systems": "systems_5",
         "tinted-kitty": "tinted-kitty",
         "tinted-schemes": "tinted-schemes",
         "tinted-tmux": "tinted-tmux",
@@ -3496,13 +3429,13 @@
         "base16-helix": "base16-helix_2",
         "base16-vim": "base16-vim_2",
         "firefox-gnome-theme": "firefox-gnome-theme_2",
-        "flake-parts": "flake-parts_9",
+        "flake-parts": "flake-parts_8",
         "gnome-shell": "gnome-shell_2",
         "nixpkgs": [
           "nixpkgs"
         ],
         "nur": "nur_4",
-        "systems": "systems_13",
+        "systems": "systems_12",
         "tinted-kitty": "tinted-kitty_2",
         "tinted-schemes": "tinted-schemes_2",
         "tinted-tmux": "tinted-tmux_2",
@@ -3524,16 +3457,16 @@
     },
     "systems": {
       "locked": {
-        "lastModified": 1681028828,
-        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "lastModified": 1689347949,
+        "narHash": "sha256-12tWmuL2zgBgZkdoB6qXZsgJEH9LR3oUgpaQq2RbI80=",
         "owner": "nix-systems",
-        "repo": "default",
-        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "repo": "default-linux",
+        "rev": "31732fcf5e8fea42e59c2488ad31a0e651500f68",
         "type": "github"
       },
       "original": {
         "owner": "nix-systems",
-        "repo": "default",
+        "repo": "default-linux",
         "type": "github"
       }
     },
@@ -3612,21 +3545,6 @@
         "type": "github"
       }
     },
-    "systems_15": {
-      "locked": {
-        "lastModified": 1681028828,
-        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
-        "owner": "nix-systems",
-        "repo": "default",
-        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nix-systems",
-        "repo": "default",
-        "type": "github"
-      }
-    },
     "systems_2": {
       "locked": {
         "lastModified": 1689347949,
@@ -3644,16 +3562,16 @@
     },
     "systems_3": {
       "locked": {
-        "lastModified": 1689347949,
-        "narHash": "sha256-12tWmuL2zgBgZkdoB6qXZsgJEH9LR3oUgpaQq2RbI80=",
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
         "owner": "nix-systems",
-        "repo": "default-linux",
-        "rev": "31732fcf5e8fea42e59c2488ad31a0e651500f68",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
         "type": "github"
       },
       "original": {
         "owner": "nix-systems",
-        "repo": "default-linux",
+        "repo": "default",
         "type": "github"
       }
     },
@@ -3878,7 +3796,7 @@
     "treefmt-nix": {
       "inputs": {
         "nixpkgs": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "noctalia",
           "noctalia-qs",
@@ -3902,7 +3820,7 @@
     "vicinae": {
       "inputs": {
         "nixpkgs": "nixpkgs_13",
-        "systems": "systems_7"
+        "systems": "systems_6"
       },
       "locked": {
         "lastModified": 1778294120,
@@ -3922,11 +3840,11 @@
       "inputs": {
         "flake-compat": "flake-compat_4",
         "nixpkgs": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "nixpkgs"
         ],
-        "systems": "systems_8",
+        "systems": "systems_7",
         "vicinae": "vicinae_2"
       },
       "locked": {
@@ -3949,15 +3867,15 @@
         "nixpkgs": [
           "nixpkgs"
         ],
-        "systems": "systems_15",
+        "systems": "systems_14",
         "vicinae": "vicinae_4"
       },
       "locked": {
-        "lastModified": 1781016738,
-        "narHash": "sha256-9D3/tZiIUUqNEVs0zdEgdTkY6qS70qbV87+KrXWiwV4=",
+        "lastModified": 1783009133,
+        "narHash": "sha256-Non+frT3WG0TN60zCq63m8+d7yNmCCMaI363kZaDmPM=",
         "owner": "vicinaehq",
         "repo": "extensions",
-        "rev": "b2169756872919f2bdeece9bce47247ba5d99b8a",
+        "rev": "afb84fe4b5253777ff82db8e19e6cc0c9b7f811f",
         "type": "github"
       },
       "original": {
@@ -3969,13 +3887,13 @@
     "vicinae_2": {
       "inputs": {
         "nixpkgs": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "vicinae-extensions",
           "nixpkgs"
         ],
         "systems": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "vicinae-extensions",
           "systems"
@@ -3998,14 +3916,14 @@
     "vicinae_3": {
       "inputs": {
         "nixpkgs": "nixpkgs_24",
-        "systems": "systems_14"
+        "systems": "systems_13"
       },
       "locked": {
-        "lastModified": 1781483095,
-        "narHash": "sha256-r4BuhKyW4sxin0YG3/EJjed/MiP5NwN7QGiM1ySozjE=",
+        "lastModified": 1783508811,
+        "narHash": "sha256-NXSdWTM19oz9Xzsh7Yup6y/z8g+VIk2cK5JIqcVNu2w=",
         "owner": "vicinaehq",
         "repo": "vicinae",
-        "rev": "2d880d6cf0c94b83919ca49afd1c3887520e5135",
+        "rev": "f8ba9ab22132c0f358b99d057ffa5307ed8845c4",
         "type": "github"
       },
       "original": {
@@ -4059,37 +3977,37 @@
     "xdph": {
       "inputs": {
         "hyprland-protocols": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "hyprland-protocols"
         ],
         "hyprlang": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "hyprlang"
         ],
         "hyprutils": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "hyprutils"
         ],
         "hyprwayland-scanner": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "hyprwayland-scanner"
         ],
         "nixpkgs": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "nixpkgs"
         ],
         "systems": [
-          "backup-transfer",
+          "alpha-server",
           "gambled-config",
           "hyprland",
           "systems"

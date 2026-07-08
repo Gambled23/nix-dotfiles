@@ -103,7 +103,7 @@
 
 
     # Alpha
-    backup-transfer.url = "path:/home/gambled/Codes/nixos";
+    alpha-server.url = "path:/home/gambled/Codes/nixos";
   };
 
   outputs = {
@@ -119,6 +119,7 @@
     antigravity-nix,
     monique,
     mangowm,
+    alpha-server,
     ...
     }@inputs:
   let
@@ -134,6 +135,7 @@
       inherit antigravity-nix;
       inherit monique;
       inherit mangowm;
+      inherit alpha-server;
     };
 
     coreModules = [

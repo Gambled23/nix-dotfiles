@@ -1,8 +1,6 @@
 {
-  inputs,
-  lib,
-  config,
   pkgs,
+  alpha-server,
   ...
 }: {
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
@@ -25,5 +23,6 @@
     #* utils
     moonlight-qt
     vlc
+    (import "${alpha-server}/scripts/backup-alpha.nix" { inherit pkgs; })
   ];
 }

@@ -9,9 +9,7 @@
   };
 
   environment.systemPackages = with pkgs; [
-    # Clipboard
-    cliphist
-    wl-clipboard
+    # Monitors
     wlr-randr
   ];
    

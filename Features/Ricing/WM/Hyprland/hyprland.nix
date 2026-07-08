@@ -17,41 +17,13 @@ with lib;
   environment.systemPackages = with pkgs; [
     # inputs.ambxst.packages.${pkgs.stdenv.hostPlatform.system}.default
 
-    # Libs?
-    ddcutil
-    kdePackages.qtwebsockets
-    kdePackages.qt6ct
-    kdePackages.qtwayland
-    qt5.qtwayland
-    pipewire
-    pulseaudio
-    pulsemeeter
-    wireplumber
-
     #Tools
     kitty # required for the default Hyprland config
-    gnome-calendar
-    gnome-contacts
-    qalculate-gtk
-    nautilus
-    playerctl
-    brightnessctl
-    hypridle
-    pavucontrol
-    gparted
     # hyprpolkitagent # Polkit for gui applications
 
-
     # Dependencies
-    sof-firmware # audio via hdmi
     kdePackages.qttools # for noctalia kde connect plugin
-    ripdrag # for yazi drag plugin
-    glib # for yazi gvfs plugin
-    iw # for cards layout in hyprlock
-
-    # Theming
-    bibata-cursors
-    papirus-icon-theme
+    # iw # for cards layout in hyprlock
   ];
 
   # Optional, hint Electron apps to use Wayland:

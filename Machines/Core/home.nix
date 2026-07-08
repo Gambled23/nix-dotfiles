@@ -7,6 +7,8 @@
   ...
 }:
 {
+  programs.home-manager.enable = true;
+
   imports = [
     inputs.nix-flatpak.homeManagerModules.nix-flatpak
     inputs.nvf.homeManagerModules.default
@@ -42,7 +44,6 @@
     lxsession
     fastfetch
     zsh
-    trash-cli	# for yazi trash plugin
     rbw
   ];
 
@@ -52,10 +53,11 @@
     HOSTNAME = osConfig.networking.hostName or "nixos";
   };
 
+  home.pointerCursor.enable = true;
+
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
 
-  programs.home-manager.enable = true;
 
   gtk = {
     enable = true;
