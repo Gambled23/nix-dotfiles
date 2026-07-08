@@ -26,6 +26,7 @@
     
     #* media creation
     gimp-with-plugins
+    (callPackage ../../Pkgs/nuvio/package.nix {})
     # inkscape-with-extensions
 
     #* messaging
