@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs-gambled.url = "github:Gambled23/nixpkgs";
     nixcord.url = "github:kaylorben/nixcord";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";

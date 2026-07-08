@@ -20,7 +20,7 @@ pkgs.writeShellScriptBin "nix-rbd" ''
 
   nh os $rebuild_mode .
 
-  git restore --staged Features/Ricing/noctalia_colors/nvf.nix Features/Ricing/noctalia_colors/spicetify.ini Features/Ricing/noctalia_colors/starship.toml
+  git restore --staged Features/Ricing/Shells/Noctalia/Colors/nvf.nix Features/Ricing/Shells/Noctalia/Colors/spicetify.ini Features/Ricing/Shells/Noctalia/Colors/starship.toml
   git commit -m "nix-rbd $rebuild_mode from $(hostname)" || echo "No changes to commit"
 
   git push

@@ -5,7 +5,7 @@
   ...
 }:
 let
-  noctalia_colors = import ../../Features/Ricing/noctalia_colors/nvf.nix;
+  noctalia_colors = import ../../Features/Ricing/Shells/Noctalia/Colors/nvf.nix;
 in
 {
   programs.nvf = {

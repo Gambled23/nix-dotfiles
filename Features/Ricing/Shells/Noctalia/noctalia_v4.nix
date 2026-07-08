@@ -325,12 +325,12 @@ in
       templates = {
         spicetify-nix = {
           input_path = "~/.config/noctalia/templates/spicetify.ini";
-          output_path = "/etc/nixos/Features/Ricing/noctalia_colors/spicetify.ini";
+          output_path = "/etc/nixos/Features/Ricing/Shells/Noctalia/Colors/spicetify.ini";
           # post_hook = "myapp --reload-theme";
         };
         nvf = {
           input_path = "~/.config/noctalia/templates/nvf.nix";
-          output_path = "/etc/nixos/Features/Ricing/noctalia_colors/nvf.nix";
+          output_path = "/etc/nixos/Features/Ricing/Shells/Noctalia/Colors/nvf.nix";
           # post_hook = "myapp --reload-theme";
         };
       };

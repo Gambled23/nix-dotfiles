@@ -24,8 +24,8 @@
     # ./look_and_feel.nix
 
     # Shells
-    # ../../Shells/noctalia_v4.nix
-    ../../Shells/noctalia_v5.nix
+    # ../../Shells/Noctalia/noctalia_v4.nix
+    ../../Shells/Noctalia/noctalia_v5.nix
     # ../../Shells/dankmaterialshell.nix
   ];
 

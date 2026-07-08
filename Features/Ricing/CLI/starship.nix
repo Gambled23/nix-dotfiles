@@ -22,7 +22,7 @@
         "$character"
       ];
       palette = "noctalia";
-    } // fromTOML (builtins.readFile ../noctalia_colors/starship.toml);
+    } // fromTOML (builtins.readFile ../Shells/Noctalia/Colors/starship.toml);
     presets = [
       "bracketed-segments"
       # "gruvbox-rainbow"

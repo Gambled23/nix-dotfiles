@@ -2458,6 +2458,21 @@
         "type": "github"
       }
     },
+    "nixpkgs-gambled": {
+      "locked": {
+        "lastModified": 1783531749,
+        "narHash": "sha256-7WCPLKnPSqsYpIDfzr4lG94Cv5/k2And+0wwT6uBxOY=",
+        "owner": "Gambled23",
+        "repo": "nixpkgs",
+        "rev": "ad24bdadb2b9def984a77e8575424fe11cb4ee34",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Gambled23",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "nixpkgs-lib": {
       "locked": {
         "lastModified": 1777168982,
@@ -3254,6 +3269,7 @@
         "nixcord": "nixcord_2",
         "nixos-hardware": "nixos-hardware_2",
         "nixpkgs": "nixpkgs_21",
+        "nixpkgs-gambled": "nixpkgs-gambled",
         "noctalia": "noctalia_2",
         "noctalia-greeter": "noctalia-greeter",
         "nur": "nur_3",
