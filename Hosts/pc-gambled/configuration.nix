@@ -30,7 +30,6 @@
     (import ../../Scripts/display-device.nix { inherit pkgs; })
     (import ../../Scripts/modo-tele.nix { inherit pkgs; })
 
-    (callPackage ../../Pkgs/hayase/package.nix {})
   ];
 
   # for gpu overclock
