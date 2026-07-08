@@ -13,7 +13,6 @@
   ];
 
   home.packages = with pkgs; [
-    (callPackage ../../Pkgs/nuvio/package.nix {})
     #* dev tools
     nodejs_26
     bruno
