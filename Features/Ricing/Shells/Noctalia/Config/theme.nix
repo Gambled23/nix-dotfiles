@@ -1,5 +1,6 @@
 {...}:{
   imports = [
+		../Colors/Templates/antigravity2.nix
 		../Colors/Templates/lazygit.nix
 		../Colors/Templates/nchat.nix
 		../Colors/Templates/nvf.nix
@@ -21,6 +22,16 @@
 				enable_builtin_templates = true;
 				enable_community_templates = true;
 				user = {
+					antigravity-2 = {
+						compare_to = "";
+						enabled = true;
+						index = 0;
+						input_path = "$XDG_CONFIG_HOME/noctalia/templates/antigravity2.json";
+						output_path = [ "~/.gemini/config/theme.json" ];
+						output_path_dynamic = "";
+						post_hook = "";
+						pre_hook = "";
+					};
 					antigravity-ide = {
 						compare_to = "";
 						enabled = true;
