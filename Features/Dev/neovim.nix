@@ -279,7 +279,7 @@ in
         fidget-nvim.enable = true;
         highlight-undo.enable = true;
         hlargs-nvim.enable = true;
-        indent-blankline.enable = true;
+        # indent-blankline.enable = true;
         nvim-cursorline.enable = true;
         nvim-scrollbar.enable = true;
         rainbow-delimiters.enable = true;

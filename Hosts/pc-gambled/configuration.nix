@@ -20,6 +20,8 @@
   ];
 
   environment.systemPackages = with pkgs; [
+    lsfg-vk
+    lsfg-vk-ui
     lact # gpu overclocking
     i2c-tools #for monitoring sensors
     eden
