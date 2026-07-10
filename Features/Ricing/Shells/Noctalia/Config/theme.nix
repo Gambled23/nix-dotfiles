@@ -1,5 +1,6 @@
 {...}:{
   imports = [
+		../Colors/Templates/antigravity2.nix
 		../Colors/Templates/lazygit.nix
 		../Colors/Templates/nchat.nix
 		../Colors/Templates/nvf.nix
@@ -14,13 +15,23 @@
 			custom_palette = "";
 			mode = "dark";
 			source = "wallpaper";
-			wallpaper_scheme = "m3-content";
+			wallpaper_scheme = "vibrant";
 			templates = {
 				builtin_ids = [ "btop" "gtk3" "gtk4" "ghostty" "hyprland" "mango" "qt" "starship" ];
 				community_ids = [ "spicetify" "neovim" "vscode" "vicinae" "discord" "papirus-icons" "steam" "yazi" "hyprtoolkit" ];
 				enable_builtin_templates = true;
 				enable_community_templates = true;
 				user = {
+					antigravity-2 = {
+						compare_to = "";
+						enabled = true;
+						index = 0;
+						input_path = "$XDG_CONFIG_HOME/noctalia/templates/antigravity2.json";
+						output_path = [ "~/.gemini/config/theme.json" ];
+						output_path_dynamic = "";
+						post_hook = "";
+						pre_hook = "";
+					};
 					antigravity-ide = {
 						compare_to = "";
 						enabled = true;

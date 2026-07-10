@@ -4,10 +4,12 @@
     settings = {
       exec-once = [
         "ghostty -e spotify_player"
-        "noctalia msg session lock"
+        "ghostty -e nchat"
+        "sleep 2; noctalia msg session lock"
       ];
 
       windowrule =[
+        "title:spotify_player,monitor:HDMI-A-1"
         "appid:Altus,monitor:HDMI-A-1"
         "appid:discord,monitor:HDMI-A-1"
         "appid:Spotify,monitor:HDMI-A-1"

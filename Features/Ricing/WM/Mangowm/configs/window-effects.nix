@@ -13,7 +13,7 @@
     blur_params = {
       num_passes = 2;
       radius = 5;
-      noise=0.02;
+      noise=0.03;
       brightness=0.9;
       contrast=0.9;
       saturation=1;

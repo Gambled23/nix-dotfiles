@@ -44,9 +44,9 @@ pkgs.writeShellScriptBin "display-device" ''
         monique --switch-profile "steamdeck"
       elif [ "$desktop" = "mango" ]; then 
         mmsg dispatch create_virtual_output
-        virtual_monitor=$(wlr-randr | grep 'HEADLESS-' | cut -d ' ' -f1)
-        wlr-randr --output DP-3 --off    
-        wlr-randr --output $virtual_monitor --pos 0,0 --custom-mode 1280x800@60Hz --transform normal
+        virtual_monitor=$(${pkgs.wlr-randr}/bin/wlr-randr | grep 'HEADLESS-' | cut -d ' ' -f1)
+        ${pkgs.wlr-randr}/bin/wlr-randr --output DP-3 --off    
+        ${pkgs.wlr-randr}/bin/wlr-randr --output $virtual_monitor --pos 0,0 --custom-mode 1280x800@60Hz --transform normal
       else
         echo "$desktop not configured"
       fi
@@ -55,7 +55,7 @@ pkgs.writeShellScriptBin "display-device" ''
       if [ "$desktop" = "Hyprland" ]; then 
         monique --switch-profile "pc-gambled"
       elif [ "$desktop" = "mango" ]; then 
-        wlr-randr --output DP-3 --on        
+        ${pkgs.wlr-randr}/bin/wlr-randr --output DP-3 --on        
       else
         echo "$desktop not configured"
       fi
@@ -65,9 +65,9 @@ pkgs.writeShellScriptBin "display-device" ''
         monique --switch-profile "dev-gambled"
       elif [ "$desktop" = "mango" ]; then 
         mmsg dispatch create_virtual_output
-        virtual_monitor=$(wlr-randr | grep 'HEADLESS-' | cut -d ' ' -f1)
-        wlr-randr --output DP-3 --off    
-        wlr-randr --output $virtual_monitor --pos 0,0 --custom-mode 1920x1080@60Hz --transform normal
+        virtual_monitor=$(${pkgs.wlr-randr}/bin/wlr-randr | grep 'HEADLESS-' | cut -d ' ' -f1)
+        ${pkgs.wlr-randr}/bin/wlr-randr --output DP-3 --off    
+        ${pkgs.wlr-randr}/bin/wlr-randr --output $virtual_monitor --pos 0,0 --custom-mode 1920x1080@60Hz --transform normal
       else
         echo "$desktop not configured"
       fi
@@ -79,9 +79,9 @@ pkgs.writeShellScriptBin "display-device" ''
         hyprctl dispatch "hl.dsp.focus({ workspace = 8 })"
       elif [ "$desktop" = "mango" ]; then 
         mmsg dispatch create_virtual_output
-        virtual_monitor=$(wlr-randr | grep 'HEADLESS-' | cut -d ' ' -f1)
-        wlr-randr --output DP-3 --off    
-        wlr-randr --output $virtual_monitor --pos 0,0 --custom-mode 2992x1344@120Hz --transform normal
+        virtual_monitor=$(${pkgs.wlr-randr}/bin/wlr-randr | grep 'HEADLESS-' | cut -d ' ' -f1)
+        ${pkgs.wlr-randr}/bin/wlr-randr --output DP-3 --off    
+        ${pkgs.wlr-randr}/bin/wlr-randr --output $virtual_monitor --pos 0,0 --custom-mode 2992x1344@120Hz --transform normal
       else
         echo "$desktop not configured"
       fi

@@ -54,6 +54,7 @@ in
       noctalia-shell.enable = false;
       qt.enable = false;
       spicetify.enable = false;
+      spotify-player.enable = false;
       starship.enable = false;
       vicinae.enable = false;
       vscode.enable = false;

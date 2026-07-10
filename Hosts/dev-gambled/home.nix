@@ -8,6 +8,7 @@
   imports = [
     ../../Machines/Core/home.nix
     ../../Machines/Desktop/home.nix
+    ../../Features/Tools/Media/spotify-player.nix
   ];
 
   home.packages = with pkgs; [
