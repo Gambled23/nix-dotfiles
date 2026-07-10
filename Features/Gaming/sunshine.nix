@@ -30,7 +30,7 @@
           prep-cmd = [
             {
               do = "";
-              undo = "display-device -d pc-gambled";
+              undo = "";
               elevated = false;
             }
           ];
@@ -55,7 +55,7 @@
           prep-cmd = [
             {
               do = "";
-              undo = "display-device -d pc-gambled";
+              undo = "";
               elevated = false;
             }
           ];
@@ -71,7 +71,7 @@
           prep-cmd = [
             {
               do = "";
-              undo = "display-device -d pc-gambled";
+              undo = "";
               elevated = false;
             }
           ];

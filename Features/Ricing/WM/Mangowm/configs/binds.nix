@@ -18,6 +18,9 @@ in
       
       "SUPER,q,killclient"
       "SUPER+SHIFT,q,quit" # close mangowm
+      "SUPER+SHIFT,s,switch_layout"
+      "ALT,e,set_proportion,1.0"
+      "ALT,x,switch_proportion_preset"
       "SUPER,e,spawn,${file_manager}"
       "SUPER,r,spawn,${menu}"
       "SUPER,f,spawn,${web_browser}"

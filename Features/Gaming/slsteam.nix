@@ -23,6 +23,7 @@
       3404260 # Dead as Disco
       2830030 # MOTORSLICE
       993090 # Lossless Scaling
+      2524850 # Denshattack
     ];
     AdditionalApps = [
       2868840 # Slay the Spire 2
@@ -43,6 +44,7 @@
       3404260 # Dead as Disco
       2830030 # MOTORSLICE
       993090 # Lossless Scaling
+      2524850 # Denshattack
     ];
     SafeMode = true;
   };
