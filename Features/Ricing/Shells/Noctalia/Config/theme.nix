@@ -15,7 +15,7 @@
 			custom_palette = "";
 			mode = "dark";
 			source = "wallpaper";
-			wallpaper_scheme = "m3-content";
+			wallpaper_scheme = "vibrant";
 			templates = {
 				builtin_ids = [ "btop" "gtk3" "gtk4" "ghostty" "hyprland" "mango" "qt" "starship" ];
 				community_ids = [ "spicetify" "neovim" "vscode" "vicinae" "discord" "papirus-icons" "steam" "yazi" "hyprtoolkit" ];

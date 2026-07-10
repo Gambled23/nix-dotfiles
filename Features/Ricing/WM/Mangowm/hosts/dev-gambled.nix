@@ -4,7 +4,8 @@
     settings = {
       exec-once = [
         "ghostty -e spotify_player"
-        "sleep 5; noctalia msg session lock"
+        "ghostty -e nchat"
+        "sleep 2; noctalia msg session lock"
       ];
 
       windowrule =[

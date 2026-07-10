@@ -3,6 +3,7 @@
   wayland.windowManager.mango.settings = {
   exec-once = [
     "spotify"
+    "altus"
     "steam %U"
     "sleep 10; systemctl --user restart sunshine"
   ];
