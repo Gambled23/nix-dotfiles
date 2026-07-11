@@ -39,7 +39,16 @@ in
       drag_tile_to_tile = 1;
     };
 
-    systemd.xdgAutostart = true;
+    systemd = {
+      enable = true;
+      variables = [
+        "DISPLAY"
+        "WAYLAND_DISPLAY"
+        "XDG_CURRENT_DESKTOP"
+        "XDG_SESSION_TYPE"
+      ];
+      xdgAutostart = true;
+    };
     
     extraConfig = ''
       source = ./noctalia.conf

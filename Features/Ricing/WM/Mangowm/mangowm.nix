@@ -14,25 +14,22 @@
   ];
    
   services.pipewire.enable = true;
-  xdg.portal = {
-    enable = true;
-    wlr.enable = true;
-    extraPortals = [
-      pkgs.xdg-desktop-portal-gtk
-      pkgs.kdePackages.xdg-desktop-portal-kde
-    ];
-    config = {
-      common = {
-        default = [ "gtk;mangowm" ];
-        # Send settings requests (used by Monique/GTK apps) to the GTK portal
-        "org.freedesktop.impl.portal.Settings" = [ "gtk" ];
-        # Use GTK for file choosers too (optional but recommended)
-        "org.freedesktop.impl.portal.FileChooser" = [ "gtk" ];
-      };
-    };
-  };
 
   security.pam.services.login.enableGnomeKeyring = true;
   services.dbus.packages = [ pkgs.gcr ];
 
+  xdg.portal = {
+    enable = true;
+    config.mango = {
+      default = ["gtk"];
+      "org.freedesktop.impl.portal.Secret" = ["gnome-keyring"];
+      "org.freedesktop.impl.portal.ScreenCast" = ["wlr"];
+      "org.freedesktop.impl.portal.ScreenShot" = ["wlr"];
+    };
+    extraPortals = with pkgs; [
+      xdg-desktop-portal-wlr
+      xdg-desktop-portal-gtk
+    ];
+    wlr.enable = true;
+  };
 }
