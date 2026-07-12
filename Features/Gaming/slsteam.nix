@@ -24,6 +24,7 @@
       2830030 # MOTORSLICE
       993090 # Lossless Scaling
       2524850 # Denshattack
+      1084020 # TheoTown
     ];
     AdditionalApps = [
       2868840 # Slay the Spire 2
@@ -45,6 +46,7 @@
       2830030 # MOTORSLICE
       993090 # Lossless Scaling
       2524850 # Denshattack
+      1084020 # TheoTown
     ];
     SafeMode = true;
   };
