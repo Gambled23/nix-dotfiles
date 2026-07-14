@@ -5,7 +5,7 @@
     gappiv = 2;
     gappoh = 4;
     gappov = 4;
-    tab_bar_height = 20; # Height of the tab bar for monocle layout.
+    group_bar_height = 20; # Height of the tab bar for monocle layout.
 
     blur = 1;
     blur_layer=1;

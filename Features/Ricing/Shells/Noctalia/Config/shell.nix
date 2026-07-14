@@ -85,7 +85,7 @@
 			screenshot = {
 				confirm_region = false;
 				copy_to_clipboard = true;
-				directory = "";
+				directory = "~/Pictures/Screenshots/";
 				filename_pattern = "";
 				freeze_screen = true;
 				pipe_command = "";

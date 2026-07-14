@@ -52,6 +52,7 @@ in
       kde.enable = false;
       nixcord.enable = false;
       noctalia-shell.enable = false;
+      noctalia.enable = false;
       qt.enable = false;
       spicetify.enable = false;
       spotify-player.enable = false;
