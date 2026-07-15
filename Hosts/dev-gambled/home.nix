@@ -23,7 +23,6 @@
 
     #* utils
     moonlight-qt
-    vlc
     (import "${alpha-server}/scripts/backup-alpha.nix" { inherit pkgs; })
 
     nchat # whatsapp cli

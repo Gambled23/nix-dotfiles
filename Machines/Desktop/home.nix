@@ -9,10 +9,12 @@
   imports = [
     ../../Features/Tools/ghostty.nix
     ../../Features/Tools/Media/spicetify.nix
+    ../../Features/Tools/vicinae.nix
     ../../Features/Gaming/nixcord.nix
     # ../../Features/Ricing/WM/Niri/config.nix
-    ../../Features/Ricing/WM/Hyprland/config.nix
+    # ../../Features/Ricing/WM/Hyprland/config.nix
     ../../Features/Ricing/WM/Mangowm/config.nix
+    ../../Features/Ricing/Shells/Noctalia/noctalia_v5.nix
   ];
 
   home.packages = with pkgs; [
@@ -30,7 +32,9 @@
     # inkscape-with-extensions
 
     #* messaging
+    vlc
     altus
+    materialgram
     #* Media
     # stremio-linux-shell
 
@@ -51,6 +55,7 @@
 
   services.flatpak.packages = [
     "com.artemchep.keyguard"
-    "com.stremio.Stremio"
+    # "com.stremio.Stremio"
+    "app.zen_browser.zen"
   ];
 }

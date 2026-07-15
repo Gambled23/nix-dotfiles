@@ -18,10 +18,10 @@
   home.packages =
     with pkgs; [
     #* books
-    #hakuneko
-    #kcc
-    #calibre
-    komikku
+    # hakuneko
+    # kcc
+    # calibre
+    # komikku
     # grayjay
     (callPackage ../../Pkgs/hayase/package.nix {})
 
@@ -38,7 +38,7 @@
     steam-rom-manager
     # osu-lazer-bin
     # tetrio-desktop
-    # prismlauncher #minecra
+    # prismlauncher
     # r2modman
     # mangohud
 
@@ -55,13 +55,9 @@
 
     #* media
     qbittorrent
-    vlc
 
     #* media creation
     obs-studio
-
-    #* messaging
-    materialgram
   ];
 
   home.file.".zshrc".text = "export LD_LIBRARY_PATH=${pkgs.stdenv.cc.cc.lib}/lib:${pkgs.libGL}/lib/:${pkgs.libxkbcommon}/lib/:${pkgs.libx11}/lib/:${pkgs.fontconfig}/lib";

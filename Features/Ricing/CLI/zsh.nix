@@ -22,7 +22,7 @@
       mv = "mv -iv";
       rm = "rm -riv";
       cd = "z";
-      mdb = "mariadb -u root -p";
+      mdb = "mariadb -h 127.0.0.1 -u root -p";
       noctalia-restart = "noctalia-shell kill; sleep 3; noctalia-shell -d";
       # noctalia-config = "nix shell nixpkgs#json-diff -c bash -c \"json-diff <(jq -S . ~/.config/noctalia/settings.json) <(noctalia-shell ipc call state all | jq -S .settings)\"";
       noctalia-config = "nix run github:erooke/toml2nix -- -p noctalia-config.toml -o ./noctalia.nix";

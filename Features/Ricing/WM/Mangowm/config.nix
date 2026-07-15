@@ -5,6 +5,8 @@ in
 {
   imports = [
     inputs.mangowm.hmModules.mango
+
+    hostconfig
     ./configs/binds.nix
     ./configs/window-effects.nix
     ./configs/animations.nix
@@ -12,7 +14,6 @@ in
     ./rules/window.nix
     ./rules/layer.nix
     ./rules/tags.nix
-    hostconfig
   ];
 
   services.gnome-keyring = {

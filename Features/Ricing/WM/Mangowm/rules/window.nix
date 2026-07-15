@@ -13,7 +13,7 @@
       "title:ripdrag,focused_opacity:0.7,unfocused_opacity:0.7"
       "appid:mpv,width:419,height:237,isfloating:1"
       "appid:vlc,width:419,height:237,isfloating:1"
-      "appid:.scrcpy-wrapped,width:447,height:993,isfloating:1"
+      # "appid:.scrcpy-wrapped,width:447,height:993,isfloating:1"
       "title:Picture in picture,isfloating:1, width:284,height:161"
       "title:(Open File.*|Select Folder to Upload|Select a file),width:1150,height:700,isfloating:1"
       "title:(Keyguard),width:790,height:570,isfloating:1"

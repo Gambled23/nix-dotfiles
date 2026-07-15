@@ -2,7 +2,7 @@
 {
   imports = [
     # Window Manager
-    ../../Features/Ricing/WM/Hyprland/hyprland.nix
+    # ../../Features/Ricing/WM/Hyprland/hyprland.nix
     # ../../Features/Ricing/WM/Niri/niri.nix
     ../../Features/Ricing/WM/Mangowm/mangowm.nix
 

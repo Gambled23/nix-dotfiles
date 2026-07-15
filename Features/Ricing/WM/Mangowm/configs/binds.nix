@@ -12,7 +12,6 @@ in
     bind = [
       "none,Print,spawn,${noctalia_ipc} screenshot-region"
       "ALT,Tab,toggleoverview"
-      "ALT,r,setkeymode,extras"  # Enter resize mode
       "SUPER+SHIFT,r,reload_config"
       "SUPER,x,togglefloating"
       
@@ -32,6 +31,7 @@ in
       "SUPER,n,spawn,${terminal} -e nix-rbd"
       "SUPER,o,spawn,moonlight stream 'el sunchine' 'dev-gambled'"
       "SUPER,p,spawn,scrcpy --render-driver=opengl -S -w -K -b15M --power-off-on-close"
+      "SUPER+SHIFT,p,spawn,scrcpy --new-display=1920x1080/180 --render-driver=opengl -MK -b10M --power-off-on-close"
       "SUPER,Escape,spawn,${terminal} -e btop"
 
       # Scratchpads
@@ -86,6 +86,10 @@ in
       "NONE,XF86AudioMute,spawn,${noctalia_ipc} volume-mute"
       "NONE,XF86MonBrightnessUp,spawn,${noctalia_ipc} brightness-up"
       "NONE,XF86MonBrightnessDown,spawn,${noctalia_ipc} brightness-down"
+
+      # Keymaps
+      "ALT,c,setkeymode,resize"  # Enter resize mode
+      "ALT,v,setkeymode,vicinae"  # Enter resize mode
     ];
 
     mousebind = [
@@ -100,10 +104,18 @@ in
 
     # Keymodes (submaps) for modal keybindings
     keymode = {
-      extras = {
+      resize = {
         bind = [
           "NONE,Escape,setkeymode,default"
-
+          "NONE,z,moveresize,curmove"
+          "NONE,x,moveresize,curresize"
+        ];
+      };
+      vicinae = {
+        bind = [
+          "NONE,Escape,setkeymode,default"
+          "SUPER,Super_L,spawn,${menu}"
+          "SUPER,p,spawn,vicinae vicinae://launch/@knoopx/vicinae-extension-nix-0/packages"
         ];
       };
     };

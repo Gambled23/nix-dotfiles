@@ -25,7 +25,7 @@
 
     ../../Features/Ricing/CLI/starship.nix
     ../../Features/Ricing/CLI/zsh.nix
-    ../../Features/Ricing/WM/Hyprland/stylix.nix
+    ../../Features/Ricing/stylix.nix
 
   ];
 
