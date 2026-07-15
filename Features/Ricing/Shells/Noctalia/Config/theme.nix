@@ -17,7 +17,7 @@
 			wallpaper_scheme = "vibrant";
 			templates = {
 				builtin_ids = [ "btop" "gtk3" "gtk4" "ghostty" "hyprland" "mango" "qt" "starship" ];
-				community_ids = [ "spicetify" "neovim" "vscode" "vicinae" "discord" "papirus-icons" "steam" "yazi" "hyprtoolkit" "nchat" ];
+				community_ids = [ "spicetify" "neovim" "vscode" "vicinae" "discord" "papirus-icons" "steam" "yazi" "hyprtoolkit" "nchat" "bat" "antigravity" ];
 				enable_builtin_templates = true;
 				enable_community_templates = true;
 				user = {

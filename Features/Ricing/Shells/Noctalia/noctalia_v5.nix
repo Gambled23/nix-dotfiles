@@ -53,5 +53,6 @@
     wl-screenrec
     adw-gtk3 # custom color theme so gtk can use noctalia colors
     qt6.qtwebsockets 
+    (import ./noctalia-update-config.nix { inherit pkgs; })
   ];
 }
