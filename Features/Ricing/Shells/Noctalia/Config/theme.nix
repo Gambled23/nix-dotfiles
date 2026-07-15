@@ -1,5 +1,11 @@
 { pkgs, config, lib, ... }:
 {
+  imports = [
+		../Colors/Templates/nvf.nix
+		../Colors/Templates/siyuan.nix
+		../Colors/Templates/spicetify.nix
+  ];
+
   programs.noctalia.settings = {
     theme = {
       builtin = "Ayu";
@@ -11,30 +17,10 @@
       wallpaper_scheme = "m3-content";
       templates = {
         builtin_ids = [ "btop" "gtk3" "gtk4" "ghostty" "hyprland" "mango" "qt" "starship" ];
-        community_ids = [ "spicetify" "neovim" "vscode" "vicinae" "discord" "nchat" "papirus-icons" "steam" "yazi" "hyprtoolkit" ];
+        community_ids = [ "spicetify" "neovim" "vscode" "vicinae" "discord" "nchat" "papirus-icons" "steam" "yazi" "hyprtoolkit" "bat" "antigravity" ];
         enable_builtin_templates = true;
         enable_community_templates = true;
         user = {
-          antigravity-2 = {
-            compare_to = "";
-            enabled = true;
-            index = 0;
-            input_path = "$XDG_CONFIG_HOME/noctalia/templates/antigravity2.json";
-            output_path = [ "~/.gemini/config/theme.json" ];
-            output_path_dynamic = "";
-            post_hook = "";
-            pre_hook = "";
-          };
-          lazygit = {
-            compare_to = "";
-            enabled = true;
-            index = 0;
-            input_path = "$XDG_CONFIG_HOME/noctalia/templates/lazygit.yml";
-            output_path = [ "$XDG_CONFIG_HOME/lazygit/config.yml" ];
-            output_path_dynamic = "";
-            post_hook = "";
-            pre_hook = "";
-          };
           nvf = {
             compare_to = "";
             enabled = true;
