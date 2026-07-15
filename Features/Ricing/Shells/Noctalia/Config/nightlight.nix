@@ -1,10 +1,11 @@
-{...}:{
+{ pkgs, config, lib, ... }:
+{
   programs.noctalia.settings = {
-		nightlight = {
-			enabled = true;
-			force = false;
-			temperature_day = 6500;
-			temperature_night = 4000;
-		};
+    nightlight = {
+      enabled = true;
+      force = false;
+      temperature_day = 6500;
+      temperature_night = 4000;
+    };
   };
 }

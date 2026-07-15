@@ -1,4 +1,5 @@
-{...}:{
+{ pkgs, config, lib, ... }:
+{
   programs.noctalia.settings = {
     backdrop = {
       blur_intensity = 0.5;

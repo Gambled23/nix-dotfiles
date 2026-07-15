@@ -1,24 +1,25 @@
-{...}:{
+{ pkgs, config, lib, ... }:
+{
   programs.noctalia.settings = {
-		hooks = {
-			battery_charging = [  ];
-			battery_discharging = [  ];
-			battery_percentage_changed = [  ];
-			battery_plugged = [  ];
-			bluetooth_disabled = [  ];
-			bluetooth_enabled = [  ];
-			colors_changed = [  ];
-			logging_out = [  ];
-			power_profile_changed = [  ];
-			rebooting = [  ];
-			session_locked = [  ];
-			session_unlocked = [  ];
-			shutting_down = [  ];
-			started = [  ];
-			theme_mode_changed = [  ];
-			wallpaper_changed = [  ];
-			wifi_disabled = [  ];
-			wifi_enabled = [  ];
-		};
+    hooks = {
+      battery_charging = [  ];
+      battery_discharging = [  ];
+      battery_percentage_changed = [  ];
+      battery_plugged = [  ];
+      bluetooth_disabled = [  ];
+      bluetooth_enabled = [  ];
+      colors_changed = [  ];
+      logging_out = [  ];
+      power_profile_changed = [  ];
+      rebooting = [  ];
+      session_locked = [  ];
+      session_unlocked = [  ];
+      shutting_down = [  ];
+      started = [  ];
+      theme_mode_changed = [  ];
+      wallpaper_changed = [  ];
+      wifi_disabled = [  ];
+      wifi_enabled = [  ];
+    };
   };
 }

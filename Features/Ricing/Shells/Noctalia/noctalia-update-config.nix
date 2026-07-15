@@ -31,7 +31,7 @@ pkgs.writeShellScriptBin "noctalia-update-config" ''
         echo "{ pkgs, config, lib, ... }:"
         echo "{"
         echo "  programs.noctalia.settings = {"
-        printf '%s\n' "$block"
+        printf '%s\n' "$block" | sed 's/^\t//' | expand -t 2 | sed 's/^/    /'
         echo "  };"
         echo "}"
       } > "$out_file"

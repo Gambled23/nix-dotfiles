@@ -1,4 +1,5 @@
-{...}:{
+{ pkgs, config, lib, ... }:
+{
   programs.noctalia.settings = {
     accessibility = {
       high_contrast = false;
