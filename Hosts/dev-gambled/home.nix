@@ -1,5 +1,6 @@
 {
   pkgs,
+  inputs,
   alpha-server,
   ...
 }: {
@@ -13,6 +14,7 @@
 
   home.packages = with pkgs; [
     #* dev tools
+    inputs.accela.packages.${pkgs.stdenv.hostPlatform.system}.default
     nodejs_26
     bruno
     awscli

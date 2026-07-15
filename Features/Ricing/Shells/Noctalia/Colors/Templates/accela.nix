@@ -1,0 +1,26 @@
+{...}:{
+  home.file.".config/noctalia/templates/accela.nix".text = ''
+    [General]
+    accent_color={{colors.primary.default.hex}}
+    auto_skip_single_choice=false
+    background_color={{colors.surface.default.hex}}
+    create_application_shortcuts=false
+    font=TrixieCyrG-Plain
+    font-file=
+    font-size=10
+    font-style=Normal
+    generate_achievements=false
+    gif_display_enabled=true
+    ignore_color_warnings=false
+    library_mode=false
+    max_downloads=255
+    morrenus_api_key=
+    prompt_steam_restart=true
+    sgdb_api_key=
+    sls_config_management=true
+    titlebar_position=bottom
+    use_steamless=false
+    user_accent_color={{colors.primary.default.hex}}
+    user_background_color={{colors.surface.default.hex}}
+  '';
+}
