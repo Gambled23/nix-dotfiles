@@ -4,6 +4,7 @@
 		../Colors/Templates/nvf.nix
 		../Colors/Templates/siyuan.nix
 		../Colors/Templates/spicetify.nix
+		../Colors/Templates/accela.nix
   ];
 
   programs.noctalia.settings = {
