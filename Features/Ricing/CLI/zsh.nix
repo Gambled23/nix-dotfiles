@@ -11,6 +11,7 @@
     syntaxHighlighting.enable = true;
 
     shellGlobalAliases = {
+      ssh = "kitten ssh";
       c = "clear";
       cat = "bat";
       cp = "cp -riv";

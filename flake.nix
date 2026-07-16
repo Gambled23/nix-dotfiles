@@ -101,6 +101,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    zen-browser = {
+      url = "github:youwen5/zen-browser-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
 
 
     # Alpha
@@ -120,6 +125,7 @@
     antigravity-nix,
     monique,
     mangowm,
+    zen-browser,
     alpha-server,
     ...
     }@inputs:
@@ -136,6 +142,7 @@
       inherit antigravity-nix;
       inherit monique;
       inherit mangowm;
+      inherit zen-browser;
       inherit alpha-server;
     };
 

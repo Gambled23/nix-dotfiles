@@ -48,7 +48,13 @@ in
       alacritty.enable = false;
       btop.enable = false;
       ghostty.enable = false;
-      kitty.enable = false;
+      kitty = {
+        enable = false;
+        fonts.enable = false;
+        inputs.enable = false;
+        opacity.enable = false;
+        colors.enable = false;
+      };
       gtk.enable = false;
       kde.enable = false;
       nixcord.enable = false;

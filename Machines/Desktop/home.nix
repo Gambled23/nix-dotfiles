@@ -10,6 +10,7 @@
     # ../../Features/Tools/ghostty.nix
     ../../Features/Tools/kitty.nix
     ../../Features/Tools/Media/spicetify.nix
+    ../../Features/Tools/Media/spotify-player.nix
     ../../Features/Tools/vicinae.nix
     ../../Features/Gaming/nixcord.nix
     # ../../Features/Ricing/WM/Niri/config.nix
@@ -52,11 +53,12 @@
 
     #* webbrowsers
     google-chrome
+    inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 
   services.flatpak.packages = [
     "com.artemchep.keyguard"
     # "com.stremio.Stremio"
-    "app.zen_browser.zen"
+    # "app.zen_browser.zen"
   ];
 }

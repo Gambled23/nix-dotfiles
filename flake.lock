@@ -2865,7 +2865,8 @@
         "spicetify-nix": "spicetify-nix_2",
         "stylix": "stylix_2",
         "vicinae": "vicinae_3",
-        "vicinae-extensions": "vicinae-extensions_2"
+        "vicinae-extensions": "vicinae-extensions_2",
+        "zen-browser": "zen-browser"
       }
     },
     "scenefx": {
@@ -3682,6 +3683,26 @@
       "original": {
         "owner": "Supreeeme",
         "repo": "xwayland-satellite",
+        "type": "github"
+      }
+    },
+    "zen-browser": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1784182496,
+        "narHash": "sha256-6wTeaUyWC/e4V5Kjd7aMy/07jTTBW7r8uZvYQCmR4eA=",
+        "owner": "youwen5",
+        "repo": "zen-browser-flake",
+        "rev": "8eacc2dd2a94e4d44af26c31cc8d5728ccd6592f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "youwen5",
+        "repo": "zen-browser-flake",
         "type": "github"
       }
     },

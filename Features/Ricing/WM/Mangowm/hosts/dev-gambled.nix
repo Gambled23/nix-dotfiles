@@ -10,6 +10,7 @@
 
       windowrule =[
         "title:spotify_player,monitor:HDMI-A-1"
+        "title:nchat,monitor:HDMI-A-1"
         "appid:Altus,monitor:HDMI-A-1"
         "appid:discord,monitor:HDMI-A-1"
         "appid:Spotify,monitor:HDMI-A-1"
