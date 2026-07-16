@@ -48,6 +48,7 @@ in
       alacritty.enable = false;
       btop.enable = false;
       ghostty.enable = false;
+      kitty.enable = false;
       gtk.enable = false;
       kde.enable = false;
       nixcord.enable = false;

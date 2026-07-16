@@ -7,7 +7,8 @@
 }:
 {
   imports = [
-    ../../Features/Tools/ghostty.nix
+    # ../../Features/Tools/ghostty.nix
+    ../../Features/Tools/kitty.nix
     ../../Features/Tools/Media/spicetify.nix
     ../../Features/Tools/vicinae.nix
     ../../Features/Gaming/nixcord.nix

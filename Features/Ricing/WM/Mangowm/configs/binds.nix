@@ -1,6 +1,7 @@
 {...}:
 let 
-  terminal="ghostty";
+  terminal="kitty";
+  modal_terminal="kitten quick-access-terminal";
   file_manager = "${terminal} -e yazi";
   menu = "vicinae toggle";
   web_browser = "google-chrome-stable";
@@ -23,18 +24,18 @@ in
       "SUPER,e,spawn,${file_manager}"
       "SUPER,r,spawn,${menu}"
       "SUPER,f,spawn,${web_browser}"
-      "SUPER,Return,spawn,${terminal}"
+      "SUPER,Return,spawn,${modal_terminal}"
       "SUPER,c,spawn,antigravity-ide"
       "SUPER,v,spawn,${terminal} -e vim"
       "SUPER,b,spawn,flatpak run com.artemchep.keyguard"
       "SUPER,m,spawn,${noctalia_ipc} session lock"
-      "SUPER,n,spawn,${terminal} -e nix-rbd"
+      "SUPER,n,spawn,${modal_terminal} -e nix-rbd"
       "SUPER,o,spawn,moonlight stream 'el sunchine' 'dev-gambled'"
       "SUPER,p,spawn,scrcpy --render-driver=opengl -S -w -K -b15M --power-off-on-close"
       "SUPER+SHIFT,p,spawn,scrcpy --new-display=1920x1080/180 --render-driver=opengl -MK -b10M --power-off-on-close"
-      "SUPER,Escape,spawn,${terminal} -e btop"
+      "SUPER,Escape,spawn,${modal_terminal} -e btop"
 
-      # Scratchpads
+      # Scratchpad
       "SUPER,z,minimized"
       "SUPER+SHIFT,z,restore_minimized"
       "SUPER,s,toggle_scratchpad"

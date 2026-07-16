@@ -3,8 +3,8 @@
   wayland.windowManager.mango = {
     settings = {
       exec-once = [
-        "ghostty -e spotify_player"
-        "ghostty -e nchat"
+        "kitty -e spotify_player"
+        "kitty -e nchat"
         "sleep 2; noctalia msg session lock"
       ];
 

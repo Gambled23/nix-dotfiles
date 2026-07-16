@@ -65,8 +65,8 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1783706221,
-        "narHash": "sha256-XrzhSzg58zBWFi9dEhv4AWK4aIPGTmhbWx7bkhPz0bg=",
+        "lastModified": 1783961416,
+        "narHash": "sha256-nZJJ2mmRM7LlbyCb+5QCXMTo3cODBfQ06sz8XawcEuI=",
         "path": "/home/alpha/administrativo",
         "type": "path"
       },
@@ -89,8 +89,8 @@
         "sops-nix": "sops-nix"
       },
       "locked": {
-        "lastModified": 1783707509,
-        "narHash": "sha256-meAaYMF2FuwF0ftIjHeK93HvDU5mL8hCT1KRRJ5G6zI=",
+        "lastModified": 1784216407,
+        "narHash": "sha256-u4OSB5Zg9Yke9nsDwOyA0gl0nA+0/plPbZJm6kqXQ+g=",
         "path": "/home/gambled/Codes/nixos",
         "type": "path"
       },
@@ -378,8 +378,8 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1783618972,
-        "narHash": "sha256-t7wXnksDDakYEQHGzUbsqRYrwGb0OSMPaQ6Qt1qblw8=",
+        "lastModified": 1783709055,
+        "narHash": "sha256-U58vWHsogRMEGC73pO97tUMaS8dhf2XM9dTPuzkY9Pw=",
         "path": "/home/alpha/factorio",
         "type": "path"
       },
@@ -393,8 +393,8 @@
         "nixpkgs": "nixpkgs_3"
       },
       "locked": {
-        "lastModified": 1783361782,
-        "narHash": "sha256-4SA1h+0ZRi89o+p+IglqmDIraDdf2e+IcsankBnNdqY=",
+        "lastModified": 1783708485,
+        "narHash": "sha256-ux9TAzmimbf3fitmmFGq1ZIBZPt0mmTBf+VwG0ZCcU4=",
         "path": "/home/alpha/facturacion",
         "type": "path"
       },
@@ -408,8 +408,8 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1783361963,
-        "narHash": "sha256-LTaWQ9sRIAcMTKldWHWiLLE4IuNAWsjbyWJUmG1WVAI=",
+        "lastModified": 1783709175,
+        "narHash": "sha256-ILRmhztQWYtj9GHZTVinczRwZd9uMmH9oIpBODNHzZg=",
         "path": "/home/alpha/financiero",
         "type": "path"
       },
@@ -2062,11 +2062,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1783522502,
-        "narHash": "sha256-iffAls3iaNTyJC2faYcUXSI+Gp02cDjYl+MygxKl2GI=",
+        "lastModified": 1783776592,
+        "narHash": "sha256-UgCQzxeWI75XM8G+hPrPh+MKzEPjG3SpAj7dtqSbksA=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "0bb7ec54c8483066ec9d7720e780a5caa71f8612",
+        "rev": "e7a3ca8092b61ff85b6a45bf863ea2b2d6a661b3",
         "type": "github"
       },
       "original": {
@@ -2279,11 +2279,11 @@
     },
     "nixpkgs_15": {
       "locked": {
-        "lastModified": 1783224372,
-        "narHash": "sha256-8i/87eeoqiGE4yOTjwSA3Eh/ziJRQEmd/unYU+K27sk=",
+        "lastModified": 1784007870,
+        "narHash": "sha256-djcLt/JJphyNt4eDY9XTly+/WbCK5lqWq9lSgCmJkkQ=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "d407951447dcd00442e97087bf374aad70c04cea",
+        "rev": "18b9261cb3294b6d2a06d03f96872827b8fe2698",
         "type": "github"
       },
       "original": {
@@ -2356,11 +2356,11 @@
     },
     "nixpkgs_2": {
       "locked": {
-        "lastModified": 1783224372,
-        "narHash": "sha256-8i/87eeoqiGE4yOTjwSA3Eh/ziJRQEmd/unYU+K27sk=",
+        "lastModified": 1783522502,
+        "narHash": "sha256-iffAls3iaNTyJC2faYcUXSI+Gp02cDjYl+MygxKl2GI=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "d407951447dcd00442e97087bf374aad70c04cea",
+        "rev": "0bb7ec54c8483066ec9d7720e780a5caa71f8612",
         "type": "github"
       },
       "original": {
@@ -2446,11 +2446,11 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1783224372,
-        "narHash": "sha256-8i/87eeoqiGE4yOTjwSA3Eh/ziJRQEmd/unYU+K27sk=",
+        "lastModified": 1783522502,
+        "narHash": "sha256-iffAls3iaNTyJC2faYcUXSI+Gp02cDjYl+MygxKl2GI=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "d407951447dcd00442e97087bf374aad70c04cea",
+        "rev": "0bb7ec54c8483066ec9d7720e780a5caa71f8612",
         "type": "github"
       },
       "original": {
@@ -2462,11 +2462,11 @@
     },
     "nixpkgs_4": {
       "locked": {
-        "lastModified": 1783224372,
-        "narHash": "sha256-8i/87eeoqiGE4yOTjwSA3Eh/ziJRQEmd/unYU+K27sk=",
+        "lastModified": 1783522502,
+        "narHash": "sha256-iffAls3iaNTyJC2faYcUXSI+Gp02cDjYl+MygxKl2GI=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "d407951447dcd00442e97087bf374aad70c04cea",
+        "rev": "0bb7ec54c8483066ec9d7720e780a5caa71f8612",
         "type": "github"
       },
       "original": {
@@ -2811,8 +2811,8 @@
         "nixpkgs": "nixpkgs_15"
       },
       "locked": {
-        "lastModified": 1783637321,
-        "narHash": "sha256-d8uJ9w8mhbZw3GHF9V3bkWqXBDvIIIPMLb/Rc6aT58Y=",
+        "lastModified": 1784151478,
+        "narHash": "sha256-doMD1Vqs7Yh72elMy9JxOlLRO4a9XSwJgBLTI6EKc/w=",
         "path": "/home/alpha/quiniela",
         "type": "path"
       },

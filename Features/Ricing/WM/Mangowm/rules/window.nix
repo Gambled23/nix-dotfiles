@@ -19,6 +19,7 @@
       "title:(Keyguard),width:790,height:570,isfloating:1"
       "title:Yazi,width:600,height:400,isfloating:1"
       "appid:vicinae,allow_csd:1,isnoanimation:1"
+      # "title:\,,appid:com.mitchellh.ghostty,isscratchpad:1"
     ];
   };
 }
