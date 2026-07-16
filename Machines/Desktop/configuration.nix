@@ -78,6 +78,8 @@
   };
   nixpkgs.config.android_sdk.accept_license = true;
 
+  programs.kdeconnect.enable = true;
+  
   # Miracast
   networking.firewall = {
     trustedInterfaces = [ "p2p-wl+" ];
