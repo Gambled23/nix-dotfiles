@@ -23,10 +23,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    noctalia-greeter = {
-      url = "github:noctalia-dev/noctalia-greeter";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # noctalia-greeter = {
+    #   url = "github:noctalia-dev/noctalia-greeter";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
     # hyprland.url = "github:hyprwm/Hyprland";
     # hyprland-plugins = {
@@ -66,25 +66,25 @@
     };
 
     # Nur repo for firefox extensions
-    nur = {
-      url = "github:nix-community/NUR";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # nur = {
+    #   url = "github:nix-community/NUR";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
-    niri = {
-      url = "github:sodiboo/niri-flake";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # niri = {
+    #   url = "github:sodiboo/niri-flake";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
     antigravity-nix = {
       url = "github:jacopone/antigravity-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    monique = {
-      url = "github:ToRvaLDz/monique";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # monique = {
+    #   url = "github:ToRvaLDz/monique";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
     # dolphin-overlay.url = "github:rumboon/dolphin-overlay";
 
@@ -120,10 +120,10 @@
     spicetify-nix,
     nixos-hardware,
     nix-index-database,
-    nur,
-    niri,
+    # nur,
+    # niri,
     antigravity-nix,
-    monique,
+    # monique,
     mangowm,
     zen-browser,
     alpha-server,
@@ -137,10 +137,10 @@
       inherit spicetify-nix;
       inherit nixos-hardware;
       inherit nix-index-database;
-      inherit nur;
-      inherit niri;
+      # inherit nur;
+      # inherit niri;
       inherit antigravity-nix;
-      inherit monique;
+      # inherit monique;
       inherit mangowm;
       inherit zen-browser;
       inherit alpha-server;
