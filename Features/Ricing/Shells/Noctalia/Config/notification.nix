@@ -3,6 +3,7 @@
   programs.noctalia.settings = {
     notification = {
       background_opacity = 0.29999998211860657;
+      border = true;
       collapse_on_dismiss = true;
       enable_daemon = true;
       layer = "top";

@@ -3,6 +3,7 @@
   programs.noctalia.settings = {
     osd = {
       background_opacity = 0.29999998211860657;
+      border = true;
       monitors = [  ];
       offset_x = 20;
       offset_y = 8;

@@ -37,7 +37,7 @@
         shadow = false;
         show_on_workspace_switch = true;
         smart_auto_hide = false;
-        start = [ "vicinae" "workspaces" "wallhaven" ];
+        start = [ "vicinae" "workspaces" ];
         thickness = 34;
         widget_spacing = 6;
         dead_zone = {
@@ -82,7 +82,7 @@
             shadow = false;
             show_on_workspace_switch = true;
             smart_auto_hide = false;
-            start = [ "workspaces" ];
+            start = [ "workspaces" "file_search_2" "nix_monitor_2" "todo_2" ];
             thickness = 34;
             widget_spacing = 6;
             dead_zone = {

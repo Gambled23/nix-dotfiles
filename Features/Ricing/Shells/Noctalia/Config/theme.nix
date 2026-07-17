@@ -17,8 +17,8 @@
       source = "wallpaper";
       wallpaper_scheme = "m3-content";
       templates = {
-        builtin_ids = [ "btop" "gtk3" "gtk4" "ghostty" "hyprland" "mango" "qt" "starship" ];
-        community_ids = [ "spicetify" "neovim" "vscode" "vicinae" "discord" "nchat" "papirus-icons" "steam" "yazi" "hyprtoolkit" "bat" "antigravity" ];
+        builtin_ids = [ "btop" "gtk3" "gtk4" "ghostty" "hyprland" "kitty" "mango" "qt" "starship" ];
+        community_ids = [ "spicetify" "zen-browser" "neovim" "vscode" "vicinae" "antigravity" "bat" "discord" "nchat" "papirus-icons" "steam" "yazi" "hyprtoolkit" ];
         enable_builtin_templates = true;
         enable_community_templates = true;
         user = {
