@@ -11,36 +11,23 @@
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
     millennium.url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
     jovian-nixos.url = "github:Jovian-Experiments/Jovian-NixOS";
-    # #nixpkgs-xr.url = "github:nix-community/nixpkgs-xr";
+    noctalia.url = "github:noctalia-dev/noctalia/cachix";
+    mangowm.url = "github:mangowm/mango";
+    vicinae.url = "github:vicinaehq/vicinae";
+    vicinae-extensions.url = "github:vicinaehq/extensions";
 
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     
-    noctalia.url = "github:noctalia-dev/noctalia/cachix";
 
-    # noctalia-greeter = {
-    #   url = "github:noctalia-dev/noctalia-greeter";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
-
+    # nixpkgs-xr.url = "github:nix-community/nixpkgs-xr";
+    # noctalia-greeter.url = "github:noctalia-dev/noctalia-greeter";
     # hyprland.url = "github:hyprwm/Hyprland";
-    # hyprland-plugins = {
-    #   url = "github:hyprwm/Hyprland-plugins";
-    #   inputs.hyprland.follows = "hyprland";
-    # };
+    # hyprland-plugins.url = "github:hyprwm/Hyprland-plugins";
 
-    mangowm = {
-      url = "github:mangowm/mango";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
 
-    vicinae.url = "github:vicinaehq/vicinae";
-    vicinae-extensions = {
-      url = "github:vicinaehq/extensions";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
 
     stylix = {
       url = "github:nix-community/stylix";
@@ -103,10 +90,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-
-
     # Alpha
-    alpha-server.url = "path:/home/gambled/Codes/nixos";
+    alpha-server = {
+      url = "path:/home/gambled/Codes/nixos";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
