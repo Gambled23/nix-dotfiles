@@ -3,6 +3,7 @@
   lib,
   config,
   pkgs,
+  nur,
   ...
 }: {
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
@@ -23,7 +24,7 @@
     # calibre
     # komikku
     # grayjay
-    (callPackage ../../Pkgs/hayase/package.nix {})
+    pkgs.nur.repos.Ev357.hayase
 
     #* dev tools
     # android-studio
@@ -31,6 +32,7 @@
 
     #* games
     inputs.accela.packages.${pkgs.stdenv.hostPlatform.system}.default
+    ludusavi
     # vintagestory
     # itch
     gamemode

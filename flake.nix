@@ -50,10 +50,10 @@
     };
 
     # Nur repo for firefox extensions
-    # nur = {
-    #   url = "github:nix-community/NUR";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
+    nur = {
+      url = "github:nix-community/NUR";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     # niri = {
     #   url = "github:sodiboo/niri-flake";
@@ -105,7 +105,7 @@
     spicetify-nix,
     nixos-hardware,
     nix-index-database,
-    # nur,
+    nur,
     # niri,
     antigravity-nix,
     # monique,
@@ -122,7 +122,7 @@
       inherit spicetify-nix;
       inherit nixos-hardware;
       inherit nix-index-database;
-      # inherit nur;
+      inherit nur;
       # inherit niri;
       inherit antigravity-nix;
       # inherit monique;
