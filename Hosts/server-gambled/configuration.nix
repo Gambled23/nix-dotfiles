@@ -23,8 +23,6 @@
     ../../Features/Boot/grub.nix
   ];
 
-  programs.nix-ld.enable = true; # for vscode remote server
-
   nix.settings = {
     max-jobs = 1;
     cores = 2;

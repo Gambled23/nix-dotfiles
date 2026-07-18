@@ -7,6 +7,8 @@
       active_scale = 1.0;
       auto_hide = true;
       background_opacity = 0.30000001192092896;
+      border = "tertiary";
+      border_width = 1.0;
       concave_edge_corners = false;
       cross_axis_padding = 8;
       enabled = true;
@@ -19,7 +21,7 @@
       launcher_icon = "grid-dots";
       launcher_position = "none";
       magnification = true;
-      magnification_scale = 1.4500000476837158;
+      magnification_scale = 1.2500000476837158;
       main_axis_padding = 16;
       margin_edge = 8;
       margin_ends = 0;

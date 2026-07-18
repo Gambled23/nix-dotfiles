@@ -41,7 +41,7 @@
         app_grid = false;
         categories = true;
         compact = false;
-        session_search = false;
+        provider_prefix = "/";
         show_icons = true;
         sort_by_usage = true;
         dmenu = {

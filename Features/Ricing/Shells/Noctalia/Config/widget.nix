@@ -29,6 +29,9 @@
         format = "{:%a %d %b}";
         type = "clock";
       };
+      file_search_2 = {
+        type = "nightwatch75/file-search:file-search";
+      };
       hello = {
         type = "noctalia/example:hello";
       };
@@ -50,6 +53,8 @@
         type = "lock_keys";
       };
       mangowm-keymode = {
+        hide_on_default = true;
+        show_text = true;
         type = "gambled23/mangowm-keymode:mangowm-keymode";
       };
       media = {
@@ -67,6 +72,10 @@
       network_tx = {
         stat = "net_tx";
         type = "sysmon";
+      };
+      nix_monitor_2 = {
+        show_text = false;
+        type = "avivbintangaringga/nix-monitor:nix-monitor";
       };
       notes = {
         type = "noctalia/notes:notes";
@@ -93,6 +102,9 @@
       temp = {
         stat = "ram_pct";
         type = "sysmon";
+      };
+      todo_2 = {
+        type = "nightwatch75/todo:todo";
       };
       tray = {
         capsule = true;
@@ -121,6 +133,7 @@
         empty_color = "secondary";
         minimal = true;
         occupied_color = "tertiary";
+        style = "focus_hint";
         type = "workspaces";
       };
     };

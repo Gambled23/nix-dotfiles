@@ -22,4 +22,5 @@
     # };
   };
 
+  programs.nix-ld.enable = true; # for vscode remote server
 }

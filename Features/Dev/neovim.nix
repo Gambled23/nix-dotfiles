@@ -81,11 +81,14 @@ in
         };
       };
 
-      # vim.extraPlugins = with pkgs.vimPlugins; {
-      #   vim-dadbod-ui = {
-      #     package = vim-dadbod-ui;
-      #   };
-      # };
+      vim.extraPlugins = with pkgs.vimPlugins; {
+        barbar-nvim = {
+          package = barbar-nvim;
+        };
+        # vim-dadbod-ui = {
+        #   package = vim-dadbod-ui;
+        # };
+      };
 
       vim.filetree = {
         # nvimTree = {
@@ -148,10 +151,11 @@ in
         comment.enable = true;
         hipatterns.enable = true;
         move.enable = true;
+        # tabline.enable = true;
       };
 
       vim.minimap = {
-        # minimap-vim.enable = true;
+        minimap-vim.enable = true;
         # codewindow = {
         #   enable = true;
         # };
@@ -257,6 +261,12 @@ in
         colorizer.enable = true;
         modes-nvim.enable = true;
         nvim-ufo.enable = true;
+        nvim-ufo.setupOpts = {
+          foldcolumn = 1;
+          foldlevel = 99;
+          foldlevelstart = 99;
+          foldenable = true;
+        };
         # smartcolumn.enable = true;
       };
 

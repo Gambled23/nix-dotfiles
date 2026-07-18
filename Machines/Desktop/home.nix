@@ -18,7 +18,7 @@
     ../../Features/Ricing/WM/Mangowm/config.nix
     ../../Features/Ricing/Shells/Noctalia/noctalia_v5.nix
   ];
-
+  
   home.packages = with pkgs; [
     #* dev tools
     github-cli
@@ -29,12 +29,13 @@
     inputs.antigravity-nix.packages.x86_64-linux.google-antigravity-cli # CLI
     
     #* media 
+    vlc
+    mpv
     gimp-with-plugins
     (callPackage ../../Pkgs/nuvio/package.nix {})
     # inkscape-with-extensions
 
     #* messaging
-    vlc
     altus
     materialgram
     #* Media

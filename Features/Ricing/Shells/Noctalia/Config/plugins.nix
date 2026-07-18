@@ -2,19 +2,23 @@
 {
   programs.noctalia.settings = {
     plugins = {
-      enabled = [ "gambled23/mangowm-keymode" "noctalia/wallhaven" ];
+      auto_update = true;
+      enabled = [ "gambled23/mangowm-keymode" "nightwatch75/file-search" "avivbintangaringga/nix-monitor" "nightwatch75/todo" ];
       source = [ {
-        auto_update = false;
         enabled = true;
         kind = "git";
         location = "https://github.com/noctalia-dev/official-plugins";
         name = "official";
       } {
-        auto_update = false;
         enabled = true;
         kind = "git";
         location = "https://github.com/noctalia-dev/community-plugins";
         name = "community";
+      } {
+        enabled = false;
+        kind = "path";
+        location = "~/Codes/community-plugins/";
+        name = "xxxx";
       } ];
     };
   };
