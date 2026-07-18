@@ -38,7 +38,7 @@
     steam-rom-manager
     # osu-lazer-bin
     # tetrio-desktop
-    # prismlauncher
+    prismlauncher
     # r2modman
     # mangohud
 

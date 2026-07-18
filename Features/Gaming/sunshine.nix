@@ -85,5 +85,5 @@
     };
   };
 
-  programs.monique.enable = true;
+  # programs.monique.enable = true;
 }
