@@ -3,7 +3,7 @@
         agent = {
             enable = true;
             openFirewall = true; # 45876
-            smartmon.enable
+            smartmon.enable = true;
         };
 
         hub = {
