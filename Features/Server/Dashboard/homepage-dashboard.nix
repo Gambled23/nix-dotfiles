@@ -43,6 +43,13 @@
             };
           }
           {
+            "Pi-Hole" = {
+              icon = "pi-hole";
+              href = "https://server-gambled";
+              siteMonitor = "https://server-gambled";
+            };
+          }
+          {
             "Paperless" = {
               icon = "paperless";
               href = "https://server-gambled/paperless";
