@@ -7,7 +7,6 @@
   imports = [
     ./hardware-configuration.nix
     ./symlinks.nix
-    ../../Machines/Core/configuration.nix
     ../../Machines/Server/configuration.nix
 
     ../../Features/Gaming/glances.nix
