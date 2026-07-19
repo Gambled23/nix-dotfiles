@@ -52,8 +52,8 @@
           {
             "beszel" = {
               icon = "beszel";
-              href = "https://server-gambled/beszel";
-              siteMonitor = "https://server-gambled/beszel";
+              href = "http://server-gambled/beszel";
+              siteMonitor = "http://server-gambled/beszel";
             };
           }
           {

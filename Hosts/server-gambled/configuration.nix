@@ -11,7 +11,7 @@
 
     ../../Features/Gaming/glances.nix
 
-    ../../Features/Server/Dashboard/beszel.nix
+    # ../../Features/Server/Dashboard/beszel.nix
     ../../Features/Server/Dashboard/homeassistant.nix
     ../../Features/Server/Dashboard/homepage-dashboard.nix
     ../../Features/Server/Tools/code-server.nix

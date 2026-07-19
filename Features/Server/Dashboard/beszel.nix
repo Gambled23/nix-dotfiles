@@ -1,10 +1,11 @@
 {...}:{
     services.beszel = {
-        # agent = {
-        #     enable = true;
-        #     openFirewall = true; # 45876
-        #     smartmon.enable = true;
-        # };
+        agent = {
+            enable = true;
+            openFirewall = true; # 45876
+            smartmon.enable = true;
+            environmentFIle = ""
+        };
 
         hub = {
             enable = true;
@@ -14,7 +15,6 @@
     };
 
   networking.firewall = {
-
     allowedUDPPorts = [
       8077
     ];

@@ -41,7 +41,7 @@
           '';
         };
         "/beszel/" = {
-          proxyPass = "https://127.0.0.1:8077/";
+          proxyPass = "http://127.0.0.1:8077/";
           proxyWebsockets = true;
           extraConfig = ''
             rewrite ^/beszel/(.*)$ /$1 break;
