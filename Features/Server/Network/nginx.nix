@@ -40,6 +40,13 @@
             rewrite ^/paperless/(.*)$ /$1 break;
           '';
         };
+        "/beszel/" = {
+          proxyPass = "https://127.0.0.1:8077/";
+          proxyWebsockets = true;
+          extraConfig = ''
+            rewrite ^/beszel/(.*)$ /$1 break;
+          '';
+        };
         "/code-server/" = {
           proxyPass = "http://127.0.0.1:4444/";
           proxyWebsockets = true;

@@ -50,6 +50,13 @@
             };
           }
           {
+            "beszel" = {
+              icon = "beszel";
+              href = "https://server-gambled/beszel";
+              siteMonitor = "https://server-gambled/beszel";
+            };
+          }
+          {
             "Paperless" = {
               icon = "paperless";
               href = "https://server-gambled/paperless";
