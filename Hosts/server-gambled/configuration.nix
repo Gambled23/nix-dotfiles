@@ -18,6 +18,8 @@
     ../../Features/Server/paperless.nix
     # ../../Features/Server/onlyoffice.nix
     ../../Features/Server/nginx.nix
+    ../../Features/Server/Network/pi-hole.nix
+
 
     # bootloader
     ../../Features/Boot/grub.nix
