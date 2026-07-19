@@ -56,6 +56,12 @@
           enabled = true;
           description = "Steven Black's HOSTS";
         }
+        {
+          url = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt";
+          type = "block";
+          enabled = true;
+          description = "hagezi adblock pro";
+        }
       ];
       openFirewallDNS = true;
       openFirewallDHCP = true;
