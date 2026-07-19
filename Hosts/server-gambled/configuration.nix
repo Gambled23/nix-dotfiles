@@ -11,12 +11,12 @@
 
     ../../Features/Gaming/glances.nix
 
-    ../../Features/Server/code-server.nix
-    ../../Features/Server/homeassistant.nix
-    ../../Features/Server/homepage-dashboard.nix
-    ../../Features/Server/paperless.nix
-    # ../../Features/Server/onlyoffice.nix
-    ../../Features/Server/nginx.nix
+    ../../Features/Server/Dashboard/bezsel.nix
+    ../../Features/Server/Dashboard/homeassistant.nix
+    ../../Features/Server/Dashboard/homepage-dashboard.nix
+    ../../Features/Server/Tools/code-server.nix
+    ../../Features/Server/Tools/paperless.nix
+    ../../Features/Server/Network/nginx.nix
     ../../Features/Server/Network/pi-hole.nix
 
 
