@@ -1,5 +1,5 @@
 {...}:{
-    services.bezsel = {
+    services.beszel = {
         agent = {
             enable = true;
             openFirewall = true; # 45876
