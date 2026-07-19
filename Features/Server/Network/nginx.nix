@@ -33,6 +33,13 @@
             rewrite ^/paperless/(.*)$ /$1 break;
           '';
         };
+        "/pihole/" = {
+          proxyPass = "http://127.0.0.1/admin";
+          proxyWebsockets = true;
+          extraConfig = ''
+            rewrite ^/paperless/(.*)$ /$1 break;
+          '';
+        };
         "/code-server/" = {
           proxyPass = "http://127.0.0.1:4444/";
           proxyWebsockets = true;

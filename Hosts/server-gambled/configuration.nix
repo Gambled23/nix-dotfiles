@@ -24,6 +24,8 @@
     ../../Features/Boot/grub.nix
   ];
 
+  misc.readOnly = false;
+
   nix.settings = {
     max-jobs = 1;
     cores = 2;
