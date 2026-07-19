@@ -1,7 +1,7 @@
 { config, pkgs, lib, inputs, outputs, ... }:
 {
   imports = [
-    ../../Features/Server/bentopdf.nix
+    # ../../Features/Server/bentopdf.nix
   ];
 
   nix = {
