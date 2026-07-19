@@ -50,7 +50,7 @@
     };
 
     # Nur repo for firefox extensions
-    nur = {
+    nixpkgsnur = {
       url = "github:nix-community/NUR";
       inputs.nixpkgs.follows = "nixpkgs";
     };
@@ -105,7 +105,7 @@
     spicetify-nix,
     nixos-hardware,
     nix-index-database,
-    nur,
+    nixpkgsnur,
     # niri,
     antigravity-nix,
     # monique,
@@ -122,7 +122,7 @@
       inherit spicetify-nix;
       inherit nixos-hardware;
       inherit nix-index-database;
-      inherit nur;
+      inherit nixpkgsnur;
       # inherit niri;
       inherit antigravity-nix;
       # inherit monique;
@@ -147,7 +147,7 @@
     nixosConfigurations = {
       "dev-gambled" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
-        specialArgs = { inherit inputs; };
+        inherit specialArgs;
         modules = coreModules ++ [
           ./Hosts/dev-gambled/configuration.nix
           {
@@ -160,7 +160,7 @@
 
       "pc-gambled" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
-        specialArgs = { inherit inputs; };
+        inherit specialArgs;
         modules = coreModules ++ [
           ./Hosts/pc-gambled/configuration.nix
           nixos-hardware.nixosModules.gigabyte-b650
@@ -174,6 +174,7 @@
 
       "server-gambled" = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
+        inherit specialArgs;
         modules = coreModules ++ [
           ./Hosts/server-gambled/configuration.nix
           {

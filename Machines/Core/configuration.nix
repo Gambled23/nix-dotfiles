@@ -1,4 +1,4 @@
-{ pkgs, nur, ... }:
+{ pkgs, nixpkgsnur, ... }:
 {
   imports = [
     ../../Features/Network/openssh.nix
@@ -94,7 +94,7 @@
   };
 
   nixpkgs.config.allowUnfree = true;
-  nixpkgs.overlays = [ nur.overlays.default ];
+  nixpkgs.overlays = [ nixpkgsnur.overlays.default ];
 
   services.udev = {
     enable = true;

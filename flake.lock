@@ -946,7 +946,7 @@
     "flake-parts_11": {
       "inputs": {
         "nixpkgs-lib": [
-          "nur",
+          "nixpkgsnur",
           "nixpkgs"
         ]
       },
@@ -3780,6 +3780,27 @@
         "type": "github"
       }
     },
+    "nixpkgsnur": {
+      "inputs": {
+        "flake-parts": "flake-parts_11",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1784492479,
+        "narHash": "sha256-ewMtrRNixQqFViVY9tEhE9WrhhusLYSoVECONSa0dx0=",
+        "owner": "nix-community",
+        "repo": "NUR",
+        "rev": "56a8888ca31db39d7335874ae4a187361225a4fb",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "NUR",
+        "type": "github"
+      }
+    },
     "noctalia": {
       "inputs": {
         "nixpkgs": "nixpkgs_14",
@@ -4001,27 +4022,6 @@
     },
     "nur_5": {
       "inputs": {
-        "flake-parts": "flake-parts_11",
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1784312703,
-        "narHash": "sha256-a0NqtZyYZud/ILSaR3RKWy+ogGIexcsxf92cusjp1bA=",
-        "owner": "nix-community",
-        "repo": "NUR",
-        "rev": "b643b754868a52d1038a6492a9b6c8aa6e99c54d",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nix-community",
-        "repo": "NUR",
-        "type": "github"
-      }
-    },
-    "nur_6": {
-      "inputs": {
         "flake-parts": [
           "stylix",
           "flake-parts"
@@ -4199,8 +4199,8 @@
         "nixos-hardware": "nixos-hardware_3",
         "nixpkgs": "nixpkgs_35",
         "nixpkgs-gambled": "nixpkgs-gambled_2",
+        "nixpkgsnur": "nixpkgsnur",
         "noctalia": "noctalia_3",
-        "nur": "nur_5",
         "nvf": "nvf_3",
         "sls-steam": "sls-steam_3",
         "spicetify-nix": "spicetify-nix_3",
@@ -4547,7 +4547,7 @@
         "nixpkgs": [
           "nixpkgs"
         ],
-        "nur": "nur_6",
+        "nur": "nur_5",
         "systems": "systems_18",
         "tinted-kitty": "tinted-kitty_3",
         "tinted-schemes": "tinted-schemes_3",
