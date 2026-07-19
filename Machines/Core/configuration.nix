@@ -28,8 +28,8 @@
     enable = true;
     insertNameservers = [ 
       "192.168.1.27"
-      "1.1.1.1"
-      "8.8.8.8" 
+      # "1.1.1.1"
+      # "8.8.8.8" 
     ];
   };
   networking.extraHosts =
