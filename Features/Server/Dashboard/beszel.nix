@@ -12,4 +12,14 @@
             port = 8077;
         };
     };
+
+  networking.firewall = {
+
+    allowedUDPPorts = [
+      8077
+    ];
+    allowedTCPPorts = [
+      8077
+    ];
+  };
 }
