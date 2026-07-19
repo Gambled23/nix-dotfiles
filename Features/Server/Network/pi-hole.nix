@@ -1,14 +1,9 @@
-#
-# pi-hole.nix
-{ ... }:{
-
-}v#
 # Notes
 # - Pi-hole doesn't have a mechanism to manage Groups, Clients, or
 #   Domains. Use the web gui.
 #   - https://docs.pi-hole.net/group_management/example/
 #
-{lib, ...}: {
+{inputs, pkgs, config, lib, ... }: {
   #
   # Networking
   #

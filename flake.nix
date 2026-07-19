@@ -132,6 +132,7 @@
     };
 
     coreModules = [
+    ./Machines/Core/configuration.nix
       nix-index-database.nixosModules.default
       home-manager.nixosModules.home-manager
       {

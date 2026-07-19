@@ -6,8 +6,7 @@
   imports = [
     ./hardware-configuration.nix
     ./symlinks.nix
-    ../../Machines/Core/configuration.nix
-    ../../Machines/Desktop/configuration.nix
+   ../../Machines/Desktop/configuration.nix
 
     # ../../Features/Dev/ollama-client.nix
     ../../Features/Dev/docker.nix
