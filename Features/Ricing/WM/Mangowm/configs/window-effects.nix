@@ -5,7 +5,7 @@
     gappiv = 2;
     gappoh = 4;
     gappov = 4;
-    group_bar_height = 20; # Height of the tab bar for monocle layout.
+    group_bar_height = 50; # Height of the tab bar for monocle layout.
 
     blur = 1;
     blur_layer=1;
@@ -21,8 +21,9 @@
 
     # layer_animations=0;
 
-    border_radius = 8;
-
+    border_radius = 12;
+    borderpx=2;
+    
     shadows=0;
     layer_shadows=0;
     shadow_only_floating=1;
@@ -31,8 +32,6 @@
     shadows_position_x=1;
     shadows_position_y=1;
     shadowscolor="0x000000ff";
-
-    borderpx=1;
 
     focused_opacity = 1.0;
   };
