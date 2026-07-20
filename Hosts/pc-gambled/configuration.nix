@@ -41,4 +41,12 @@
   #     LD_LIBRARY_PATH = "${pkgs.stdenv.cc.cc.lib}/lib:${pkgs.libGL}/lib/:${pkgs.libxkbcommon}/lib/:${pkgs.libx11}/lib/:${pkgs.fontconfig}/lib";
   #   };
   # };
+
+  networking.networkmanager = {
+    insertNameservers = [ 
+      "192.168.1.27"
+      "1.1.1.1"
+      "8.8.8.8" 
+    ];
+  };
 }

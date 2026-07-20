@@ -26,12 +26,8 @@
 
   networking.networkmanager = {
     enable = true;
-    insertNameservers = [ 
-      "192.168.1.27"
-      "1.1.1.1"
-      "8.8.8.8" 
-    ];
   };
+  
   networking.extraHosts =
   '' 
     98.89.51.199 www.ida-imagenologia.com
