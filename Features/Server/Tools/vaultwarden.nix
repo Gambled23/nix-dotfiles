@@ -4,12 +4,12 @@
     enable = true;
     dbBackend = "sqlite";
     config = {
-      ROCKET_ADDRESS = "127.0.0.1";
+      ROCKET_ADDRESS = "0.0.0.0";
       ROCKET_PORT = 8222;
-      DOMAIN = "https://vault.server-gambled";
+      DOMAIN = "http://vault.server-gambled";
       SIGNUPS_ALLOWED = true;
       # ADMIN_TOKEN = "$argon2id$v=19$m=65540,t=3,p=4$...";
-      LOG_FILE = "/var/lib/bitwarden_rs/access.log";
+      # LOG_FILE = "/var/lib/bitwarden_rs/access.log";
     };
   };
 
@@ -27,14 +27,14 @@
     recommendedTlsSettings = true;
 
     virtualHosts."${vault-host}" = {
-      forceSSL = true;
+      # forceSSL = true;
       # enableACME = true;
       extraConfig = ''
         access_log /var/log/nginx/${vault-host}.access.log;
         error_log /var/log/nginx/${vault-host}.error.log;
       '';
       locations."/" = {
-        proxyPass = "http://127.0.0.1:${toString config.services.vaultwarden.config.ROCKET_PORT}";
+        proxyPass = "http://0.0.0.0:${toString config.services.vaultwarden.config.ROCKET_PORT}";
         proxyWebsockets = true;
         extraConfig = ''
           proxy_set_header Host $host;
