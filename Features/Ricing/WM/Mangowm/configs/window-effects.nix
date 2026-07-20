@@ -11,12 +11,12 @@
     blur_layer=1;
     blur_optimized = 0;
     blur_params = {
-      num_passes = 2;
-      radius = 5;
-      noise=0.03;
-      brightness=0.9;
-      contrast=0.9;
-      saturation=1;
+      num_passes = 4;
+      radius = 6;
+      noise=0.02;
+      brightness=1;
+      contrast=1.4;
+      saturation=1.4;
     };
 
     # layer_animations=0;

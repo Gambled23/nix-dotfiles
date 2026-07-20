@@ -63,14 +63,47 @@ in
       "SUPER+SHIFT,9,tagsilent,9"
 
       # Windows
+      # Focus
+      "SUPER,Up,focusdir,up"
+      "SUPER,Down,focusdir,down"
+      "SUPER,Left,focusdir,left"
+      "SUPER,Right,focusdir,right"
       "SUPER,h,focusdir,left"
       "SUPER,j,focusdir,down"
       "SUPER,k,focusdir,up"
       "SUPER,l,focusdir,right"
+
+      # Exchange
+      "SUPER+SHIFT,Up,exchange_client,up"
+      "SUPER+SHIFT,Down,exchange_client,down"
+      "SUPER+SHIFT,Left,exchange_client,left"
+      "SUPER+SHIFT,Right,exchange_client,right"
       "SUPER+SHIFT,h,exchange_client,left"
       "SUPER+SHIFT,j,exchange_client,down"
       "SUPER+SHIFT,k,exchange_client,up"
       "SUPER+SHIFT,l,exchange_client,right"
+
+      # Move
+      "SUPER+ALT,Up,movewin,+0,-50"
+      "SUPER+ALT,Down,movewin,+0,+50"
+      "SUPER+ALT,Left,movewin,-50,+0"
+      "SUPER+ALT,Right,movewin,+50,+0"
+      "SUPER+ALT,k,movewin,+0,-50"
+      "SUPER+ALT,j,movewin,+0,+50"
+      "SUPER+ALT,h,movewin,-50,+0"
+      "SUPER+ALT,l,movewin,+50,+0"
+
+      # Resize
+      "SUPER+CTRL,Up,resizewin,+0,-50"
+      "SUPER+CTRL,Down,resizewin,+0,+50"
+      "SUPER+CTRL,Left,resizewin,-50,+0"
+      "SUPER+CTRL,Right,resizewin,+50,+0"
+      "SUPER+CTRL,k,resizewin,+0,-50"
+      "SUPER+CTRL,j,resizewin,+0,+50"
+      "SUPER+CTRL,h,resizewin,-50,+0"
+      "SUPER+CTRL,l,resizewin,+50,+0"
+
+
       # "SUPER+SHIFT,h,scroller_stack,left"
       # "SUPER+SHIFT,j,scroller_stack,down"
       # "SUPER+SHIFT,k,scroller_stack,up"
@@ -102,6 +135,17 @@ in
     axisbind = [
       "SUPER,UP,viewtoleft_have_client"
       "SUPER,DOWN,viewtoright_have_client"
+    ];
+
+    gesturebind = [
+      "none,left,3,focusdir,left"
+      "none,right,3,focusdir,right"
+      "none,up,3,focusdir,up"
+      "none,down,3,focusdir,down"
+      "none,down,4,viewtoleft,0"
+      "none,up,4,viewtoright,0"
+      "none,left,4,toggleoverview"
+      "none,right,4,toggleoverview"
     ];
 
     # Keymodes (submaps) for modal keybindings
