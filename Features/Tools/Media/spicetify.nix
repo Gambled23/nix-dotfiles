@@ -13,33 +13,34 @@ in
 
     # Noctalia custom color scheme
     colorScheme = "custom";
+    
     customColorScheme = {
       Comfy = builtins.readFile ../../Ricing/Shells/Noctalia/Colors/spicetify.ini;
     };
 
     enabledCustomApps = with spicePkgs.apps; [
-      marketplace
+      # marketplace
       # betterLibrary
     ];
 
     enabledExtensions = with spicePkgs.extensions; [
-      adblock
+      # adblock
       # addToQueueTop
-      beautifulLyrics
+      # beautifulLyrics
       # bookmark
       # copyToClipboard
       # goToSong
       # groupSession
       # history
       # lastfm
-      loopyLoop
-      playNext
+      # loopyLoop
+      # playNext
       # popupLyrics
       # powerBar
       # savePlaylists
-      # sectionMarker
+      sectionMarker
       # skipOrPlayLikedSongs
-      # showQueueDuration
+      showQueueDuration
       # shuffle
       volumePercentage
     ];

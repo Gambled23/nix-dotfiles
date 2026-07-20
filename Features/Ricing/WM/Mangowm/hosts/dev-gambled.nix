@@ -3,14 +3,14 @@
   wayland.windowManager.mango = {
     settings = {
       exec-once = [
-        "kitty -e spotify_player"
-        "kitty -e nchat"
+        "kitty --class spotify_player -e spotify_player"
+        "kitty --class nchat -e nchat"
         "sleep 2; noctalia msg session lock"
       ];
 
       windowrule =[
-        "title:spotify_player,monitor:HDMI-A-1"
-        "title:nchat,monitor:HDMI-A-1"
+        "appid:spotify_player,monitor:HDMI-A-1"
+        "appid:nchat,monitor:HDMI-A-1"
         "appid:Altus,monitor:HDMI-A-1"
         "appid:discord,monitor:HDMI-A-1"
         "appid:Spotify,monitor:HDMI-A-1"

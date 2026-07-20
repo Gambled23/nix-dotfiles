@@ -49,27 +49,27 @@
               siteMonitor = "https://server-gambled";
             };
           }
-          {
-            "beszel" = {
-              icon = "beszel";
-              href = "http://server-gambled/beszel";
-              siteMonitor = "http://server-gambled/beszel";
-            };
-          }
-          {
-            "Paperless" = {
-              icon = "paperless";
-              href = "https://server-gambled/paperless";
-              siteMonitor = "https://server-gambled/paperless";
-            };
-          }
-          {
-            "Onlyoffice" = {
-              icon = "onlyoffice";
-              href = "https://server-gambled/onlyoffice";
-              siteMonitor = "https://server-gambled/onlyoffice";
-            };
-          }
+          # {
+          #   "beszel" = {
+          #     icon = "beszel";
+          #     href = "http://server-gambled/beszel";
+          #     siteMonitor = "http://server-gambled/beszel";
+          #   };
+          # }
+          # {
+          #   "Paperless" = {
+          #     icon = "paperless";
+          #     href = "https://server-gambled/paperless";
+          #     siteMonitor = "https://server-gambled/paperless";
+          #   };
+          # }
+          # {
+          #   "Onlyoffice" = {
+          #     icon = "onlyoffice";
+          #     href = "https://server-gambled/onlyoffice";
+          #     siteMonitor = "https://server-gambled/onlyoffice";
+          #   };
+          # }
         ];
       }
       {

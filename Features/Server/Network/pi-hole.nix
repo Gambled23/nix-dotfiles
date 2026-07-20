@@ -1,14 +1,4 @@
-# Notes
-# - Pi-hole doesn't have a mechanism to manage Groups, Clients, or
-#   Domains. Use the web gui.
-#   - https://docs.pi-hole.net/group_management/example/
-#
 {inputs, pkgs, config, lib, ... }: {
-  # #
-  # # Networking
-  # #
-  # # Essential infrastructure
-  # # - List your most essential network resources here
   networking = {
     hosts = {
       "192.168.1.1" = ["gateway.gambled.com" "gateway"];
@@ -19,9 +9,6 @@
     };
   };
 
-  # #
-  # # Services
-  # #
   services = {
     # I'm not actually using the dnsmasq service. Pi-hole provides
     # it's own dnsmasq. I'm using Nix' ability to manage the
@@ -111,22 +98,6 @@
           ipv6.active = false;
           sync.active = false;
         };
-        # webserver = {
-        #   api = {
-        #     # To manage the web login:
-        #     # 1) Temporarily set misc.readOnly to false in
-        #     #    configuration.nix and switch to it.
-        #     # 27) Manually set a password:
-        #     #    Pi-hole web console > Settings > All settings >
-        #     #    Webserver and API > webserver.api.password > Value: ******
-        #     # 3) Read the generated hash:
-        #     #    sudo pihole-FTL --config webserver.api.pwhash
-        #     pwhash = "$BALLOON-SHA256...";
-        #   };
-        #   session = {
-        #     timeout = 43200; # 12h
-        #   };
-        # };
       };
       useDnsmasqConfig = true;
     };
@@ -140,44 +111,6 @@
       };
     };
   };
-
-  # #
-  # # System
-  # #
-  # system.activationScripts = {
-  #   print-pi-hole = {
-  #     text = builtins.trace "building the pi-hole configuration..." "";
-  #   };
-  # };
-
-  # #
-  # # Systemd
-  # #
-  # # The following silences a benign FTL.log warning:
-  # # WARNING API: Failed to read /etc/pihole/versions (key: internal_error)
-  # systemd.tmpfiles.rules = [
-  #   # Type Path Mode User Group Age Argument
-  #   "f /etc/pihole/versions 0644 pihole pihole - -"
-  # ];
-
-  # services.pihole-ftl = {
-  #   enable = true;
-  #   settings = {
-  #     dns.upstreams = [ "9.9.9.9" "1.1.1.1" ];
-
-  #     # Optionally resolve local hosts (domain is optional)
-  #     # dns.hosts = [ "192.168.1.188 hostname.domain" ];
-  #   };
-
-  #   lists = [    # Lists can be added via URL
-  #     {
-  #       url = "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/pro.txt";
-  #       type = "block";
-  #       enabled = true;
-  #       description = "hagezi blocklist";
-  #     }
-  #   ];
-  # };
 
   services.pihole-web = {
     enable = true;

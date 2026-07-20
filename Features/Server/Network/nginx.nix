@@ -26,13 +26,13 @@
             rewrite ^/syncthing/(.*)$ /$1 break;
           '';
         };
-        "/paperless/" = {
-          proxyPass = "http://127.0.0.1:28981/";
-          proxyWebsockets = true;
-          extraConfig = ''
-            rewrite ^/paperless/(.*)$ /$1 break;
-          '';
-        };
+        # "/paperless/" = {
+        #   proxyPass = "http://127.0.0.1:28981/";
+        #   proxyWebsockets = true;
+        #   extraConfig = ''
+        #     rewrite ^/paperless/(.*)$ /$1 break;
+        #   '';
+        # };
         "/pihole/" = {
           proxyPass = "https://127.0.0.1/";
           proxyWebsockets = true;
@@ -40,13 +40,13 @@
             rewrite ^/paperless/(.*)$ /$1 break;
           '';
         };
-        "/beszel/" = {
-          proxyPass = "http://127.0.0.1:8077/";
-          proxyWebsockets = true;
-          extraConfig = ''
-            rewrite ^/beszel/(.*)$ /$1 break;
-          '';
-        };
+        # "/beszel/" = {
+        #   proxyPass = "http://127.0.0.1:8077/";
+        #   proxyWebsockets = true;
+        #   extraConfig = ''
+        #     rewrite ^/beszel/(.*)$ /$1 break;
+        #   '';
+        # };
         "/code-server/" = {
           proxyPass = "http://127.0.0.1:4444/";
           proxyWebsockets = true;
