@@ -28,7 +28,7 @@
 
     virtualHosts."${vault-host}" = {
       forceSSL = true;
-      enableACME = true;
+      # enableACME = true;
       extraConfig = ''
         access_log /var/log/nginx/${vault-host}.access.log;
         error_log /var/log/nginx/${vault-host}.error.log;
@@ -44,4 +44,11 @@
         '';
       };
     };
+  };
+
+  # ACME sservices
+  # security.acme = {
+  #   acceptTerms = true;
+  #   defaults.email = "ipog71@gmail.com";
+  # };
 }

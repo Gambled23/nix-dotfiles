@@ -15,7 +15,7 @@
     ../../Features/Server/Dashboard/homeassistant.nix
     ../../Features/Server/Dashboard/homepage-dashboard.nix
     ../../Features/Server/Tools/code-server.nix
-    ../../Features/Server/Tools/paperless.nix
+    # ../../Features/Server/Tools/paperless.nix
     ../../Features/Server/Network/nginx.nix
     ../../Features/Server/Network/pi-hole.nix
     ../../Features/Server/Tools/vaultwarden.nix
