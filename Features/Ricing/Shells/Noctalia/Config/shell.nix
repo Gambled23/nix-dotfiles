@@ -70,7 +70,7 @@
         session_placement = "attached";
         session_position = "auto";
         shadow = false;
-        transparency_mode = "soft";
+        transparency_mode = "glass";
         wallpaper_placement = "attached";
         wallpaper_position = "auto";
       };

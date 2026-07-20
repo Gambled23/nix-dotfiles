@@ -54,6 +54,6 @@
     animation_curve_opafadeout = "0.05,0.7,0.1,1";
 
     # Tag Animation Direction (1: horizontal, 0: vertical)
-    tag_animation_direction = 0;
+    tag_animation_direction = 1;
   };
 }
