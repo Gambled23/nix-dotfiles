@@ -2,9 +2,9 @@
   networking = {
     hosts = {
       "192.168.1.1" = ["gateway.gambled.com" ];
-      "192.168.1.25" = ["pc-gambled.gambled.com"];
-      "192.168.1.27" = ["pi-hole.gambled.com" ];
-      "192.168.1.44" = ["pixel9.gambled.com" ];
+      "192.168.1.25" = ["pc.gambled.com"];
+      "192.168.1.27" = ["server.gambled.com" ];
+      "192.168.1.44" = ["pixel.gambled.com" ];
       "192.168.1.45" = ["tv-sala.gambled.com" ];
       "192.168.1.46" = ["motorola-nancy.gambled.com"];
     };
