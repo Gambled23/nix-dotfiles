@@ -3,14 +3,22 @@
   services.vaultwarden = {
     enable = true;
     dbBackend = "sqlite";
+    # configureNginx = true;
+    # domain = "vault.server-gambled.com";
+
     config = {
       ROCKET_ADDRESS = "0.0.0.0";
       ROCKET_PORT = 8222;
-      DOMAIN = "http://vault.server-gambled";
+      DOMAIN = "http://server-gambled";
       SIGNUPS_ALLOWED = true;
       # ADMIN_TOKEN = "$argon2id$v=19$m=65540,t=3,p=4$...";
       # LOG_FILE = "/var/lib/bitwarden_rs/access.log";
     };
+  };
+
+  networking.firewall = {
+    allowedUDPPorts = [ 8222 ];
+    allowedTCPPorts = [ 8222 8443 ];
   };
 
   # The CLI tool
@@ -18,8 +26,9 @@
     pkgs.vaultwarden
   ];
 
+
   # The nginx reverse proxy
-  services.nginx = let vault-host = "vault.server-gambled"; in {
+  services.nginx = let vault-host = "server-gambled"; in {
     enable = true;
     recommendedGzipSettings = true;
     recommendedOptimisation = true;
@@ -28,7 +37,13 @@
 
     virtualHosts."${vault-host}" = {
       # forceSSL = true;
-      # enableACME = true;
+      listen = [ { addr = "0.0.0.0"; port = 8443; ssl = true; } ];
+
+      onlySSL = true;
+
+      sslCertificate = "/etc/ssl/local/server-gambled.crt";
+      sslCertificateKey = "/etc/ssl/local/server-gambled.key";
+
       extraConfig = ''
         access_log /var/log/nginx/${vault-host}.access.log;
         error_log /var/log/nginx/${vault-host}.error.log;
@@ -46,7 +61,12 @@
     };
   };
 
-  # ACME sservices
+  # services.nginx.virtualHosts."vault.server-gambled.com" = {
+  #   forceSSL = true;
+  #   enableACME = true;
+  # };
+
+  # # ACME sservices
   # security.acme = {
   #   acceptTerms = true;
   #   defaults.email = "ipog71@gmail.com";

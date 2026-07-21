@@ -33,13 +33,13 @@
         #     rewrite ^/paperless/(.*)$ /$1 break;
         #   '';
         # };
-        "/pihole/" = {
-          proxyPass = "https://127.0.0.1/";
-          proxyWebsockets = true;
-          extraConfig = ''
-            rewrite ^/paperless/(.*)$ /$1 break;
-          '';
-        };
+        # "/pihole/" = {
+        #   proxyPass = "https://127.0.0.1/";
+        #   proxyWebsockets = true;
+        #   extraConfig = ''
+        #     rewrite ^/pihole/(.*)$ /$1 break;
+        #   '';
+        # };
         # "/beszel/" = {
         #   proxyPass = "http://127.0.0.1:8077/";
         #   proxyWebsockets = true;
