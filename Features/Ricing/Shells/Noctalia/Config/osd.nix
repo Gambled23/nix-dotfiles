@@ -4,6 +4,7 @@
     osd = {
       background_opacity = 0.29999998211860657;
       border = true;
+      enabled = true;
       monitors = [  ];
       offset_x = 20;
       offset_y = 8;
@@ -16,6 +17,7 @@
         brightness = true;
         caffeine = true;
         dnd = true;
+        keyboard_backlight = true;
         keyboard_layout = true;
         lock_keys = true;
         media = true;

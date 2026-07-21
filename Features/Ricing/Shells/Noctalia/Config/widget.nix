@@ -16,6 +16,9 @@
         hide_when_plugged = true;
         type = "battery";
       };
+      cat = {
+        type = "dotnetrob/cat:cat";
+      };
       control-center = {
         capsule = true;
         capsule_radius = 8;
@@ -60,7 +63,7 @@
       media = {
         anchor = true;
         art_size = 16.0;
-        max_length = 800;
+        max_length = 300;
         min_length = 0;
         title_scroll = "on_hover";
         type = "media";
@@ -99,6 +102,9 @@
       spacer = {
         type = "spacer";
       };
+      status = {
+        type = "pozzoo/hassio:status";
+      };
       temp = {
         stat = "ram_pct";
         type = "sysmon";
@@ -133,7 +139,7 @@
         empty_color = "secondary";
         minimal = true;
         occupied_color = "tertiary";
-        style = "focus_hint";
+        style = "minimal";
         type = "workspaces";
       };
     };

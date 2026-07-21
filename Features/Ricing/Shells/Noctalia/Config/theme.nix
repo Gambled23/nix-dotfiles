@@ -18,7 +18,7 @@
       wallpaper_scheme = "m3-content";
       templates = {
         builtin_ids = [ "btop" "gtk3" "gtk4" "ghostty" "hyprland" "kitty" "mango" "qt" "starship" ];
-        community_ids = [ "spicetify" "zen-browser" "neovim" "vscode" "vicinae" "antigravity" "bat" "discord" "nchat" "papirus-icons" "steam" "yazi" "hyprtoolkit" ];
+        community_ids = [ "spicetify" "zen-browser" "neovim" "vscode" "vicinae" "antigravity" "bat" "discord" "nchat" "steam" "yazi" "hyprtoolkit" ];
         enable_builtin_templates = true;
         enable_community_templates = true;
         user = {
@@ -29,6 +29,7 @@
             input_path = "$XDG_CONFIG_HOME/noctalia/templates/accela.nix";
             output_path = [ "$XDG_CONFIG_HOME/Tachibana Labs/theme.conf" ];
             output_path_dynamic = "";
+            post_action = "";
             post_hook = ''
               cfg="''${XDG_CONFIG_HOME:-$HOME/.config}/Tachibana Labs"
               src="$cfg/theme.conf"
@@ -50,6 +51,7 @@
             input_path = "$XDG_CONFIG_HOME/noctalia/templates/nvf.nix";
             output_path = [ "/etc/nixos/Features/Ricing/Shells/Noctalia/Colors/nvf.nix" ];
             output_path_dynamic = "";
+            post_action = "";
             post_hook = "";
             pre_hook = "";
           };
@@ -60,6 +62,7 @@
             input_path = "$XDG_CONFIG_HOME/noctalia/templates/siyuan.css";
             output_path = [ "~/SiYuan/conf/appearance/themes/noctalia-siyuan/theme.css" ];
             output_path_dynamic = "";
+            post_action = "";
             post_hook = "";
             pre_hook = "";
           };
@@ -70,6 +73,7 @@
             input_path = "$XDG_CONFIG_HOME/noctalia/templates/spicetify.ini";
             output_path = [ "/etc/nixos/Features/Ricing/Shells/Noctalia/Colors/spicetify.ini" ];
             output_path_dynamic = "";
+            post_action = "";
             post_hook = "";
             pre_hook = "";
           };
@@ -80,6 +84,7 @@
             input_path = "$XDG_CONFIG_HOME/noctalia/templates/starship.toml";
             output_path = [ "$XDG_CONFIG_HOME/noctalia/templates/ignore" ];
             output_path_dynamic = "";
+            post_action = "";
             post_hook = "cp ~/.cache/noctalia/st22arship-palette.toml /etc/nixos/Features/Ricing/Shells/Noctalia/Colors/starship.toml";
             pre_hook = "";
           };

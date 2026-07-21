@@ -4,7 +4,7 @@
     lockscreen_widgets = {
       enabled = true;
       schema_version = 2;
-      widget_order = [ "lockscreen-widget-0000000000000005" "lockscreen-login-box@HDMI-A-1" "lockscreen-login-box@eDP-1" "lockscreen-login-box@HEADLESS-3" "lockscreen-login-box@sunshine" "lockscreen-login-box@DP-3" "lockscreen-widget-0000000000000001" "lockscreen-widget-0000000000000002" "lockscreen-widget-0000000000000003" "lockscreen-widget-0000000000000004" "lockscreen-widget-0000000000000006" "lockscreen-widget-0000000000000007" "lockscreen-widget-0000000000000008" "lockscreen-widget-0000000000000009" "lockscreen-widget-000000000000000a" "lockscreen-widget-000000000000000b" "lockscreen-widget-000000000000000c" ];
+      widget_order = [ "lockscreen-widget-0000000000000005" "lockscreen-login-box@HDMI-A-1" "lockscreen-login-box@eDP-1" "lockscreen-login-box@HEADLESS-3" "lockscreen-login-box@sunshine" "lockscreen-login-box@DP-3" "lockscreen-widget-0000000000000001" "lockscreen-widget-0000000000000002" "lockscreen-widget-0000000000000003" "lockscreen-widget-0000000000000004" "lockscreen-widget-0000000000000006" "lockscreen-widget-0000000000000007" "lockscreen-widget-0000000000000008" "lockscreen-widget-0000000000000009" "lockscreen-widget-000000000000000b" "lockscreen-widget-000000000000000c" "lockscreen-widget-000000000000000a" ];
       grid = {
         cell_size = 16;
         major_interval = 4;
@@ -24,9 +24,13 @@
             background_color = "surface_variant";
             background_opacity = 0.88;
             background_radius = 12.0;
+            center_password_text = false;
             input_opacity = 1.0;
             input_radius = 6.0;
+            show_caps_lock = true;
+            show_keyboard_layout = true;
             show_login_button = true;
+            show_password_hint = true;
           };
         };
         "lockscreen-login-box@HDMI-A-1" = {
@@ -42,9 +46,13 @@
             background_color = "surface_variant";
             background_opacity = 0.88;
             background_radius = 12.0;
+            center_password_text = true;
             input_opacity = 1.0;
-            input_radius = 6.0;
+            input_radius = 12.0;
+            show_caps_lock = true;
+            show_keyboard_layout = true;
             show_login_button = true;
+            show_password_hint = true;
           };
         };
         "lockscreen-login-box@HEADLESS-3" = {
@@ -60,9 +68,13 @@
             background_color = "surface_variant";
             background_opacity = 0.88;
             background_radius = 12.0;
+            center_password_text = false;
             input_opacity = 1.0;
             input_radius = 6.0;
+            show_caps_lock = true;
+            show_keyboard_layout = true;
             show_login_button = true;
+            show_password_hint = true;
           };
         };
         "lockscreen-login-box@eDP-1" = {
@@ -78,9 +90,13 @@
             background_color = "surface_variant";
             background_opacity = 0.88;
             background_radius = 12.0;
+            center_password_text = false;
             input_opacity = 1.0;
             input_radius = 6.0;
+            show_caps_lock = true;
+            show_keyboard_layout = true;
             show_login_button = true;
+            show_password_hint = true;
           };
         };
         "lockscreen-login-box@sunshine" = {
@@ -96,9 +112,13 @@
             background_color = "surface_variant";
             background_opacity = 0.88;
             background_radius = 12.0;
+            center_password_text = false;
             input_opacity = 1.0;
             input_radius = 6.0;
+            show_caps_lock = true;
+            show_keyboard_layout = true;
             show_login_button = true;
+            show_password_hint = true;
           };
         };
         lockscreen-widget-0000000000000001 = {
@@ -137,12 +157,13 @@
           rotation = 0.0;
           type = "clock";
           settings = {
-            
+            background_radius = 24;
+            color = "secondary";
           };
         };
         lockscreen-widget-0000000000000004 = {
           box_height = 176.0;
-          box_width = 400.0;
+          box_width = 416.0;
           cx = 960.0;
           cy = 484.0;
           enabled = true;
@@ -150,7 +171,10 @@
           rotation = 0.0;
           type = "media_player";
           settings = {
+            background_color = "surface";
             background_opacity = 0.75;
+            background_radius = 24;
+            color = "on_surface";
             hide_when_no_media = false;
             layout = "horizontal";
           };
@@ -231,16 +255,22 @@
           };
         };
         lockscreen-widget-000000000000000a = {
-          box_height = 272.0;
-          box_width = 528.0;
-          cx = 328.0;
-          cy = 160.0;
+          box_height = 368.0;
+          box_width = 784.0;
+          cx = 960.0;
+          cy = 408.0;
           enabled = true;
           output = "eDP-1";
           rotation = 0.0;
           type = "clock";
           settings = {
-            
+            background = true;
+            background_opacity = 0.8;
+            background_radius = 24;
+            center_text = false;
+            clock_style = "digital";
+            color = "secondary";
+            font_family = "Liberation Sans";
           };
         };
         lockscreen-widget-000000000000000b = {

@@ -82,7 +82,7 @@
             shadow = false;
             show_on_workspace_switch = true;
             smart_auto_hide = false;
-            start = [ "workspaces" "file_search_2" "nix_monitor_2" "todo_2" ];
+            start = [ "workspaces" "nix_monitor_2" "status" ];
             thickness = 34;
             widget_spacing = 6;
             dead_zone = {
@@ -120,7 +120,7 @@
           enabled = true;
           fill = "surface_variant";
           id = "g1";
-          members = [ "clock" "media" "notifications" "privacy" "mangowm-keymode" ];
+          members = [ "clock" "media" "cat" "notifications" "privacy" "mangowm-keymode" ];
           opacity = 1.0;
           padding = 6.0;
         } ];

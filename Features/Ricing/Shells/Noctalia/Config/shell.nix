@@ -16,6 +16,7 @@
       disable_mipmaps = false;
       external_ip_enabled = false;
       font_family = "DejaVu Sans";
+      input_borders = true;
       launch_apps_as_systemd_services = true;
       launch_apps_custom_command = "";
       middle_click_opens_widget_settings = true;
@@ -23,6 +24,8 @@
       offline_mode = false;
       password_style = "random";
       polkit_agent = true;
+      popup_borders = true;
+      popup_shadows = true;
       screen_time_enabled = true;
       settings_show_advanced = true;
       setup_wizard_enabled = true;
@@ -41,6 +44,7 @@
         app_grid = false;
         categories = true;
         compact = false;
+        fetch_exchange_rates = true;
         provider_prefix = "/";
         show_icons = true;
         sort_by_usage = true;
@@ -60,6 +64,7 @@
         floating_offset = 8;
         launcher_placement = "floating";
         launcher_position = "center";
+        list_item_background = false;
         open_near_click_clipboard = false;
         open_near_click_control_center = false;
         open_near_click_launcher = false;

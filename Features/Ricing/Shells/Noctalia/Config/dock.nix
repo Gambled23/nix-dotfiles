@@ -21,7 +21,7 @@
       launcher_icon = "grid-dots";
       launcher_position = "none";
       magnification = true;
-      magnification_scale = 1.2500000476837158;
+      magnification_scale = 1.25;
       main_axis_padding = 16;
       margin_edge = 8;
       margin_ends = 0;
