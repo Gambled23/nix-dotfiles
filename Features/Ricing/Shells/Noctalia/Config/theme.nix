@@ -58,7 +58,7 @@
             enabled = true;
             index = 0;
             input_path = "$XDG_CONFIG_HOME/noctalia/templates/siyuan.css";
-            output_path = [ "~/SiYuan/conf/appearance/themes/Noctalia/theme.css" ];
+            output_path = [ "~/SiYuan/conf/appearance/themes/noctalia-siyuan/theme.css" ];
             output_path_dynamic = "";
             post_hook = "";
             pre_hook = "";
