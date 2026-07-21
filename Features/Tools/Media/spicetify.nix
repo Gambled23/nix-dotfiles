@@ -9,13 +9,30 @@ in
   
   programs.spicetify = {
     enable = true;
-    theme = spicePkgs.themes.comfy;
+    # theme = spicePkgs.themes.comfy;
+
+    theme = {
+      name = "Colorful";
+      src = pkgs.fetchFromGitHub {
+        owner = "sanoojes";
+        repo = "spicetify-colorful";
+        rev = "main";
+        hash = "sha256-H9Hv97ZUGB7f3uAhxonWbO6KhP074X09hDDORl7ASiQ=";
+      };
+      
+      injectCss = true;
+      replaceColors = true;
+      injectThemeJs = true;
+      overwriteAssets = true;
+      homeConfig = true;
+      additonalCss = "";
+    };
 
     # Noctalia custom color scheme
     colorScheme = "custom";
     
     customColorScheme = {
-      Comfy = builtins.readFile ../../Ricing/Shells/Noctalia/Colors/spicetify.ini;
+      Noctalia = builtins.readFile ../../Ricing/Shells/Noctalia/Colors/spicetify.ini;
     };
 
     enabledCustomApps = with spicePkgs.apps; [
@@ -38,11 +55,11 @@ in
       # popupLyrics
       # powerBar
       # savePlaylists
-      sectionMarker
+      # sectionMarker
       # skipOrPlayLikedSongs
-      showQueueDuration
+      # showQueueDuration
       # shuffle
-      volumePercentage
+      # volumePercentage
     ];
 
     wayland = true;

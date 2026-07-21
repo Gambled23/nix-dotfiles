@@ -1,11 +1,12 @@
 {inputs, pkgs, config, lib, ... }: {
   networking = {
     hosts = {
-      "192.168.1.1" = ["gateway.gambled.com" "gateway"];
-      "192.168.1.27" = ["pi-hole.gambled.com" "pi-hole"];
-      "192.168.1.44" = ["pixel9.gambled.com" "pixel9"];
-      "192.168.1.45" = ["tv-sala.gambled.com" "tv-sala"];
-      "192.168.1.46" = ["motorola-nancy.gambled.com" "motorola-nancy"];
+      "192.168.1.1" = ["gateway.gambled.com" ];
+      "192.168.1.25" = ["pc-gambled.gambled.com"];
+      "192.168.1.27" = ["pi-hole.gambled.com" ];
+      "192.168.1.44" = ["pixel9.gambled.com" ];
+      "192.168.1.45" = ["tv-sala.gambled.com" ];
+      "192.168.1.46" = ["motorola-nancy.gambled.com"];
     };
   };
 

@@ -23,7 +23,7 @@
     
 
     # nixpkgs-xr.url = "github:nix-community/nixpkgs-xr";
-    # noctalia-greeter.url = "github:noctalia-dev/noctalia-greeter";
+    noctalia-greeter.url = "github:noctalia-dev/noctalia-greeter";
     # hyprland.url = "github:hyprwm/Hyprland";
     # hyprland-plugins.url = "github:hyprwm/Hyprland-plugins";
 

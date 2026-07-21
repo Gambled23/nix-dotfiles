@@ -3,7 +3,7 @@
   imports = [
 		../Colors/Templates/nvf.nix
 		../Colors/Templates/siyuan.nix
-		../Colors/Templates/spicetify.nix
+		# ../Colors/Templates/spicetify.nix
 		../Colors/Templates/accela.nix
   ];
 
@@ -70,7 +70,7 @@
             compare_to = "";
             enabled = true;
             index = 0;
-            input_path = "$XDG_CONFIG_HOME/noctalia/templates/spicetify.ini";
+            input_path = "$XDG_CONFIG_HOME/spicetify/Themes/Comfy/color.ini";
             output_path = [ "/etc/nixos/Features/Ricing/Shells/Noctalia/Colors/spicetify.ini" ];
             output_path_dynamic = "";
             post_action = "";
