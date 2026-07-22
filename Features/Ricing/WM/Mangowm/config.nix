@@ -39,8 +39,8 @@ in
       tag_carousel = 1;
       drag_tile_to_tile = 1;
       drag_corner = 4;
-      focus_cross_monitor = 1;
-      exchange_cross_monitor = 1;
+      # focus_cross_monitor = 1;
+      # exchange_cross_monitor = 1;
       scratchpad_cross_monitor = 1;
     };
 
