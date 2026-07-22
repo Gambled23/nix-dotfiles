@@ -44,7 +44,7 @@
           }
           {
             "Vaultwarden" = {
-              icon = "Bittwarden";
+              icon = "bittwarden";
               href = "https://server-gambled:8443";
               siteMonitor = "https://server-gambled:8443";
             };

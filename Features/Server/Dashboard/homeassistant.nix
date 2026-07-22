@@ -36,6 +36,7 @@ in
       "history_stats"
       "met"
       "mobile_app"
+      "pi_hole"
       "roborock"
       "shell_command"
       "spotify"
