@@ -18,7 +18,7 @@
     # ../../Features/Server/Tools/paperless.nix
     ../../Features/Server/Network/nginx.nix
     ../../Features/Server/Network/pi-hole.nix
-    # ../../Features/Server/Tools/vaultwarden.nix
+    ../../Features/Server/Tools/vaultwarden.nix
 
 
     # bootloader
