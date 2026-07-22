@@ -44,9 +44,9 @@
           }
           {
             "Vaultwarden" = {
-              icon = "Vaultwarden";
-              href = "https://server-gambled:8433";
-              siteMonitor = "https://server-gambled:8433";
+              icon = "Bittwarden";
+              href = "https://server-gambled:8443";
+              siteMonitor = "https://server-gambled:8443";
             };
           }         {
             "Pi-Hole" = {
