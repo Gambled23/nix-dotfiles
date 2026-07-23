@@ -30,14 +30,14 @@
     
     #* media 
     vlc
-    mpv
+    # mpv
     gimp-with-plugins
     (callPackage ../../Pkgs/nuvio/package.nix {})
     # inkscape-with-extensions
 
     #* messaging
     altus
-    materialgram
+    # materialgram
     #* Media
     # stremio-linux-shell
 
