@@ -87,6 +87,11 @@
     allowedUDPPorts = [ 7236 5353 ];
   };
 
+  swapDevices = [ {
+    device = "/var/lib/swapfile";
+    size = 16*1024;
+  } ];
+
   # Virtualisation
   # virtualisation.vmware.host.enable = true; # vmware
 }

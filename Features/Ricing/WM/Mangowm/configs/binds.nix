@@ -1,8 +1,9 @@
-{...}:
+{ pkgs, ... }:
 let 
-  terminal="kitty";
-  modal_terminal="kitten quick-access-terminal";
-  file_manager = "${terminal} --class yazi -e yazi";
+  scrcpy-desktop-mode = "${pkgs.callPackage ../../../../../Scripts/scrcpy-desktop-mode.nix {}}/bin/scrcpy-desktop-mode";
+  terminal="${pkgs.kitty}/bin/kitty";
+  modal_terminal="${pkgs.kitty}/bin/kitten quick-access-terminal";
+  file_manager = "${terminal} --class yazi -e ${pkgs.yazi}/bin/yazi";
   menu = "vicinae toggle";
   web_browser = "google-chrome-stable";
   noctalia_ipc = "noctalia msg";
@@ -33,7 +34,7 @@ in
       "SUPER,n,spawn,${terminal} --class nix-rbd -e nix-rbd"
       "SUPER,o,spawn,moonlight stream 'el sunchine' 'dev-gambled'"
       "SUPER,p,spawn,scrcpy --render-driver=opengl -S -w -K -b15M --power-off-on-close"
-      "SUPER+SHIFT,p,spawn,scrcpy --new-display=1920x1080/180 --render-driver=opengl -MK -b10M --power-off-on-close"
+      "SUPER+SHIFT,p,spawn,${scrcpy-desktop-mode}"
       "SUPER,Escape,spawn,${terminal} --class btop -e btop"
 
       # Scratchpad
@@ -142,10 +143,21 @@ in
       "none,right,3,focusdir,right"
       "none,up,3,focusdir,up"
       "none,down,3,focusdir,down"
-      "none,down,4,viewtoleft,0"
-      "none,up,4,viewtoright,0"
-      "none,left,4,toggleoverview"
-      "none,right,4,toggleoverview"
+      
+      "SUPER,left,3,exchange_client,left"
+      "SUPER,right,3,exchange_client,right"
+      "SUPER,up,3,exchange_client,up"
+      "SUPER,down,3,exchange_client,down"
+
+      "none,left,4,viewtoleft,0"
+      "none,right,4,viewtoright,0"
+      "none,up,4,toggleoverview"
+      "none,down,4,toggleoverview"
+
+      "SUPER,left,4,focusmon,left"
+      "SUPER,right,4,focusmon,right"
+      "SUPER,up,4,view,-1"
+      "SUPER,down,4,view,-1"
     ];
 
     # Keymodes (submaps) for modal keybindings

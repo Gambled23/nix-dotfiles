@@ -11,7 +11,7 @@
     blur_layer=1;
     blur_optimized = 0;
     blur_params = {
-      num_passes = 4;
+      num_passes = 3;
       radius = 6;
       noise=0.02;
       brightness=1;
