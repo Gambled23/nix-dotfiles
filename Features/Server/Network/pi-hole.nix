@@ -7,6 +7,7 @@
       "192.168.1.44" = ["pixel.gambled.com" ];
       "192.168.1.45" = ["tv-sala.gambled.com" ];
       "192.168.1.46" = ["motorola-nancy.gambled.com"];
+      "192.168.1.49" = ["tv-nancy.gambled.com"];
     };
   };
 
