@@ -34,6 +34,9 @@
     wireplumber
     sof-firmware # audio via hdmi
 
+    # Secrets
+    sops
+    age
 
     # Tools
     gnome-calendar
