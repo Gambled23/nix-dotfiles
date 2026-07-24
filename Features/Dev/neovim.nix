@@ -263,8 +263,8 @@ in
         nvim-ufo.enable = true;
         nvim-ufo.setupOpts = {
           foldcolumn = 1;
-          foldlevel = 99;
-          foldlevelstart = 99;
+          foldlevel = 1;
+          foldlevelstart = 1;
           foldenable = true;
         };
         # smartcolumn.enable = true;
