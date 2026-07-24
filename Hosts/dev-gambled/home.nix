@@ -13,7 +13,6 @@
   ];
 
   home.packages = with pkgs; [
-    bws
     #* dev tools
     nodejs_26
     bruno
