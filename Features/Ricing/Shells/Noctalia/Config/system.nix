@@ -9,9 +9,15 @@
         cpu_temp_sensor_path = "";
         cpu_usage_activity_threshold = 50.0;
         cpu_usage_critical_threshold = 90.0;
-        disk_pct_activity_threshold = 80.0;
-        disk_pct_critical_threshold = 95.0;
+        disk_free_activity_threshold = 80.0;
+        disk_free_critical_threshold = 95.0;
+        disk_free_pct_activity_threshold = 80.0;
+        disk_free_pct_critical_threshold = 95.0;
         disk_poll_seconds = 10.0;
+        disk_used_activity_threshold = 80.0;
+        disk_used_critical_threshold = 95.0;
+        disk_used_pct_activity_threshold = 80.0;
+        disk_used_pct_critical_threshold = 95.0;
         enabled = true;
         gpu_poll_seconds = 0.0;
         gpu_temp_activity_threshold = 60.0;

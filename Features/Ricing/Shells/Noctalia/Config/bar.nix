@@ -41,11 +41,7 @@
         thickness = 34;
         widget_spacing = 6;
         dead_zone = {
-          command = "";
-          middle_command = "";
-          right_command = "";
-          scroll_down_command = "";
-          scroll_up_command = "";
+          
         };
         monitor = {
           HDMI-A-1 = {
@@ -86,11 +82,7 @@
             thickness = 34;
             widget_spacing = 6;
             dead_zone = {
-              command = "";
-              middle_command = "";
-              right_command = "";
-              scroll_down_command = "";
-              scroll_up_command = "";
+              
             };
             capsule_group = [ {
               enabled = true;

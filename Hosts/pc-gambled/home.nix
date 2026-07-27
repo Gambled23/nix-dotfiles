@@ -52,7 +52,6 @@
     #* utils
     pywalfox-native
     polychromatic
-    via
     headsetcontrol
 
     #* media

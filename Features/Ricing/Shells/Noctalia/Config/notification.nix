@@ -6,6 +6,7 @@
       border = true;
       collapse_on_dismiss = true;
       enable_daemon = true;
+      history_retention_hours = 0;
       layer = "top";
       monitors = [  ];
       offset_x = 20;

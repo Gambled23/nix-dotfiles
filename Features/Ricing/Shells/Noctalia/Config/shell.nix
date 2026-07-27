@@ -6,11 +6,13 @@
       app_icon_colorize = false;
       avatar_path = "/home/gambled/Pictures/face.jpg";
       button_borders = true;
+      card_borders = true;
       clipboard_auto_paste = "auto";
       clipboard_confirm_clear_history = true;
       clipboard_enabled = true;
       clipboard_history_max_entries = 100;
       clipboard_image_action_command = "";
+      clipboard_keep_from_closed_apps = true;
       corner_radius_scale = 1.100000023841858;
       date_format = "%A, %x";
       disable_mipmaps = false;
@@ -19,7 +21,6 @@
       input_borders = true;
       launch_apps_as_systemd_services = true;
       launch_apps_custom_command = "";
-      middle_click_opens_widget_settings = true;
       niri_overview_type_to_launch_enabled = false;
       offline_mode = false;
       password_style = "random";
@@ -38,10 +39,11 @@
         speed = 1.25;
       };
       greeter_sync = {
-        auto_sync = false;
+        auto_sync = true;
       };
       launcher = {
         app_grid = false;
+        auto_paste = "auto";
         categories = true;
         compact = false;
         fetch_exchange_rates = true;
@@ -97,10 +99,12 @@
         pipe_command = "";
         pipe_to_command = false;
         save_to_file = true;
+        show_cursor = false;
       };
       session = {
         grid = false;
         grid_columns = 3;
+        show_shortcuts = true;
         power = {
           
         };

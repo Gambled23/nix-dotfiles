@@ -20,6 +20,7 @@
       launcher_custom_image_colorize = false;
       launcher_icon = "grid-dots";
       launcher_position = "none";
+      layer = "top";
       magnification = true;
       magnification_scale = 1.25;
       main_axis_padding = 16;

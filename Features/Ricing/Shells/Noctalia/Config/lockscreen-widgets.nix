@@ -30,7 +30,6 @@
             show_caps_lock = true;
             show_keyboard_layout = true;
             show_login_button = true;
-            show_password_hint = true;
           };
         };
         "lockscreen-login-box@HDMI-A-1" = {
@@ -52,7 +51,6 @@
             show_caps_lock = true;
             show_keyboard_layout = true;
             show_login_button = true;
-            show_password_hint = true;
           };
         };
         "lockscreen-login-box@HEADLESS-3" = {
@@ -74,7 +72,6 @@
             show_caps_lock = true;
             show_keyboard_layout = true;
             show_login_button = true;
-            show_password_hint = true;
           };
         };
         "lockscreen-login-box@eDP-1" = {
@@ -96,7 +93,6 @@
             show_caps_lock = true;
             show_keyboard_layout = true;
             show_login_button = true;
-            show_password_hint = true;
           };
         };
         "lockscreen-login-box@sunshine" = {
@@ -118,7 +114,6 @@
             show_caps_lock = true;
             show_keyboard_layout = true;
             show_login_button = true;
-            show_password_hint = true;
           };
         };
         lockscreen-widget-0000000000000001 = {

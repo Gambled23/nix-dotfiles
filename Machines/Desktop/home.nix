@@ -50,6 +50,7 @@
     siyuan
     qalculate-gtk
     gnome-control-center
+    via
     # zoom-us
 
     #* webbrowsers

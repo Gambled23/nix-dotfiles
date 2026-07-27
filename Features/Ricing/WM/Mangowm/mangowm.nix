@@ -4,6 +4,8 @@
     inputs.mangowm.nixosModules.mango
   ];
 
+  disabledModules = [ "programs/wayland/mango.nix" ];
+
   programs.mango = {
     enable = true;
   };

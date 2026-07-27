@@ -42,8 +42,10 @@
         device = "input";
         type = "volume";
       };
+      keybinds = {
+        type = "kenn/keybind-cheatsheet:keybinds";
+      };
       keyboard_layout = {
-        cycle_command = "";
         hide_when_single_layout = false;
         type = "keyboard_layout";
       };
@@ -100,6 +102,7 @@
         type = "sysmon";
       };
       spacer = {
+        interactive = false;
         type = "spacer";
       };
       status = {
@@ -112,6 +115,9 @@
       todo_2 = {
         type = "nightwatch75/todo:todo";
       };
+      tracker = {
+        type = "cleboost/anilist:tracker";
+      };
       tray = {
         capsule = true;
         drawer = true;
@@ -120,16 +126,21 @@
       vicinae = {
         capsule = true;
         capsule_padding = 3.0;
-        command = "vicinae toggle";
         enabled = true;
         glyph = "rocket";
-        right_command = "vicinae toggle";
         type = "custom_button";
+        actions = {
+          left = "exec vicinae toggle";
+          right = "exec vicinae toggle";
+        };
       };
       volume = {
         capsule = true;
-        scroll_step = 1;
         type = "volume";
+        actions = {
+          scroll_down = "volume-down 1%";
+          scroll_up = "volume-up 1%";
+        };
       };
       wallhaven = {
         type = "noctalia/wallhaven:wallhaven";

@@ -4,7 +4,7 @@
     desktop_widgets = {
       enabled = true;
       schema_version = 2;
-      widget_order = [ "desktop-widget-0000000000000006" "desktop-widget-0000000000000001" "desktop-widget-0000000000000005" "desktop-widget-0000000000000007" "desktop-widget-0000000000000008" "desktop-widget-0000000000000009" "desktop-widget-000000000000000a" "desktop-widget-000000000000000b" ];
+      widget_order = [ "desktop-widget-0000000000000006" "desktop-widget-0000000000000001" "desktop-widget-0000000000000005" "desktop-widget-0000000000000007" "desktop-widget-0000000000000008" "desktop-widget-0000000000000009" "desktop-widget-000000000000000a" "desktop-widget-000000000000000b" "desktop-widget-000000000000000c" "desktop-widget-000000000000000d" "desktop-widget-000000000000000e" "desktop-widget-000000000000000f" ];
       grid = {
         cell_size = 16;
         major_interval = 4;
@@ -66,8 +66,8 @@
         desktop-widget-0000000000000008 = {
           box_height = 160.0;
           box_width = 368.0;
-          cx = 312.0;
-          cy = 188.0;
+          cx = 960.0;
+          cy = 956.0;
           enabled = true;
           output = "HDMI-A-1";
           rotation = 0.0;
@@ -103,19 +103,81 @@
           };
         };
         desktop-widget-000000000000000b = {
-          box_height = 0.0;
-          box_width = 0.0;
-          cx = 608.0;
-          cy = 439.5;
+          box_height = 64.0;
+          box_width = 128.0;
+          cx = 672.0;
+          cy = 424.0;
           enabled = true;
           output = "eDP-1";
           rotation = 0.0;
           type = "sysmon";
           settings = {
             display = "gauge";
-            gauge_layout = "vertical";
+            gauge_layout = "horizontal";
             stat = "ram_pct";
             stat2 = "cpu_temp";
+          };
+        };
+        desktop-widget-000000000000000c = {
+          box_height = 64.0;
+          box_width = 128.0;
+          cx = 1248.0;
+          cy = 424.0;
+          enabled = true;
+          output = "eDP-1";
+          rotation = 0.0;
+          type = "sysmon";
+          settings = {
+            display = "gauge";
+            gauge_layout = "horizontal";
+            stat = "cpu_temp";
+            stat2 = "cpu_temp";
+          };
+        };
+        desktop-widget-000000000000000d = {
+          box_height = 64.0;
+          box_width = 128.0;
+          cx = 1056.0;
+          cy = 424.0;
+          enabled = true;
+          output = "eDP-1";
+          rotation = 0.0;
+          type = "sysmon";
+          settings = {
+            display = "gauge";
+            gauge_layout = "horizontal";
+            stat = "cpu_usage";
+            stat2 = "cpu_temp";
+          };
+        };
+        desktop-widget-000000000000000e = {
+          box_height = 64.0;
+          box_width = 128.0;
+          cx = 864.0;
+          cy = 424.0;
+          enabled = true;
+          output = "eDP-1";
+          rotation = 0.0;
+          type = "sysmon";
+          settings = {
+            display = "gauge";
+            gauge_layout = "horizontal";
+            stat = "swap_pct";
+            stat2 = "cpu_temp";
+          };
+        };
+        desktop-widget-000000000000000f = {
+          box_height = 0.0;
+          box_width = 0.0;
+          cx = 960.0;
+          cy = 655.0;
+          enabled = true;
+          output = "HDMI-A-1";
+          rotation = 0.0;
+          type = "weather";
+          settings = {
+            forecast_days = 6;
+            show_forecast = true;
           };
         };
       };
