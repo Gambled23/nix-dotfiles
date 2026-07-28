@@ -32,9 +32,15 @@
         format = "{:%a %d %b}";
         type = "clock";
       };
+      hello = {
+        type = "noctalia/example:hello";
+      };
       input_volume = {
         device = "input";
         type = "volume";
+      };
+      keybinds = {
+        type = "kenn/keybind-cheatsheet:keybinds";
       };
       keyboard_layout = {
         hide_when_single_layout = false;
@@ -73,6 +79,9 @@
         show_text = false;
         type = "avivbintangaringga/nix-monitor:nix-monitor";
       };
+      notes = {
+        type = "noctalia/notes:notes";
+      };
       notifications = {
         hide_when_no_unread = true;
         type = "notifications";
@@ -99,6 +108,9 @@
       temp = {
         stat = "ram_pct";
         type = "sysmon";
+      };
+      tracker = {
+        type = "cleboost/anilist:tracker";
       };
       tray = {
         capsule = true;

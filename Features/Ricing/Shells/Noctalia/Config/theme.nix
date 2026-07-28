@@ -9,8 +9,8 @@
 
   programs.noctalia.settings = {
     theme = {
-      builtin = "Ayu";
-      community_palette = "Oxocarbon";
+      builtin = "Gruvbox";
+      community_palette = "GruvboxAlt";
       custom_palette = "";
       mode = "dark";
       pure_black_dark = false;

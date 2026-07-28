@@ -24,7 +24,7 @@
       } {
         type = "caffeine";
       } {
-        type = "audio";
+        type = "power_profile";
       } ];
     };
   };
