@@ -18,7 +18,6 @@
         contact_shadow = false;
         enabled = true;
         end = [ "tray" "group:g2" "volume" "control-center" ];
-        font_weight = 500;
         hover_highlight = true;
         layer = "top";
         margin_edge = 4;
@@ -59,7 +58,6 @@
             contact_shadow = false;
             enabled = true;
             end = [ "tray" "group:g2" "volume" "control-center" ];
-            font_weight = 500;
             hover_highlight = true;
             layer = "top";
             margin_edge = 4;

@@ -42,6 +42,7 @@
     # stremio-linux-shell
 
     #* utils
+    wdisplays # wlr-randr gui
     seahorse #gnome keyring manager
     # pixelflasher
     android-tools

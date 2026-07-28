@@ -32,18 +32,9 @@
         format = "{:%a %d %b}";
         type = "clock";
       };
-      file_search_2 = {
-        type = "nightwatch75/file-search:file-search";
-      };
-      hello = {
-        type = "noctalia/example:hello";
-      };
       input_volume = {
         device = "input";
         type = "volume";
-      };
-      keybinds = {
-        type = "kenn/keybind-cheatsheet:keybinds";
       };
       keyboard_layout = {
         hide_when_single_layout = false;
@@ -82,9 +73,6 @@
         show_text = false;
         type = "avivbintangaringga/nix-monitor:nix-monitor";
       };
-      notes = {
-        type = "noctalia/notes:notes";
-      };
       notifications = {
         hide_when_no_unread = true;
         type = "notifications";
@@ -112,12 +100,6 @@
         stat = "ram_pct";
         type = "sysmon";
       };
-      todo_2 = {
-        type = "nightwatch75/todo:todo";
-      };
-      tracker = {
-        type = "cleboost/anilist:tracker";
-      };
       tray = {
         capsule = true;
         drawer = true;
@@ -142,13 +124,9 @@
           scroll_up = "volume-up 1%";
         };
       };
-      wallhaven = {
-        type = "noctalia/wallhaven:wallhaven";
-      };
       workspaces = {
         capsule = true;
         empty_color = "secondary";
-        minimal = true;
         occupied_color = "tertiary";
         style = "minimal";
         type = "workspaces";
