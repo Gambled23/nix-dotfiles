@@ -78,7 +78,7 @@
             shadow = false;
             show_on_workspace_switch = true;
             smart_auto_hide = false;
-            start = [ "workspaces" "nix_monitor_2" "status" ];
+            start = [ "workspaces" "nix_monitor_2" ];
             thickness = 34;
             widget_spacing = 6;
             dead_zone = {
