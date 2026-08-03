@@ -21,4 +21,9 @@
     max-jobs = 3;
     cores = 4;
   };
+
+  # services.cng-plus-ml = {
+  #   enable = true;
+  #   workingDir = "/home/gambled/Codes/cng-plus-ml";
+  # };
 }

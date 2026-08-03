@@ -95,6 +95,11 @@
       url = "path:/home/gambled/Codes/nixos";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    # cng-plus-ml = {
+    #   url = "path:/home/gambled/Codes/cng-plus-ml";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
   };
 
   outputs = {
@@ -112,6 +117,7 @@
     mangowm,
     zen-browser,
     alpha-server,
+    # cng-plus-ml,
     ...
     }@inputs:
   let
@@ -129,6 +135,7 @@
       inherit mangowm;
       inherit zen-browser;
       inherit alpha-server;
+      # inherit cng-plus-ml;
     };
 
     coreModules = [
@@ -149,6 +156,7 @@
         system = "x86_64-linux";
         inherit specialArgs;
         modules = coreModules ++ [
+          # cng-plus-ml.nixosModules.default
           ./Hosts/dev-gambled/configuration.nix
           {
             home-manager.users.gambled.imports = [

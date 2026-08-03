@@ -4,7 +4,7 @@
     desktop_widgets = {
       enabled = true;
       schema_version = 2;
-      widget_order = [ "desktop-widget-0000000000000006" "desktop-widget-0000000000000001" "desktop-widget-0000000000000005" "desktop-widget-0000000000000007" "desktop-widget-0000000000000008" "desktop-widget-0000000000000009" "desktop-widget-000000000000000a" "desktop-widget-000000000000000b" "desktop-widget-000000000000000c" "desktop-widget-000000000000000d" "desktop-widget-000000000000000e" "desktop-widget-000000000000000f" ];
+      widget_order = [ "desktop-widget-0000000000000006" "desktop-widget-0000000000000001" "desktop-widget-0000000000000005" "desktop-widget-0000000000000007" "desktop-widget-0000000000000008" "desktop-widget-0000000000000009" "desktop-widget-000000000000000a" "desktop-widget-000000000000000b" "desktop-widget-000000000000000c" "desktop-widget-000000000000000d" "desktop-widget-000000000000000e" ];
       grid = {
         cell_size = 16;
         major_interval = 4;
@@ -164,20 +164,6 @@
             gauge_layout = "horizontal";
             stat = "swap_pct";
             stat2 = "cpu_temp";
-          };
-        };
-        desktop-widget-000000000000000f = {
-          box_height = 0.0;
-          box_width = 0.0;
-          cx = 960.0;
-          cy = 655.0;
-          enabled = true;
-          output = "HDMI-A-1";
-          rotation = 0.0;
-          type = "weather";
-          settings = {
-            forecast_days = 6;
-            show_forecast = true;
           };
         };
       };

@@ -3,7 +3,7 @@
   programs.noctalia.settings = {
     plugins = {
       auto_update = true;
-      enabled = [ "gambled23/mangowm-keymode" "avivbintangaringga/nix-monitor" "dotnetrob/cat" "pozzoo/hassio" ];
+      enabled = [ "gambled23/mangowm-keymode" "avivbintangaringga/nix-monitor" "dotnetrob/cat" "pozzoo/hassio" "icefish/phone-connect" ];
       source = [ {
         enabled = true;
         kind = "git";

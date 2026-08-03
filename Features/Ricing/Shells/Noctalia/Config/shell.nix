@@ -63,6 +63,7 @@
         clipboard_position = "center";
         control_center_placement = "attached";
         control_center_position = "auto";
+        floating_layer = "overlay";
         floating_offset = 8;
         launcher_placement = "floating";
         launcher_position = "center";
@@ -98,6 +99,7 @@
         freeze_screen = true;
         pipe_command = "";
         pipe_to_command = false;
+        remember_last_region = false;
         save_to_file = true;
         show_cursor = false;
       };

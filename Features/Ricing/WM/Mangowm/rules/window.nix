@@ -16,7 +16,7 @@
       # "appid:.scrcpy-wrapped,width:447,height:993,isfloating:1"
       "title:Picture in picture,isfloating:1, width:284,height:161"
       "title:(Open File.*|Select Folder to Upload|Select a file),width:1150,height:700,isfloating:1"
-      "title:(Keyguard),width:790,height:570,isfloating:1"
+      "title:(Keyguard),width:911,height:655,isfloating:1"
       "appid:yazi,width:1280,height:800,isfloating:1"
       "appid:vicinae,allow_csd:1,isnoanimation:1"
       "title:\,,appid:com.mitchellh.ghostty,isopensilent:1,tags:5"

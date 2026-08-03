@@ -11,6 +11,9 @@
         title_scroll = "on_hover";
         type = "active_window";
       };
+      bar_2 = {
+        type = "icefish/phone-connect:bar";
+      };
       battery = {
         hide_when_full = true;
         hide_when_plugged = true;

@@ -78,7 +78,7 @@
             shadow = false;
             show_on_workspace_switch = true;
             smart_auto_hide = false;
-            start = [ "workspaces" "nix_monitor_2" ];
+            start = [ "workspaces" "group:g3" ];
             thickness = 34;
             widget_spacing = 6;
             dead_zone = {
@@ -96,6 +96,13 @@
               fill = "surface_variant";
               id = "g1";
               members = [ "clock" "media" "notifications" "privacy" "mangowm-keymode" ];
+              opacity = 1.0;
+              padding = 6.0;
+            } {
+              enabled = true;
+              fill = "surface_variant";
+              id = "g3";
+              members = [ "nix_monitor_2" "bar_2" ];
               opacity = 1.0;
               padding = 6.0;
             } ];
