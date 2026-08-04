@@ -7,7 +7,7 @@ pkgs.writeShellScriptBin "scrcpy-desktop-mode" ''
     pc-gambled)
       adb shell settings put global overlay_display_devices 3440x1440/280
     ;;
-    dev-gamled)
+    dev-gambled)
       adb shell settings put global overlay_display_devices 1920x1080/170
     ;;
   esac

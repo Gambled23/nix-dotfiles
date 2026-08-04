@@ -25,6 +25,7 @@
     #* utils
     moonlight-qt
     (import "${alpha-server}/scripts/backup-alpha.nix" { inherit pkgs; })
+    (import "${alpha-server}/scripts/dev/start-cng-plus.nix" { inherit pkgs; })
 
     nchat # whatsapp cli
   ];

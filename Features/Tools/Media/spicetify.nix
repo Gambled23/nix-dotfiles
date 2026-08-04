@@ -49,6 +49,7 @@ in
       # goToSong
       # groupSession
       # history
+      keyboardShortcut
       # lastfm
       # loopyLoop
       # playNext

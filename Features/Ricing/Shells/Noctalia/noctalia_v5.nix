@@ -42,15 +42,23 @@
   home.packages = with pkgs; [
     # For screenshotting and screen recording plugins
     inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
+    # For screen-toolkit widget
     slurp
-    wl-clipboard
+    grim
+    hyprpicker
     tesseract
     imagemagick
     zbar
     curl
-    ffmpeg
     jq
+    bc
     wl-screenrec
+    swappy
+    translate-shell
+    ffmpeg
+    
+    wl-clipboard
+    imagemagick
     adw-gtk3 # custom color theme so gtk can use noctalia colors
     qt6.qtwebsockets 
     (import ./noctalia-update-config.nix { inherit pkgs; })

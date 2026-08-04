@@ -30,7 +30,9 @@
     
     #* media 
     vlc
-    # mpv
+    mpv
+    haruna
+    celluloid
     gimp-with-plugins
     (callPackage ../../Pkgs/nuvio/package.nix {})
     # inkscape-with-extensions

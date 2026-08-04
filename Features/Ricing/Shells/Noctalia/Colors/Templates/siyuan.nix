@@ -14,6 +14,7 @@
         --b3-theme-surface-lighter: {{colors.surface.light.rgba | set_alpha 0.38}};
         --b3-theme-error: {{colors.error.light.hex}};
         --b3-theme-success: #3dc200;
+        --b3-body-background: {{colors.surface.light.hex}};
 
         /* 文字颜色 */
         --b3-theme-on-primary: {{colors.on_primary.light.hex}};
@@ -234,6 +235,7 @@
         --b3-theme-surface-lighter: {{colors.surface.dark.rgba | set_alpha 0.38}};
         --b3-theme-error: {{colors.error.dark.hex}};
         --b3-theme-success: #65b84d;
+        --b3-body-background: {{colors.surface.dark.hex}};
 
         /* 文字颜色 */
         --b3-theme-on-primary: {{colors.on_primary.dark.hex}};

@@ -130,13 +130,13 @@
         "sops-nix": "sops-nix_2"
       },
       "locked": {
-        "lastModified": 1785518497,
-        "narHash": "sha256-uLd++X92cvlzH+l+zuWoCP9N8kmBtRrntYhdNIaBwfM=",
-        "path": "/home/gambled/Codes/nixos",
+        "lastModified": 1785856874,
+        "narHash": "sha256-DNkUhhDiy0ucC9V1/OrpyAYJmEiY01BuJAK9BurZ77I=",
+        "path": "/home/gambled/Codes/nixos-alpha-server",
         "type": "path"
       },
       "original": {
-        "path": "/home/gambled/Codes/nixos",
+        "path": "/home/gambled/Codes/nixos-alpha-server",
         "type": "path"
       }
     },

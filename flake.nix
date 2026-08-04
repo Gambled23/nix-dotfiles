@@ -92,7 +92,7 @@
 
     # Alpha
     alpha-server = {
-      url = "path:/home/gambled/Codes/nixos";
+      url = "path:/home/gambled/Codes/nixos-alpha-server";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
