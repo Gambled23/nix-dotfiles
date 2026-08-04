@@ -97,4 +97,11 @@
 
   # Virtualisation
   # virtualisation.vmware.host.enable = true; # vmware
+
+  # datos obtenidos con: nix-shell -p usbutils --run "lsusb -v"
+  services.udev.extraRules = ''
+    SUBSYSTEM=="usb", ACTION=="add", ATTR{idVendor}=="18d1", ATTR{idProduct}=="4ee7", ATTR{serial}=="45221FDAS003GN", RUN+="${pkgs.writeShellScript "phone-connected" ''
+      scrcpy --no-video --no-control
+    ''}"
+  '';
 }
