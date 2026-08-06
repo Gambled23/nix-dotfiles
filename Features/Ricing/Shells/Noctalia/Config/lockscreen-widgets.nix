@@ -12,7 +12,7 @@
       };
       widget = {
         "lockscreen-login-box@DP-3" = {
-          box_height = 229.0;
+          box_height = 196.0;
           box_width = 720.0;
           cx = 1720.0;
           cy = 1321.0;
@@ -33,11 +33,12 @@
             show_login_button = true;
             show_media = true;
             show_session_buttons = true;
+            show_unlock_hint = true;
             show_weather = true;
           };
         };
         "lockscreen-login-box@HDMI-A-1" = {
-          box_height = 229.0;
+          box_height = 196.0;
           box_width = 720.0;
           cx = 960.0;
           cy = 961.0;
@@ -58,11 +59,12 @@
             show_login_button = true;
             show_media = true;
             show_session_buttons = true;
+            show_unlock_hint = true;
             show_weather = true;
           };
         };
         "lockscreen-login-box@HEADLESS-3" = {
-          box_height = 229.0;
+          box_height = 196.0;
           box_width = 720.0;
           cx = 960.0;
           cy = 961.0;
@@ -83,11 +85,12 @@
             show_login_button = true;
             show_media = true;
             show_session_buttons = true;
+            show_unlock_hint = true;
             show_weather = true;
           };
         };
         "lockscreen-login-box@eDP-1" = {
-          box_height = 229.0;
+          box_height = 196.0;
           box_width = 720.0;
           cx = 960.0;
           cy = 1081.0;
@@ -108,11 +111,12 @@
             show_login_button = true;
             show_media = true;
             show_session_buttons = true;
+            show_unlock_hint = true;
             show_weather = true;
           };
         };
         "lockscreen-login-box@sunshine" = {
-          box_height = 229.0;
+          box_height = 196.0;
           box_width = 720.0;
           cx = 640.0;
           cy = 681.0;
@@ -133,6 +137,7 @@
             show_login_button = true;
             show_media = true;
             show_session_buttons = true;
+            show_unlock_hint = true;
             show_weather = true;
           };
         };

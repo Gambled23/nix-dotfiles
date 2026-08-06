@@ -9,12 +9,12 @@
         --b3-theme-secondary: {{colors.secondary.light.hex}};
         --b3-theme-background: {{colors.background.light.hex}};
         --b3-theme-background-light: {{colors.background.light.rgba | set_alpha 0.54}};
-        --b3-theme-surface: {{colors.surface.light.hex}};
-        --b3-theme-surface-light: {{colors.surface.light.rgba | set_alpha 0.54}};
-        --b3-theme-surface-lighter: {{colors.surface.light.rgba | set_alpha 0.38}};
+        --b3-theme-surface: {{colors.surface_container.light.hex}};
+        --b3-theme-surface-light: {{colors.surface_container_high.light.rgba}};
+        --b3-theme-surface-lighter: {{colors.surface_container_highest.light.rgba}};
         --b3-theme-error: {{colors.error.light.hex}};
         --b3-theme-success: #3dc200;
-        --b3-body-background: {{colors.surface.light.hex}};
+        --b3-body-background: {{colors.surface_container_lowest.light.hex}};
 
         /* 文字颜色 */
         --b3-theme-on-primary: {{colors.on_primary.light.hex}};
@@ -230,12 +230,12 @@
         --b3-theme-secondary: {{colors.secondary.dark.hex}};
         --b3-theme-background: {{colors.background.dark.hex}};
         --b3-theme-background-light: {{colors.background.dark.rgba | set_alpha 0.54}};
-        --b3-theme-surface: {{colors.surface.dark.hex}};
-        --b3-theme-surface-light: {{colors.surface.dark.rgba | set_alpha 0.54}};
-        --b3-theme-surface-lighter: {{colors.surface.dark.rgba | set_alpha 0.38}};
+        --b3-theme-surface: {{colors.surface_container.dark.hex}};
+        --b3-theme-surface-light: {{colors.surface_container_high.dark.rgba}};
+        --b3-theme-surface-lighter: {{colors.surface_container_highest.dark.rgba}};
         --b3-theme-error: {{colors.error.dark.hex}};
         --b3-theme-success: #65b84d;
-        --b3-body-background: {{colors.surface.dark.hex}};
+        --b3-body-background: {{colors.surface_container_lowest.dark.hex}};
 
         /* 文字颜色 */
         --b3-theme-on-primary: {{colors.on_primary.dark.hex}};

@@ -19,6 +19,9 @@
         hide_when_plugged = true;
         type = "battery";
       };
+      btn = {
+        type = "ezequiel/mango_layouts:btn";
+      };
       cat = {
         type = "dotnetrob/cat:cat";
       };
@@ -138,6 +141,9 @@
           scroll_down = "volume-down 1%";
           scroll_up = "volume-up 1%";
         };
+      };
+      widget = {
+        type = "alexander/screen-toolkit:widget";
       };
       workspaces = {
         capsule = true;

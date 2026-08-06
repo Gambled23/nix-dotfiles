@@ -3,12 +3,12 @@
   programs.noctalia.settings = {
     lockscreen = {
       allow_empty_password = false;
-      blur_intensity = 0.8499999642372131;
+      blur_intensity = 0.5;
       blurred_desktop = true;
       enabled = true;
       fingerprint = true;
       monitors = [  ];
-      tint_intensity = 0.30000001192092896;
+      tint_intensity = 0.14999999105930328;
       wallpaper = "";
     };
   };

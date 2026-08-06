@@ -13,7 +13,7 @@
       cross_axis_padding = 8;
       enabled = true;
       icon_size = 48;
-      inactive_opacity = 0.8500000238418579;
+      inactive_opacity = 0.75;
       inactive_scale = 0.8500000238418579;
       item_spacing = 6;
       launcher_custom_image = "";

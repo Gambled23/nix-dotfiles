@@ -102,7 +102,7 @@
               enabled = true;
               fill = "surface_variant";
               id = "g3";
-              members = [ "nix_monitor_2" "bar_2" ];
+              members = [ "bar_2" "widget" "btn" ];
               opacity = 1.0;
               padding = 6.0;
             } ];

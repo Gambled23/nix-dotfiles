@@ -25,6 +25,7 @@ in
       "SUPER,e,spawn,${file_manager}"
       "SUPER,r,spawn,${menu}"
       "SUPER,f,spawn,${web_browser}"
+      "SUPER,g,spawn,${terminal} --class lazygit -e lazygit"
       "SUPER+SHIFT,Return,spawn,${terminal}"
       "SUPER,Return,spawn,${modal_terminal}"
       "SUPER,c,spawn,antigravity-ide"
@@ -119,7 +120,7 @@ in
       "ALT,8,spawn,${noctalia_ipc} volume-mute"
       "NONE,XF86AudioRaiseVolume,spawn,${noctalia_ipc} volume-up 1"
       "NONE,XF86AudioLowerVolume,spawn,${noctalia_ipc} volume-down 1"
-      "NONE,XF86AudioMute,spawn,${noctalia_ipc} volume-mute"
+      "NONE,XF86AudioMute,spawn,playerctl play-pause"
       "NONE,XF86MonBrightnessUp,spawn,${noctalia_ipc} brightness-up"
       "NONE,XF86MonBrightnessDown,spawn,${noctalia_ipc} brightness-down"
 
