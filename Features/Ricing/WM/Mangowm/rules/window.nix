@@ -5,21 +5,25 @@
     windowrule =[
       "appid:Altus,tags:8,isopensilent:1"
       "appid:discord,tags:8,isopensilent:1"
-      "appid:Spotify,tags:9,isopensilent:1"
-      "title:spotify_player,tags:9,isopensilent:1"
+      "appid:spotify,tags:9,isopensilent:1"
+      "appid:spotify_player,tags:9,isopensilent:1"
       "appid:steam,tags:7,isopensilent:1"
       "appid:com.stremio.stremio,tags:6"
       "appid:hayase,tags:6"
       "title:ripdrag,focused_opacity:0.7,unfocused_opacity:0.7"
       "appid:mpv,width:419,height:237,isfloating:1"
       "appid:vlc,width:419,height:237,isfloating:1"
-      # "appid:.scrcpy-wrapped,width:447,height:993,isfloating:1"
+
       "title:Picture in picture,isfloating:1, width:284,height:161"
       "title:(Open File.*|Select Folder to Upload|Select a file),width:1150,height:700,isfloating:1"
       "title:(Keyguard),width:911,height:655,isfloating:1"
       "appid:yazi,width:1280,height:800,isfloating:1"
       "appid:vicinae,allow_csd:1,isnoanimation:1"
-      "title:\,,appid:com.mitchellh.ghostty,isopensilent:1,tags:5"
+      # "title:\,,appid:com.mitchellh.ghostty,isopensilent:1,tags:5"
+
+      "title:phone,appid:.scrcpy-wrapped,width:447,height:993,isfloating:1"
+      "title:desktop,appid:.scrcpy-wrapped,tags:1,isfullscreen:1,isfakefullscreen:0"
+      "title:audio,appid:.scrcpy-wrapped,tags:6,isnamedscratchpad:1,isopensilent:1"
     ];
   };
 }

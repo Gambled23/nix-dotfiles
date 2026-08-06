@@ -33,7 +33,7 @@ in
       "SUPER,m,spawn,${noctalia_ipc} session lock"
       "SUPER,n,spawn,${terminal} --class nix-rbd -e nix-rbd"
       "SUPER,o,spawn,moonlight stream 'el sunchine' 'dev-gambled'"
-      "SUPER,p,spawn,scrcpy --render-driver=opengl -S -w -K -b15M --power-off-on-close"
+      "SUPER,p,spawn,scrcpy --render-driver=opengl -S -w -K -b15M --power-off-on-close --window-title \"phone\""
       "SUPER+SHIFT,p,spawn,${scrcpy-desktop-mode}"
       "SUPER,Escape,spawn,${terminal} --class btop -e btop"
 
@@ -124,8 +124,9 @@ in
       "NONE,XF86MonBrightnessDown,spawn,${noctalia_ipc} brightness-down"
 
       # Keymaps
-      "ALT,c,setkeymode,resize"  # Enter resize mode
-      "ALT,v,setkeymode,vicinae"  # Enter resize mode
+      "ALT,c,setkeymode,resize"  
+      "ALT,v,setkeymode,vicinae" 
+      "ALT,s,setkeymode,scratchpads" 
     ];
 
     mousebind = [
@@ -174,6 +175,13 @@ in
           "NONE,Escape,setkeymode,default"
           "SUPER,Super_L,spawn,${menu}"
           "SUPER,p,spawn,vicinae vicinae://launch/@knoopx/vicinae-extension-nix-0/packages"
+        ];
+      };
+      scratchpads = {
+        bind = [
+          "NONE,Escape,setkeymode,default"
+          "SUPER,q,killclient"
+          "SUPER,p,toggle_named_scratchpad,.scrcpy-wrapped,audio,${pkgs.scrcpy}/bin/scrcpy --no-video --no-control --serial=45221FDAS003GN --window-title \"audio\""
         ];
       };
     };

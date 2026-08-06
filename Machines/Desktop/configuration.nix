@@ -98,10 +98,20 @@
   # Virtualisation
   # virtualisation.vmware.host.enable = true; # vmware
 
-  # datos obtenidos con: nix-shell -p usbutils --run "lsusb -v"
+  # Launch scrcpy audio when Pixel 9 Pro XL is connected via USB
+  systemd.user.services.phone-scrcpy = {
+    description = "Launch scrcpy audio on Pixel connected";
+    serviceConfig = {
+      Type = "simple";
+      ExecStart = "${pkgs.writeShellScript "launch-scrcpy" ''
+        ${pkgs.android-tools}/bin/adb wait-for-device
+        ${pkgs.scrcpy}/bin/scrcpy --no-video --no-control --serial=45221FDAS003GN --window-title "audio"
+      ''}";
+      Restart = "no";
+    };
+  };
+
   services.udev.extraRules = ''
-    SUBSYSTEM=="usb", ACTION=="add", ATTR{idVendor}=="18d1", ATTR{idProduct}=="4ee7", ATTR{serial}=="45221FDAS003GN", RUN+="${pkgs.writeShellScript "phone-connected" ''
-      scrcpy --no-video --no-control
-    ''}"
+    ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="18d1", ATTR{idProduct}=="4ee7", ATTR{serial}=="45221FDAS003GN", TAG+="systemd", ENV{SYSTEMD_USER_WANTS}+="phone-scrcpy.service"
   '';
 }

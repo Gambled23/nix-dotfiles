@@ -13,7 +13,7 @@
         "appid:nchat,monitor:HDMI-A-1"
         "appid:Altus,monitor:HDMI-A-1"
         "appid:discord,monitor:HDMI-A-1"
-        "appid:Spotify,monitor:HDMI-A-1"
+        "appid:spotify,monitor:HDMI-A-1"
         "appid:com.moonlight_stream.Moonlight,monitor:HDMI-A-1"
       ];
     };
