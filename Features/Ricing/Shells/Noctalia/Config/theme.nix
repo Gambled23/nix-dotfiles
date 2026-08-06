@@ -1,10 +1,11 @@
 { pkgs, config, lib, ... }:
 {
   imports = [
+		../Colors/Templates/accela.nix
+		../Colors/Templates/beeper.nix
 		../Colors/Templates/nvf.nix
 		../Colors/Templates/siyuan.nix
 		# ../Colors/Templates/spicetify.nix
-		../Colors/Templates/accela.nix
   ];
 
   programs.noctalia.settings = {
@@ -42,6 +43,17 @@
               done
               rm "$src"
             '';
+            pre_hook = "";
+          };
+          beeper = {
+            compare_to = "";
+            enabled = true;
+            index = 0;
+            input_path = "$XDG_CONFIG_HOME/noctalia/templates/beeper.css";
+            output_path = [ "$XDG_CONFIG_HOME/BeeperTexts/custom.css" ];
+            output_path_dynamic = "";
+            post_action = "";
+            post_hook = "";
             pre_hook = "";
           };
           nvf = {
