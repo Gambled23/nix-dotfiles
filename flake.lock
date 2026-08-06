@@ -3983,6 +3983,22 @@
         "type": "github"
       }
     },
+    "nuvio": {
+      "locked": {
+        "lastModified": 1784556179,
+        "narHash": "sha256-ruX5g4A0cMsaq3VQvtiqeqK6JUCTIBQaLtcZwNhWMs4=",
+        "owner": "griffi-gh",
+        "repo": "nixpkgs",
+        "rev": "f48c4e759fda5e39c46683e009efea98bf7498ff",
+        "type": "github"
+      },
+      "original": {
+        "owner": "griffi-gh",
+        "ref": "init-nuvio",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "nvf": {
       "inputs": {
         "flake-compat": "flake-compat_3",
@@ -4140,6 +4156,7 @@
         "nixpkgsnur": "nixpkgsnur_2",
         "noctalia": "noctalia_3",
         "noctalia-greeter": "noctalia-greeter_2",
+        "nuvio": "nuvio",
         "nvf": "nvf_3",
         "sls-steam": "sls-steam_3",
         "spicetify-nix": "spicetify-nix_3",

@@ -138,4 +138,7 @@
   programs.pay-respects = {
     enable = true;
   };
+
+  nixpkgs.config.allowUnfreePackages = [ "joypixels" ];
+  nixpkgs.config.joypixels.acceptLicense = true;
 }

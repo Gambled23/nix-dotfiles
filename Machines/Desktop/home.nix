@@ -30,15 +30,14 @@
     
     #* media 
     vlc
-    mpv
-    haruna
-    celluloid
     gimp-with-plugins
-    (callPackage ../../Pkgs/nuvio/package.nix {})
+    inputs.nuvio.legacyPackages.${pkgs.stdenv.hostPlatform.system}.nuvio-desktop
+    # (callPackage ../../Pkgs/nuvio/package.nix {})
     # inkscape-with-extensions
 
     #* messaging
     altus
+    beeper
     # materialgram
     #* Media
     # stremio-linux-shell

@@ -41,8 +41,8 @@
         --color-base-gray-dark-80-rgb: {{ colors.surface_container.dark.rgb_csv }};
         --color-base-black: {{ colors.scrim.default.hex }};
         --color-base-black-rgb: {{ colors.scrim.default.rgb_csv }};
-        --color-base-white: {{ colors.surface.default.hex }};
-        --color-base-white-rgb: {{ colors.surface.default.rgb_csv }};
+        --color-base-white: #000000;
+        --color-base-white-rgb: 255,255,255;
 
         /* Gray Scale */
         --color-base-gray-20: {{ colors.surface_container_lowest.default.hex }};

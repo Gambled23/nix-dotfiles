@@ -4,6 +4,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-gambled.url = "github:Gambled23/nixpkgs";
+    nuvio.url = "github:griffi-gh/nixpkgs/init-nuvio";
     nixcord.url = "github:kaylorben/nixcord";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
@@ -117,6 +118,7 @@
     mangowm,
     zen-browser,
     alpha-server,
+    nuvio,
     # cng-plus-ml,
     ...
     }@inputs:
@@ -135,6 +137,7 @@
       inherit mangowm;
       inherit zen-browser;
       inherit alpha-server;
+      inherit nuvio;
       # inherit cng-plus-ml;
     };
 

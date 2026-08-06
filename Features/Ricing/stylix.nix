@@ -26,10 +26,10 @@ in
         name = "DejaVu Sans Mono";
       };
 
-      # emoji = {
-      #   package = pkgs.joypixels;
-      #   name = "Joypixels";
-      # };
+      emoji = {
+        package = pkgs.joypixels;
+        name = "Joypixels";
+      };
     };
 
     # cursor = {
