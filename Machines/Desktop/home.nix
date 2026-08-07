@@ -31,7 +31,7 @@
     #* media 
     vlc
     gimp-with-plugins
-    inputs.nuvio.legacyPackages.${pkgs.stdenv.hostPlatform.system}.nuvio-desktop
+    # inputs.nuvio.legacyPackages.${pkgs.stdenv.hostPlatform.system}.nuvio-desktop
     # (callPackage ../../Pkgs/nuvio/package.nix {})
     # inkscape-with-extensions
 
