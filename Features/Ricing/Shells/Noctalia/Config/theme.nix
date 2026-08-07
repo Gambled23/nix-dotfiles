@@ -1,10 +1,9 @@
-{ pkgs, config, lib, ... }:
+{ ... }:
 {
   imports = [
 		../Colors/Templates/accela.nix
 		../Colors/Templates/beeper.nix
 		../Colors/Templates/nvf.nix
-		../Colors/Templates/siyuan.nix
 		# ../Colors/Templates/spicetify.nix
   ];
 
@@ -62,17 +61,6 @@
             index = 0;
             input_path = "$XDG_CONFIG_HOME/noctalia/templates/nvf.nix";
             output_path = [ "/etc/nixos/Features/Ricing/Shells/Noctalia/Colors/nvf.nix" ];
-            output_path_dynamic = "";
-            post_action = "";
-            post_hook = "";
-            pre_hook = "";
-          };
-          siyuan = {
-            compare_to = "";
-            enabled = true;
-            index = 0;
-            input_path = "$XDG_CONFIG_HOME/noctalia/templates/siyuan.css";
-            output_path = [ "~/SiYuan/conf/appearance/themes/noctalia-siyuan/theme.css" ];
             output_path_dynamic = "";
             post_action = "";
             post_hook = "";
