@@ -24,6 +24,7 @@
     github-cli
     vscode
     dbeaver-bin
+    antares
     inputs.antigravity-nix.packages.x86_64-linux.google-antigravity-no-fhs # Base App
     inputs.antigravity-nix.packages.x86_64-linux.google-antigravity-ide-no-fhs # IDE
     inputs.antigravity-nix.packages.x86_64-linux.google-antigravity-cli # CLI
@@ -31,7 +32,7 @@
     #* media 
     vlc
     gimp-with-plugins
-    # inputs.nuvio.legacyPackages.${pkgs.stdenv.hostPlatform.system}.nuvio-desktop
+    inputs.nuvio.legacyPackages.${pkgs.stdenv.hostPlatform.system}.nuvio-desktop
     # (callPackage ../../Pkgs/nuvio/package.nix {})
     # inkscape-with-extensions
 
@@ -47,7 +48,8 @@
     seahorse #gnome keyring manager
     # pixelflasher
     android-tools
-    onlyoffice-desktopeditors
+    libreoffice-fresh
+    # onlyoffice-desktopeditors
     scrcpy
     siyuan
     qalculate-gtk
