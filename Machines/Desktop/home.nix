@@ -52,6 +52,7 @@
     # onlyoffice-desktopeditors
     scrcpy
     siyuan
+    # obsidian
     qalculate-gtk
     gnome-control-center
     via

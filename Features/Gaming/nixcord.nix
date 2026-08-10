@@ -44,7 +44,7 @@
         betterUploadButton.enable = true;
         biggerStreamPreview.enable = true;
         blurNsfw.enable = true;
-        channelTabs.enable = true;
+        # channelTabs.enable = true;
         characterCounter.enable = true;
         clickableRoles.enable = true;
         customTimestamps = {

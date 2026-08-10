@@ -13,7 +13,8 @@
     ../../Machines/Core/home.nix
     ../../Machines/Desktop/home.nix
 
-    ../../Features/Gaming/slsteam.nix
+    # ../../Features/Gaming/slsteam.nix
+    ../../Features/Gaming/nix-crab.nix
   ];
 
   home.packages =

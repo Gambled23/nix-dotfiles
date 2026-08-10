@@ -40,6 +40,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    nix-crab.url = "github:ItszFinn/nix-crab";
+
     nix-index-database = {
       url = "github:nix-community/nix-index-database";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -120,6 +122,7 @@
     alpha-server,
     nuvio,
     # cng-plus-ml,
+    nix-crab,
     ...
     }@inputs:
   let
@@ -138,6 +141,7 @@
       inherit zen-browser;
       inherit alpha-server;
       inherit nuvio;
+      inherit nix-crab;
       # inherit cng-plus-ml;
     };
 

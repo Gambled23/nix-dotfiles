@@ -64,6 +64,7 @@
     grub2
     nixd
     nil
+    python3
     (import ../../Scripts/nix-rbd.nix { inherit pkgs; })
     (import ../../Scripts/auto-gc.nix { inherit pkgs; })
     (import ../../Scripts/git-clone.nix { inherit pkgs; })

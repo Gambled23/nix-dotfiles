@@ -1,7 +1,8 @@
 { inputs, config, pkgs, lib, ... }:
 {
   imports = [
-    inputs.jovian-nixos.nixosModules.default
+    # inputs.jovian-nixos.nixosModules.default
+    inputs.nix-crab.nixosModules.default
   ];
   
   programs.steam = {
@@ -18,14 +19,16 @@
     #   # ];
     # };
 
-    package = pkgs.millennium-steam.override {
-      extraEnv = {
-        # MANGOHUD = true;
-        OBS_VKCAPTURE = true;
-        LD_AUDIT = "${inputs.sls-steam.packages.${pkgs.stdenv.hostPlatform.system}.sls-steam}/library-inject.so:${inputs.sls-steam.packages.${pkgs.stdenv.hostPlatform.system}.sls-steam}/SLSsteam.so";
-        WINEDLLOVERRIDES = "OnlineFix64=n;SteamOverlay64=n;winmm=n,b;dnet=n;steam_api64=n;winhttp=n,b";
-      };
-    };
+    package = pkgs.millennium-steam
+    # package = pkgs.millennium-steam.override {
+    #   extraEnv = {
+    #     # MANGOHUD = true;
+    #     OBS_VKCAPTURE = true;
+    #     LD_AUDIT = "${inputs.sls-steam.packages.${pkgs.stdenv.hostPlatform.system}.sls-steam}/library-inject.so:${inputs.sls-steam.packages.${pkgs.stdenv.hostPlatform.system}.sls-steam}/SLSsteam.so";
+    #     WINEDLLOVERRIDES = "OnlineFix64=n;SteamOverlay64=n;winmm=n,b;dnet=n;steam_api64=n;winhttp=n,b";
+    #   };
+    # };
+
 
     extraCompatPackages = with pkgs; [
       proton-ge-bin
@@ -34,8 +37,8 @@
 
   environment.systemPackages = with pkgs; [
     protonup-ng
-    inputs.sls-steam.packages.${pkgs.stdenv.hostPlatform.system}.wrapped
-    inputs.sls-steam.packages.${pkgs.stdenv.hostPlatform.system}.sls-steam
+    # inputs.sls-steam.packages.${pkgs.stdenv.hostPlatform.system}.wrapped
+    # inputs.sls-steam.packages.${pkgs.stdenv.hostPlatform.system}.sls-steam
     # gamescope-wsi
   ];
 
@@ -72,4 +75,8 @@
   #     ln -s "/var/lib/decky-loader/" "$HOME/.homebrew"
   #   fi
   # '';
+
+  programs.nix-crab.slssteam.enable = true;
+  programs.nix-crab.cloudredirect.enable = true;
+  programs.nix-crab.downgrade.enable = true;
 }
