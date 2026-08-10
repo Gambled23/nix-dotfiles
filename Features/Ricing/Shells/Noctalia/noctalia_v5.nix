@@ -56,7 +56,9 @@
     swappy
     translate-shell
     ffmpeg
-    
+
+    # For udiskie widget
+    udiskie
     wl-clipboard
     imagemagick
     adw-gtk3 # custom color theme so gtk can use noctalia colors
