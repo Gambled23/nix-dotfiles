@@ -11,11 +11,11 @@ in
   programs.nvf = {
     enable = true;
     settings = {
-      # vim.assistant = {
-      #   codecompanion-nvim = {
-      #     enable = true;
-      #   };
-      # };
+      vim.assistant = {
+        codecompanion-nvim = {
+          enable = true;
+        };
+      };
       vim.enableLuaLoader = true;
       
       # vim.autocmds = [
@@ -48,6 +48,8 @@ in
       };
 
       vim.binds = {
+        cheatsheet.enable = true;
+        hardtime-nvim.enable = true;
         whichKey = {
           enable = true;
         };
@@ -56,6 +58,7 @@ in
       vim.clipboard = {
         enable = true;
         providers.wl-copy.enable = true;
+        providers.xclip.enable = true;
       };
 
       vim.dashboard = {
