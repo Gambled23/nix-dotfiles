@@ -57,7 +57,7 @@
   };
   
   services.libinput.enable = true; # Enable touchpad support
-  services.flatpak.enable = true; # Enable flatpak
+  services.flatpak.enable = lib.mkDefault true; # Enable flatpak
   services.printing.enable = true; # Enable CUPS to print documents.
 
   # amdgpu
