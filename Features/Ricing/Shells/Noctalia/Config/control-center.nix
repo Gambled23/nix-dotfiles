@@ -3,6 +3,7 @@
   programs.noctalia.settings = {
     control_center = {
       hidden_tabs = [  ];
+      show_session_button = true;
       show_shortcut_labels = true;
       sidebar = "compact";
       sidebar_section = "compact";

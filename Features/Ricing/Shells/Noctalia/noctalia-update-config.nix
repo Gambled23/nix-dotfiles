@@ -14,7 +14,8 @@ pkgs.writeShellScriptBin "noctalia-update-config" ''
     echo "Error: File $input_file not found."
     exit 1
   fi
-
+  
+  nix run github:erooke/toml2nix -- -p /home/gambled/Downloads/noctalia-config.toml -o ./noctalia.nix
   out_dir="/etc/nixos/Features/Ricing/Shells/Noctalia/Config"
 
   shopt -s nullglob

@@ -7,6 +7,7 @@
       blurred_desktop = true;
       enabled = true;
       fingerprint = true;
+      lock_before_suspend = true;
       monitors = [  ];
       tint_intensity = 0.14999999105930328;
       wallpaper = "";

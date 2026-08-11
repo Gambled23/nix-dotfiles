@@ -3,6 +3,8 @@
   programs.noctalia.settings = {
     system = {
       monitor = {
+        cpu_freq_activity_threshold = 2.5;
+        cpu_freq_critical_threshold = 4.5;
         cpu_poll_seconds = 2.0;
         cpu_temp_activity_threshold = 60.0;
         cpu_temp_critical_threshold = 85.0;

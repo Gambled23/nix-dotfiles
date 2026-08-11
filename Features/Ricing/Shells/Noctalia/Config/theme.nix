@@ -10,16 +10,16 @@
 
   programs.noctalia.settings = {
     theme = {
-      builtin = "Gruvbox";
+      builtin = "Eldritch";
       community_palette = "GruvboxAlt";
       custom_palette = "";
       mode = "dark";
       pure_black_dark = false;
       source = "wallpaper";
-      wallpaper_scheme = "m3-content";
+      wallpaper_scheme = "m3-fruit-salad";
       templates = {
         builtin_ids = [ "btop" "gtk3" "gtk4" "ghostty" "hyprland" "kitty" "mango" "qt" "starship" ];
-        community_ids = [ "spicetify" "zen-browser" "neovim" "vscode" "vicinae" "antigravity" "bat" "discord" "nchat" "steam" "yazi" "hyprtoolkit" ];
+        community_ids = [ "antigravity" "spicetify" "zen-browser" "discord" "nchat" "gimp" "libreoffice" "neovim" "obsidian" "vscode" "steam" "vicinae" "siyuan" "hyprtoolkit" "bat" "yazi" ];
         enable_builtin_templates = true;
         enable_community_templates = true;
         user = {
@@ -67,6 +67,17 @@
             post_hook = "";
             pre_hook = "";
           };
+          siyuan = {
+            compare_to = "";
+            enabled = true;
+            index = 0;
+            input_path = "$XDG_CONFIG_HOME/noctalia/templates/siyuan.css";
+            output_path = [ "~/SiYuan/conf/appearance/themes/noctalia-siyuan/theme.css" ];
+            output_path_dynamic = "";
+            post_action = "";
+            post_hook = "";
+            pre_hook = "";
+          };
           spicetify-nix = {
             compare_to = "";
             enabled = true;
@@ -87,17 +98,6 @@
             output_path_dynamic = "";
             post_action = "";
             post_hook = "cp ~/.cache/noctalia/st22arship-palette.toml /etc/nixos/Features/Ricing/Shells/Noctalia/Colors/starship.toml";
-            pre_hook = "";
-          };
-          siyuan = {
-            compare_to = "";
-            enabled = true;
-            index = 0;
-            input_path = "$XDG_CONFIG_HOME/noctalia/templates/siyuan.css";
-            output_path = [ "~/SiYuan/conf/appearance/themes/noctalia-siyuan/theme.css" ];
-            output_path_dynamic = "";
-            post_action = "";
-            post_hook = "";
             pre_hook = "";
           };
         };

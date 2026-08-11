@@ -29,6 +29,7 @@
       popup_shadows = true;
       screen_time_enabled = true;
       settings_show_advanced = true;
+      settings_window_translucent = false;
       setup_wizard_enabled = true;
       shared_gl_context = true;
       show_location = true;
@@ -40,6 +41,9 @@
       };
       greeter_sync = {
         auto_sync = true;
+      };
+      keyboard_layout = {
+        
       };
       launcher = {
         app_grid = false;

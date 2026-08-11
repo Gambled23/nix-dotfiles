@@ -12,6 +12,7 @@
         type = "active_window";
       };
       bar_2 = {
+        capsule = true;
         type = "icefish/phone-connect:bar";
       };
       battery = {
@@ -37,6 +38,11 @@
       date = {
         format = "{:%a %d %b}";
         type = "clock";
+      };
+      eyecare-widget = {
+        capsule = true;
+        capsule_radius = "auto";
+        type = "apex077/eyecare:eyecare-widget";
       };
       hello = {
         type = "noctalia/example:hello";
@@ -111,6 +117,10 @@
       status = {
         type = "pozzoo/hassio:status";
       };
+      status_2 = {
+        hide_when_empty = true;
+        type = "aristides/udiskie:status";
+      };
       temp = {
         stat = "ram_pct";
         type = "sysmon";
@@ -144,6 +154,10 @@
       };
       widget = {
         type = "alexander/screen-toolkit:widget";
+      };
+      widget_2 = {
+        icon_only = true;
+        type = "weinguyen/procmon:widget";
       };
       workspaces = {
         capsule = true;

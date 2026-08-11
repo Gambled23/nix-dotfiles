@@ -2,12 +2,13 @@
 {
   programs.noctalia.settings = {
     notification = {
-      background_opacity = 0.09999999403953552;
+      background_opacity = 0.25;
       border = true;
       collapse_on_dismiss = true;
       enable_daemon = true;
       history_retention_hours = 0;
       layer = "top";
+      max_visible = 0;
       monitors = [  ];
       offset_x = 20;
       offset_y = 8;
