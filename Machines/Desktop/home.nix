@@ -20,7 +20,9 @@
   ];
   
   home.packages = with pkgs; [
-    #* dev tools
+    (import ../../Scripts/flash-kernelsu.nix { inherit pkgs; })
+
+    #* Dev tools
     github-cli
     vscode
     dbeaver-bin
@@ -29,33 +31,40 @@
     inputs.antigravity-nix.packages.x86_64-linux.google-antigravity-ide-no-fhs # IDE
     inputs.antigravity-nix.packages.x86_64-linux.google-antigravity-cli # CLI
     
-    #* media 
+    #* Media 
     vlc
     gimp-with-plugins
     inputs.nuvio.legacyPackages.${pkgs.stdenv.hostPlatform.system}.nuvio-desktop
     # (callPackage ../../Pkgs/nuvio/package.nix {})
+    # stremio-linux-shell
     # inkscape-with-extensions
 
-    #* messaging
+    #* Messaging
     altus
     beeper
     # materialgram
-    #* Media
-    # stremio-linux-shell
 
-    #* utils
-    wdisplays # wlr-randr gui
-    seahorse #gnome keyring manager
-    # pixelflasher
+    # Theming
+    bibata-cursors
+    papirus-icon-theme
+
+    # Tools
     android-tools
-    libreoffice-fresh
-    # onlyoffice-desktopeditors
-    scrcpy
-    siyuan
-    # obsidian
-    qalculate-gtk
+    gnome-calendar
     gnome-control-center
+    gnome-contacts
+    gparted
+    libreoffice-fresh
+    nautilus
+    # obsidian
+    # onlyoffice-desktopeditors
+    # pixelflasher
+    qalculate-gtk
+    scrcpy
+    seahorse #gnome keyring manager
+    siyuan
     via
+    wdisplays # wlr-randr gui
     # zoom-us
 
     #* webbrowsers

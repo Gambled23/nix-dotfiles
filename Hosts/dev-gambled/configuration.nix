@@ -26,4 +26,9 @@
   #   enable = true;
   #   workingDir = "/home/gambled/Codes/cng-plus-ml";
   # };
+
+  swapDevices = [ {
+    device = "/var/lib/swapfile";
+    size = 16*1024;
+  } ];
 }

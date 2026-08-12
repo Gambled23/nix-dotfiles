@@ -11,10 +11,7 @@
     # ../../Features/Ricing/DM/noctalia-greeter.nix
   ];
 
-  environment.systemPackages = with pkgs; [
-    # Scripts
-    (import ../../Scripts/flash-kernelsu.nix { inherit pkgs; })
-    
+  environment.systemPackages = with pkgs; [    
     # Clipboard
     cliphist
     wl-clipboard
@@ -36,19 +33,7 @@
 
     # Secrets
     sops
-    age
-
-    # Tools
-    gnome-calendar
-    gnome-contacts
-    qalculate-gtk
-    nautilus
-    gparted
-
-    # Theming
-    bibata-cursors
-    papirus-icon-theme
-    
+    age    
   ];
 
   programs.appimage = {
@@ -89,11 +74,6 @@
     allowedTCPPorts = [ 7236 7250 ];
     allowedUDPPorts = [ 7236 5353 ];
   };
-
-  swapDevices = [ {
-    device = "/var/lib/swapfile";
-    size = 16*1024;
-  } ];
 
   # Virtualisation
   # virtualisation.vmware.host.enable = true; # vmware

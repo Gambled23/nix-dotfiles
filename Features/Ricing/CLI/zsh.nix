@@ -18,8 +18,8 @@
       gitfix = "git fetch origin main && git diff --exit-code origin/main";
       lg = "lazygit";
       lj = "lazyjournal";
-      ls = "${pkgs.eza}/bin/eza --icons --hyperlink";
-      ll = "${pkgs.eza}/bin/eza --icons --hyperlink -l --all --context --octal-permissions -g --total-size";
+      ls = "${pkgs.eza}/bin/eza --hyperlink --icons=always";
+      ll = "${pkgs.eza}/bin/eza --hyperlink --icons=always --all --context --octal-permissions -g --total-size -l";
       mkdir = "mkdir -vp";
       mv = "mv -iv";
       rm = "rm -riv";
