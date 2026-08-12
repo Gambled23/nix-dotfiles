@@ -4,7 +4,8 @@
     settings = {
       exec-once = [
         "kitty --class spotify_player -e spotify_player"
-        "kitty --class nchat -e nchat"
+        "beeper"
+        # "kitty --class nchat -e nchat"
         "sleep 2; noctalia msg session lock"
       ];
 
@@ -15,6 +16,7 @@
         "appid:discord,monitor:HDMI-A-1"
         "appid:spotify,monitor:HDMI-A-1"
         "appid:com.moonlight_stream.Moonlight,monitor:HDMI-A-1"
+        "appid:Beeper,monitor:HDMI-A-1"
       ];
     };
   };

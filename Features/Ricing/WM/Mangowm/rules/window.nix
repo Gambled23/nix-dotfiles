@@ -4,6 +4,7 @@
     # windowrule = "tags:9,monitor:HDMI-A-1,appid:discord";
     windowrule =[
       "appid:Altus,tags:8,isopensilent:1"
+      "appid:Beeper,tags:8,isopensilent:1"
       "appid:discord,tags:8,isopensilent:1"
       "appid:spotify,tags:9,isopensilent:1"
       "appid:spotify_player,tags:9,isopensilent:1"
