@@ -29,6 +29,7 @@
       noctalia-config = "nix run github:erooke/toml2nix -- -p noctalia-config.toml -o ./noctalia.nix";
       gnome-control-center-fixed = "env XDG_CURRENT_DESKTOP=GNOME gnome-control-center";
       agyde = "antigravity-ide";
+      dvp = "devenv processes";
     };
     
     initContent = ''
