@@ -5,7 +5,7 @@
       active_monitor_only = false;
       active_opacity = 1.0;
       active_scale = 1.0;
-      auto_hide = false;
+      auto_hide = true;
       background_opacity = 0.30000001192092896;
       border = "tertiary";
       border_width = 1.0;
@@ -39,7 +39,7 @@
       show_dots = false;
       show_instance_count = true;
       show_running = true;
-      smart_auto_hide = true;
+      smart_auto_hide = false;
     };
   };
 }

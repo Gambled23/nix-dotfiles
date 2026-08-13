@@ -74,6 +74,7 @@
       media = {
         anchor = true;
         art_size = 16.0;
+        hide_when_no_media = true;
         max_length = 300;
         min_length = 0;
         title_scroll = "on_hover";

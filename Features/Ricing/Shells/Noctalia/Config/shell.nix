@@ -51,6 +51,7 @@
         categories = true;
         compact = false;
         fetch_exchange_rates = true;
+        pinned = [  ];
         provider_prefix = "/";
         show_icons = true;
         sort_by_usage = true;

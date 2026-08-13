@@ -17,9 +17,8 @@
     wl-clipboard
 
     # Libs?
-    playerctl
     brightnessctl
-    pavucontrol
+    # pavucontrol
     ddcutil
     kdePackages.qtwebsockets
     kdePackages.qt6ct
@@ -94,4 +93,11 @@
   services.udev.extraRules = ''
     ACTION=="add", SUBSYSTEM=="usb", ATTR{idVendor}=="18d1", ATTR{idProduct}=="4ee7", ATTR{serial}=="45221FDAS003GN", TAG+="systemd", ENV{SYSTEMD_USER_WANTS}+="phone-scrcpy.service"
   '';
+
+  # Icons for hyprpanel and others
+  fonts.packages = with pkgs; [
+    nerd-fonts.jetbrains-mono
+    nerd-fonts.caskaydia-cove
+    texlivePackages.alfaslabone
+  ]; 
 }

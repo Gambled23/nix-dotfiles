@@ -11,6 +11,10 @@
       edge = "bottom";
       background_opacity = 1;
     };
+    font = {
+      name = "JetBrainsMono Nerd Font";
+      size = 11;
+    };
     keybindings = {
       "ctrl+c" = "copy_or_interrupt";
       "ctrl+v" = "paste_from_clipboard";

@@ -8,7 +8,7 @@
       monitors = [  ];
       offset_x = 20;
       offset_y = 8;
-      orientation = "vertical";
+      orientation = "horizontal";
       position = "top_center";
       position_vertical = "center_right";
       scale = 1.0;

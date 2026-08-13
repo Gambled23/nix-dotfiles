@@ -112,17 +112,19 @@ in
       # "SUPER+SHIFT,l,scroller_stack,right"
 
       # Media
-      "ALT,1,spawn,playerctl previous"
-      "ALT,2,spawn,playerctl play-pause"
-      "ALT,3,spawn,playerctl next"
+      "ALT,1,spawn,${pkgs.playerctl}/bin/playerctl previous"
+      "ALT,2,spawn,${pkgs.playerctl}/bin/playerctl play-pause"
+      "ALT,3,spawn,${pkgs.playerctl}/bin/playerctl next"
       "ALT,0,spawn,${noctalia_ipc} volume-up 1"
       "ALT,9,spawn,${noctalia_ipc} volume-down 1"
       "ALT,8,spawn,${noctalia_ipc} volume-mute"
       "NONE,XF86AudioRaiseVolume,spawn,${noctalia_ipc} volume-up 1"
       "NONE,XF86AudioLowerVolume,spawn,${noctalia_ipc} volume-down 1"
-      "NONE,XF86AudioMute,spawn,playerctl play-pause"
+      "NONE,XF86AudioMute,spawn,${pkgs.playerctl}/bin/playerctl play-pause"
       "NONE,XF86MonBrightnessUp,spawn,${noctalia_ipc} brightness-up"
       "NONE,XF86MonBrightnessDown,spawn,${noctalia_ipc} brightness-down"
+      "SUPER,XF86AudioRaiseVolume,spawn,${pkgs.playerctl}/bin/playerctl next"
+      "SUPER,XF86AudioLowerVolume,spawn,${pkgs.playerctl}/bin/playerctl previous"
 
       # Keymaps
       "ALT,c,setkeymode,resize"  

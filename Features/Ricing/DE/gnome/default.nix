@@ -36,10 +36,7 @@
     pkgs.gnomeExtensions.unblank
     pkgs.gnomeExtensions.vitals
     wmctrl
-
   ];
-
-
 
   services.udev.packages = with pkgs; [ pkgs.gnome-settings-daemon ];
 }

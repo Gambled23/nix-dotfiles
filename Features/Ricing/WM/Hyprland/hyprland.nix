@@ -46,13 +46,6 @@ with lib;
   #   };
   # };
 
-  # Icons for hyprpanel and others
-  fonts.packages = with pkgs; [
-    nerd-fonts.caskaydia-cove
-    nerd-fonts.jetbrains-mono
-    texlivePackages.alfaslabone
-  ]; 
-
   #hyprlock
   security.pam.services.hyprlock = {};
 

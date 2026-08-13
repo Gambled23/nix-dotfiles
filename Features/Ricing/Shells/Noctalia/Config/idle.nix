@@ -9,6 +9,7 @@
           action = "lock";
           command = "";
           enabled = false;
+          locked_timeout = 0.0;
           resume_command = "";
           timeout = 600.0;
         };
@@ -16,6 +17,7 @@
           action = "lock_and_suspend";
           command = "";
           enabled = false;
+          locked_timeout = 0.0;
           resume_command = "";
           timeout = 900.0;
         };
@@ -23,6 +25,7 @@
           action = "screen_off";
           command = "";
           enabled = false;
+          locked_timeout = 0.0;
           resume_command = "";
           timeout = 660.0;
         };
