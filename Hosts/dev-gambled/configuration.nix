@@ -31,4 +31,12 @@
     device = "/var/lib/swapfile";
     size = 16*1024;
   } ];
+
+  programs.moonlight-qt = {
+    enable = true;
+    capSysNice = true;
+    package = (pkgs.moonlight-qt.override {
+      ffmpeg = pkgs.ffmpeg_6;
+    });
+  };
 }
