@@ -6,6 +6,7 @@
     enable = true;
     user = "gambled";
     uid = 1000;
+    openFirewall = true;
 
     settings = {
       application = [
@@ -24,7 +25,9 @@
         {
           title = "dev-gambled";
           command = [
-            "display-device -d dev-gambled"
+            "/run/current-system/sw/bin/steam"
+            "steam://open/bigpicture"
+            # "display-device -d dev-gambled"
           ];
         }
         {
