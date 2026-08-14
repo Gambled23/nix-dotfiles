@@ -103,6 +103,8 @@
     #   url = "path:/home/gambled/Codes/cng-plus-ml";
     #   inputs.nixpkgs.follows = "nixpkgs";
     # };
+
+    moonshine.url = "github:hgaiser/moonshine";
   };
 
   outputs = {
@@ -123,6 +125,7 @@
     nuvio,
     # cng-plus-ml,
     nix-crab,
+    moonshine,
     ...
     }@inputs:
   let
@@ -142,6 +145,7 @@
       inherit alpha-server;
       inherit nuvio;
       inherit nix-crab;
+      inherit moonshine;
       # inherit cng-plus-ml;
     };
 

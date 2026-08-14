@@ -11,7 +11,8 @@
     # ../../Features/Dev/ollama-server.nix
     ../../Features/Gaming/glances.nix
     ../../Features/Gaming/steam.nix
-    ../../Features/Gaming/sunshine.nix
+    # ../../Features/Gaming/sunshine.nix
+    ../../Features/Gaming/moonshine.nix
     ../../Features/Network/wakeonlan.nix
 
     # bootloader
