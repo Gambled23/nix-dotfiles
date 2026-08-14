@@ -81,7 +81,7 @@ pkgs.writeShellScriptBin "display-device" ''
         mmsg dispatch create_virtual_output
         virtual_monitor=$(${pkgs.wlr-randr}/bin/wlr-randr | grep 'HEADLESS-' | cut -d ' ' -f1)
         ${pkgs.wlr-randr}/bin/wlr-randr --output DP-3 --off    
-        ${pkgs.wlr-randr}/bin/wlr-randr --output $virtual_monitor --pos 0,0 --custom-mode 2244x1008@120Hz --transform normal
+        ${pkgs.wlr-randr}/bin/wlr-randr --output $virtual_monitor --pos 0,0 --custom-mode 2992x1344@120Hz --transform normal
       else
         echo "$desktop not configured"
       fi
