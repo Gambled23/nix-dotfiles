@@ -43,5 +43,5 @@
     };
   };
 
-  users.users.gambled.extraGroups = [ "input" ];
+  users.users.gambled.extraGroups = [ "input" "moonshine" ];
 }
