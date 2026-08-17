@@ -55,7 +55,7 @@
     wl-screenrec
     swappy
     translate-shell
-    ffmpeg
+    ffmpeg_8
 
     # For udiskie widget
     udiskie

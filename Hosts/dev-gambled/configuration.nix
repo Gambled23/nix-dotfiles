@@ -36,7 +36,7 @@
     enable = true;
     capSysNice = true;
     package = (pkgs.moonlight-qt.override {
-      ffmpeg = pkgs.ffmpeg_6;
+      ffmpeg_8 = pkgs.ffmpeg_6;
     });
   };
 }
