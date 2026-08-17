@@ -26,7 +26,7 @@ in
 
     settings = {
       exec-once = [
-        "noctalia"
+        "spotify"
         "discord"
         "kdeconnect-indicator"
         "wl-clip-persist --clipboard regular --reconnect-tries 0"

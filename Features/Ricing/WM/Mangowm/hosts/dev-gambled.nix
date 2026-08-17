@@ -6,8 +6,7 @@
         # "kitty --class spotify_player -e spotify_player"
         # "kitty --class nchat -e nchat"
         "beeper"
-        "spotify"
-        "sleep 2; noctalia msg session lock"
+        "systemctl --user restart noctalia; sleep 3; noctalia msg session lock"
       ];
 
       windowrule =[
