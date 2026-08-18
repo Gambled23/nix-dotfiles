@@ -19,7 +19,7 @@ in
       
       "SUPER,q,killclient"
       "SUPER+SHIFT,q,quit" # close mangowm
-      "SUPER+SHIFT,s,switch_layout"
+      "SUPER+SHIFT,s,spawn,${noctalia_ipc} panel-toggle ezequiel/mango_layouts:panel"
       "ALT,e,set_proportion,1.0"
       "ALT,x,switch_proportion_preset"
       "SUPER,e,spawn,${file_manager}"

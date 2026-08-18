@@ -17,8 +17,8 @@ in
       };
 
       sansSerif = {
-        package = pkgs.dejavu_fonts;
-        name = "DejaVu Sans";
+        package = pkgs.noto-fonts;
+        name = "Noto Sans";
       };
 
       monospace = {
@@ -27,8 +27,8 @@ in
       };
 
       emoji = {
-        package = pkgs.joypixels;
-        name = "Joypixels";
+        package = pkgs.noto-fonts-color-emoji;
+        name = "Noto Color Emoji";
       };
     };
 

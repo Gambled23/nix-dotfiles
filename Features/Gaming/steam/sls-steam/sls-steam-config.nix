@@ -1,4 +1,4 @@
-{ inputs, config, pkgs, lib, ... }:
+{ ... }:
 
 {
   services.sls-steam.config = {
@@ -61,12 +61,5 @@
     #   AppId = 2868840;
     #   Title = "Slay the Spire 2";
     # };
-  };
-
-  programs.mangohud = {
-    enable = true;
-    settings = {
-      toggle_hud = "F11";
-    };
   };
 }

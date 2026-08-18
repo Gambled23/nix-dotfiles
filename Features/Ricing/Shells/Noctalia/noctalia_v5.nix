@@ -53,7 +53,8 @@
     jq
     bc
     wl-screenrec
-    swappy
+    # swappy
+    satty
     translate-shell
     ffmpeg_8
 
