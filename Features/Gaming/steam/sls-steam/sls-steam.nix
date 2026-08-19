@@ -1,4 +1,4 @@
-{...}:
+{ inputs, pkgs, ... }: 
 {
   programs.steam = {
     # extest.enable = true;

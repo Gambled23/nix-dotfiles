@@ -2,8 +2,8 @@
 {
   imports = [
     # ./jovian/jovian-nixos.nix
-    # ./sls-steam/sls-steam.nix
-    ./nix-crab/nix-crab.nix
+    ./sls-steam/sls-steam.nix
+    # ./nix-crab/nix-crab.nix
   ];
   
   programs.steam = {
