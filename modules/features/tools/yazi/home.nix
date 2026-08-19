@@ -1,0 +1,107 @@
+{ self, inputs, ... }: {
+  flake.homeModules.yazi = { config, lib, pkgs, ... }: {
+    programs.yazi = {
+      enable = true;
+      enableZshIntegration = true;
+
+      plugins = {
+        inherit (pkgs.yaziPlugins) mount;
+        bookmarks = pkgs.yaziPlugins.bookmarks;
+        compress = pkgs.yaziPlugins.compress;
+        drag = pkgs.yaziPlugins.drag;
+        duckdb = pkgs.yaziPlugins.duckdb;
+        full-border = pkgs.yaziPlugins.full-border;
+        git = pkgs.yaziPlugins.git;
+        gvfs = pkgs.yaziPlugins.gvfs;
+        kdeconnect-send = pkgs.yaziPlugins.kdeconnect-send;
+        keep-preferences = pkgs.yaziPlugins.keep-preferences;
+        lazygit = pkgs.yaziPlugins.lazygit;
+        recycle-bin = pkgs.yaziPlugins.recycle-bin;
+        relative-motions = pkgs.yaziPlugins.relative-motions;
+        smart-enter = pkgs.yaziPlugins.smart-enter;
+        smart-filter = pkgs.yaziPlugins.smart-filter;
+        smart-paste = pkgs.yaziPlugins.smart-paste;
+        starship = pkgs.yaziPlugins.starship;
+        wl-clipboard = pkgs.yaziPlugins.wl-clipboard;
+      };
+
+      keymap = {
+        mgr.prepend_keymap = [
+          { run = "plugin drag"; on = [ "<C-d>" ]; desc = "Drag files"; }
+          { run = "plugin lazygit"; on = [ "g" "i" ]; desc = "Enter lazygit"; }
+          { run = "plugin recycle-bin"; on = [ "g" "b" ]; desc = "Recycle bin"; }
+          { run = "plugin smart-enter"; on = [ "l" ]; desc = "Smart enter"; }
+          { run = "plugin smart-filter"; on = [ "F" ]; desc = "Smart filter"; }
+          { run = "plugin smart-paste"; on = [ "p" ]; desc = "Paste into the hovered directory or CWD"; }
+          { run = "plugin wl-clipboard"; on = [ "<C-y>" ]; desc = "WL Clipboard"; }
+          # Compress plugin
+          { run = "plugin compress"; on = [ "c" "a" "a" ]; desc = "Archive selected files"; }
+          { run = "plugin compress -p"; on = [ "c" "a" "p" ]; desc = "Archive selected files (password)"; }
+          { run = "plugin compress -ph"; on = [ "c" "a" "h" ]; desc = "Archive selected files (password+header)"; }
+          { run = "plugin compress -l"; on = [ "c" "a" "l" ]; desc = "Archive selected files (compression level)"; }
+          { run = "plugin compress -phl"; on = [ "c" "a" "u" ]; desc = "Archive selected files (password+header+level)"; }
+          # gvfs plugin
+          { run = "plugin gvfs -- select-then-mount --jump"; on = [ "M" "m" ]; desc = "Select device to mount and jump to its mount point"; }
+          { run = "plugin gvfs -- remount-current-cwd-device"; on = [ "M" "R" ]; desc = "Remount device under cwd"; }
+          { run = "plugin gvfs -- select-then-unmount --eject"; on = [ "M" "u" ]; desc = "Select device then eject"; }
+          { run = "plugin gvfs -- add-mount"; on = [ "M" "a" ]; desc = "Add a GVFS mount URI"; }
+          { run = "plugin gvfs -- edit-mount"; on = [ "M" "e" ]; desc = "Edit a GVFS mount URI"; }
+          { run = "plugin gvfs -- remove-mount"; on = [ "M" "r" ]; desc = "Remove a GVFS mount URI"; }
+          { run = "plugin gvfs -- jump-to-device --automount"; on = [ "g" "m" ]; desc = "Automount then select device to jump to its mount point"; }
+          { run = "plugin gvfs -- jump-back-prev-cwd"; on = [ "`" "`" ]; desc = "Jump back to the position before jumped to device"; }
+          { run = "plugin gvfs -- automount-when-cd"; on = [ "M" "t" ]; desc = "Enable automount when cd to device under cwd"; }
+          { run = "plugin gvfs -- automount-when-cd --disabled"; on = [ "M" "T" ]; desc = "Disable automount when cd to device under cwd"; }
+          # duckdb plugin
+          { run = "plugin duckdb -1"; on = [ "H" ]; desc = "Scroll one column to the left"; }
+          { run = "plugin duckdb +1"; on = [ "L" ]; desc = "Scroll one column to the right"; }
+          { run = "plugin duckdb -ui"; on = [ "g" "u" ]; desc = "Open with duckdb ui"; }
+          { run = "plugin duckdb -open"; on = [ "g" "o" ]; desc = "Open with duckdb"; }
+          # relative motions plugin
+          { run = "plugin relative-motions 1"; on = [ "1" ]; desc = "Move in relative steps"; }
+          { run = "plugin relative-motions 2"; on = [ "2" ]; desc = "Move in relative steps"; }
+          { run = "plugin relative-motions 3"; on = [ "3" ]; desc = "Move in relative steps"; }
+          { run = "plugin relative-motions 4"; on = [ "4" ]; desc = "Move in relative steps"; }
+          { run = "plugin relative-motions 5"; on = [ "5" ]; desc = "Move in relative steps"; }
+          { run = "plugin relative-motions 6"; on = [ "6" ]; desc = "Move in relative steps"; }
+          { run = "plugin relative-motions 7"; on = [ "7" ]; desc = "Move in relative steps"; }
+          { run = "plugin relative-motions 8"; on = [ "8" ]; desc = "Move in relative steps"; }
+          { run = "plugin relative-motions 9"; on = [ "9" ]; desc = "Move in relative steps"; }
+          # bookmarks
+          { run = "plugin bookmarks save"; on = [ "b" "a" ]; desc = "Save current directory as bookmark"; }
+          { run = "plugin bookmarks delete"; on = [ "b" "d" ]; desc = "Delete a bookmark"; }
+          { run = "plugin bookmarks delete_all"; on = [ "b" "D" ]; desc = "Delete all bookmarks"; }
+          { run = "plugin bookmarks jump"; on = [ "'" ]; desc = "Jump to a bookmark"; }
+          # Kde connect plugin
+          { run = "plugin kdeconnect-send"; on = [ "<C-s>" ]; desc = "Send selected files to a KDE Connect device"; }
+          # Extras
+          { run = "shell \"$SHELL\" --block"; on = [ "!" ]; desc = "Open $SHELL here"; }
+        ];
+      };
+
+      settings = {
+        yazi = {
+          ratio = [
+            1
+            4
+            3
+          ];
+          sort_by = "natural";
+          sort_sensitive = true;
+          sort_reverse = false;
+          sort_dir_first = true;
+          linemode = "size";
+          show_hidden = true;
+          show_symlink = true;
+        };
+      };
+
+      initLua = ./_init.lua;
+    };
+
+    home.packages = with pkgs; [
+      trash-cli # for yazi trash plugin
+      ripdrag # for yazi drag plugin
+      glib # for yazi gvfs plugin
+    ];
+  };
+}

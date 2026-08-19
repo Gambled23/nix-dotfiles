@@ -1,10 +1,12 @@
 {
-  description = "Gambled's NixOS configuration - ( 'ω')/";
-
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-gambled.url = "github:Gambled23/nixpkgs";
     nuvio.url = "github:griffi-gh/nixpkgs/init-nuvio";
+
+    flake-parts.url = "github:hercules-ci/flake-parts";
+    import-tree.url = "github:vic/import-tree";
+    
     nixcord.url = "github:kaylorben/nixcord";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
@@ -107,102 +109,5 @@
     moonshine.url = "github:hgaiser/moonshine";
   };
 
-  outputs = {
-    self,
-    nixpkgs,
-    home-manager,
-    jovian-nixos,
-    spicetify-nix,
-    nixos-hardware,
-    nix-index-database,
-    nixpkgsnur,
-    # niri,
-    antigravity-nix,
-    # monique,
-    mangowm,
-    zen-browser,
-    alpha-server,
-    nuvio,
-    # cng-plus-ml,
-    nix-crab,
-    moonshine,
-    ...
-    }@inputs:
-  let
-    specialArgs = {
-      inherit inputs;
-      inherit home-manager;
-      inherit jovian-nixos;
-      inherit spicetify-nix;
-      inherit nixos-hardware;
-      inherit nix-index-database;
-      inherit nixpkgsnur;
-      # inherit niri;
-      inherit antigravity-nix;
-      # inherit monique;
-      inherit mangowm;
-      inherit zen-browser;
-      inherit alpha-server;
-      inherit nuvio;
-      inherit nix-crab;
-      inherit moonshine;
-      # inherit cng-plus-ml;
-    };
-
-    coreModules = [
-    ./Machines/Core/configuration.nix
-      nix-index-database.nixosModules.default
-      home-manager.nixosModules.home-manager
-      {
-        home-manager.useGlobalPkgs = true;
-        home-manager.useUserPackages = true;
-        home-manager.extraSpecialArgs = specialArgs;
-        home-manager.backupFileExtension = "back";
-        home-manager.overwriteBackup = true;
-      }
-    ];
-  in {
-    nixosConfigurations = {
-      "dev-gambled" = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        inherit specialArgs;
-        modules = coreModules ++ [
-          # cng-plus-ml.nixosModules.default
-          ./Hosts/dev-gambled/configuration.nix
-          {
-            home-manager.users.gambled.imports = [
-              ./Hosts/dev-gambled/home.nix
-            ];
-          }
-        ];
-      };
-
-      "pc-gambled" = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        inherit specialArgs;
-        modules = coreModules ++ [
-          ./Hosts/pc-gambled/configuration.nix
-          nixos-hardware.nixosModules.gigabyte-b650
-          {
-            home-manager.users.gambled.imports = [
-              ./Hosts/pc-gambled/home.nix
-            ];
-          }
-        ];
-      };
-
-      "server-gambled" = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        inherit specialArgs;
-        modules = coreModules ++ [
-          ./Hosts/server-gambled/configuration.nix
-          {
-            home-manager.users.gambled.imports = [
-              ./Hosts/server-gambled/home.nix
-            ];
-          }
-        ];
-      };
-    };
-  };
+  outputs = inputs: inputs.flake-parts.lib.mkFlake {inherit inputs;} (inputs.import-tree ./modules);
 }

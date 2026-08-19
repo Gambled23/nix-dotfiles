@@ -1,0 +1,23 @@
+{ self, inputs, ... }: {
+  flake.nixosModules.machineServer = { pkgs, ... }: {
+    nix = {
+      settings = {
+        download-buffer-size = 524288000;
+        auto-optimise-store = true;
+        experimental-features = [ 
+          "nix-command" 
+          "flakes" 
+          "pipe-operators"
+        ];      
+      };
+      
+      # gc = {
+      #   automatic = true;
+      #   dates = "weekly";
+      #   options = "--delete-older-than 7d";
+      # };
+    };
+
+    programs.nix-ld.enable = true; # for vscode remote server
+  };
+}
