@@ -1,0 +1,76 @@
+{ self, inputs, ... }: {
+  flake.homeModules.hyprlockBold = { lib, ... }: {
+    programs.hyprlock = {
+      enable = true;
+      settings = {
+        background = lib.mkForce [
+          {
+            monitor = "";
+            path = "screenshot";
+            blur_passes = 3;
+            contrast = 0.8916;
+            brightness = 0.8172;
+            vibrancy = 0.1696;
+            vibrancy_darkness = 0.0;
+          }
+        ];
+
+        general = {
+          no_fade_in = false;
+          grace = 0;
+          disable_loading_bar = false;
+        };
+
+        input-field = lib.mkForce [{
+          monitor = "";
+          size = "250, 60";
+          outline_thickness = 2;
+          dots_size = 0.2;
+          dots_spacing = 0.4;
+          dots_center = true;
+          outer_color = "rgba(0, 0, 0, 0)";
+          inner_color = "rgba(100, 114, 125, 0.5)";
+          font_color = "rgb(200, 200, 200)";
+          fade_on_empty = false;
+          placeholder_text = "<i><span foreground=\"##ffffff99\">Hola, $USER</span></i>";
+          hide_input = false;
+          position = "0, -290";
+          halign = "center";
+          valign = "center";
+        }];
+
+        label = [
+          {
+            monitor = "";
+            text = "cmd[update:1000] echo -e \"$(date +\"%H\")\"";
+            color = "rgba(254, 128, 25, .6)";
+            font_size = 180;
+            font_family = "AlphaSlabOne";
+            position = "0, 300";
+            halign = "center";
+            valign = "center";
+          }
+          {
+            monitor = "";
+            text = "cmd[update:1000] echo -e \"$(date +\"%M\")\"";
+            color = "rgba(255, 255, 255, .6)";
+            font_size = 180;
+            font_family = "AlphaSlabOne";
+            position = "0, 75";
+            halign = "center";
+            valign = "center";
+          }
+          {
+            monitor = "";
+            text = "cmd[update:1000] echo \"<span color='##ffffff99'>$(date '+%A ')</span><span color='##d65d0e'>$(date '+%d de %B')</span>\"";
+            font_size = 30;
+            font_family = "JetBrains Mono Nerd, JetBrainsMonoNerd, JetBrainsMono";
+            position = "0, -80";
+            halign = "center";
+            valign = "center";
+          }
+        ];
+      };
+    };
+  };
+}
