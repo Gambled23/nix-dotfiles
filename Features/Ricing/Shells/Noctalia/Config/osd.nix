@@ -11,7 +11,7 @@
       orientation = "horizontal";
       position = "top_center";
       position_vertical = "center_right";
-      scale = 1.0;
+      scale = 1.149999976158142;
       kinds = {
         bluetooth = true;
         brightness = true;

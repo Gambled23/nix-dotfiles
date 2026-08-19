@@ -11,9 +11,16 @@
         title_scroll = "on_hover";
         type = "active_window";
       };
+      bar = {
+        capsule = true;
+        type = "icefish/phone-connect:bar";
+      };
       bar_2 = {
         capsule = true;
         type = "icefish/phone-connect:bar";
+      };
+      bar_3 = {
+        type = "raycursive/discord-voice:bar";
       };
       battery = {
         hide_when_full = true;
@@ -81,7 +88,7 @@
         anchor = true;
         art_size = 16.0;
         hide_when_no_media = true;
-        max_length = 300;
+        max_length = 308;
         min_length = 0;
         title_scroll = "on_hover";
         type = "media";
@@ -138,6 +145,7 @@
       tray = {
         capsule = true;
         drawer = true;
+        pinned = [ "steam" "KDE Connect Indicator" ];
         type = "tray";
       };
       vicinae = {
@@ -159,6 +167,13 @@
           scroll_up = "volume-up 1%";
         };
       };
+      wallhaven = {
+        type = "noctalia/wallhaven:wallhaven";
+      };
+      wallhaven_2 = {
+        enabled = false;
+        type = "noctalia/wallhaven:wallhaven";
+      };
       widget = {
         type = "alexander/screen-toolkit:widget";
       };
@@ -167,11 +182,12 @@
         type = "weinguyen/procmon:widget";
       };
       widget_3 = {
-        type = "tphilippot/git_companion:widget";
+        type = "alexander/screen-toolkit:widget";
       };
       workspaces = {
         capsule = true;
         empty_color = "secondary";
+        minimal = true;
         occupied_color = "tertiary";
         style = "minimal";
         type = "workspaces";
