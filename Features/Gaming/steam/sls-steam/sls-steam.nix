@@ -28,4 +28,6 @@
   nixpkgs.overlays = [
     inputs.millennium.overlays.default
   ];
+
+  services.flatpak.enable = true; # Enable flatpak
 }

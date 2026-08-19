@@ -39,4 +39,6 @@
       ffmpeg_8 = pkgs.ffmpeg_6;
     });
   };
+
+  services.flatpak.enable = true; # Enable flatpak
 }

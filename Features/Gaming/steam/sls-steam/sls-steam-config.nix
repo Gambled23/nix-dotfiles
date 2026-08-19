@@ -1,6 +1,10 @@
-{ ... }:
+{ pkgs, inputs, ... }:
 
 {
+  imports = [
+    inputs.nix-flatpak.homeManagerModules.nix-flatpak
+  ];
+
   services.sls-steam.config = {
     PlayNotOwnedGames = true;
     DisableFamilyShareLock = true;
@@ -62,4 +66,9 @@
     #   Title = "Slay the Spire 2";
     # };
   };
+
+  home.packages =
+    with pkgs; [
+    inputs.accela.packages.${pkgs.stdenv.hostPlatform.system}.default
+  ];
 }

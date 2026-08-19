@@ -31,7 +31,6 @@
     # jdk25_headless
 
     #* games
-    inputs.accela.packages.${pkgs.stdenv.hostPlatform.system}.default
     ludusavi
     # vintagestory
     # itch

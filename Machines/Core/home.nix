@@ -10,7 +10,6 @@
   programs.home-manager.enable = true;
 
   imports = [
-    inputs.nix-flatpak.homeManagerModules.nix-flatpak
     inputs.nvf.homeManagerModules.default
     inputs.stylix.homeModules.stylix
 
