@@ -108,7 +108,7 @@
               enabled = true;
               fill = "surface_variant";
               id = "g3";
-              members = [ "widget" "btn" "widget_2" ];
+              members = [ "widget" "widget_2" "widget_3" ];
               opacity = 1.0;
               padding = 6.0;
             } ];
@@ -129,7 +129,7 @@
           enabled = true;
           fill = "surface_variant";
           id = "g1";
-          members = [ "clock" "media" "notifications" "privacy" "mangowm-keymode" "status_2" ];
+          members = [ "clock" "media" "notifications" "privacy" "mangowm-keymode" "status_2" "btn_3" ];
           opacity = 1.0;
           padding = 6.0;
         } ];

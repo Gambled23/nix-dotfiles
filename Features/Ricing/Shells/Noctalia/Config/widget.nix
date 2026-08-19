@@ -23,6 +23,12 @@
       btn = {
         type = "ezequiel/mango_layouts:btn";
       };
+      btn_2 = {
+        type = "ezequiel/mango_layouts:btn";
+      };
+      btn_3 = {
+        type = "ezequiel/mango_layouts:btn";
+      };
       cat = {
         type = "dotnetrob/cat:cat";
       };
@@ -159,6 +165,9 @@
       widget_2 = {
         icon_only = true;
         type = "weinguyen/procmon:widget";
+      };
+      widget_3 = {
+        type = "tphilippot/git_companion:widget";
       };
       workspaces = {
         capsule = true;

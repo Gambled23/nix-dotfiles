@@ -53,6 +53,7 @@
         fetch_exchange_rates = true;
         pinned = [  ];
         provider_prefix = "/";
+        show_app_actions = false;
         show_icons = true;
         sort_by_usage = true;
         dmenu = {

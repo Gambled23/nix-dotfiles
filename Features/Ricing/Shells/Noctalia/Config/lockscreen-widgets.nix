@@ -18,6 +18,8 @@
           cy = 1321.0;
           enabled = true;
           output = "DP-3";
+          placement_height = 0.0;
+          placement_width = 0.0;
           rotation = 0.0;
           type = "login_box";
           settings = {
@@ -44,6 +46,8 @@
           cy = 961.0;
           enabled = true;
           output = "HDMI-A-1";
+          placement_height = 1080.0;
+          placement_width = 1920.0;
           rotation = 0.0;
           type = "login_box";
           settings = {
@@ -70,6 +74,8 @@
           cy = 961.0;
           enabled = true;
           output = "HEADLESS-3";
+          placement_height = 0.0;
+          placement_width = 0.0;
           rotation = 0.0;
           type = "login_box";
           settings = {
@@ -96,6 +102,8 @@
           cy = 1081.0;
           enabled = true;
           output = "eDP-1";
+          placement_height = 1200.0;
+          placement_width = 1920.0;
           rotation = 0.0;
           type = "login_box";
           settings = {
@@ -122,6 +130,8 @@
           cy = 681.0;
           enabled = true;
           output = "sunshine";
+          placement_height = 0.0;
+          placement_width = 0.0;
           rotation = 0.0;
           type = "login_box";
           settings = {
@@ -148,6 +158,8 @@
           cy = 584.0;
           enabled = true;
           output = "DP-3";
+          placement_height = 0.0;
+          placement_width = 0.0;
           rotation = 0.0;
           type = "clock";
           settings = {
@@ -161,6 +173,8 @@
           cy = 816.0;
           enabled = true;
           output = "DP-3";
+          placement_height = 0.0;
+          placement_width = 0.0;
           rotation = 0.0;
           type = "media_player";
           settings = {
@@ -174,6 +188,8 @@
           cy = 172.0;
           enabled = true;
           output = "HDMI-A-1";
+          placement_height = 1080.0;
+          placement_width = 1920.0;
           rotation = 0.0;
           type = "clock";
           settings = {
@@ -188,6 +204,8 @@
           cy = 168.0;
           enabled = true;
           output = "eDP-1";
+          placement_height = 1200.0;
+          placement_width = 1920.0;
           rotation = 0.0;
           type = "clock";
           settings = {
