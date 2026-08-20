@@ -2,7 +2,7 @@
   flake.nixosModules.machineCore = { pkgs, ... }: {
     imports = [
       inputs.nix-index-database.nixosModules.default
-      self.nixosModules.scripts
+      self.nixosModules.coreScripts
       self.nixosModules.openssh
       self.nixosModules.syncthing
       self.nixosModules.zerotier

@@ -177,11 +177,16 @@
   };
 
   # 2. Expose a NixOS module that bundles them into systemPackages
-  flake.nixosModules.scripts = { pkgs, ... }: {
+  flake.nixosModules.coreScripts = { pkgs, ... }: {
     environment.systemPackages = [
       self.packages.${pkgs.system}.nix-rbd
       self.packages.${pkgs.system}.agc
       self.packages.${pkgs.system}.ssh-github
+    ];
+  };
+
+  flake.nixosModules.desktopScripts = { pkgs, ... }: {
+    environment.systemPackages = [
       self.packages.${pkgs.system}.display-device
       self.packages.${pkgs.system}.flash-kernelsu
       self.packages.${pkgs.system}.scrcpy-desktop-mode

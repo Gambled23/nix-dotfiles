@@ -3,6 +3,7 @@
     imports = [
       self.nixosModules.ly
       self.nixosModules.mangowm
+      self.nixosModules.desktopScripts
     ];
 
     environment.systemPackages = with pkgs; [    

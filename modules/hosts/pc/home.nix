@@ -16,7 +16,7 @@
     imports = [
       self.homeModules.machineCoreHome
       self.homeModules.machineDesktopHome
-      self.homeModules.steamHome
+      self.homeModules.sls-steam
     ];
 
     home.packages = with pkgs; [
