@@ -2,6 +2,10 @@
   flake.homeModules.stylix = { pkgs, ... }: let 
     theme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
   in {
+    imports = [
+      inputs.stylix.homeModules.stylix
+    ];
+
     stylix = {
       enable = true;
       autoEnable = true;

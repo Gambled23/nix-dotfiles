@@ -1,4 +1,41 @@
 { self, inputs, ... }: {
+  flake.nixosModules.mangowm = { pkgs, ... }: {
+    imports = [
+      inputs.mangowm.nixosModules.mango
+    ];
+
+    disabledModules = [ "programs/wayland/mango.nix" ];
+
+    programs.mango = {
+      enable = true;
+    };
+
+    environment.systemPackages = with pkgs; [
+      # Monitors
+      wlr-randr
+    ];
+     
+    services.pipewire.enable = true;
+
+    services.dbus.packages = [ pkgs.gcr ];
+    security.pam.services.login.enableGnomeKeyring = true;
+
+    xdg.portal = {
+      enable = true;
+      config.mango = {
+        default = [ "gtk" ];
+        "org.freedesktop.impl.portal.Secret" = [ "gnome-keyring" ];
+        "org.freedesktop.impl.portal.ScreenCast" = [ "wlr" ];
+        "org.freedesktop.impl.portal.ScreenShot" = [ "wlr" ];
+      };
+      extraPortals = with pkgs; [
+        xdg-desktop-portal-wlr
+        xdg-desktop-portal-gtk
+      ];
+      wlr.enable = true;
+    };
+  };
+
   flake.homeModules.mangowmHome = { pkgs, osConfig, ... }: let 
     hostconfig = if osConfig.networking.hostName == "pc-gambled" then ./_hosts/pc-gambled.nix else ./_hosts/dev-gambled.nix;
   in {

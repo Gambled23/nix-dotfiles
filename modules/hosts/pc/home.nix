@@ -14,7 +14,6 @@
   flake.homeModules.pcGambledHomeModule = { pkgs, ... }: {
     home.stateVersion = "26.05";
     imports = [
-      inputs.sls-steam.homeModules.sls-steam
       self.homeModules.machineCoreHome
       self.homeModules.machineDesktopHome
       self.homeModules.steamHome

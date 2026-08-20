@@ -3,8 +3,6 @@
     programs.home-manager.enable = true;
 
     imports = [
-      inputs.stylix.homeModules.stylix
-
       self.homeModules.stylix
       self.homeModules.neovim
       self.homeModules.git
