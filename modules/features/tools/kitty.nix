@@ -14,7 +14,7 @@
       };
       font = {
         name = "JetBrainsMono Nerd Font";
-        size = 11;
+        size = 14;
       };
       keybindings = {
         "ctrl+c" = "copy_or_interrupt";

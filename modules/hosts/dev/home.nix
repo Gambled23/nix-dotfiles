@@ -25,8 +25,8 @@
     home.packages = with pkgs; [
       #* dev tools
       nodejs_26
-      bruno
-      awscli
+      # bruno
+      # awscli
       remmina
       mariadb
       # android-studio
@@ -38,7 +38,7 @@
       (import "${inputs.alpha-server}/scripts/dev/start-cng-plus.nix" { inherit pkgs; })
       (import "${inputs.alpha-server}/scripts/dev/stop-cng-plus.nix" { inherit pkgs; })
 
-      nchat # whatsapp cli
+      # nchat # whatsapp cli
     ];
     
     home.stateVersion = "26.05";

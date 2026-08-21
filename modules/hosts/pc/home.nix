@@ -20,19 +20,20 @@
     ];
 
     home.packages = with pkgs; [
-      pkgs.nur.repos.Ev357.hayase
-      ludusavi
-      gamemode
-      winetricks
-      steam-rom-manager
+      # pkgs.nur.repos.Ev357.hayase
+      (pkgs.callPackage ../../../pkgs/hayase/package.nix { })
+      # ludusavi
+      # gamemode
+      # winetricks
+      # steam-rom-manager
       prismlauncher
       guitarix
-      fretboard
-      pywalfox-native
+      # fretboard
+      # pywalfox-native
       polychromatic
       headsetcontrol
-      qbittorrent
-      obs-studio
+      # qbittorrent
+      # obs-studio
     ];
 
     home.file.".zshrc".text = "export LD_LIBRARY_PATH=${pkgs.stdenv.cc.cc.lib}/lib:${pkgs.libGL}/lib/:${pkgs.libxkbcommon}/lib/:${pkgs.libx11}/lib/:${pkgs.fontconfig}/lib";

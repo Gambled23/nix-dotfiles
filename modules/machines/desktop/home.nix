@@ -11,7 +11,7 @@
     ];
     
     home.packages = with pkgs; [
-      self.packages.${pkgs.system}.flash-kernelsu
+      self.packages.${pkgs.stdenv.hostPlatform.system}.flash-kernelsu
 
       #* Dev tools
       github-cli

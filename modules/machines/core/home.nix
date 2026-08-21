@@ -18,7 +18,7 @@
     home.packages = with pkgs; [
       #* dev tools
       gh
-      tmux
+      # tmux
       lazyjournal
       devenv
       lazygit
@@ -30,7 +30,6 @@
       lxsession
       fastfetch
       zsh
-      rbw
     ];
 
     home.sessionVariables = {
