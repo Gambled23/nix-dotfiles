@@ -31,16 +31,6 @@
       inputs.sls-steam.homeModules.sls-steam
     ];
 
-    programs.steam = {
-      package = pkgs.millennium-steam.override {
-        extraEnv = {
-          OBS_VKCAPTURE = true;
-          LD_AUDIT = "${inputs.sls-steam.packages.${pkgs.stdenv.hostPlatform.system}.sls-steam}/library-inject.so:${inputs.sls-steam.packages.${pkgs.stdenv.hostPlatform.system}.sls-steam}/SLSsteam.so";
-          WINEDLLOVERRIDES = "OnlineFix64=n;SteamOverlay64=n;winmm=n,b;dnet=n;steam_api64=n;winhttp=n,b";
-        };
-      };
-    };
-
     services.sls-steam.config = {
       PlayNotOwnedGames = true;
       DisableFamilyShareLock = true;
