@@ -179,17 +179,17 @@
   # 2. Expose a NixOS module that bundles them into systemPackages
   flake.nixosModules.coreScripts = { pkgs, ... }: {
     environment.systemPackages = [
-      self.packages.${pkgs.system}.nix-rbd
-      self.packages.${pkgs.system}.agc
-      self.packages.${pkgs.system}.ssh-github
+      self.packages.${pkgs.stdenv.hostPlatform.system}.nix-rbd
+      self.packages.${pkgs.stdenv.hostPlatform.system}.agc
+      self.packages.${pkgs.stdenv.hostPlatform.system}.ssh-github
     ];
   };
 
   flake.nixosModules.desktopScripts = { pkgs, ... }: {
     environment.systemPackages = [
-      self.packages.${pkgs.system}.display-device
-      self.packages.${pkgs.system}.flash-kernelsu
-      self.packages.${pkgs.system}.scrcpy-desktop-mode
+      self.packages.${pkgs.stdenv.hostPlatform.system}.display-device
+      self.packages.${pkgs.stdenv.hostPlatform.system}.flash-kernelsu
+      self.packages.${pkgs.stdenv.hostPlatform.system}.scrcpy-desktop-mode
     ];
   };
 }
