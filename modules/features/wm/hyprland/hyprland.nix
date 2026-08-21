@@ -31,8 +31,6 @@
       };
     };
 
-    programs.kdeconnect.enable = true;
-
     networking.firewall = {
       enable = true;
       allowedTCPPortRanges = [

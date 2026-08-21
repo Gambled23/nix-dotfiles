@@ -65,11 +65,8 @@
     networking.firewall = {
       trustedInterfaces = [ "p2p-wl+" ];
       allowedTCPPorts = [ 7236 7250 ];
-      allowedUDPPorts = [ 7236 5353 ];
+      allowedUDPPorts = [ 5353 7236 ];
     };
-
-    # Virtualisation
-    # virtualisation.vmware.host.enable = true; # vmware
 
     # Launch scrcpy audio when Pixel 9 Pro XL is connected via USB
     systemd.user.services.phone-scrcpy = {

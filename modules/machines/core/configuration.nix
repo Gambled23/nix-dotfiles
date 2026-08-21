@@ -27,6 +27,7 @@
 
     networking.networkmanager = {
       enable = true;
+      wifi.backend = "wpa_supplicant";
     };
     
     networking.extraHosts =
@@ -72,6 +73,7 @@
       nixd
       nil
       python3
+      gnome-network-displays
     ];
 
     users.users = {

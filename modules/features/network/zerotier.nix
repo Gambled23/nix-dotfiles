@@ -5,7 +5,7 @@
     services.avahi = {
       enable = true;
       openFirewall = true;
-      allowInterfaces = privateZeroTierInterfaces; # ONLY BROADCAST ON VPN
+      # allowInterfaces = privateZeroTierInterfaces; # ONLY BROADCAST ON VPN
       ipv6 = true;
       publish = {
         enable = true;

@@ -161,6 +161,7 @@
         
         vim.statusline = {
           lualine = {
+            integrations.breadcrumbs.nvim-navic.enable = true;
             enable = true;
           };
         };
@@ -215,7 +216,6 @@
             globalStyle = "rounded";
             plugins.nvim-cmp.style = "rounded";
           };
-          breadcrumbs.enable = true;
           colorful-menu-nvim.enable = true;
           colorizer.enable = true;
           modes-nvim.enable = true;

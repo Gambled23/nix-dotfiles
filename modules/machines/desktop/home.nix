@@ -17,7 +17,6 @@
       github-cli
       vscode
       dbeaver-bin
-      antares
       inputs.antigravity-nix.packages.x86_64-linux.google-antigravity-no-fhs # Base App
       inputs.antigravity-nix.packages.x86_64-linux.google-antigravity-ide-no-fhs # IDE
       inputs.antigravity-nix.packages.x86_64-linux.google-antigravity-cli # CLI
@@ -25,7 +24,8 @@
       #* Media 
       vlc
       gimp-with-plugins
-      inputs.nuvio.legacyPackages.${pkgs.stdenv.hostPlatform.system}.nuvio-desktop
+      (pkgs.callPackage ../../../pkgs/nuvio/package.nix { })
+      # inputs.nuvio.legacyPackages.${pkgs.stdenv.hostPlatform.system}.nuvio-desktop
 
       #* Messaging
       altus
@@ -37,9 +37,7 @@
 
       # Tools
       android-tools
-      gnome-calendar
       gnome-control-center
-      gnome-contacts
       gparted
       libreoffice-fresh
       nautilus
