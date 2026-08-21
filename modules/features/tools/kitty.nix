@@ -6,9 +6,10 @@
       enableGitIntegration = true;
       quickAccessTerminalConfig = {
         hide_on_focus_loss = true;
-        grab_keyboard = false;
+        grab_keyboard = true;
         start_as_hidden = false;
         edge = "bottom";
+        lines = 20;
         background_opacity = 1;
       };
       font = {
@@ -19,6 +20,7 @@
         "ctrl+c" = "copy_or_interrupt";
         "ctrl+v" = "paste_from_clipboard";
         "ctrl+f" = "search_scrollback";
+        "ctrl+backspace" = "send_text all \\x17";
 
         # Tabs
         "ctrl+t" = "new_tab_with_cwd";

@@ -14,6 +14,7 @@
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
     millennium.url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
     jovian-nixos.url = "github:Jovian-Experiments/Jovian-NixOS";
+    noctalia-greeter.url = "github:noctalia-dev/noctalia-greeter";
     noctalia.url = "github:noctalia-dev/noctalia/cachix";
     mangowm.url = "github:mangowm/mango";
     vicinae.url = "github:vicinaehq/vicinae";
@@ -26,7 +27,6 @@
     
 
     # nixpkgs-xr.url = "github:nix-community/nixpkgs-xr";
-    noctalia-greeter.url = "github:noctalia-dev/noctalia-greeter";
     # hyprland.url = "github:hyprwm/Hyprland";
     # hyprland-plugins.url = "github:hyprwm/Hyprland-plugins";
 

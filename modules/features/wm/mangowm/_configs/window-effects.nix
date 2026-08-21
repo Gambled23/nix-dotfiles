@@ -3,8 +3,8 @@
   wayland.windowManager.mango.settings = {
     gappih = 2;
     gappiv = 2;
-    gappoh = 4;
-    gappov = 4;
+    gappoh = 0;
+    gappov = 0;
     group_bar_height = 50; # Height of the tab bar for monocle layout.
 
     blur = 1;

@@ -20,8 +20,8 @@
     networking.hostName = "pc-gambled";
 
     environment.systemPackages = with pkgs; [
-      lsfg-vk
-      lsfg-vk-ui
+      lsfg-vk # Loseless scaling
+      lsfg-vk-ui # Loseless scaling
       lact # gpu overclocking
       i2c-tools # for monitoring sensors
       eden
