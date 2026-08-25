@@ -2,7 +2,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixpkgs-gambled.url = "github:Gambled23/nixpkgs";
-    nuvio.url = "github:griffi-gh/nixpkgs/init-nuvio";
+    # nuvio.url = "github:griffi-gh/nixpkgs/init-nuvio";
 
     flake-parts.url = "github:hercules-ci/flake-parts";
     import-tree.url = "github:vic/import-tree";
