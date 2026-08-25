@@ -36,7 +36,6 @@
     };
     
     services.libinput.enable = true; # Enable touchpad support
-    services.printing.enable = true; # Enable CUPS to print documents.
 
     # amdgpu
     # boot.initrd.kernelModules = [ "amdgpu"]; //this makes initrd 30mb bigger

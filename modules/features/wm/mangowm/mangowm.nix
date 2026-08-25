@@ -65,11 +65,6 @@
       ./_rules/tags.nix
     ];
 
-    services.gnome-keyring = {
-      enable = true;
-      components = [ "pkcs11" "secrets" "ssh" ];
-    };
-
     wayland.windowManager.mango = {
       enable = true;
 
@@ -105,6 +100,11 @@
       extraConfig = ''
         source = ./noctalia.conf
       '';
+    };
+
+    services.gnome-keyring = {
+      enable = true;
+      components = [ "pkcs11" "secrets" "ssh" ];
     };
   };
 }

@@ -63,9 +63,10 @@
       };
 
       extensions = with inputs.vicinae-extensions.packages.${pkgs.stdenv.hostPlatform.system}; [
-        ssh
-        process-manager
         nix
+        process-manager
+        port-killer
+        ssh
         zoxide-recent-directories
       ];
     };
