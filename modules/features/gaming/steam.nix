@@ -58,13 +58,10 @@
         3833760 # You Know The Drill
         2914150 # Yunyun Syndrome Rhythm Psychosis
         2615540 # voidbreaker
-        773670 # Delete
         942050 # 2048 
-        3404260 # Dead as Disco
-        2830030 # MOTORSLICE
         993090 # Lossless Scaling
-        2524850 # Denshattack
         1084020 # TheoTown
+        2459550 # Emberward
       ];
 
       AdditionalApps = [
@@ -81,13 +78,10 @@
         3833760 # You Know The Drill
         2914150 # Yunyun Syndrome Rhythm Psychosis
         2615540 # voidbreaker
-        773670 # Delete
         942050 # 2048 
-        3404260 # Dead as Disco
-        2830030 # MOTORSLICE
         993090 # Lossless Scaling
-        2524850 # Denshattack
         1084020 # TheoTown
+        2459550 # Emberward
       ];
       
       # For multiplayer
