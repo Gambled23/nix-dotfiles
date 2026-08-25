@@ -33,7 +33,7 @@
       max-jobs = 1;
       cores = 2;
     };
-
+    boot.blacklistedKernelModules = [ "rtw88_8821ce" "rtw88_pci" "rtw88_core" ];
     home-manager.users.gambled = self.homeModules.serverGambledHomeModule;
   };
 }
