@@ -17,12 +17,12 @@
         concave_edge_corners = false;
         contact_shadow = false;
         enabled = true;
-        end = [ "tray" "group:g2" "volume" "brightness" "battery" ];
+        end = [ "tray" "group:g2" "volume" ];
         font_weight = 500;
         hover_highlight = true;
         layer = "top";
-        margin_edge = 5;
-        margin_ends = 8;
+        margin_edge = 0;
+        margin_ends = 0;
         margin_opposite_edge = 0;
         padding = 7;
         panel_overlap = 0;
@@ -194,7 +194,7 @@
           enabled = true;
           fill = "surface_variant";
           id = "g2";
-          members = [ "clipboard" "bluetooth" ];
+          members = [ "battery" "clipboard" "bluetooth" "brightness" ];
           opacity = 1.0;
           padding = 6.0;
         } {
@@ -203,10 +203,9 @@
           enabled = true;
           fill = "surface_variant";
           id = "g1";
-          members = [ "clock" "media" "notifications" "privacy" "mangowm-keymode" ];
+          members = [ "clock" "media" "notifications" "privacy" "mangowm-keymode" "status_2" "btn_3" ];
           opacity = 1.0;
-          padding = 10.0;
-          radius = 7.0;
+          padding = 6.0;
         } ];
       };
     };

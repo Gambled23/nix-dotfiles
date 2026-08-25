@@ -42,8 +42,6 @@
       kdePackages.kate
       kdePackages.qtwayland
 
-      bibata-cursors
-
       plasmusic-toolbar
       plasma-panel-colorizer
       headsetcontrol

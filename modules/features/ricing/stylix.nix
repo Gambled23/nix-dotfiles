@@ -1,5 +1,5 @@
 { self, inputs, ... }: {
-  flake.homeModules.stylix = { pkgs, ... }: let 
+  flake.homeModules.stylix = { pkgs, config, ... }: let 
     theme = "${pkgs.base16-schemes}/share/themes/gruvbox-dark-medium.yaml";
   in {
     imports = [
@@ -34,8 +34,8 @@
       };
 
       cursor = {
-        package = pkgs.bibata-cursors;
-        name = "Bibata-Modern-Ice";
+        package = config.theme.cursorTheme.package;
+        name = config.theme.cursorTheme.name;
         size = 24;
       };
 

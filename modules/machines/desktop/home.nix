@@ -32,8 +32,10 @@
       beeper
 
       # Theming
-      bibata-cursors
-      papirus-icon-theme
+      # bibata-cursors
+      colloid-cursors
+      colloid-icon-theme
+      # papirus-icon-theme
 
       # Tools
       android-tools

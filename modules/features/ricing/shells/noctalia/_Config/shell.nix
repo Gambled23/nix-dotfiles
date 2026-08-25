@@ -54,6 +54,7 @@
         pinned = [  ];
         provider_prefix = "/";
         show_app_actions = false;
+        show_app_origin_indicator = true;
         show_icons = true;
         sort_by_usage = true;
         dmenu = {

@@ -13,6 +13,7 @@
       self.homeModules.btop
       self.homeModules.zsh
       self.homeModules.starship
+      self.homeModules.themeOptions
     ];
 
     home.packages = with pkgs; [
@@ -40,8 +41,8 @@
 
     home.pointerCursor = lib.mkDefault {
       enable = true;
-      name = "Bibata-Modern-Ice";
-      package = pkgs.bibata-cursors;
+      name = config.theme.cursorTheme.name;
+      package = config.theme.cursorTheme.package;
       size = 24;
       gtk.enable = true;
     };
@@ -50,15 +51,15 @@
     gtk = {
       enable = true;
       theme.name = "adw-gtk3";
-      iconTheme.name = "Papirus";
-      cursorTheme.name = "Bibata-Modern-Ice";
+      iconTheme.name = config.theme.iconTheme.name;
+      cursorTheme.name = config.theme.cursorTheme.name;
       cursorTheme.size = 24;
     };
 
     qt = let 
       qtsettings = {
         Appearance = {
-          icon_theme = "Papirus";
+          icon_theme = config.theme.iconTheme.name;
           style = "Fusion";
           custom_palette = "true";
           color_scheme_path = "$HOME/.config/qt6ct/colors/noctalia.conf";

@@ -22,10 +22,10 @@
         search_files_in_root = true;
         theme = {
           light = {
-            icon_theme = "Papirus";
+            icon_theme = config.theme.iconTheme.name;
           };
           dark = {
-            icon_theme = "Papirus";
+            icon_theme = config.theme.iconTheme.name;
           };
         };
         window = {
