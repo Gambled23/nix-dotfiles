@@ -16,12 +16,12 @@
       cursorTheme = {
         name = lib.mkOption {
           type = lib.types.str;
-          default = "Graphite Cursors";
+          default = "Colloid-dark-cursors";
           description = "Global cursor theme";
         };
         package = lib.mkOption {
           type = lib.types.package;
-          default = pkgs.graphite-cursors;
+          default = pkgs.colloid-cursors;
           description = "Global cursor theme package";
         };
       };
