@@ -49,9 +49,9 @@
         ssh-keygen -t ed25519 -C "ipog71@gmail.com"
         eval "$(ssh-agent -s)"
         
-        ssh-add ~/.ssh/id_ed25519
-        echo "Copie la siguiente clave para agregarla a github" | ${pkgs.clolcat}/bin/clolcat
-        cat ~/.ssh/id_ed25519.pub  
+        ssh-add --apple-use-keychain ~/.ssh/id_ed25519
+        pbcopy < ~/.ssh/id_ed25519.pub
+        echo "¡Clave pública copiada al portapapeles!"
       '';
 
       display-device = pkgs.writeShellScriptBin "display-device" ''
