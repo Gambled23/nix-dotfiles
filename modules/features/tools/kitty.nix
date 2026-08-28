@@ -17,10 +17,13 @@
         size = 14;
       };
       keybindings = {
+        "ctrl+a" = "select_all";
         "ctrl+c" = "copy_or_interrupt";
         "ctrl+v" = "paste_from_clipboard";
         "ctrl+f" = "search_scrollback";
         "ctrl+backspace" = "send_text all \\x17";
+        "ctrl+left" = "send_text all \\x1b\\x62";
+        "ctrl+right" = "send_text all \\x1b\\x66";
 
         # Tabs
         "ctrl+t" = "new_tab_with_cwd";
