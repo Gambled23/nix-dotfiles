@@ -18,6 +18,7 @@
         contact_shadow = false;
         enabled = true;
         end = [ "tray" "group:g2" "volume" ];
+        font_scale = 1.0;
         font_weight = 500;
         hover_highlight = true;
         layer = "top";
@@ -54,11 +55,12 @@
             capsule_opacity = 1.0;
             capsule_padding = 6.0;
             capsule_thickness = 0.7599999904632568;
-            center = [ "group:g1" ];
+            center = [ "group:g1" "wallhaven_3" ];
             concave_edge_corners = false;
             contact_shadow = false;
             enabled = true;
-            end = [ "tray" "group:g2" "volume" "bar_2" ];
+            end = [ "tray" "group:g2" "volume" ];
+            font_scale = 1.0;
             font_weight = 500;
             hover_highlight = true;
             layer = "top";
@@ -129,6 +131,7 @@
             contact_shadow = false;
             enabled = true;
             end = [ "tray" "group:g2" "volume" "bar" ];
+            font_scale = 1.0;
             font_weight = 500;
             hover_highlight = true;
             layer = "top";

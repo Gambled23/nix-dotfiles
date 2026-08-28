@@ -22,6 +22,7 @@
       inputs.antigravity-nix.packages.x86_64-linux.google-antigravity-cli # CLI
       
       #* Media 
+      loupe
       vlc
       gimp-with-plugins
       (pkgs.callPackage ../../../pkgs/nuvio/package.nix { })

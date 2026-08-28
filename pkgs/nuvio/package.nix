@@ -56,7 +56,7 @@ let
 in
 stdenv.mkDerivation (finalAttrs: {
   pname = "nuvio-desktop";
-  version = "0.1.20-alpha";
+  version = "0.1.21-alpha";
 
   __structuredAttrs = true;
   strictDeps = true;

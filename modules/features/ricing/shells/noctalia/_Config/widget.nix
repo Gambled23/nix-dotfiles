@@ -174,6 +174,9 @@
         enabled = false;
         type = "noctalia/wallhaven:wallhaven";
       };
+      wallhaven_3 = {
+        type = "noctalia/wallhaven:wallhaven";
+      };
       widget = {
         type = "alexander/screen-toolkit:widget";
       };

@@ -15,17 +15,17 @@
         show_week_numbers = false;
       };
       shortcuts = [ {
+        type = "icefish/phone-connect:tile";
+      } {
+        type = "yocraft/custom-shortcut:shortcut";
+      } {
         type = "wifi";
       } {
         type = "bluetooth";
       } {
-        type = "notification";
-      } {
         type = "dark_mode";
       } {
-        type = "caffeine";
-      } {
-        type = "power_profile";
+        type = "alexander/screen-toolkit:toggle";
       } ];
     };
   };

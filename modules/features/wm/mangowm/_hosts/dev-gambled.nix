@@ -17,6 +17,7 @@
         "appid:spotify,monitor:HDMI-A-1"
         "appid:com.moonlight_stream.Moonlight,monitor:HDMI-A-1"
         "appid:Beeper,monitor:HDMI-A-1"
+        "title:Nuvio,width:555,height:1160,isfloating:1,offsetx:100,offsety:100,monitor:eDP-1"
       ];
     };
   };
