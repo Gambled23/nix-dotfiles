@@ -3,10 +3,11 @@
     imports = [
       inputs.nix-index-database.nixosModules.default
       self.nixosModules.coreScripts
-      self.nixosModules.openssh
+      self.nixosModules.cachix
+      
+      self.nixosModules.ssh
       self.nixosModules.syncthing
       self.nixosModules.zerotier
-      self.nixosModules.cachix
     ];
     
     nix = {

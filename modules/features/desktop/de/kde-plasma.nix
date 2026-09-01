@@ -1,5 +1,5 @@
 { self, inputs, ... }: {
-  flake.nixosModules.kde = { config, lib, pkgs, ... }: {
+  flake.nixosModules.kde-plasma = { config, lib, pkgs, ... }: {
     services.desktopManager.plasma6.enable = true;
     services.displayManager = {
       defaultSession = "hyprland-uwsm";

@@ -30,7 +30,7 @@
       colorScheme = "custom";
       
       customColorScheme = {
-        Noctalia = builtins.readFile ../ricing/shells/noctalia/_Colors/spicetify.ini;
+        Noctalia = builtins.readFile ../../ricing/shells/noctalia/_Colors/spicetify.ini;
       };
 
       enabledCustomApps = with spicePkgs.apps; [

@@ -3,17 +3,17 @@
     programs.home-manager.enable = true;
 
     imports = [
-      self.homeModules.stylix
-      self.homeModules.neovim
-      self.homeModules.git
-      self.homeModules.direnv
-      self.homeModules.yazi
-      self.homeModules.lsd
-      self.homeModules.zoxide
       self.homeModules.btop
-      self.homeModules.zsh
+      self.homeModules.direnv
+      self.homeModules.git
+      self.homeModules.neovim
+      self.homeModules.ssh
       self.homeModules.starship
+      self.homeModules.stylix
       self.homeModules.themeOptions
+      self.homeModules.yazi
+      self.homeModules.zoxide
+      self.homeModules.zsh
     ];
 
     home.packages = with pkgs; [
