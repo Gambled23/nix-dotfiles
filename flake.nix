@@ -24,13 +24,10 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    
 
     # nixpkgs-xr.url = "github:nix-community/nixpkgs-xr";
     # hyprland.url = "github:hyprwm/Hyprland";
     # hyprland-plugins.url = "github:hyprwm/Hyprland-plugins";
-
-
 
     stylix = {
       url = "github:nix-community/stylix";
@@ -41,8 +38,6 @@
       url = "github:AceSLS/SLSsteam";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    nix-crab.url = "github:ItszFinn/nix-crab";
 
     nix-index-database = {
       url = "github:nix-community/nix-index-database";
@@ -60,15 +55,30 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # niri = {
-    #   url = "github:sodiboo/niri-flake";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
-
     antigravity-nix = {
       url = "github:jacopone/antigravity-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    iris = {
+      url = "github:versenilvis/iris";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    # moonshine = {
+    #   url = "github:hgaiser/moonshine";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
+
+    # nix-crab = {
+    #   url = "github:ItszFinn/nix-crab";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
+
+    # niri = {
+    #   url = "github:sodiboo/niri-flake";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
     # monique = {
     #   url = "github:ToRvaLDz/monique";
@@ -78,35 +88,32 @@
     # dolphin-overlay.url = "github:rumboon/dolphin-overlay";
 
     # ambxst.url = "github:Axenide/Ambxst";
-    # ambxst.url = "github:smarthumankinda/ambxst-flake";
 
-    dms = {
-      url = "github:AvengeMedia/DankMaterialShell/stable";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # dms = {
+    #   url = "github:AvengeMedia/DankMaterialShell/stable";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
-    dms-plugin-registry = {
-      url = "github:AvengeMedia/dms-plugin-registry";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # dms-plugin-registry = {
+    #   url = "github:AvengeMedia/dms-plugin-registry";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
-    zen-browser = {
-      url = "github:youwen5/zen-browser-flake";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    # Alpha
-    alpha-server = {
-      url = "path:/home/gambled/Codes/nixos-alpha-server";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # zen-browser = {
+    #   url = "github:youwen5/zen-browser-flake";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
 
     # cng-plus-ml = {
     #   url = "path:/home/gambled/Codes/cng-plus-ml";
     #   inputs.nixpkgs.follows = "nixpkgs";
     # };
 
-    moonshine.url = "github:hgaiser/moonshine";
+    # Alpha
+    alpha-server = {
+      url = "path:/home/gambled/Codes/nixos-alpha-server";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = inputs: inputs.flake-parts.lib.mkFlake {inherit inputs;} (inputs.import-tree ./modules);

@@ -19,7 +19,7 @@
       wallpaper_scheme = "m3-fruit-salad";
       templates = {
         builtin_ids = [ "btop" "gtk3" "gtk4" "ghostty" "hyprland" "kitty" "mango" "qt" "starship" ];
-        community_ids = [ "antigravity" "spicetify" "zen-browser" "discord" "nchat" "gimp" "libreoffice" "neovim" "obsidian" "vscode" "steam" "vicinae" "siyuan" "hyprtoolkit" "bat" "yazi" ];
+        community_ids = [ "antigravity" "spicetify" "discord" "nchat" "gimp" "libreoffice" "neovim" "obsidian" "vscode" "steam" "vicinae" "siyuan" "hyprtoolkit" "bat" "yazi" ];
         enable_builtin_templates = true;
         enable_community_templates = true;
         user = {

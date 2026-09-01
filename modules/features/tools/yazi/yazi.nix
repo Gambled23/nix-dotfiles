@@ -8,7 +8,6 @@
         inherit (pkgs.yaziPlugins) mount;
         bookmarks = pkgs.yaziPlugins.bookmarks;
         compress = pkgs.yaziPlugins.compress;
-        drag = pkgs.yaziPlugins.drag;
         duckdb = pkgs.yaziPlugins.duckdb;
         full-border = pkgs.yaziPlugins.full-border;
         git = pkgs.yaziPlugins.git;
@@ -27,7 +26,6 @@
 
       keymap = {
         mgr.prepend_keymap = [
-          { run = "plugin drag"; on = [ "<C-d>" ]; desc = "Drag files"; }
           { run = "plugin lazygit"; on = [ "g" "i" ]; desc = "Enter lazygit"; }
           { run = "plugin recycle-bin"; on = [ "g" "b" ]; desc = "Recycle bin"; }
           { run = "plugin smart-enter"; on = [ "l" ]; desc = "Smart enter"; }
@@ -100,7 +98,6 @@
 
     home.packages = with pkgs; [
       trash-cli # for yazi trash plugin
-      ripdrag # for yazi drag plugin
       glib # for yazi gvfs plugin
     ];
   };

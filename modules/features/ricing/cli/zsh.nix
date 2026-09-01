@@ -33,14 +33,14 @@
         eval $(zoxide init zsh)
         eval "''$(devenv hook zsh)"
       '';
-      oh-my-zsh = {
-        enable = true;
-        plugins = [
-          "git"
-          "history"
-          "urltools"
-        ];
-      };
+      
+        # eval "''$(iris init zsh)"
+
+      # oh-my-zsh = {
+      #   enable = true;
+      #   plugins = [
+      #   ];
+      # };
     };
   };
 }

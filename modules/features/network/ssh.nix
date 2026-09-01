@@ -16,6 +16,7 @@
   flake.homeModules.ssh = { pkgs, lib, ... }: {
     programs.ssh = {
       enable = true;
+      enableDefaultConfig = false;
       settings = {
         "server-gambled" = {
           HostName = "server-gambled";

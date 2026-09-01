@@ -28,6 +28,7 @@
 
       #* extras
       bat
+      inputs.iris.packages.${pkgs.system}.default
       lxsession
       fastfetch
       zsh
