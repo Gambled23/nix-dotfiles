@@ -38,7 +38,7 @@
         shadow = false;
         show_on_workspace_switch = true;
         smart_auto_hide = false;
-        start = [ "vicinae" "workspaces" "wallhaven_2" "bar" "widget_3" ];
+        start = [ "vicinae" "workspaces" "wallhaven_2" "widget_3" "bar_4" ];
         thickness = 34;
         widget_spacing = 6;
         dead_zone = {

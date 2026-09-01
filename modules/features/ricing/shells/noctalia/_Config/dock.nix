@@ -27,7 +27,7 @@
       margin_edge = 8;
       margin_ends = 0;
       monitors = [  ];
-      pinned = [ "google-chrome" "spotify" "discord" "Altus" ];
+      pinned = [ "google-chrome" "spotify" "discord" "Altus" "nuvio-desktop" ];
       position = "bottom";
       radius = 16;
       radius_bottom_left = 16;
