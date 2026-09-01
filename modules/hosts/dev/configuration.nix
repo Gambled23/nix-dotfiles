@@ -26,7 +26,7 @@
     };
 
     nix.settings = {
-      max-jobs = 3;
+      max-jobs = 4;
       cores = 4;
     };
 
