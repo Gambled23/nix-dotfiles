@@ -25,7 +25,6 @@
 
     home.packages = with pkgs; [
       #* dev tools
-      nodejs_26
       # bruno
       # awscli
       remmina

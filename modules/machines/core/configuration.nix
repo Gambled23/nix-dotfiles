@@ -73,7 +73,7 @@
       grub2
       nixd
       nil
-      python3
+      # python3
       gnome-network-displays
     ];
 
