@@ -46,13 +46,13 @@
       ];
 
       customComponents = with pkgs; [
-        (callPackage ../../../pkgs/cozylife/package.nix {})
+        (callPackage ../../../../pkgs/cozylife/package.nix {})
         home-assistant-custom-components.dreo
         home-assistant-custom-components.scheduler
       ];
 
       customLovelaceModules = with pkgs; [
-        (callPackage ../../../pkgs/material-components/package.nix {})
+        (callPackage ../../../../pkgs/material-components/package.nix {})
         home-assistant-custom-lovelace-modules.auto-entities
         home-assistant-custom-lovelace-modules.button-card
         home-assistant-custom-lovelace-modules.bubble-card
@@ -60,7 +60,7 @@
         home-assistant-custom-lovelace-modules.mushroom
         home-assistant-custom-lovelace-modules.navbar-card
         home-assistant-custom-lovelace-modules.material-you-utilities
-        (callPackage ../../../pkgs/swipe-card/package.nix {})
+        (callPackage ../../../../pkgs/swipe-card/package.nix {})
         home-assistant-custom-lovelace-modules.xiaomi-vacuum-map-card
       ];
 

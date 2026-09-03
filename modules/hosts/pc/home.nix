@@ -12,7 +12,7 @@
   };
 
   flake.homeModules.pcGambledHomeModule = { pkgs, ... }: {
-    home.stateVersion = "26.05";
+    home.stateVersion = "26.11";
     imports = [
       self.homeModules.machineCoreHome
       self.homeModules.machineDesktopHome
