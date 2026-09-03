@@ -51,5 +51,9 @@
     services.flatpak.enable = true; # Enable flatpak
 
     home-manager.users.gambled = self.homeModules.gambledModule;
+  
+    # nixpkgs.config.permittedInsecurePackages = [
+    #   "electron-40.10.5"
+    # ];
   };
 }

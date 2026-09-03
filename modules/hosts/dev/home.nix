@@ -27,6 +27,8 @@
       #* dev tools
       # bruno
       # awscli
+      # winboat
+
       remmina
       mariadb
       # android-studio
