@@ -9,17 +9,19 @@
       custom_palette = "";
       mode = "dark";
       pure_black_dark = false;
+      shell_mode = "follow";
       source = "wallpaper";
       wallpaper_scheme = "m3-fruit-salad";
       templates = {
         builtin_ids = [ "btop" "gtk3" "gtk4" "ghostty" "hyprland" "kitty" "mango" "qt" "starship" ];
-        community_ids = [ "antigravity" "spicetify" "discord" "nchat" "gimp" "libreoffice" "neovim" "obsidian" "vscode" "steam" "vicinae" "siyuan" "hyprtoolkit" "bat" "yazi" ];
+        community_ids = [ "antigravity" "spicetify" "zen-browser" "discord" "nchat" "gimp" "libreoffice" "neovim" "obsidian" "vscode" "steam" "vicinae" "fastfetch" "siyuan" "hyprtoolkit" "bat" "fzf" "tmux" "yazi" ];
         enable_builtin_templates = true;
         enable_community_templates = true;
         user = {
           accela = {
             compare_to = "";
             enabled = true;
+            hook_async = true;
             index = 0;
             input_path = "$XDG_CONFIG_HOME/noctalia/templates/accela.nix";
             output_path = [ "$XDG_CONFIG_HOME/Tachibana Labs/theme.conf" ];
@@ -42,6 +44,7 @@
           beeper = {
             compare_to = "";
             enabled = true;
+            hook_async = true;
             index = 0;
             input_path = "$XDG_CONFIG_HOME/noctalia/templates/beeper.css";
             output_path = [ "$XDG_CONFIG_HOME/BeeperTexts/custom.css" ];
@@ -53,6 +56,7 @@
           nvf = {
             compare_to = "";
             enabled = true;
+            hook_async = true;
             index = 0;
             input_path = "$XDG_CONFIG_HOME/noctalia/templates/nvf.nix";
             output_path = [ "/etc/nixos/modules/features/ricing/shells/noctalia/_Colors/nvf.nix" ];
@@ -64,6 +68,7 @@
           siyuan = {
             compare_to = "";
             enabled = true;
+            hook_async = true;
             index = 0;
             input_path = "$XDG_CONFIG_HOME/noctalia/templates/siyuan.css";
             output_path = [ "~/SiYuan/conf/appearance/themes/noctalia-siyuan/theme.css" ];
@@ -75,6 +80,7 @@
           spicetify-nix = {
             compare_to = "";
             enabled = true;
+            hook_async = true;
             index = 0;
             input_path = "$XDG_CONFIG_HOME/spicetify/Themes/Comfy/color.ini";
             output_path = [ "/etc/nixos/modules/features/ricing/shells/noctalia/_Colors/spicetify.ini" ];
@@ -86,6 +92,7 @@
           starship = {
             compare_to = "";
             enabled = true;
+            hook_async = true;
             index = 0;
             input_path = "$XDG_CONFIG_HOME/noctalia/templates/starship.toml";
             output_path = [ "$XDG_CONFIG_HOME/noctalia/templates/ignore" ];

@@ -1,20 +1,44 @@
+require("starship"):setup()
+
+-- require("recycle-bin"):setup()
+
+require("keep-preferences"):setup()
+
+require("easyjump"):setup()
+
+-- require("relative-motions"):setup({ show_numbers="relative", show_motion = true, enter_mode ="first" })
+
 require("git"):setup {
 	-- Order of status signs showing in the linemode
 	order = 1500,
 }
-
-require("starship"):setup()
-
-require("recycle-bin"):setup()
 
 require("full-border"):setup {
 	-- Available values: ui.Border.PLAIN, ui.Border.ROUNDED
 	type = ui.Border.ROUNDED,
 }
 
-require("duckdb"):setup()
+require("nav-parent-panel"):setup({
+    -- quite = true  -- Enable quiet mode (default: true)
+})
 
-require("relative-motions"):setup({ show_numbers="relative", show_motion = true, enter_mode ="first" })
+-- require("bookmarks"):setup({
+-- 	last_directory = { enable = false, persist = false, mode="dir" },
+-- 	persist = "none",
+-- 	desc_format = "full",
+-- 	file_pick_mode = "hover",
+-- 	custom_desc_input = false,
+-- 	show_keys = false,
+-- 	notify = {
+-- 		enable = false,
+-- 		timeout = 1,
+-- 		message = {
+-- 			new = "New bookmark '<key>' -> '<folder>'",
+-- 			delete = "Deleted bookmark in '<key>'",
+-- 			delete_all = "Deleted all bookmarks",
+-- 		},
+-- 	},
+-- })
 
 require("gvfs"):setup({
   -- (Optional) Allowed keys to select device.
@@ -63,23 +87,3 @@ require("gvfs"):setup({
   -- Use command `ps aux | grep gvfs` to search for gvfs process and get the mountpoint path.
   -- root_mountpoint = (os.getenv("XDG_RUNTIME_DIR") or ("/run/user/" .. ya.uid())) .. "/gvfs"
 })
-
-require("bookmarks"):setup({
-	last_directory = { enable = false, persist = false, mode="dir" },
-	persist = "none",
-	desc_format = "full",
-	file_pick_mode = "hover",
-	custom_desc_input = false,
-	show_keys = false,
-	notify = {
-		enable = false,
-		timeout = 1,
-		message = {
-			new = "New bookmark '<key>' -> '<folder>'",
-			delete = "Deleted bookmark in '<key>'",
-			delete_all = "Deleted all bookmarks",
-		},
-	},
-})
-
-require("keep-preferences"):setup()

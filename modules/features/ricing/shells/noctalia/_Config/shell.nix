@@ -177,6 +177,9 @@
         alpha = 0.0;
         direction = "down";
       };
+      window_switcher = {
+        mru = false;
+      };
     };
   };
 }

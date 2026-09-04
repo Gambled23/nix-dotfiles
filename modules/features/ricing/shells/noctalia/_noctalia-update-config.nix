@@ -3,19 +3,12 @@
 pkgs.writeShellScriptBin "noctalia-update-config" ''
   #!${pkgs.bash}/bin/bash
 
-  input_file="$1"
+  noctalia config export full > $HOME/Downloads/noctalia-config.toml
 
-  if [[ -z "$input_file" ]]; then
-    echo "Usage: noctalia-update-config <path_to_noctalia.nix>"
-    exit 1
-  fi
-
-  if [[ ! -f "$input_file" ]]; then
-    echo "Error: File $input_file not found."
-    exit 1
-  fi
+  noctalia_toml=$HOME/Downloads/noctalia-config.toml
+  noctalia_nix=$HOME/Downloads/noctalia-config.nix
   
-  nix run github:erooke/toml2nix -- -p /home/gambled/Downloads/noctalia-config.toml -o $input_file
+  nix run github:erooke/toml2nix -- -p $noctalia_toml -o $noctalia_nix
   out_dir="/etc/nixos/modules/features/ricing/shells/noctalia/_Config"
 
   shopt -s nullglob
@@ -24,7 +17,7 @@ pkgs.writeShellScriptBin "noctalia-update-config" ''
     conf_key="''${basename//-/_}"
     
     # Extract block
-    block=$(awk -v conf="$conf_key" 'BEGIN{flag=0; pattern="^\t" conf " = \\{"} $0 ~ pattern {flag=1} flag{print} /^\t\};/{if(flag){flag=0; exit}}' "$input_file")
+    block=$(awk -v conf="$conf_key" 'BEGIN{flag=0; pattern="^\t" conf " = \\{"} $0 ~ pattern {flag=1} flag{print} /^\t\};/{if(flag){flag=0; exit}}' "$noctalia_nix")
     
     if [[ -n "$block" ]]; then
       formatted_block=$(printf '%s\n' "$block" | sed 's/^\t//' | expand -t 2 | sed 's/^/    /' | sed -E 's/^([ \t]*)([^" \t]+@[^" \t]+)([ \t]*=)/\1"\2"\3/')
@@ -58,7 +51,9 @@ pkgs.writeShellScriptBin "noctalia-update-config" ''
       }' "$out_file" > "$out_file.tmp" && mv "$out_file.tmp" "$out_file"
       echo "Updated $out_file"
     else
-      echo "Skipped $out_file (not found in $input_file)"
+      echo "Skipped $out_file (not found in $noctalia_nix)"
     fi
   done
+
+  rm $noctalia_toml $noctalia_nix
 ''

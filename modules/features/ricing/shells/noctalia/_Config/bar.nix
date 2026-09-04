@@ -80,7 +80,7 @@
             shadow = false;
             show_on_workspace_switch = true;
             smart_auto_hide = false;
-            start = [ "workspaces" "group:g3" "eyecare-widget" ];
+            start = [ "workspaces" "group:g3" "eyecare-widget" "sysmon_2" ];
             thickness = 34;
             widget_spacing = 6;
             dead_zone = {

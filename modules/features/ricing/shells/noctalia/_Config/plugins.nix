@@ -3,7 +3,7 @@
   programs.noctalia.settings = {
     plugins = {
       auto_update = "all";
-      enabled = [ "noctalia/wallhaven" "gambled23/mangowm-keymode" "avivbintangaringga/nix-monitor" "icefish/phone-connect" "ezequiel/mango_layouts" "nomadcxx/gamer-mode" "blackbartblues/audio-switcher" "alexander/screen-toolkit" "raycursive/discord-voice" "cleboost/anilist" "pozzoo/hassio" "yocraft/custom-shortcut" ];
+      enabled = [ "gambled23/mangowm-keymode" "avivbintangaringga/nix-monitor" "icefish/phone-connect" "yocraft/battery-widget" "noctalia/wallhaven" "alexander/screen-toolkit" "ezequiel/mango_layouts" "weinguyen/procmon" "aristides/udiskie" "apex077/eyecare" "tphilippot/git_companion" "raycursive/discord-voice" "yocraft/custom-shortcut" "pozzoo/hassio" "yocraft/desktop-launcher" ];
       source = [ {
         enabled = true;
         kind = "git";

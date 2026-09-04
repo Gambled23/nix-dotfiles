@@ -10,21 +10,19 @@
 
       greeter-args = "";
       settings = {
-        cursor = {
-          theme = config.theme.cursorTheme.name;
-          size = 24;
-          path = "${config.theme.cursorTheme.package}/share/icons";
+        # cursor = {
+        #   theme = config.theme.cursorTheme.name;
+        #   size = 24;
+        #   path = "${config.theme.cursorTheme.package}/share/icons";
+        # };
+        default_session = {
+          command = "mango";
+          user = "gambled";
         };
         keyboard = {
           layout = "us";
         };
       };
-    };
-    
-    services.displayManager = {
-      defaultSession = "mango";
-      autoLogin.enable = true;
-      autoLogin.user = "gambled";
     };
   };
 }

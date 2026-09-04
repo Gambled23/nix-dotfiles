@@ -1,7 +1,8 @@
 { self, inputs, ... }: {
   flake.nixosModules.machineDesktop = { pkgs, ... }: {
     imports = [
-      self.nixosModules.ly
+      # self.nixosModules.ly
+      self.nixosModules.noctaliaGreeter
       self.nixosModules.mangowm
       self.nixosModules.desktopScripts
     ];

@@ -91,7 +91,7 @@
         anchor = true;
         art_size = 16.0;
         hide_when_no_media = true;
-        max_length = 308;
+        max_length = 300;
         min_length = 0;
         title_scroll = "on_hover";
         type = "media";
@@ -137,6 +137,9 @@
       status_2 = {
         hide_when_empty = true;
         type = "aristides/udiskie:status";
+      };
+      sysmon_2 = {
+        type = "arrifat346afs/systempulse:sysmon";
       };
       temp = {
         stat = "ram_pct";
@@ -188,7 +191,13 @@
         type = "weinguyen/procmon:widget";
       };
       widget_3 = {
-        type = "alexander/screen-toolkit:widget";
+        type = "tphilippot/git_companion:widget";
+      };
+      widget_4 = {
+        type = "autumn/network-toolkit:widget";
+      };
+      widget_5 = {
+        type = "autumn/network-toolkit:widget";
       };
       workspaces = {
         capsule = true;

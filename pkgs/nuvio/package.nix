@@ -29,6 +29,11 @@ in
 
     extraInstallCommands = ''
       install -Dm444 ${extracted}/Nuvio.png $out/share/icons/hicolor/256x256/apps/nuvio.png
+      install -Dm444 ${extracted}/Nuvio.desktop $out/share/applications/nuvio.desktop
+      substituteInPlace $out/share/applications/nuvio.desktop \
+        --replace-fail 'Exec=AppRun' 'Exec=nuvio' \
+        --replace-fail 'Icon=Nuvio' 'Icon=nuvio'
+
       wrapProgram $out/bin/nuvio \
         --set _JAVA_AWT_WM_NONREPARENTING 1 \
         --prefix LD_LIBRARY_PATH : ${lib.makeLibraryPath [

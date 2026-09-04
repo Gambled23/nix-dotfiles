@@ -23,6 +23,7 @@ in
       "ALT,e,set_proportion,1.0"
       "ALT,x,switch_proportion_preset"
       "SUPER,e,spawn,${file_manager}"
+      "SUPER+SHIFT,e,spawn,nautilus"
       "SUPER,r,spawn,${menu}"
       "SUPER,f,spawn,${web_browser}"
       "SUPER,g,spawn,${terminal} --class lazygit -e lazygit"
