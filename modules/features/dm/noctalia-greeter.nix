@@ -1,5 +1,5 @@
 { self, inputs, ... }: {
-  flake.nixosModules.noctaliaGreeter = { pkgs, config, ... }: {
+  flake.nixosModules.noctaliaGreeter = { pkgs, lib, config, ... }: {
     imports = [
       inputs.noctalia-greeter.nixosModules.default
     ];
@@ -15,13 +15,16 @@
         #   size = 24;
         #   path = "${config.theme.cursorTheme.package}/share/icons";
         # };
-        default_session = {
-          command = "mango";
-          user = "gambled";
-        };
         keyboard = {
           layout = "us";
         };
+      };
+    };
+
+    services.greetd.settings = lib.mkIf (config.networking.hostName == "pc-gambled") {
+      initial_session = {
+        command = "mango";
+        user = "gambled";
       };
     };
   };
