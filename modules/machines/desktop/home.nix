@@ -42,7 +42,7 @@
       android-tools
       gnome-control-center
       gparted
-      libreoffice-fresh
+      libreoffice-stable
       nautilus
       qalculate-gtk
       scrcpy

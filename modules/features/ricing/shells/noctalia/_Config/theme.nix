@@ -1,12 +1,6 @@
-{ ... }:
+{ lib, ... }:
 {
-  imports = [
-		../_Colors/Templates/accela.nix
-		../_Colors/Templates/beeper.nix
-		../_Colors/Templates/nvf.nix
-		# ../_Colors/Templates/spicetify.nix
-		../_Colors/Templates/siyuan.nix
-  ];
+  imports = [ ] ++ (builtins.filter (lib.hasSuffix ".nix") (lib.filesystem.listFilesRecursive ../_Colors/Templates));
 
   programs.noctalia.settings = {
     theme = {

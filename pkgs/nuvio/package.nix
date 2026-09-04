@@ -20,7 +20,7 @@
     hash = "sha256-IEv9BTKjnz88CwYKXGP5/5Qd+tUBn2IIPpUCd7rSmck=";
   };
 
-  extracted = appimageTools.extractType2 {inherit pname version src;};
+  extracted = appimageTools.extract {inherit pname version src;};
 in
   appimageTools.wrapType2 {
     inherit pname version src;

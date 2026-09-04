@@ -13,7 +13,7 @@ in
     # Use lists for duplicate keys like bind and tagrule
     bind = [
       "none,Print,spawn,${noctalia_ipc} screenshot-region"
-      "ALT,Tab,toggleoverview"
+      "ALT,Tab,overcircle,next"
       "SUPER+SHIFT,r,reload_config"
       "SUPER,x,togglefloating"
       

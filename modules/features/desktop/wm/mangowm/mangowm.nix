@@ -1,4 +1,4 @@
-{ self, inputs, ... }: {
+{ self, inputs, lib, ... }: {
   flake.nixosModules.mangowm = { pkgs, ... }: {
     imports = [
       inputs.mangowm.nixosModules.mango
@@ -54,16 +54,10 @@
   in {
     imports = [
       inputs.mangowm.hmModules.mango
-
       hostconfig
-      ./_configs/binds.nix
-      ./_configs/window-effects.nix
-      ./_configs/animations.nix
-      ./_configs/input.nix
-      ./_rules/window.nix
-      ./_rules/layer.nix
-      ./_rules/tags.nix
-    ];
+    ] 
+    ++ (builtins.filter (lib.hasSuffix ".nix") (lib.filesystem.listFilesRecursive ./_configs))
+    ++ (builtins.filter (lib.hasSuffix ".nix") (lib.filesystem.listFilesRecursive ./_rules));
 
     wayland.windowManager.mango = {
       enable = true;
