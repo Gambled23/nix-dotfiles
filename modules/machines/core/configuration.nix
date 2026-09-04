@@ -74,8 +74,6 @@
       grub2
       nixd
       nil
-      # python3
-      gnome-network-displays
     ];
 
     users.users = {

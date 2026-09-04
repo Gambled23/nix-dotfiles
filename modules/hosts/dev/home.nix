@@ -36,6 +36,7 @@
 
       #* utils
       # moonlight-qt
+      gnome-network-displays
 
       # nchat # whatsapp cli
     ];
