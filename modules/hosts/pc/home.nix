@@ -16,7 +16,8 @@
     imports = [
       self.homeModules.machineCoreHome
       self.homeModules.machineDesktopHome
-      self.homeModules.sls-steam
+      inputs.nix-flatpak.homeManagerModules.nix-flatpak
+      # self.homeModules.sls-steam
     ];
 
     home.packages = with pkgs; [
