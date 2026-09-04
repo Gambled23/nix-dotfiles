@@ -33,7 +33,29 @@
     services.flatpak.enable = true;
   };
 
-  flake.homeModules.sls-steam = { pkgs, ... }: {
+  flake.homeModules.sls-steam = { pkgs, ... }:
+    let 
+      gamesIds = [
+        2868840 # Slay the Spire 2
+        2356780 # Dungeon Clawler
+        3035120 # Is This Seat Taken
+        2968420 # PowerWash Simulator 2
+        3265700 # Vampire crawlers
+        1147860 # UFO 50
+        1299460 # Wanderstop
+        2097570 # StarVaders
+        2612700 # S4U CITYPUNK 2011 AND LOVE PUNCH
+        1539140 # STONKS9800 Stock Market Simulator
+        3833760 # You Know The Drill
+        2914150 # Yunyun Syndrome Rhythm Psychosis
+        2615540 # voidbreaker
+        942050 # 2048 
+        993090 # Lossless Scaling
+        1084020 # TheoTown
+        2459550 # Emberward
+      ];
+    in 
+  {
     imports = [
       inputs.nix-flatpak.homeManagerModules.nix-flatpak
       inputs.sls-steam.homeModules.sls-steam
@@ -44,45 +66,8 @@
       DisableFamilyShareLock = true;
       SafeMode = true;
 
-      AppIds = [
-        2868840 # Slay the Spire 2
-        2356780 # Dungeon Clawler
-        3035120 # Is This Seat Taken
-        2968420 # PowerWash Simulator 2
-        3265700 # Vampire crawlers
-        1147860 # UFO 50
-        1299460 # Wanderstop
-        2097570 # StarVaders
-        2612700 # S4U CITYPUNK 2011 AND LOVE PUNCH
-        1539140 # STONKS9800 Stock Market Simulator
-        3833760 # You Know The Drill
-        2914150 # Yunyun Syndrome Rhythm Psychosis
-        2615540 # voidbreaker
-        942050 # 2048 
-        993090 # Lossless Scaling
-        1084020 # TheoTown
-        2459550 # Emberward
-      ];
-
-      AdditionalApps = [
-        2868840 # Slay the Spire 2
-        2356780 # Dungeon Clawler
-        3035120 # Is This Seat Taken
-        2968420 # PowerWash Simulator 2
-        3265700 # Vampire crawlers
-        1147860 # UFO 50
-        1299460 # Wanderstop
-        2097570 # StarVaders
-        2612700 # S4U CITYPUNK 2011 AND LOVE PUNCH
-        1539140 # STONKS9800 Stock Market Simulator
-        3833760 # You Know The Drill
-        2914150 # Yunyun Syndrome Rhythm Psychosis
-        2615540 # voidbreaker
-        942050 # 2048 
-        993090 # Lossless Scaling
-        1084020 # TheoTown
-        2459550 # Emberward
-      ];
+      AppIds = gamesIds;
+      AdditionalApps = gamesIds;
       
       # For multiplayer
       FakeAppIds = {
