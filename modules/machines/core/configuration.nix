@@ -8,6 +8,7 @@
       self.nixosModules.ssh
       self.nixosModules.syncthing
       self.nixosModules.zerotier
+      self.nixosModules.themeOptions
     ];
     
     nix = {

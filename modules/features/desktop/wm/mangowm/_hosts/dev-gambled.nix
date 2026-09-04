@@ -5,8 +5,6 @@
       exec-once = [
         # "kitty --class spotify_player -e spotify_player"
         # "kitty --class nchat -e nchat"
-        "beeper"
-        "systemctl --user restart noctalia; sleep 3; noctalia msg session lock"
       ];
 
       windowrule =[

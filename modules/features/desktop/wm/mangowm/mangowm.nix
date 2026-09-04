@@ -64,6 +64,8 @@
 
       settings = {
         exec-once = [
+          "systemctl --user restart noctalia"
+          "beeper"
           "spotify"
           "discord"
           "kdeconnect-indicator"

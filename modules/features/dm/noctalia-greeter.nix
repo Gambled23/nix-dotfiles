@@ -10,11 +10,11 @@
 
       greeter-args = "";
       settings = {
-        # cursor = {
-        #   theme = config.theme.cursorTheme.name;
-        #   size = 24;
-        #   path = "${config.theme.cursorTheme.package}/share/icons";
-        # };
+        cursor = {
+          theme = config.theme.cursorTheme.name;
+          size = 24;
+          path = "${config.theme.cursorTheme.package}/share/icons";
+        };
         keyboard = {
           layout = "us";
         };
