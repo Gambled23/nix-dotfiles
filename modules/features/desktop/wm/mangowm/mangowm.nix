@@ -14,7 +14,9 @@
       # Monitors
       wlr-randr
     ];
-     
+    
+    services.gnome.gnome-online-accounts.enable = true;
+    services.gnome.evolution-data-server.enable = true;    
     services.pipewire.enable = true;
     services.dbus.packages = [ pkgs.gcr ];
     services.gnome.gnome-keyring.enable = true;
