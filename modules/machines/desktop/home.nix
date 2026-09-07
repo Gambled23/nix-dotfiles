@@ -49,7 +49,11 @@
       siyuan
       via
       wdisplays # wlr-randr gui
-
+  
+      # Utils
+      gnome-clocks
+      gnome-calendar
+      gnome-contacts
       #* webbrowsers
       google-chrome
       # inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
