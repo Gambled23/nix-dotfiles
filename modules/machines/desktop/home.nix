@@ -21,14 +21,14 @@
       inputs.antigravity-nix.packages.x86_64-linux.google-antigravity-cli # CLI
       
       #* Media 
-      loupe
+      loupe # Image viewer
       vlc
       gimp-with-plugins
       (pkgs.callPackage ../../../pkgs/nuvio/package.nix { })
       # inputs.nuvio.legacyPackages.${pkgs.stdenv.hostPlatform.system}.nuvio-desktop
 
       #* Messaging
-      altus
+      # altus
       beeper
 
       # Theming
@@ -40,6 +40,9 @@
       # Tools
       android-tools
       gnome-control-center
+      gnome-clocks
+      gnome-calendar
+      gnome-contacts
       gparted
       libreoffice-stable
       nautilus
@@ -49,11 +52,7 @@
       siyuan
       via
       wdisplays # wlr-randr gui
-  
-      # Utils
-      gnome-clocks
-      gnome-calendar
-      gnome-contacts
+
       #* webbrowsers
       google-chrome
       # inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
