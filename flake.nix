@@ -7,6 +7,7 @@
     
     nixcord.url = "github:kaylorben/nixcord";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
+    fastpotify.url = "github:crmne/fastpotify";
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     nvf.url = "github:NotAShelf/nvf";
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";

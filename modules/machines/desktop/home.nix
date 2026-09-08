@@ -14,6 +14,7 @@
       self.packages.${pkgs.stdenv.hostPlatform.system}.flash-kernelsu
 
       #* Dev tools
+      nodejs_26
       github-cli
       dbeaver-bin
       inputs.antigravity-nix.packages.x86_64-linux.google-antigravity-no-fhs # Base App
@@ -21,6 +22,7 @@
       inputs.antigravity-nix.packages.x86_64-linux.google-antigravity-cli # CLI
       
       #* Media 
+      inputs.fastpotify.packages."${pkgs.stdenv.hostPlatform.system}".default
       loupe # Image viewer
       vlc
       gimp-with-plugins
