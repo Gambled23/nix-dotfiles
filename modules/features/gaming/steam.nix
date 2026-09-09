@@ -110,10 +110,10 @@ in
 
     programs.nix-crab = {
       slssteam.manageConfig = true;
-      steamidra.enable = true;
+      # steamidra.enable = true;
       accela.enable = true;
-      luatools.enable = true;
-      cloudredirect.moon.enable = true;
+      # luatools.enable = true;
+      # cloudredirect.moon.enable = true;
 
       millennium = {
         plugins = [
