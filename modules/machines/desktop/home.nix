@@ -63,5 +63,16 @@
     services.flatpak.packages = [
       "com.artemchep.keyguard"
     ];
+
+    xdg.mimeApps.defaultApplications = {
+      "application/pdf" = "firefox.desktop";
+      "image/*" = [
+        "org.gnome.Loupe.desktop"
+        "gimp.desktop"
+      ];
+      "video/*" = [ "vlc.desktop" ];
+      "audio/*" = [ "vlc.desktop" ];
+      "text/calendar" = [ "chrome-fmgjjmmmlfnkbppncabfkddbjimcfncm-Default.desktop" ];
+    };
   };
 }
