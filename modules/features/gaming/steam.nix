@@ -2,7 +2,7 @@
 let 
   gamesIds = [
     2868840 # Slay the Spire 2
-    2356780 # Dungeon Clawler
+    # 2356780 # Dungeon Clawler
     3035120 # Is This Seat Taken
     2968420 # PowerWash Simulator 2
     3265700 # Vampire crawlers
