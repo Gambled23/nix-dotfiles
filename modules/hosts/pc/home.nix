@@ -29,6 +29,7 @@
       # steam-rom-manager
       prismlauncher
       guitarix
+      r2modman
       # fretboard
       # pywalfox-native
       polychromatic
