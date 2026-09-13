@@ -30,7 +30,7 @@
       # inputs.nuvio.legacyPackages.${pkgs.stdenv.hostPlatform.system}.nuvio-desktop
 
       #* Messaging
-      # altus
+      altus
       beeper
 
       # Theming
