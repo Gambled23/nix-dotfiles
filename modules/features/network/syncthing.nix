@@ -27,7 +27,7 @@
           versioning.type = "simple";
           path = "/home/gambled/SiYuan";
           enable = true;
-          devices = [ "pc-gambled" "server-gambled" "dev-gambled" ];
+          devices = [ "pc-gambled" "server-gambled" "dev-gambled" "android-gambled"];
         };
         "Alpha" = {
           versioning.type = "simple";

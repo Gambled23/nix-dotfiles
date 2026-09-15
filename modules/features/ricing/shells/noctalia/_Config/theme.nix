@@ -101,6 +101,18 @@
             post_hook = "cp ~/.cache/noctalia/st22arship-palette.toml /etc/nixos/Features/Ricing/Shells/Noctalia/Colors/starship.toml";
             pre_hook = "";
           };
+          spotifast = {
+            compare_to = "";
+            enabled = true;
+            hook_async = true;
+            index = 0;
+            input_path = "$XDG_CONFIG_HOME/noctalia/templates/spotifast.json";
+            output_path = [ "$XDG_CONFIG_HOME/fastpotify/themes/noctalia.json" ];
+            output_path_dynamic = "";
+            post_action = "";
+            post_hook = "spotifast reload-themes";
+            pre_hook = "";
+          };
         };
       };
     };
