@@ -115,7 +115,7 @@
               padding = 6.0;
             } ];
           };
-          HEADLESS-1 = {
+          sunshine = {
             auto_hide = false;
             background_opacity = 0.29999998211860657;
             border = "outline";
@@ -138,7 +138,7 @@
             margin_edge = 0;
             margin_ends = 0;
             margin_opposite_edge = 0;
-            match = "HEADLESS-1";
+            match = "sunshine";
             padding = 7;
             panel_overlap = 0;
             radius = 0;
