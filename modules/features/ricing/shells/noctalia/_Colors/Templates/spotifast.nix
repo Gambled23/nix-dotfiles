@@ -9,7 +9,7 @@
       "surface_hover": "{{colors.surface.default.hex}}",
       "text": "{{colors.on_surface.default.hex}}",
       "accent": "{{colors.primary.default.hex}}",
-      "accent_hover": "{{colors.primary.hover.hex}}",
+      "accent_hover": "{{colors.primary.default.hex}}",
       "on_accent": "{{colors.on_primary.default.hex}}",
       "outline": "{{colors.outline.default.hex}}",
       "secondary": "{{colors.secondary.default.hex}}",
