@@ -24,7 +24,6 @@
       satty
       translate-shell
       ffmpeg_8
-
       udiskie
       wl-clipboard
       adw-gtk3
