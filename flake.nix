@@ -1,7 +1,8 @@
 {
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    nixpkgs-gambled.url = "github:Gambled23/nixpkgs";
+    yazi-relative-motions.url = "github:Gambled23/nixpkgs/yazi-relative-motions";
+    nuvio.url = "github:SUBHAM-ROY/nixpkgs/nuvio";
     flake-parts.url = "github:hercules-ci/flake-parts";
     import-tree.url = "github:vic/import-tree";
     

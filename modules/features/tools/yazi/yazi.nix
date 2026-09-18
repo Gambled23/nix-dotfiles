@@ -18,7 +18,7 @@
         nav-parent-panel = pkgs.yaziPlugins.nav-parent-panel;
         omni-trash = pkgs.yaziPlugins.omni-trash;
         # recycle-bin = pkgs.yaziPlugins.recycle-bin;
-        # relative-motions = pkgs.yaziPlugins.relative-motions;
+        relative-motions = inputs.yazi-relative-motions.legacyPackages.${pkgs.stdenv.hostPlatform.system}.yaziPlugins.relative-motions;
         smart-enter = pkgs.yaziPlugins.smart-enter;
         smart-filter = pkgs.yaziPlugins.smart-filter;
         smart-paste = pkgs.yaziPlugins.smart-paste;
@@ -55,15 +55,15 @@
           { run = "plugin gvfs -- automount-when-cd"; on = [ "M" "t" ]; desc = "Enable automount when cd to device under cwd"; }
           { run = "plugin gvfs -- automount-when-cd --disabled"; on = [ "M" "T" ]; desc = "Disable automount when cd to device under cwd"; }
           # relative motions plugin
-          # { run = "plugin relative-motions 1"; on = [ "1" ]; desc = "Move in relative steps"; }
-          # { run = "plugin relative-motions 2"; on = [ "2" ]; desc = "Move in relative steps"; }
-          # { run = "plugin relative-motions 3"; on = [ "3" ]; desc = "Move in relative steps"; }
-          # { run = "plugin relative-motions 4"; on = [ "4" ]; desc = "Move in relative steps"; }
-          # { run = "plugin relative-motions 5"; on = [ "5" ]; desc = "Move in relative steps"; }
-          # { run = "plugin relative-motions 6"; on = [ "6" ]; desc = "Move in relative steps"; }
-          # { run = "plugin relative-motions 7"; on = [ "7" ]; desc = "Move in relative steps"; }
-          # { run = "plugin relative-motions 8"; on = [ "8" ]; desc = "Move in relative steps"; }
-          # { run = "plugin relative-motions 9"; on = [ "9" ]; desc = "Move in relative steps"; }
+          { run = "plugin relative-motions 1"; on = [ "1" ]; desc = "Move in relative steps"; }
+          { run = "plugin relative-motions 2"; on = [ "2" ]; desc = "Move in relative steps"; }
+          { run = "plugin relative-motions 3"; on = [ "3" ]; desc = "Move in relative steps"; }
+          { run = "plugin relative-motions 4"; on = [ "4" ]; desc = "Move in relative steps"; }
+          { run = "plugin relative-motions 5"; on = [ "5" ]; desc = "Move in relative steps"; }
+          { run = "plugin relative-motions 6"; on = [ "6" ]; desc = "Move in relative steps"; }
+          { run = "plugin relative-motions 7"; on = [ "7" ]; desc = "Move in relative steps"; }
+          { run = "plugin relative-motions 8"; on = [ "8" ]; desc = "Move in relative steps"; }
+          { run = "plugin relative-motions 9"; on = [ "9" ]; desc = "Move in relative steps"; }
           # nav parent panel
           { run = "plugin nav-parent-panel prev"; on = [ "<C-k>" ]; desc = "Go to previous sibling directory"; }
           { run = "plugin nav-parent-panel next"; on = [ "<C-j>" ]; desc = "Go to next sibling directory"; }

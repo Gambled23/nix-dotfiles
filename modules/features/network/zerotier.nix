@@ -22,6 +22,7 @@
       joinNetworks = [ 
         "159924d6307a98fe" # Angry patatas
         "abfd31bd4708f79c" # Rafael Vaca
+        # "0cccb752f7bf343b"
       ]; # ZT NETWORK ID
     };
   };

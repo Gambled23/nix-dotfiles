@@ -6,7 +6,7 @@ require("keep-preferences"):setup()
 
 require("easyjump"):setup()
 
--- require("relative-motions"):setup({ show_numbers="relative", show_motion = true, enter_mode ="first" })
+require("relative-motions"):setup({ show_numbers="relative", show_motion = true, enter_mode ="first" })
 
 require("git"):setup {
 	-- Order of status signs showing in the linemode

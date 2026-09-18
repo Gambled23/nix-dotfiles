@@ -12,38 +12,6 @@ in
   wayland.windowManager.mango.settings = {
     # Use lists for duplicate keys like bind and tagrule
     bind = [
-      "none,Print,spawn,${noctalia_ipc} screenshot-region"
-      "ALT,Tab,overcircle,next"
-      "SUPER+SHIFT,r,reload_config"
-      "SUPER,x,togglefloating"
-      
-      "SUPER,q,killclient"
-      "SUPER+SHIFT,q,quit" # close mangowm
-      "SUPER+SHIFT,s,spawn,${noctalia_ipc} panel-toggle ezequiel/mango_layouts:panel"
-      "ALT,e,set_proportion,1.0"
-      "ALT,x,switch_proportion_preset"
-      "SUPER,e,spawn,${file_manager}"
-      "SUPER+SHIFT,e,spawn,nautilus"
-      "SUPER,r,spawn,${menu}"
-      "SUPER,f,spawn,${web_browser}"
-      "SUPER,g,spawn,${terminal} --class lazygit -e lazygit"
-      "SUPER+SHIFT,Return,spawn,${terminal}"
-      "SUPER,Return,spawn,${modal_terminal}"
-      "SUPER,c,spawn,antigravity-ide"
-      "SUPER,v,spawn,${terminal} --class vim -e vim"
-      "SUPER,b,spawn,flatpak run com.artemchep.keyguard"
-      "SUPER,m,spawn,${noctalia_ipc} session lock"
-      "SUPER,n,spawn,${terminal} --class nix-rbd -e nix-rbd"
-      "SUPER,o,spawn,moonlight stream 'el sunchine' 'dev-gambled'"
-      "SUPER,p,spawn,scrcpy --render-driver=opengl -S -w -K -b15M --power-off-on-close --window-title \"phone\""
-      "SUPER+SHIFT,p,spawn,${scrcpy-desktop-mode}"
-      "SUPER,Escape,spawn,${terminal} --class btop -e btop"
-
-      # Scratchpad
-      "SUPER,z,minimized"
-      "SUPER+SHIFT,z,restore_minimized"
-      "SUPER,s,toggle_scratchpad"
-
       # Tags
       "SUPER,1,comboview,1"
       "SUPER,2,comboview,2"
@@ -64,6 +32,41 @@ in
       "SUPER+SHIFT,7,tagsilent,7"
       "SUPER+SHIFT,8,tagsilent,8"
       "SUPER+SHIFT,9,tagsilent,9"
+
+      "none,Print,spawn,${noctalia_ipc} screenshot-region"
+      "ALT,Tab,overcircle,next"
+      
+      "SUPER,Escape,spawn,${terminal} --class btop -e btop"
+
+      "SUPER,q,killclient"
+      "SUPER+SHIFT,q,quit" # close mangowm
+      "ALT,e,set_proportion,1.0"
+      "ALT,x,switch_proportion_preset"
+      "SUPER,e,spawn,${file_manager}"
+      "SUPER+SHIFT,e,spawn,nautilus"
+      "SUPER,r,spawn,${menu}"
+      "SUPER+SHIFT,r,reload_config"
+      "SUPER,o,spawn,moonlight stream 'el sunchine' 'dev-gambled'"
+      "SUPER,p,spawn,scrcpy --render-driver=opengl -S -w -K -b15M --power-off-on-close --window-title \"phone\""
+      "SUPER+SHIFT,p,spawn,${scrcpy-desktop-mode}"
+
+      # Special tags
+      "SUPER+SHIFT,s,tag_special_silent"
+      "SUPER,s,toggle_special_tag"
+
+      "SUPER,f,spawn,${web_browser}"
+      "SUPER,g,spawn,${terminal} --class lazygit -e lazygit"
+      "SUPER,Return,spawn,${modal_terminal}"
+      "SUPER+SHIFT,Return,spawn,${terminal}"
+      
+      "SUPER,z,spawn,${noctalia_ipc} panel-toggle ezequiel/mango_layouts:panel"
+      "SUPER,x,togglefloating"
+      "SUPER,c,spawn,antigravity-ide"
+      "SUPER,v,spawn,${terminal} --class vim -e vim"
+      "SUPER,b,spawn,flatpak run com.artemchep.keyguard"
+      "SUPER,n,spawn,${terminal} --class nix-rbd -e nix-rbd"
+      "SUPER,m,spawn,${noctalia_ipc} session lock"
+
 
       # Windows
       # Focus

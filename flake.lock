@@ -6309,21 +6309,6 @@
         "type": "github"
       }
     },
-    "nixpkgs-gambled_5": {
-      "locked": {
-        "lastModified": 1783531749,
-        "narHash": "sha256-7WCPLKnPSqsYpIDfzr4lG94Cv5/k2And+0wwT6uBxOY=",
-        "owner": "Gambled23",
-        "repo": "nixpkgs",
-        "rev": "ad24bdadb2b9def984a77e8575424fe11cb4ee34",
-        "type": "github"
-      },
-      "original": {
-        "owner": "Gambled23",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
     "nixpkgs-lib": {
       "locked": {
         "lastModified": 1788057806,
@@ -9000,6 +8985,22 @@
         "type": "github"
       }
     },
+    "nuvio_2": {
+      "locked": {
+        "lastModified": 1789376176,
+        "narHash": "sha256-EaZTsNuHXJ3SweLNOFIzDG/sF7r/kyAUedu7xuxSz+g=",
+        "owner": "SUBHAM-ROY",
+        "repo": "nixpkgs",
+        "rev": "74ae4a1e10c889d1da6de25e7020fb66d905335a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "SUBHAM-ROY",
+        "ref": "nuvio",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
     "nvf": {
       "inputs": {
         "flake-compat": "flake-compat_3",
@@ -9267,16 +9268,17 @@
         "nixcord": "nixcord_6",
         "nixos-hardware": "nixos-hardware_6",
         "nixpkgs": "nixpkgs_97",
-        "nixpkgs-gambled": "nixpkgs-gambled_5",
         "nixpkgsnur": "nixpkgsnur_5",
         "noctalia": "noctalia_6",
         "noctalia-greeter": "noctalia-greeter_5",
+        "nuvio": "nuvio_2",
         "nvf": "nvf_6",
         "sls-steam": "sls-steam_9",
         "spicetify-nix": "spicetify-nix_6",
         "stylix": "stylix_6",
         "vicinae": "vicinae_11",
-        "vicinae-extensions": "vicinae-extensions_6"
+        "vicinae-extensions": "vicinae-extensions_6",
+        "yazi-relative-motions": "yazi-relative-motions"
       }
     },
     "rust-overlay": {
@@ -12025,6 +12027,22 @@
       "original": {
         "owner": "hyprwm",
         "repo": "xdg-desktop-portal-hyprland",
+        "type": "github"
+      }
+    },
+    "yazi-relative-motions": {
+      "locked": {
+        "lastModified": 1789760328,
+        "narHash": "sha256-85y/6UFG9WA6IozQA/wKhgxAKhTqpgBPMQMYHvnypEU=",
+        "owner": "Gambled23",
+        "repo": "nixpkgs",
+        "rev": "676a4cd71fbe99d086b45cb3617a467484f37bf7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Gambled23",
+        "ref": "yazi-relative-motions",
+        "repo": "nixpkgs",
         "type": "github"
       }
     },
