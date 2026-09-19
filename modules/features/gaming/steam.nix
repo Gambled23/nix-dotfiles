@@ -97,7 +97,7 @@ in
     ];
 
     programs.nix-crab = {
-      # cloudredirect.enable = true;
+      cloudredirect.enable = true;
       millennium.enable = true;
       slssteam.enable = true;
     };

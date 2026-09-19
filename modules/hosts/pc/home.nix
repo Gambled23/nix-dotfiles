@@ -16,8 +16,8 @@
     imports = [
       self.homeModules.machineCoreHome
       self.homeModules.machineDesktopHome
-      self.homeModules.sls-steam
-      # self.homeModules.nix-crab
+      # self.homeModules.sls-steam
+    self.homeModules.nix-crab
     ];
 
     home.packages = with pkgs; [
