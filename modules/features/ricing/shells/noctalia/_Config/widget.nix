@@ -25,6 +25,10 @@
       bar_4 = {
         type = "raycursive/discord-voice:bar";
       };
+      bar_5 = {
+        text = "";
+        type = "dunarand/bookmarks:bar";
+      };
       battery = {
         hide_when_full = true;
         hide_when_plugged = true;
@@ -91,7 +95,7 @@
         anchor = true;
         art_size = 16.0;
         hide_when_no_media = true;
-        max_length = 300;
+        max_length = 308;
         min_length = 0;
         title_scroll = "on_hover";
         type = "media";
@@ -138,6 +142,9 @@
         hide_when_empty = true;
         type = "aristides/udiskie:status";
       };
+      status_3 = {
+        type = "mindnbytes/nix-status:status";
+      };
       sysmon_2 = {
         type = "arrifat346afs/systempulse:sysmon";
       };
@@ -146,6 +153,9 @@
         type = "sysmon";
       };
       tracker = {
+        type = "cleboost/anilist:tracker";
+      };
+      tracker_2 = {
         type = "cleboost/anilist:tracker";
       };
       tray = {
@@ -191,7 +201,7 @@
         type = "weinguyen/procmon:widget";
       };
       widget_3 = {
-        type = "tphilippot/git_companion:widget";
+        type = "alexander/screen-toolkit:widget";
       };
       widget_4 = {
         type = "autumn/network-toolkit:widget";

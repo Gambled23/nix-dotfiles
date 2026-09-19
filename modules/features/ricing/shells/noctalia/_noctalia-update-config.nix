@@ -3,10 +3,10 @@
 pkgs.writeShellScriptBin "noctalia-update-config" ''
   #!${pkgs.bash}/bin/bash
 
-  noctalia config export full > $HOME/Downloads/noctalia-config.toml
-
   noctalia_toml=$HOME/Downloads/noctalia-config.toml
   noctalia_nix=$HOME/Downloads/noctalia-config.nix
+
+  noctalia config export full > $noctalia_toml
   
   nix run github:erooke/toml2nix -- -p $noctalia_toml -o $noctalia_nix
   out_dir="/etc/nixos/modules/features/ricing/shells/noctalia/_Config"

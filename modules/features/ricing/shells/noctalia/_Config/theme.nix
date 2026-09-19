@@ -4,17 +4,17 @@
 
   programs.noctalia.settings = {
     theme = {
-      builtin = "Eldritch";
-      community_palette = "GruvboxAlt";
+      builtin = "Ayu";
+      community_palette = "Ayu Red";
       custom_palette = "";
       mode = "dark";
       pure_black_dark = false;
       shell_mode = "follow";
-      source = "wallpaper";
-      wallpaper_scheme = "m3-fruit-salad";
+      source = "community";
+      wallpaper_scheme = "m3-content";
       templates = {
-        builtin_ids = [ "btop" "gtk3" "gtk4" "ghostty" "hyprland" "kitty" "mango" "qt" "starship" ];
-        community_ids = [ "antigravity" "spicetify" "zen-browser" "discord" "nchat" "gimp" "libreoffice" "neovim" "obsidian" "vscode" "steam" "vicinae" "fastfetch" "siyuan" "hyprtoolkit" "bat" "fzf" "tmux" "yazi" ];
+        builtin_ids = [ "btop" "gtk3" "gtk4" "ghostty" "kitty" "mango" "qt" "starship" ];
+        community_ids = [ "spicetify" "neovim" "vscode" "zed" "vicinae" "antigravity" "bat" "discord" "lazygit" "prismlauncher" "steam" "yazi" ];
         enable_builtin_templates = true;
         enable_community_templates = true;
         user = {
@@ -89,18 +89,6 @@
             post_hook = "";
             pre_hook = "";
           };
-          starship = {
-            compare_to = "";
-            enabled = true;
-            hook_async = true;
-            index = 0;
-            input_path = "$XDG_CONFIG_HOME/noctalia/templates/starship.toml";
-            output_path = [ "$XDG_CONFIG_HOME/noctalia/templates/ignore" ];
-            output_path_dynamic = "";
-            post_action = "";
-            post_hook = "cp ~/.cache/noctalia/st22arship-palette.toml /etc/nixos/Features/Ricing/Shells/Noctalia/Colors/starship.toml";
-            pre_hook = "";
-          };
           spotifast = {
             compare_to = "";
             enabled = true;
@@ -111,6 +99,18 @@
             output_path_dynamic = "";
             post_action = "";
             post_hook = "spotifast reload-themes";
+            pre_hook = "";
+          };
+          starship = {
+            compare_to = "";
+            enabled = true;
+            hook_async = true;
+            index = 0;
+            input_path = "$XDG_CONFIG_HOME/noctalia/templates/starship.toml";
+            output_path = [ "$XDG_CONFIG_HOME/noctalia/templates/ignore" ];
+            output_path_dynamic = "";
+            post_action = "";
+            post_hook = "cp ~/.cache/noctalia/st22arship-palette.toml /etc/nixos/Features/Ricing/Shells/Noctalia/Colors/starship.toml";
             pre_hook = "";
           };
         };

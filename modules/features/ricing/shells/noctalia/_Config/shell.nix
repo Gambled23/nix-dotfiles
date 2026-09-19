@@ -35,6 +35,7 @@
       show_location = true;
       telemetry_enabled = false;
       time_format = "{:%H:%M}";
+      umbriel_overview_type_to_launch_enabled = false;
       animation = {
         enabled = true;
         speed = 1.25;
@@ -99,6 +100,9 @@
         size = 32;
       };
       screenshot = {
+        annotate = false;
+        close_on_copy = true;
+        close_on_save = true;
         confirm_region = false;
         copy_to_clipboard = true;
         directory = "~/Pictures/Screenshots/";
@@ -109,6 +113,7 @@
         remember_last_region = false;
         save_to_file = true;
         show_cursor = false;
+        skip_annotate_on_copy_save = false;
       };
       session = {
         grid = false;

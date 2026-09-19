@@ -7,6 +7,7 @@
       collapse_on_dismiss = true;
       enable_daemon = true;
       history_retention_hours = 0;
+      keep_dismissed_in_history = true;
       layer = "top";
       max_visible = 0;
       monitors = [  ];
