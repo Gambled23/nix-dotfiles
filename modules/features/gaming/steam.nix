@@ -18,6 +18,9 @@ let
     993090 # Lossless Scaling
     1084020 # TheoTown
     2459550 # Emberward
+    4195110 # Ultrapool
+    2124120 # SULFUR 
+    1999520 # CATO Buttered Cat 
   ];
 
   sls-config = {
