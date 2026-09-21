@@ -13,12 +13,12 @@
   webkitgtk_4_1,
 }: let
   pname = "nuvio";
-  version = "0.1.23-alpha";
+  version = "0.1.25-alpha";
 
 
   src = fetchurl {
     url = "https://github.com/NuvioMedia/NuvioDesktop/releases/download/${version}/Nuvio-Linux-x86_64-${version}.AppImage";
-    hash = "sha256-1Oe5TxiGmiozbWgOr/0BJL9BDCpYY9/pP4MnAj5YgDE=";
+    hash = "sha256-2yWE04NZJr/XmfpazL22hFExypAQNoZ4rKkG4LZD6pI=";
   };
 
   extracted = appimageTools.extract {inherit pname version src;};

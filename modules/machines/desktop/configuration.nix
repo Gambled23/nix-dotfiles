@@ -5,6 +5,7 @@
       self.nixosModules.noctaliaGreeter
       self.nixosModules.mangowm
       self.nixosModules.desktopScripts
+      self.nixosModules.skwd
     ];
 
     environment.systemPackages = with pkgs; [    
@@ -90,6 +91,6 @@
       nerd-fonts.jetbrains-mono
       nerd-fonts.caskaydia-cove
       texlivePackages.alfaslabone
-    ]; 
+    ];
   };
 }

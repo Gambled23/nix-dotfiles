@@ -26,6 +26,9 @@
         gnome-control-center-fixed = "env XDG_CURRENT_DESKTOP=GNOME gnome-control-center";
         agyde = "antigravity-ide";
         dvp = "devenv processes";
+
+        analyze-general-space = ''nix-shell -p ncdu --command "ncdu --exclude /nix -x /"'';
+        analyze-nix-space = ''nix run 'nixpkgs#gdu' /nix/store'';
       };
       
       initContent = ''

@@ -65,10 +65,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    skwd = {
-      url = "github:liixini/skwd-wall";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    skwd.url = "github:liixini/skwd-wall/nix";
 
     # moonshine = {
     #   url = "github:hgaiser/moonshine";
