@@ -21,6 +21,7 @@ let
     4195110 # Ultrapool
     2124120 # SULFUR 
     1999520 # CATO Buttered Cat 
+    4705510 # Happy Wheels
   ];
 
   sls-config = {
