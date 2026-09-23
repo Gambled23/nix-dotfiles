@@ -22,7 +22,7 @@
       inputs.antigravity-nix.packages.x86_64-linux.google-antigravity-cli # CLI
       
       #* Media 
-      # inputs.fastpotify.packages."${pkgs.stdenv.hostPlatform.system}".default
+      inputs.spotifast.packages."${pkgs.stdenv.hostPlatform.system}".default
       loupe # Image viewer
       vlc
       gimp-with-plugins
@@ -65,7 +65,7 @@
     ];
 
     xdg.mimeApps.defaultApplications = {
-      "application/pdf" = "firefox.desktop";
+      "application/pdf" = "draw.desktop";
       "image/*" = [
         "org.gnome.Loupe.desktop"
         "gimp.desktop"

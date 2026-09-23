@@ -11,7 +11,7 @@
         easyjump = pkgs.yaziPlugins.easyjump;
         full-border = pkgs.yaziPlugins.full-border;
         git = pkgs.yaziPlugins.git;
-        gvfs = pkgs.yaziPlugins.gvfs;
+        # gvfs = pkgs.yaziPlugins.gvfs;
         kdeconnect-send = pkgs.yaziPlugins.kdeconnect-send;
         keep-preferences = pkgs.yaziPlugins.keep-preferences;
         lazygit = pkgs.yaziPlugins.lazygit;
@@ -22,6 +22,7 @@
         smart-enter = pkgs.yaziPlugins.smart-enter;
         smart-filter = pkgs.yaziPlugins.smart-filter;
         smart-paste = pkgs.yaziPlugins.smart-paste;
+        sshfs = pkgs.yaziPlugins.sshfs;
         starship = pkgs.yaziPlugins.starship;
         wl-clipboard = pkgs.yaziPlugins.wl-clipboard;
       };
@@ -44,16 +45,16 @@
           { run = "plugin compress -l"; on = [ "c" "a" "l" ]; desc = "Archive selected files (compression level)"; }
           { run = "plugin compress -phl"; on = [ "c" "a" "u" ]; desc = "Archive selected files (password+header+level)"; }
           # gvfs plugin
-          { run = "plugin gvfs -- select-then-mount --jump"; on = [ "M" "m" ]; desc = "Select device to mount and jump to its mount point"; }
-          { run = "plugin gvfs -- remount-current-cwd-device"; on = [ "M" "R" ]; desc = "Remount device under cwd"; }
-          { run = "plugin gvfs -- select-then-unmount --eject"; on = [ "M" "u" ]; desc = "Select device then eject"; }
-          { run = "plugin gvfs -- add-mount"; on = [ "M" "a" ]; desc = "Add a GVFS mount URI"; }
-          { run = "plugin gvfs -- edit-mount"; on = [ "M" "e" ]; desc = "Edit a GVFS mount URI"; }
-          { run = "plugin gvfs -- remove-mount"; on = [ "M" "r" ]; desc = "Remove a GVFS mount URI"; }
-          { run = "plugin gvfs -- jump-to-device --automount"; on = [ "g" "m" ]; desc = "Automount then select device to jump to its mount point"; }
-          { run = "plugin gvfs -- jump-back-prev-cwd"; on = [ "`" "`" ]; desc = "Jump back to the position before jumped to device"; }
-          { run = "plugin gvfs -- automount-when-cd"; on = [ "M" "t" ]; desc = "Enable automount when cd to device under cwd"; }
-          { run = "plugin gvfs -- automount-when-cd --disabled"; on = [ "M" "T" ]; desc = "Disable automount when cd to device under cwd"; }
+          # { run = "plugin gvfs -- select-then-mount --jump"; on = [ "M" "m" ]; desc = "Select device to mount and jump to its mount point"; }
+          # { run = "plugin gvfs -- remount-current-cwd-device"; on = [ "M" "R" ]; desc = "Remount device under cwd"; }
+          # { run = "plugin gvfs -- select-then-unmount --eject"; on = [ "M" "u" ]; desc = "Select device then eject"; }
+          # { run = "plugin gvfs -- add-mount"; on = [ "M" "a" ]; desc = "Add a GVFS mount URI"; }
+          # { run = "plugin gvfs -- edit-mount"; on = [ "M" "e" ]; desc = "Edit a GVFS mount URI"; }
+          # { run = "plugin gvfs -- remove-mount"; on = [ "M" "r" ]; desc = "Remove a GVFS mount URI"; }
+          # { run = "plugin gvfs -- jump-to-device --automount"; on = [ "g" "m" ]; desc = "Automount then select device to jump to its mount point"; }
+          # { run = "plugin gvfs -- jump-back-prev-cwd"; on = [ "`" "`" ]; desc = "Jump back to the position before jumped to device"; }
+          # { run = "plugin gvfs -- automount-when-cd"; on = [ "M" "t" ]; desc = "Enable automount when cd to device under cwd"; }
+          # { run = "plugin gvfs -- automount-when-cd --disabled"; on = [ "M" "T" ]; desc = "Disable automount when cd to device under cwd"; }
           # relative motions plugin
           { run = "plugin relative-motions 1"; on = [ "1" ]; desc = "Move in relative steps"; }
           { run = "plugin relative-motions 2"; on = [ "2" ]; desc = "Move in relative steps"; }
@@ -69,6 +70,8 @@
           { run = "plugin nav-parent-panel next"; on = [ "<C-j>" ]; desc = "Go to next sibling directory"; }
           { run = "plugin nav-parent-panel first"; on = [ "<C-Home>" ]; desc = "Go to first sibling directory"; }
           { run = "plugin nav-parent-panel last"; on = [ "<C-End>" ]; desc = "Go to last sibling directory"; }
+          # sshfs plugin
+          { run = "plugin sshfs -- menu"; on = [ "M" ]; desc = "Open SSHFS options"; }
           # bookmarks
           # { run = "plugin bookmarks save"; on = [ "b" "a" ]; desc = "Save current directory as bookmark"; }
           # { run = "plugin bookmarks delete"; on = [ "b" "d" ]; desc = "Delete a bookmark"; }
@@ -104,6 +107,7 @@
     home.packages = with pkgs; [
       trash-cli # for yazi trash plugin
       glib # for yazi gvfs plugin
+      sshfs
     ];
   };
 }

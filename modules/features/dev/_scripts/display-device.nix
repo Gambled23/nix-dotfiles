@@ -35,7 +35,6 @@ pkgs.writeShellScriptBin "display-device" ''
 
   case "$display_name" in
     steamdeck)
-      steam steam://open/bigpicture
       if [ "$desktop" = "Hyprland" ]; then 
         monique --switch-profile "steamdeck"
       elif [ "$desktop" = "mango" ]; then 
@@ -45,6 +44,7 @@ pkgs.writeShellScriptBin "display-device" ''
       else
         echo "$desktop not configured"
       fi
+      steam steam://open/bigpicture
       ;;
     pc-gambled)
       if [ "$desktop" = "Hyprland" ]; then 
@@ -79,6 +79,7 @@ pkgs.writeShellScriptBin "display-device" ''
       else
         echo "$desktop not configured"
       fi
+      steam steam://open/bigpicture
       ;;
     *)
       echo "Invalid display name: $display_name" >&2

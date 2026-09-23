@@ -4,7 +4,7 @@
     desktop_widgets = {
       enabled = true;
       schema_version = 2;
-      widget_order = [ "desktop-widget-0000000000000006" "desktop-widget-0000000000000001" "desktop-widget-0000000000000005" "desktop-widget-0000000000000007" "desktop-widget-0000000000000008" "desktop-widget-0000000000000009" "desktop-widget-000000000000000a" "desktop-widget-000000000000000b" "desktop-widget-000000000000000c" "desktop-widget-000000000000000d" "desktop-widget-000000000000000e" "desktop-widget-000000000000000f" ];
+      widget_order = [ "desktop-widget-0000000000000006" "desktop-widget-0000000000000001" "desktop-widget-0000000000000005" "desktop-widget-0000000000000007" "desktop-widget-0000000000000008" "desktop-widget-0000000000000009" "desktop-widget-000000000000000a" "desktop-widget-000000000000000b" "desktop-widget-000000000000000c" "desktop-widget-000000000000000d" "desktop-widget-000000000000000e" "desktop-widget-000000000000000f" "desktop-widget-0000000000000012" "desktop-widget-0000000000000013" "desktop-widget-0000000000000014" ];
       grid = {
         cell_size = 16;
         major_interval = 4;
@@ -74,7 +74,7 @@
         desktop-widget-0000000000000008 = {
           box_height = 160.0;
           box_width = 368.0;
-          cx = 960.0;
+          cx = 848.0;
           cy = 956.0;
           enabled = true;
           output = "HDMI-A-1";
@@ -199,6 +199,56 @@
           placement_width = 1920.0;
           rotation = 0.0;
           type = "yocraft/battery-widget:widget";
+          settings = {
+            
+          };
+        };
+        desktop-widget-0000000000000012 = {
+          box_height = 144.0;
+          box_width = 176.0;
+          cx = 600.0;
+          cy = 292.0;
+          enabled = true;
+          output = "HDMI-A-1";
+          placement_height = 1080.0;
+          placement_width = 1920.0;
+          rotation = 0.0;
+          type = "remo/noctes:note";
+          settings = {
+            background = false;
+            fold = "bottom_right";
+            opacity_override = 0.0;
+            paper_height = 120;
+            paper_width = 151;
+            tape = "auto";
+          };
+        };
+        desktop-widget-0000000000000013 = {
+          box_height = 160.0;
+          box_width = 208.0;
+          cx = 1152.0;
+          cy = 956.0;
+          enabled = true;
+          output = "HDMI-A-1";
+          placement_height = 1080.0;
+          placement_width = 1920.0;
+          rotation = 0.0;
+          type = "volume";
+          settings = {
+            
+          };
+        };
+        desktop-widget-0000000000000014 = {
+          box_height = 0.0;
+          box_width = 0.0;
+          cx = 1532.0;
+          cy = 313.0;
+          enabled = true;
+          output = "HDMI-A-1";
+          placement_height = 1080.0;
+          placement_width = 1920.0;
+          rotation = 0.0;
+          type = "calendar";
           settings = {
             
           };

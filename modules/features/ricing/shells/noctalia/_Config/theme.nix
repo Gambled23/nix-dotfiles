@@ -4,17 +4,17 @@
 
   programs.noctalia.settings = {
     theme = {
-      builtin = "Ayu";
+      builtin = "Gruvbox";
       community_palette = "Ayu Red";
-      custom_palette = "";
+      custom_palette = "skwd-wall";
       mode = "dark";
       pure_black_dark = false;
       shell_mode = "follow";
-      source = "community";
-      wallpaper_scheme = "m3-content";
+      source = "custom";
+      wallpaper_scheme = "m3-fruit-salad";
       templates = {
-        builtin_ids = [ "btop" "gtk3" "gtk4" "ghostty" "kitty" "mango" "qt" "starship" ];
-        community_ids = [ "spicetify" "neovim" "vscode" "zed" "vicinae" "antigravity" "bat" "discord" "lazygit" "prismlauncher" "steam" "yazi" ];
+        builtin_ids = [ "btop" "gtk3" "gtk4" "ghostty" "hyprland" "kitty" "mango" "qt" "starship" ];
+        community_ids = [ "antigravity" "spicetify" "spotifast" "zen-browser" "discord" "nchat" "gimp" "libreoffice" "neovim" "obsidian" "vscode" "steam" "vicinae" "fastfetch" "mailspring" "siyuan" "hyprtoolkit" "bat" "fzf" "lazygit" "tmux" "yazi" ];
         enable_builtin_templates = true;
         enable_community_templates = true;
         user = {
@@ -87,18 +87,6 @@
             output_path_dynamic = "";
             post_action = "";
             post_hook = "";
-            pre_hook = "";
-          };
-          spotifast = {
-            compare_to = "";
-            enabled = true;
-            hook_async = true;
-            index = 0;
-            input_path = "$XDG_CONFIG_HOME/noctalia/templates/spotifast.json";
-            output_path = [ "$XDG_CONFIG_HOME/fastpotify/themes/noctalia.json" ];
-            output_path_dynamic = "";
-            post_action = "";
-            post_hook = "spotifast reload-themes";
             pre_hook = "";
           };
           starship = {
