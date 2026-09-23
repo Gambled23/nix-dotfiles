@@ -61,6 +61,9 @@
         dmenu = {
           
         };
+        panels = {
+          ignored = [ "polkit" "setup-wizard" "test" "launcher" ];
+        };
       };
       mpris = {
         blacklist = [  ];

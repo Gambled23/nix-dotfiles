@@ -80,7 +80,7 @@
             shadow = false;
             show_on_workspace_switch = true;
             smart_auto_hide = false;
-            start = [ "workspaces" "group:g3" "eyecare-widget" "sysmon_2" ];
+            start = [ "workspaces" "group:g3" "eyecare-widget" "bar_6" ];
             thickness = 34;
             widget_spacing = 6;
             dead_zone = {
@@ -110,7 +110,7 @@
               enabled = true;
               fill = "surface_variant";
               id = "g3";
-              members = [ "widget" "widget_2" "widget_3" ];
+              members = [ "widget" "widget_2" "widget_3" "inbox" ];
               opacity = 1.0;
               padding = 6.0;
             } ];
