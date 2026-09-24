@@ -4,6 +4,7 @@
     services.openssh = {
       enable = true;
       openFirewall = true;
+      allowSFTP = true;
       settings = { 
         PasswordAuthentication = true;
         AllowUsers = [ "gambled" ];
