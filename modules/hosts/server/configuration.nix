@@ -9,7 +9,7 @@
       self.nixosModules.glances
       self.nixosModules.homeassistant
       self.nixosModules.homepageDashboard
-      self.nixosModules.codeServer
+      # self.nixosModules.codeServer
       self.nixosModules.nginx
       self.nixosModules.pihole
       self.nixosModules.vaultwarden
