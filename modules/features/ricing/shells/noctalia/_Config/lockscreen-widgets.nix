@@ -71,7 +71,7 @@
           box_height = 196.0;
           box_width = 720.0;
           cx = 960.0;
-          cy = 961.0;
+          cy = 954.0;
           enabled = true;
           output = "HDMI-A-1";
           placement_height = 1080.0;
@@ -267,7 +267,7 @@
           box_height = 196.0;
           box_width = 720.0;
           cx = 960.0;
-          cy = 1081.0;
+          cy = 1080.0;
           enabled = true;
           output = "eDP-1";
           placement_height = 1200.0;
@@ -353,7 +353,7 @@
           box_height = 304.0;
           box_width = 768.0;
           cx = 960.0;
-          cy = 172.0;
+          cy = 196.0;
           enabled = true;
           output = "HDMI-A-1";
           placement_height = 1080.0;
@@ -363,13 +363,14 @@
           settings = {
             background_radius = 24;
             color = "secondary";
+            font_family = "";
           };
         };
         lockscreen-widget-000000000000000e = {
           box_height = 304.0;
           box_width = 768.0;
           cx = 960.0;
-          cy = 168.0;
+          cy = 192.0;
           enabled = true;
           output = "eDP-1";
           placement_height = 1200.0;

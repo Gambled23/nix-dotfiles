@@ -20,6 +20,12 @@
           username = "";
         };
       };
+      reminders = {
+        all_day_digest_time = "09:00";
+        default_lead_minutes = 10;
+        enabled = true;
+        use_event_reminders = true;
+      };
     };
   };
 }

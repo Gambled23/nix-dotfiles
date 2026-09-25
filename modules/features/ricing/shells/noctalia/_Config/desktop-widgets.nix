@@ -42,8 +42,8 @@
           };
         };
         desktop-widget-0000000000000006 = {
-          box_height = 192.0;
-          box_width = 352.0;
+          box_height = 336.0;
+          box_width = 864.0;
           cx = 960.0;
           cy = 220.0;
           enabled = true;
@@ -53,7 +53,8 @@
           rotation = 0.0;
           type = "clock";
           settings = {
-            
+            clock_style = "digital";
+            format = "{:%H:%M}";
           };
         };
         desktop-widget-0000000000000007 = {
@@ -206,8 +207,8 @@
         desktop-widget-0000000000000012 = {
           box_height = 144.0;
           box_width = 176.0;
-          cx = 600.0;
-          cy = 292.0;
+          cx = 144.0;
+          cy = 164.0;
           enabled = true;
           output = "HDMI-A-1";
           placement_height = 1080.0;
@@ -241,11 +242,11 @@
         desktop-widget-0000000000000014 = {
           box_height = 0.0;
           box_width = 0.0;
-          cx = 1532.0;
-          cy = 313.0;
+          cx = 1548.0;
+          cy = 715.0;
           enabled = true;
-          output = "HDMI-A-1";
-          placement_height = 1080.0;
+          output = "eDP-1";
+          placement_height = 1200.0;
           placement_width = 1920.0;
           rotation = 0.0;
           type = "calendar";

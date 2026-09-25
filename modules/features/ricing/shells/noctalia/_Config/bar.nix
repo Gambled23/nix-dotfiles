@@ -55,7 +55,7 @@
             capsule_opacity = 1.0;
             capsule_padding = 6.0;
             capsule_thickness = 0.7599999904632568;
-            center = [ "group:g1" "wallhaven_3" ];
+            center = [ "group:g1" ];
             concave_edge_corners = false;
             contact_shadow = false;
             enabled = true;
