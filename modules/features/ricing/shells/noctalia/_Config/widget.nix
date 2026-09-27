@@ -20,6 +20,7 @@
         type = "icefish/phone-connect:bar";
       };
       bar_3 = {
+        hide_when_disconnected = true;
         type = "raycursive/discord-voice:bar";
       };
       bar_4 = {
@@ -27,7 +28,7 @@
       };
       bar_5 = {
         text = "";
-        type = "prponkshe/mango-displays:bar";
+        type = "dunarand/bookmarks:bar";
       };
       bar_6 = {
         type = "baizhu/paged-todo:bar";
@@ -101,7 +102,7 @@
         anchor = true;
         art_size = 16.0;
         hide_when_no_media = true;
-        max_length = 300;
+        max_length = 308;
         min_length = 0;
         title_scroll = "on_hover";
         type = "media";
@@ -207,7 +208,7 @@
         type = "weinguyen/procmon:widget";
       };
       widget_3 = {
-        type = "tphilippot/git_companion:widget";
+        type = "alexander/screen-toolkit:widget";
       };
       widget_4 = {
         type = "autumn/network-toolkit:widget";

@@ -38,7 +38,7 @@
         shadow = false;
         show_on_workspace_switch = true;
         smart_auto_hide = false;
-        start = [ "vicinae" "workspaces" "bar_4" "status_3" "bar_5" "tracker_2" ];
+        start = [ "vicinae" "workspaces" "group:g3" ];
         thickness = 34;
         widget_spacing = 6;
         dead_zone = {
@@ -179,12 +179,12 @@
               padding = 10.0;
               radius = 7.0;
             } {
-              accordion = false;
+              accordion = true;
               accordion_direction = "end";
               enabled = true;
               fill = "surface_variant";
               id = "g3";
-              members = [ "btn" "bar_3" "caffeine" ];
+              members = [ "btn" "bar_3" ];
               opacity = 1.0;
               padding = 8.0;
               radius = 8.0;
@@ -206,7 +206,16 @@
           enabled = true;
           fill = "surface_variant";
           id = "g1";
-          members = [ "clock" "media" "notifications" "privacy" "mangowm-keymode" "status_2" "btn_3" ];
+          members = [ "clock" "media" "notifications" "privacy" ];
+          opacity = 1.0;
+          padding = 6.0;
+        } {
+          accordion = true;
+          accordion_direction = "end";
+          enabled = true;
+          fill = "surface_variant";
+          id = "g3";
+          members = [ "bar_4" "bar_5" "tracker_2" "status_3" ];
           opacity = 1.0;
           padding = 6.0;
         } ];
