@@ -7,8 +7,8 @@
     programs.nixcord = {
       enable = true;
 
-      discord.enable = true;
-      equibop.enable = false;
+      discord.enable = false;
+      equibop.enable = true;
       vesktop.enable = false;
 
       discord.equicord.enable = true;
