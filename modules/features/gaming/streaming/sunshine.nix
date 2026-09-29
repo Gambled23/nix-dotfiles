@@ -7,7 +7,7 @@
       openFirewall = true;
       settings = {
         sunshine_name = "el sunchine";
-        csrf_allowed_origins = "https://pc-gambled/,https://dev-gambled/";
+        csrf_allowed_origins = "https://pc-gambled:47990";
       };
       applications = {
         env = {
