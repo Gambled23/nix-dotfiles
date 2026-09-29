@@ -2,7 +2,7 @@
 {
   wayland.windowManager.mango.settings = {
     exec-once = [
-      "steam"
+      # "steam"
       "sleep 10; systemctl --user restart sunshine"
     ];
     monitorrule = [
