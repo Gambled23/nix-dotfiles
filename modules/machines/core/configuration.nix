@@ -81,7 +81,7 @@
         isNormalUser = true;
         initialPassword = "password";
         description = "César Girón";
-        extraGroups = [ "networkmanager" "wheel" "adbusers" "audio" "jackaudio" "dialout" "hass" "i2c" "root" "uinput" "docker" ];
+        extraGroups = [ "networkmanager" "wheel" "adbusers" "audio" "jackaudio" "dialout" "hass" "i2c" "root" "uinput" "docker" "video" "render" ];
       };
     };
     users.defaultUserShell = pkgs.zsh;
