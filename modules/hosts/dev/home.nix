@@ -28,7 +28,7 @@
       # bruno
       # awscli
       # winboat
-
+      herdr
       remmina
       mariadb
       # android-studio
