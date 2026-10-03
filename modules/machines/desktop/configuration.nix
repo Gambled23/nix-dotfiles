@@ -6,6 +6,7 @@
       self.nixosModules.mangowm
       self.nixosModules.desktopScripts
       self.nixosModules.skwd
+      inputs.vicinae.nixosModules.default
     ];
 
     environment.systemPackages = with pkgs; [    
@@ -45,8 +46,12 @@
     hardware.graphics = {
       enable = true;
       enable32Bit = true;
-      extraPackages = with pkgs; [gamemode];
       extraPackages32 = with pkgs; [gamemode];
+      extraPackages = with pkgs; [
+        vulkan-loader
+        vulkan-validation-layers
+        gamemode
+      ];
     };
     hardware.amdgpu.initrd.enable = true;
     services.xserver.videoDrivers = ["modesetting"];
