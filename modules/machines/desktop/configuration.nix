@@ -9,6 +9,10 @@
       inputs.vicinae.nixosModules.default
     ];
 
+    programs.vicinae.input-server.package = inputs.vicinae.packages.${pkgs.stdenv.hostPlatform.system}.default.override {
+      gcc15Stdenv = pkgs.stdenv;
+    };
+
     environment.systemPackages = with pkgs; [    
       # Clipboard
       cliphist

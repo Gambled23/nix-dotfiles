@@ -23,8 +23,14 @@
       url = "github:mangowm/mango";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    vicinae.url = "github:vicinaehq/vicinae";
-    vicinae-extensions.url = "github:vicinaehq/extensions";
+    vicinae = {
+      url = "github:vicinaehq/vicinae";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    vicinae-extensions = {
+      url = "github:vicinaehq/extensions";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -71,7 +77,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    skwd.url = "github:liixini/skwd-wall/nix";
+    skwd = {
+      url = "github:liixini/skwd-wall/nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     # moonshine = {
     #   url = "github:hgaiser/moonshine";
