@@ -12,7 +12,10 @@
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     nvf.url = "github:NotAShelf/nvf";
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
-    millennium.url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
+    millennium = {
+      url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     jovian-nixos.url = "github:Jovian-Experiments/Jovian-NixOS";
     noctalia-greeter = {
       url = "github:noctalia-dev/noctalia-greeter";
