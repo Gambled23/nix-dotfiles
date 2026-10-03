@@ -46,15 +46,10 @@
     hardware.graphics = {
       enable = true;
       enable32Bit = true;
-      extraPackages32 = with pkgs; [gamemode];
-      extraPackages = with pkgs; [
-        vulkan-loader
-        vulkan-validation-layers
-        gamemode
-      ];
     };
     hardware.amdgpu.initrd.enable = true;
-    services.xserver.videoDrivers = ["modesetting"];
+    services.xserver.videoDrivers = ["amdgpu"];
+    programs.gamemode.enable = true;
 
     services.pipewire = {
       enable = true;
