@@ -54,6 +54,7 @@
       siyuan
       via
       wdisplays # wlr-randr gui
+      bitwarden-desktop
 
       #* webbrowsers
       google-chrome

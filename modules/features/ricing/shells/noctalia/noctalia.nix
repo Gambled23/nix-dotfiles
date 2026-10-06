@@ -11,6 +11,9 @@
 
     home.packages = with pkgs; [
       inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
+      # playerctl
+      # wlrctl
+      # wireplumber
       slurp
       grim
       hyprpicker
