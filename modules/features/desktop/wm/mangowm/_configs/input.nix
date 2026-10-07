@@ -1,7 +1,7 @@
 {...}:
 {
   wayland.windowManager.mango.settings = {
-    numlockon = 1;
+    numlock_on = 1;
     xkb_rules = {
       layout = "us";
       variant  = "altgr-intl";

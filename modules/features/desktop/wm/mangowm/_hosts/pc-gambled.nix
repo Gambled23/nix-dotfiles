@@ -1,7 +1,7 @@
 {...}:
 {
   wayland.windowManager.mango.settings = {
-    exec-once = [
+    exec_once = [
       # "steam"
       "sleep 10; systemctl --user restart sunshine"
     ];

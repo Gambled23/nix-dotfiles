@@ -1,7 +1,7 @@
 {...}:
 {
   wayland.windowManager.mango.settings = {
-    tagrule = [
+    tag_rule = [
       "id:1,layout_name:scroller,scroller_ignore_proportion_single:0,scroller_default_proportion:0.9"
       "id:2,layout_name:scroller,scroller_ignore_proportion_single:0,scroller_default_proportion:0.75"
       "id:3,layout_name:dwindle"

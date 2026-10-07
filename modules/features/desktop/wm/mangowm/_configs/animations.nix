@@ -30,8 +30,8 @@
     layer_animation_type_close = "slide";
 
     # Fade Settings
-    fadein_begin_opacity = 1.0;
-    fadeout_begin_opacity = 1.0;
+    fade_in_begin_opacity = 1.0;
+    fade_out_begin_opacity = 1.0;
 
     # Zoom Settings
     zoom_initial_ratio = 0.6;
@@ -50,8 +50,8 @@
     animation_curve_tag = "0.1,1,0,1";
     animation_curve_close = "0.05,0.7,0.1,1";
     animation_curve_focus = "0.46,1.0,0.29,0.99";
-    animation_curve_opafadein = "0.05,0.7,0.1,1";
-    animation_curve_opafadeout = "0.05,0.7,0.1,1";
+    animation_curve_opacity_fade_in = "0.05,0.7,0.1,1";
+    animation_curve_opacity_fade_out = "0.05,0.7,0.1,1";
 
     # Tag Animation Direction (1: horizontal, 0: vertical)
     tag_animation_direction = 1;

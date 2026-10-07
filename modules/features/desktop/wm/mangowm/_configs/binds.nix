@@ -170,7 +170,7 @@ in
     ];
 
     # Keymodes (submaps) for modal keybindings
-    keymode = {
+    key_mode = {
       resize = {
         bind = [
           "NONE,Escape,setkeymode,default"

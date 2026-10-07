@@ -1,10 +1,10 @@
 {...}:
 {
   wayland.windowManager.mango.settings = {
-    gappih = 2;
-    gappiv = 2;
-    gappoh = 0;
-    gappov = 0;
+    gap_inner_horizontal = 2;
+    gap_inner_vertical = 2;
+    gap_outer_horizontal = 0;
+    gap_outer_vertical = 0;
     group_bar_height = 50; # Height of the tab bar for monocle layout.
 
     blur = 1;
@@ -22,7 +22,7 @@
     # layer_animations=0;
 
     border_radius = 12;
-    borderpx=2;
+    border_px=2;
     
     shadows=0;
     layer_shadows=0;
@@ -31,7 +31,7 @@
     shadows_blur=12;
     shadows_position_x=1;
     shadows_position_y=1;
-    shadowscolor="0x000000ff";
+    shadows_color="0x000000ff";
 
     focused_opacity = 1.0;
   };

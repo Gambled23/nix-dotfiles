@@ -66,6 +66,7 @@
       };
 
       extensions = with inputs.vicinae-extensions.packages.${pkgs.stdenv.hostPlatform.system}; [
+        # bluetooth
         nix
         process-manager
         port-killer

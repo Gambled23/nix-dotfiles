@@ -65,7 +65,7 @@
       enable = true;
 
       settings = {
-        exec-once = [
+        exec_once = [
           "systemctl --user restart noctalia"
           "beeper"
           "spotify"
@@ -77,7 +77,7 @@
         enable_floating_snap = 1;
         snap_distance = 30;
         allow_tearing = 1;
-        syncobj_enable = 1; # Enable drm_syncobj timeline support
+        sync_obj_enable = 1; # Enable drm_syncobj timeline support
         tag_carousel = 1;
         drag_tile_to_tile = 1;
         drag_corner = 4;
