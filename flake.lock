@@ -4044,6 +4044,22 @@
     },
     "nixpkgs_37": {
       "locked": {
+        "lastModified": 1790185690,
+        "narHash": "sha256-xJ+X4hBtOcAFGBOe5nAMyMUeF9foJBmIOu3NjBqBycU=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "4975466d324710c576dc11ad614684e6bd8cad8e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_38": {
+      "locked": {
         "lastModified": 1790463110,
         "narHash": "sha256-VZHcT2wKLkApBCACQ2SH4P1jVZUbbOA7jWAGi1MIViw=",
         "rev": "e158d9ed9b51c98974c5e66e1ba1c9e0255fecaa",
@@ -4055,7 +4071,7 @@
         "url": "https://channels.nixos.org/nixos-unstable/nixexprs.tar.xz"
       }
     },
-    "nixpkgs_38": {
+    "nixpkgs_39": {
       "locked": {
         "lastModified": 1787736819,
         "narHash": "sha256-cV5xEJJK3BvhU8rEd4mC9UsmDi5qscv/kzGPhBRC5WA=",
@@ -4586,6 +4602,24 @@
         "type": "github"
       }
     },
+    "omnibin": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_37"
+      },
+      "locked": {
+        "lastModified": 1791305452,
+        "narHash": "sha256-0+cvDVr7A7kf3AnwlbCyA++vrPt0MHu6PYQ8kT36fQk=",
+        "owner": "fzakaria",
+        "repo": "omnibin",
+        "rev": "c9d3431bbb8d7d1229c508bd7b2251b7ed76a6af",
+        "type": "github"
+      },
+      "original": {
+        "owner": "fzakaria",
+        "repo": "omnibin",
+        "type": "github"
+      }
+    },
     "open-bsp-ui": {
       "inputs": {
         "nixpkgs": [
@@ -4708,6 +4742,7 @@
         "noctalia-greeter": "noctalia-greeter_2",
         "nuvio": "nuvio_2",
         "nvf": "nvf_3",
+        "omnibin": "omnibin",
         "skwd": "skwd_2",
         "sls-steam": "sls-steam_5",
         "spicetify-nix": "spicetify-nix_3",
@@ -5121,7 +5156,7 @@
     },
     "spicetify-nix_3": {
       "inputs": {
-        "nixpkgs": "nixpkgs_37",
+        "nixpkgs": "nixpkgs_38",
         "systems": "systems_18"
       },
       "locked": {
@@ -5140,7 +5175,7 @@
     },
     "spotifast": {
       "inputs": {
-        "nixpkgs": "nixpkgs_38",
+        "nixpkgs": "nixpkgs_39",
         "rust-overlay": "rust-overlay_2"
       },
       "locked": {

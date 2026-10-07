@@ -63,7 +63,8 @@ in
       "SUPER,x,togglefloating"
       "SUPER,c,spawn,antigravity-ide"
       "SUPER,v,spawn,${terminal} --class vim -e vim"
-      "SUPER,b,spawn,flatpak run com.artemchep.keyguard"
+      # "SUPER,b,spawn,flatpak run com.artemchep.keyguard"
+      "SUPER,b,spawn,bitwarden"
       "SUPER,n,spawn,${terminal} --class nix-rbd -e nix-rbd"
       "SUPER,m,spawn,${noctalia_ipc} session lock"
 

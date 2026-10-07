@@ -5,6 +5,7 @@
     nuvio.url = "github:SUBHAM-ROY/nixpkgs/nuvio";
     flake-parts.url = "github:hercules-ci/flake-parts";
     import-tree.url = "github:vic/import-tree";
+    omnibin.url = "github:fzakaria/omnibin";
     
     nixcord.url = "github:kaylorben/nixcord";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
