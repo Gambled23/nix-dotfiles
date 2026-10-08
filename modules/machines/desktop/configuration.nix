@@ -5,7 +5,7 @@
       self.nixosModules.noctaliaGreeter
       self.nixosModules.mangowm
       self.nixosModules.desktopScripts
-      self.nixosModules.skwd
+      # self.nixosModules.skwd
       inputs.vicinae.nixosModules.default
     ];
 

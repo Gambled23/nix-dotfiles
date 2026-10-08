@@ -9,7 +9,10 @@
     
     nixcord.url = "github:kaylorben/nixcord";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
-    spotifast.url = "github:crmne/spotifast";
+    spotifast = {
+      url = "github:crmne/spotifast";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
     nvf.url = "github:NotAShelf/nvf";
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
