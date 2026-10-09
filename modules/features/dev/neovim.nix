@@ -65,15 +65,20 @@
           };
         };
 
-        vim.extraPlugins = with pkgs.vimPlugins; {
-          barbar-nvim = {
-            package = barbar-nvim;
+        vim.tabline = {
+          nvimBufferline = {
+            enable = true;
+            mappings = {
+              cycleNext = "<leader>bn";
+              cyclePrevious = "<leader>bp";
+              closeCurrent = "<leader>bq";
+            };
           };
         };
 
         vim.filetree = {
           neo-tree = {
-            enable = true;
+            enable = true;                    
           };
         };
 
@@ -85,6 +90,30 @@
           mapleader = " ";
           maplocalleader = ","; 
         };
+
+        vim.keymaps = [
+          {
+            key = "<leader>wq";
+            mode = ["n"];
+            action = ":wq<CR>";
+            silent = true;
+            desc = "Save file and quit";
+          }
+          {
+            key = "<leader>q";
+            mode = ["n"];
+            action = ":q!<CR>";
+            silent = true;
+            desc = "Force quit";
+          }
+          {
+            key = "<leader>e";
+            mode = ["n"];
+            action = ":Neotree toggle<CR>";
+            silent = true;
+            desc = "Toggle neo-tree";
+          }
+        ];
 
         vim.languages = {
           enableFormat = true;

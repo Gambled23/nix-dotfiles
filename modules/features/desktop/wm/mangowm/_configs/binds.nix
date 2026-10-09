@@ -3,13 +3,15 @@ let
   scrcpy-desktop-mode = "scrcpy-desktop-mode";
   terminal="${pkgs.kitty}/bin/kitty";
   modal_terminal="${pkgs.kitty}/bin/kitten quick-access-terminal";
-  file_manager = "${terminal} --class yazi -e ${pkgs.yazi}/bin/yazi";
+  file_manager = "${terminal} --class yazi zsh -ic \"y; exec zsh\" ";
   menu = "vicinae toggle";
   web_browser = "google-chrome-stable";
   noctalia_ipc = "noctalia msg";
 in 
 {
   wayland.windowManager.mango.settings = {
+    focus_cross_monitor = 1;
+    exchange_cross_monitor = 1;
     # Use lists for duplicate keys like bind and tagrule
     bind = [
       # Tags
@@ -65,7 +67,7 @@ in
       "SUPER,v,spawn,${terminal} --class vim -e vim"
       # "SUPER,b,spawn,flatpak run com.artemchep.keyguard"
       "SUPER,b,spawn,bitwarden"
-      "SUPER,n,spawn,${terminal} --class nix-rbd -e nix-rbd"
+      "SUPER,n,spawn,${terminal} --class nix-rbd -e nh os switch"
       "SUPER,m,spawn,${noctalia_ipc} session lock"
 
 
