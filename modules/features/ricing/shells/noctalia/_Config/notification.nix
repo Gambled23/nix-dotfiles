@@ -4,8 +4,11 @@
     notification = {
       background_opacity = 0.25;
       border = true;
+      border_color = "outline";
+      border_width = 1.0;
       collapse_on_dismiss = true;
       enable_daemon = true;
+      follow_focused_output = false;
       history_retention_hours = 0;
       keep_dismissed_in_history = true;
       layer = "top";
@@ -17,6 +20,7 @@
       scale = 1.0;
       show_actions = true;
       show_app_name = true;
+      width = 360;
     };
   };
 }

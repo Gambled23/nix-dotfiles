@@ -9,11 +9,13 @@
         border = "outline";
         border_width = 0.0;
         capsule = false;
+        capsule_border_width = 1.0;
         capsule_fill = "surface_variant";
         capsule_opacity = 1.0;
         capsule_padding = 6.0;
         capsule_thickness = 0.7599999904632568;
-        center = [ "group:g1" ];
+        center = [ "group:g1" "usage" ];
+        compositor_blur = true;
         concave_edge_corners = false;
         contact_shadow = false;
         enabled = true;
@@ -51,11 +53,13 @@
             border = "outline";
             border_width = 0.0;
             capsule = false;
+            capsule_border_width = 1.0;
             capsule_fill = "surface_variant";
             capsule_opacity = 1.0;
             capsule_padding = 6.0;
             capsule_thickness = 0.7599999904632568;
             center = [ "group:g1" ];
+            compositor_blur = true;
             concave_edge_corners = false;
             contact_shadow = false;
             enabled = true;
@@ -89,6 +93,7 @@
             capsule_group = [ {
               accordion = false;
               accordion_direction = "end";
+              border_width = 1.0;
               enabled = true;
               fill = "surface_variant";
               id = "g2";
@@ -98,6 +103,7 @@
             } {
               accordion = false;
               accordion_direction = "end";
+              border_width = 1.0;
               enabled = true;
               fill = "surface_variant";
               id = "g1";
@@ -107,6 +113,7 @@
             } {
               accordion = false;
               accordion_direction = "end";
+              border_width = 1.0;
               enabled = true;
               fill = "surface_variant";
               id = "g3";
@@ -121,12 +128,14 @@
             border = "outline";
             border_width = 0.0;
             capsule = true;
+            capsule_border_width = 1.0;
             capsule_fill = "surface_variant";
             capsule_opacity = 1.0;
             capsule_padding = 8.0;
             capsule_radius = 8.0;
             capsule_thickness = 0.7599999904632568;
             center = [ "group:g1" ];
+            compositor_blur = true;
             concave_edge_corners = false;
             contact_shadow = false;
             enabled = true;
@@ -162,6 +171,7 @@
             capsule_group = [ {
               accordion = false;
               accordion_direction = "end";
+              border_width = 1.0;
               enabled = false;
               fill = "surface_variant";
               id = "g2";
@@ -171,6 +181,7 @@
             } {
               accordion = false;
               accordion_direction = "end";
+              border_width = 1.0;
               enabled = true;
               fill = "surface_variant";
               id = "g1";
@@ -181,6 +192,7 @@
             } {
               accordion = true;
               accordion_direction = "end";
+              border_width = 1.0;
               enabled = true;
               fill = "surface_variant";
               id = "g3";
@@ -194,6 +206,7 @@
         capsule_group = [ {
           accordion = false;
           accordion_direction = "end";
+          border_width = 1.0;
           enabled = true;
           fill = "surface_variant";
           id = "g2";
@@ -203,6 +216,7 @@
         } {
           accordion = false;
           accordion_direction = "end";
+          border_width = 1.0;
           enabled = true;
           fill = "surface_variant";
           id = "g1";
@@ -212,6 +226,7 @@
         } {
           accordion = true;
           accordion_direction = "end";
+          border_width = 1.0;
           enabled = true;
           fill = "surface_variant";
           id = "g3";

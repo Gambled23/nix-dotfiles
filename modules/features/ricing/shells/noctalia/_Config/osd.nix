@@ -4,7 +4,11 @@
     osd = {
       background_opacity = 0.09999999403953552;
       border = true;
+      border_color = "outline";
+      border_width = 1.0;
       enabled = true;
+      follow_focused_output = false;
+      hide_delay_ms = 1400;
       monitors = [  ];
       offset_x = 20;
       offset_y = 8;

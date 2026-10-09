@@ -4,7 +4,7 @@
     desktop_widgets = {
       enabled = true;
       schema_version = 2;
-      widget_order = [ "desktop-widget-0000000000000001" "desktop-widget-0000000000000005" ];
+      widget_order = [ "desktop-widget-0000000000000006" "desktop-widget-0000000000000001" "desktop-widget-0000000000000005" "desktop-widget-0000000000000007" "desktop-widget-0000000000000008" "desktop-widget-0000000000000009" "desktop-widget-000000000000000a" "desktop-widget-000000000000000b" "desktop-widget-000000000000000c" "desktop-widget-000000000000000d" "desktop-widget-000000000000000e" "desktop-widget-000000000000000f" "desktop-widget-0000000000000012" "desktop-widget-0000000000000013" "desktop-widget-0000000000000014" "desktop-widget-0000000000000015" ];
       grid = {
         cell_size = 16;
         major_interval = 4;
@@ -18,8 +18,8 @@
           cy = 218.0;
           enabled = true;
           output = "DP-3";
-          placement_height = 1440.0;
-          placement_width = 3440.0;
+          placement_height = 0.0;
+          placement_width = 0.0;
           rotation = 0.0;
           type = "media_player";
           settings = {
@@ -29,16 +29,243 @@
         desktop-widget-0000000000000005 = {
           box_height = 256.0;
           box_width = 464.0;
-          cx = 3079.999755859375;
+          cx = 3080.0;
           cy = 1232.0;
           enabled = true;
           output = "DP-3";
-          placement_height = 1440.0;
-          placement_width = 3440.0;
+          placement_height = 0.0;
+          placement_width = 0.0;
           rotation = 0.0;
           type = "clock";
           settings = {
             
+          };
+        };
+        desktop-widget-0000000000000006 = {
+          box_height = 336.0;
+          box_width = 864.0;
+          cx = 960.0;
+          cy = 220.0;
+          enabled = true;
+          output = "HDMI-A-1";
+          placement_height = 1080.0;
+          placement_width = 1920.0;
+          rotation = 0.0;
+          type = "clock";
+          settings = {
+            clock_style = "digital";
+            format = "{:%H:%M}";
+          };
+        };
+        desktop-widget-0000000000000007 = {
+          box_height = 96.0;
+          box_width = 208.0;
+          cx = 1752.0;
+          cy = 1004.0;
+          enabled = true;
+          output = "HDMI-A-1";
+          placement_height = 1080.0;
+          placement_width = 1920.0;
+          rotation = 0.0;
+          type = "weather";
+          settings = {
+            
+          };
+        };
+        desktop-widget-0000000000000008 = {
+          box_height = 160.0;
+          box_width = 368.0;
+          cx = 848.0;
+          cy = 956.0;
+          enabled = true;
+          output = "HDMI-A-1";
+          placement_height = 1080.0;
+          placement_width = 1920.0;
+          rotation = 0.0;
+          type = "media_player";
+          settings = {
+            
+          };
+        };
+        desktop-widget-0000000000000009 = {
+          box_height = 256.0;
+          box_width = 768.0;
+          cx = 960.0;
+          cy = 216.0;
+          enabled = true;
+          output = "eDP-1";
+          placement_height = 1200.0;
+          placement_width = 1920.0;
+          rotation = 0.0;
+          type = "clock";
+          settings = {
+            
+          };
+        };
+        desktop-widget-000000000000000a = {
+          box_height = 224.0;
+          box_width = 528.0;
+          cx = 1592.0;
+          cy = 1064.0;
+          enabled = true;
+          output = "eDP-1";
+          placement_height = 1200.0;
+          placement_width = 1920.0;
+          rotation = 0.0;
+          type = "media_player";
+          settings = {
+            
+          };
+        };
+        desktop-widget-000000000000000b = {
+          box_height = 64.0;
+          box_width = 128.0;
+          cx = 672.0;
+          cy = 424.0;
+          enabled = true;
+          output = "eDP-1";
+          placement_height = 1200.0;
+          placement_width = 1920.0;
+          rotation = 0.0;
+          type = "sysmon";
+          settings = {
+            display = "gauge";
+            gauge_layout = "horizontal";
+            stat = "ram_pct";
+            stat2 = "cpu_temp";
+          };
+        };
+        desktop-widget-000000000000000c = {
+          box_height = 64.0;
+          box_width = 128.0;
+          cx = 1248.0;
+          cy = 424.0;
+          enabled = true;
+          output = "eDP-1";
+          placement_height = 1200.0;
+          placement_width = 1920.0;
+          rotation = 0.0;
+          type = "sysmon";
+          settings = {
+            display = "gauge";
+            gauge_layout = "horizontal";
+            stat = "cpu_temp";
+            stat2 = "cpu_temp";
+          };
+        };
+        desktop-widget-000000000000000d = {
+          box_height = 64.0;
+          box_width = 128.0;
+          cx = 1056.0;
+          cy = 424.0;
+          enabled = true;
+          output = "eDP-1";
+          placement_height = 1200.0;
+          placement_width = 1920.0;
+          rotation = 0.0;
+          type = "sysmon";
+          settings = {
+            display = "gauge";
+            gauge_layout = "horizontal";
+            stat = "cpu_usage";
+            stat2 = "cpu_temp";
+          };
+        };
+        desktop-widget-000000000000000e = {
+          box_height = 64.0;
+          box_width = 128.0;
+          cx = 864.0;
+          cy = 424.0;
+          enabled = true;
+          output = "eDP-1";
+          placement_height = 1200.0;
+          placement_width = 1920.0;
+          rotation = 0.0;
+          type = "sysmon";
+          settings = {
+            display = "gauge";
+            gauge_layout = "horizontal";
+            stat = "swap_pct";
+            stat2 = "cpu_temp";
+          };
+        };
+        desktop-widget-000000000000000f = {
+          box_height = 128.0;
+          box_width = 304.0;
+          cx = 176.0;
+          cy = 1112.0;
+          enabled = true;
+          output = "eDP-1";
+          placement_height = 1200.0;
+          placement_width = 1920.0;
+          rotation = 0.0;
+          type = "yocraft/battery-widget:widget";
+          settings = {
+            
+          };
+        };
+        desktop-widget-0000000000000012 = {
+          box_height = 336.0;
+          box_width = 176.0;
+          cx = 671.3792114257812;
+          cy = 740.3505859375;
+          enabled = true;
+          output = "eDP-1";
+          placement_height = 1200.0;
+          placement_width = 1920.0;
+          rotation = -0.052046999335289;
+          type = "remo/noctes:note";
+          settings = {
+            background = false;
+            key = "nota-1";
+            paper_height = 286;
+            paper_width = 151;
+          };
+        };
+        desktop-widget-0000000000000013 = {
+          box_height = 160.0;
+          box_width = 208.0;
+          cx = 1152.0;
+          cy = 956.0;
+          enabled = true;
+          output = "HDMI-A-1";
+          placement_height = 1080.0;
+          placement_width = 1920.0;
+          rotation = 0.0;
+          type = "volume";
+          settings = {
+            
+          };
+        };
+        desktop-widget-0000000000000014 = {
+          box_height = 0.0;
+          box_width = 0.0;
+          cx = 1548.0;
+          cy = 715.0;
+          enabled = true;
+          output = "eDP-1";
+          placement_height = 1200.0;
+          placement_width = 1920.0;
+          rotation = 0.0;
+          type = "calendar";
+          settings = {
+            
+          };
+        };
+        desktop-widget-0000000000000015 = {
+          box_height = 0.0;
+          box_width = 0.0;
+          cx = 170.0;
+          cy = 410.0;
+          enabled = true;
+          output = "eDP-1";
+          placement_height = 1200.0;
+          placement_width = 1920.0;
+          rotation = 0.02806999906897545;
+          type = "remo/noctes:note";
+          settings = {
+            background = false;
+            key = "nota-2";
           };
         };
       };

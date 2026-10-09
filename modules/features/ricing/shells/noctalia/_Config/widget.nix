@@ -28,7 +28,7 @@
       };
       bar_5 = {
         text = "";
-        type = "dunarand/bookmarks:bar";
+        type = "prponkshe/mango-displays:bar";
       };
       bar_6 = {
         type = "baizhu/paged-todo:bar";
@@ -102,10 +102,16 @@
         anchor = true;
         art_size = 16.0;
         hide_when_no_media = true;
-        max_length = 308;
+        max_length = 300;
         min_length = 0;
         title_scroll = "on_hover";
         type = "media";
+      };
+      media_2 = {
+        anchor = true;
+        point_style = "rounded";
+        scroll_action = "tracks";
+        type = "pulser/hover-widgets:media";
       };
       network_rx = {
         stat = "net_rx";
@@ -171,6 +177,9 @@
         pinned = [ "steam" "KDE Connect Indicator" ];
         type = "tray";
       };
+      usage = {
+        type = "ayagmar/headroom:usage";
+      };
       vicinae = {
         capsule = true;
         capsule_padding = 3.0;
@@ -190,6 +199,12 @@
           scroll_up = "volume-up 1%";
         };
       };
+      volume_2 = {
+        capsule = true;
+        icon_click = "panel";
+        scroll_step = 1;
+        type = "pulser/hover-widgets:volume";
+      };
       wallhaven = {
         type = "noctalia/wallhaven:wallhaven";
       };
@@ -208,7 +223,7 @@
         type = "weinguyen/procmon:widget";
       };
       widget_3 = {
-        type = "alexander/screen-toolkit:widget";
+        type = "tphilippot/git_companion:widget";
       };
       widget_4 = {
         type = "autumn/network-toolkit:widget";

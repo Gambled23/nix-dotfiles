@@ -27,7 +27,9 @@
       polkit_agent = true;
       popup_borders = true;
       popup_shadows = true;
+      readline_shortcuts = false;
       screen_time_enabled = true;
+      settings_expand_all_groups = false;
       settings_show_advanced = true;
       settings_window_translucent = false;
       setup_wizard_enabled = true;
@@ -186,7 +188,9 @@
         direction = "down";
       };
       window_switcher = {
+        current_workspace_only = false;
         mru = false;
+        show_all_outputs = true;
         show_app_icon = true;
         show_caption = true;
         show_count = true;
