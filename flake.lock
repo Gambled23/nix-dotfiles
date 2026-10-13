@@ -163,8 +163,8 @@
         "sops-nix": "sops-nix_2"
       },
       "locked": {
-        "lastModified": 1791484149,
-        "narHash": "sha256-oygdPlAuSOQPwtJsYbPudmh0cD1q4W7RxgHzaR4coFQ=",
+        "lastModified": 1791819367,
+        "narHash": "sha256-dczHQabiuayixHRoX9hJP5vE9OnfHN8/S7zgS872Ebs=",
         "path": "/home/gambled/Codes/nixos-alpha-server",
         "type": "path"
       },
@@ -2501,11 +2501,11 @@
         "scenefx": "scenefx_2"
       },
       "locked": {
-        "lastModified": 1791554003,
-        "narHash": "sha256-BLMPcWUQrx467bV2HMHNRf940+Ej1jGELPe27XrPEos=",
+        "lastModified": 1791892562,
+        "narHash": "sha256-lD8sehdmMunRSkpFoDnKJxrgrmxPVknPnUU5B54D3Qg=",
         "owner": "mangowm",
         "repo": "mango",
-        "rev": "1ab3fd1493508e794bc876a0e570e663c6f68622",
+        "rev": "732d9f8890aca8ace1c47f64a75689f57a7f388c",
         "type": "github"
       },
       "original": {
