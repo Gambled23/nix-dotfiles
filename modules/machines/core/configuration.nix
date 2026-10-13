@@ -8,7 +8,7 @@
       self.nixosModules.ssh
       self.nixosModules.syncthing
       self.nixosModules.tailscale
-      self.nixosModules.zerotier
+      # self.nixosModules.zerotier
       self.nixosModules.themeOptions
     ];
     
