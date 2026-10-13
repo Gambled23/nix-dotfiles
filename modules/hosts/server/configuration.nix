@@ -11,7 +11,7 @@
       self.nixosModules.homepageDashboard
       # self.nixosModules.codeServer
       self.nixosModules.nginx
-      self.nixosModules.pihole
+      # self.nixosModules.pihole
       self.nixosModules.vaultwarden
       self.nixosModules.server-gambledModule
     ];
@@ -23,7 +23,7 @@
 
     networking.networkmanager = {
       insertNameservers = [ 
-        "192.168.1.27"
+        # "192.168.1.27"
         "1.1.1.1"
         "8.8.8.8" 
       ];
