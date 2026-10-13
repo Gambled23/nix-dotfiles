@@ -7,6 +7,7 @@
       
       self.nixosModules.ssh
       self.nixosModules.syncthing
+      self.nixosModules.tailscale
       self.nixosModules.zerotier
       self.nixosModules.themeOptions
     ];
@@ -37,11 +38,12 @@
       98.89.51.199 www.ida-imagenologia.com
       192.168.1.1 router
 
-      10.243.0.1 server-gambled
-      10.243.0.2 pc-gambled
-      10.243.0.3 android-gambled
-      10.243.0.4 dev-gambled
-      10.243.0.5 steamdeck
+      # ZeroTier static IPs (Tailscale MagicDNS resolves machine names automatically)
+      # 10.243.0.1 server-gambled
+      # 10.243.0.2 pc-gambled
+      # 10.243.0.3 android-gambled
+      # 10.243.0.4 dev-gambled
+      # 10.243.0.5 steamdeck
     '';
 
     hardware.bluetooth = {

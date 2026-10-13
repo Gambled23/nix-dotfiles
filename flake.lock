@@ -163,8 +163,8 @@
         "sops-nix": "sops-nix_2"
       },
       "locked": {
-        "lastModified": 1791819367,
-        "narHash": "sha256-dczHQabiuayixHRoX9hJP5vE9OnfHN8/S7zgS872Ebs=",
+        "lastModified": 1791916326,
+        "narHash": "sha256-Q1/lfn4iQbJigjHrS0AoVqbNZ8KGD0KhioA/ObsgDZQ=",
         "path": "/home/gambled/Codes/nixos-alpha-server",
         "type": "path"
       },
@@ -2162,11 +2162,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1791395819,
-        "narHash": "sha256-mOPzOA4/mfZScb8Tv07eU9Leihrr+jffRRr5OQqer5s=",
+        "lastModified": 1791586061,
+        "narHash": "sha256-ZBQQ74ihFPKIdvSOP5w2I1B2R2yjmqIla4sEDPqPuD4=",
         "ref": "refs/heads/production",
-        "rev": "6273e195c94759a4525589c546adfc146b9b264f",
-        "revCount": 307,
+        "rev": "4ebaa9a2911956db51689134c5cfd4d79bed216c",
+        "revCount": 345,
         "type": "git",
         "url": "file:///home/alpha/identity"
       },
