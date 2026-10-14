@@ -116,11 +116,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1790639462,
-        "narHash": "sha256-LQz25OwflZ+nQUX2IbA2/7GjLlOhWykpTf47MZcaadI=",
+        "lastModified": 1791929939,
+        "narHash": "sha256-hvvTRz9fNeN0GE0NsqhJFSe/J86DJ6k+vGSNvkwWSOs=",
         "ref": "refs/heads/production",
-        "rev": "4c378f001c260027b5b6188c48cc4076dd74436c",
-        "revCount": 1998,
+        "rev": "01fcd63fc26bb9eef6fdda0039f393455a45ea91",
+        "revCount": 2004,
         "type": "git",
         "url": "file:///home/alpha/administrativo"
       },
@@ -163,8 +163,8 @@
         "sops-nix": "sops-nix_2"
       },
       "locked": {
-        "lastModified": 1791916326,
-        "narHash": "sha256-Q1/lfn4iQbJigjHrS0AoVqbNZ8KGD0KhioA/ObsgDZQ=",
+        "lastModified": 1791995160,
+        "narHash": "sha256-tgRjMEbckW3hiNB5+FFJnBmlV2KNsVaTbLhQodqbrXE=",
         "path": "/home/gambled/Codes/nixos-alpha-server",
         "type": "path"
       },
@@ -620,11 +620,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1790638871,
-        "narHash": "sha256-sI7RvlhVft98pUYjnXscfTnr5mtzQ44HiseNbNNLFp0=",
+        "lastModified": 1791929928,
+        "narHash": "sha256-gHxukYbDaRqVz/kDYVjeQ045GgvHM3LZQ8LEuDfu8HY=",
         "ref": "refs/heads/production",
-        "rev": "122ea6e8d2adc52cd6608fe413ef200ccbb3f5b2",
-        "revCount": 329,
+        "rev": "7c1d85102fbcaa6a830931d5b58aa0e49889857a",
+        "revCount": 335,
         "type": "git",
         "url": "file:///home/alpha/factorio"
       },
@@ -690,11 +690,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1790639485,
-        "narHash": "sha256-KWU7r1pLwyOnHKyTPFYAAuF8L9X9U5Vqvuw2Pcj8j6E=",
+        "lastModified": 1791929935,
+        "narHash": "sha256-fxUVe+sYDSxQ4cHhqj5HmDfgM3WC+EmCCfFyemu7s0Q=",
         "ref": "refs/heads/production",
-        "rev": "c7d9e81c8127b33de719ad46343f82d73730e2f2",
-        "revCount": 1044,
+        "rev": "3a0d97ece2461f19713d10b3edb1f5bd00f61f83",
+        "revCount": 1051,
         "type": "git",
         "url": "file:///home/alpha/financiero"
       },
@@ -2162,11 +2162,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1791586061,
-        "narHash": "sha256-ZBQQ74ihFPKIdvSOP5w2I1B2R2yjmqIla4sEDPqPuD4=",
+        "lastModified": 1791929869,
+        "narHash": "sha256-fp+KMySJYnvdFFBvgl8tuzNZqvc8kAlxfHRgpkv+LI4=",
         "ref": "refs/heads/production",
-        "rev": "4ebaa9a2911956db51689134c5cfd4d79bed216c",
-        "revCount": 345,
+        "rev": "09bcc4e8423e452d4bd29e66cd99f8b62b2f814f",
+        "revCount": 375,
         "type": "git",
         "url": "file:///home/alpha/identity"
       },
@@ -2730,11 +2730,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1788801399,
-        "narHash": "sha256-RHhf/GMxPb04cW7DrpRGssVqb3o+U3Jm899314ZOh7s=",
+        "lastModified": 1791929865,
+        "narHash": "sha256-usC8Q27tv5r0GOTOellOwCjSyj/OKszU22gl4EPljSk=",
         "ref": "refs/heads/main",
-        "rev": "a5f5e3155e8ef4b326616c67b79a35b88d2943f3",
-        "revCount": 56,
+        "rev": "3f1df32c2a51dcb55cccc940999e2f11410a6037",
+        "revCount": 61,
         "type": "git",
         "url": "file:///home/alpha/mindcare-app"
       },
@@ -4646,11 +4646,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1790876256,
-        "narHash": "sha256-YZx2NczrZ2dz06VLENZa8wUIHiWwvR7jSZyxkPu4tXs=",
+        "lastModified": 1791927858,
+        "narHash": "sha256-wW8dCCh2Jp2f6NmKmCuTqRKHNO8kqpSMvk7c2EdOP48=",
         "ref": "refs/heads/main",
-        "rev": "26ee6e9e152a2683edbdc8096333052c2bf78e9c",
-        "revCount": 219,
+        "rev": "e45b1f6001ccb13d18ed4ba3e03e795a2dbbbad6",
+        "revCount": 222,
         "type": "git",
         "url": "file:///home/alpha/open-bsp-ui"
       },
