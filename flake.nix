@@ -2,7 +2,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     yazi-relative-motions.url = "github:Gambled23/nixpkgs/yazi-relative-motions";
-    nuvio.url = "github:SUBHAM-ROY/nixpkgs/nuvio";
+    nuvio.url = "github:griffi-gh/nixpkgs/init-nuvio";
     flake-parts.url = "github:hercules-ci/flake-parts";
     import-tree.url = "github:vic/import-tree";
     omnibin.url = "github:fzakaria/omnibin";

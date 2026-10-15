@@ -12,6 +12,7 @@
       self.nixosModules.machineDesktop
       self.nixosModules.bootGrub
       self.nixosModules.docker
+      self.nixosModules.printing 
     ];
   };
 

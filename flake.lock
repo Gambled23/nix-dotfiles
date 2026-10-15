@@ -4543,16 +4543,16 @@
     },
     "nuvio_2": {
       "locked": {
-        "lastModified": 1790547744,
-        "narHash": "sha256-kZWNWcge0HbdxBww7aDga4oF9LlPsjE7j19DUAfs+NU=",
-        "owner": "SUBHAM-ROY",
+        "lastModified": 1792099446,
+        "narHash": "sha256-oMgAvSvOhyKJQYXiMqdGphraVYfTmIsh97owNBzFCVc=",
+        "owner": "griffi-gh",
         "repo": "nixpkgs",
-        "rev": "6c250f6d7f39df95711de706cf8a00e5e6e162a7",
+        "rev": "784c5882dc14ac49d92b904f76963d1155664c3b",
         "type": "github"
       },
       "original": {
-        "owner": "SUBHAM-ROY",
-        "ref": "nuvio",
+        "owner": "griffi-gh",
+        "ref": "init-nuvio",
         "repo": "nixpkgs",
         "type": "github"
       }
