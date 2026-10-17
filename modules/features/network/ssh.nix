@@ -26,7 +26,7 @@
         "alpha-server" = {
           HostName = "ec2-98-89-51-199.compute-1.amazonaws.com";
           User = "alpha";
-          IdentityFile = "~/.ssh/gambled.pem";
+          IdentityFile = "~/.ssh/gambled.pub";
         };
         "opc_host" = {
           HostName = "159.54.132.208";
