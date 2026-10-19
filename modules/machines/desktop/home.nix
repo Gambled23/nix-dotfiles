@@ -40,6 +40,7 @@
       # papirus-icon-theme
 
       # Tools
+      rbw
       android-tools
       gnome-control-center
       gnome-clocks
@@ -74,6 +75,11 @@
       "video/*" = [ "vlc.desktop" ];
       "audio/*" = [ "vlc.desktop" ];
       "text/calendar" = [ "chrome-fmgjjmmmlfnkbppncabfkddbjimcfncm-Default.desktop" ];
+    };
+
+    services.gpg-agent = {
+      enable = true;
+      pinentryPackage = pkgs.pinentry-gnome3;
     };
   };
 }

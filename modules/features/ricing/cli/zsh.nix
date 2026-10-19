@@ -29,6 +29,9 @@
 
         analyze-general-space = ''nix-shell -p ncdu --command "ncdu --exclude /nix -x /"'';
         analyze-nix-space = ''nix run 'nixpkgs#gdu' /nix/store'';
+
+        ob = "nix run github:fzakaria/omnibin";
+        
       };
       
       initContent = ''

@@ -183,8 +183,11 @@ in
       vicinae = {
         bind = [
           "NONE,Escape,setkeymode,default"
-          "SUPER,Super_L,spawn,${menu}"
+          "SUPER,r,spawn,${menu}"
           "SUPER,p,spawn,vicinae vicinae://launch/@knoopx/vicinae-extension-nix-0/packages"
+          "SUPER,o,spawn,vicinae vicinae://launch/@knoopx/vicinae-extension-nix-0/options"
+          "SUPER,e,spawn,vicinae vicinae://launch/core/search-emojis"
+          "SUPER,k,spawn,vicinae vicinae://launch/@leonkohli/vicinae-extension-process-manager-0/kill"
         ];
       };
       scratchpads = {
