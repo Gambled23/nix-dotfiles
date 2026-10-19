@@ -77,9 +77,9 @@
       "text/calendar" = [ "chrome-fmgjjmmmlfnkbppncabfkddbjimcfncm-Default.desktop" ];
     };
 
-    services.gpg-agent = {
-      enable = true;
-      pinentryPackage = pkgs.pinentry-gnome3;
-    };
+    # services.gpg-agent = {
+    #   enable = true;
+    #   pinentryPackage = pkgs.pinentry-gnome3;
+    # };
   };
 }
