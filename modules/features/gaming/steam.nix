@@ -22,6 +22,7 @@ let
     2124120 # SULFUR 
     1999520 # CATO Buttered Cat 
     4705510 # Happy Wheels
+    3569420 # Chained Beasts  
   ];
 
   sls-config = {
