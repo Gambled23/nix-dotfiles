@@ -3,7 +3,7 @@
 pkgs.writeShellScriptBin "flash-kernelsu" ''
   #!${pkgs.bash}/bin/bash
 
-  # Download init_boot,img
+  # Download init_boot.img
   ota_link=$(curl -s -b "devsite_wall_acks=nexus-ota-tos" "https://developers.google.com/android/ota" \
     | tr -d '\n' \
     | sed 's/<tr/\n<tr/g' \
