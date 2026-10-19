@@ -136,7 +136,6 @@ in
       # Keymaps
       "ALT,c,setkeymode,resize"  
       "ALT,v,setkeymode,vicinae" 
-      "ALT,s,setkeymode,scratchpads" 
     ];
 
     mousebind = [
@@ -188,13 +187,6 @@ in
           "SUPER,o,spawn,vicinae vicinae://launch/@knoopx/vicinae-extension-nix-0/options"
           "SUPER,e,spawn,vicinae vicinae://launch/core/search-emojis"
           "SUPER,k,spawn,vicinae vicinae://launch/@leonkohli/vicinae-extension-process-manager-0/kill"
-        ];
-      };
-      scratchpads = {
-        bind = [
-          "NONE,Escape,setkeymode,default"
-          "SUPER,q,killclient"
-          "SUPER,p,toggle_named_scratchpad,.scrcpy-wrapped,audio,${pkgs.scrcpy}/bin/scrcpy --no-video --no-control --serial=45221FDAS003GN --window-title \"audio\""
         ];
       };
     };

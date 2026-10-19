@@ -136,6 +136,7 @@
     environment.variables = {
       EDITOR = "vim";
       SHELL = "zsh";
+      PAGER = "bat";
     };
 
     programs.dconf.enable = true;

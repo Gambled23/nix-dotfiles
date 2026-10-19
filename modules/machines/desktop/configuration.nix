@@ -76,7 +76,7 @@
         Type = "simple";
         ExecStart = "${pkgs.writeShellScript "launch-scrcpy" ''
           ${pkgs.android-tools}/bin/adb wait-for-device
-          ${pkgs.scrcpy}/bin/scrcpy --no-video --no-control --serial=45221FDAS003GN --window-title "audio"
+          ${pkgs.scrcpy}/bin/scrcpy --no-video --no-window --no-control --serial=45221FDAS003GN
         ''}";
         Restart = "no";
       };
