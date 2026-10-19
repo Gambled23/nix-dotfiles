@@ -34,13 +34,13 @@
     systemd.packages = with pkgs; [ lact ];
     systemd.services.lactd.wantedBy = [ "multi-user.target" ];
 
-    networking.networkmanager = {
-      insertNameservers = [ 
-        # "192.168.1.27"
-        "1.1.1.1"
-        "8.8.8.8" 
-      ];
-    };
+    # networking.networkmanager = {
+    #   insertNameservers = [ 
+    #     "192.168.1.27"
+    #     "1.1.1.1"
+    #     "8.8.8.8" 
+    #   ];
+    # };
 
     home-manager.users.gambled = self.homeModules.pcGambledHomeModule;
   };

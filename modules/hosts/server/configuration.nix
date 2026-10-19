@@ -21,13 +21,13 @@
     system.stateVersion = "26.11";
     networking.hostName = "server-gambled";
 
-    networking.networkmanager = {
-      insertNameservers = [ 
-        # "192.168.1.27"
-        "1.1.1.1"
-        "8.8.8.8" 
-      ];
-    };
+    # networking.networkmanager = {
+    #   insertNameservers = [ 
+    #     "192.168.1.27"
+    #     "1.1.1.1"
+    #     "8.8.8.8" 
+    #   ];
+    # };
 
     nix.settings = {
       max-jobs = 1;
