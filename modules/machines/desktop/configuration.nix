@@ -77,6 +77,7 @@
         ExecStart = "${pkgs.writeShellScript "launch-scrcpy" ''
           ${pkgs.android-tools}/bin/adb wait-for-device
           ${pkgs.scrcpy}/bin/scrcpy --no-video --no-window --no-control --serial=45221FDAS003GN
+          ${pkgs.libnotify}/bin/notify-send "Phone Connected" "Pixel connected" -a "Pixel"  -i "${pkgs.pantheon.elementary-icon-theme}/share/icons/elementary/status/symbolic/process-completed-symbolic.svg"
         ''}";
         Restart = "no";
       };
