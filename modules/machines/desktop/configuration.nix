@@ -76,8 +76,9 @@
         Type = "simple";
         ExecStart = "${pkgs.writeShellScript "launch-scrcpy" ''
           ${pkgs.android-tools}/bin/adb wait-for-device
+          ${pkgs.libnotify}/bin/notify-send "Phone Connected" "Pixel connected" -a "Pixel"  -i "${pkgs.papirus-icon-theme}/share/icons/Papirus/24x24/panel/smartphoneconnected.svg"
           ${pkgs.scrcpy}/bin/scrcpy --no-video --no-window --no-control --serial=45221FDAS003GN
-          ${pkgs.libnotify}/bin/notify-send "Phone Connected" "Pixel connected" -a "Pixel"  -i "${pkgs.pantheon.elementary-icon-theme}/share/icons/elementary/status/symbolic/process-completed-symbolic.svg"
+          ${pkgs.libnotify}/bin/notify-send "Phone Disconnected" "Pixel disconnected" -a "Pixel"  -i "${pkgs.papirus-icon-theme}/share/icons/Papirus/24x24/panel/smartphonedisconnected.svg"
         ''}";
         Restart = "no";
       };
