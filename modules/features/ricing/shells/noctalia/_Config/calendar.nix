@@ -2,6 +2,8 @@
 {
   programs.noctalia.settings = {
     calendar = {
+      dedupe_events = false;
+      dedupe_ignore_patterns = [  ];
       enabled = true;
       event_date_format = "%A %e %B";
       event_time_format = "%H:%M";

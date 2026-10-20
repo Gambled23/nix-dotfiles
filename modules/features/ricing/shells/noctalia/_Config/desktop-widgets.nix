@@ -4,9 +4,9 @@
     desktop_widgets = {
       enabled = true;
       schema_version = 2;
-      widget_order = [ "desktop-widget-0000000000000006" "desktop-widget-0000000000000001" "desktop-widget-0000000000000005" "desktop-widget-0000000000000007" "desktop-widget-0000000000000008" "desktop-widget-0000000000000009" "desktop-widget-000000000000000a" "desktop-widget-000000000000000b" "desktop-widget-000000000000000c" "desktop-widget-000000000000000d" "desktop-widget-000000000000000e" "desktop-widget-000000000000000f" "desktop-widget-0000000000000012" "desktop-widget-0000000000000013" "desktop-widget-0000000000000014" "desktop-widget-0000000000000015" ];
+      widget_order = [ "desktop-widget-0000000000000006" "desktop-widget-0000000000000001" "desktop-widget-0000000000000005" "desktop-widget-0000000000000007" "desktop-widget-0000000000000008" "desktop-widget-0000000000000009" "desktop-widget-000000000000000a" "desktop-widget-000000000000000b" "desktop-widget-000000000000000e" "desktop-widget-000000000000000f" "desktop-widget-0000000000000012" "desktop-widget-0000000000000013" "desktop-widget-0000000000000014" "desktop-widget-0000000000000015" "desktop-widget-0000000000000016" ];
       grid = {
-        cell_size = 16;
+        cell_size = 8;
         major_interval = 4;
         visible = true;
       };
@@ -42,8 +42,8 @@
           };
         };
         desktop-widget-0000000000000006 = {
-          box_height = 336.0;
-          box_width = 864.0;
+          box_height = 344.0;
+          box_width = 896.0;
           cx = 960.0;
           cy = 220.0;
           enabled = true;
@@ -88,10 +88,10 @@
           };
         };
         desktop-widget-0000000000000009 = {
-          box_height = 256.0;
-          box_width = 768.0;
+          box_height = 240.0;
+          box_width = 616.0;
           cx = 960.0;
-          cy = 216.0;
+          cy = 1072.0;
           enabled = true;
           output = "eDP-1";
           placement_height = 1200.0;
@@ -105,8 +105,8 @@
         desktop-widget-000000000000000a = {
           box_height = 224.0;
           box_width = 528.0;
-          cx = 1592.0;
-          cy = 1064.0;
+          cx = 1648.0;
+          cy = 1080.0;
           enabled = true;
           output = "eDP-1";
           placement_height = 1200.0;
@@ -118,82 +118,46 @@
           };
         };
         desktop-widget-000000000000000b = {
-          box_height = 64.0;
-          box_width = 128.0;
-          cx = 672.0;
-          cy = 424.0;
+          box_height = 176.0;
+          box_width = 288.0;
+          cx = 960.0;
+          cy = 500.0;
           enabled = true;
-          output = "eDP-1";
-          placement_height = 1200.0;
+          output = "HDMI-A-1";
+          placement_height = 1080.0;
           placement_width = 1920.0;
           rotation = 0.0;
           type = "sysmon";
           settings = {
-            display = "gauge";
+            display = "graph";
             gauge_layout = "horizontal";
-            stat = "ram_pct";
-            stat2 = "cpu_temp";
-          };
-        };
-        desktop-widget-000000000000000c = {
-          box_height = 64.0;
-          box_width = 128.0;
-          cx = 1248.0;
-          cy = 424.0;
-          enabled = true;
-          output = "eDP-1";
-          placement_height = 1200.0;
-          placement_width = 1920.0;
-          rotation = 0.0;
-          type = "sysmon";
-          settings = {
-            display = "gauge";
-            gauge_layout = "horizontal";
-            stat = "cpu_temp";
-            stat2 = "cpu_temp";
-          };
-        };
-        desktop-widget-000000000000000d = {
-          box_height = 64.0;
-          box_width = 128.0;
-          cx = 1056.0;
-          cy = 424.0;
-          enabled = true;
-          output = "eDP-1";
-          placement_height = 1200.0;
-          placement_width = 1920.0;
-          rotation = 0.0;
-          type = "sysmon";
-          settings = {
-            display = "gauge";
-            gauge_layout = "horizontal";
-            stat = "cpu_usage";
-            stat2 = "cpu_temp";
+            stat = "net_rx";
+            stat2 = "net_tx";
           };
         };
         desktop-widget-000000000000000e = {
-          box_height = 64.0;
-          box_width = 128.0;
-          cx = 864.0;
-          cy = 424.0;
+          box_height = 176.0;
+          box_width = 288.0;
+          cx = 656.0;
+          cy = 500.0;
           enabled = true;
-          output = "eDP-1";
-          placement_height = 1200.0;
+          output = "HDMI-A-1";
+          placement_height = 1080.0;
           placement_width = 1920.0;
           rotation = 0.0;
           type = "sysmon";
           settings = {
-            display = "gauge";
+            display = "graph";
             gauge_layout = "horizontal";
-            stat = "swap_pct";
-            stat2 = "cpu_temp";
+            stat = "ram_pct";
+            stat2 = "swap_pct";
           };
         };
         desktop-widget-000000000000000f = {
           box_height = 128.0;
           box_width = 304.0;
-          cx = 176.0;
-          cy = 1112.0;
+          cx = 352.0;
+          cy = 104.95209503173828;
           enabled = true;
           output = "eDP-1";
           placement_height = 1200.0;
@@ -207,8 +171,8 @@
         desktop-widget-0000000000000012 = {
           box_height = 336.0;
           box_width = 176.0;
-          cx = 671.3792114257812;
-          cy = 740.3505859375;
+          cx = 288.62078857421875;
+          cy = 277.30267333984375;
           enabled = true;
           output = "eDP-1";
           placement_height = 1200.0;
@@ -238,10 +202,10 @@
           };
         };
         desktop-widget-0000000000000014 = {
-          box_height = 0.0;
-          box_width = 0.0;
-          cx = 1548.0;
-          cy = 715.0;
+          box_height = 392.0;
+          box_width = 568.0;
+          cx = 1628.0;
+          cy = 236.0;
           enabled = true;
           output = "eDP-1";
           placement_height = 1200.0;
@@ -255,8 +219,8 @@
         desktop-widget-0000000000000015 = {
           box_height = 0.0;
           box_width = 0.0;
-          cx = 170.0;
-          cy = 410.0;
+          cx = 143.2366943359375;
+          cy = 144.95208740234375;
           enabled = true;
           output = "eDP-1";
           placement_height = 1200.0;
@@ -266,6 +230,23 @@
           settings = {
             background = false;
             key = "nota-2";
+          };
+        };
+        desktop-widget-0000000000000016 = {
+          box_height = 176.0;
+          box_width = 288.0;
+          cx = 1264.0;
+          cy = 500.0;
+          enabled = true;
+          output = "HDMI-A-1";
+          placement_height = 1080.0;
+          placement_width = 1920.0;
+          rotation = 0.0;
+          type = "sysmon";
+          settings = {
+            display = "graph";
+            stat = "cpu_usage";
+            stat2 = "cpu_temp";
           };
         };
       };

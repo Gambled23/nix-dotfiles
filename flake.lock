@@ -5198,11 +5198,11 @@
         "rust-overlay": "rust-overlay_2"
       },
       "locked": {
-        "lastModified": 1792416073,
-        "narHash": "sha256-+e2PrQdj8f2mGoCN4ET4krYlDUj7y0cK/E427E+wslc=",
+        "lastModified": 1792514091,
+        "narHash": "sha256-lFKbAZJBanFaimCP6VfDMnAeKVv8JtF6BldHTTiTh2E=",
         "owner": "crmne",
         "repo": "spotifast",
-        "rev": "d54bf07ff65fbc5289ebd1eeb854b17490bae5fc",
+        "rev": "ebc0341e32fb7591fb9fff8515e17fba279a553c",
         "type": "github"
       },
       "original": {

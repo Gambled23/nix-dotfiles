@@ -8,6 +8,7 @@
       edge_smoothness = 0.30000001192092896;
       enabled = true;
       fingerprint = true;
+      grace_period_seconds = 0;
       lock_before_suspend = true;
       monitors = [  ];
       tint_intensity = 0.14999999105930328;

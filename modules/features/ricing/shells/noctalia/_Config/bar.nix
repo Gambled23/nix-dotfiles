@@ -5,6 +5,7 @@
       order = [ "widgets" ];
       widgets = {
         auto_hide = false;
+        auto_hide_delay_ms = 0;
         background_opacity = 0.29999998211860657;
         border = "outline";
         border_width = 0.0;
@@ -39,6 +40,7 @@
         scale = 1.149999976158142;
         shadow = false;
         show_on_workspace_switch = true;
+        show_tooltip = true;
         smart_auto_hide = false;
         start = [ "vicinae" "workspaces" "group:g3" ];
         thickness = 34;
@@ -49,6 +51,7 @@
         monitor = {
           HDMI-A-1 = {
             auto_hide = false;
+            auto_hide_delay_ms = 0;
             background_opacity = 0.29999998211860657;
             border = "outline";
             border_width = 0.0;
@@ -83,6 +86,7 @@
             scale = 1.149999976158142;
             shadow = false;
             show_on_workspace_switch = true;
+            show_tooltip = true;
             smart_auto_hide = false;
             start = [ "workspaces" "group:g3" "eyecare-widget" "bar_6" ];
             thickness = 34;
@@ -124,6 +128,7 @@
           };
           sunshine = {
             auto_hide = false;
+            auto_hide_delay_ms = 0;
             background_opacity = 0.29999998211860657;
             border = "outline";
             border_width = 0.0;
@@ -159,6 +164,7 @@
             scale = 1.149999976158142;
             shadow = false;
             show_on_workspace_switch = true;
+            show_tooltip = true;
             smart_auto_hide = false;
             start = [ "vicinae" "workspaces" "group:g3" ];
             thickness = 34;

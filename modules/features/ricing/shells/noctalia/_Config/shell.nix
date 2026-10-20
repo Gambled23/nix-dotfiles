@@ -34,9 +34,11 @@
       settings_window_translucent = false;
       setup_wizard_enabled = true;
       shared_gl_context = true;
+      show_close_buttons = true;
       show_location = true;
       telemetry_enabled = false;
       time_format = "{:%H:%M}";
+      umbriel_audio_provider_enabled = false;
       umbriel_overview_type_to_launch_enabled = false;
       animation = {
         enabled = true;
@@ -52,14 +54,22 @@
         app_grid = false;
         auto_paste = "auto";
         categories = true;
+        category_icons_only = false;
         compact = false;
+        default_view = "recent";
         fetch_exchange_rates = true;
+        layout = "full";
         pinned = [  ];
         provider_prefix = "/";
+        search_position = "bottom";
         show_app_actions = false;
         show_app_origin_indicator = true;
         show_icons = true;
+        show_session_button = true;
+        show_settings_button = true;
         sort_by_usage = true;
+        track_usage = true;
+        width = 760;
         dmenu = {
           
         };
@@ -71,6 +81,8 @@
         blacklist = [ "beeper" ];
       };
       panel = {
+        border_color = "outline";
+        border_width = 1.0;
         borders = true;
         clipboard_placement = "floating";
         clipboard_position = "center";
@@ -94,6 +106,7 @@
         transparency_mode = "glass";
         wallpaper_placement = "attached";
         wallpaper_position = "auto";
+        wallpaper_show_names = true;
       };
       privacy = {
         cam_filter_regex = "";
@@ -115,6 +128,7 @@
         freeze_screen = true;
         pipe_command = "";
         pipe_to_command = false;
+        region_modifier = "none";
         remember_last_region = false;
         save_to_file = true;
         show_cursor = false;

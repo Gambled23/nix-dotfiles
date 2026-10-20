@@ -232,11 +232,12 @@
         type = "autumn/network-toolkit:widget";
       };
       workspaces = {
+        active_pill_size = 2.0;
         capsule = true;
         empty_color = "secondary";
         minimal = true;
         occupied_color = "tertiary";
-        style = "minimal";
+        style = "regular";
         type = "workspaces";
       };
     };

@@ -22,12 +22,12 @@
       inputs.antigravity-nix.packages.x86_64-linux.google-antigravity-cli # CLI
       
       #* Media 
-      # inputs.spotifast.packages."${pkgs.stdenv.hostPlatform.system}".default
+      inputs.spotifast.packages."${pkgs.stdenv.hostPlatform.system}".default
       loupe # Image viewer
       vlc
       gimp-with-plugins
-      # (pkgs.callPackage ../../../pkgs/nuvio/package.nix { })
-      inputs.nuvio.legacyPackages.${pkgs.stdenv.hostPlatform.system}.nuvio-desktop
+      (pkgs.callPackage ../../../pkgs/nuvio/package.nix { })
+      # inputs.nuvio.legacyPackages.${pkgs.stdenv.hostPlatform.system}.nuvio-desktop
 
       #* Messaging
       altus
