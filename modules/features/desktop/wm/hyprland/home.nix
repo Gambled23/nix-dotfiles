@@ -2,8 +2,6 @@
   flake.homeModules.hyprlandHome = { config, pkgs, lib, ... }: {
     imports = [
       self.homeModules.hyprlockCards
-      self.homeModules.vicinae
-      self.homeModules.noctaliaHome
     ];
 
     wayland.windowManager.hyprland = {

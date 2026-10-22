@@ -8,6 +8,7 @@
       self.homeModules.nixcord
       self.homeModules.mangowmHome
       self.homeModules.noctaliaHome
+      # self.homeModules.dankmaterialshell
     ];
     
     home.packages = with pkgs; [
@@ -40,12 +41,12 @@
       # papirus-icon-theme
 
       # Tools
-      rbw
+      # rbw
       android-tools
-      gnome-control-center
+      # gnome-control-center
       gnome-clocks
-      gnome-calendar
-      gnome-contacts
+      # gnome-calendar
+      # gnome-contacts
       gparted
       libreoffice-stable
       nautilus
@@ -53,7 +54,7 @@
       scrcpy
       seahorse # gnome keyring manager
       siyuan
-      via
+      # via
       wdisplays # wlr-randr gui
       bitwarden-desktop
 

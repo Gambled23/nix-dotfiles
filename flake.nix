@@ -113,15 +113,15 @@
 
     # ambxst.url = "github:Axenide/Ambxst";
 
-    # dms = {
-    #   url = "github:AvengeMedia/DankMaterialShell/stable";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
+    dms = {
+      url = "github:duxlabs-dev/dux-shell/stable";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
-    # dms-plugin-registry = {
-    #   url = "github:AvengeMedia/dms-plugin-registry";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
+    dms-plugin-registry = {
+      url = "github:AvengeMedia/dms-plugin-registry";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     # zen-browser = {
     #   url = "github:youwen5/zen-browser-flake";
