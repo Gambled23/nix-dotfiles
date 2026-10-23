@@ -105,7 +105,7 @@
         session_placement = "attached";
         session_position = "auto";
         shadow = false;
-        transparency_mode = "glass";
+        transparency_mode = "soft";
         wallpaper_placement = "attached";
         wallpaper_position = "auto";
         wallpaper_show_names = true;
