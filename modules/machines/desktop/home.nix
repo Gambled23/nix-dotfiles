@@ -23,7 +23,6 @@
       inputs.antigravity-nix.packages.x86_64-linux.google-antigravity-cli # CLI
       
       #* Media 
-      inputs.spotifast.packages."${pkgs.stdenv.hostPlatform.system}".default
       loupe # Image viewer
       vlc
       gimp-with-plugins
