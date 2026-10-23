@@ -11,6 +11,8 @@
       account = {
         personal_google = {
           calendars = [  ];
+          client_cert_file = "";
+          client_key_file = "";
           color = "";
           credential_source = "secret-service";
           name = "ipog71";

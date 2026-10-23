@@ -35,7 +35,7 @@
       # jdk25_headless
 
       #* utils
-      inputs.spotifast.packages."${pkgs.stdenv.hostPlatform.system}".default
+      # inputs.spotifast.packages."${pkgs.stdenv.hostPlatform.system}".default
       # moonlight-qt
       gnome-network-displays
 

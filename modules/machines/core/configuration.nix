@@ -107,7 +107,29 @@
     };
 
     nixpkgs.config.allowUnfree = true;
-    nixpkgs.overlays = [ inputs.nixpkgsnur.overlays.default ];
+    nixpkgs.overlays = [
+      inputs.nixpkgsnur.overlays.default
+      # Fix for aggregateModules failure where xpad-noone misses .ko.cer when deterministic module signing (kmodigest) is enabled
+      (final: prev: {
+        linuxKernel = prev.linuxKernel // {
+          packagesFor = kernel: (prev.linuxKernel.packagesFor kernel).extend (kfinal: kprev: {
+            xpad-noone = kprev.xpad-noone.overrideAttrs (old: {
+              setSourceRoot = "export sourceRoot=$(pwd)/" + old.src.name;
+              makeFlags = kprev.kernelModuleMakeFlags ++ [
+                "-C"
+                "${kprev.kernel.dev}/lib/modules/${kprev.kernel.modDirVersion}/build"
+                "M=$(sourceRoot)"
+              ];
+              buildFlags = [ "modules" ];
+              installFlags = [ ("INSTALL_MOD_PATH=" + placeholder "out") ];
+              installTargets = [ "modules_install" ];
+              installPhase = null;
+              postPatch = null;
+            });
+          });
+        };
+      })
+    ];
 
     services.udev = {
       enable = true;

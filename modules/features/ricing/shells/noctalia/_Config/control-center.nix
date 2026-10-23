@@ -2,6 +2,7 @@
 {
   programs.noctalia.settings = {
     control_center = {
+      circular_avatar = true;
       hidden_tabs = [  ];
       show_session_button = true;
       show_shortcut_labels = true;
@@ -11,6 +12,9 @@
       calendar = {
         show_events_card = true;
         show_week_numbers = false;
+      };
+      media = {
+        show_visualizer = true;
       };
       shortcuts = [ {
         type = "icefish/phone-connect:tile";

@@ -46,7 +46,7 @@
         thickness = 34;
         widget_spacing = 6;
         dead_zone = {
-          
+          click_through = false;
         };
         monitor = {
           HDMI-A-1 = {
@@ -92,7 +92,7 @@
             thickness = 34;
             widget_spacing = 6;
             dead_zone = {
-              
+              click_through = false;
             };
             capsule_group = [ {
               accordion = false;
@@ -170,6 +170,7 @@
             thickness = 34;
             widget_spacing = 6;
             dead_zone = {
+              click_through = false;
               actions = {
                 left = "window-switcher";
               };

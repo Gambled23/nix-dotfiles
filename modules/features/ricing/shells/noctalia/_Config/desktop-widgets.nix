@@ -53,6 +53,7 @@
           rotation = 0.0;
           type = "clock";
           settings = {
+            background_opacity = 1.0;
             clock_style = "digital";
             format = "{:%H:%M}";
           };
@@ -69,7 +70,7 @@
           rotation = 0.0;
           type = "weather";
           settings = {
-            
+            background_opacity = 1.0;
           };
         };
         desktop-widget-0000000000000008 = {
@@ -84,7 +85,10 @@
           rotation = 0.0;
           type = "media_player";
           settings = {
-            
+            album_art_background = true;
+            audio_visualizer = true;
+            background_opacity = 1.0;
+            hide_when_no_media = true;
           };
         };
         desktop-widget-0000000000000009 = {
@@ -99,7 +103,7 @@
           rotation = 0.0;
           type = "clock";
           settings = {
-            
+            background_opacity = 1.0;
           };
         };
         desktop-widget-000000000000000a = {
@@ -114,7 +118,11 @@
           rotation = 0.0;
           type = "media_player";
           settings = {
-            
+            album_art_background = true;
+            album_art_blur = 24;
+            audio_visualizer = true;
+            background_opacity = 1.0;
+            hide_when_no_media = true;
           };
         };
         desktop-widget-000000000000000b = {
@@ -129,6 +137,7 @@
           rotation = 0.0;
           type = "sysmon";
           settings = {
+            background_opacity = 1.0;
             display = "graph";
             gauge_layout = "horizontal";
             stat = "net_rx";
@@ -147,6 +156,7 @@
           rotation = 0.0;
           type = "sysmon";
           settings = {
+            background_opacity = 1.0;
             display = "graph";
             gauge_layout = "horizontal";
             stat = "ram_pct";
@@ -165,14 +175,14 @@
           rotation = 0.0;
           type = "yocraft/battery-widget:widget";
           settings = {
-            
+            background_opacity = 1.0;
           };
         };
         desktop-widget-0000000000000012 = {
           box_height = 336.0;
           box_width = 176.0;
-          cx = 288.62078857421875;
-          cy = 277.30267333984375;
+          cx = 208.62078857421875;
+          cy = 299.6494140625;
           enabled = true;
           output = "eDP-1";
           placement_height = 1200.0;
@@ -198,7 +208,8 @@
           rotation = 0.0;
           type = "volume";
           settings = {
-            
+            background_opacity = 1.0;
+            scroll_step = 1;
           };
         };
         desktop-widget-0000000000000014 = {
@@ -213,14 +224,14 @@
           rotation = 0.0;
           type = "calendar";
           settings = {
-            
+            background_opacity = 1.0;
           };
         };
         desktop-widget-0000000000000015 = {
           box_height = 0.0;
           box_width = 0.0;
-          cx = 143.2366943359375;
-          cy = 144.95208740234375;
+          cx = 104.0;
+          cy = 167.04791259765625;
           enabled = true;
           output = "eDP-1";
           placement_height = 1200.0;
@@ -244,6 +255,7 @@
           rotation = 0.0;
           type = "sysmon";
           settings = {
+            background_opacity = 1.0;
             display = "graph";
             stat = "cpu_usage";
             stat2 = "cpu_temp";

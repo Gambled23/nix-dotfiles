@@ -20,6 +20,7 @@
         bluetooth = true;
         brightness = true;
         caffeine = true;
+        custom = true;
         dnd = true;
         keyboard_backlight = true;
         keyboard_layout = true;

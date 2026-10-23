@@ -21,6 +21,7 @@
       input_borders = true;
       launch_apps_as_systemd_services = true;
       launch_apps_custom_command = "";
+      niri_overview_close_on_launch_enabled = false;
       niri_overview_type_to_launch_enabled = false;
       offline_mode = false;
       password_style = "random";
@@ -39,6 +40,7 @@
       telemetry_enabled = false;
       time_format = "{:%H:%M}";
       umbriel_audio_provider_enabled = false;
+      umbriel_overview_close_on_launch_enabled = false;
       umbriel_overview_type_to_launch_enabled = false;
       animation = {
         enabled = true;
@@ -125,13 +127,19 @@
         copy_to_clipboard = true;
         directory = "~/Pictures/Screenshots/";
         filename_pattern = "";
+        format = "png";
         freeze_screen = true;
         pipe_command = "";
         pipe_to_command = false;
+        quality = 90;
+        region_border_width = 2.0;
+        region_dim_opacity = 0.6499999761581421;
         region_modifier = "none";
         remember_last_region = false;
         save_to_file = true;
         show_cursor = false;
+        show_region_dimensions = true;
+        show_region_hint = true;
         skip_annotate_on_copy_save = false;
       };
       session = {
