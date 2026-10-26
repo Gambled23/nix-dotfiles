@@ -38,6 +38,7 @@
       # inputs.spotifast.packages."${pkgs.stdenv.hostPlatform.system}".default
       # moonlight-qt
       gnome-network-displays
+      spotifast
 
       # nchat # whatsapp cli
     ];
