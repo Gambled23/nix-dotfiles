@@ -7,11 +7,11 @@
         auto_hide = false;
         auto_hide_delay_ms = 0;
         background_opacity = 0.29999998211860657;
-        border = "outline";
+        border = "outline_variant";
         border_width = 0.0;
         capsule = false;
         capsule_border_width = 1.0;
-        capsule_fill = "surface_variant";
+        capsule_fill = "surface_container";
         capsule_opacity = 1.0;
         capsule_padding = 6.0;
         capsule_thickness = 0.7599999904632568;
@@ -53,11 +53,11 @@
             auto_hide = false;
             auto_hide_delay_ms = 0;
             background_opacity = 0.29999998211860657;
-            border = "outline";
+            border = "outline_variant";
             border_width = 0.0;
             capsule = false;
             capsule_border_width = 1.0;
-            capsule_fill = "surface_variant";
+            capsule_fill = "surface_container";
             capsule_opacity = 1.0;
             capsule_padding = 6.0;
             capsule_thickness = 0.7599999904632568;
@@ -99,7 +99,7 @@
               accordion_direction = "end";
               border_width = 1.0;
               enabled = true;
-              fill = "surface_variant";
+              fill = "surface_container";
               id = "g2";
               members = [ "battery" "clipboard" "bluetooth" "brightness" ];
               opacity = 1.0;
@@ -109,7 +109,7 @@
               accordion_direction = "end";
               border_width = 1.0;
               enabled = true;
-              fill = "surface_variant";
+              fill = "surface_container";
               id = "g1";
               members = [ "clock" "media" "notifications" "privacy" "mangowm-keymode" ];
               opacity = 1.0;
@@ -119,7 +119,7 @@
               accordion_direction = "end";
               border_width = 1.0;
               enabled = true;
-              fill = "surface_variant";
+              fill = "surface_container";
               id = "g3";
               members = [ "widget" "widget_2" "widget_3" "inbox" ];
               opacity = 1.0;
@@ -130,11 +130,11 @@
             auto_hide = false;
             auto_hide_delay_ms = 0;
             background_opacity = 0.29999998211860657;
-            border = "outline";
+            border = "outline_variant";
             border_width = 0.0;
             capsule = true;
             capsule_border_width = 1.0;
-            capsule_fill = "surface_variant";
+            capsule_fill = "surface_container";
             capsule_opacity = 1.0;
             capsule_padding = 8.0;
             capsule_radius = 8.0;
@@ -180,7 +180,7 @@
               accordion_direction = "end";
               border_width = 1.0;
               enabled = false;
-              fill = "surface_variant";
+              fill = "surface_container";
               id = "g2";
               members = [ "clipboard" "bluetooth" ];
               opacity = 1.0;
@@ -190,7 +190,7 @@
               accordion_direction = "end";
               border_width = 1.0;
               enabled = true;
-              fill = "surface_variant";
+              fill = "surface_container";
               id = "g1";
               members = [ "clock" "media" "notifications" "privacy" "mangowm-keymode" ];
               opacity = 1.0;
@@ -201,7 +201,7 @@
               accordion_direction = "end";
               border_width = 1.0;
               enabled = true;
-              fill = "surface_variant";
+              fill = "surface_container";
               id = "g3";
               members = [ "btn" "bar_3" ];
               opacity = 1.0;
@@ -215,7 +215,7 @@
           accordion_direction = "end";
           border_width = 1.0;
           enabled = true;
-          fill = "surface_variant";
+          fill = "surface_container";
           id = "g2";
           members = [ "battery" "clipboard" "bluetooth" "brightness" ];
           opacity = 1.0;
@@ -225,7 +225,7 @@
           accordion_direction = "end";
           border_width = 1.0;
           enabled = true;
-          fill = "surface_variant";
+          fill = "surface_container";
           id = "g1";
           members = [ "clock" "media" "notifications" "privacy" ];
           opacity = 1.0;
@@ -235,7 +235,7 @@
           accordion_direction = "end";
           border_width = 1.0;
           enabled = true;
-          fill = "surface_variant";
+          fill = "surface_container";
           id = "g3";
           members = [ "bar_4" "bar_5" "tracker_2" "status_3" ];
           opacity = 1.0;

@@ -60,6 +60,7 @@
         compact = false;
         default_view = "recent";
         fetch_exchange_rates = true;
+        ignore_mouse = false;
         layout = "full";
         pinned = [  ];
         provider_prefix = "/";
@@ -67,6 +68,7 @@
         show_app_actions = false;
         show_app_origin_indicator = true;
         show_icons = true;
+        show_navigation_labels = true;
         show_session_button = true;
         show_settings_button = true;
         sort_by_usage = true;
@@ -83,7 +85,7 @@
         blacklist = [ "beeper" ];
       };
       panel = {
-        border_color = "outline";
+        border_color = "outline_variant";
         border_width = 1.0;
         borders = true;
         clipboard_placement = "floating";
@@ -124,6 +126,7 @@
         close_on_copy = true;
         close_on_save = true;
         confirm_region = false;
+        copy_on_close = false;
         copy_to_clipboard = true;
         directory = "~/Pictures/Screenshots/";
         filename_pattern = "";
@@ -156,6 +159,7 @@
           enabled = true;
           glyph = "snowflake";
           label = "Rebuild";
+          lockscreen_shortcut = "";
           shortcut = "1";
           variant = "secondary";
         } {
@@ -165,6 +169,7 @@
           enabled = true;
           glyph = "";
           label = "";
+          lockscreen_shortcut = "";
           shortcut = "2";
           variant = "default";
         } {
@@ -174,6 +179,7 @@
           enabled = true;
           glyph = "";
           label = "";
+          lockscreen_shortcut = "";
           shortcut = "3";
           variant = "default";
         } {
@@ -183,6 +189,7 @@
           enabled = true;
           glyph = "";
           label = "";
+          lockscreen_shortcut = "";
           shortcut = "4";
           variant = "default";
         } {
@@ -192,6 +199,7 @@
           enabled = true;
           glyph = "";
           label = "";
+          lockscreen_shortcut = "";
           shortcut = "5";
           variant = "default";
         } {
@@ -201,6 +209,7 @@
           enabled = true;
           glyph = "";
           label = "";
+          lockscreen_shortcut = "";
           shortcut = "6";
           variant = "destructive";
         } ];

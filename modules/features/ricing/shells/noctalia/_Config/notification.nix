@@ -4,7 +4,7 @@
     notification = {
       background_opacity = 0.25;
       border = true;
-      border_color = "outline";
+      border_color = "outline_variant";
       border_width = 1.0;
       collapse_on_dismiss = true;
       enable_daemon = true;

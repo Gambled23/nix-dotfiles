@@ -4,7 +4,7 @@
     osd = {
       background_opacity = 0.09999999403953552;
       border = true;
-      border_color = "outline";
+      border_color = "outline_variant";
       border_width = 1.0;
       enabled = true;
       follow_focused_output = false;
