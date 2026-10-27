@@ -44,9 +44,9 @@
     programs.moonlight-qt = {
       enable = true;
       capSysNice = true;
-      package = (pkgs.moonlight-qt.override {
-        ffmpeg_8 = pkgs.ffmpeg_6;
-      });
+      # package = (pkgs.moonlight-qt.override {
+      #   ffmpeg_8 = pkgs.ffmpeg_6;
+      # });
     };
 
     services.flatpak.enable = true; # Enable flatpak

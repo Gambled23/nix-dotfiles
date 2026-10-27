@@ -15,7 +15,7 @@
 
       # Plymouth
       consoleLogLevel = 0;
-      initrd.verbose = false;
+      # initrd.verbose = false;
       plymouth.enable = true;
 
       supportedFilesystems = [ "ntfs" ];
