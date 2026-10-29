@@ -9,7 +9,7 @@
       self.nixosModules.bootGrub
       self.nixosModules.glances
       self.nixosModules.steam
-      self.nixosModules.sls-steam
+      # self.nixosModules.sls-steam
       # self.nixosModules.nix-crab
       self.nixosModules.sunshine
       self.nixosModules.wakeonlan
