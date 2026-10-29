@@ -15,7 +15,7 @@
           owner = "sanoojes";
           repo = "spicetify-colorful";
           rev = "main";
-          hash = "sha256-H9Hv97ZUGB7f3uAhxonWbO6KhP074X09hDDORl7ASiQ=";
+          hash = "sha256-nvAuu4dmSRxmLnDCzBKEBjTLg+49O9rIq391pwGB0wM=";
         };
         
         injectCss = true;

@@ -18,8 +18,9 @@
       nodejs_26
       github-cli
       dbeaver-bin
-      inputs.antigravity-nix.packages.x86_64-linux.google-antigravity-no-fhs # Base App
-      inputs.antigravity-nix.packages.x86_64-linux.google-antigravity-ide-no-fhs # IDE
+      vscode-fhs
+      # inputs.antigravity-nix.packages.x86_64-linux.google-antigravity-no-fhs # Base App
+      # inputs.antigravity-nix.packages.x86_64-linux.google-antigravity-ide-no-fhs # IDE
       inputs.antigravity-nix.packages.x86_64-linux.google-antigravity-cli # CLI
       
       #* Media 

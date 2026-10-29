@@ -1,4 +1,4 @@
-{ self, inputs, ... }: 
+{ self, inputs, lib, ... }: 
 let 
   gamesIds = [
     2868840 # Slay the Spire 2
@@ -52,7 +52,7 @@ in
       ];
     };
 
-    services.flatpak.enable = true;
+    services.flatpak.enable = lib.mkDefault true;
   };
 
 #-----------------------------------------------------------------------
@@ -74,7 +74,7 @@ in
       inputs.millennium.overlays.default
     ];
 
-    services.flatpak.enable = true;
+    services.flatpak.enable = lib.mkDefault true;
   };
 
   flake.homeModules.sls-steam = { pkgs, ... }: {

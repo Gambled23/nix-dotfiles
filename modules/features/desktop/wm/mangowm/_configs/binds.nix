@@ -63,7 +63,7 @@ in
       
       "SUPER,z,spawn,${noctalia_ipc} panel-toggle ezequiel/mango_layouts:panel"
       "SUPER,x,togglefloating"
-      "SUPER,c,spawn,antigravity-ide"
+      "SUPER,c,spawn,code"
       "SUPER,v,spawn,${terminal} --class vim -e vim"
       # "SUPER,b,spawn,flatpak run com.artemchep.keyguard"
       "SUPER,b,spawn,bitwarden"

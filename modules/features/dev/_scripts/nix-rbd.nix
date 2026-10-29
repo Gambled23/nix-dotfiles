@@ -5,12 +5,37 @@ pkgs.writeShellScriptBin "nix-rbd" ''
 
   set -e
 
-  rebuild_mode="switch"
+  rebuild_mode=""
+  do_update=false
+  do_sync=false
 
-  if  [[ $1 = "-u" ]]; then
-    rebuild_mode="boot"
-  elif [[ $1 ]]; then
-    rebuild_mode=$1
+  while [[ $# -gt 0 ]]; do
+    case "$1" in
+      -u|--update)
+        do_update=true
+        shift
+        ;;
+      -s|--sync)
+        do_sync=true
+        shift
+        ;;
+      -*)
+        echo "Unknown option: $1" >&2
+        exit 1
+        ;;
+      *)
+        rebuild_mode="$1"
+        shift
+        ;;
+    esac
+  done
+
+  if [[ -z "$rebuild_mode" ]]; then
+    if [[ "$do_update" = true ]]; then
+      rebuild_mode="boot"
+    else
+      rebuild_mode="switch"
+    fi
   fi
 
   on_error() {
@@ -24,19 +49,21 @@ pkgs.writeShellScriptBin "nix-rbd" ''
 
   git add --all
 
-  if  [[ $1 = "-u" ]]; then
+  if [[ "$do_update" = true ]]; then
     sudo nix flake update
   fi
 
   nh os $rebuild_mode .
 
-  git restore --staged modules/features/ricing/shells/noctalia/_Colors/nvf.nix modules/features/ricing/shells/noctalia/_Colors/spicetify.ini modules/features/ricing/shells/noctalia/_Colors/starship.toml
-  git commit -m "nix-rbd $rebuild_mode from $(hostname)" || echo "No changes to commit"
+  if [[ "$do_sync" = true ]]; then
+    git restore --staged modules/features/ricing/shells/noctalia/_Colors/nvf.nix modules/features/ricing/shells/noctalia/_Colors/spicetify.ini modules/features/ricing/shells/noctalia/_Colors/starship.toml
+    git commit -m "nix-rbd $rebuild_mode from $(hostname)" || echo "No changes to commit"
+    git push
+  fi
 
-  git push
   ${pkgs.libnotify}/bin/notify-send "nix-rbd" "Rebuild complete: $rebuild_mode" -a "NixOS"  -i "${pkgs.pantheon.elementary-icon-theme}/share/icons/elementary/status/symbolic/process-completed-symbolic.svg"
 
-  if [[ $1 = "-u" ]]; then
+  if [[ "$do_update" = true ]]; then
     agc
     read -p "Press enter to reboot"
     reboot

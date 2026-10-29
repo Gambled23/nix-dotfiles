@@ -134,6 +134,19 @@
           presets = {
             tailwindcss-language-server.enable = true;
           };
+          servers = {
+            nil = {
+              enable = true;
+              initOptions = {
+                nix = {
+                  flake = {
+                    autoArchive = false; # Automatically run `nix flake archive` when needed
+                    autoEvalInputs = true; # Improves completion for flake inputs
+                  };
+                };
+              };
+            }; 
+          };
         };
 
         vim.mini = {
@@ -159,6 +172,13 @@
               timeout = 5000;
             };
           };
+        };
+
+        vim.options = {
+          foldcolumn = "0"; # or "1" to show fold indicator column; must be a string
+          foldlevel = 99;
+          foldlevelstart = 99;
+          foldenable = true;
         };
 
         vim.presence = {
@@ -250,12 +270,8 @@
           colorizer.enable = true;
           modes-nvim.enable = true;
           nvim-ufo.enable = true;
-          nvim-ufo.setupOpts = {
-            foldcolumn = 0;
-            foldlevel = 99;
-            foldlevelstart = 99;
-            foldenable = true;
-          };
+          ui2.enable = true;
+          zen-nvim.enable = true;
         };
 
         vim.undoFile = {
@@ -263,6 +279,9 @@
         };
 
         vim.utility = {
+          auto-indent-nvim.enable = true;
+          csvview.enable = true;
+          # grug-far-nvim.enable = true; # this needs ripgrep installed
           sleuth.enable = true;
           preview.markdownPreview.enable = true;
           surround.enable = true;
@@ -283,5 +302,9 @@
         };
       };
     };
+
+    home.packages = with pkgs; [
+      ripgrep
+    ];
   };
 }
