@@ -68,7 +68,6 @@
         exec_once = [
           "systemctl --user restart noctalia"
           "beeper"
-          "spotify"
           "discord"
           "kdeconnect-indicator"
           "wl-clip-persist --clipboard regular --reconnect-tries 0"
@@ -77,7 +76,7 @@
         enable_floating_snap = 1;
         snap_distance = 20;
         float_full_to_top =  1;
-        no_border_when_single = 1;
+        no_border_when_single = 0;
         smart_gaps = 1;
         allow_tearing = 1;
         sync_obj_enable = 1; # Enable drm_syncobj timeline support

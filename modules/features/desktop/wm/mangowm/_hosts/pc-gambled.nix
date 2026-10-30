@@ -3,6 +3,7 @@
   wayland.windowManager.mango.settings = {
     exec_once = [
       "sleep 10; systemctl --user restart sunshine"
+      "spotify"
       # "steam"
     ];
     monitor_rule = [
