@@ -75,7 +75,10 @@
           "wl-paste --type text --watch cliphist store"
         ];
         enable_floating_snap = 1;
-        snap_distance = 30;
+        snap_distance = 20;
+        float_full_to_top =  1;
+        no_border_when_single = 1;
+        smart_gaps = 1;
         allow_tearing = 1;
         sync_obj_enable = 1; # Enable drm_syncobj timeline support
         tag_carousel = 1;

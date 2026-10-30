@@ -17,12 +17,12 @@
           enable = true;
           devices = [ "pc-gambled" "server-gambled" "dev-gambled" "android-gambled" ];
         };
-        # "Pictures" = {
-        #   versioning.type = "simple";
-        #   path = "/home/gambled/Pictures";
-        #   enable = true;
-        #   devices = [ "pc-gambled" "server-gambled" "dev-gambled" ];
-        # };
+        "Wallpapers" = {
+          versioning.type = "simple";
+          path = "/home/gambled/Pictures/Wallpapers";
+          enable = true;
+          devices = [ "pc-gambled" "dev-gambled" ];
+        };
         "SiYuan" = {
           versioning.type = "simple";
           path = "/home/gambled/SiYuan";
