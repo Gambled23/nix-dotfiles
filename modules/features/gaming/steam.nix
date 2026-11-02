@@ -23,6 +23,7 @@ let
     1999520 # CATO Buttered Cat 
     4705510 # Happy Wheels
     3569420 # Chained Beasts  
+    945360 # Among Us
   ];
 
   sls-config = {
