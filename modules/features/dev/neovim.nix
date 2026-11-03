@@ -271,7 +271,7 @@
           modes-nvim.enable = true;
           nvim-ufo.enable = true;
           ui2.enable = true;
-          zen-nvim.enable = true;
+          zen-nvim.enable = false;
         };
 
         vim.undoFile = {

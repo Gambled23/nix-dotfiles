@@ -289,8 +289,8 @@
         "sops-nix": "sops-nix_4"
       },
       "locked": {
-        "lastModified": 1793133909,
-        "narHash": "sha256-1aegUBRpzvhwIHSQ+BXuCaDVMIpYlrdAAsnUUx9o23A=",
+        "lastModified": 1793402458,
+        "narHash": "sha256-cqz+u+MNcJM5FFqGM3Kfbt+BVafFSYd3QSxomfQg7fk=",
         "path": "/home/gambled/Codes/nixos-alpha-server",
         "type": "path"
       },
