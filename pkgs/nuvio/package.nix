@@ -12,12 +12,12 @@
   stdenv,
   webkitgtk_4_1,
 }: let
-  pname = "nuvio";
-  version = "0.1.33-alpha";
+  pname = "nuvio-custom";
+  version = "0.1.34-alpha";
 
   src = fetchurl {
     url = "https://github.com/NuvioMedia/NuvioDesktop/releases/download/${version}/Nuvio-Linux-x86_64-${version}.AppImage";
-    hash = "sha256-Nfu41NEGCu0Wn2ID26PWVe1VT9JeOEqut8Tk4PdftOA=";
+    hash = "sha256-Im/6fFa+RnvTN2VROVGruXX5sXOtiPHi3g7T82DBB+0==";
   };
 
   extracted = appimageTools.extract {inherit pname version src;};
@@ -29,12 +29,12 @@ in
 
     extraInstallCommands = ''
       install -Dm444 ${extracted}/Nuvio.png $out/share/icons/hicolor/256x256/apps/nuvio.png
-      install -Dm444 ${extracted}/Nuvio.desktop $out/share/applications/nuvio.desktop
-      substituteInPlace $out/share/applications/nuvio.desktop \
-        --replace-fail 'Exec=AppRun' 'Exec=nuvio' \
+      install -Dm444 ${extracted}/Nuvio.desktop $out/share/applications/nuvio-custom.desktop
+      substituteInPlace $out/share/applications/nuvio-custom.desktop \
+        --replace-fail 'Exec=AppRun' 'Exec=nuvio-custom' \
         --replace-fail 'Icon=Nuvio' 'Icon=nuvio'
 
-      wrapProgram $out/bin/nuvio \
+      wrapProgram $out/bin/nuvio-custom \
         --set _JAVA_AWT_WM_NONREPARENTING 1 \
         --prefix LD_LIBRARY_PATH : ${lib.makeLibraryPath [
           cairo
