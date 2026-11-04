@@ -21,7 +21,8 @@
     environment.systemPackages = [
       self.packages.${pkgs.stdenv.hostPlatform.system}.display-device
       self.packages.${pkgs.stdenv.hostPlatform.system}.flash-kernelsu
-      self.packages.${pkgs.stdenv.hostPlatform.system}.scrcpy-desktop-mode
+      self.packages.${pkgs.stdenv.hostPlatform.system}.scrcpy-desktop
+      self.packages.${pkgs.stdenv.hostPlatform.system}.scrcpy-phone
     ];
   };
 }

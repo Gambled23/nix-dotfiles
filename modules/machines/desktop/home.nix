@@ -1,6 +1,8 @@
 { self, inputs, ... }: {
   flake.homeModules.machineDesktopHome = { pkgs, lib, config, ... }: {
     imports = [
+      self.homeModules.antigravity-cli
+      self.homeModules.mcpServers
       self.homeModules.kitty
       self.homeModules.spicetify
       self.homeModules.spotifyPlayer
@@ -19,9 +21,10 @@
       github-cli
       dbeaver-bin
       vscode-fhs
+
       # inputs.antigravity-nix.packages.x86_64-linux.google-antigravity-no-fhs # Base App
       # inputs.antigravity-nix.packages.x86_64-linux.google-antigravity-ide-no-fhs # IDE
-      inputs.antigravity-nix.packages.x86_64-linux.google-antigravity-cli # CLI
+      # inputs.antigravity-nix.packages.x86_64-linux.google-antigravity-cli # CLI
       
       #* Media 
       loupe # Image viewer

@@ -1,6 +1,7 @@
 { pkgs, ... }:
 let 
-  scrcpy-desktop-mode = "scrcpy-desktop-mode";
+  scrcpy-desktop = "scrcpy-desktop";
+  scrcpy-phone = "scrcpy-phone";
   terminal="${pkgs.kitty}/bin/kitty";
   modal_terminal="${pkgs.kitty}/bin/kitten quick-access-terminal";
   file_manager = "${terminal} --class yazi zsh -ic \"y; exec zsh\" ";
@@ -49,8 +50,8 @@ in
       "SUPER,r,spawn,${menu}"
       "SUPER+SHIFT,r,reload_config"
       "SUPER,o,spawn,moonlight stream 'el sunchine' 'dev-gambled'"
-      "SUPER,p,spawn,scrcpy --render-driver=opengl -S -w -K -b15M --power-off-on-close --window-title \"phone\""
-      "SUPER+SHIFT,p,spawn,${scrcpy-desktop-mode}"
+      "SUPER,p,spawn,${scrcpy-phone}"
+      "SUPER+SHIFT,p,spawn,${scrcpy-desktop}"
 
       # Special tags
       "SUPER+SHIFT,s,tag_special_silent"
