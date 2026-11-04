@@ -105,7 +105,7 @@ in
     ];
 
     programs.nix-crab = {
-      cloudredirect.enable = true;
+      cloudredirect.enable = false;
       millennium.enable = true;
       slssteam.enable = true;
     };
@@ -118,10 +118,10 @@ in
 
     programs.nix-crab = {
       slssteam.manageConfig = true;
-      # steamidra.enable = true;
       accela.enable = true;
+      # steamidra.enable = true;
       # luatools.enable = true;
-      # cloudredirect.moon.enable = true;
+      cloudredirect.moon.enable = false;
 
       millennium = {
         plugins = [
