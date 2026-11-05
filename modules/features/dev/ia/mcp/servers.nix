@@ -3,6 +3,29 @@
     programs.mcp = {
       enable = true;
       servers = {
+        mariadb-local = {
+          command = "${pkgs.writeShellScript "run-mariadb-mcp" ''
+            export PATH="${pkgs.lib.makeBinPath [ pkgs.mariadb-connector-c.dev pkgs.gcc pkgs.pkg-config ]}:$PATH"
+            export MARIADB_CONFIG="${pkgs.mariadb-connector-c.dev}/bin/mariadb_config"
+            exec ${pkgs.uv}/bin/uvx --with 'mcp<2' --from mariadb-mcp-server python -m mariadb_mcp_server.server
+          ''}";
+          args = [];
+          env = {
+            # Note: mariadb_mcp_server reads MARIADB_* env vars
+            MARIADB_HOST = "127.0.0.1";
+            MARIADB_PORT = "3306";
+            MARIADB_USER = "root";
+            MARIADB_PASSWORD = "";
+            MARIADB_DATABASE = "identity";
+            DB_HOST = "127.0.0.1";
+            DB_PORT = "3306";
+            DB_USER = "root";
+            DB_PASSWORD = "";
+            DB_NAME = "identity";
+            MCP_READ_ONLY = "true";
+          };
+        };
+
         github-mcp-server = {
           command = "docker";
           args = [
@@ -16,16 +39,16 @@
         };
 
         chrome-devtools-mcp = {
-          command = "npx";
+          command = "${pkgs.nodejs_26}/bin/npx";
           args = [
             "-y"
             "chrome-devtools-mcp@latest"
             "--executablePath=/etc/profiles/per-user/gambled/bin/google-chrome"
           ];
           env = {
-            "PUPPETEER_EXECUTABLE_PATH" = "/etc/profiles/per-user/gambled/bin/google-chrome";
-            "CHROME_PATH" = "/etc/profiles/per-user/gambled/bin/google-chrome";
-            "CHROME_BIN" = "/etc/profiles/per-user/gambled/bin/google-chrome";
+            PUPPETEER_EXECUTABLE_PATH = "/etc/profiles/per-user/gambled/bin/google-chrome";
+            CHROME_PATH = "/etc/profiles/per-user/gambled/bin/google-chrome";
+            CHROME_BIN = "/etc/profiles/per-user/gambled/bin/google-chrome";
           };
         };
 
@@ -48,7 +71,7 @@
                       stdin=subprocess.PIPE,
                       stdout=subprocess.PIPE,
                       stderr=sys.stderr,
-                      bufsize=0
+                      bufsize=0,
                   )
 
                   def sig_handler(signum, frame):
@@ -88,8 +111,8 @@
                                           "id": req_id,
                                           "error": {
                                               "code": -32601,
-                                              "message": "Method not found"
-                                          }
+                                              "message": "Method not found",
+                                          },
                                       }
                                       err_bytes = (
                                           json.dumps(err_resp) + "\n"

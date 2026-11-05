@@ -275,6 +275,7 @@
         "administrativo": "administrativo",
         "factorio": "factorio",
         "financiero": "financiero",
+        "finor": "finor",
         "flake-parts": "flake-parts",
         "gambled-config": "gambled-config",
         "home-manager": "home-manager_11",
@@ -289,8 +290,8 @@
         "sops-nix": "sops-nix_4"
       },
       "locked": {
-        "lastModified": 1793402458,
-        "narHash": "sha256-cqz+u+MNcJM5FFqGM3Kfbt+BVafFSYd3QSxomfQg7fk=",
+        "lastModified": 1793814142,
+        "narHash": "sha256-lLoe1CJx7W+gPltTGl95vzhLoZBBstPqVQZD7+umTFM=",
         "path": "/home/gambled/Codes/nixos-alpha-server",
         "type": "path"
       },
@@ -1412,6 +1413,27 @@
       "original": {
         "path": "/home/alpha/financiero",
         "type": "path"
+      }
+    },
+    "finor": {
+      "inputs": {
+        "nixpkgs": [
+          "alpha-server",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1793735686,
+        "narHash": "sha256-cQY6y+3DrJKNhJRUPRfCpEaxlpTPKHIz6/9iGblkv0I=",
+        "ref": "refs/heads/production",
+        "rev": "05c8a8d797b1adaeae6279655a886a91cd14658c",
+        "revCount": 5,
+        "type": "git",
+        "url": "file:///home/alpha/finor"
+      },
+      "original": {
+        "type": "git",
+        "url": "file:///home/alpha/finor"
       }
     },
     "firefox-gnome-theme": {

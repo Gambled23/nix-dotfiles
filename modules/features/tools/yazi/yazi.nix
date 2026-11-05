@@ -9,7 +9,7 @@
         # bookmarks = pkgs.yaziPlugins.bookmarks;
         compress = pkgs.yaziPlugins.compress;
         easyjump = pkgs.yaziPlugins.easyjump;
-        # full-border = pkgs.yaziPlugins.full-border;
+        full-border = pkgs.yaziPlugins.full-border;
         git = pkgs.yaziPlugins.git;
         # gvfs = pkgs.yaziPlugins.gvfs;
         kdeconnect-send = pkgs.yaziPlugins.kdeconnect-send;

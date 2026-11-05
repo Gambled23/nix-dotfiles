@@ -30,8 +30,8 @@
       loupe # Image viewer
       vlc
       gimp-with-plugins
-      (pkgs.callPackage ../../../pkgs/nuvio/package.nix { })
-      # inputs.nuvio.legacyPackages.${pkgs.stdenv.hostPlatform.system}.nuvio-desktop
+      # (pkgs.callPackage ../../../pkgs/nuvio/package.nix { })
+      inputs.nuvio.legacyPackages.${pkgs.stdenv.hostPlatform.system}.nuvio-desktop
 
       #* Messaging
       altus

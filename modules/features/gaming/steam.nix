@@ -28,7 +28,7 @@ let
 
   sls-config = {
     PlayNotOwnedGames = true;
-    DisableFamilyShareLock = true;
+    DisableFamilyShareLock = false;
     SafeMode = false;
     AppIds = gamesIds;
     AdditionalApps = gamesIds;
