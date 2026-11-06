@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, config, lib, ... }:
 let 
   scrcpy-desktop = "scrcpy-desktop";
   scrcpy-phone = "scrcpy-phone";
@@ -7,7 +7,8 @@ let
   file_manager = "${terminal} --class yazi zsh -ic \"y; exec zsh\" ";
   menu = "vicinae toggle";
   web_browser = "google-chrome-stable";
-  noctalia_ipc = "noctalia msg";
+  noctaliaEnabled = lib.attrByPath [ "programs" "noctalia" "enable" ] false config;
+  dmsEnabled = lib.attrByPath [ "programs" "dank-material-shell" "enable" ] false config;
 in 
 {
   wayland.windowManager.mango.settings = {
@@ -36,7 +37,6 @@ in
       "SUPER+SHIFT,8,tagsilent,8"
       "SUPER+SHIFT,9,tagsilent,9"
 
-      "none,Print,spawn,${noctalia_ipc} screenshot-region"
       "ALT,Tab,overcircle,next"
       
       "SUPER,Escape,spawn,${terminal} --class btop -e btop"
@@ -62,14 +62,12 @@ in
       "SUPER,Return,spawn,${modal_terminal}"
       "SUPER+SHIFT,Return,spawn,${terminal}"
       
-      "SUPER,z,spawn,${noctalia_ipc} panel-toggle ezequiel/mango_layouts:panel"
       "SUPER,x,togglefloating"
       "SUPER,c,spawn,code"
       "SUPER,v,spawn,${terminal} --class vim -e vim"
       # "SUPER,b,spawn,flatpak run com.artemchep.keyguard"
       "SUPER,b,spawn,bitwarden"
       "SUPER,n,spawn,${terminal} --class nix-rbd -e nh os switch"
-      "SUPER,m,spawn,${noctalia_ipc} session lock"
 
 
       # Windows
@@ -123,15 +121,10 @@ in
       "ALT,1,spawn,${pkgs.playerctl}/bin/playerctl previous"
       "ALT,2,spawn,${pkgs.playerctl}/bin/playerctl play-pause"
       "ALT,3,spawn,${pkgs.playerctl}/bin/playerctl next"
-      "ALT,0,spawn,${noctalia_ipc} volume-up 1"
-      "ALT,9,spawn,${noctalia_ipc} volume-down 1"
-      "ALT,8,spawn,${noctalia_ipc} volume-mute"
+
       "NONE,XF86AudioMute,spawn,${pkgs.playerctl}/bin/playerctl play-pause"
-      "NONE,XF86MonBrightnessUp,spawn,${noctalia_ipc} brightness-up"
-      "NONE,XF86MonBrightnessDown,spawn,${noctalia_ipc} brightness-down"
       # keyboard scrollwheel 
-      "NONE,XF86AudioRaiseVolume,spawn,${noctalia_ipc} volume-up 1"
-      "NONE,XF86AudioLowerVolume,spawn,${noctalia_ipc} volume-down 1"
+
       "SUPER,XF86AudioRaiseVolume,viewtoright_have_client"
       "SUPER,XF86AudioLowerVolume,viewtoleft_have_client"
       "ALT,XF86AudioRaiseVolume,spawn,${pkgs.playerctl}/bin/playerctl next"
@@ -140,6 +133,32 @@ in
       # Keymaps
       "ALT,c,setkeymode,resize"  
       "ALT,v,setkeymode,vicinae" 
+      
+      # Specific keybindings for shells
+    ] 
+    ++ lib.optionals noctaliaEnabled [
+      "ALT,0,spawn,noctalia msg volume-up 1"
+      "ALT,9,spawn,noctalia msg volume-down 1"
+      "ALT,8,spawn,noctalia msg volume-mute"
+      "NONE,XF86AudioRaiseVolume,spawn,noctalia msg volume-up 1"
+      "NONE,XF86AudioLowerVolume,spawn,noctalia msg volume-down 1"
+      "NONE,XF86MonBrightnessUp,spawn,noctalia msg brightness-up"
+      "NONE,XF86MonBrightnessDown,spawn,noctalia msg brightness-down"
+      "none,Print,spawn,noctalia msg screenshot-region"
+      "SUPER,z,spawn,noctalia msg panel-toggle ezequiel/mango_layouts:panel"
+      "SUPER,m,spawn,noctalia msg session lock"
+    ] 
+    ++ lib.optionals dmsEnabled [
+      "ALT,0,spawn,dms ipc call audio increment 1"
+      "ALT,9,spawn,dms ipc call audio decrement 1"
+      "ALT,8,spawn,dms ipc call audio mute"
+      "NONE,XF86AudioRaiseVolume,spawn,dms ipc call audio increment 1"
+      "NONE,XF86AudioLowerVolume,spawn,dms ipc call audio decrement 1"
+      "NONE,XF86MonBrightnessUp,spawn,dms ipc call brightness increment 1"
+      "NONE,XF86MonBrightnessDown,spawn,dms ipc call brightness decrement 1"
+      "none,Print,spawn,dms screenshot"
+      "SUPER,m,spawn,dms ipc call lock lock"
+      "CTRL+ALT,Delete,spawn,dms ipc call powermenu toggle"
     ];
 
     mousebind = [

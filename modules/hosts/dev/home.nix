@@ -34,11 +34,13 @@
       # android-studio
       # jdk25_headless
 
-      #* utils
+      #* music
       # inputs.spotifast.packages."${pkgs.stdenv.hostPlatform.system}".default
+      spotifast
+
+      #* utils
       # moonlight-qt
       gnome-network-displays
-      spotifast
 
       # nchat # whatsapp cli
     ];

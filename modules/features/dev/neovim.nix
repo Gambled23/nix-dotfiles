@@ -146,6 +146,22 @@
                 };
               };
             }; 
+            basedpyright = {
+              enable = true;
+              settings = {
+                python = {
+                  venvPath = ".";
+                  venv = ".venv";
+                };
+                basedpyright = {
+                  analysis = {
+                    autoSearchPaths = true;
+                    useLibraryCodeForTypes = true;
+                    diagnosticMode = "openFilesOnly";
+                  };
+                };
+              };
+            };
           };
         };
 

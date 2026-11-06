@@ -123,6 +123,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    community-templates = {
+      url = "github:noctalia-dev/community-templates";
+      flake = false;
+    };
+
     # zen-browser = {
     #   url = "github:youwen5/zen-browser-flake";
     #   inputs.nixpkgs.follows = "nixpkgs";

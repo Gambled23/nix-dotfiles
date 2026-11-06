@@ -4,14 +4,21 @@
       self.homeModules.antigravity-cli
       self.homeModules.mcpServers
       self.homeModules.kitty
-      self.homeModules.spicetify
-      self.homeModules.spotifyPlayer
+      # self.homeModules.spotifyPlayer
       self.homeModules.vicinae
       self.homeModules.nixcord
       self.homeModules.mangowmHome
-      self.homeModules.noctaliaHome
-      # self.homeModules.dankmaterialshell
+      # self.homeModules.noctalia5
+      self.homeModules.dux
+      self.homeModules.matugen
     ];
+
+    programs.matugen = {
+      enable = true;
+      variant = "dark"; # "dark" or "light" (selects matching template variant when specified)
+      # communityTemplates = [ "discord" "gimp" "steam" "vicinae"  ];
+      communityTemplates = [ "antigravity" "spicetify" "spotifast" "discord" "gimp" "libreoffice" "vscode" "steam" "vicinae" "bat" "fzf" "lazygit" "tmux" "yazi" ];
+    };
     
     home.packages = with pkgs; [
       self.packages.${pkgs.stdenv.hostPlatform.system}.flash-kernelsu

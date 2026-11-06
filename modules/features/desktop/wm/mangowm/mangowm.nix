@@ -51,8 +51,18 @@
     };
   };
 
-  flake.homeModules.mangowmHome = { pkgs, osConfig, ... }: let 
+  flake.homeModules.mangowmHome = { pkgs, osConfig, options, lib, ... }: let
     hostconfig = if osConfig.networking.hostName == "pc-gambled" then ./_hosts/pc-gambled.nix else ./_hosts/dev-gambled.nix;
+    noctaliaEnabled = options.programs ? noctalia;
+    dmsEnabled = options.programs ? dank-material-shell;
+    dmsConfigFiles = [
+      "colors.conf"
+      "input.conf"
+      "layout.conf"
+      "outputs.conf"
+      "windowrules.conf"
+    ];
+    dmsConfigSources = lib.concatMapStringsSep "\n" (file: "source = ./dms/${file}") dmsConfigFiles;
   in {
     imports = [
       inputs.mangowm.hmModules.mango
@@ -98,7 +108,8 @@
       };
       
       extraConfig = ''
-        source = ./noctalia.conf
+        ${lib.optionalString noctaliaEnabled "source = ./noctalia.conf\n"}
+        ${lib.optionalString dmsEnabled "${dmsConfigSources}\n"}
       '';
     };
 

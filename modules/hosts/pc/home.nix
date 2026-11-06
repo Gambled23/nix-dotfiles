@@ -19,6 +19,7 @@
       inputs.nix-flatpak.homeManagerModules.nix-flatpak
       self.homeModules.sls-steam
       # self.homeModules.nix-crab
+      self.homeModules.spicetify
     ];
 
     home.packages = with pkgs; [

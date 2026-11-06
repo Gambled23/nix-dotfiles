@@ -65,18 +65,6 @@
             post_hook = "";
             pre_hook = "";
           };
-          siyuan = {
-            compare_to = "";
-            enabled = true;
-            hook_async = true;
-            index = 0;
-            input_path = "$XDG_CONFIG_HOME/noctalia/templates/siyuan.css";
-            output_path = [ "~/SiYuan/conf/appearance/themes/noctalia-siyuan/theme.css" ];
-            output_path_dynamic = "";
-            post_action = "";
-            post_hook = "";
-            pre_hook = "";
-          };
           spicetify-nix = {
             compare_to = "";
             enabled = true;

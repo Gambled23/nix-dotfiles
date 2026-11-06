@@ -1,5 +1,5 @@
 { self, inputs, lib, ... }: {
-  flake.homeModules.noctaliaHome = { pkgs, ... }: {
+  flake.homeModules.noctalia5 = { pkgs, ... }: {
     imports = [
       inputs.noctalia.homeModules.default
     ] ++ (builtins.filter (lib.hasSuffix ".nix") (lib.filesystem.listFilesRecursive ./_Config));

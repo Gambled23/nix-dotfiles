@@ -68,9 +68,9 @@
       };
     in {
       enable = true;
-      style.name = "noctalia";
-      qt5ctSettings = qtsettings;
-      qt6ctSettings = qtsettings;
+      # style.name = "noctalia";
+      # qt5ctSettings = qtsettings;
+      # qt6ctSettings = qtsettings;
     };
   };
 }

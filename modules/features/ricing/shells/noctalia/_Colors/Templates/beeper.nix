@@ -23,58 +23,58 @@
 
         /* Base Colors */
         --color-bg: {{ colors.background.default.hex }};
-        --color-bg-rgb: {{ colors.background.default.rgb_csv }};
+        --color-bg-rgb: {{ colors.background.default.rgb }};
         --color-fg: {{ colors.on_background.default.hex }};
-        --color-fg-rgb: {{ colors.on_background.default.rgb_csv }};
+        --color-fg-rgb: {{ colors.on_background.default.rgb }};
 
         --color-primary: {{ colors.primary.default.hex }};
-        --color-primary-rgb: {{ colors.primary.default.rgb_csv }};
+        --color-primary-rgb: {{ colors.primary.default.rgb }};
 
-        --color-gray-rgb: {{ colors.outline.default.rgb_csv }};
+        --color-gray-rgb: {{ colors.outline.default.rgb }};
 
         /* Base Color Tokens */
         --color-base-gray-dark-50: {{ colors.surface_container_highest.dark.hex }};
-        --color-base-gray-dark-50-rgb: {{ colors.surface_container_highest.dark.rgb_csv }};
+        --color-base-gray-dark-50-rgb: {{ colors.surface_container_highest.dark.rgb }};
         --color-base-gray-dark-70: {{ colors.surface_container_high.dark.hex }};
-        --color-base-gray-dark-70-rgb: {{ colors.surface_container_high.dark.rgb_csv }};
+        --color-base-gray-dark-70-rgb: {{ colors.surface_container_high.dark.rgb }};
         --color-base-gray-dark-80: {{ colors.surface_container.dark.hex }};
-        --color-base-gray-dark-80-rgb: {{ colors.surface_container.dark.rgb_csv }};
+        --color-base-gray-dark-80-rgb: {{ colors.surface_container.dark.rgb }};
         --color-base-black: {{ colors.scrim.default.hex }};
-        --color-base-black-rgb: {{ colors.scrim.default.rgb_csv }};
+        --color-base-black-rgb: {{ colors.scrim.default.rgb }};
         --color-base-white: #000000;
         --color-base-white-rgb: 255,255,255;
 
         /* Gray Scale */
         --color-base-gray-20: {{ colors.surface_container_lowest.default.hex }};
-        --color-base-gray-20-rgb: {{ colors.surface_container_lowest.default.rgb_csv }};
+        --color-base-gray-20-rgb: {{ colors.surface_container_lowest.default.rgb }};
         --color-base-gray-30: {{ colors.surface_container_low.default.hex }};
-        --color-base-gray-30-rgb: {{ colors.surface_container_low.default.rgb_csv }};
+        --color-base-gray-30-rgb: {{ colors.surface_container_low.default.rgb }};
         --color-base-gray-40: {{ colors.surface_container.default.hex }};
-        --color-base-gray-40-rgb: {{ colors.surface_container.default.rgb_csv }};
+        --color-base-gray-40-rgb: {{ colors.surface_container.default.rgb }};
         --color-base-gray-50: {{ colors.surface_container_high.default.hex }};
-        --color-base-gray-50-rgb: {{ colors.surface_container_high.default.rgb_csv }};
+        --color-base-gray-50-rgb: {{ colors.surface_container_high.default.rgb }};
         --color-base-gray-60: {{ colors.surface_container_highest.default.hex }};
-        --color-base-gray-60-rgb: {{ colors.surface_container_highest.default.rgb_csv }};
+        --color-base-gray-60-rgb: {{ colors.surface_container_highest.default.rgb }};
         --color-base-gray-70: {{ colors.outline_variant.default.hex }};
-        --color-base-gray-70-rgb: {{ colors.outline_variant.default.rgb_csv }};
+        --color-base-gray-70-rgb: {{ colors.outline_variant.default.rgb }};
         --color-base-gray-80: {{ colors.outline.default.hex }};
-        --color-base-gray-80-rgb: {{ colors.outline.default.rgb_csv }};
+        --color-base-gray-80-rgb: {{ colors.outline.default.rgb }};
         --color-base-gray-100: {{ colors.on_surface_variant.default.hex }};
-        --color-base-gray-100-rgb: {{ colors.on_surface_variant.default.rgb_csv }};
+        --color-base-gray-100-rgb: {{ colors.on_surface_variant.default.rgb }};
         --color-base-gray-110: {{ colors.on_surface.default.hex }};
-        --color-base-gray-110-rgb: {{ colors.on_surface.default.rgb_csv }};
+        --color-base-gray-110-rgb: {{ colors.on_surface.default.rgb }};
         --color-base-gray-120: {{ colors.on_surface.default.hex }};
-        --color-base-gray-120-rgb: {{ colors.on_surface.default.rgb_csv }};
+        --color-base-gray-120-rgb: {{ colors.on_surface.default.rgb }};
 
         /* System Blue / Primary Accents */
         --color-base-system-blue-80: {{ colors.primary_fixed_dim.default.hex }};
-        --color-base-system-blue-80-rgb: {{ colors.primary_fixed_dim.default.rgb_csv }};
+        --color-base-system-blue-80-rgb: {{ colors.primary_fixed_dim.default.rgb }};
         --color-base-system-blue-90: {{ colors.primary.default.hex }};
-        --color-base-system-blue-90-rgb: {{ colors.primary.default.rgb_csv }};
+        --color-base-system-blue-90-rgb: {{ colors.primary.default.rgb }};
         --color-base-system-blue-100: {{ colors.primary_container.default.hex }};
-        --color-base-system-blue-100-rgb: {{ colors.primary_container.default.rgb_csv }};
+        --color-base-system-blue-100-rgb: {{ colors.primary_container.default.rgb }};
         --color-base-system-blue-110: {{ colors.on_primary_container.default.hex }};
-        --color-base-system-blue-110-rgb: {{ colors.on_primary_container.default.rgb_csv }};
+        --color-base-system-blue-110-rgb: {{ colors.on_primary_container.default.rgb }};
 
         /* Noctalia Color Palette Tokens */
         --color-accent-primary: {{ colors.primary.default.hex }};
@@ -227,7 +227,7 @@
         --color-key-bottom-bg: {{ colors.outline_variant.default.hex }};
 
         /* Preferences */
-        --prefs-well: rgba({{ colors.scrim.default.rgb_csv }}, 0.02);
+        --prefs-well: rgba({{ colors.scrim.default.rgb }}, 0.02);
 
         /* Skeleton */
         --skeleton-bg: url("../../../public/img/skeleton.svg");
@@ -389,50 +389,50 @@
         :root {
             /* Base Colors - Dark */
             --color-bg: {{ colors.background.dark.hex }};
-            --color-bg-rgb: {{ colors.background.dark.rgb_csv }};
+            --color-bg-rgb: {{ colors.background.dark.rgb }};
             --color-fg: {{ colors.on_background.dark.hex }};
-            --color-fg-rgb: {{ colors.on_background.dark.rgb_csv }};
+            --color-fg-rgb: {{ colors.on_background.dark.rgb }};
 
             --color-primary: {{ colors.primary.dark.hex }};
-            --color-primary-rgb: {{ colors.primary.dark.rgb_csv }};
+            --color-primary-rgb: {{ colors.primary.dark.rgb }};
 
             /* Gray Scale - Dark */
             --color-base-gray-10: {{ colors.surface_container_lowest.dark.hex }};
-            --color-base-gray-10-rgb: {{ colors.surface_container_lowest.dark.rgb_csv }};
+            --color-base-gray-10-rgb: {{ colors.surface_container_lowest.dark.rgb }};
             --color-base-gray-20: {{ colors.surface_container_low.dark.hex }};
-            --color-base-gray-20-rgb: {{ colors.surface_container_low.dark.rgb_csv }};
+            --color-base-gray-20-rgb: {{ colors.surface_container_low.dark.rgb }};
             --color-base-gray-30: {{ colors.surface_container.dark.hex }};
-            --color-base-gray-30-rgb: {{ colors.surface_container.dark.rgb_csv }};
+            --color-base-gray-30-rgb: {{ colors.surface_container.dark.rgb }};
             --color-base-gray-40: {{ colors.surface_container_high.dark.hex }};
-            --color-base-gray-40-rgb: {{ colors.surface_container_high.dark.rgb_csv }};
+            --color-base-gray-40-rgb: {{ colors.surface_container_high.dark.rgb }};
             --color-base-gray-50: {{ colors.surface_container_highest.dark.hex }};
-            --color-base-gray-50-rgb: {{ colors.surface_container_highest.dark.rgb_csv }};
+            --color-base-gray-50-rgb: {{ colors.surface_container_highest.dark.rgb }};
             --color-base-gray-60: {{ colors.outline_variant.dark.hex }};
-            --color-base-gray-60-rgb: {{ colors.outline_variant.dark.rgb_csv }};
+            --color-base-gray-60-rgb: {{ colors.outline_variant.dark.rgb }};
             --color-base-gray-70: {{ colors.outline.dark.hex }};
-            --color-base-gray-70-rgb: {{ colors.outline.dark.rgb_csv }};
+            --color-base-gray-70-rgb: {{ colors.outline.dark.rgb }};
             --color-base-gray-80: {{ colors.surface_bright.dark.hex }};
-            --color-base-gray-80-rgb: {{ colors.surface_bright.dark.rgb_csv }};
+            --color-base-gray-80-rgb: {{ colors.surface_bright.dark.rgb }};
             --color-base-gray-85: {{ colors.surface_variant.dark.hex }};
-            --color-base-gray-85-rgb: {{ colors.surface_variant.dark.rgb_csv }};
+            --color-base-gray-85-rgb: {{ colors.surface_variant.dark.rgb }};
             --color-base-gray-90: {{ colors.on_surface_variant.dark.hex }};
-            --color-base-gray-90-rgb: {{ colors.on_surface_variant.dark.rgb_csv }};
+            --color-base-gray-90-rgb: {{ colors.on_surface_variant.dark.rgb }};
             --color-base-gray-100: {{ colors.on_surface_variant.dark.hex }};
-            --color-base-gray-100-rgb: {{ colors.on_surface_variant.dark.rgb_csv }};
+            --color-base-gray-100-rgb: {{ colors.on_surface_variant.dark.rgb }};
             --color-base-gray-110: {{ colors.on_surface.dark.hex }};
-            --color-base-gray-110-rgb: {{ colors.on_surface.dark.rgb_csv }};
+            --color-base-gray-110-rgb: {{ colors.on_surface.dark.rgb }};
             --color-base-gray-120: {{ colors.on_surface.dark.hex }};
-            --color-base-gray-120-rgb: {{ colors.on_surface.dark.rgb_csv }};
+            --color-base-gray-120-rgb: {{ colors.on_surface.dark.rgb }};
 
             /* System Blue - Dark */
             --color-base-system-blue-80: {{ colors.primary_fixed_dim.dark.hex }};
-            --color-base-system-blue-80-rgb: {{ colors.primary_fixed_dim.dark.rgb_csv }};
+            --color-base-system-blue-80-rgb: {{ colors.primary_fixed_dim.dark.rgb }};
             --color-base-system-blue-90: {{ colors.primary.dark.hex }};
-            --color-base-system-blue-90-rgb: {{ colors.primary.dark.rgb_csv }};
+            --color-base-system-blue-90-rgb: {{ colors.primary.dark.rgb }};
             --color-base-system-blue-100: {{ colors.primary_container.dark.hex }};
-            --color-base-system-blue-100-rgb: {{ colors.primary_container.dark.rgb_csv }};
+            --color-base-system-blue-100-rgb: {{ colors.primary_container.dark.rgb }};
             --color-base-system-blue-110: {{ colors.on_primary_container.dark.hex }};
-            --color-base-system-blue-110-rgb: {{ colors.on_primary_container.dark.rgb_csv }};
+            --color-base-system-blue-110-rgb: {{ colors.on_primary_container.dark.rgb }};
 
             /* Noctalia Color Palette Tokens - Dark */
             --color-accent-primary: {{ colors.primary.dark.hex }};
@@ -587,7 +587,7 @@
             --color-key-bottom-bg: {{ colors.surface_container_low.dark.hex }};
 
             /* Preferences - Dark */
-            --prefs-well: rgba({{ colors.scrim.dark.rgb_csv }}, 0.02);
+            --prefs-well: rgba({{ colors.scrim.dark.rgb }}, 0.02);
         }
     }
 
