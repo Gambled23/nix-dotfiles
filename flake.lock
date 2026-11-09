@@ -282,6 +282,7 @@
         "identity": "identity_3",
         "import-tree": "import-tree_6",
         "mindcare": "mindcare_3",
+        "minutas": "minutas",
         "nix-index-database": "nix-index-database_8",
         "nixpkgs": [
           "nixpkgs"
@@ -290,8 +291,8 @@
         "sops-nix": "sops-nix_4"
       },
       "locked": {
-        "lastModified": 1793897705,
-        "narHash": "sha256-95yhXP2UNrT4U7stPg8Ui1TJNlkzdkPi3A9U6KaNNbo=",
+        "lastModified": 1794239054,
+        "narHash": "sha256-Mdl9q0OljKFK0swl0S34ry8TudpCm9C0Ff2q+ImmB7A=",
         "path": "/home/gambled/Codes/nixos-alpha-server",
         "type": "path"
       },
@@ -5003,6 +5004,27 @@
         "ref": "4.0.10",
         "repo": "minizip-ng",
         "type": "github"
+      }
+    },
+    "minutas": {
+      "inputs": {
+        "nixpkgs": [
+          "alpha-server",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1794003203,
+        "narHash": "sha256-gZLqZXVYDIhZGOWNg5WYIiBfAjrcLMyBkrMUwLWOXH4=",
+        "ref": "refs/heads/production",
+        "rev": "f7d51daf5c28439840d4012ac913958688fbfad8",
+        "revCount": 21,
+        "type": "git",
+        "url": "file:///home/alpha/minutas"
+      },
+      "original": {
+        "type": "git",
+        "url": "file:///home/alpha/minutas"
       }
     },
     "mnw": {
