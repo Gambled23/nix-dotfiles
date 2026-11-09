@@ -130,14 +130,14 @@
           input_path = "${config.xdg.configHome}/noctalia/templates/nvf.nix";
           output_path = [ "/etc/nixos/modules/features/ricing/shells/noctalia/_Colors/nvf.nix" ];
         };
-        spicetify-nix = {
-          input_path = "${config.xdg.configHome}/spicetify/Themes/Comfy/color.ini";
-          output_path = [ "/etc/nixos/modules/features/ricing/shells/noctalia/_Colors/spicetify.ini" ];
-        };
-        starship = {
-          input_path = "${config.xdg.configHome}/noctalia/templates/starship.toml";
-          output_path = [ "${config.xdg.configHome}/noctalia/templates/ignore" ];
-        };
+        # spicetify-nix = {
+        #   input_path = "${config.xdg.configHome}/spicetify/Themes/Comfy/color.ini";
+        #   output_path = [ "/etc/nixos/modules/features/ricing/shells/noctalia/_Colors/spicetify.ini" ];
+        # };
+        # starship = {
+        #   input_path = "${config.xdg.configHome}/noctalia/templates/starship.toml";
+        #   output_path = [ "${config.xdg.configHome}/noctalia/templates/ignore" ];
+        # };
       };
 
       matugenConfigFile = tomlFormat.generate "matugen-config.toml" {

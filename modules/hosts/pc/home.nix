@@ -29,13 +29,14 @@
       # gamemode
       # winetricks
       # steam-rom-manager
-      prismlauncher
-      guitarix
+      quiver-launcher
+      # prismlauncher
       r2modman
       # fretboard
       # pywalfox-native
       polychromatic
       headsetcontrol
+      guitarix
       # qbittorrent
       # obs-studio
     ];

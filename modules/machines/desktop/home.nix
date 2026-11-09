@@ -16,8 +16,29 @@
     programs.matugen = {
       enable = true;
       variant = "dark"; # "dark" or "light" (selects matching template variant when specified)
-      # communityTemplates = [ "discord" "gimp" "steam" "vicinae"  ];
-      communityTemplates = [ "antigravity" "spicetify" "spotifast" "discord" "gimp" "libreoffice" "vscode" "steam" "vicinae" "bat" "fzf" "lazygit" "tmux" "yazi" ];
+      # communityTemplates = [ 
+      #   "discord" 
+      #   "gimp" 
+      #   "steam" 
+      #   "vicinae"  
+      # ];
+
+      communityTemplates = [ 
+        "antigravity" 
+        # "spicetify" 
+        "spotifast" 
+        "discord" 
+        "gimp" 
+        "libreoffice" 
+        "vscode" 
+        "steam" 
+        "vicinae" 
+        "bat" 
+        "fzf" 
+        "lazygit" 
+        "tmux" 
+        "yazi" 
+      ];
     };
     
     home.packages = with pkgs; [

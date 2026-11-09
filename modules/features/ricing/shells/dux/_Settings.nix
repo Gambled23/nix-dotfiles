@@ -301,8 +301,8 @@
         {
           enabled = true;
           id = "dock_apps";
-          widgetId = "appsDock";
           runningAppsCurrentWorkspace = false;
+          widgetId = "appsDock";
         }
         {
           enabled = true;
@@ -314,7 +314,7 @@
   ];
   currentThemeCategory = "dynamic";
   matugenScheme = "scheme-expressive";
-  matugenSpec = "dms";
+  matugenSpec = "2025";
   runUserMatugenTemplates = true;
   matugenTargetMonitor = "";
   popupTransparency = 0.8;
@@ -350,12 +350,15 @@
   systemTrayIconTintMode = "primary";
   systemTrayIconTintSaturation = 25;
   systemTrayIconTintStrength = 50;
+  controlCenterColumns = 12;
   controlCenterWidgets = [
     {
       enabled = true;
       h = 1;
       id = "user";
       w = 5;
+      col = 0;
+      row = 0;
     }
     {
       enabled = true;
@@ -363,6 +366,8 @@
       id = "settings";
       small = true;
       w = 1;
+      col = 5;
+      row = 0;
     }
     {
       enabled = true;
@@ -370,6 +375,8 @@
       id = "lock";
       small = true;
       w = 1;
+      col = 6;
+      row = 0;
     }
     {
       enabled = true;
@@ -377,54 +384,48 @@
       id = "power";
       small = true;
       w = 1;
+      col = 7;
+      row = 0;
     }
     {
       enabled = true;
       h = 1;
       id = "volumeSlider";
       w = 4;
+      col = 0;
+      row = 2;
     }
     {
       enabled = true;
       h = 1;
       id = "brightnessSlider";
       w = 4;
+      col = 4;
+      row = 2;
     }
     {
       enabled = true;
       h = 1;
       id = "wifi";
-      w = 4;
-    }
-    {
-      enabled = true;
-      h = 1;
-      id = "bluetooth";
-      w = 4;
-    }
-    {
-      enabled = true;
-      h = 1;
-      id = "audioOutput";
-      w = 4;
-    }
-    {
-      enabled = true;
-      h = 1;
-      id = "audioInput";
-      w = 4;
+      w = 3.5;
+      col = 0;
+      row = 1;
     }
     {
       enabled = true;
       h = 1;
       id = "nightMode";
-      w = 4;
+      w = 3;
+      col = 9;
+      row = 1;
     }
     {
       enabled = true;
       h = 1;
       id = "darkMode";
-      w = 4;
+      w = 2;
+      col = 7;
+      row = 1;
     }
     {
       enabled = true;
@@ -432,15 +433,49 @@
       id = "edit";
       small = true;
       w = 1;
+      col = 11;
+      row = 3;
     }
     {
-      col = 0;
+      col = 8;
       enabled = true;
       h = 1;
       id = "runningApps";
-      row = 6;
+      row = 2;
       small = true;
       w = 4;
+    }
+    {
+      id = "plugin_dankKDEConnect";
+      enabled = true;
+      w = 4;
+      h = 1;
+      col = 8;
+      row = 0;
+    }
+    {
+      enabled = true;
+      h = 1;
+      id = "bluetooth";
+      w = 3.5;
+      col = 3.5;
+      row = 1;
+    }
+    {
+      enabled = true;
+      h = 1;
+      id = "audioOutput";
+      w = 4;
+      col = 4;
+      row = 3;
+    }
+    {
+      enabled = true;
+      h = 1;
+      id = "audioInput";
+      w = 4;
+      col = 0;
+      row = 3;
     }
   ];
   workspaceNameIcons = {
@@ -784,11 +819,11 @@
   osdAlwaysShowValue = true;
   osdPosition = 4;
   osdPositionOverrides = {
-    mediaPlayback = 2;
+    audioOutput = 0;
     capsLock = 0;
+    mediaPlayback = 2;
     numLock = 0;
     powerProfile = 0;
-    audioOutput = 0;
   };
   osdVolumeEnabled = true;
   osdMediaVolumeEnabled = true;
@@ -837,11 +872,12 @@
           mediaSize = 1;
         }
         {
-          id = "privacyIndicator";
           enabled = true;
+          id = "privacyIndicator";
         }
       ];
       clickThrough = false;
+      dot = false;
       enabled = true;
       followInterfaceStyle = false;
       fontScale = 1;
@@ -850,6 +886,7 @@
       gothCornersEnabled = true;
       id = "default";
       innerPadding = 4;
+      island = false;
       leftWidgets = [
         {
           clockCompactMode = false;
@@ -884,12 +921,12 @@
           id = "usbManager";
         }
         {
-          id = "dmsScreenshot";
           enabled = true;
+          id = "dmsScreenshot";
         }
         {
-          id = "mangoWmLayoutManager";
           enabled = true;
+          id = "mangoWmLayoutManager";
         }
       ];
       maximizeWidgetIcons = false;
@@ -948,8 +985,6 @@
       widgetFollowInterfaceStyle = true;
       widgetPadding = 8;
       widgetTransparency = 1;
-      island = false;
-      dot = false;
     }
   ];
   desktopWidgetInstances = [
@@ -997,7 +1032,7 @@
         showAnalogSeconds = true;
         showDate = true;
         showOnOverlay = false;
-        style = "analog";
+        style = "expressive";
         transparency = 0.7;
       };
       enabled = true;
@@ -1006,9 +1041,23 @@
       widgetType = "desktopClock";
     }
     {
+      config = {
+        displayPreferences = [
+          {
+            model = "Unknown";
+            name = "eDP-1";
+          }
+        ];
+      };
+      enabled = true;
       id = "dw_1793997996242_b56m8ul6w";
-      widgetType = "materialWeather";
       name = "Material Weather";
+      widgetType = "materialWeather";
+    }
+    {
+      id = "dw_1794249117784_z12l4kf94";
+      widgetType = "mediaPlayer";
+      name = "Media Player";
       enabled = true;
       config = {
         displayPreferences = [
@@ -1019,37 +1068,22 @@
         ];
       };
     }
-    {
-      id = "dw_1793998070832_zya79n2hh";
-      widgetType = "theGrove";
-      name = "theGrove";
-      enabled = true;
-      config = {
-        displayPreferences = [
-          {
-            name = "HDMI-A-1";
-            model = "Unknown";
-          }
-        ];
-        wateringIntervalHours = 72;
-      };
-    }
   ];
   desktopWidgetGroups = [
 
   ];
   builtInPluginSettings = {
-    dms_settings_search = {
-      trigger = "?";
-    };
-    dms_qr_generator = {
-      trigger = "qrg";
+    dms_clipboard_search = {
+      trigger = "cb";
     };
     dms_power = {
       trigger = "pw";
     };
-    dms_clipboard_search = {
-      trigger = "cb";
+    dms_qr_generator = {
+      trigger = "qrg";
+    };
+    dms_settings_search = {
+      trigger = "?";
     };
   };
   clipboardClickToPaste = false;
