@@ -26,17 +26,17 @@
           };
         };
 
-        github-mcp-server = {
-          command = "docker";
-          args = [
-            "run"
-            "-i"
-            "--rm"
-            "-e"
-            "GITHUB_PERSONAL_ACCESS_TOKEN"
-            "ghcr.io/github/github-mcp-server"
-          ];
-        };
+        # github-mcp-server = {
+        #   command = "docker";
+        #   args = [
+        #     "run"
+        #     "-i"
+        #     "--rm"
+        #     "-e"
+        #     "GITHUB_PERSONAL_ACCESS_TOKEN"
+        #     "ghcr.io/github/github-mcp-server"
+        #   ];
+        # };
 
         chrome-devtools-mcp = {
           command = "${pkgs.nodejs_26}/bin/npx";
@@ -153,5 +153,12 @@
           };
       };
     };
+
+    home.packages = with pkgs; [ 
+      mcp-nixos 
+      mcp-server-fetch
+      mcp-server-git
+      github-mcp-server
+    ];
   };
 }
