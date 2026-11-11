@@ -2,8 +2,10 @@
   flake.nixosModules.machineDesktop = { pkgs, ... }: {
     imports = [
       # self.nixosModules.ly
-      self.nixosModules.noctaliaGreeter
+      # self.nixosModules.noctaliaGreeter
+      self.nixosModules.duxGreeter
       self.nixosModules.mangowm
+      self.nixosModules.mangowcCompat
       self.nixosModules.desktopScripts
       # self.nixosModules.skwd
       inputs.vicinae.nixosModules.default

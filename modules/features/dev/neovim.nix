@@ -92,7 +92,13 @@
         };
 
         vim.keymaps = [
-          {
+           {
+            key = "<leader>w";
+            mode = ["n"];
+            action = ":w<CR>";
+            silent = true;
+            desc = "Save file";
+          }         {
             key = "<leader>wq";
             mode = ["n"];
             action = ":wq<CR>";

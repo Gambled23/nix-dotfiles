@@ -51,6 +51,18 @@
     };
   };
 
+  flake.nixosModules.mangowcCompat = { lib, config, ... }: {
+    options.programs.mangowc = {
+      enable = lib.mkEnableOption "MangoWC compositor compatibility";
+      package = lib.mkOption {
+        type = lib.types.package;
+        default = config.programs.mango.package;
+      };
+    };
+
+    config.programs.mangowc.enable = lib.mkDefault config.programs.mango.enable;
+  };
+
   flake.homeModules.mangowmHome = { pkgs, osConfig, options, lib, ... }: let
     hostconfig = if osConfig.networking.hostName == "pc-gambled" then ./_hosts/pc-gambled.nix else ./_hosts/dev-gambled.nix;
     noctaliaEnabled = options.programs ? noctalia;

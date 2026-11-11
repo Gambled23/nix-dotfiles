@@ -13,6 +13,7 @@
       self.nixosModules.bootGrub
       self.nixosModules.docker
       self.nixosModules.printing 
+      self.nixosModules.gnomeBoxes
     ];
   };
 

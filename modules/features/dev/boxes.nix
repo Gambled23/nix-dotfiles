@@ -1,0 +1,25 @@
+{ self, inputs, ... }: {
+  flake.nixosModules.gnomeBoxes = { pkgs, ... }: {
+    # Set up virtualisation
+    virtualisation.libvirtd = {
+      enable = true;
+
+      # Enable TPM emulation (for Windows 11)
+      qemu = {
+        swtpm.enable = true;
+      };
+    };
+    virtualisation.spiceUSBRedirection.enable = true;
+
+    # Allow VM management
+    users.groups.libvirtd.members = [ "gambled" ];
+    users.groups.kvm.members = [ "gambled" ];
+
+    # Enable VM networking and file sharing
+    environment.systemPackages = with pkgs; [
+      gnome-boxes # VM management
+      dnsmasq # VM networking
+      phodav # (optional) Share files with guest VMs
+    ];
+  };
+}

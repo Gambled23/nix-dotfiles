@@ -9,7 +9,7 @@
       self.homeModules.nixcord
       self.homeModules.mangowmHome
       # self.homeModules.noctalia5
-      self.homeModules.dux
+      self.homeModules.duxShell
       self.homeModules.matugen
     ];
 
@@ -80,7 +80,7 @@
       # gnome-contacts
       gparted
       libreoffice-stable
-      nautilus
+      # nautilus
       qalculate-gtk
       scrcpy
       seahorse # gnome keyring manager
@@ -98,15 +98,26 @@
       "com.artemchep.keyguard"
     ];
 
-    xdg.mimeApps.defaultApplications = {
-      "application/pdf" = "draw.desktop";
-      "image/*" = [
-        "org.gnome.Loupe.desktop"
-        "gimp.desktop"
-      ];
-      "video/*" = [ "vlc.desktop" ];
-      "audio/*" = [ "vlc.desktop" ];
-      "text/calendar" = [ "chrome-fmgjjmmmlfnkbppncabfkddbjimcfncm-Default.desktop" ];
+    xdg.mimeApps = {
+      enable = true;
+      defaultApplications = {
+        "application/pdf" = [ "draw.desktop" ];
+        "image/*" = [
+          "org.gnome.Loupe.desktop"
+          "gimp.desktop"
+        ];
+        "video/*" = [ "vlc.desktop" ];
+        "audio/*" = [ "vlc.desktop" ];
+        "text/calendar" = [
+          "dev.duxlabs.calendar.desktop"
+          "com.google.Chrome.desktop"
+        ];
+        "inode/directory" = [
+          "dev.duxlabs.files.desktop"
+          "yazi.desktop"
+          "org.gnome.Nautilus.desktop"
+        ];
+      };
     };
 
     # services.gpg-agent = {

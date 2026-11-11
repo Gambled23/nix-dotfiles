@@ -313,7 +313,8 @@
     }
   ];
   currentThemeCategory = "dynamic";
-  matugenScheme = "scheme-expressive";
+  matugenScheme = "scheme-tonal-spot";
+  matugenSeedColor = "";
   matugenSpec = "2025";
   runUserMatugenTemplates = true;
   matugenTargetMonitor = "";
@@ -353,88 +354,88 @@
   controlCenterColumns = 12;
   controlCenterWidgets = [
     {
+      col = 0;
       enabled = true;
       h = 1;
       id = "user";
-      w = 5;
-      col = 0;
       row = 0;
+      w = 5;
     }
     {
+      col = 5;
       enabled = true;
       h = 1;
       id = "settings";
+      row = 0;
       small = true;
       w = 1;
-      col = 5;
-      row = 0;
     }
     {
+      col = 6;
       enabled = true;
       h = 1;
       id = "lock";
+      row = 0;
       small = true;
       w = 1;
-      col = 6;
-      row = 0;
     }
     {
+      col = 7;
       enabled = true;
       h = 1;
       id = "power";
+      row = 0;
       small = true;
       w = 1;
-      col = 7;
-      row = 0;
     }
     {
+      col = 0;
       enabled = true;
       h = 1;
       id = "volumeSlider";
-      w = 4;
-      col = 0;
       row = 2;
+      w = 4;
     }
     {
+      col = 4;
       enabled = true;
       h = 1;
       id = "brightnessSlider";
-      w = 4;
-      col = 4;
       row = 2;
+      w = 4;
     }
     {
+      col = 0;
       enabled = true;
       h = 1;
       id = "wifi";
-      w = 3.5;
-      col = 0;
       row = 1;
+      w = 3.5;
     }
     {
+      col = 9;
       enabled = true;
       h = 1;
       id = "nightMode";
-      w = 3;
-      col = 9;
       row = 1;
+      w = 3;
     }
     {
+      col = 7;
       enabled = true;
       h = 1;
       id = "darkMode";
-      w = 2;
-      col = 7;
       row = 1;
+      w = 2;
     }
     {
+      col = 11;
       enabled = true;
       h = 1;
       id = "edit";
+      row = 3;
       small = true;
       w = 1;
-      col = 11;
-      row = 3;
     }
     {
       col = 8;
@@ -446,43 +447,44 @@
       w = 4;
     }
     {
-      id = "plugin_dankKDEConnect";
-      enabled = true;
-      w = 4;
-      h = 1;
       col = 8;
+      enabled = true;
+      h = 1;
+      id = "plugin_dankKDEConnect";
       row = 0;
+      w = 4;
     }
     {
+      col = 3.5;
       enabled = true;
       h = 1;
       id = "bluetooth";
-      w = 3.5;
-      col = 3.5;
       row = 1;
+      w = 3.5;
     }
     {
+      col = 4;
       enabled = true;
       h = 1;
       id = "audioOutput";
-      w = 4;
-      col = 4;
       row = 3;
+      w = 4;
     }
     {
+      col = 0;
       enabled = true;
       h = 1;
       id = "audioInput";
-      w = 4;
-      col = 0;
       row = 3;
+      w = 4;
     }
   ];
   workspaceNameIcons = {
   };
   scrollTitleEnabled = true;
-  audioVisualizerEnabled = true;
+  audioVisualizerEnabled = false;
   audioWheelScrollAmount = 1;
+  bluetoothMprisEnabled = false;
   appIdSubstitutions = [
     {
       pattern = "Spotify";
@@ -529,6 +531,38 @@
   dankLauncherV2UnloadOnClose = false;
   launcherStyle = "full";
   avatarRing = "primary";
+  dashTabPosition = "auto";
+  dashTabsEvenlySpaced = true;
+  dashTabs = [
+    {
+      id = "overview";
+      enabled = true;
+    }
+    {
+      id = "media";
+      enabled = true;
+    }
+    {
+      id = "wallpaper";
+      enabled = true;
+    }
+    {
+      id = "weather";
+      enabled = true;
+    }
+    {
+      id = "wellbeing";
+      enabled = true;
+    }
+    {
+      id = "notifications";
+      enabled = false;
+    }
+    {
+      id = "settings";
+      enabled = false;
+    }
+  ];
   dashCards = [
     {
       col = 3;
@@ -869,7 +903,12 @@
           audioScrollMode = "volume";
           enabled = true;
           id = "music";
+          mediaAdaptiveWidthEnabled = true;
+          mediaShowCoverArt = true;
+          mediaShowLyrics = false;
           mediaSize = 1;
+          mediaSmoothLyrics = false;
+          mediaStyle = "controls";
         }
         {
           enabled = true;
@@ -894,14 +933,14 @@
           id = "clock";
         }
         {
-          dwlShowAllTags = false;
+          dwlShowAllTags = true;
           enabled = true;
           groupWorkspaceApps = true;
           id = "workspaceSwitcher";
           maxWorkspaceIcons = 3;
           reverseScrolling = false;
           showOccupiedWorkspacesOnly = false;
-          showWorkspaceApps = false;
+          showWorkspaceApps = true;
           showWorkspaceIndex = true;
           showWorkspaceName = false;
           showWorkspacePadding = false;
@@ -912,21 +951,10 @@
           workspaceFocusedBorderEnabled = false;
           workspaceFocusedBorderThickness = 2;
           workspaceFollowFocus = false;
+          workspaceIndicatorStyle = "pills";
           workspaceOccupiedColorMode = "none";
           workspaceUnfocusedColorMode = "default";
           workspaceUrgentColorMode = "default";
-        }
-        {
-          enabled = true;
-          id = "usbManager";
-        }
-        {
-          enabled = true;
-          id = "dmsScreenshot";
-        }
-        {
-          enabled = true;
-          id = "mangoWmLayoutManager";
         }
       ];
       maximizeWidgetIcons = false;
@@ -937,6 +965,10 @@
       popupGapsManual = 4;
       position = 0;
       rightWidgets = [
+        {
+          enabled = true;
+          id = "mangoWmLayoutManager";
+        }
         {
           enabled = true;
           id = "dankKDEConnect";
@@ -1055,9 +1087,28 @@
       widgetType = "materialWeather";
     }
     {
+      config = {
+        borderOpacity = 0;
+        displayPreferences = [
+          {
+            model = "Unknown";
+            name = "eDP-1";
+          }
+        ];
+        hideWhenIdle = true;
+        rotateThumbnail = true;
+        showArtBackdrop = false;
+        showWaves = true;
+      };
+      enabled = true;
       id = "dw_1794249117784_z12l4kf94";
-      widgetType = "mediaPlayer";
       name = "Media Player";
+      widgetType = "mediaPlayer";
+    }
+    {
+      id = "dw_1794342529365_0n9lpvpa0";
+      widgetType = "lainWidget";
+      name = "Wired (Lain)";
       enabled = true;
       config = {
         displayPreferences = [
@@ -1066,6 +1117,7 @@
             model = "Unknown";
           }
         ];
+        cycleInterval = 30;
       };
     }
   ];

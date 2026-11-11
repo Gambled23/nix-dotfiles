@@ -24,7 +24,7 @@
       "app_id:vicinae,no_animation:1"
       # "title:\,,app_id:com.mitchellh.ghostty,is_open_silent:1,tags:5"
 
-      "title:phone,app_id:.scrcpy-wrapped,width:447,height:993,is_floating:1"
+      "title:phone,app_id:.scrcpy-wrapped,width:469,height:1041,is_floating:1"
       "title:desktop,app_id:.scrcpy-wrapped,tags:1,is_fullscreen:1,is_fake_fullscreen:0"
       "title:audio,app_id:.scrcpy-wrapped,tags:6,is_named_scratchpad:1,is_open_silent:1"
     ];
