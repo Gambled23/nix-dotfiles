@@ -535,32 +535,32 @@
   dashTabsEvenlySpaced = true;
   dashTabs = [
     {
+      enabled = true;
       id = "overview";
-      enabled = true;
     }
     {
+      enabled = true;
       id = "media";
-      enabled = true;
     }
     {
+      enabled = true;
       id = "wallpaper";
-      enabled = true;
     }
     {
+      enabled = true;
       id = "weather";
-      enabled = true;
     }
     {
+      enabled = true;
       id = "wellbeing";
-      enabled = true;
     }
     {
+      enabled = false;
       id = "notifications";
-      enabled = false;
     }
     {
-      id = "settings";
       enabled = false;
+      id = "settings";
     }
   ];
   dashCards = [
@@ -1106,18 +1106,51 @@
       widgetType = "mediaPlayer";
     }
     {
+      config = {
+        cycleInterval = 30;
+        displayPreferences = [
+          {
+            model = "Unknown";
+            name = "eDP-1";
+          }
+        ];
+      };
+      enabled = true;
       id = "dw_1794342529365_0n9lpvpa0";
+      name = "Wired (Lain)";
+      widgetType = "lainWidget";
+    }
+    {
+      id = "dw_1794405480958_lddml4ml7";
+      widgetType = "materialPlayer";
+      name = "Material Player & Lyrics";
+      enabled = true;
+      config = {
+        displayPreferences = [
+          "all"
+        ];
+      };
+    }
+    {
+      id = "dw_1794405487101_quofr6uxr";
+      widgetType = "materialWeather";
+      name = "Material Weather";
+      enabled = true;
+      config = {
+        displayPreferences = [
+          "all"
+        ];
+      };
+    }
+    {
+      id = "dw_1794405490045_w80d2iel0";
       widgetType = "lainWidget";
       name = "Wired (Lain)";
       enabled = true;
       config = {
         displayPreferences = [
-          {
-            name = "eDP-1";
-            model = "Unknown";
-          }
+          "all"
         ];
-        cycleInterval = 30;
       };
     }
   ];
