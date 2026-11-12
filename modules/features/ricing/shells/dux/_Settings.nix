@@ -264,7 +264,7 @@
       showOnFullscreen = false;
       openOnOverview = false;
       groupByApp = true;
-      separatePinnedAndRunningApps = true;
+      separatePinnedAndRunningApps = false;
       restoreSpecialWorkspaceOnClick = false;
       isolateDisplays = true;
       indicatorStyle = "circle";
@@ -889,6 +889,8 @@
   displayProfileAutoSelect = true;
   displayShowDisconnected = false;
   displaySnapToEdge = true;
+  connectedFrameBarStyleBackups = {
+  };
   barConfigs = [
     {
       autoHide = false;
@@ -925,13 +927,8 @@
       gothCornersEnabled = true;
       id = "default";
       innerPadding = 4;
-      island = false;
+      island = true;
       leftWidgets = [
-        {
-          clockCompactMode = false;
-          enabled = true;
-          id = "clock";
-        }
         {
           dwlShowAllTags = true;
           enabled = true;
@@ -1017,6 +1014,20 @@
       widgetFollowInterfaceStyle = true;
       widgetPadding = 8;
       widgetTransparency = 1;
+      shadowIntensity = 0;
+      attachToScreenEdge = false;
+      islandNotch = false;
+      islandFloating = false;
+      islandPlacement = "edge";
+      islandOuterGap = 2;
+      islandReserveThickness = 43;
+      islandInteractionMode = "hybrid";
+      islandDashTabs = true;
+      islandMediaLyrics = false;
+      islandMediaAutoSwitch = true;
+      islandMediaClockVisible = true;
+      hoverPopouts = false;
+      islandUseOverlayLayer = false;
     }
   ];
   desktopWidgetInstances = [
@@ -1088,25 +1099,6 @@
     }
     {
       config = {
-        borderOpacity = 0;
-        displayPreferences = [
-          {
-            model = "Unknown";
-            name = "eDP-1";
-          }
-        ];
-        hideWhenIdle = true;
-        rotateThumbnail = true;
-        showArtBackdrop = false;
-        showWaves = true;
-      };
-      enabled = true;
-      id = "dw_1794249117784_z12l4kf94";
-      name = "Media Player";
-      widgetType = "mediaPlayer";
-    }
-    {
-      config = {
         cycleInterval = 30;
         displayPreferences = [
           {
@@ -1121,31 +1113,9 @@
       widgetType = "lainWidget";
     }
     {
-      id = "dw_1794405480958_lddml4ml7";
+      id = "dw_1794418999125_3nrzsnedr";
       widgetType = "materialPlayer";
       name = "Material Player & Lyrics";
-      enabled = true;
-      config = {
-        displayPreferences = [
-          "all"
-        ];
-      };
-    }
-    {
-      id = "dw_1794405487101_quofr6uxr";
-      widgetType = "materialWeather";
-      name = "Material Weather";
-      enabled = true;
-      config = {
-        displayPreferences = [
-          "all"
-        ];
-      };
-    }
-    {
-      id = "dw_1794405490045_w80d2iel0";
-      widgetType = "lainWidget";
-      name = "Wired (Lain)";
       enabled = true;
       config = {
         displayPreferences = [
@@ -1178,5 +1148,6 @@
   launcherPluginOrder = [
 
   ];
+  frameEnabled = false;
   configVersion = 42;
 }

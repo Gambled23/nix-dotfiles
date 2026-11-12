@@ -12,7 +12,7 @@ pkgs.writeShellScriptBin "flash-kernelsu" ''
     | tail -n 10 \
     | tac \
     | ${pkgs.gum}/bin/gum choose --header "Select version" --label-delimiter=" | ")
-  $(${pkgs.uv}/bin/uv tool run --from android-payload-dumper payload-dumper "$ota_link" -p init_boot)
+  ${pkgs.uv}/bin/uv tool run --python ${pkgs.python3}/bin/python --from android-payload-dumper payload-dumper "$ota_link" -p init_boot
 
   android_kdeconnect_id=add58a14_05d3_43a6_821f_d741a767cf5e
   ${pkgs.gum}/bin/gum spin --spinner dot --title "Enviando a Android" -- kdeconnect-cli --device $android_kdeconnect_id --share ./output/init_boot.img
