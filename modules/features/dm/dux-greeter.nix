@@ -5,7 +5,7 @@
         enable = true;
         user = "gambled";
       };
-      dms-greeter = {
+      dux-greeter = {
         enable = true;
         # package = inputs.dux-greeter.packages.${pkgs.stdenv.hostPlatform.system}.default;
         compositor.name = "mangowc";

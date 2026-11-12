@@ -17,6 +17,7 @@
       "app_id:vlc,width:419,height:237,is_floating:1"
       "app_id:kitty,is_term:1"
 
+      "title:Bitwarden,is_floating:1, width:1000,height:700"
       "title:Picture in picture,is_floating:1, width:284,height:161"
       "title:(Open File.*|Select Folder to Upload|Select a file),width:1150,height:700,is_floating:1"
       "title:(Keyguard),width:911,height:655,is_floating:1"
