@@ -189,9 +189,11 @@
         gtk = {
           enable = lib.mkDefault true;
           gtk4.extraCss = lib.mkDefault ''
+            @import url("dank-colors.css");   
             @import url("${config.xdg.configHome}/gtk-4.0/gtk.css");
           '';
           gtk3.extraCss = lib.mkDefault ''
+            @import url("dank-colors.css");   
             @import url("${config.xdg.configHome}/gtk-3.0/gtk.css");
           '';
         };

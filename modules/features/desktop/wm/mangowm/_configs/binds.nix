@@ -159,6 +159,7 @@ in
       "none,Print,spawn,dms screenshot"
       "SUPER,m,spawn,dms ipc call lock lock"
       "CTRL+ALT,Delete,spawn,dms ipc call powermenu toggle"
+      
     ];
 
     mousebind = [

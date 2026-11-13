@@ -49,12 +49,20 @@
     };
     systemd.user.startServices = "sd-switch";
 
-    gtk = {
+    gtk = let
+      dmsEnabled = lib.attrByPath [ "programs" "dank-material-shell" "enable" ] false config;
+      dmsCss = ''
+        @import url("dank-colors.css");
+      '';
+    in {
       enable = true;
-      theme.name = "adw-gtk3";
+      theme.name = "adw-gtk3-dark";
       iconTheme.name = config.theme.iconTheme.name;
       cursorTheme.name = config.theme.cursorTheme.name;
       cursorTheme.size = 24;
+
+      gtk3.extraCss = lib.mkIf dmsEnabled dmsCss;
+      gtk4.extraCss = lib.mkIf dmsEnabled dmsCss;
     };
 
     qt = let 

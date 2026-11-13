@@ -13,7 +13,7 @@
       source = "custom";
       wallpaper_scheme = "m3-fruit-salad";
       templates = {
-        builtin_ids = [ "btop" "gtk3" "gtk4" "ghostty" "hyprland" "kitty" "mango" "qt" "starship" ];
+        builtin_ids = [ "btop" "gtk3" "gtk4" "kitty" "mango" "qt" "starship" ];
         community_ids = [ "antigravity" "spicetify" "spotifast" "zen-browser" "discord" "nchat" "gimp" "libreoffice" "neovim" "obsidian" "vscode" "steam" "vicinae" "fastfetch" "mailspring" "siyuan" "hyprtoolkit" "bat" "fzf" "lazygit" "tmux" "yazi" ];
         enable_builtin_templates = true;
         enable_community_templates = true;

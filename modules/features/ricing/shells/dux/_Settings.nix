@@ -313,7 +313,7 @@
     }
   ];
   currentThemeCategory = "dynamic";
-  matugenScheme = "scheme-tonal-spot";
+  matugenScheme = "scheme-expressive";
   matugenSeedColor = "";
   matugenSpec = "2025";
   runUserMatugenTemplates = true;
@@ -354,54 +354,27 @@
   controlCenterColumns = 12;
   controlCenterWidgets = [
     {
-      col = 0;
+      col = 6;
       enabled = true;
       h = 1;
       id = "user";
       row = 0;
-      w = 5;
-    }
-    {
-      col = 5;
-      enabled = true;
-      h = 1;
-      id = "settings";
-      row = 0;
-      small = true;
-      w = 1;
-    }
-    {
-      col = 6;
-      enabled = true;
-      h = 1;
-      id = "lock";
-      row = 0;
-      small = true;
-      w = 1;
-    }
-    {
-      col = 7;
-      enabled = true;
-      h = 1;
-      id = "power";
-      row = 0;
-      small = true;
-      w = 1;
+      w = 3.5;
     }
     {
       col = 0;
       enabled = true;
       h = 1;
       id = "volumeSlider";
-      row = 2;
-      w = 4;
+      row = 0;
+      w = 6;
     }
     {
-      col = 4;
+      col = 0;
       enabled = true;
       h = 1;
       id = "brightnessSlider";
-      row = 2;
+      row = 1;
       w = 4;
     }
     {
@@ -409,16 +382,17 @@
       enabled = true;
       h = 1;
       id = "wifi";
-      row = 1;
+      row = 2;
       w = 3.5;
     }
     {
-      col = 9;
+      col = 9.5;
       enabled = true;
       h = 1;
       id = "nightMode";
       row = 1;
-      w = 3;
+      w = 2.5;
+      small = true;
     }
     {
       col = 7;
@@ -426,14 +400,15 @@
       h = 1;
       id = "darkMode";
       row = 1;
-      w = 2;
+      w = 2.5;
+      small = true;
     }
     {
       col = 11;
       enabled = true;
       h = 1;
       id = "edit";
-      row = 3;
+      row = 2;
       small = true;
       w = 1;
     }
@@ -442,41 +417,89 @@
       enabled = true;
       h = 1;
       id = "runningApps";
-      row = 2;
+      row = 3;
       small = true;
       w = 4;
-    }
-    {
-      col = 8;
-      enabled = true;
-      h = 1;
-      id = "plugin_dankKDEConnect";
-      row = 0;
-      w = 4;
-    }
-    {
-      col = 3.5;
-      enabled = true;
-      h = 1;
-      id = "bluetooth";
-      row = 1;
-      w = 3.5;
     }
     {
       col = 4;
       enabled = true;
       h = 1;
-      id = "audioOutput";
-      row = 3;
-      w = 4;
+      id = "plugin_dankKDEConnect";
+      row = 1;
+      w = 3;
+      small = true;
     }
     {
       col = 0;
       enabled = true;
       h = 1;
-      id = "audioInput";
+      id = "bluetooth";
       row = 3;
+      w = 3.5;
+    }
+    {
+      col = 6;
+      enabled = true;
+      h = 1;
+      id = "audioOutput";
+      row = 2;
+      w = 2.5;
+    }
+    {
+      col = 3.5;
+      enabled = true;
+      h = 1;
+      id = "audioInput";
+      row = 2;
+      w = 2.5;
+    }
+    {
+      id = "builtin_tailscale";
+      enabled = true;
+      w = 2.5;
+      h = 1;
+      col = 8.5;
+      row = 2;
+    }
+    {
+      id = "quickTiles";
+      enabled = true;
+      w = 2.5;
+      h = 1;
+      instanceId = "mwfgog93ximpwscgfzz";
+      col = 9.5;
+      row = 0;
+    }
+    {
+      enabled = true;
+      h = 1;
+      id = "settings";
+      small = true;
+      w = 1;
+      group = "mwfgog93ximpwscgfzz";
+    }
+    {
+      enabled = true;
+      h = 1;
+      id = "power";
+      small = true;
+      w = 1;
+      group = "mwfgog93ximpwscgfzz";
+    }
+    {
+      enabled = true;
+      h = 1;
+      id = "lock";
+      small = true;
+      w = 1;
+      group = "mwfgog93ximpwscgfzz";
+    }
+    {
+      id = "plugin_cast";
+      enabled = true;
       w = 4;
+      h = 1;
     }
   ];
   workspaceNameIcons = {
@@ -529,38 +552,38 @@
   dankLauncherV2BorderColor = "primary";
   dankLauncherV2ShowFooter = true;
   dankLauncherV2UnloadOnClose = false;
-  launcherStyle = "full";
+  launcherStyle = "island";
   avatarRing = "primary";
   dashTabPosition = "auto";
   dashTabsEvenlySpaced = true;
   dashTabs = [
     {
-      enabled = true;
       id = "overview";
+      enabled = true;
     }
     {
-      enabled = true;
       id = "media";
-    }
-    {
       enabled = true;
-      id = "wallpaper";
     }
     {
-      enabled = true;
-      id = "weather";
-    }
-    {
-      enabled = true;
-      id = "wellbeing";
-    }
-    {
-      enabled = false;
       id = "notifications";
+      enabled = true;
     }
     {
-      enabled = false;
+      id = "weather";
+      enabled = true;
+    }
+    {
+      id = "wellbeing";
+      enabled = true;
+    }
+    {
+      id = "wallpaper";
+      enabled = true;
+    }
+    {
       id = "settings";
+      enabled = true;
     }
   ];
   dashCards = [
@@ -654,7 +677,7 @@
       color = "theme";
     };
     clock = {
-      seconds = true;
+      date = true;
       weight = 700;
     };
     media = {
@@ -746,6 +769,12 @@
     wellbeing = {
       panelColumns = 5;
       panelRows = 8;
+    };
+    wallpaper = {
+      layout = "carousel";
+    };
+    calendar = {
+      weekends = true;
     };
   };
   wellbeingEnabled = true;
@@ -893,6 +922,7 @@
   };
   barConfigs = [
     {
+      attachToScreenEdge = false;
       autoHide = false;
       autoHideDelay = 250;
       borderColor = "surfaceText";
@@ -925,10 +955,29 @@
       gothCornerRadiusOverride = false;
       gothCornerRadiusValue = 64;
       gothCornersEnabled = true;
+      hoverPopouts = true;
       id = "default";
       innerPadding = 4;
       island = true;
+      islandDashTabs = true;
+      islandFloating = false;
+      islandInteractionMode = "hybrid";
+      islandMediaAutoSwitch = true;
+      islandMediaClockVisible = true;
+      islandMediaLyrics = false;
+      islandNotch = false;
+      islandOuterGap = 0;
+      islandPlacement = "free";
+      islandReserveThickness = 41;
+      islandUseOverlayLayer = false;
       leftWidgets = [
+        {
+          id = "focusedWindow";
+          enabled = true;
+          overflowMode = "section";
+          focusedWindowCompactMode = true;
+          focusedWindowSize = 0;
+        }
         {
           dwlShowAllTags = true;
           enabled = true;
@@ -963,8 +1012,28 @@
       position = 0;
       rightWidgets = [
         {
+          id = "systemMonitorPlus";
+          enabled = true;
+        }
+        {
+          enabled = true;
+          id = "systemTray";
+        }
+        {
+          id = "clipboardPlus";
+          enabled = true;
+        }
+        {
           enabled = true;
           id = "mangoWmLayoutManager";
+        }
+        {
+          id = "orbitBluetooth";
+          enabled = true;
+        }
+        {
+          id = "hiddenBar";
+          enabled = true;
         }
         {
           enabled = true;
@@ -972,15 +1041,11 @@
         }
         {
           enabled = true;
-          id = "systemTray";
+          id = "battery";
         }
         {
           enabled = true;
           id = "volumeMixer";
-        }
-        {
-          enabled = true;
-          id = "battery";
         }
         {
           enabled = true;
@@ -1006,7 +1071,8 @@
       screenPreferences = [
         "all"
       ];
-      showOnLastDisplay = true;
+      shadowIntensity = 0;
+      showOnLastDisplay = false;
       spacing = 0;
       squareCorners = true;
       transparency = 0.6;
@@ -1014,20 +1080,53 @@
       widgetFollowInterfaceStyle = true;
       widgetPadding = 8;
       widgetTransparency = 1;
-      shadowIntensity = 0;
-      attachToScreenEdge = false;
-      islandNotch = false;
-      islandFloating = false;
-      islandPlacement = "edge";
-      islandOuterGap = 2;
-      islandReserveThickness = 43;
-      islandInteractionMode = "hybrid";
-      islandDashTabs = true;
-      islandMediaLyrics = false;
-      islandMediaAutoSwitch = true;
-      islandMediaClockVisible = true;
-      hoverPopouts = false;
-      islandUseOverlayLayer = false;
+      hideOnLastDisplay = false;
+      islandHoverOpenDelay = 190;
+      islandHoverCloseDelay = 170;
+      islandNotificationExpand = true;
+      islandNotificationBadgeClearOnOpen = true;
+      islandHomeLayout = [
+        {
+          id = "clock";
+          enabled = true;
+        }
+        {
+          id = "media";
+          enabled = true;
+        }
+        {
+          id = "notifications";
+          enabled = true;
+        }
+        {
+          id = "privacy";
+          enabled = true;
+        }
+        {
+          id = "workspaces";
+          enabled = false;
+        }
+        {
+          id = "status";
+          enabled = false;
+        }
+        {
+          id = "weather";
+          enabled = false;
+        }
+        {
+          id = "volume";
+          enabled = false;
+        }
+        {
+          id = "brightness";
+          enabled = false;
+        }
+        {
+          id = "tray";
+          enabled = false;
+        }
+      ];
     }
   ];
   desktopWidgetInstances = [
@@ -1113,15 +1212,15 @@
       widgetType = "lainWidget";
     }
     {
-      id = "dw_1794418999125_3nrzsnedr";
-      widgetType = "materialPlayer";
-      name = "Material Player & Lyrics";
-      enabled = true;
       config = {
         displayPreferences = [
           "all"
         ];
       };
+      enabled = true;
+      id = "dw_1794418999125_3nrzsnedr";
+      name = "Material Player & Lyrics";
+      widgetType = "materialPlayer";
     }
   ];
   desktopWidgetGroups = [

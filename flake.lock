@@ -8222,11 +8222,11 @@
     },
     "nuvio_4": {
       "locked": {
-        "lastModified": 1792153645,
-        "narHash": "sha256-dR8niker2DSugi//o2smQON+wJS8riAZdQiEhiyYyWY=",
+        "lastModified": 1794584185,
+        "narHash": "sha256-KopYCmvXNTWfFuHmiSD8yN4s7CovAGAVkC3rmSe/72c=",
         "owner": "griffi-gh",
         "repo": "nixpkgs",
-        "rev": "8b67a750b50ae09ee67103233d4758cb4a72ff59",
+        "rev": "a96c97bdf798e2721eb3470fc83f9d43ae2c83a7",
         "type": "github"
       },
       "original": {

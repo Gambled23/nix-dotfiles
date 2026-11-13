@@ -45,6 +45,14 @@
         materialWeather.enable = true;
         materialPlayer.enable = true;
         lainWidget.enable = true;
+        hiddenBar.enable = true;
+        systemMonitorPlus.enable = true;
+        cast.enable = true;
+        clipboardPlus.enable = true;
+        dankscale.enable = true;
+        dankActions.enable = true;
+        orbitBluetooth.enable = true;
+        dmsScreenshot.enable = true;
       };
     };
 

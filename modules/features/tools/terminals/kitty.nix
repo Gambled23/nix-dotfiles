@@ -34,8 +34,11 @@
         background_opacity = 0.5;
         confirm_os_window_close = 0;
       };
+      
+      # include themes/noctalia.conf
       extraConfig = ''
-        include themes/noctalia.conf
+        include dank-tabs.conf
+        include dank-theme.conf
       '';
     };
   };
