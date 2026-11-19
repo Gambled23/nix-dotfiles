@@ -6,7 +6,7 @@
       self.nixosModules.machineServer
       self.nixosModules.myHomeManager
       self.nixosModules.bootGrub
-      self.nixosModules.glances
+      # self.nixosModules.glances
       self.nixosModules.homeassistant
       self.nixosModules.homepageDashboard
       # self.nixosModules.codeServer
