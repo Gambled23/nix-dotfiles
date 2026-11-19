@@ -195,6 +195,7 @@
   currentThemeName = "dynamic";
   customThemeFile = "";
   registryThemeVariants = {
+  
   };
   radiusStrength = 38;
   clockFormat = "24h";
@@ -290,7 +291,7 @@
       magnificationProfile = "parabolic";
       magnificationExpand = false;
       order = [
-
+      
       ];
       widgets = [
         {
@@ -326,15 +327,15 @@
   widgetColorMode = "colorful";
   controlCenterTileColorMode = "primary";
   buttonColorMode = "primary";
-  niriLayoutGapsOverride = -1;
-  niriLayoutRadiusOverride = -1;
-  niriLayoutBorderSize = -1;
-  hyprlandLayoutGapsOverride = -1;
-  hyprlandLayoutRadiusOverride = -1;
-  hyprlandLayoutBorderSize = -1;
-  mangoLayoutGapsOverride = -1;
-  mangoLayoutRadiusOverride = -1;
-  mangoLayoutBorderSize = -1;
+  niriLayoutGapsOverride = (-1);
+  niriLayoutRadiusOverride = (-1);
+  niriLayoutBorderSize = (-1);
+  hyprlandLayoutGapsOverride = (-1);
+  hyprlandLayoutRadiusOverride = (-1);
+  hyprlandLayoutBorderSize = (-1);
+  mangoLayoutGapsOverride = (-1);
+  mangoLayoutRadiusOverride = (-1);
+  mangoLayoutBorderSize = (-1);
   windSpeedUnit = "kmh";
   syncComponentAnimationSpeeds = true;
   springBounce = 2;
@@ -391,8 +392,8 @@
       h = 1;
       id = "nightMode";
       row = 1;
-      w = 2.5;
       small = true;
+      w = 2.5;
     }
     {
       col = 7;
@@ -400,8 +401,8 @@
       h = 1;
       id = "darkMode";
       row = 1;
-      w = 2.5;
       small = true;
+      w = 2.5;
     }
     {
       col = 11;
@@ -427,8 +428,8 @@
       h = 1;
       id = "plugin_dankKDEConnect";
       row = 1;
-      w = 3;
       small = true;
+      w = 3;
     }
     {
       col = 0;
@@ -455,54 +456,55 @@
       w = 2.5;
     }
     {
-      id = "builtin_tailscale";
-      enabled = true;
-      w = 2.5;
-      h = 1;
       col = 8.5;
-      row = 2;
-    }
-    {
-      id = "quickTiles";
       enabled = true;
-      w = 2.5;
       h = 1;
-      instanceId = "mwfgog93ximpwscgfzz";
+      id = "builtin_tailscale";
+      row = 2;
+      w = 2.5;
+    }
+    {
       col = 9.5;
+      enabled = true;
+      h = 1;
+      id = "quickTiles";
+      instanceId = "mwfgog93ximpwscgfzz";
       row = 0;
+      w = 2.5;
     }
     {
       enabled = true;
+      group = "mwfgog93ximpwscgfzz";
       h = 1;
       id = "settings";
       small = true;
       w = 1;
-      group = "mwfgog93ximpwscgfzz";
     }
     {
       enabled = true;
+      group = "mwfgog93ximpwscgfzz";
       h = 1;
       id = "power";
       small = true;
       w = 1;
-      group = "mwfgog93ximpwscgfzz";
     }
     {
       enabled = true;
+      group = "mwfgog93ximpwscgfzz";
       h = 1;
       id = "lock";
       small = true;
       w = 1;
-      group = "mwfgog93ximpwscgfzz";
     }
     {
-      id = "plugin_cast";
       enabled = true;
-      w = 4;
       h = 1;
+      id = "plugin_cast";
+      w = 4;
     }
   ];
   workspaceNameIcons = {
+  
   };
   scrollTitleEnabled = true;
   audioVisualizerEnabled = false;
@@ -542,8 +544,10 @@
   sortAppsAlphabetically = true;
   appLauncherGridColumns = 4;
   spotlightSectionViewModes = {
+  
   };
   appDrawerSectionViewModes = {
+  
   };
   niriOverviewOverlayEnabled = true;
   dankLauncherV2Size = "compact";
@@ -558,32 +562,32 @@
   dashTabsEvenlySpaced = true;
   dashTabs = [
     {
+      enabled = true;
       id = "overview";
-      enabled = true;
     }
     {
+      enabled = true;
       id = "media";
-      enabled = true;
     }
     {
+      enabled = true;
       id = "notifications";
-      enabled = true;
     }
     {
+      enabled = true;
       id = "weather";
-      enabled = true;
     }
     {
+      enabled = true;
       id = "wellbeing";
-      enabled = true;
     }
     {
+      enabled = true;
       id = "wallpaper";
-      enabled = true;
     }
     {
-      id = "settings";
       enabled = true;
+      id = "settings";
     }
   ];
   dashCards = [
@@ -676,6 +680,9 @@
     battery = {
       color = "theme";
     };
+    calendar = {
+      weekends = true;
+    };
     clock = {
       date = true;
       weight = 700;
@@ -683,6 +690,9 @@
     media = {
       artStyle = "squircle";
       panelColumns = 5;
+    };
+    wallpaper = {
+      layout = "carousel";
     };
     weather = {
       widgets = [
@@ -770,12 +780,6 @@
       panelColumns = 5;
       panelRows = 8;
     };
-    wallpaper = {
-      layout = "carousel";
-    };
-    calendar = {
-      weekends = true;
-    };
   };
   wellbeingEnabled = true;
   networkPreference = "auto";
@@ -801,7 +805,7 @@
   notepadFontFamily = "";
   notepadFontSize = 14;
   notepadShowLineNumbers = false;
-  notepadTransparencyOverride = -1;
+  notepadTransparencyOverride = (-1);
   notepadLastCustomTransparency = 0.7;
   soundsEnabled = true;
   useSystemSoundTheme = false;
@@ -868,7 +872,7 @@
   notificationTimeoutNormal = 5000;
   notificationTimeoutCritical = 0;
   notificationCompactMode = true;
-  notificationPopupPosition = -1;
+  notificationPopupPosition = (-1);
   notificationHistoryEnabled = true;
   notificationHistoryMaxCount = 50;
   notificationHistoryMaxAgeDays = 7;
@@ -876,7 +880,7 @@
   notificationHistorySaveNormal = true;
   notificationHistorySaveCritical = true;
   notificationRules = [
-
+  
   ];
   notificationFocusedMonitor = true;
   osdAlwaysShowValue = true;
@@ -888,7 +892,7 @@
     numLock = 0;
     powerProfile = 0;
   };
-  osdVolumeEnabled = true;
+  osdVolumeEnabled = false;
   osdMediaVolumeEnabled = true;
   osdMediaPlaybackEnabled = true;
   osdBrightnessEnabled = true;
@@ -912,13 +916,16 @@
     ];
   };
   showOnLastDisplay = {
+  
   };
   displayProfiles = {
+  
   };
   displayProfileAutoSelect = true;
   displayShowDisconnected = false;
   displaySnapToEdge = true;
   connectedFrameBarStyleBackups = {
+  
   };
   barConfigs = [
     {
@@ -955,28 +962,75 @@
       gothCornerRadiusOverride = false;
       gothCornerRadiusValue = 64;
       gothCornersEnabled = true;
+      hideOnLastDisplay = false;
       hoverPopouts = true;
       id = "default";
       innerPadding = 4;
       island = true;
       islandDashTabs = true;
       islandFloating = false;
+      islandHomeLayout = [
+        {
+          enabled = true;
+          id = "clock";
+        }
+        {
+          enabled = true;
+          id = "media";
+        }
+        {
+          enabled = true;
+          id = "notifications";
+        }
+        {
+          enabled = true;
+          id = "privacy";
+        }
+        {
+          enabled = false;
+          id = "workspaces";
+        }
+        {
+          enabled = false;
+          id = "status";
+        }
+        {
+          enabled = false;
+          id = "weather";
+        }
+        {
+          enabled = false;
+          id = "volume";
+        }
+        {
+          enabled = false;
+          id = "brightness";
+        }
+        {
+          enabled = false;
+          id = "tray";
+        }
+      ];
+      islandHoverCloseDelay = 170;
+      islandHoverOpenDelay = 190;
       islandInteractionMode = "hybrid";
       islandMediaAutoSwitch = true;
       islandMediaClockVisible = true;
       islandMediaLyrics = false;
       islandNotch = false;
+      islandNotificationBadgeClearOnOpen = true;
+      islandNotificationExpand = true;
       islandOuterGap = 0;
       islandPlacement = "free";
       islandReserveThickness = 41;
       islandUseOverlayLayer = false;
       leftWidgets = [
         {
-          id = "focusedWindow";
           enabled = true;
-          overflowMode = "section";
           focusedWindowCompactMode = true;
           focusedWindowSize = 0;
+          id = "focusedWindow";
+          overflowMode = "section";
         }
         {
           dwlShowAllTags = true;
@@ -1012,28 +1066,28 @@
       position = 0;
       rightWidgets = [
         {
-          id = "systemMonitorPlus";
           enabled = true;
+          id = "systemMonitorPlus";
         }
         {
           enabled = true;
           id = "systemTray";
         }
         {
-          id = "clipboardPlus";
           enabled = true;
+          id = "clipboardPlus";
         }
         {
           enabled = true;
           id = "mangoWmLayoutManager";
         }
         {
-          id = "orbitBluetooth";
           enabled = true;
+          id = "orbitBluetooth";
         }
         {
-          id = "hiddenBar";
           enabled = true;
+          id = "hiddenBar";
         }
         {
           enabled = true;
@@ -1080,53 +1134,6 @@
       widgetFollowInterfaceStyle = true;
       widgetPadding = 8;
       widgetTransparency = 1;
-      hideOnLastDisplay = false;
-      islandHoverOpenDelay = 190;
-      islandHoverCloseDelay = 170;
-      islandNotificationExpand = true;
-      islandNotificationBadgeClearOnOpen = true;
-      islandHomeLayout = [
-        {
-          id = "clock";
-          enabled = true;
-        }
-        {
-          id = "media";
-          enabled = true;
-        }
-        {
-          id = "notifications";
-          enabled = true;
-        }
-        {
-          id = "privacy";
-          enabled = true;
-        }
-        {
-          id = "workspaces";
-          enabled = false;
-        }
-        {
-          id = "status";
-          enabled = false;
-        }
-        {
-          id = "weather";
-          enabled = false;
-        }
-        {
-          id = "volume";
-          enabled = false;
-        }
-        {
-          id = "brightness";
-          enabled = false;
-        }
-        {
-          id = "tray";
-          enabled = false;
-        }
-      ];
     }
   ];
   desktopWidgetInstances = [
@@ -1172,7 +1179,7 @@
         ];
         showAnalogNumbers = false;
         showAnalogSeconds = true;
-        showDate = true;
+        showDate = false;
         showOnOverlay = false;
         style = "expressive";
         transparency = 0.7;
@@ -1190,6 +1197,7 @@
             name = "eDP-1";
           }
         ];
+        shapeMode = "pill";
       };
       enabled = true;
       id = "dw_1793997996242_b56m8ul6w";
@@ -1222,9 +1230,26 @@
       name = "Material Player & Lyrics";
       widgetType = "materialPlayer";
     }
+    {
+      config = {
+        animInterval = 500;
+        animateWeather = true;
+        displayPreferences = [
+        
+        ];
+        showWeather = true;
+        themeVersion = "dynamic";
+        todMode = "game";
+        widgetOpacity = 100;
+      };
+      enabled = true;
+      id = "dw_1794948606276_1kz9o4hzj";
+      name = "Persona 5 Calendar";
+      widgetType = "persona5Calendar";
+    }
   ];
   desktopWidgetGroups = [
-
+  
   ];
   builtInPluginSettings = {
     dms_clipboard_search = {
@@ -1243,9 +1268,10 @@
   clipboardClickToPaste = false;
   clipboardEnterToPaste = false;
   launcherPluginVisibility = {
+  
   };
   launcherPluginOrder = [
-
+  
   ];
   frameEnabled = false;
   configVersion = 42;
