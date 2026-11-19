@@ -24,6 +24,8 @@ let
     4705510 # Happy Wheels
     3569420 # Chained Beasts  
     945360 # Among Us
+    1206070 # Phonopolis
+    636480 # Ravenfield
   ];
 
   sls-config = {
