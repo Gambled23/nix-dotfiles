@@ -17,6 +17,8 @@
       grim
       qt6Packages.qt5compat
       qt6Packages.qtwebsockets
+      (pkgs.callPackage ./_dux-update-config.nix { inherit pkgs; })
+      wf-recorder
     ];
 
     programs.dank-material-shell = {
@@ -53,6 +55,8 @@
         dankActions.enable = true;
         orbitBluetooth.enable = true;
         dmsScreenshot.enable = true;
+        persona5Calendar.enable = true;
+        quickCapture.enable = true;
       };
     };
 

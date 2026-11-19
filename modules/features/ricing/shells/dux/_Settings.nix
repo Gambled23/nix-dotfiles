@@ -195,6 +195,7 @@
   currentThemeName = "dynamic";
   customThemeFile = "";
   registryThemeVariants = {
+  
   };
   radiusStrength = 38;
   clockFormat = "24h";
@@ -290,7 +291,7 @@
       magnificationProfile = "parabolic";
       magnificationExpand = false;
       order = [
-
+      
       ];
       widgets = [
         {
@@ -326,15 +327,15 @@
   widgetColorMode = "colorful";
   controlCenterTileColorMode = "primary";
   buttonColorMode = "primary";
-  niriLayoutGapsOverride = -1;
-  niriLayoutRadiusOverride = -1;
-  niriLayoutBorderSize = -1;
-  hyprlandLayoutGapsOverride = -1;
-  hyprlandLayoutRadiusOverride = -1;
-  hyprlandLayoutBorderSize = -1;
-  mangoLayoutGapsOverride = -1;
-  mangoLayoutRadiusOverride = -1;
-  mangoLayoutBorderSize = -1;
+  niriLayoutGapsOverride = (-1);
+  niriLayoutRadiusOverride = (-1);
+  niriLayoutBorderSize = (-1);
+  hyprlandLayoutGapsOverride = (-1);
+  hyprlandLayoutRadiusOverride = (-1);
+  hyprlandLayoutBorderSize = (-1);
+  mangoLayoutGapsOverride = (-1);
+  mangoLayoutRadiusOverride = (-1);
+  mangoLayoutBorderSize = (-1);
   windSpeedUnit = "kmh";
   syncComponentAnimationSpeeds = true;
   springBounce = 2;
@@ -503,6 +504,7 @@
     }
   ];
   workspaceNameIcons = {
+  
   };
   scrollTitleEnabled = true;
   audioVisualizerEnabled = false;
@@ -542,8 +544,10 @@
   sortAppsAlphabetically = true;
   appLauncherGridColumns = 4;
   spotlightSectionViewModes = {
+  
   };
   appDrawerSectionViewModes = {
+  
   };
   niriOverviewOverlayEnabled = true;
   dankLauncherV2Size = "compact";
@@ -801,7 +805,7 @@
   notepadFontFamily = "";
   notepadFontSize = 14;
   notepadShowLineNumbers = false;
-  notepadTransparencyOverride = -1;
+  notepadTransparencyOverride = (-1);
   notepadLastCustomTransparency = 0.7;
   soundsEnabled = true;
   useSystemSoundTheme = false;
@@ -868,7 +872,7 @@
   notificationTimeoutNormal = 5000;
   notificationTimeoutCritical = 0;
   notificationCompactMode = true;
-  notificationPopupPosition = -1;
+  notificationPopupPosition = (-1);
   notificationHistoryEnabled = true;
   notificationHistoryMaxCount = 50;
   notificationHistoryMaxAgeDays = 7;
@@ -876,7 +880,7 @@
   notificationHistorySaveNormal = true;
   notificationHistorySaveCritical = true;
   notificationRules = [
-
+  
   ];
   notificationFocusedMonitor = true;
   osdAlwaysShowValue = true;
@@ -912,13 +916,16 @@
     ];
   };
   showOnLastDisplay = {
+  
   };
   displayProfiles = {
+  
   };
   displayProfileAutoSelect = true;
   displayShowDisconnected = false;
   displaySnapToEdge = true;
   connectedFrameBarStyleBackups = {
+  
   };
   barConfigs = [
     {
@@ -1190,6 +1197,7 @@
             name = "eDP-1";
           }
         ];
+        shapeMode = "pill";
       };
       enabled = true;
       id = "dw_1793997996242_b56m8ul6w";
@@ -1223,25 +1231,25 @@
       widgetType = "materialPlayer";
     }
     {
-      id = "dw_1794948606276_1kz9o4hzj";
-      widgetType = "persona5Calendar";
-      name = "Persona 5 Calendar";
-      enabled = true;
       config = {
-        displayPreferences = [
-
-        ];
-        themeVersion = "dynamic";
-        widgetOpacity = 100;
-        todMode = "game";
-        showWeather = true;
+        animInterval = 500;
         animateWeather = true;
-        animInterval = 328;
+        displayPreferences = [
+        
+        ];
+        showWeather = true;
+        themeVersion = "dynamic";
+        todMode = "game";
+        widgetOpacity = 100;
       };
+      enabled = true;
+      id = "dw_1794948606276_1kz9o4hzj";
+      name = "Persona 5 Calendar";
+      widgetType = "persona5Calendar";
     }
   ];
   desktopWidgetGroups = [
-
+  
   ];
   builtInPluginSettings = {
     dms_clipboard_search = {
@@ -1260,9 +1268,10 @@
   clipboardClickToPaste = false;
   clipboardEnterToPaste = false;
   launcherPluginVisibility = {
+  
   };
   launcherPluginOrder = [
-
+  
   ];
   frameEnabled = false;
   configVersion = 42;

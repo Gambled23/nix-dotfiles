@@ -156,7 +156,8 @@ in
       "NONE,XF86AudioLowerVolume,spawn,dms ipc call audio decrement 1"
       "NONE,XF86MonBrightnessUp,spawn,dms ipc call brightness increment 1"
       "NONE,XF86MonBrightnessDown,spawn,dms ipc call brightness decrement 1"
-      "none,Print,spawn,dms screenshot"
+      "none,Print,spawn,dms ipc call quickCapture screenshot region capture"
+      "SUPER,Print,spawn,dms ipc call quickCapture toggle"
       "SUPER,m,spawn,dms ipc call lock lock"
       "CTRL+ALT,Delete,spawn,dms ipc call powermenu toggle"
       

@@ -141,6 +141,7 @@ in
           "ipYjqODds05KMcvh7QJn" # Material
           "hvGem3YVgRwPdDumShwq" # Juxtematic
           "i3soOaPP2V7P0VO7W4pq" # QOL toggles
+          "wCiYCoLDv2QwZA6taI6m" # UltraWide
         ];
       };
     };
