@@ -29,6 +29,8 @@
       # awscli
       # winboat
       herdr
+      herdr-core
+      herdr-desktop
       remmina
       mariadb
       # android-studio

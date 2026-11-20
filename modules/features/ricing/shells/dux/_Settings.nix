@@ -936,6 +936,7 @@
       attachToScreenEdge = false;
       autoHide = false;
       autoHideDelay = 250;
+      barInsetPadding = (-1);
       borderColor = "surfaceText";
       borderEnabled = false;
       borderOpacity = 1;
@@ -971,54 +972,58 @@
       id = "default";
       innerPadding = 2;
       island = true;
+      islandCompactThickness = 38;
       islandDashTabs = true;
       islandFloating = false;
+      islandHomeClockDisplay = "both";
+      islandHomeCompactTight = true;
       islandHomeLayout = [
         {
+          enabled = true;
           id = "volume";
-          enabled = true;
         }
         {
+          enabled = true;
           id = "clock";
-          enabled = true;
         }
         {
+          enabled = true;
           id = "privacy";
-          enabled = true;
         }
         {
+          enabled = true;
           id = "notifications";
-          enabled = true;
         }
         {
+          enabled = false;
           id = "media";
-          enabled = false;
         }
         {
+          enabled = false;
           id = "workspaces";
-          enabled = false;
         }
         {
+          enabled = false;
           id = "status";
-          enabled = false;
         }
         {
-          id = "weather";
           enabled = true;
+          id = "weather";
         }
         {
+          enabled = false;
           id = "brightness";
-          enabled = false;
         }
         {
+          enabled = false;
           id = "tray";
-          enabled = false;
         }
         {
-          id = "keyboardLayout";
           enabled = false;
+          id = "keyboardLayout";
         }
       ];
+      islandHomeVolumeDisplay = "both";
       islandHoverCloseDelay = 170;
       islandHoverOpenDelay = 190;
       islandInteractionMode = "hybrid";
@@ -1031,6 +1036,12 @@
       islandOuterGap = 0;
       islandPlacement = "edge";
       islandReserveThickness = 32;
+      islandSatelliteBackground = true;
+      islandSatelliteFollowInterfaceStyle = true;
+      islandSatelliteGap = 12;
+      islandSatelliteGothCorners = true;
+      islandSatellitePosition = "edges";
+      islandSatellitesEnabled = true;
       islandUseOverlayLayer = false;
       leftWidgets = [
         {
@@ -1062,20 +1073,21 @@
           id = "mangoWmLayoutManager";
         }
         {
-          id = "separator";
           enabled = true;
+          id = "separator";
         }
         {
+          background = false;
           enabled = true;
           focusedWindowCompactMode = true;
+          focusedWindowShowIcon = true;
           focusedWindowSize = 0;
           id = "focusedWindow";
           overflowMode = "section";
-          background = false;
-          focusedWindowShowIcon = true;
         }
       ];
       maximizeWidgetIcons = false;
+      maximizeWidgetText = false;
       name = "Main Bar";
       noBackground = false;
       openOnOverview = false;
@@ -1092,8 +1104,8 @@
           id = "systemMonitorPlus";
         }
         {
-          id = "dcalUpcoming";
           enabled = true;
+          id = "dcalUpcoming";
         }
         {
           enabled = true;
@@ -1104,8 +1116,8 @@
           id = "systemTray";
         }
         {
-          id = "spacer";
           enabled = true;
+          id = "spacer";
           size = 5;
         }
         {
@@ -1117,8 +1129,8 @@
           id = "battery";
         }
         {
-          id = "spacer";
           enabled = true;
+          id = "spacer";
           size = 5;
         }
         {
@@ -1156,25 +1168,13 @@
       transparency = 0.6;
       visible = true;
       widgetFollowInterfaceStyle = true;
-      widgetPadding = 8;
-      widgetTransparency = 1;
-      islandCompactThickness = 38;
-      islandSatelliteGap = 12;
-      widgetStyle = "segments";
-      widgetOutlineEnabled = true;
       widgetOutlineColor = "primary";
+      widgetOutlineEnabled = true;
       widgetOutlineOpacity = 0.2;
       widgetOutlineThickness = 1;
-      islandSatelliteBackground = true;
-      islandSatelliteGothCorners = true;
-      islandSatellitePosition = "edges";
-      islandSatellitesEnabled = true;
-      islandSatelliteFollowInterfaceStyle = true;
-      maximizeWidgetText = false;
-      islandHomeClockDisplay = "both";
-      islandHomeVolumeDisplay = "both";
-      islandHomeCompactTight = true;
-      barInsetPadding = (-1);
+      widgetPadding = 8;
+      widgetStyle = "segments";
+      widgetTransparency = 1;
     }
   ];
   desktopWidgetInstances = [
