@@ -1,5 +1,14 @@
 { self, inputs, pkgs, ... }: {
-  flake.homeModules.antigravity-cli = { ... }: {
+  flake.homeModules.antigravity-cli = { lib, ... }:
+  let
+    cyberSkillsDir = inputs.cybersecurity-skills + "/skills";
+    cyberSkills = lib.filterAttrs
+      (name: type: type == "directory" && !lib.hasPrefix "." name)
+      (builtins.readDir cyberSkillsDir);
+    cyberSkillsAttrs = lib.mapAttrs' (name: _:
+      lib.nameValuePair name (cyberSkillsDir + "/${name}")
+    ) cyberSkills;
+  in {
     programs.antigravity-cli = {
       enable = true;
       defaultModel = "gemini-3.5-flash";
@@ -33,8 +42,11 @@
         runningLightSpeed = "fast";
         verbosity = "low";
       };
-      skills.m3e = "./skills/material-design-3-ui";
-      skills.ml-best-practices = "./skills/ml-best-practices";
+      skills = {
+        m3e = ./skills/material-design-3-ui;
+        ml-best-practices = ./skills/ml-best-practices;
+        cng-diseno = ./skills/cng-diseno;
+      } // cyberSkillsAttrs;
     };
   };
 }

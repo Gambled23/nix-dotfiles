@@ -143,6 +143,11 @@
       flake = false;
     };
 
+    cybersecurity-skills = {
+      url = "github:briiirussell/cybersecurity-skills";
+      flake = false;
+    };
+
     # zen-browser = {
     #   url = "github:youwen5/zen-browser-flake";
     #   inputs.nixpkgs.follows = "nixpkgs";

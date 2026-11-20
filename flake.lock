@@ -1110,6 +1110,22 @@
         "type": "github"
       }
     },
+    "cybersecurity-skills": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1795050936,
+        "narHash": "sha256-70kOSMcOJU3dUItEMDPQ2mYa2nTbFNRfBBDbIu+bi3I=",
+        "owner": "briiirussell",
+        "repo": "cybersecurity-skills",
+        "rev": "b19875422c1388db8c14d91ba7c1f8343e98c48b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "briiirussell",
+        "repo": "cybersecurity-skills",
+        "type": "github"
+      }
+    },
     "dank-qml-common": {
       "flake": false,
       "locked": {
@@ -8660,6 +8676,7 @@
         "alpha-server": "alpha-server",
         "antigravity-nix": "antigravity-nix_4",
         "community-templates": "community-templates",
+        "cybersecurity-skills": "cybersecurity-skills",
         "dms": "dms_2",
         "dms-plugin-registry": "dms-plugin-registry_2",
         "dux-calendar": "dux-calendar",

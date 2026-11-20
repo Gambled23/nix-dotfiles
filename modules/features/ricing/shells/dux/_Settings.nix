@@ -198,6 +198,7 @@
   
   };
   radiusStrength = 38;
+  radiusMode = "scale";
   clockFormat = "24h";
   showSeconds = false;
   padHours12Hour = false;
@@ -872,6 +873,7 @@
   notificationTimeoutNormal = 5000;
   notificationTimeoutCritical = 0;
   notificationCompactMode = true;
+  notificationShowTimeoutBar = false;
   notificationPopupPosition = (-1);
   notificationHistoryEnabled = true;
   notificationHistoryMaxCount = 50;
@@ -891,8 +893,9 @@
     mediaPlayback = 2;
     numLock = 0;
     powerProfile = 0;
+    workspace = 1;
   };
-  osdVolumeEnabled = false;
+  osdVolumeEnabled = true;
   osdMediaVolumeEnabled = true;
   osdMediaPlaybackEnabled = true;
   osdBrightnessEnabled = true;
@@ -901,6 +904,7 @@
   osdCapsLockEnabled = true;
   osdPowerProfileEnabled = true;
   osdAudioOutputEnabled = true;
+  osdWorkspaceEnabled = true;
   customPowerActionLock = "";
   customPowerActionLogout = "";
   customPowerActionSuspend = "";
@@ -965,50 +969,54 @@
       hideOnLastDisplay = false;
       hoverPopouts = true;
       id = "default";
-      innerPadding = 4;
+      innerPadding = 2;
       island = true;
       islandDashTabs = true;
       islandFloating = false;
       islandHomeLayout = [
         {
-          enabled = true;
-          id = "clock";
-        }
-        {
-          enabled = true;
-          id = "media";
-        }
-        {
-          enabled = true;
-          id = "notifications";
-        }
-        {
-          enabled = true;
-          id = "privacy";
-        }
-        {
-          enabled = false;
-          id = "workspaces";
-        }
-        {
-          enabled = false;
-          id = "status";
-        }
-        {
-          enabled = false;
-          id = "weather";
-        }
-        {
-          enabled = false;
           id = "volume";
+          enabled = true;
         }
         {
+          id = "clock";
+          enabled = true;
+        }
+        {
+          id = "privacy";
+          enabled = true;
+        }
+        {
+          id = "notifications";
+          enabled = true;
+        }
+        {
+          id = "media";
           enabled = false;
+        }
+        {
+          id = "workspaces";
+          enabled = false;
+        }
+        {
+          id = "status";
+          enabled = false;
+        }
+        {
+          id = "weather";
+          enabled = true;
+        }
+        {
           id = "brightness";
+          enabled = false;
         }
         {
-          enabled = false;
           id = "tray";
+          enabled = false;
+        }
+        {
+          id = "keyboardLayout";
+          enabled = false;
         }
       ];
       islandHoverCloseDelay = 170;
@@ -1017,21 +1025,14 @@
       islandMediaAutoSwitch = true;
       islandMediaClockVisible = true;
       islandMediaLyrics = false;
-      islandNotch = false;
+      islandNotch = true;
       islandNotificationBadgeClearOnOpen = true;
       islandNotificationExpand = true;
       islandOuterGap = 0;
-      islandPlacement = "free";
-      islandReserveThickness = 41;
+      islandPlacement = "edge";
+      islandReserveThickness = 32;
       islandUseOverlayLayer = false;
       leftWidgets = [
-        {
-          enabled = true;
-          focusedWindowCompactMode = true;
-          focusedWindowSize = 0;
-          id = "focusedWindow";
-          overflowMode = "section";
-        }
         {
           dwlShowAllTags = true;
           enabled = true;
@@ -1056,6 +1057,23 @@
           workspaceUnfocusedColorMode = "default";
           workspaceUrgentColorMode = "default";
         }
+        {
+          enabled = true;
+          id = "mangoWmLayoutManager";
+        }
+        {
+          id = "separator";
+          enabled = true;
+        }
+        {
+          enabled = true;
+          focusedWindowCompactMode = true;
+          focusedWindowSize = 0;
+          id = "focusedWindow";
+          overflowMode = "section";
+          background = false;
+          focusedWindowShowIcon = true;
+        }
       ];
       maximizeWidgetIcons = false;
       name = "Main Bar";
@@ -1067,27 +1085,28 @@
       rightWidgets = [
         {
           enabled = true;
+          id = "orbitBluetooth";
+        }
+        {
+          enabled = true;
           id = "systemMonitorPlus";
+        }
+        {
+          id = "dcalUpcoming";
+          enabled = true;
+        }
+        {
+          enabled = true;
+          id = "hiddenBar";
         }
         {
           enabled = true;
           id = "systemTray";
         }
         {
+          id = "spacer";
           enabled = true;
-          id = "clipboardPlus";
-        }
-        {
-          enabled = true;
-          id = "mangoWmLayoutManager";
-        }
-        {
-          enabled = true;
-          id = "orbitBluetooth";
-        }
-        {
-          enabled = true;
-          id = "hiddenBar";
+          size = 5;
         }
         {
           enabled = true;
@@ -1098,12 +1117,17 @@
           id = "battery";
         }
         {
+          id = "spacer";
           enabled = true;
-          id = "volumeMixer";
+          size = 5;
         }
         {
           enabled = true;
           id = "notificationButton";
+        }
+        {
+          enabled = true;
+          id = "volumeMixer";
         }
         {
           enabled = true;
@@ -1134,6 +1158,23 @@
       widgetFollowInterfaceStyle = true;
       widgetPadding = 8;
       widgetTransparency = 1;
+      islandCompactThickness = 38;
+      islandSatelliteGap = 12;
+      widgetStyle = "segments";
+      widgetOutlineEnabled = true;
+      widgetOutlineColor = "primary";
+      widgetOutlineOpacity = 0.2;
+      widgetOutlineThickness = 1;
+      islandSatelliteBackground = true;
+      islandSatelliteGothCorners = true;
+      islandSatellitePosition = "edges";
+      islandSatellitesEnabled = true;
+      islandSatelliteFollowInterfaceStyle = true;
+      maximizeWidgetText = false;
+      islandHomeClockDisplay = "both";
+      islandHomeVolumeDisplay = "both";
+      islandHomeCompactTight = true;
+      barInsetPadding = (-1);
     }
   ];
   desktopWidgetInstances = [
