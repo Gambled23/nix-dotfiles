@@ -28,6 +28,7 @@
       pulseaudio
       pulsemeeter
       wireplumber
+      webkitgtk_4_1
       sof-firmware # audio via hdmi
 
       # Secrets
