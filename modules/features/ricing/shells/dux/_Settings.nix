@@ -971,6 +971,7 @@
       hoverPopouts = true;
       id = "default";
       innerPadding = 2;
+      island = true;
       islandCompactThickness = 38;
       islandDashTabs = true;
       islandFloating = false;
@@ -1170,7 +1171,6 @@
       widgetPadding = 8;
       widgetStyle = "segments";
       widgetTransparency = 1;
-      island = true;
     }
   ];
   desktopWidgetInstances = [
@@ -1283,6 +1283,61 @@
       id = "dw_1794948606276_1kz9o4hzj";
       name = "Persona 5 Calendar";
       widgetType = "persona5Calendar";
+    }
+    {
+      id = "dw_1795544530706_0kosih1at";
+      widgetType = "stickyNotes";
+      name = "Sticky Notes";
+      enabled = true;
+      config = {
+        displayPreferences = [
+          {
+            name = "eDP-1";
+            model = "Unknown";
+          }
+        ];
+      };
+    }
+    {
+      id = "dw_1795544587584_m7azxwd7n";
+      widgetType = "dankRssWidget";
+      name = "Dank RSS Widget";
+      enabled = true;
+      config = {
+        displayPreferences = [
+          {
+            name = "HDMI-A-1";
+            model = "Unknown";
+          }
+        ];
+        feeds = [
+          {
+            name = "MangoWM";
+            url = "https://github.com/mangowm/mango/releases.atom";
+            enabled = true;
+            addedAt = 1795544710491;
+            intervalMinutes = 0;
+          }
+          {
+            name = "Noctalia";
+            url = "https://github.com/noctalia-dev/noctalia/releases.atom";
+            enabled = true;
+            addedAt = 1795544749405;
+            intervalMinutes = 0;
+          }
+          {
+            name = "Nuvio Desktop";
+            url = "https://github.com/NuvioMedia/NuvioDesktop/releases.atom";
+            enabled = true;
+            addedAt = 1795545308760;
+            intervalMinutes = 0;
+          }
+        ];
+        backgroundOpacity = 100;
+        enableBorder = false;
+        aiEnabled = false;
+        rankingEnabled = false;
+      };
     }
   ];
   desktopWidgetGroups = [

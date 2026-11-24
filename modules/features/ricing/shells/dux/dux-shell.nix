@@ -57,6 +57,8 @@
         dmsScreenshot.enable = true;
         persona5Calendar.enable = true;
         quickCapture.enable = true;
+        dankRssWidget.enable = true;
+        stickyNotes.enable = true;
       };
     };
 
