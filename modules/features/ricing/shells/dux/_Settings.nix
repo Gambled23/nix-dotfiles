@@ -971,7 +971,6 @@
       hoverPopouts = true;
       id = "default";
       innerPadding = 2;
-      island = true;
       islandCompactThickness = 38;
       islandDashTabs = true;
       islandFloating = false;
@@ -1034,7 +1033,7 @@
       islandNotificationBadgeClearOnOpen = true;
       islandNotificationExpand = true;
       islandOuterGap = 0;
-      islandPlacement = "edge";
+      islandPlacement = "free";
       islandReserveThickness = 32;
       islandSatelliteBackground = true;
       islandSatelliteFollowInterfaceStyle = true;
@@ -1097,15 +1096,7 @@
       rightWidgets = [
         {
           enabled = true;
-          id = "orbitBluetooth";
-        }
-        {
-          enabled = true;
           id = "systemMonitorPlus";
-        }
-        {
-          enabled = true;
-          id = "dcalUpcoming";
         }
         {
           enabled = true;
@@ -1143,11 +1134,15 @@
         }
         {
           enabled = true;
+          id = "orbitBluetooth";
+        }
+        {
+          enabled = true;
           id = "controlCenterButton";
           showAudioIcon = true;
           showAudioPercent = false;
           showBatteryIcon = false;
-          showBluetoothIcon = true;
+          showBluetoothIcon = false;
           showBrightnessIcon = false;
           showBrightnessPercent = false;
           showMicIcon = false;
@@ -1175,6 +1170,7 @@
       widgetPadding = 8;
       widgetStyle = "segments";
       widgetTransparency = 1;
+      island = true;
     }
   ];
   desktopWidgetInstances = [

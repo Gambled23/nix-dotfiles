@@ -194,15 +194,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1792191212,
-        "narHash": "sha256-PBzPHNqHoIPfNLE9IddV8RaGS1GzX5Tjs9KTzucNpfI=",
-        "ref": "refs/heads/main",
-        "rev": "5569ce0a049490c230645e6aceecc9454ff483fe",
-        "revCount": 1982,
+        "lastModified": 1792602192,
+        "narHash": "sha256-Flhc5QRUMwlD6rh+sgF7UTOl33H8VrnbZWeFuNgaR4Y=",
+        "ref": "production",
+        "rev": "218e39e156b9d9b7efe142f4f18d5e6de754fe84",
+        "revCount": 2007,
         "type": "git",
         "url": "ssh://git@github.com/AlphaFintechMx/administrativo.git"
       },
       "original": {
+        "ref": "production",
         "type": "git",
         "url": "ssh://git@github.com/AlphaFintechMx/administrativo.git"
       }
@@ -273,6 +274,7 @@
     "alpha-server": {
       "inputs": {
         "administrativo": "administrativo",
+        "cng-qr": "cng-qr",
         "factorio": "factorio",
         "facturacion": "facturacion",
         "financiero": "financiero",
@@ -293,8 +295,8 @@
         "sops-nix": "sops-nix_4"
       },
       "locked": {
-        "lastModified": 1795023703,
-        "narHash": "sha256-yUaHNCTaTlmdkg3ewMYHxcKoTne3ORb0jIxAk+201Mg=",
+        "lastModified": 1795218900,
+        "narHash": "sha256-NTOKtYK/sk6PDnyd9IQZPgI2s53PRnh8qMjmDz1MrkM=",
         "path": "/home/gambled/Codes/nixos-alpha-server",
         "type": "path"
       },
@@ -1077,6 +1079,27 @@
         "url": "https://github.com/Selectively11/CloudRedirect/releases/latest/download/cloud_redirect.so"
       }
     },
+    "cng-qr": {
+      "inputs": {
+        "nixpkgs": [
+          "alpha-server",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1795216691,
+        "narHash": "sha256-fdiQYWB/xKfQRE5/XBZx9nhPflUw4HxeuNd2HQDvAEQ=",
+        "ref": "refs/heads/main",
+        "rev": "664eb0bf1269eb44e73ee1a62eb0b37ae865dfbd",
+        "revCount": 2,
+        "type": "git",
+        "url": "ssh://git@github.com/AlphaFintechMx/QR.git"
+      },
+      "original": {
+        "type": "git",
+        "url": "ssh://git@github.com/AlphaFintechMx/QR.git"
+      }
+    },
     "community-templates": {
       "flake": false,
       "locked": {
@@ -1433,15 +1456,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1792775937,
+        "lastModified": 1792775959,
         "narHash": "sha256-Yq7ZgtWtIzKS47LCVSfQfU6GrCpIlByAdHzUiDRZlMg=",
-        "ref": "refs/heads/main",
-        "rev": "80b6996bbbc5347dcaee8e411a1e5e18fa8f9fed",
-        "revCount": 303,
+        "ref": "production",
+        "rev": "02c2b33e5a4b46420229d777e6a8b714c5b4806a",
+        "revCount": 339,
         "type": "git",
         "url": "ssh://git@github.com/AlphaFintechMx/factorio.git"
       },
       "original": {
+        "ref": "production",
         "type": "git",
         "url": "ssh://git@github.com/AlphaFintechMx/factorio.git"
       }
@@ -1572,15 +1596,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1792191229,
-        "narHash": "sha256-6ZiACy8taRrfaW/qemnsGFhBhe3jQDnBh02iPCmia9s=",
-        "ref": "refs/heads/main",
-        "rev": "02c05a850e0e82c5ea85eaaa1435a1d90ac087b5",
-        "revCount": 1039,
+        "lastModified": 1792602216,
+        "narHash": "sha256-LrHxezeCs+CPwxdWqvqvidnZo1vmCW1xCcrWB7Jaoic=",
+        "ref": "production",
+        "rev": "e53998f251760dea56454c1658a85b4371e9358c",
+        "revCount": 1054,
         "type": "git",
         "url": "ssh://git@github.com/AlphaFintechMx/financiero.git"
       },
       "original": {
+        "ref": "production",
         "type": "git",
         "url": "ssh://git@github.com/AlphaFintechMx/financiero.git"
       }
@@ -1658,13 +1683,14 @@
       "locked": {
         "lastModified": 1793735686,
         "narHash": "sha256-cQY6y+3DrJKNhJRUPRfCpEaxlpTPKHIz6/9iGblkv0I=",
-        "ref": "refs/heads/main",
+        "ref": "production",
         "rev": "05c8a8d797b1adaeae6279655a886a91cd14658c",
         "revCount": 5,
         "type": "git",
         "url": "ssh://git@github.com/AlphaFintechMx/finor.git"
       },
       "original": {
+        "ref": "production",
         "type": "git",
         "url": "ssh://git@github.com/AlphaFintechMx/finor.git"
       }
@@ -4109,15 +4135,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1794957829,
-        "narHash": "sha256-3rAMtFXLQE3mAg6pkDOckczmiwyRqG8IVIJUIMxk2Bo=",
-        "ref": "refs/heads/main",
-        "rev": "251e60041f3af60c6dd79c7bbb36860b1fa7372e",
-        "revCount": 641,
+        "lastModified": 1795211525,
+        "narHash": "sha256-U7pPP+0DVePM6owP+XJcBZZpwxEyl2GL9tF9HpsYLls=",
+        "ref": "production",
+        "rev": "2dac992655ba91a0d01036b39ed3284a2ec3a9df",
+        "revCount": 691,
         "type": "git",
         "url": "ssh://git@github.com/AlphaFintechMx/identity.git"
       },
       "original": {
+        "ref": "production",
         "type": "git",
         "url": "ssh://git@github.com/AlphaFintechMx/identity.git"
       }
@@ -5158,15 +5185,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1792948263,
-        "narHash": "sha256-4eAW1QMIMCu3wACDW465FbenuYMMPEWUH2NnSqI0K40=",
-        "ref": "refs/heads/main",
-        "rev": "0fbde231d567184c73ab9d84e20117170f7f7380",
-        "revCount": 73,
+        "lastModified": 1792194081,
+        "narHash": "sha256-IlnqCUD1iSDSKC/2HyxwLElPtWiADHVfRBH9XlftF30=",
+        "ref": "production",
+        "rev": "2c5f45de4cf3a6fa719bf99572df3101c32928af",
+        "revCount": 72,
         "type": "git",
         "url": "ssh://git@github.com/AlphaFintechMx/mindcare-app.git"
       },
       "original": {
+        "ref": "production",
         "type": "git",
         "url": "ssh://git@github.com/AlphaFintechMx/mindcare-app.git"
       }
@@ -5230,15 +5258,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1794948142,
-        "narHash": "sha256-Yg7VVcVC2I1zHtNfBvnsRsWVq1tnYW74lHXZ6nKukWU=",
-        "ref": "refs/heads/main",
-        "rev": "779d8c71dfd839d54c01c85a7627aa982b8db31a",
-        "revCount": 71,
+        "lastModified": 1795191245,
+        "narHash": "sha256-ETAQlAdQIZj5+vzYN2jtLZVZShBP6Al9Ba78n1YdLBA=",
+        "ref": "production",
+        "rev": "dd7a5646f0e61effc5448bcd08c46b6cd34d190c",
+        "revCount": 93,
         "type": "git",
         "url": "ssh://git@github.com/angelsistemacng/MInutas-CNG.git"
       },
       "original": {
+        "ref": "production",
         "type": "git",
         "url": "ssh://git@github.com/angelsistemacng/MInutas-CNG.git"
       }
