@@ -93,6 +93,10 @@
     #   url = "github:hgaiser/moonshine";
     #   inputs.nixpkgs.follows = "nixpkgs";
     # };
+    metrolist = {
+      url = "github:MetrolistGroup/Metrolist";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     nix-crab = {
       url = "github:ItszFinn/nix-crab";

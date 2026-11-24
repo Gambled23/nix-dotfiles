@@ -40,7 +40,7 @@
         dankKDEConnect.enable = true;
         screencastPicker.enable = true;
         # ssshMonitor.enable = true;
-        # dankDesktopWeather.enable = true;
+        dankDesktopWeather.enable = true;
         homeAssistantMonitor.enable = true;
         homeAssistantDash.enable = true;
         mangoWmLayoutManager.enable = true;
