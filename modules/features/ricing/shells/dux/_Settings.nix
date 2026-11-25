@@ -1285,59 +1285,59 @@
       widgetType = "persona5Calendar";
     }
     {
-      id = "dw_1795544530706_0kosih1at";
-      widgetType = "stickyNotes";
-      name = "Sticky Notes";
-      enabled = true;
       config = {
         displayPreferences = [
           {
-            name = "eDP-1";
             model = "Unknown";
+            name = "eDP-1";
           }
         ];
       };
+      enabled = true;
+      id = "dw_1795544530706_0kosih1at";
+      name = "Sticky Notes";
+      widgetType = "stickyNotes";
     }
     {
-      id = "dw_1795544587584_m7azxwd7n";
-      widgetType = "dankRssWidget";
-      name = "Dank RSS Widget";
-      enabled = true;
       config = {
+        aiEnabled = false;
+        backgroundOpacity = 100;
         displayPreferences = [
           {
-            name = "HDMI-A-1";
             model = "Unknown";
+            name = "HDMI-A-1";
           }
         ];
+        enableBorder = false;
         feeds = [
           {
+            addedAt = 1795544710491;
+            enabled = true;
+            intervalMinutes = 0;
             name = "MangoWM";
             url = "https://github.com/mangowm/mango/releases.atom";
-            enabled = true;
-            addedAt = 1795544710491;
-            intervalMinutes = 0;
           }
           {
+            addedAt = 1795544749405;
+            enabled = true;
+            intervalMinutes = 0;
             name = "Noctalia";
             url = "https://github.com/noctalia-dev/noctalia/releases.atom";
-            enabled = true;
-            addedAt = 1795544749405;
-            intervalMinutes = 0;
           }
           {
+            addedAt = 1795545308760;
+            enabled = true;
+            intervalMinutes = 0;
             name = "Nuvio Desktop";
             url = "https://github.com/NuvioMedia/NuvioDesktop/releases.atom";
-            enabled = true;
-            addedAt = 1795545308760;
-            intervalMinutes = 0;
           }
         ];
-        backgroundOpacity = 100;
-        enableBorder = false;
-        aiEnabled = false;
         rankingEnabled = false;
       };
+      enabled = true;
+      id = "dw_1795544587584_m7azxwd7n";
+      name = "Dank RSS Widget";
+      widgetType = "dankRssWidget";
     }
   ];
   desktopWidgetGroups = [

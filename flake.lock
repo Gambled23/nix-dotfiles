@@ -4754,6 +4754,26 @@
         "type": "github"
       }
     },
+    "metrolist": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1795549471,
+        "narHash": "sha256-aJHb1nwHjwUwwV6S14/VCBjKFqsRfrkyJfslfFeOEsk=",
+        "owner": "MetrolistGroup",
+        "repo": "Metrolist",
+        "rev": "e1f1a9490c0f91b0335e2deeb9c7d34fade40d86",
+        "type": "github"
+      },
+      "original": {
+        "owner": "MetrolistGroup",
+        "repo": "Metrolist",
+        "type": "github"
+      }
+    },
     "millennium": {
       "inputs": {
         "abseil-src": "abseil-src",
@@ -8717,6 +8737,7 @@
         "iris": "iris_4",
         "jovian-nixos": "jovian-nixos_5",
         "mangowm": "mangowm_4",
+        "metrolist": "metrolist",
         "millennium": "millennium_8",
         "nix-crab": "nix-crab_4",
         "nix-flatpak": "nix-flatpak_9",
