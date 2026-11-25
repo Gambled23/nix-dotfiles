@@ -97,6 +97,7 @@
 
     services.flatpak.packages = [
       "com.artemchep.keyguard"
+      "org.gnome.Epiphany"
     ];
 
     xdg.mimeApps = {
