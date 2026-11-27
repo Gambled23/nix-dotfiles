@@ -38,7 +38,7 @@
         usbManager.enable = true;
         mediaPlayer.enable = true;  
         dankKDEConnect.enable = true;
-        screencastPicker.enable = true;
+        # screencastPicker.enable = true;
         # ssshMonitor.enable = true;
         dankDesktopWeather.enable = true;
         homeAssistantMonitor.enable = true;
@@ -49,11 +49,11 @@
         lainWidget.enable = true;
         hiddenBar.enable = true;
         systemMonitorPlus.enable = true;
-        cast.enable = true;
+        # cast.enable = true;
         clipboardPlus.enable = true;
         dankscale.enable = true;
-        dankActions.enable = true;
-        orbitBluetooth.enable = true;
+        # dankActions.enable = true;
+        # orbitBluetooth.enable = true;
         dmsScreenshot.enable = true;
         persona5Calendar.enable = true;
         quickCapture.enable = true;

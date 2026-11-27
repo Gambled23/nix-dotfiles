@@ -498,48 +498,48 @@
       w = 1;
     }
     {
+      col = 7;
       enabled = true;
       h = 1;
       id = "plugin_cast";
-      w = 3;
-      col = 7;
       row = 1;
+      w = 3;
     }
     {
-      id = "doNotDisturb";
-      enabled = true;
-      w = 1.5;
-      h = 1;
       col = 10.5;
+      enabled = true;
+      h = 1;
+      id = "doNotDisturb";
       row = 2;
+      w = 1.5;
     }
     {
-      id = "diskUsage";
+      col = 3;
       enabled = true;
-      w = 3.5;
       h = 1;
+      id = "diskUsage";
       instanceId = "mww9uuuzrziu3ymvaaesbxw5hj4qj";
       mountPath = "/";
-      showMountPath = true;
-      col = 3;
       row = 3;
+      showMountPath = true;
+      w = 3.5;
     }
     {
-      id = "idleInhibitor";
-      enabled = true;
-      w = 2.5;
-      h = 1;
       col = 6.5;
+      enabled = true;
+      h = 1;
+      id = "idleInhibitor";
       row = 3;
       small = false;
+      w = 2.5;
     }
     {
-      id = "builtin_cups";
-      enabled = true;
-      w = 3;
-      h = 1;
       col = 9;
+      enabled = true;
+      h = 1;
+      id = "builtin_cups";
       row = 3;
+      w = 3;
     }
   ];
   workspaceNameIcons = {
