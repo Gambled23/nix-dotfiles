@@ -415,11 +415,11 @@
       w = 1;
     }
     {
-      col = 7.5;
+      col = 8.5;
       enabled = true;
       h = 1;
       id = "runningApps";
-      row = 4;
+      row = 3;
       small = true;
       w = 3.5;
     }
@@ -498,14 +498,6 @@
       w = 1;
     }
     {
-      col = 7;
-      enabled = true;
-      h = 1;
-      id = "plugin_cast";
-      row = 1;
-      w = 3;
-    }
-    {
       col = 10.5;
       enabled = true;
       h = 1;
@@ -522,10 +514,10 @@
       mountPath = "/";
       row = 3;
       showMountPath = true;
-      w = 3.5;
+      w = 3;
     }
     {
-      col = 6.5;
+      col = 6;
       enabled = true;
       h = 1;
       id = "idleInhibitor";
@@ -534,11 +526,11 @@
       w = 2.5;
     }
     {
-      col = 9;
+      col = 7;
       enabled = true;
       h = 1;
       id = "builtin_cups";
-      row = 3;
+      row = 1;
       w = 3;
     }
   ];
@@ -1173,15 +1165,11 @@
         }
         {
           enabled = true;
-          id = "orbitBluetooth";
-        }
-        {
-          enabled = true;
           id = "controlCenterButton";
           showAudioIcon = true;
-          showAudioPercent = false;
+          showAudioPercent = true;
           showBatteryIcon = false;
-          showBluetoothIcon = false;
+          showBluetoothIcon = true;
           showBrightnessIcon = false;
           showBrightnessPercent = false;
           showMicIcon = false;
@@ -1190,6 +1178,21 @@
           showPrinterIcon = false;
           showScreenSharingIcon = true;
           showVpnIcon = true;
+          showDoNotDisturbIcon = true;
+          showIdleInhibitorIcon = true;
+          controlCenterGroupOrder = [
+            "audio"
+            "bluetooth"
+            "network"
+            "vpn"
+            "microphone"
+            "brightness"
+            "battery"
+            "printer"
+            "screenSharing"
+            "idleInhibitor"
+            "doNotDisturb"
+          ];
         }
       ];
       screenPreferences = [

@@ -10590,11 +10590,11 @@
     },
     "nuvio_5": {
       "locked": {
-        "lastModified": 1794584185,
-        "narHash": "sha256-KopYCmvXNTWfFuHmiSD8yN4s7CovAGAVkC3rmSe/72c=",
+        "lastModified": 1795735056,
+        "narHash": "sha256-GozgvTsivuG0Ax/aawk2vbCCY/zsgbu/n3wGwKFvMJ4=",
         "owner": "griffi-gh",
         "repo": "nixpkgs",
-        "rev": "a96c97bdf798e2721eb3470fc83f9d43ae2c83a7",
+        "rev": "d883bd687c80c6c4ab7c93344818db166054b3c9",
         "type": "github"
       },
       "original": {

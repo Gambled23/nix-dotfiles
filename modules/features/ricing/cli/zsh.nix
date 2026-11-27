@@ -23,11 +23,13 @@
         mdb = "mariadb -h 127.0.0.1 -u root -p";
         noctalia-restart = "noctalia-shell kill; sleep 3; noctalia-shell -d";
         gnome-control-center-fixed = "env XDG_CURRENT_DESKTOP=GNOME gnome-control-center";
+
         dvp = "devenv processes";
         dvpu = "devenv processes up";
         dvpud = "devenv processes up -d";
         dvpur = "devenv processes up --refresh-eval-cache";
         dvpudr = "devenv processes up -d --refresh-eval-cache";
+        dvpl = "devenv processes list";
 
         analyze-general-space = ''nix-shell -p ncdu --command "ncdu --exclude /nix -x /"'';
         analyze-nix-space = ''nix run 'nixpkgs#gdu' /nix/store'';
