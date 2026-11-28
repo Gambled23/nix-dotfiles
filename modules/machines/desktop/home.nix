@@ -55,7 +55,7 @@
       # inputs.antigravity-nix.packages.x86_64-linux.google-antigravity-cli # CLI
       
       #* Media 
-      inputs.metrolist.packages.${pkgs.stdenv.hostPlatform.system}.metrolist
+      # inputs.metrolist.packages.${pkgs.stdenv.hostPlatform.system}.metrolist
       loupe # Image viewer
       vlc
       gimp-with-plugins

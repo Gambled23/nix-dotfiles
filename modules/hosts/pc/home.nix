@@ -25,6 +25,7 @@
     home.packages = with pkgs; [
       # pkgs.nur.repos.Ev357.hayase
       (pkgs.callPackage ../../../pkgs/hayase/package.nix { })
+      telegram-desktop
       # ludusavi
       # gamemode
       # winetricks
