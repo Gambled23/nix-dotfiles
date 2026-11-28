@@ -28,6 +28,29 @@
         #     '';
         #   description = "Adds a new entry to the project's CHANGELOG.md file.";
         # };
+        "alpha/addcontext" = { # Becomes /alpha:addcontext
+          prompt = ''
+              I'm hosting my apps on 'ssh alpha-server', use that to read logs.
+              My apps are:
+              /home/gambled/Codes/administrativo
+              /home/gambled/Codes/cng-qr
+              /home/gambled/Codes/factorio
+              /home/gambled/Codes/facturacion
+              /home/gambled/Codes/financiero
+              /home/gambled/Codes/GrandCardon
+              /home/gambled/Codes/identity
+              /home/gambled/Codes/minutas
+              /home/gambled/Codes/mindcare-app
+              /home/gambled/Codes/nixos-alpha-server
+              /home/gambled/Codes/FINOR
+              /home/gambled/Codes/open-bsp-ui
+              /home/gambled/Codes/quiniela
+              /home/gambled/Codes/template-fullstack
+              /home/gambled/Codes/cng-plus-ml
+              They're all using nix and devenv environments.
+            '';
+          description = "Add context about alphapps";
+        };
         "git/fixissue" = { # Becomes /git:fixissue
           prompt = "Please using gh analyze and fix issue number: {{args}}. Commit the changes and provide a summary of the fix. create a pull request in github repo via github mcp";
           description = "Generates a fix for a given GitHub issue.";

@@ -164,7 +164,7 @@
 
     # Alpha
     alpha-server = {
-      url = "path:/home/gambled/Codes/nixos-alpha-server";
+      url = "git+ssh://git@github.com/AlphaFintechMx/nixos.git";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };

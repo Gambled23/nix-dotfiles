@@ -356,7 +356,7 @@
   controlCenterColumns = 12;
   controlCenterWidgets = [
     {
-      col = 6;
+      col = 8.5;
       enabled = true;
       h = 1;
       id = "user";
@@ -385,43 +385,43 @@
       h = 1;
       id = "wifi";
       row = 2;
-      w = 3.5;
+      w = 3;
     }
     {
-      col = 9.5;
+      col = 11;
       enabled = true;
       h = 1;
       id = "nightMode";
       row = 1;
       small = true;
-      w = 2.5;
+      w = 1;
     }
     {
-      col = 7;
+      col = 10;
       enabled = true;
       h = 1;
       id = "darkMode";
       row = 1;
       small = true;
-      w = 2.5;
+      w = 1;
     }
     {
       col = 11;
       enabled = true;
       h = 1;
       id = "edit";
-      row = 2;
+      row = 4;
       small = true;
       w = 1;
     }
     {
-      col = 8;
+      col = 8.5;
       enabled = true;
       h = 1;
       id = "runningApps";
       row = 3;
       small = true;
-      w = 4;
+      w = 3.5;
     }
     {
       col = 4;
@@ -429,7 +429,7 @@
       h = 1;
       id = "plugin_dankKDEConnect";
       row = 1;
-      small = true;
+      small = false;
       w = 3;
     }
     {
@@ -438,10 +438,10 @@
       h = 1;
       id = "bluetooth";
       row = 3;
-      w = 3.5;
+      w = 3;
     }
     {
-      col = 6;
+      col = 5.5;
       enabled = true;
       h = 1;
       id = "audioOutput";
@@ -449,7 +449,7 @@
       w = 2.5;
     }
     {
-      col = 3.5;
+      col = 3;
       enabled = true;
       h = 1;
       id = "audioInput";
@@ -457,7 +457,7 @@
       w = 2.5;
     }
     {
-      col = 8.5;
+      col = 8;
       enabled = true;
       h = 1;
       id = "builtin_tailscale";
@@ -465,7 +465,7 @@
       w = 2.5;
     }
     {
-      col = 9.5;
+      col = 6;
       enabled = true;
       h = 1;
       id = "quickTiles";
@@ -498,10 +498,40 @@
       w = 1;
     }
     {
+      col = 10.5;
       enabled = true;
       h = 1;
-      id = "plugin_cast";
-      w = 4;
+      id = "doNotDisturb";
+      row = 2;
+      w = 1.5;
+    }
+    {
+      col = 3;
+      enabled = true;
+      h = 1;
+      id = "diskUsage";
+      instanceId = "mww9uuuzrziu3ymvaaesbxw5hj4qj";
+      mountPath = "/";
+      row = 3;
+      showMountPath = true;
+      w = 3;
+    }
+    {
+      col = 6;
+      enabled = true;
+      h = 1;
+      id = "idleInhibitor";
+      row = 3;
+      small = false;
+      w = 2.5;
+    }
+    {
+      col = 7;
+      enabled = true;
+      h = 1;
+      id = "builtin_cups";
+      row = 1;
+      w = 3;
     }
   ];
   workspaceNameIcons = {
@@ -1135,15 +1165,11 @@
         }
         {
           enabled = true;
-          id = "orbitBluetooth";
-        }
-        {
-          enabled = true;
           id = "controlCenterButton";
           showAudioIcon = true;
-          showAudioPercent = false;
+          showAudioPercent = true;
           showBatteryIcon = false;
-          showBluetoothIcon = false;
+          showBluetoothIcon = true;
           showBrightnessIcon = false;
           showBrightnessPercent = false;
           showMicIcon = false;
@@ -1152,6 +1178,21 @@
           showPrinterIcon = false;
           showScreenSharingIcon = true;
           showVpnIcon = true;
+          showDoNotDisturbIcon = true;
+          showIdleInhibitorIcon = true;
+          controlCenterGroupOrder = [
+            "audio"
+            "bluetooth"
+            "network"
+            "vpn"
+            "microphone"
+            "brightness"
+            "battery"
+            "printer"
+            "screenSharing"
+            "idleInhibitor"
+            "doNotDisturb"
+          ];
         }
       ];
       screenPreferences = [
